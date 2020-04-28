@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="D_AlarmHistory" xml:space="preserve">
+    <value>Alarm History</value>
+  </data>
+  <data name="D_AlarmManagement" xml:space="preserve">
+    <value>Alarm Management</value>
+  </data>
+  <data name="D_AlarmStatus" xml:space="preserve">
+    <value>Alarm Status</value>
+  </data>
+  <data name="D_APCDownloadManagement" xml:space="preserve">
+    <value>APC Download Management</value>
+  </data>
+  <data name="D_APCReportManagement" xml:space="preserve">
+    <value>APC Report Management</value>
+  </data>
+  <data name="D_CassetteHistory" xml:space="preserve">
+    <value>Cassette History</value>
+  </data>
+  <data name="D_CIMMessage" xml:space="preserve">
+    <value>CIM Message</value>
+  </data>
+  <data name="D_CIMMessageHistory" xml:space="preserve">
+    <value>CIM Message History</value>
+  </data>
+  <data name="D_CIMMessageManagement" xml:space="preserve">
+    <value>CIM Message Management</value>
+  </data>
+  <data name="D_CIMMode" xml:space="preserve">
+    <value>CIM Mode</value>
+  </data>
+  <data name="D_DailyCheck" xml:space="preserve">
+    <value>Daily Check</value>
+  </data>
+  <data name="D_DailyCheckHistory" xml:space="preserve">
+    <value>Daily Check History</value>
+  </data>
+  <data name="D_DailyCheckManagement" xml:space="preserve">
+    <value>Daily Check Management</value>
+  </data>
+  <data name="D_EachPosition" xml:space="preserve">
+    <value>Each Position</value>
+  </data>
+  <data name="D_EnergyVisualizationManagement" xml:space="preserve">
+    <value>Energy Visualization Management</value>
+  </data>
+  <data name="D_ForceCleanOut" xml:space="preserve">
+    <value>Force Clean Out</value>
+  </data>
+  <data name="D_History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="D_IndexerOperationMode" xml:space="preserve">
+    <value>Indexer Operation Mode</value>
+  </data>
+  <data name="D_JobCount" xml:space="preserve">
+    <value>Job Count</value>
+  </data>
+  <data name="D_JobHistory" xml:space="preserve">
+    <value>Job History</value>
+  </data>
+  <data name="D_Layout" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="D_LineControl" xml:space="preserve">
+    <value>Line Control</value>
+  </data>
+  <data name="D_LineHistory" xml:space="preserve">
+    <value>Line History</value>
+  </data>
+  <data name="D_LineInformation" xml:space="preserve">
+    <value>Line Information</value>
+  </data>
+  <data name="D_LineMode" xml:space="preserve">
+    <value>Line Mode</value>
+  </data>
+  <data name="D_LineSpecial" xml:space="preserve">
+    <value>Line Special</value>
+  </data>
+  <data name="D_LineStatusRule" xml:space="preserve">
+    <value>Line Status Rule</value>
+  </data>
+  <data name="D_MaterialHistory" xml:space="preserve">
+    <value>Material History</value>
+  </data>
+  <data name="D_MaterialStatus" xml:space="preserve">
+    <value>Material Status</value>
+  </data>
+  <data name="D_MESConnectionTest" xml:space="preserve">
+    <value>MES Alive Request</value>
+  </data>
+  <data name="D_Monitor" xml:space="preserve">
+    <value>Monitor</value>
+  </data>
+  <data name="D_NodeControl" xml:space="preserve">
+    <value>EQP Control</value>
+  </data>
+  <data name="D_NodeHistory" xml:space="preserve">
+    <value>EQP History</value>
+  </data>
+  <data name="D_NodeStatus" xml:space="preserve">
+    <value>EQP Status</value>
+  </data>
+  <data name="D_ODFAssemblyHistory" xml:space="preserve">
+    <value>ODF Assembly History</value>
+  </data>
+  <data name="D_Operator" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="D_OPIHistory" xml:space="preserve">
+    <value>OPI History</value>
+  </data>
+  <data name="D_Parameter" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="D_ParameterSetting" xml:space="preserve">
+    <value>Parameter Setting</value>
+  </data>
+  <data name="D_PortControl" xml:space="preserve">
+    <value>Port Control</value>
+  </data>
+  <data name="D_PortHistory" xml:space="preserve">
+    <value>Port History</value>
+  </data>
+  <data name="D_ProcessData" xml:space="preserve">
+    <value>Process Data</value>
+  </data>
+  <data name="D_ProcessDataHistory" xml:space="preserve">
+    <value>Process Data History</value>
+  </data>
+  <data name="D_ProcessDataManagement" xml:space="preserve">
+    <value>Process Data Management</value>
+  </data>
+  <data name="D_QTimeSetting" xml:space="preserve">
+    <value>Q Time Setting</value>
+  </data>
+  <data name="D_RecipeManagement" xml:space="preserve">
+    <value>Recipe Management</value>
+  </data>
+  <data name="D_RecipeParamaterHistory" xml:space="preserve">
+    <value>Recipe Paramater History</value>
+  </data>
+  <data name="D_RecipeParameterManagement" xml:space="preserve">
+    <value>Recipe Parameter Management</value>
+  </data>
+  <data name="D_RobotControl" xml:space="preserve">
+    <value>Robot Control</value>
+  </data>
+  <data name="D_RobotRoute" xml:space="preserve">
+    <value>Robot Route</value>
+  </data>
+  <data name="D_RunMode" xml:space="preserve">
+    <value>Run Mode</value>
+  </data>
+  <data name="D_SamplingRule" xml:space="preserve">
+    <value>Sampling Rule</value>
+  </data>
+  <data name="D_Setting" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="D_SkipReportSetting" xml:space="preserve">
+    <value>Skip Report Setting</value>
+  </data>
+  <data name="D_SlotInformation" xml:space="preserve">
+    <value>Slot Information</value>
+  </data>
+  <data name="D_SubBlock" xml:space="preserve">
+    <value>Sub Block</value>
+  </data>
+  <data name="D_TimeCalibration" xml:space="preserve">
+    <value>Time Calibration</value>
+  </data>
+  <data name="D_TrackOut" xml:space="preserve">
+    <value>Track Out</value>
+  </data>
+  <data name="D_UnitHistory" xml:space="preserve">
+    <value>Unit History</value>
+  </data>
+  <data name="D_UserAccount" xml:space="preserve">
+    <value>User Account</value>
+  </data>
+  <data name="D_UserGroup" xml:space="preserve">
+    <value>User Group</value>
+  </data>
+  <data name="D_RealTimeGlassCount" xml:space="preserve">
+    <value>Real Time Glass Count</value>
+  </data>
+  <data name="D_SECSFunction" xml:space="preserve">
+    <value>SECS Function</value>
+  </data>
+  <data name="D_RobotRunModeManagement" xml:space="preserve">
+    <value>Robot Run Mode Management</value>
+  </data>
+  <data name="D_RobotStageManagement" xml:space="preserve">
+    <value>Robot Stage Management</value>
+  </data>
+  <data name="D_SECSVariableManagement" xml:space="preserve">
+    <value>SECS Variable Management</value>
+  </data>
+  <data name="D_ChangerPlan" xml:space="preserve">
+    <value>Changer Plan</value>
+  </data>
+  <data name="D_IonizerFanMode" xml:space="preserve">
+    <value>Ionizer Fan Mode</value>
+  </data>
+  <data name="D_LinkStatus" xml:space="preserve">
+    <value>Link Status</value>
+  </data>
+  <data name="D_PLCTrxData" xml:space="preserve">
+    <value>PLC TRX Data</value>
+  </data>
+  <data name="D_AbnormalForceCleanOut" xml:space="preserve">
+    <value>Abnormal Force Clean Out</value>
+  </data>
+  <data name="D_AreYouThereRequest" xml:space="preserve">
+    <value>Are You There Request</value>
+  </data>
+  <data name="D_CassetteonPortQTime" xml:space="preserve">
+    <value>Cassette on Port Q Time</value>
+  </data>
+  <data name="D_CassetteonPortQTimeNEW" xml:space="preserve">
+    <value>New Cassette on Port Q Time</value>
+  </data>
+  <data name="D_CoolRunRemainCount" xml:space="preserve">
+    <value>Cool Run Remain Count</value>
+  </data>
+  <data name="D_CoolRunSetCount" xml:space="preserve">
+    <value>Cool Run Set Count</value>
+  </data>
+  <data name="D_CoolRunSetCountNew" xml:space="preserve">
+    <value>New Cool Run Count</value>
+  </data>
+  <data name="D_EquipmentFetchGlassProportional" xml:space="preserve">
+    <value>Equipment Fetch Glass Proportional Rule</value>
+  </data>
+  <data name="D_FactoryType" xml:space="preserve">
+    <value>Factory Type</value>
+  </data>
+  <data name="D_GlassGradeMapping" xml:space="preserve">
+    <value>Glass Grade Mapping</value>
+  </data>
+  <data name="D_InspectionIdleTimeSetting" xml:space="preserve">
+    <value>Inspection Idle Time Setting</value>
+  </data>
+  <data name="D_LineID" xml:space="preserve">
+    <value>Line ID</value>
+  </data>
+  <data name="D_LineName" xml:space="preserve">
+    <value>Line Name</value>
+  </data>
+  <data name="D_LineOperation" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="D_LineType" xml:space="preserve">
+    <value>Line Type</value>
+  </data>
+  <data name="D_Local" xml:space="preserve">
+    <value>Local</value>
+  </data>
+  <data name="D_MESAliveLinkTest" xml:space="preserve">
+    <value>MES Alive Link Test</value>
+  </data>
+  <data name="D_MPLCInterlock" xml:space="preserve">
+    <value>MPLC Interlock</value>
+  </data>
+  <data name="D_Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="D_On" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="D_PortEnable" xml:space="preserve">
+    <value>Port Enable</value>
+  </data>
+  <data name="D_PortMode" xml:space="preserve">
+    <value>Port Mode</value>
+  </data>
+  <data name="D_PortTransfer" xml:space="preserve">
+    <value>Port Transfer</value>
+  </data>
+  <data name="D_PortType" xml:space="preserve">
+    <value>Port Type</value>
+  </data>
+  <data name="D_ProcessPauseCommand" xml:space="preserve">
+    <value>Process Pause Command</value>
+  </data>
+  <data name="D_ProcessStop" xml:space="preserve">
+    <value>Process Stop</value>
+  </data>
+  <data name="D_Reload" xml:space="preserve">
+    <value>Reload</value>
+  </data>
+  <data name="D_RobotOperationMode" xml:space="preserve">
+    <value>Robot Operation Mode</value>
+  </data>
+  <data name="D_Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="D_TimeCalibrationForallEQP" xml:space="preserve">
+    <value>Time Calibration For All EQP</value>
+  </data>
+  <data name="D_TransferStop" xml:space="preserve">
+    <value>Transfer Stop</value>
+  </data>
+  <data name="D_VCREnableMode" xml:space="preserve">
+    <value>VCR Enable Mode</value>
+  </data>
+  <data name="D_VCRReaderON" xml:space="preserve">
+    <value>VCR Reader ON</value>
+  </data>
+  <data name="D_VCRStatus" xml:space="preserve">
+    <value>VCR Status</value>
+  </data>
+  <data name="D_FabType" xml:space="preserve">
+    <value>.Fab Type</value>
+  </data>
+  <data name="D_UserLogin" xml:space="preserve">
+    <value>User Login</value>
+  </data>
+  <data name="D_PortStatus" xml:space="preserve">
+    <value>Port Status</value>
+  </data>
+  <data name="D_DeleteWIP" xml:space="preserve">
+    <value>WIP Delete/Recovery</value>
+  </data>
+  <data name="D_EnergyVisualization" xml:space="preserve">
+    <value>Energy Visualization</value>
+  </data>
+  <data name="D_UserChangePwd" xml:space="preserve">
+    <value>Change User Password</value>
+  </data>
+  <data name="D_RecipeParameter" xml:space="preserve">
+    <value>Recipe Parameter</value>
+  </data>
+  <data name="D_ODFTrackTimeSetting" xml:space="preserve">
+    <value>ODF Track Time Setting</value>
+  </data>
+  <data name="D_RecipeManagementCross" xml:space="preserve">
+    <value>Cross Line Recipe Management</value>
+  </data>
+  <data name="D_RecipeParameterCross" xml:space="preserve">
+    <value>Cross Line Recipe Parameter</value>
+  </data>
+  <data name="D_RecipeRegisterCorss" xml:space="preserve">
+    <value>Cross Line Recipe Register</value>
+  </data>
+  <data name="D_ProductTypeBlock" xml:space="preserve">
+    <value>Product Type Block</value>
+  </data>
+  <data name="D_BufferRWJudgeCapacity" xml:space="preserve">
+    <value>Buffer RW Judge Capacity</value>
+  </data>
+  <data name="D_UnloadingPortSetting" xml:space="preserve">
+    <value>Unloading Port Setting</value>
+  </data>
+  <data name="D_EquipmentFetchGlassProportionalCommand" xml:space="preserve">
+    <value>Equipment Fetch Glass Proportional Rule Command</value>
+  </data>
+  <data name="D_DefectCodeHistory" xml:space="preserve">
+    <value>Defect Code History</value>
+  </data>
+  <data name="D_DefectCodeReport" xml:space="preserve">
+    <value>Defect Code Report</value>
+  </data>
+  <data name="D_RobotManagement" xml:space="preserve">
+    <value>Robot Management</value>
+  </data>
+  <data name="D_RobotMethodDef" xml:space="preserve">
+    <value>Robot Method Definition</value>
+  </data>
+  <data name="D_RobotRouteCondition" xml:space="preserve">
+    <value>Robot Route Condition</value>
+  </data>
+  <data name="D_RobotRouteMst" xml:space="preserve">
+    <value>Robot Route Master</value>
+  </data>
+  <data name="D_RobotRuleJobSelect" xml:space="preserve">
+    <value>Robot Rule Job Select</value>
+  </data>
+  <data name="D_UserGroupQuery" xml:space="preserve">
+    <value>User Group Query</value>
+  </data>
+  <data name="D_RobotLayout" xml:space="preserve">
+    <value>RobotLayout</value>
+  </data>
+  <data name="D_RecipeTableHistory" xml:space="preserve">
+    <value>Recipe Table History</value>
+  </data>
+  <data name="D_ParameterSetting_ELA" xml:space="preserve">
+    <value>ELA Parameter Setting</value>
+  </data>
+  <data name="D_Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="D_PPKEventNameHistory" xml:space="preserve">
+    <value>PPK Event Name History</value>
+  </data>
+  <data name="D_APCData" xml:space="preserve">
+    <value>APC Data</value>
+  </data>
+  <data name="D_CellLineSpecialCheck" xml:space="preserve">
+    <value>Cell Line Special Check</value>
+  </data>
+</root>

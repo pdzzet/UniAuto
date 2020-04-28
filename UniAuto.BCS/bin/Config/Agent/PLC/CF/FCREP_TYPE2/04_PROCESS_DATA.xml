@@ -1,0 +1,53 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2016-01-04 18:59:45-->
+<itemgroup name="L2ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_12_FCREP-2_L02_Indexer_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_12_FCREP-2-PLC Address Map_Ver1.05.xls">
+  <item name="TactTime" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="IONCDAPressure" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="OTHERCDAPressure" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="VacuumUPPERPressure" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="VacuumUNDERPressure" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PortNo" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_12_FCREP-2_L03_Repair#01_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_12_FCREP-2-PLC Address Map_Ver1.05.xls">
+  <item name="TopLghtTm" item="TopLghtTm" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="BakLghtTm" item="BakLghtTm" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="AlgnLghtTm" item="AlgnLghtTm" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="TapLapCnt" item="TapLapCnt" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="LsrShtCnt" item="LsrShtCnt" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="UvLmpTm" item="UvLmpTm" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="InkCtrgTm" item="InkCtrgTm" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="ProcessTime" item="ProcessTime" site="" woffset="8" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="ProcessStartTime" item="ProcessStartTime" site="" woffset="10" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="ProcessEndTime" item="ProcessEndTime" site="" woffset="13" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="Ionizer" item="Ionizer" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="HEPA" item="HEPA" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_12_FCREP-2_L04_Ink Repair#02_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_12_FCREP-2-PLC Address Map_Ver1.05.xls">
+  <item name="TopLghtTm" item="TopLghtTm" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="BakLghtTm" item="BakLghtTm" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="AlgnLghtTm" item="AlgnLghtTm" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="TapLapCnt" item="TapLapCnt" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="LsrShtCnt" item="LsrShtCnt" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="UvLmpTm" item="UvLmpTm" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="InkCtrgTm" item="InkCtrgTm" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="ProcessTime" item="ProcessTime" site="" woffset="8" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="ProcessStartTime" item="ProcessStartTime" site="" woffset="10" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="ProcessEndTime" item="ProcessEndTime" site="" woffset="13" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="Ionizer" item="Ionizer" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="HEPA" item="HEPA" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_12_FCREP-2_L05_Ink Repair#03_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_12_FCREP-2-PLC Address Map_Ver1.05.xls">
+  <item name="TopLghtTm" item="TopLghtTm" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="BakLghtTm" item="BakLghtTm" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="AlgnLghtTm" item="AlgnLghtTm" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="TapLapCnt" item="TapLapCnt" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="LsrShtCnt" item="LsrShtCnt" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="UvLmpTm" item="UvLmpTm" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="InkCtrgTm" item="InkCtrgTm" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="ProcessTime" item="ProcessTime" site="" woffset="8" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="ProcessStartTime" item="ProcessStartTime" site="" woffset="10" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="ProcessEndTime" item="ProcessEndTime" site="" woffset="13" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="Ionizer" item="Ionizer" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+  <item name="HEPA" item="HEPA" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="0" />
+</itemgroup>

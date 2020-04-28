@@ -1,0 +1,33 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2016-01-04 19:06:40-->
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_CF_12_FCREP-3_L03_Repair#01_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_12_FCREP-3-PLC Address Map_Ver1.05.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeMainName" item="RecipeMainName" site="" woffset="10" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeHeightMeasurement" item="RecipeHeightMeasurement" site="" woffset="16" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeAlignment1" item="RecipeAlignment1" site="" woffset="22" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeTapeRepair" item="RecipeTapeRepair" site="" woffset="27" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeAutoImageCapture" item="RecipeAutoImageCapture" site="" woffset="32" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+</itemgroup>
+<itemgroup name="L4RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_CF_12_FCREP-3_L04_Repair#02_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_12_FCREP-3-PLC Address Map_Ver1.05.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeMainName" item="RecipeMainName" site="" woffset="10" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeHeightMeasurement" item="RecipeHeightMeasurement" site="" woffset="16" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeAlignment1" item="RecipeAlignment1" site="" woffset="22" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeTapeRepair" item="RecipeTapeRepair" site="" woffset="27" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeAutoImageCapture" item="RecipeAutoImageCapture" site="" woffset="32" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+</itemgroup>
+<itemgroup name="L5RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_CF_12_FCREP-3_L05_Repair#03_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_12_FCREP-3-PLC Address Map_Ver1.05.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeMainName" item="RecipeMainName" site="" woffset="10" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeHeightMeasurement" item="RecipeHeightMeasurement" site="" woffset="16" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeAlignment1" item="RecipeAlignment1" site="" woffset="22" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeTapeRepair" item="RecipeTapeRepair" site="" woffset="27" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+  <item name="RecipeAutoImageCapture" item="RecipeAutoImageCapture" site="" woffset="32" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="0" />
+</itemgroup>

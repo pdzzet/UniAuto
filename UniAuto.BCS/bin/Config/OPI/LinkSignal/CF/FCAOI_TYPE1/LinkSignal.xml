@@ -1,0 +1,5 @@
+﻿<?xml version="1.0"?>
+<LinkSignal>
+	<Bit UpStream="L2" DownStream="L3" SeqNo="0101" LinkType="CF_RBExchange_RBtoST" TimingChart="RBExchange" />
+	<Bit UpStream="L3" DownStream="L2" SeqNo="0101" LinkType="CF_RBExchange_STtoRB" TimingChart="RBExchange" />
+</LinkSignal>

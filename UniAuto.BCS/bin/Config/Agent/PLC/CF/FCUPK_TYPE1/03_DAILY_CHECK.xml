@@ -1,0 +1,70 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-16 14:23:02-->
+<itemgroup name="L2ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_01_FCUPK_L02_Unpacker_Ver1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_01_FCUPK-PLC Address Map_Ver1.0.6.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Tacttime" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ProductType" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ProductTypeCount" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_01_FCUPK_L03_Cleaner_Ver1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_01_FCUPK-PLC Address Map_Ver1.0.6.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" site="" woffset="9" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Version" site="" woffset="15" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_1_UP_DB_Use_Nonuse" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_1_LO_DB_Use_Nonuse" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_2_UP_DB_Use_Nonuse" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_2_LO_DB_Use_Nonuse" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_1_UP_DB_Use_Nonuse" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_1_LO_DB_Use_Nonuse" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_2_UP_DB_Use_Nonuse" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_2_LO_DB_Use_Nonuse" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_1_UP_RB_Use_Nonuse" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_1_LO_RB_Use_Nonuse" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_2_UP_RB_Use_Nonuse" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_2_LO_RB_Use_Nonuse" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_Use_Nonuse" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Normal_Clean_Mode" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Reclean_Mode" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_Use_Nonuse" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_Lamp1_Use_Nonuse" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_Lamp2_Use_Nonuse" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_Pressure" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="DET_TANK_USE_TEMP" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_1_UP_DB_Speed" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_1_LO_DB_Speed" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_2_UP_DB_Speed" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_2_LO_DB_Speed" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_1_UP_DB_Speed" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_1_LO_DB_Speed" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_2_UP_DB_Speed" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_2_LO_DB_Speed" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_1_UP_RB_Speed" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_1_LO_RB_Speed" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_2_UP_RB_Speed" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_2_LO_RB_Speed" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_1_UP_DB_GAP" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_1_LO_DB_GAP" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_2_UP_DB_GAP" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="DET1_2_LO_DB_GAP" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_1_UP_DB_GAP" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_1_LO_DB_GAP" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_2_UP_DB_GAP" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="DET2_2_LO_DB_GAP" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_1_UP_RB_GAP" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_1_LO_RB_GAP" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_2_UP_RB_GAP" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR1_2_LO_RB_GAP" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Lamp1_Used_Time" site="" woffset="62" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Lamp2_Used_Time" site="" woffset="64" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_01_FCUPK_L05_Unloader_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_01_FCUPK-PLC Address Map_Ver1.0.6.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="IONCDAPressure" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OTHERCDAPressure" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="VacuumUPPERPressure" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="VacuumUNDERPressure" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

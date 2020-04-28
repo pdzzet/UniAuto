@@ -1,0 +1,111 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.0.9.0-->
+<!--DateTime: 2016-02-25 13:42:43-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_02_TCELA_L2_Indexer(SEEC)_Ver1.0.2_20160108.xlsx" plcmap="CSOT_G6C_BC_Array_02_TCELA-PLC Address Map_Ver1.06.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter01" site="" woffset="12" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter02" site="" woffset="18" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter03" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter04" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter05" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter06" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter07" site="" woffset="25" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter08" site="" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter09" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter10" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter11" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_02_TCELA_L3_Clean_Ver 1.3.xlsx" plcmap="CSOT_G6C_BC_Array_02_TCELA-PLC Address Map_Ver1.06.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECIPE_No" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TACT_TIME" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="UP_SPEED" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ELE_OUT_SPEED" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR_SPEED" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Load_Zone_T_T" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ELE_Zone_T_T" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HF_Zone_T_T" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="O3_3_Zone_T_T" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Unload_Zone_T_T" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Rinse_PROCESS_T" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HF_Process_T" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="O3_1_Process_T" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="O3_2_Process_T" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HF_CV_OSC_USE_No" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HF_CV_OSC_T" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HF_CV_OSC_Speed" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HF_PIPE_OSC_USE_No" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HF_PIPE_OSC_Speed" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="O3_2_CV_OSC_USE_No" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="O3_2_CV_OSC_T" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="O3_2_CV_OSC_Speed" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_USE_No" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_LAMP1_USE_No" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_LAMP2_USE_No" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HF_Tank_Temprature" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_USE_No" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_Recipe_No" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="O3_1_MODE_USE_No" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="O3_2_MODE_USE_No" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="WMSC_USE_No" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="WMSC_Level" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECIPE_Use_No" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_02_TCELA_L4_ELA_Ver 1.05.xlsx" plcmap="CSOT_G6C_BC_Array_02_TCELA-PLC Address Map_Ver1.06.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="THETA1" item="1" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="XTART1" item="2" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="XSTOP1" item="3" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Y1" item="4" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DENSITY1" item="5" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PITCH1" item="6" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LSLIT1" item="7" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RSLIT1" item="8" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="REPRATE1" item="9" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MURA1" item="10" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LASER1" item="11" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="THETA2" item="12" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="XTART2" item="13" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="XSTOP2" item="14" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Y2" item="15" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DENSITY2" item="16" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PITCH2" item="17" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LSLIT2" item="18" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RSLIT2" item="19" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="REPRATE2" item="20" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MURA2" item="21" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LASER2" item="22" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_02_TCELA_L5_ELA_Ver 1.05.xlsx" plcmap="CSOT_G6C_BC_Array_02_TCELA-PLC Address Map_Ver1.06.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="THETA1" item="1" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="XTART1" item="2" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="XSTOP1" item="3" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Y1" item="4" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DENSITY1" item="5" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PITCH1" item="6" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LSLIT1" item="7" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RSLIT1" item="8" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="REPRATE1" item="9" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MURA1" item="10" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LASER1" item="11" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="THETA2" item="12" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="XTART2" item="13" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="XSTOP2" item="14" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Y2" item="15" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DENSITY2" item="16" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PITCH2" item="17" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LSLIT2" item="18" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RSLIT2" item="19" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="REPRATE2" item="20" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MURA2" item="21" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LASER2" item="22" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

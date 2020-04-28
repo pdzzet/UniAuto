@@ -1,0 +1,15 @@
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.MesSpec.dll
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.MesSpec.pdb
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.MesSpec\obj\Debug\UniAuto.UniBCS.MesSpec.csprojResolveAssemblyReference.cache
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.MesSpec\obj\Debug\UniAuto.UniBCS.MesSpec.dll
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.MesSpec\obj\Debug\UniAuto.UniBCS.MesSpec.pdb
+D:\BaiduNetdiskDownload\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.MesSpec.dll
+D:\BaiduNetdiskDownload\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.MesSpec.pdb
+D:\BaiduNetdiskDownload\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.MesSpec\obj\Debug\UniAuto.UniBCS.MesSpec.csproj.CoreCompileInputs.cache
+D:\BaiduNetdiskDownload\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.MesSpec\obj\Debug\UniAuto.UniBCS.MesSpec.dll
+D:\BaiduNetdiskDownload\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.MesSpec\obj\Debug\UniAuto.UniBCS.MesSpec.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.MesSpec.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.MesSpec.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.MesSpec\obj\Debug\UniAuto.UniBCS.MesSpec.csproj.CoreCompileInputs.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.MesSpec\obj\Debug\UniAuto.UniBCS.MesSpec.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.MesSpec\obj\Debug\UniAuto.UniBCS.MesSpec.pdb

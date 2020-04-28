@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <plc>
+    <adapter>
+      <!-- logical station no (1~1023) -->
+      <logicalstno>255</logicalstno>
+      <!-- is enable trx trigger (Y/N) -->
+      <istrigger>Y</istrigger>
+      <!-- is default adapter (Y/N)-->
+      <isdefault>Y</isdefault>
+      <!-- is enable W convert to ZR (Y/N) -->
+      <isw2zr>N</isw2zr>
+      <plctype>MITSUBISHI</plctype>
+      <linktype>MX3</linktype>
+    </adapter>
+    <parameters>
+      <parameter>
+        <name>LOGICALSTATIONNO</name>
+        <value>255</value>
+      </parameter>
+    </parameters>
+  </plc>
+  <plc>
+    <adapter>
+      <!-- logical station no (1~1023) -->
+      <logicalstno>2</logicalstno>
+      <!-- is enable trx trigger (Y/N) -->
+      <istrigger>N</istrigger>
+      <!-- is default adapter (Y/N)-->
+      <isdefault>N</isdefault>
+      <!-- is enable W convert to ZR (Y/N)-->
+      <isw2zr>N</isw2zr>
+      <plctype>MITSUBISHI</plctype>
+      <linktype>MX3</linktype>
+    </adapter>
+    <parameters>
+      <parameter>
+        <name>LOGICALSTATIONNO</name>
+        <value>2</value>
+      </parameter>
+    </parameters>
+  </plc>
+  <plc>
+    <adapter>
+      <!-- logical station no (1~1023) -->
+      <logicalstno>3</logicalstno>
+      <!-- is enable trx trigger (Y/N) -->
+      <istrigger>N</istrigger>
+      <!-- is default adapter (Y/N)-->
+      <isdefault>N</isdefault>
+      <!-- is enable W convert to ZR (Y/N)-->
+      <isw2zr>N</isw2zr>
+      <plctype>MITSUBISHI</plctype>
+      <linktype>MX3</linktype>
+    </adapter>
+    <parameters>
+      <parameter>
+        <name>LOGICALSTATIONNO</name>
+        <value>3</value>
+      </parameter>
+    </parameters>
+  </plc>
+</config>

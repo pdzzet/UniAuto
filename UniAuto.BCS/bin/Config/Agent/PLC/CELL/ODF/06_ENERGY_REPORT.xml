@@ -1,0 +1,454 @@
+﻿<!--FileName: 06_ENERGY_REPORT.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-05-18 16:11:15-->
+<itemgroup name="L2EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L2_Loader_Ver 1.0.2 20160405.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_4" item="4" site="1" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_4" item="4" site="2" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_4" item="4" site="3" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_4" item="4" site="4" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_4" item="4" site="5" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_4" item="4" site="6" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_4" item="4" site="7" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_5" item="5" site="1" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_5" item="5" site="2" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_5" item="5" site="3" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_5" item="5" site="4" woffset="43" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_5" item="5" site="5" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_5" item="5" site="6" woffset="47" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_5" item="5" site="7" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L3_BOC_Ver 1.0.3 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_4" item="4" site="1" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_4" item="4" site="2" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_4" item="4" site="3" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_4" item="4" site="4" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_4" item="4" site="5" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_4" item="4" site="6" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_4" item="4" site="7" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_5" item="5" site="1" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_5" item="5" site="2" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_5" item="5" site="3" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_5" item="5" site="4" woffset="43" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_5" item="5" site="5" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_5" item="5" site="6" woffset="47" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_5" item="5" site="7" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_6" item="6" site="1" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_6" item="6" site="2" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_6" item="6" site="3" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_6" item="6" site="4" woffset="53" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_6" item="6" site="5" woffset="55" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_6" item="6" site="6" woffset="57" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_6" item="6" site="7" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L4_ODT01_Ver 1.0.3 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L5_BOO_Ver 1.0.3 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L6EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L6_ODT02_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_4" item="4" site="1" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_4" item="4" site="2" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_4" item="4" site="3" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_4" item="4" site="4" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_4" item="4" site="5" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_4" item="4" site="6" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_4" item="4" site="7" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L7_SDP_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L8EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L8_SLI_Ver 1.0.3 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_4" item="4" site="1" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_4" item="4" site="2" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_4" item="4" site="3" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_4" item="4" site="4" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_4" item="4" site="5" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_4" item="4" site="6" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_4" item="4" site="7" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L9EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L9_DRC_Ver 1.0.3 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L10EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L10_ODT03_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_4" item="4" site="1" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_4" item="4" site="2" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_4" item="4" site="3" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_4" item="4" site="4" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_4" item="4" site="5" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_4" item="4" site="6" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_4" item="4" site="7" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L11EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L11_VPO_Ver 1.0.2 20160427.xls" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L12EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L12_ODT04_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_4" item="4" site="1" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_4" item="4" site="2" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_4" item="4" site="3" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_4" item="4" site="4" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_4" item="4" site="5" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_4" item="4" site="6" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_4" item="4" site="7" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L14EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L14_VAC_Ver 1.0.6 20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_1" site="" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" site="" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_1" site="" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" site="" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" site="" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_2" site="" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_3" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_3" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_3" site="" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_3" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_3" site="" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_3" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_4" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_4" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_4" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_4" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_4" site="" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_4" site="" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_4" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L15EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L15_MAI_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="Main_R_Current" site="" woffset="0" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Main_S_Current" site="" woffset="2" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Main_T_Current" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Main_RS_Voltage" site="" woffset="6" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Main_ST_Voltage" site="" woffset="8" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Main_TR_Voltage" site="" woffset="10" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Main_Total_Power" site="" woffset="12" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="CDA_Pressure" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Vaccum_Pressure" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L16EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L16_SUV_Ver 1.0.2 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_3" item="1" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="1" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="1" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_3" item="1" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_3" item="1" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_3" item="1" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_3" item="1" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L17EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L17_ODT05_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Value_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L18EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L18_LCI_Ver 1.0.2 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L19EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L19_SMO_Ver 1.0.3. 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_4" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalValue_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L20EnergyVisualizationInstantaneousReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L20_Unloader_Ver 1.0.2 20160405.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="DataType_1" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_1" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_1" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_1" item="1" site="4" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_1" item="1" site="5" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_1" item="1" site="6" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_1" item="1" site="7" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_2" item="2" site="1" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_2" item="2" site="2" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_2" item="2" site="3" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_2" item="2" site="4" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_2" item="2" site="5" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_2" item="2" site="6" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_2" item="2" site="7" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_3" item="3" site="1" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_3" item="3" site="2" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_3" item="3" site="3" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_3" item="3" site="4" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_3" item="3" site="5" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_3" item="3" site="6" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_3" item="3" site="7" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_4" item="4" site="1" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_4" item="4" site="2" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_4" item="4" site="3" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_4" item="4" site="4" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_4" item="4" site="5" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_4" item="4" site="6" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_4" item="4" site="7" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="DataType_5" item="5" site="1" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo_5" item="5" site="2" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo_5" item="5" site="3" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1_5" item="5" site="4" woffset="43" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2_5" item="5" site="5" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+  <item name="Total_Value_5" item="5" site="6" woffset="47" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency_5" item="5" site="7" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>

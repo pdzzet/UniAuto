@@ -1,0 +1,1169 @@
+﻿<?xml version="1.0"?>
+<LinkSignal>
+	<Type FABTYPE="ARRAY" Name="ARRAY_CVtoCV">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_RBtoST">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="11" Description="Transfer Stop Request" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_RBtoST_DualModeForDoubleGlass">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_RBtoST_DualModeForOneGlass">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_RBtoST_GetPut">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="09" Description="Send Job Reserve" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="09" Description="Receive Job Reserve" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_RBtoST_GetPutForDRY">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="09" Description="Send Job Reserve" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="09" Description="Receive Job Reserve" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+			<Bit SeqNo="27" Description="Receive Type#01" />
+			<Bit SeqNo="28" Description="Receive Type#02" />
+			<Bit SeqNo="29" Description="Receive Type#03" />
+			<Bit SeqNo="30" Description="Receive Type#04" />
+			<Bit SeqNo="31" Description="Receive Type#05" />
+			<Bit SeqNo="32" Description="Receive Type#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_RBtoST_GetPutSolt">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="09" Description="Send Job Reserve" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="09" Description="Receive Job Reserve" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_RBtoST_PinUp">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="14" Description="Pin Up Request" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+			<Bit SeqNo="14" Description="Pin Up Complete" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_RBtoST_RBExchange">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="07" Description="Exchange Execute" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="07" Description="Exchange Possible" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_RBtoST_SingleMode">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_STtoRB">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_STtoRB_DualModeForDoubleGlass">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_STtoRB_DualModeForOneGlass">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_STtoRB_DualModeForOVNITO">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="10" Description="Send OK" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="10" Description="Receive OK" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_STtoRB_GetPut">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_STtoRB_GetPutForDRY">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_STtoRB_GetPutSolt">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_STtoRB_PinDown">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="15" Description="Pin Down Complete" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="15" Description="Pin Down Request" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_STtoRB_RBExchange">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="07" Description="Exchange Execute" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="07" Description="Exchange Possible" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="ARRAY" Name="ARRAY_STtoRB_SingleMode">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="CELL" Name="CELL_CVtoCV">
+      <UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline"/>
+			<Bit SeqNo="02" Description="Upstream Trouble"/>
+			<Bit SeqNo="03" Description="Send Ready"/>
+			<Bit SeqNo="04" Description="Send"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Send Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Execute"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Send Job Reserve"/>
+			<Bit SeqNo="10" Description="Send OK"/>	
+			<Bit SeqNo="14" Description="Slot Number#01"/>
+			<Bit SeqNo="15" Description="Slot Number#02"/>
+			<Bit SeqNo="16" Description="Slot Number#03"/>
+			<Bit SeqNo="17" Description="Slot Number#04"/>
+			<Bit SeqNo="18" Description="Slot Number#05"/>
+			<Bit SeqNo="19" Description="Slot Number#06"/>	
+			<Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </UpStreamBit>
+      <DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline"/>
+			<Bit SeqNo="02" Description="Downstream Trouble"/>
+			<Bit SeqNo="03" Description="Receive Able"/>
+			<Bit SeqNo="04" Description="Receive"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Receive Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Possible"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Receive Job Reserve"/>
+			<Bit SeqNo="10" Description="Receive OK"/>
+			<Bit SeqNo="11" Description="Transfer Stop Request"/>
+			<Bit SeqNo="12" Description="Dummy Glass Request"/>
+      <Bit SeqNo="13" Description="Glass Exist"/>
+			<Bit SeqNo="14" Description="Slot Number#01"/>
+			<Bit SeqNo="15" Description="Slot Number#02"/>
+			<Bit SeqNo="16" Description="Slot Number#03"/>
+			<Bit SeqNo="17" Description="Slot Number#04"/>
+			<Bit SeqNo="18" Description="Slot Number#05"/>
+			<Bit SeqNo="19" Description="Slot Number#06"/>
+      <Bit SeqNo="20" Description="Glass Count#01"/>
+      <Bit SeqNo="21" Description="Glass Count#02"/>
+      <Bit SeqNo="22" Description="Glass Count#03"/>
+      <Bit SeqNo="23" Description="Glass Count#04"/>
+      <Bit SeqNo="24" Description="Glass Count#05"/>
+      <Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </DownStreamBit>
+	</Type>
+	<Type FABTYPE="CELL" Name="CELL_RBtoST">
+      <UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline"/>
+			<Bit SeqNo="02" Description="Upstream Trouble"/>
+			<Bit SeqNo="03" Description="Send Ready"/>
+			<Bit SeqNo="04" Description="Send"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Send Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Execute"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Send Job Reserve"/>
+			<Bit SeqNo="10" Description="Send OK"/>	
+			<Bit SeqNo="14" Description="Slot Number#01"/>
+			<Bit SeqNo="15" Description="Slot Number#02"/>
+			<Bit SeqNo="16" Description="Slot Number#03"/>
+			<Bit SeqNo="17" Description="Slot Number#04"/>
+			<Bit SeqNo="18" Description="Slot Number#05"/>
+			<Bit SeqNo="19" Description="Slot Number#06"/>	
+			<Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </UpStreamBit>
+      <DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline"/>
+			<Bit SeqNo="02" Description="Downstream Trouble"/>
+			<Bit SeqNo="03" Description="Receive Able"/>
+			<Bit SeqNo="04" Description="Receive"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Receive Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Possible"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Receive Job Reserve"/>
+      <Bit SeqNo="11" Description="Transfer Stop Request"/>
+      <Bit SeqNo="12" Description="Dummy Glass Request"/>
+      <Bit SeqNo="13" Description="Glass Exist"/>
+			<Bit SeqNo="14" Description="Slot Number#01"/>
+			<Bit SeqNo="15" Description="Slot Number#02"/>
+			<Bit SeqNo="16" Description="Slot Number#03"/>
+			<Bit SeqNo="17" Description="Slot Number#04"/>
+			<Bit SeqNo="18" Description="Slot Number#05"/>
+			<Bit SeqNo="19" Description="Slot Number#06"/>
+      <Bit SeqNo="20" Description="Glass Count#01"/>
+      <Bit SeqNo="21" Description="Glass Count#02"/>
+      <Bit SeqNo="22" Description="Glass Count#03"/>
+      <Bit SeqNo="23" Description="Glass Count#04"/>
+      <Bit SeqNo="24" Description="Glass Count#05"/>
+      <Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </DownStreamBit>
+	</Type>
+	<Type FABTYPE="CELL" Name="CELL_STtoRB">	
+      <UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline"/>
+			<Bit SeqNo="02" Description="Upstream Trouble"/>
+			<Bit SeqNo="03" Description="Send Ready"/>
+			<Bit SeqNo="04" Description="Send"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Send Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Execute"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Send Job Reserve"/>
+			<Bit SeqNo="10" Description="Send OK"/>	
+			<Bit SeqNo="14" Description="Slot Number#01"/>
+			<Bit SeqNo="15" Description="Slot Number#02"/>
+			<Bit SeqNo="16" Description="Slot Number#03"/>
+			<Bit SeqNo="17" Description="Slot Number#04"/>
+			<Bit SeqNo="18" Description="Slot Number#05"/>
+			<Bit SeqNo="19" Description="Slot Number#06"/>	
+			<Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </UpStreamBit>
+      <DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline"/>
+			<Bit SeqNo="02" Description="Downstream Trouble"/>
+			<Bit SeqNo="03" Description="Receive Able"/>
+			<Bit SeqNo="04" Description="Receive"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Receive Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Possible"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Receive Job Reserve"/>
+      <Bit SeqNo="11" Description="Transfer Stop Request"/>
+      <Bit SeqNo="12" Description="Dummy Glass Request"/>
+      <Bit SeqNo="13" Description="Glass Exist"/>
+			<Bit SeqNo="14" Description="Slot Number#01"/>
+			<Bit SeqNo="15" Description="Slot Number#02"/>
+			<Bit SeqNo="16" Description="Slot Number#03"/>
+			<Bit SeqNo="17" Description="Slot Number#04"/>
+			<Bit SeqNo="18" Description="Slot Number#05"/>
+			<Bit SeqNo="19" Description="Slot Number#06"/>
+      <Bit SeqNo="20" Description="Glass Count#01"/>
+      <Bit SeqNo="21" Description="Glass Count#02"/>
+      <Bit SeqNo="22" Description="Glass Count#03"/>
+      <Bit SeqNo="23" Description="Glass Count#04"/>
+      <Bit SeqNo="24" Description="Glass Count#05"/>
+      <Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </DownStreamBit>
+	</Type>	
+	<Type FABTYPE="CELL" Name="CELL_CVtoCV_Multi">
+      <UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline"/>
+			<Bit SeqNo="02" Description="Upstream Trouble"/>
+			<Bit SeqNo="03" Description="Send Ready"/>
+			<Bit SeqNo="04" Description="Send"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Send Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Execute"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Send Job Reserve"/>
+			<Bit SeqNo="10" Description="Send OK"/>	
+			<Bit SeqNo="14" Description="Slot Number#01"/>
+			<Bit SeqNo="15" Description="Slot Number#02"/>
+			<Bit SeqNo="16" Description="Slot Number#03"/>
+			<Bit SeqNo="17" Description="Slot Number#04"/>
+			<Bit SeqNo="18" Description="Slot Number#05"/>
+			<Bit SeqNo="19" Description="Slot Number#06"/>	
+			<Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </UpStreamBit>
+      <DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline"/>
+			<Bit SeqNo="02" Description="Downstream Trouble"/>
+			<Bit SeqNo="03" Description="Receive Able"/>
+			<Bit SeqNo="04" Description="Receive"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Receive Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Possible"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Receive Job Reserve"/>
+      <Bit SeqNo="11" Description="Transfer Stop Request"/>
+      <Bit SeqNo="12" Description="Dummy Glass Request"/>
+      <Bit SeqNo="13" Description="Glass Exist"/>
+      <Bit SeqNo="14" Description="Slot Number#01"/>
+      <Bit SeqNo="15" Description="Slot Number#02"/>
+      <Bit SeqNo="16" Description="Slot Number#03"/>
+      <Bit SeqNo="17" Description="Slot Number#04"/>
+      <Bit SeqNo="18" Description="Slot Number#05"/>
+      <Bit SeqNo="19" Description="Slot Number#06"/>
+      <Bit SeqNo="20" Description="Glass Count#01"/>
+      <Bit SeqNo="21" Description="Glass Count#02"/>
+      <Bit SeqNo="22" Description="Glass Count#03"/>
+      <Bit SeqNo="23" Description="Glass Count#04"/>
+      <Bit SeqNo="24" Description="Glass Count#05"/>
+      <Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </DownStreamBit>
+	</Type>
+	<Type FABTYPE="CELL" Name="CELL_RBtoST_Multi">
+      <UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline"/>
+			<Bit SeqNo="02" Description="Upstream Trouble"/>
+			<Bit SeqNo="03" Description="Send Ready"/>
+			<Bit SeqNo="04" Description="Send"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Send Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Execute"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Send Job Reserve"/>
+      <Bit SeqNo="10" Description="Send OK"/>
+      <Bit SeqNo="14" Description="Slot Number#01"/>
+			<Bit SeqNo="15" Description="Slot Number#02"/>
+			<Bit SeqNo="16" Description="Slot Number#03"/>
+			<Bit SeqNo="17" Description="Slot Number#04"/>
+			<Bit SeqNo="18" Description="Slot Number#05"/>
+			<Bit SeqNo="19" Description="Slot Number#06"/>	
+			<Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </UpStreamBit>
+      <DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline"/>
+			<Bit SeqNo="02" Description="Downstream Trouble"/>
+			<Bit SeqNo="03" Description="Receive Able"/>
+			<Bit SeqNo="04" Description="Receive"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Receive Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Possible"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Receive Job Reserve"/>
+      <Bit SeqNo="11" Description="Transfer Stop Request"/>
+      <Bit SeqNo="12" Description="Dummy Glass Request"/>
+      <Bit SeqNo="13" Description="Glass Exist"/>
+      <Bit SeqNo="14" Description="Slot Number#01"/>
+      <Bit SeqNo="15" Description="Slot Number#02"/>
+      <Bit SeqNo="16" Description="Slot Number#03"/>
+      <Bit SeqNo="17" Description="Slot Number#04"/>
+      <Bit SeqNo="18" Description="Slot Number#05"/>
+      <Bit SeqNo="19" Description="Slot Number#06"/>
+      <Bit SeqNo="20" Description="Glass Count#01"/>
+      <Bit SeqNo="21" Description="Glass Count#02"/>
+      <Bit SeqNo="22" Description="Glass Count#03"/>
+      <Bit SeqNo="23" Description="Glass Count#04"/>
+      <Bit SeqNo="24" Description="Glass Count#05"/>
+      <Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </DownStreamBit>
+	</Type>
+	<Type FABTYPE="CELL" Name="CELL_STtoRB_Multi">	
+      <UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline"/>
+			<Bit SeqNo="02" Description="Upstream Trouble"/>
+			<Bit SeqNo="03" Description="Send Ready"/>
+			<Bit SeqNo="04" Description="Send"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Send Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Execute"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Send Job Reserve"/>
+      <Bit SeqNo="10" Description="Send OK"/>
+			<Bit SeqNo="14" Description="Slot Number#01"/>
+			<Bit SeqNo="15" Description="Slot Number#02"/>
+			<Bit SeqNo="16" Description="Slot Number#03"/>
+			<Bit SeqNo="17" Description="Slot Number#04"/>
+			<Bit SeqNo="18" Description="Slot Number#05"/>
+			<Bit SeqNo="19" Description="Slot Number#06"/>	
+			<Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </UpStreamBit>
+      <DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline"/>
+			<Bit SeqNo="02" Description="Downstream Trouble"/>
+			<Bit SeqNo="03" Description="Receive Able"/>
+			<Bit SeqNo="04" Description="Receive"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Receive Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Possible"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+      <Bit SeqNo="09" Description="Receive Job Reserve"/>
+      <Bit SeqNo="11" Description="Transfer Stop Request"/>
+      <Bit SeqNo="12" Description="Dummy Glass Request"/>
+      <Bit SeqNo="13" Description="Glass Exist"/>
+      <Bit SeqNo="14" Description="Slot Number#01"/>
+      <Bit SeqNo="15" Description="Slot Number#02"/>
+      <Bit SeqNo="16" Description="Slot Number#03"/>
+      <Bit SeqNo="17" Description="Slot Number#04"/>
+      <Bit SeqNo="18" Description="Slot Number#05"/>
+      <Bit SeqNo="19" Description="Slot Number#06"/>
+      <Bit SeqNo="20" Description="Glass Count#01"/>
+      <Bit SeqNo="21" Description="Glass Count#02"/>
+      <Bit SeqNo="22" Description="Glass Count#03"/>
+      <Bit SeqNo="23" Description="Glass Count#04"/>
+      <Bit SeqNo="24" Description="Glass Count#05"/>
+      <Bit SeqNo="25" Description="Panel Position#01"/>
+			<Bit SeqNo="26" Description="Panel Position#02"/>
+			<Bit SeqNo="27" Description="Panel Position#03"/>
+			<Bit SeqNo="28" Description="Panel Position#04"/>
+			<Bit SeqNo="29" Description="Panel Position#05"/>
+			<Bit SeqNo="30" Description="Panel Position#06"/>
+			<Bit SeqNo="31" Description="Panel Position#07"/>
+			<Bit SeqNo="32" Description="Panel Position#08"/>
+      </DownStreamBit>
+	</Type>	
+	<Type FABTYPE="CF" Name="CF_CVtoCV">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="CF" Name="CF_GetPut_RBtoST">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="09" Description="Send Job Reserve" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="09" Description="Receive Job Reserve" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+		</DownStreamBit>
+	</Type>	
+	<Type FABTYPE="CF" Name="CF_RBtoST">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="11" Description="Transfer Stop Request" />
+			<Bit SeqNo="13" Description="Glass Exist" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="CF" Name="CF_STtoRB">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+		</DownStreamBit>
+	</Type>	
+	<Type FABTYPE="CF" Name="CF_GetPut_STtoRB">	
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="07" Description="Exchange Execute" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="07" Description="Exchange Possible" />
+		</DownStreamBit>
+	</Type>		
+	<Type FABTYPE="CF" Name="CF_RBExchange_RBtoST">
+		<UpStreamBit>
+			   <Bit SeqNo="01" Description="Upstream Inline" />
+			   <Bit SeqNo="02" Description="Upstream Trouble" />
+			   <Bit SeqNo="03" Description="Send Ready" />
+			   <Bit SeqNo="04" Description="Send" />
+			   <Bit SeqNo="05" Description="Job Transfer" />
+			   <Bit SeqNo="06" Description="Send Cancel" />
+			   <Bit SeqNo="07" Description="Exchange Execute" />
+		</UpStreamBit>
+		<DownStreamBit>
+			   <Bit SeqNo="01" Description="Downstream Inline" />
+			   <Bit SeqNo="02" Description="Downstream Trouble" />
+			   <Bit SeqNo="03" Description="Receive Able" />
+			   <Bit SeqNo="04" Description="Receive" />
+			   <Bit SeqNo="05" Description="Job Transfer" />
+			   <Bit SeqNo="06" Description="Receive Cancel" />
+			   <Bit SeqNo="07" Description="Exchange Possible" />
+			   <Bit SeqNo="13" Description="Glass Exist" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="CF" Name="CF_RBExchange_STtoRB"> 
+		<UpStreamBit>
+		   <Bit SeqNo="01" Description="Upstream Inline" />
+		   <Bit SeqNo="02" Description="Upstream Trouble" />
+		   <Bit SeqNo="03" Description="Send Ready" />
+		   <Bit SeqNo="04" Description="Send" />
+		   <Bit SeqNo="06" Description="Send Cancel" />
+		   <Bit SeqNo="07" Description="Exchange Execute" />
+		</UpStreamBit>
+		<DownStreamBit>
+		   <Bit SeqNo="01" Description="Downstream Inline" />
+		   <Bit SeqNo="02" Description="Downstream Trouble" />
+		   <Bit SeqNo="03" Description="Receive Able" />
+		   <Bit SeqNo="04" Description="Receive" />
+		   <Bit SeqNo="05" Description="Job Transfer" />
+		   <Bit SeqNo="06" Description="Receive Cancel" />
+		   <Bit SeqNo="07" Description="Exchange Possible" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="CF" Name="CF_STtoRB_DualModeForOneGlass">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="CF" Name="CF_STtoRB_DualModeForOVNITO">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline" />
+			<Bit SeqNo="02" Description="Upstream Trouble" />
+			<Bit SeqNo="03" Description="Send Ready" />
+			<Bit SeqNo="04" Description="Send" />
+			<Bit SeqNo="06" Description="Send Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="10" Description="Send OK" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline" />
+			<Bit SeqNo="02" Description="Downstream Trouble" />
+			<Bit SeqNo="03" Description="Receive Able" />
+			<Bit SeqNo="04" Description="Receive" />
+			<Bit SeqNo="05" Description="Job Transfer" />
+			<Bit SeqNo="06" Description="Receive Cancel" />
+			<Bit SeqNo="08" Description="Double Glass" />
+			<Bit SeqNo="10" Description="Receive OK" />
+			<Bit SeqNo="17" Description="Slot Number#01" />
+			<Bit SeqNo="18" Description="Slot Number#02" />
+			<Bit SeqNo="19" Description="Slot Number#03" />
+			<Bit SeqNo="20" Description="Slot Number#04" />
+			<Bit SeqNo="21" Description="Slot Number#05" />
+			<Bit SeqNo="22" Description="Slot Number#06" />
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="Module" Name="Module_RBtoST(1)">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline"/>
+			<Bit SeqNo="02" Description="Upstream Trouble"/>
+			<Bit SeqNo="03" Description="Send Ready"/>
+			<Bit SeqNo="04" Description="Send"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Send Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Execute"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+			<Bit SeqNo="09" Description="Send Operation OK"/> 
+			<Bit SeqNo="10" Description="Send OK"/>
+			<Bit SeqNo="14" Description="Panel Position#01"/>
+			<Bit SeqNo="15" Description="Panel Position#02"/>
+			<Bit SeqNo="16" Description="Panel Position#03"/>
+			<Bit SeqNo="17" Description="Panel Position#04"/>
+			<Bit SeqNo="18" Description="Panel Position#05"/>
+			<Bit SeqNo="19" Description="Panel Position#06"/> 
+			<Bit SeqNo="20" Description="Panel Position#07"/>
+			<Bit SeqNo="21" Description="Panel Position#08"/>
+			<Bit SeqNo="27" Description="Slot Number#01"/>
+			<Bit SeqNo="28" Description="Slot Number#02"/>
+			<Bit SeqNo="29" Description="Slot Number#03"/>
+			<Bit SeqNo="30" Description="Slot Number#04"/>
+			<Bit SeqNo="31" Description="Slot Number#05"/>
+			<Bit SeqNo="32" Description="Slot Number#06"/>
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline"/>
+			<Bit SeqNo="02" Description="Downstream Trouble"/>
+			<Bit SeqNo="03" Description="Receive Able"/>
+			<Bit SeqNo="04" Description="Receive"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Receive Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Possible"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+			<Bit SeqNo="10" Description="Receive OK"/>
+			<Bit SeqNo="14" Description="Panel Position#01"/>
+			<Bit SeqNo="15" Description="Panel Position#02"/>
+			<Bit SeqNo="16" Description="Panel Position#03"/>
+			<Bit SeqNo="17" Description="Panel Position#04"/>
+			<Bit SeqNo="18" Description="Panel Position#05"/>
+			<Bit SeqNo="19" Description="Panel Position#06"/> 
+			<Bit SeqNo="20" Description="Panel Position#07"/>
+			<Bit SeqNo="21" Description="Panel Position#08"/>
+			<Bit SeqNo="27" Description="Slot Number#01"/>
+			<Bit SeqNo="28" Description="Slot Number#02"/>
+			<Bit SeqNo="29" Description="Slot Number#03"/>
+			<Bit SeqNo="30" Description="Slot Number#04"/>
+			<Bit SeqNo="31" Description="Slot Number#05"/>
+			<Bit SeqNo="32" Description="Slot Number#06"/>
+		</DownStreamBit>
+	</Type>
+	<Type FABTYPE="Module" Name="Module_RBtoST(2)">
+		<UpStreamBit>
+			<Bit SeqNo="01" Description="Upstream Inline"/>
+			<Bit SeqNo="02" Description="Upstream Trouble"/>
+			<Bit SeqNo="03" Description="Send Ready"/>
+			<Bit SeqNo="04" Description="Send"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Send Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Execute"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+			<Bit SeqNo="09" Description="Send Operation OK"/> 
+			<Bit SeqNo="10" Description="Send OK"/>
+			<Bit SeqNo="14" Description="Panel Position#01"/>
+			<Bit SeqNo="15" Description="Panel Position#02"/>
+			<Bit SeqNo="16" Description="Panel Position#03"/>
+			<Bit SeqNo="17" Description="Panel Position#04"/>
+			<Bit SeqNo="18" Description="Panel Position#05"/>
+			<Bit SeqNo="19" Description="Panel Position#06"/> 
+			<Bit SeqNo="20" Description="Panel Position#07"/>
+			<Bit SeqNo="21" Description="Panel Position#08"/>
+			<Bit SeqNo="27" Description="Slot Number#01"/>
+			<Bit SeqNo="28" Description="Slot Number#02"/>
+			<Bit SeqNo="29" Description="Slot Number#03"/>
+			<Bit SeqNo="30" Description="Slot Number#04"/>
+			<Bit SeqNo="31" Description="Slot Number#05"/>
+			<Bit SeqNo="32" Description="Slot Number#06"/>
+		</UpStreamBit>
+		<DownStreamBit>
+			<Bit SeqNo="01" Description="Downstream Inline"/>
+			<Bit SeqNo="02" Description="Downstream Trouble"/>
+			<Bit SeqNo="03" Description="Receive Able"/>
+			<Bit SeqNo="04" Description="Receive"/>
+			<Bit SeqNo="05" Description="Job Transfer"/>
+			<Bit SeqNo="06" Description="Receive Cancel"/>
+			<Bit SeqNo="07" Description="Exchange Possible"/>
+			<Bit SeqNo="08" Description="Double Glass"/>
+			<Bit SeqNo="10" Description="Receive OK"/>
+			<Bit SeqNo="14" Description="Panel Position#01"/>
+			<Bit SeqNo="15" Description="Panel Position#02"/>
+			<Bit SeqNo="16" Description="Panel Position#03"/>
+			<Bit SeqNo="17" Description="Panel Position#04"/>
+			<Bit SeqNo="18" Description="Panel Position#05"/>
+			<Bit SeqNo="19" Description="Panel Position#06"/> 
+			<Bit SeqNo="20" Description="Panel Position#07"/>
+			<Bit SeqNo="21" Description="Panel Position#08"/>
+			<Bit SeqNo="27" Description="Slot Number#01"/>
+			<Bit SeqNo="28" Description="Slot Number#02"/>
+			<Bit SeqNo="29" Description="Slot Number#03"/>
+			<Bit SeqNo="30" Description="Slot Number#04"/>
+			<Bit SeqNo="31" Description="Slot Number#05"/>
+			<Bit SeqNo="32" Description="Slot Number#06"/>
+		</DownStreamBit>
+	</Type>
+</LinkSignal>

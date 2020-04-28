@@ -1,0 +1,55 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.1.8.0-->
+<!--DateTime: 2016-06-22 13:55:46-->
+<itemgroup name="L2ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L2_Loader_Ver 1.0.0_20160415.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EQ_Positive_pressure" item="CDA" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="EQ_Vacuum_Pressure" item="CDA" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ESD_Monitoring" item="CDA" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L3_OHV_Ver 1.0.1_20160518.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Main_CDA_1" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Main_CDA_2" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Main_PVA" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Ionizer_use" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L4_PCN_Ver 1.0.2_20160621.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L5_PAM_Ver 1.0.2_20160603.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ESD_Monitor_1" item="ESD_Monitor_1" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ESD_Monitor_2" item="ESD_Monitor_2" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ESD_Monitor_3" item="ESD_Monitor_3" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ESD_Monitor_4" item="ESD_Monitor_4" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ESD_Monitor_5" item="ESD_Monitor_5" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ESD_Monitor_6" item="ESD_Monitor_6" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Particle_Count_1" item="Particle_Count_1" site="" woffset="10" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Particle_Count_2" item="Particle_Count_2" site="" woffset="12" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>
+<itemgroup name="L6ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L6_ACV_Ver 1.0.1_20160621.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Main_Air_Press1" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Main_Value_Press1" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Main_Value_Press2" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Main_Value_Press3" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Main_Value_Press4" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L7_LOI_Ver 1.0.0.20160331.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L8ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L8_Unloader_Ver 1.0.0_20160415.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EQ_Positive_pressure" item="CDA" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="EQ_Vacuum_Pressure" item="CDA" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ESD_Monitoring" item="CDA" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

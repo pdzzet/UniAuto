@@ -1,0 +1,2045 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2614040-64CD-4557-AAEA-8BA3A39080ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniOPI</RootNamespace>
+    <AssemblyName>UniOPI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>"%24/WHCSOT.G6C.BC/BC/UniAuto.BCS", MLWDAAAA</SccProjectName>
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>OPI.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsyncSocket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\AsyncSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\debug\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniClientTools, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\UniClientTools.dll</HintPath>
+    </Reference>
+    <Reference Include="UniLayout, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\debug\UniLayout.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Class\Entity\PIJobCount.cs" />
+    <Compile Include="Class\Message\BCS_DefectCodeReply.cs" />
+    <Compile Include="Class\Message\BCS_StagePositionInfoReply.cs" />
+    <Compile Include="Class\Message\BCS_GlassGradeMappingChangeReportReply.cs" />
+    <Compile Include="Class\Message\BCS_RealTimeGlassCountReply.cs" />
+    <Compile Include="Class\Message\BCS_EachPositionReply.cs" />
+    <Compile Include="Class\Message\BCS_EquipmentFetchGlassRuleReply.cs" />
+    <Compile Include="Class\Message\BCS_RobotOperationModeReply.cs" />
+    <Compile Include="Class\Message\BCS_IonizerFanModeReportReply.cs" />
+    <Compile Include="Class\Message\BCS_SlotPositionReply.cs" />
+    <Compile Include="Class\Entity\NLogManager.cs" />
+    <Compile Include="Class\Entity\MaterialRealWeight.cs" />
+    <Compile Include="Class\Entity\PagedGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\Entity\Robot.cs" />
+    <Compile Include="Class\Entity\Dense.cs" />
+    <Compile Include="Class\Message\BCS_EquipmentDataLinkStatusReply.cs" />
+    <Compile Include="Class\Message\BCS_EquipmentAlarmStatusReply.cs" />
+    <Compile Include="Form\Layout\FormStandByChangerPlanDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormStandByChangerPlanDetail.Designer.cs">
+      <DependentUpon>FormStandByChangerPlanDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorAPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorAPC.Designer.cs">
+      <DependentUpon>FormMonitorAPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormDenseControl_Local.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormDenseControl_Local.designer.cs">
+      <DependentUpon>FormDenseControl_Local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormDenseControl_Offline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormDenseControl_Offline.designer.cs">
+      <DependentUpon>FormDenseControl_Offline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormRobotWipCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormRobotWipCreate.Designer.cs">
+      <DependentUpon>FormRobotWipCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormParameterSetting_ELA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormParameterSetting_ELA.Designer.cs">
+      <DependentUpon>FormParameterSetting_ELA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobotRouteCurrentStepSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobotRouteCurrentStepSet.Designer.cs">
+      <DependentUpon>FormRobotRouteCurrentStepSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormRobotCommandHis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormRobotCommandHis.Designer.cs">
+      <DependentUpon>FormRobotCommandHis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormRobotStopReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormRobotStopReason.Designer.cs">
+      <DependentUpon>FormRobotStopReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobotRouteNextStepSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobotRouteNextStepSet.Designer.cs">
+      <DependentUpon>FormRobotRouteNextStepSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_RouteStep_Jump_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_RouteStep_Jump_Edit.Designer.cs">
+      <DependentUpon>FormRobot_Rule_RouteStep_Jump_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_RouteStep_ByPass_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_RouteStep_ByPass_Edit.Designer.cs">
+      <DependentUpon>FormRobot_Rule_RouteStep_ByPass_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_RouteStep_ByPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_RouteStep_ByPass.Designer.cs">
+      <DependentUpon>FormRobot_Rule_RouteStep_ByPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_RouteStep_Jump.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_RouteStep_Jump.Designer.cs">
+      <DependentUpon>FormRobot_Rule_RouteStep_Jump.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Stage_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Stage_Select.Designer.cs">
+      <DependentUpon>FormRobot_Rule_Stage_Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Stage_Select_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Stage_Select_Edit.Designer.cs">
+      <DependentUpon>FormRobot_Rule_Stage_Select_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormRobotCommandDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormRobotCommandDetail.Designer.cs">
+      <DependentUpon>FormRobotCommandDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormRobotRouteStepChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormRobotRouteStepChange.Designer.cs">
+      <DependentUpon>FormRobotRouteStepChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormRobotLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormRobotLayout.Designer.cs">
+      <DependentUpon>FormRobotLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotStageManagement_TrackingData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotStageManagement_TrackingData.Designer.cs">
+      <DependentUpon>FormRobotStageManagement_TrackingData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormUserGroupQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormUserGroupQuery.Designer.cs">
+      <DependentUpon>FormUserGroupQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRouteMSTEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRouteMSTEdit.Designer.cs">
+      <DependentUpon>FormRobotRouteMSTEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRouteMST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRouteMST.Designer.cs">
+      <DependentUpon>FormRobotRouteMST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRouteConditionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRouteConditionEdit.Designer.cs">
+      <DependentUpon>FormRobotRouteConditionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\History\FormHistory_JobDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\History\FormHistory_JobDetail.Designer.cs">
+      <DependentUpon>FormHistory_JobDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRouteCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRouteCondition.Designer.cs">
+      <DependentUpon>FormRobotRouteCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotMethodDefEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotMethodDefEdit.Designer.cs">
+      <DependentUpon>FormRobotMethodDefEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotMethodDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotMethodDef.Designer.cs">
+      <DependentUpon>FormRobotMethodDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotManagement.Designer.cs">
+      <DependentUpon>FormRobotManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormDefectCodeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormDefectCodeReport.Designer.cs">
+      <DependentUpon>FormDefectCodeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_Offline_TargetSlotNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_Offline_TargetSlotNo.Designer.cs">
+      <DependentUpon>FormCassetteControl_Offline_TargetSlotNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormRobotOperationMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormRobotOperationMode.Designer.cs">
+      <DependentUpon>FormRobotOperationMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormEquipmentFetchGlassProportional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormEquipmentFetchGlassProportional.Designer.cs">
+      <DependentUpon>FormEquipmentFetchGlassProportional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormBufferRWJudgeCapacity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormBufferRWJudgeCapacity.Designer.cs">
+      <DependentUpon>FormBufferRWJudgeCapacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormOPIMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormOPIMessage.designer.cs">
+      <DependentUpon>FormOPIMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormUnloadingPortSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormUnloadingPortSetting.Designer.cs">
+      <DependentUpon>FormUnloadingPortSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormProductTypeBlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormProductTypeBlock.Designer.cs">
+      <DependentUpon>FormProductTypeBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormQuectionMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormQuectionMessage.Designer.cs">
+      <DependentUpon>FormQuectionMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormBCControlLastCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormBCControlLastCommand.Designer.cs">
+      <DependentUpon>FormBCControlLastCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormRemoteDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormRemoteDevice.designer.cs">
+      <DependentUpon>FormRemoteDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormIncompleteBoxNameEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormIncompleteBoxNameEdit.Designer.cs">
+      <DependentUpon>FormIncompleteBoxNameEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormIncompleteBoxDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormIncompleteBoxDataEdit.Designer.cs">
+      <DependentUpon>FormIncompleteBoxDataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormIncompleteCassetteDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormIncompleteCassetteDataEdit.Designer.cs">
+      <DependentUpon>FormIncompleteCassetteDataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormIncompleteCSTResend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormIncompleteCSTResend.Designer.cs">
+      <DependentUpon>FormIncompleteCSTResend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormShowMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormShowMessage.Designer.cs">
+      <DependentUpon>FormShowMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormStagePositionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormStagePositionInfo.Designer.cs">
+      <DependentUpon>FormStagePositionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormTrackTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormTrackTime.Designer.cs">
+      <DependentUpon>FormTrackTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormForceCleanOutReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormForceCleanOutReport.Designer.cs">
+      <DependentUpon>FormForceCleanOutReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormRBRouteInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormRBRouteInfo.Designer.cs">
+      <DependentUpon>FormRBRouteInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRecipeParameterManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRecipeParameterManagement.Designer.cs">
+      <DependentUpon>FormRecipeParameterManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRecipeParameterManagementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRecipeParameterManagementEdit.Designer.cs">
+      <DependentUpon>FormRecipeParameterManagementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorEnergyVisualization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorEnergyVisualization.Designer.cs">
+      <DependentUpon>FormMonitorEnergyVisualization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormWIPDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormWIPDelete.Designer.cs">
+      <DependentUpon>FormWIPDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormRecipeRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormRecipeRegister.Designer.cs">
+      <DependentUpon>FormRecipeRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormDenseControl_Local_PPK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormDenseControl_Local_PPK.Designer.cs">
+      <DependentUpon>FormDenseControl_Local_PPK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormDenseControl_Offline_PPK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormDenseControl_Offline_PPK.Designer.cs">
+      <DependentUpon>FormDenseControl_Offline_PPK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormPalletControl_Local.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormPalletControl_Local.Designer.cs">
+      <DependentUpon>FormPalletControl_Local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormPalletControl_Offline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormPalletControl_Offline.Designer.cs">
+      <DependentUpon>FormPalletControl_Offline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormRealJobCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormRealJobCount.Designer.cs">
+      <DependentUpon>FormRealJobCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormSlotPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormSlotPosition.Designer.cs">
+      <DependentUpon>FormSlotPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCimMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCimMessage.designer.cs">
+      <DependentUpon>FormCimMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormParamManagementEdit_SelectReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormParamManagementEdit_SelectReport.Designer.cs">
+      <DependentUpon>FormParamManagementEdit_SelectReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormPortStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormPortStatus.Designer.cs">
+      <DependentUpon>FormPortStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormSECSControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormSECSControl.Designer.cs">
+      <DependentUpon>FormSECSControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormIndexerControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormIndexerControl.Designer.cs">
+      <DependentUpon>FormIndexerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormBCControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormBCControl.Designer.cs">
+      <DependentUpon>FormBCControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormChangerPlanDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormChangerPlanDetail.Designer.cs">
+      <DependentUpon>FormChangerPlanDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteCommand_PortCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteCommand_PortCount.Designer.cs">
+      <DependentUpon>FormCassetteCommand_PortCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_Local.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_Local.Designer.cs">
+      <DependentUpon>FormCassetteControl_Local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormTraceSocket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTraceSocket.Designer.cs">
+      <DependentUpon>FormTraceSocket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormTrxTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTrxTest.Designer.cs">
+      <DependentUpon>FormTrxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_OXR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_OXR.Designer.cs">
+      <DependentUpon>FormCassetteControl_OXR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_JobExistenceSlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_JobExistenceSlot.Designer.cs">
+      <DependentUpon>FormCassetteControl_JobExistenceSlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_Offline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_Offline.Designer.cs">
+      <DependentUpon>FormCassetteControl_Offline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_RecipeChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_RecipeChange.Designer.cs">
+      <DependentUpon>FormCassetteControl_RecipeChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorPLC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorPLC.Designer.cs">
+      <DependentUpon>FormMonitorPLC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRuleJobSelectEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRuleJobSelectEdit.Designer.cs">
+      <DependentUpon>FormRobotRuleJobSelectEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRuleJobSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotRuleJobSelect.Designer.cs">
+      <DependentUpon>FormRobotRuleJobSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotStageManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotStageManagement.designer.cs">
+      <DependentUpon>FormRobotStageManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotStageManagementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormRobotStageManagementEdit.designer.cs">
+      <DependentUpon>FormRobotStageManagementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Filter_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Filter_Edit.Designer.cs">
+      <DependentUpon>FormRobot_Rule_Filter_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRecipeManagement_NodeParameterCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRecipeManagement_NodeParameterCheck.Designer.cs">
+      <DependentUpon>FormRecipeManagement_NodeParameterCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormRobotControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormRobotControl.Designer.cs">
+      <DependentUpon>FormRobotControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRecipeManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRecipeManagement.Designer.cs">
+      <DependentUpon>FormRecipeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRecipeManagement_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRecipeManagement_Edit.Designer.cs">
+      <DependentUpon>FormRecipeManagement_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRecipeManagement_NodeRecipeCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRecipeManagement_NodeRecipeCheck.Designer.cs">
+      <DependentUpon>FormRecipeManagement_NodeRecipeCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_CuttingRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_CuttingRecipe.Designer.cs">
+      <DependentUpon>FormCassetteControl_CuttingRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_ProductType_Array.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_ProductType_Array.Designer.cs">
+      <DependentUpon>FormCassetteControl_ProductType_Array.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_RecipeCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_RecipeCheck.Designer.cs">
+      <DependentUpon>FormCassetteControl_RecipeCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_FlowPriorityInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_FlowPriorityInfo.Designer.cs">
+      <DependentUpon>FormCassetteControl_FlowPriorityInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormChangerPlanEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormChangerPlanEdit.Designer.cs">
+      <DependentUpon>FormChangerPlanEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormChangerPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormChangerPlan.Designer.cs">
+      <DependentUpon>FormChangerPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormIonizerFanMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormIonizerFanMode.designer.cs">
+      <DependentUpon>FormIonizerFanMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormLinkStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormLinkStatus.Designer.cs">
+      <DependentUpon>FormLinkStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormSECSVariableManagementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormSECSVariableManagementEdit.Designer.cs">
+      <DependentUpon>FormSECSVariableManagementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormSECSVariableManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormSECSVariableManagement.Designer.cs">
+      <DependentUpon>FormSECSVariableManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControlSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControlSub.Designer.cs">
+      <DependentUpon>FormCassetteControlSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormJobDataDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormJobDataDetail.Designer.cs">
+      <DependentUpon>FormJobDataDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormPasswordConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormPasswordConfirm.Designer.cs">
+      <DependentUpon>FormPasswordConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_RecipeChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_RecipeChoose.Designer.cs">
+      <DependentUpon>FormCassetteControl_RecipeChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormSelectItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormSelectItem.designer.cs">
+      <DependentUpon>FormSelectItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\History\FormProcessDataHistoryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\History\FormProcessDataHistoryDetail.designer.cs">
+      <DependentUpon>FormProcessDataHistoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormLineStatusRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormLineStatusRule.Designer.cs">
+      <DependentUpon>FormLineStatusRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormLineStatusRuleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormLineStatusRuleEdit.designer.cs">
+      <DependentUpon>FormLineStatusRuleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRecipeManagement_Sync.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRecipeManagement_Sync.Designer.cs">
+      <DependentUpon>FormRecipeManagement_Sync.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobotRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobotRoute.designer.cs">
+      <DependentUpon>FormRobotRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormSkipReportSettingEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormSkipReportSettingEdit.Designer.cs">
+      <DependentUpon>FormSkipReportSettingEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormSubBlockEQSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormSubBlockEQSelect.designer.cs">
+      <DependentUpon>FormSubBlockEQSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormSubBlockEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormSubBlockEdit.designer.cs">
+      <DependentUpon>FormSubBlockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Entity\Pallet.cs" />
+    <Compile Include="Class\Entity\Interface.cs" />
+    <Compile Include="Form\Setting\FormUserChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormUserChangePassword.designer.cs">
+      <DependentUpon>FormUserChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormUserQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormUserQuery.Designer.cs">
+      <DependentUpon>FormUserQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Message\BCS_ProductTypeInfoRequestReply.cs" />
+    <Compile Include="Form\Setting\FormRobot_Rule_Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Filter.Designer.cs">
+      <DependentUpon>FormRobot_Rule_Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Orderby.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Orderby.Designer.cs">
+      <DependentUpon>FormRobot_Rule_Orderby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Orderby_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Rule_Orderby_Edit.Designer.cs">
+      <DependentUpon>FormRobot_Rule_Orderby_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Poc_Result_Handle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Poc_Result_Handle.Designer.cs">
+      <DependentUpon>FormRobot_Poc_Result_Handle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Poc_Result_Handle_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormRobot_Poc_Result_Handle_Edit.Designer.cs">
+      <DependentUpon>FormRobot_Poc_Result_Handle_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\CHS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHS.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Entity\CustButton.cs" />
+    <Compile Include="Class\ConfigXML.cs" />
+    <Compile Include="Class\DBConfigXML.cs" />
+    <Compile Include="Class\HisTableParam.cs" />
+    <Compile Include="Class\UniTools.cs" />
+    <Compile Include="Properties\ENG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ENG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormClientStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormClientStatus.Designer.cs">
+      <DependentUpon>FormClientStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMaterialStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMaterialStatus.Designer.cs">
+      <DependentUpon>FormMaterialStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorDailyCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorDailyCheck.Designer.cs">
+      <DependentUpon>FormMonitorDailyCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormLineControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormLineControl.Designer.cs">
+      <DependentUpon>FormLineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormNodeControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormNodeControl.Designer.cs">
+      <DependentUpon>FormNodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormPortControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormPortControl.Designer.cs">
+      <DependentUpon>FormPortControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAPCDownloadManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAPCDownloadManagement.Designer.cs">
+      <DependentUpon>FormAPCDownloadManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAPCDownloadManagementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAPCDownloadManagementEdit.Designer.cs">
+      <DependentUpon>FormAPCDownloadManagementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAPCReportManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAPCReportManagement.Designer.cs">
+      <DependentUpon>FormAPCReportManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAPCReportManagementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAPCReportManagementEdit.Designer.cs">
+      <DependentUpon>FormAPCReportManagementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormDailyCheckManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormDailyCheckManagement.Designer.cs">
+      <DependentUpon>FormDailyCheckManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormDailyCheckManagementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormDailyCheckManagementEdit.Designer.cs">
+      <DependentUpon>FormDailyCheckManagementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormEnergyVisualizationManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormEnergyVisualizationManagement.Designer.cs">
+      <DependentUpon>FormEnergyVisualizationManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormEnergyVisualizationManagementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormEnergyVisualizationManagementEdit.Designer.cs">
+      <DependentUpon>FormEnergyVisualizationManagementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormParamManagementBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormParamManagementBase.Designer.cs">
+      <DependentUpon>FormParamManagementBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormParamManagementBaseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormParamManagementBaseEdit.Designer.cs">
+      <DependentUpon>FormParamManagementBaseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormProcessDataManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormProcessDataManagement.Designer.cs">
+      <DependentUpon>FormProcessDataManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormProcessDataManagementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormProcessDataManagementEdit.Designer.cs">
+      <DependentUpon>FormProcessDataManagementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormQTimeSettingEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormQTimeSettingEdit.designer.cs">
+      <DependentUpon>FormQTimeSettingEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Entity\Recipe.cs" />
+    <Compile Include="Class\Entity\UserAccount.cs" />
+    <Compile Include="UserControls\ucFlowPriority.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFlowPriority.Designer.cs">
+      <DependentUpon>ucFlowPriority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucOXRInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucOXRInfo.Designer.cs">
+      <DependentUpon>ucOXRInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSemiCommand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSemiCommand.designer.cs">
+      <DependentUpon>ucSemiCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTextBox_Normal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTextBox_Normal.Designer.cs">
+      <DependentUpon>ucTextBox_Normal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucComBox_Node.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucComBox_Node.Designer.cs">
+      <DependentUpon>ucComBox_Node.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucComBox_His.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucComBox_His.Designer.cs">
+      <DependentUpon>ucComBox_His.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucJobData_CheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucJobData_CheckBox.designer.cs">
+      <DependentUpon>ucJobData_CheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTextBox_His.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTextBox_His.Designer.cs">
+      <DependentUpon>ucTextBox_His.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcAutoButtons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcAutoButtons.designer.cs">
+      <DependentUpon>UcAutoButtons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniBCS.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UniBCS.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormEachPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormEachPosition.Designer.cs">
+      <DependentUpon>FormEachPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAlarmManagementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAlarmManagementEdit.Designer.cs">
+      <DependentUpon>FormAlarmManagementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormParameterSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormParameterSetting.Designer.cs">
+      <DependentUpon>FormParameterSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormQTimeSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormQTimeSetting.Designer.cs">
+      <DependentUpon>FormQTimeSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormSkipReportSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormSkipReportSetting.Designer.cs">
+      <DependentUpon>FormSkipReportSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAlarmManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Parameter\FormAlarmManagement.Designer.cs">
+      <DependentUpon>FormAlarmManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\History\FormProcessDataHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\History\FormProcessDataHistory.Designer.cs">
+      <DependentUpon>FormProcessDataHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\History\FormHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\History\FormHistory.Designer.cs">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Setting\FormSamplingRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormSamplingRule.Designer.cs">
+      <DependentUpon>FormSamplingRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormInterface.Designer.cs">
+      <DependentUpon>FormInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormTimingChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormTimingChart.Designer.cs">
+      <DependentUpon>FormTimingChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Socket\MessageRequest.cs" />
+    <Compile Include="Class\Socket\MessageResponse.cs" />
+    <Compile Include="Class\Socket\AsyncResult.cs" />
+    <Compile Include="Class\Socket\AbstractMessageDriver.cs" />
+    <Compile Include="Form\Setting\FormSubBlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Setting\FormSubBlock.Designer.cs">
+      <DependentUpon>FormSubBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_SubJobItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Operation\FormCassetteControl_SubJobItem.Designer.cs">
+      <DependentUpon>FormCassetteControl_SubJobItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormAlarmStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormAlarmStatus.Designer.cs">
+      <DependentUpon>FormAlarmStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormBcMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormBcMessage.Designer.cs">
+      <DependentUpon>FormBcMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorEDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorEDC.Designer.cs">
+      <DependentUpon>FormMonitorEDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormLayout.Designer.cs">
+      <DependentUpon>FormLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormMainMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMainMDI.Designer.cs">
+      <DependentUpon>FormMainMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormMonitorRecipe.Designer.cs">
+      <DependentUpon>FormMonitorRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitor\FormNodeStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitor\FormNodeStatus.Designer.cs">
+      <DependentUpon>FormNodeStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\OPIInfo.cs" />
+    <Compile Include="Class\Entity\Line.cs" />
+    <Compile Include="Class\Entity\Node.cs" />
+    <Compile Include="Class\Entity\Port.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Class\Socket\MessageDriver.cs" />
+    <Compile Include="Class\OPIConstant.cs" />
+    <Compile Include="Class\Entity\Unit.cs" />
+    <Compile Include="UserControls\ucRBMethod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucRBMethod.designer.cs">
+      <DependentUpon>ucRBMethod.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\Layout\FormRobotCommandHis.resx">
+      <DependentUpon>FormRobotCommandHis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Layout\FormStandByChangerPlanDetail.resx">
+      <DependentUpon>FormStandByChangerPlanDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormMonitorAPC.resx">
+      <DependentUpon>FormMonitorAPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormDenseControl_Local.resx">
+      <DependentUpon>FormDenseControl_Local.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormDenseControl_Offline.resx">
+      <DependentUpon>FormDenseControl_Offline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormRobotStopReason.resx">
+      <DependentUpon>FormRobotStopReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormRobotWipCreate.resx">
+      <DependentUpon>FormRobotWipCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormParameterSetting_ELA.resx">
+      <DependentUpon>FormParameterSetting_ELA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobotRouteCurrentStepSet.resx">
+      <DependentUpon>FormRobotRouteCurrentStepSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobotRouteNextStepSet.resx">
+      <DependentUpon>FormRobotRouteNextStepSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormOPIMessage.resx">
+      <DependentUpon>FormOPIMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\History\FormHistory_JobDetail.resx">
+      <DependentUpon>FormHistory_JobDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Layout\FormRobotCommandDetail.resx">
+      <DependentUpon>FormRobotCommandDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Layout\FormRobotLayout.resx">
+      <DependentUpon>FormRobotLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormDefectCodeReport.resx">
+      <DependentUpon>FormDefectCodeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormBufferRWJudgeCapacity.resx">
+      <DependentUpon>FormBufferRWJudgeCapacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_Offline_TargetSlotNo.resx">
+      <DependentUpon>FormCassetteControl_Offline_TargetSlotNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormEquipmentFetchGlassProportional.resx">
+      <DependentUpon>FormEquipmentFetchGlassProportional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormRobotOperationMode.resx">
+      <DependentUpon>FormRobotOperationMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormRobotRouteStepChange.resx">
+      <DependentUpon>FormRobotRouteStepChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormUnloadingPortSetting.resx">
+      <DependentUpon>FormUnloadingPortSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormBCControlLastCommand.resx">
+      <DependentUpon>FormBCControlLastCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormQuectionMessage.resx">
+      <DependentUpon>FormQuectionMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Layout\FormRBRouteInfo.resx">
+      <DependentUpon>FormRBRouteInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormRemoteDevice.resx">
+      <DependentUpon>FormRemoteDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormShowMessage.resx">
+      <DependentUpon>FormShowMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Layout\FormStagePositionInfo.resx">
+      <DependentUpon>FormStagePositionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormMonitorEnergyVisualization.resx">
+      <DependentUpon>FormMonitorEnergyVisualization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormProductTypeBlock.resx">
+      <DependentUpon>FormProductTypeBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormIncompleteBoxDataEdit.resx">
+      <DependentUpon>FormIncompleteBoxDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormIncompleteBoxNameEdit.resx">
+      <DependentUpon>FormIncompleteBoxNameEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormIncompleteCassetteDataEdit.resx">
+      <DependentUpon>FormIncompleteCassetteDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormIncompleteCSTResend.resx">
+      <DependentUpon>FormIncompleteCSTResend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormTrackTime.resx">
+      <DependentUpon>FormTrackTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRecipeParameterManagement.resx">
+      <DependentUpon>FormRecipeParameterManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRecipeParameterManagementEdit.resx">
+      <DependentUpon>FormRecipeParameterManagementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotManagement.resx">
+      <DependentUpon>FormRobotManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotMethodDef.resx">
+      <DependentUpon>FormRobotMethodDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotMethodDefEdit.resx">
+      <DependentUpon>FormRobotMethodDefEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotRouteCondition.resx">
+      <DependentUpon>FormRobotRouteCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotRouteConditionEdit.resx">
+      <DependentUpon>FormRobotRouteConditionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotRouteMST.resx">
+      <DependentUpon>FormRobotRouteMST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotRouteMSTEdit.resx">
+      <DependentUpon>FormRobotRouteMSTEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotRuleJobSelectEdit.resx">
+      <DependentUpon>FormRobotRuleJobSelectEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotRuleJobSelect.resx">
+      <DependentUpon>FormRobotRuleJobSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotStageManagement.resx">
+      <DependentUpon>FormRobotStageManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotStageManagementEdit.resx">
+      <DependentUpon>FormRobotStageManagementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormRobotStageManagement_TrackingData.resx">
+      <DependentUpon>FormRobotStageManagement_TrackingData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Rule_RouteStep_ByPass.resx">
+      <DependentUpon>FormRobot_Rule_RouteStep_ByPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Rule_RouteStep_ByPass_Edit.resx">
+      <DependentUpon>FormRobot_Rule_RouteStep_ByPass_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Rule_RouteStep_Jump.resx">
+      <DependentUpon>FormRobot_Rule_RouteStep_Jump.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Rule_RouteStep_Jump_Edit.resx">
+      <DependentUpon>FormRobot_Rule_RouteStep_Jump_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Rule_Filter_Edit.resx">
+      <DependentUpon>FormRobot_Rule_Filter_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobotRoute.resx">
+      <DependentUpon>FormRobotRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Rule_Stage_Select.resx">
+      <DependentUpon>FormRobot_Rule_Stage_Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Rule_Stage_Select_Edit.resx">
+      <DependentUpon>FormRobot_Rule_Stage_Select_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormUserChangePassword.resx">
+      <DependentUpon>FormUserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Rule_Filter.resx">
+      <DependentUpon>FormRobot_Rule_Filter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Rule_Orderby.resx">
+      <DependentUpon>FormRobot_Rule_Orderby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Rule_Orderby_Edit.resx">
+      <DependentUpon>FormRobot_Rule_Orderby_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Poc_Result_Handle.resx">
+      <DependentUpon>FormRobot_Poc_Result_Handle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRobot_Poc_Result_Handle_Edit.resx">
+      <DependentUpon>FormRobot_Poc_Result_Handle_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormUserGroupQuery.resx">
+      <DependentUpon>FormUserGroupQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucFlowPriority.resx">
+      <DependentUpon>ucFlowPriority.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucOXRInfo.resx">
+      <DependentUpon>ucOXRInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSemiCommand.resx">
+      <DependentUpon>ucSemiCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTextBox_Normal.resx">
+      <DependentUpon>ucTextBox_Normal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucRBMethod.resx">
+      <DependentUpon>ucRBMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Resources\ArrowLeft_32.png" />
+    <None Include="Resources\ArrowRight_32.png" />
+    <None Include="UniBCS.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>UniBCS.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="Form\Layout\FormChangerPlanDetail.resx">
+      <DependentUpon>FormChangerPlanDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormForceCleanOutReport.resx">
+      <DependentUpon>FormForceCleanOutReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormRecipeRegister.resx">
+      <DependentUpon>FormRecipeRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormDenseControl_Local_PPK.resx">
+      <DependentUpon>FormDenseControl_Local_PPK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormDenseControl_Offline_PPK.resx">
+      <DependentUpon>FormDenseControl_Offline_PPK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormPortStatus.resx">
+      <DependentUpon>FormPortStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormRealJobCount.resx">
+      <DependentUpon>FormRealJobCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormSlotPosition.resx">
+      <DependentUpon>FormSlotPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCimMessage.resx">
+      <DependentUpon>FormCimMessage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormPalletControl_Local.resx">
+      <DependentUpon>FormPalletControl_Local.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormPalletControl_Offline.resx">
+      <DependentUpon>FormPalletControl_Offline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormSECSControl.resx">
+      <DependentUpon>FormSECSControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormBCControl.resx">
+      <DependentUpon>FormBCControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteCommand_PortCount.resx">
+      <DependentUpon>FormCassetteCommand_PortCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormTraceSocket.resx">
+      <DependentUpon>FormTraceSocket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormTrxTest.resx">
+      <DependentUpon>FormTrxTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_JobExistenceSlot.resx">
+      <DependentUpon>FormCassetteControl_JobExistenceSlot.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormMonitorPLC.resx">
+      <DependentUpon>FormMonitorPLC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_Local.resx">
+      <DependentUpon>FormCassetteControl_Local.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_Offline.resx">
+      <DependentUpon>FormCassetteControl_Offline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_OXR.resx">
+      <DependentUpon>FormCassetteControl_OXR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_RecipeChange.resx">
+      <DependentUpon>FormCassetteControl_RecipeChange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormIndexerControl.resx">
+      <DependentUpon>FormIndexerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormRobotControl.resx">
+      <DependentUpon>FormRobotControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormWIPDelete.resx">
+      <DependentUpon>FormWIPDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormParamManagementEdit_SelectReport.resx">
+      <DependentUpon>FormParamManagementEdit_SelectReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRecipeManagement.resx">
+      <DependentUpon>FormRecipeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRecipeManagement_Edit.resx">
+      <DependentUpon>FormRecipeManagement_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRecipeManagement_NodeParameterCheck.resx">
+      <DependentUpon>FormRecipeManagement_NodeParameterCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRecipeManagement_NodeRecipeCheck.resx">
+      <DependentUpon>FormRecipeManagement_NodeRecipeCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormIonizerFanMode.resx">
+      <DependentUpon>FormIonizerFanMode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormLinkStatus.resx">
+      <DependentUpon>FormLinkStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControlSub.resx">
+      <DependentUpon>FormCassetteControlSub.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Layout\FormJobDataDetail.resx">
+      <DependentUpon>FormJobDataDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormPasswordConfirm.resx">
+      <DependentUpon>FormPasswordConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_RecipeChoose.resx">
+      <DependentUpon>FormCassetteControl_RecipeChoose.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormSelectItem.resx">
+      <DependentUpon>FormSelectItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\History\FormProcessDataHistoryDetail.resx">
+      <DependentUpon>FormProcessDataHistoryDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_CuttingRecipe.resx">
+      <DependentUpon>FormCassetteControl_CuttingRecipe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_ProductType_Array.resx">
+      <DependentUpon>FormCassetteControl_ProductType_Array.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_RecipeCheck.resx">
+      <DependentUpon>FormCassetteControl_RecipeCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_FlowPriorityInfo.resx">
+      <DependentUpon>FormCassetteControl_FlowPriorityInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormAPCDownloadManagement.resx">
+      <DependentUpon>FormAPCDownloadManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormAPCDownloadManagementEdit.resx">
+      <DependentUpon>FormAPCDownloadManagementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormAPCReportManagement.resx">
+      <DependentUpon>FormAPCReportManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormAPCReportManagementEdit.resx">
+      <DependentUpon>FormAPCReportManagementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormDailyCheckManagement.resx">
+      <DependentUpon>FormDailyCheckManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormDailyCheckManagementEdit.resx">
+      <DependentUpon>FormDailyCheckManagementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormEnergyVisualizationManagement.resx">
+      <DependentUpon>FormEnergyVisualizationManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormEnergyVisualizationManagementEdit.resx">
+      <DependentUpon>FormEnergyVisualizationManagementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormProcessDataManagement.resx">
+      <DependentUpon>FormProcessDataManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormProcessDataManagementEdit.resx">
+      <DependentUpon>FormProcessDataManagementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormSECSVariableManagementEdit.resx">
+      <DependentUpon>FormSECSVariableManagementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormSECSVariableManagement.resx">
+      <DependentUpon>FormSECSVariableManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormChangerPlan.resx">
+      <DependentUpon>FormChangerPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormChangerPlanEdit.resx">
+      <DependentUpon>FormChangerPlanEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormLineStatusRule.resx">
+      <DependentUpon>FormLineStatusRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormLineStatusRuleEdit.resx">
+      <DependentUpon>FormLineStatusRuleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormRecipeManagement_Sync.resx">
+      <DependentUpon>FormRecipeManagement_Sync.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormSkipReportSettingEdit.resx">
+      <DependentUpon>FormSkipReportSettingEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormSubBlockEQSelect.resx">
+      <DependentUpon>FormSubBlockEQSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormSubBlockEdit.resx">
+      <DependentUpon>FormSubBlockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormUserQuery.resx">
+      <DependentUpon>FormUserQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\CHS.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CHS.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ENG.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ENG.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormClientStatus.resx">
+      <DependentUpon>FormClientStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormEachPosition.resx">
+      <DependentUpon>FormEachPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="UniBCS.dbml.layout">
+      <DependentUpon>UniBCS.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Form\Monitor\FormMaterialStatus.resx">
+      <DependentUpon>FormMaterialStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormMonitorDailyCheck.resx">
+      <DependentUpon>FormMonitorDailyCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormLineControl.resx">
+      <DependentUpon>FormLineControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormNodeControl.resx">
+      <DependentUpon>FormNodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormPortControl.resx">
+      <DependentUpon>FormPortControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormParamManagementBase.resx">
+      <DependentUpon>FormParamManagementBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormParamManagementBaseEdit.resx">
+      <DependentUpon>FormParamManagementBaseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormQTimeSettingEdit.resx">
+      <DependentUpon>FormQTimeSettingEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucComBox_His.resx">
+      <DependentUpon>ucComBox_His.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucComBox_Node.resx">
+      <DependentUpon>ucComBox_Node.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucJobData_CheckBox.resx">
+      <DependentUpon>ucJobData_CheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTextBox_His.resx">
+      <DependentUpon>ucTextBox_His.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcAutoButtons.resx">
+      <DependentUpon>UcAutoButtons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormAlarmManagementEdit.resx">
+      <DependentUpon>FormAlarmManagementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormParameterSetting.resx">
+      <DependentUpon>FormParameterSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormQTimeSetting.resx">
+      <DependentUpon>FormQTimeSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormSamplingRule.resx">
+      <DependentUpon>FormSamplingRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormSkipReportSetting.resx">
+      <DependentUpon>FormSkipReportSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\History\FormHistory.resx">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\History\FormProcessDataHistory.resx">
+      <DependentUpon>FormProcessDataHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Layout\FormInterface.resx">
+      <DependentUpon>FormInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Layout\FormTimingChart.resx">
+      <DependentUpon>FormTimingChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Operation\FormCassetteControl_SubJobItem.resx">
+      <DependentUpon>FormCassetteControl_SubJobItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Parameter\FormAlarmManagement.resx">
+      <DependentUpon>FormAlarmManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormAlarmStatus.resx">
+      <DependentUpon>FormAlarmStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormBcMessage.resx">
+      <DependentUpon>FormBcMessage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Layout\FormLayout.resx">
+      <DependentUpon>FormLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormMainMDI.resx">
+      <DependentUpon>FormMainMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormMonitorEDC.resx">
+      <DependentUpon>FormMonitorEDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormNodeStatus.resx">
+      <DependentUpon>FormNodeStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitor\FormMonitorRecipe.resx">
+      <DependentUpon>FormMonitorRecipe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Setting\FormSubBlock.resx">
+      <DependentUpon>FormSubBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonMemu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgHeader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonShortCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonTmp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Message\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnHistory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnLayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnMonitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnOperation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRefresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgLayout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgTitle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B_Title_Left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg_Left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg_Main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg_Main_Left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layout_PortLC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layout_PortLR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layout_PortUC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layout_PortUR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laayout_StageTurn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layout_StageFixed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnAlarmStatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnBCMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEDC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnJobCount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnNetAlive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRecipeID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRecipePara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnUtility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnCIMMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnEQPCIM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnIndexer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnLineControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnPortCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnTimeCalib.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnTrackout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnLineStatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRecipeMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSubBlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnUserGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnUserSetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnParameter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg_LoginInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CSOT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg_Login_Info.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-info-bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CSOT-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CSOT-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OPI-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OPI-64.ico" />
+    <Content Include="OPI.ico" />
+    <None Include="Resources\BtnHelp.png" />
+    <None Include="Resources\CSTTray_UR.png" />
+    <None Include="Resources\CSTTray_UC.png" />
+    <None Include="Resources\CSTTray_NONE.png" />
+    <None Include="Resources\CSTTray_LR.png" />
+    <None Include="Resources\CSTTray_LC.png" />
+    <None Include="Resources\CSTMPortr_UR.png" />
+    <None Include="Resources\CSTMPortr_UC.png" />
+    <None Include="Resources\CSTMPortr_NONE.png" />
+    <None Include="Resources\CSTMPortr_LR.png" />
+    <None Include="Resources\CSTMPortr_LC.png" />
+    <None Include="Resources\Layout_Trolley_Track.png" />
+    <None Include="Resources\Layout_Conveyor2_1.png" />
+    <None Include="Resources\Layout_Conveyor1_1.png" />
+    <None Include="Resources\line3.png" />
+    <None Include="Resources\Dense_NONE.png" />
+    <None Include="Resources\CSTWire_NONE.png" />
+    <None Include="Resources\CSTNormal_NONE.png" />
+    <None Include="Resources\CSTCell_NONE.png" />
+    <None Include="Resources\CSTBuffer_NONE.png" />
+    <None Include="Resources\Layout_SingleArm.png" />
+    <None Include="Resources\Layout_DoubleArm.png" />
+    <None Include="Resources\SetOne.png" />
+    <None Include="Resources\SetAll.png" />
+    <None Include="Resources\Layout_Trolley.png" />
+    <None Include="Resources\Layout_Pallet .png" />
+    <None Include="Resources\CSTBuffer_UR.png" />
+    <None Include="Resources\CSTBuffer_UC.png" />
+    <None Include="Resources\CSTBuffer_LR.png" />
+    <None Include="Resources\CSTBuffer_LC.png" />
+    <None Include="Resources\Dense_UR.png" />
+    <None Include="Resources\Dense_UC.png" />
+    <None Include="Resources\Dense_LR.png" />
+    <None Include="Resources\Dense_LC.png" />
+    <None Include="Resources\CSTWire_UR.png" />
+    <None Include="Resources\CSTWire_UC.png" />
+    <None Include="Resources\CSTWire_LR.png" />
+    <None Include="Resources\CSTWire_LC.png" />
+    <None Include="Resources\CSTNormal_UR.png" />
+    <None Include="Resources\CSTNormal_UC.png" />
+    <None Include="Resources\CSTNormal_LR.png" />
+    <None Include="Resources\CSTNormal_LC.png" />
+    <None Include="Resources\CSTCell_UR.png" />
+    <None Include="Resources\CSTCell_UC.png" />
+    <None Include="Resources\CSTCell_LR.png" />
+    <None Include="Resources\CSTCell_LC.png" />
+    <None Include="Resources\Layout_VCROn.png" />
+    <None Include="Resources\Layout_VCROff.png" />
+    <None Include="Resources\Bit_Sliver.png" />
+    <None Include="Resources\Bit_Red.png" />
+    <None Include="Resources\Bit_Green.png" />
+    <None Include="Resources\Bit_Bule.png" />
+    <None Include="Resources\Layout_StageTurnOver_ON.png" />
+    <None Include="Resources\Layout_StageTurnOver_OFF.png" />
+    <None Include="Resources\Layout_StageTurn_ON.png" />
+    <None Include="Resources\Layout_StageTurn_OFF.png" />
+    <None Include="Resources\UniBCM.png" />
+    <None Include="Resources\Layout_StageTurnOver.png" />
+    <None Include="Resources\Layout_StageTurn.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\BtnBackground_Normal.jpg" />
+    <None Include="Resources\Layout_Conveyor2.png" />
+    <None Include="Resources\Layout_Conveyor1.png" />
+    <None Include="Resources\Robot_DoubleArm.png" />
+    <None Include="Resources\Btngroup.png" />
+    <None Include="Resources\BtnDB.png" />
+    <None Include="Resources\BtnTimingChart.png" />
+    <None Include="Resources\CVtoCV.png" />
+    <None Include="Resources\BtnRefresh.png" />
+    <None Include="Resources\BtnSave.png" />
+    <None Include="Resources\BtnOK.png" />
+    <None Include="Resources\BtnImport.png" />
+    <None Include="Resources\BtnExport.png" />
+    <None Include="Resources\BtnEdit.png" />
+    <None Include="Resources\BtnDelete.png" />
+    <None Include="Resources\BtnCancel.png" />
+    <None Include="Resources\BtnAdd.png" />
+    <None Include="Resources\BtnQuery.png" />
+    <None Include="Resources\ButtonSpecial.jpg" />
+    <None Include="Resources\ButtonNormal.jpg" />
+    <None Include="Resources\ButtonNone.jpg" />
+    <None Include="Resources\LanguageB.png" />
+    <None Include="Resources\user-02.png" />
+    <None Include="Resources\exit-02.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\Bg_Login.jpg" />
+    <None Include="Resources\Login_UniOPI.png" />
+    <None Include="Resources\Bg_BaseCaption.png" />
+    <None Include="Resources\line2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\UniAuto.UniBCS\UniAuto.UniBCS.Entity\UniAuto.UniBCS.Entity.csproj">
+      <Project>{D8255DBB-D5B9-4654-BD15-2A6A7130500D}</Project>
+      <Name>UniAuto.UniBCS.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\UniAuto.UniBCS.OpiSpec.csproj">
+      <Project>{621B0C6D-25B7-477A-B22C-C86A3624EE67}</Project>
+      <Name>UniAuto.UniBCS.OpiSpec</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,212 @@
+<message name="PLC_RobotStatusBlock">
+  <object id="RobotService" method="RobotStatusBlock" />
+</message>
+<message name="PLC_RobotCurrentPositionReportBlock">
+  <object id="RobotService" method="RobotCurrentPositionReportBlock" />
+</message>
+<message name="PLC_Arm#01SingleSubstrateInfoBlock">
+  <object id="RobotService" method="SingleSubstrateInfoBlock" />
+</message>
+<message name="PLC_Arm#02SingleSubstrateInfoBlock">
+  <object id="RobotService" method="SingleSubstrateInfoBlock" />
+</message>
+<message name="PLC_Arm#01DoubleSubstrateInfoBlock">
+  <object id="RobotService" method="DoubleSubstrateInfoBlock" />
+</message>
+<message name="PLC_Arm#02DoubleSubstrateInfoBlock">
+  <object id="RobotService" method="DoubleSubstrateInfoBlock" />
+</message>
+<message name="PLC_Arm#03DoubleSubstrateInfoBlock">
+  <object id="RobotService" method="DoubleSubstrateInfoBlock" />
+</message>
+<message name="PLC_Arm#04DoubleSubstrateInfoBlock">
+  <object id="RobotService" method="DoubleSubstrateInfoBlock" />
+</message>
+<message name="PLC_Stage#01SinglePositionReport">
+  <object id="RobotService" method="SinglePositionReport" />
+</message>
+<message name="PLC_Stage#02SinglePositionReport">
+  <object id="RobotService" method="SinglePositionReport" />
+</message>
+<message name="PLC_Stage#03SinglePositionReport">
+  <object id="RobotService" method="SinglePositionReport" />
+</message>
+<message name="PLC_Stage#04SinglePositionReport">
+  <object id="RobotService" method="SinglePositionReport" />
+</message>
+<message name="PLC_Stage#05SinglePositionReport">
+  <object id="RobotService" method="SinglePositionReport" />
+</message>
+<message name="PLC_Stage#06SinglePositionReport">
+  <object id="RobotService" method="SinglePositionReport" />
+</message>
+<message name="PLC_Stage#07SinglePositionReport">
+  <object id="RobotService" method="SinglePositionReport" />
+</message>
+<message name="PLC_Stage#08SinglePositionReport">
+  <object id="RobotService" method="SinglePositionReport" />
+</message>
+<message name="PLC_Stage#09SinglePositionReport">
+  <object id="RobotService" method="SinglePositionReport" />
+</message>
+<message name="PLC_Stage#10SinglePositionReport">
+  <object id="RobotService" method="SinglePositionReport" />
+</message>
+<message name="PLC_Arm#01SingleSubstrateLoadDataReport">
+  <object id="RobotService" method="SingleSubstrateLoadDataReport" />
+</message>
+<message name="PLC_Arm#02SingleSubstrateLoadDataReport">
+  <object id="RobotService" method="SingleSubstrateLoadDataReport" />
+</message>
+<message name="PLC_Arm#01SingleSubstrateUnloadDataReport">
+  <object id="RobotService" method="SingleSubstrateUnloadDataReport" />
+</message>
+<message name="PLC_Arm#02SingleSubstrateUnloadDataReport">
+  <object id="RobotService" method="SingleSubstrateUnloadDataReport" />
+</message>
+
+<message name="PLC_Arm#01DoubleSubstrateLoadDataReport">
+  <object id="RobotService" method="DoubleSubstrateLoadDataReport" />
+</message>
+<message name="PLC_Arm#02DoubleSubstrateLoadDataReport">
+  <object id="RobotService" method="DoubleSubstrateLoadDataReport" />
+</message>
+<message name="PLC_Arm#03DoubleSubstrateLoadDataReport">
+  <object id="RobotService" method="DoubleSubstrateLoadDataReport" />
+</message>
+<message name="PLC_Arm#04DoubleSubstrateLoadDataReport">
+  <object id="RobotService" method="DoubleSubstrateLoadDataReport" />
+</message>
+<message name="PLC_Arm#01DoubleSubstrateUnloadDataReport">
+  <object id="RobotService" method="DoubleSubstrateUnloadDataReport" />
+</message>
+<message name="PLC_Arm#02DoubleSubstrateUnloadDataReport">
+  <object id="RobotService" method="DoubleSubstrateUnloadDataReport" />
+</message>
+<message name="PLC_Arm#03DoubleSubstrateUnloadDataReport">
+  <object id="RobotService" method="DoubleSubstrateUnloadDataReport" />
+</message>
+<message name="PLC_Arm#04DoubleSubstrateUnloadDataReport">
+  <object id="RobotService" method="DoubleSubstrateUnloadDataReport" />
+</message>
+
+<message name="PLC_RobotControlCommandReply">
+  <object id="RobotCommandService" method="RobotControlCommandReply" />
+</message>
+<message name="PLC_CellSpecialRobotControlCommandReply">
+  <object id="RobotCommandService" method="CellSpecialRobotControlCommandReply" />
+</message>
+<message name="PLC_RobotControlCommandResultReport">
+  <object id="RobotCommandService" method="RobotCommandResultReport" />
+</message>
+<message name="PLC_CellSpecialRobotControlCommandResultReport">
+  <object id="RobotCommandService" method="CellSpecialRobotCommandResultReport" />
+</message>
+<!--message name="PLC_RobotArmInfo">
+  <object id="RobotService" method="RobotArmInfo" />
+</message>
+<message name="PLC_Port#01CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#02CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#03CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#04CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#05CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#06CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#07CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#08CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#09CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#10CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Stage#01PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#02PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#03PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#04PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#05PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#06PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#07PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#08PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#09PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#10PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#11PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#12PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#13PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#14PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#15PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#16PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#17PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#18PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#19PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#20PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_SlotJobInfo">
+  <object id="RobotService" method="SlotJobInfo" />
+</message>
+<message name="PLC_ArmSubstrateLoadEventReport">
+  <object id="RobotService" method="ArmSubstrateLoadEventReport" />
+</message>
+<message name="PLC_ArmSubstrateUnloadEventReport">
+  <object id="RobotService" method="ArmSubstrateUnloadEventReport" />
+</message>
+<message name="PLC_RobotControlCommandReply">
+  <object id="RobotService" method="RobotControlCommandReply" />
+</message>
+<message name="PLC_RobotCommandResultReport">
+  <object id="RobotService" method="RobotCommandResultReport" />
+</message-->

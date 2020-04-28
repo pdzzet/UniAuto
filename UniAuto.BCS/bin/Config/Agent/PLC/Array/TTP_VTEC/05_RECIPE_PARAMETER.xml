@@ -1,0 +1,150 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-23 08:50:21-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_06_TCTTP_L2_Indexer(SEEC)_Ver 0.1.xlsx" plcmap="CSOT_G6C_BC_Array_06_TCTTP-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter01" site="" woffset="12" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter02" site="" woffset="18" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter03" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter04" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter05" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter06" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter07" site="" woffset="25" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_06_TCTTP_L3_TTP(VTEC)_Ver 1.0.xlsx" plcmap="CSOT_G6C_BC_Array_06_TCTTP-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Modify_Start_Time" item="Modify_Start_Time" site="" woffset="12" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Modify_End_Time" item="Modify_End_Time" site="" woffset="15" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Modify_Time" item="Modify_Time" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_NO" item="Recipe_NO" site="" woffset="19" boffset="0" wpoints="12" bpoints="192" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Macro1" item="Recipe_Macro1" site="" woffset="31" boffset="0" wpoints="14" bpoints="224" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Macro2" item="Recipe_Macro2" site="" woffset="45" boffset="0" wpoints="14" bpoints="224" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Macro3" item="Recipe_Macro3" site="" woffset="59" boffset="0" wpoints="14" bpoints="224" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Macro4" item="Recipe_Macro4" site="" woffset="73" boffset="0" wpoints="14" bpoints="224" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Macro5" item="Recipe_Macro5" site="" woffset="87" boffset="0" wpoints="14" bpoints="224" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Macro6" item="Recipe_Macro6" site="" woffset="101" boffset="0" wpoints="14" bpoints="224" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="POSX_Target" item="POSX_Target" site="" woffset="115" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSX_UpperLimit" item="POSX_UpperLimit" site="" woffset="117" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSX_LowerLimit" item="POSX_LowerLimit" site="" woffset="119" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSX_OffsetA" item="POSX_OffsetA" site="" woffset="121" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSX_OffsetB" item="POSX_OffsetB" site="" woffset="123" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSX_Point" item="POSX_Point" site="" woffset="125" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSY_Target" item="POSY_Target" site="" woffset="127" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSY_UpperLimit" item="POSY_UpperLimit" site="" woffset="129" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSY_LowerLimit" item="POSY_LowerLimit" site="" woffset="131" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSY_OffsetA" item="POSY_OffsetA" site="" woffset="133" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSY_OffsetB" item="POSY_OffsetB" site="" woffset="135" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POSY_Point" item="POSY_Point" site="" woffset="137" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TPC_Target" item="TPC_Target" site="" woffset="139" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TPC_UpperLimit" item="TPC_UpperLimit" site="" woffset="141" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TPC_LowerLimit" item="TPC_LowerLimit" site="" woffset="143" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TPC_OffsetA" item="TPC_OffsetA" site="" woffset="145" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TPC_OffsetB" item="TPC_OffsetB" site="" woffset="147" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TPC_Point" item="TPC_Point" site="" woffset="149" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEX_Target" item="EDGEX_Target" site="" woffset="151" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEX_UpperLimit" item="EDGEX_UpperLimit" site="" woffset="153" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEX_LowerLimit" item="EDGEX_LowerLimit" site="" woffset="155" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEX_OffsetA" item="EDGEX_OffsetA" site="" woffset="157" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEX_OffsetB" item="EDGEX_OffsetB" site="" woffset="159" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEX_Point" item="EDGEX_Point" site="" woffset="161" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEY_Target" item="EDGEY_Target" site="" woffset="163" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEY_UpperLimit" item="EDGEY_UpperLimit" site="" woffset="165" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEY_LowerLimit" item="EDGEY_LowerLimit" site="" woffset="167" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEY_OffsetA" item="EDGEY_OffsetA" site="" woffset="169" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEY_OffsetB" item="EDGEY_OffsetB" site="" woffset="171" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="EDGEY_Point" item="EDGEY_Point" site="" woffset="173" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD1_Target" item="CD1_Target" site="" woffset="175" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD1_UpperLimit" item="CD1_UpperLimit" site="" woffset="177" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD1_LowerLimit" item="CD1_LowerLimit" site="" woffset="179" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD1_OffsetA" item="CD1_OffsetA" site="" woffset="181" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD1_OffsetB" item="CD1_OffsetB" site="" woffset="183" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD1_Point" item="CD1_Point" site="" woffset="185" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD2_Target" item="CD2_Target" site="" woffset="187" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD2_UpperLimit" item="CD2_UpperLimit" site="" woffset="189" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD2_LowerLimit" item="CD2_LowerLimit" site="" woffset="191" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD2_OffsetA" item="CD2_OffsetA" site="" woffset="193" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD2_OffsetB" item="CD2_OffsetB" site="" woffset="195" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD2_Point" item="CD2_Point" site="" woffset="197" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD3_Target" item="CD3_Target" site="" woffset="199" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD3_UpperLimit" item="CD3_UpperLimit" site="" woffset="201" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD3_LowerLimit" item="CD3_LowerLimit" site="" woffset="203" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD3_OffsetA" item="CD3_OffsetA" site="" woffset="205" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD3_OffsetB" item="CD3_OffsetB" site="" woffset="207" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD3_Point" item="CD3_Point" site="" woffset="209" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD4_Target" item="CD4_Target" site="" woffset="211" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD4_UpperLimit" item="CD4_UpperLimit" site="" woffset="213" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD4_LowerLimit" item="CD4_LowerLimit" site="" woffset="215" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD4_OffsetA" item="CD4_OffsetA" site="" woffset="217" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD4_OffsetB" item="CD4_OffsetB" site="" woffset="219" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD4_Point" item="CD4_Point" site="" woffset="221" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD5_Target" item="CD5_Target" site="" woffset="223" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD5_UpperLimit" item="CD5_UpperLimit" site="" woffset="225" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD5_LowerLimit" item="CD5_LowerLimit" site="" woffset="227" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD5_OffsetA" item="CD5_OffsetA" site="" woffset="229" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD5_OffsetB" item="CD5_OffsetB" site="" woffset="231" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD5_Point" item="CD5_Point" site="" woffset="233" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD6_Target" item="CD6_Target" site="" woffset="235" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD6_UpperLimit" item="CD6_UpperLimit" site="" woffset="237" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD6_LowerLimit" item="CD6_LowerLimit" site="" woffset="239" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD6_OffsetA" item="CD6_OffsetA" site="" woffset="241" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD6_OffsetB" item="CD6_OffsetB" site="" woffset="243" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD6_Point" item="CD6_Point" site="" woffset="245" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD7_Target" item="CD7_Target" site="" woffset="247" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD7_UpperLimit" item="CD7_UpperLimit" site="" woffset="249" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD7_LowerLimit" item="CD7_LowerLimit" site="" woffset="251" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD7_OffsetA" item="CD7_OffsetA" site="" woffset="253" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD7_OffsetB" item="CD7_OffsetB" site="" woffset="255" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD7_Point" item="CD7_Point" site="" woffset="257" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD8_Target" item="CD8_Target" site="" woffset="259" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD8_UpperLimit" item="CD8_UpperLimit" site="" woffset="261" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD8_LowerLimit" item="CD8_LowerLimit" site="" woffset="263" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD8_OffsetA" item="CD8_OffsetA" site="" woffset="265" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD8_OffsetB" item="CD8_OffsetB" site="" woffset="267" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD8_Point" item="CD8_Point" site="" woffset="269" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD9_Target" item="CD9_Target" site="" woffset="271" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD9_UpperLimit" item="CD9_UpperLimit" site="" woffset="273" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD9_LowerLimit" item="CD9_LowerLimit" site="" woffset="275" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD9_OffsetA" item="CD9_OffsetA" site="" woffset="277" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD9_OffsetB" item="CD9_OffsetB" site="" woffset="279" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CD9_Point" item="CD9_Point" site="" woffset="281" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX1_Target" item="OLX1_Target" site="" woffset="283" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX1_UpperLimit" item="OLX1_UpperLimit" site="" woffset="285" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX1_LowerLimit" item="OLX1_LowerLimit" site="" woffset="287" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX1_OffsetA" item="OLX1_OffsetA" site="" woffset="289" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX1_OffsetB" item="OLX1_OffsetB" site="" woffset="291" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX1_Point" item="OLX1_Point" site="" woffset="293" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX2_Target" item="OLX2_Target" site="" woffset="295" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX2_UpperLimit" item="OLX2_UpperLimit" site="" woffset="297" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX2_LowerLimit" item="OLX2_LowerLimit" site="" woffset="299" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX2_OffsetA" item="OLX2_OffsetA" site="" woffset="301" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX2_OffsetB" item="OLX2_OffsetB" site="" woffset="303" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX2_Point" item="OLX2_Point" site="" woffset="305" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX3_Target" item="OLX3_Target" site="" woffset="307" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX3_UpperLimit" item="OLX3_UpperLimit" site="" woffset="309" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX3_LowerLimit" item="OLX3_LowerLimit" site="" woffset="311" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX3_OffsetA" item="OLX3_OffsetA" site="" woffset="313" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX3_OffsetB" item="OLX3_OffsetB" site="" woffset="315" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLX3_Point" item="OLX3_Point" site="" woffset="317" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY1_Target" item="OLY1_Target" site="" woffset="319" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY1_UpperLimit" item="OLY1_UpperLimit" site="" woffset="321" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY1_LowerLimit" item="OLY1_LowerLimit" site="" woffset="323" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY1_OffsetA" item="OLY1_OffsetA" site="" woffset="325" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY1_OffsetB" item="OLY1_OffsetB" site="" woffset="327" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY1_Point" item="OLY1_Point" site="" woffset="329" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY2_Target" item="OLY2_Target" site="" woffset="331" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY2_UpperLimit" item="OLY2_UpperLimit" site="" woffset="333" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY2_LowerLimit" item="OLY2_LowerLimit" site="" woffset="335" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY2_OffsetA" item="OLY2_OffsetA" site="" woffset="337" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY2_OffsetB" item="OLY2_OffsetB" site="" woffset="339" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY2_Point" item="OLY2_Point" site="" woffset="341" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY3_Target" item="OLY3_Target" site="" woffset="343" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY3_UpperLimit" item="OLY3_UpperLimit" site="" woffset="345" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY3_LowerLimit" item="OLY3_LowerLimit" site="" woffset="347" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY3_OffsetA" item="OLY3_OffsetA" site="" woffset="349" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY3_OffsetB" item="OLY3_OffsetB" site="" woffset="351" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OLY3_Point" item="OLY3_Point" site="" woffset="353" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

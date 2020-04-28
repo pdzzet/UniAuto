@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.SubJobDataEntityData, UniAuto.UniBCS.Entity" table="SBRM_SUBJOBDATA">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+    <!--property name="SERVERNAME" type="String">
+			<column name="SERVERNAME" length="50" sql-type="varchar" not-null="true"/>
+		</property>-->
+		<!--<property name="JOBDATALINETYPE" type="String">
+			<column name="JOBDATALINETYPE" length="50" sql-type="varchar" not-null="true"/>
+		</property>-->
+    <property name="LINETYPE" type="String">
+      <column name="LINETYPE" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+		<property name="ITEMNAME" type="String">
+			<column name="ITEMNAME" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="SUBITEMNAME" type="String">
+			<column name="SUBITEMNAME" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="SUBITEMDESC" type="String">
+			<column name="SUBITEMDESC" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="SUBITEMLOFFSET" type="Int32">
+			<column name="SUBITEMLOFFSET" length="4" sql-type="int" not-null="true"/>
+		</property>
+		<property name="ITEMLENGTH" type="Int32">
+			<column name="ITEMLENGTH" length="4" sql-type="int" not-null="true"/>
+		</property>
+		<property name="SUBITEMLENGTH" type="Int32">
+			<column name="SUBITEMLENGTH" length="4" sql-type="int" not-null="true"/>
+		</property>
+		<property name="MEMO" type="String">
+			<column name="MEMO" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>

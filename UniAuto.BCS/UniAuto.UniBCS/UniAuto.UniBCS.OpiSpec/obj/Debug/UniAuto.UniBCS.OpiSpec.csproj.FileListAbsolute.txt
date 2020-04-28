@@ -1,0 +1,15 @@
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.OpiSpec.dll
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.OpiSpec.pdb
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\obj\Debug\UniAuto.UniBCS.OpiSpec.dll
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\obj\Debug\UniAuto.UniBCS.OpiSpec.pdb
+D:\BaiduNetdiskDownload\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.OpiSpec.dll
+D:\BaiduNetdiskDownload\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.OpiSpec.pdb
+D:\BaiduNetdiskDownload\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\obj\Debug\UniAuto.UniBCS.OpiSpec.csproj.CoreCompileInputs.cache
+D:\BaiduNetdiskDownload\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\obj\Debug\UniAuto.UniBCS.OpiSpec.dll
+D:\BaiduNetdiskDownload\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\obj\Debug\UniAuto.UniBCS.OpiSpec.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.OpiSpec.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.OpiSpec.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\obj\Debug\UniAuto.UniBCS.OpiSpec.csprojAssemblyReference.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\obj\Debug\UniAuto.UniBCS.OpiSpec.csproj.CoreCompileInputs.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\obj\Debug\UniAuto.UniBCS.OpiSpec.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\obj\Debug\UniAuto.UniBCS.OpiSpec.pdb

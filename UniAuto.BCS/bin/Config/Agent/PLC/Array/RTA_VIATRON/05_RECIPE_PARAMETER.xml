@@ -1,0 +1,41 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.0.9.0-->
+<!--DateTime: 2016-03-03 16:00:23-->
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_21_TCRTA_L3_RTA(VIATRON)_Ver 1.1.xlsx" plcmap="CSOT_G6C_BC_Array_21_TCRTA-PLC Address Map_Ver1.03.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Name" item="Recipe_Name" site="" woffset="12" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM1_TEMP_TABLE" item="TCM1_TEMP_TABLE" site="" woffset="22" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM2_TEMP_TABLE" item="TCM2_TEMP_TABLE" site="" woffset="32" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM3_TEMP_TABLE" item="TCM3_TEMP_TABLE" site="" woffset="42" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM4_TEMP_TABLE" item="TCM4_TEMP_TABLE" site="" woffset="52" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM5_TEMP_TABLE" item="TCM5_TEMP_TABLE" site="" woffset="62" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM6_TEMP_TABLE" item="TCM6_TEMP_TABLE" site="" woffset="72" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM1_GAS_APC" item="TCM1_GAS_APC" site="" woffset="82" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM2_GAS_APC" item="TCM2_GAS_APC" site="" woffset="83" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM3_GAS_APC" item="TCM3_GAS_APC" site="" woffset="84" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM4_GAS_APC" item="TCM4_GAS_APC" site="" woffset="85" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM5_GAS_APC" item="TCM5_GAS_APC" site="" woffset="86" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM6_GAS_APC" item="TCM6_GAS_APC" site="" woffset="87" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RCM1_GAS_APC1" item="RCM1_GAS_APC1" site="" woffset="88" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RCM1_GAS_APC2" item="RCM1_GAS_APC2" site="" woffset="89" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM1_GAS_N2" item="TCM1_GAS_N2" site="" woffset="90" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM2_GAS_N2" item="TCM2_GAS_N2" site="" woffset="91" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM3_GAS_N2" item="TCM3_GAS_N2" site="" woffset="92" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM4_GAS_N2" item="TCM4_GAS_N2" site="" woffset="93" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM5_GAS_N2" item="TCM5_GAS_N2" site="" woffset="94" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM6_GAS_N2" item="TCM6_GAS_N2" site="" woffset="95" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM3_GAS_CDA" item="TCM3_GAS_CDA" site="" woffset="96" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM4_GAS_CDA" item="TCM4_GAS_CDA" site="" woffset="97" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM5_GAS_CDA" item="TCM5_GAS_CDA" site="" woffset="98" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM6_GAS_CDA" item="TCM6_GAS_CDA" site="" woffset="99" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM1_PROCESSTIME" item="TCM1_PROCESSTIME" site="" woffset="100" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM2_PROCESSTIME" item="TCM2_PROCESSTIME" site="" woffset="101" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM3_PROCESSTIME" item="TCM3_PROCESSTIME" site="" woffset="102" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM4_PROCESSTIME" item="TCM4_PROCESSTIME" site="" woffset="103" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM5_PROCESSTIME" item="TCM5_PROCESSTIME" site="" woffset="104" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TCM6_PROCESSTIME" item="TCM6_PROCESSTIME" site="" woffset="105" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RCM1_PROCESSTIME" item="RCM1_PROCESSTIME" site="" woffset="106" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DUMMY_SETTER" item="DUMMY_SETTER" site="" woffset="107" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

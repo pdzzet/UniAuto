@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8B1897B-7852-48E7-8D55-7F5E6B168F23}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniAuto.UniBCS.MesSpec</RootNamespace>
+    <AssemblyName>UniAuto.UniBCS.MesSpec</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>"%24/WHCSOT.G6C.BC/BC/UniAuto.BCS", MLWDAAAA</SccProjectName>
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common\Body.cs" />
+    <Compile Include="Common\PortTransferStateChanged.cs" />
+    <Compile Include="Common\SerializableDictionary.cs" />
+    <Compile Include="Common\Spec.cs" />
+    <Compile Include="Common\Message.cs" />
+    <Compile Include="Common\Header.cs" />
+    <Compile Include="Common\Return.cs" />
+    <Compile Include="Common\SpecialItem.cs" />
+    <Compile Include="Common\StringWriterUTF8.cs" />
+    <Compile Include="Message\AlarmReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\AreYouThereReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\AreYouThereRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\AssembleComplete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\AutoDecreaseMaterialQuantity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\BoxLabelInformationReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\BoxLabelInformationRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\BoxProcessCanceled.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\BoxProcessEnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\BoxProcessEndReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\BoxProcessLineReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\BoxProcessLineRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\BoxProcessStarted.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\BoxTargetPortChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CassetteOperModeChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CFShortCutGlassProcessEnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CFShortCutGlassProcessEndReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CFShortCutModeChangeReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CFShortCutModeChangeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CFShortCutPermitReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CFShortCutPermitRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ChangeMaterialLifeReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ChangePlanReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ChangePlanRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ChangePlanStarted.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ChangePVDMaterialLife.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ChangeTankReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ChangeTargetLife.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CheckBoxNameReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CheckBoxNameRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CheckLocalPPIDReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CheckLocalPPIDRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CheckRecipeParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CheckRecipeParameterReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CIMMessageSend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ChamberRunModeChanged.cs" />
+    <Compile Include="Message\CurrentDateTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\CutComplete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\DefectCodeReportByGlass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\FacilityCheckReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\FacilityCheckReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\FacilityCheckRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\FacilityCriteriaSend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\FacilityParameterReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\FacilityParameterRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\GetBCWipReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\GetBCWipRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\GlassChangeMACOJudge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\GlassProcessLineChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\GlassProcessStarted.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\IndexerOperModeChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\InspectionModeChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\LineStateChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\LotProcessAbnormalEnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\LotProcessAbnormalEndReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\LotProcessAborted.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\LotProcessCanceled.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\LotProcessEnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\LotProcessEndReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\LotProcessStarted.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineControlStateChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineControlStateChangeReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineControlStateChangeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineDataUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineInspectionOverRatio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\LineLinkChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineLoginReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineModeChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineModeChangeReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineModeChangeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachinePauseCommandReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachinePauseCommandRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineSetupFlagChanged.cs" />
+    <Compile Include="Message\MachineSiteChangeReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineSiteChangeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MachineStateChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MaskLocationChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MaskLocationChangedReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MaskProcessEnd.cs" />
+    <Compile Include="Message\MaskStateChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MaskStateChangedReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MaskUsedCountReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MaterialConsumableRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MaterialStateChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MaterialStateChangedReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MaxCutGlassProcessEnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MaxCutGlassProcessEndReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PalletLabelInformationReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PalletLabelInformationRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PalletProcessCanceled.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PalletProcessEnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PalletProcessEndReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PalletProcessStarted.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PanelReportByGlass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\POLAttachComplete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\POLStateChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\POLStateChangedReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PortAccessModeChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PortCarrierSetCodeChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PortDataUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PortEnableChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PortOperModeChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PortOperModeChangeReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PortOperModeChangeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PortTypeChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PortUseTypeChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PreCheckRecipeParameterReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\PreCheckRecipeParameterRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ProductIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ProductOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ProductProcessData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ProductScrapped.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ProductUnscrapped.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\QtimeSetChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\RecipeIDRegisterCheckReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\RecipeIDRegisterCheckRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\RecipeParameterChangeReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\RecipeParameterChangeRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\RecipeParameterReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\RecipeParameterRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\RecipeRegisterRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\RecipeRegisterRequestReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\TerminalMessageSend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\UnitStateChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\UVMaskUseCount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateBoxReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateBoxRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateBoxWeightReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateBoxWeightRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateCassetteReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateCassetteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateGlassReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateGlassRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateMaskByCarrierReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateMaskByCarrierRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateMaskPrepareReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateMaskPrepareRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateMaskReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidateMaskRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidatePalletReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ValidatePalletRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\VCRReadReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\VCRStateChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\ProductInspectionDataReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,62 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.0.9.0-->
+<!--DateTime: 2016-02-24 12:22:11-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_14_TCCVD_L2_Indexer(SEEC)_Ver1.0.2_20160108.xlsx" plcmap="CSOT_G6C_BC_Array_14_TCCVD-ULVAC-PLC Address Map_Ver1.06.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter01" site="" woffset="12" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter02" site="" woffset="18" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter03" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter04" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter05" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter06" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter07" site="" woffset="25" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter08" site="" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter09" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter10" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter11" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_14_TCCVD_L3_CLN(DMS_ULVAC)_Ver 1.2.xls" plcmap="CSOT_G6C_BC_Array_14_TCCVD-ULVAC-PLC Address Map_Ver1.06.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LOADING_DATA_TIME" site="" woffset="12" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECIPE_No" site="" woffset="18" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Name" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_VER" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TACT_TIME" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="IN_CV_Speed" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_Speed" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ELE_CV_Speed" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LOW_CV_Speed" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="O3_Process_Time" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR_Process_Time" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_USE/NO" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_Recipe_NO" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_USE" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_LAMP1_USE" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_LAMP2_USE" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="O3_USE_MODE" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Up_USE" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Dn_USE" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Up_USE" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Dn_USE" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Up_RPM" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Dn_RPM" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Up_RPM" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Dn_RPM" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Up_Directio" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Dn_Directio" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Up_Directio" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Dn_Directio" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Up_Gap" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Dn_Gap" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Up_Gap" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Dn_Gap" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="IN_Tact_Time" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ElevatorTact_Time" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OUT_Tact_Time" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="WMSC_USE/NO" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="WMSC_Level" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

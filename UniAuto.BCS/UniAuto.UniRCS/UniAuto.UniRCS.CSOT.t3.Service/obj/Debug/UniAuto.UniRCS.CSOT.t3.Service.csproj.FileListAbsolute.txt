@@ -1,0 +1,5 @@
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniRCS.CSOT.t3.Service.dll
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniRCS.CSOT.t3.Service.pdb
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniRCS\UniAuto.UniRCS.CSOT.t3.Service\obj\Debug\UniAuto.UniRCS.CSOT.t3.Service.csprojResolveAssemblyReference.cache
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniRCS\UniAuto.UniRCS.CSOT.t3.Service\obj\Debug\UniAuto.UniRCS.CSOT.t3.Service.dll
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniRCS\UniAuto.UniRCS.CSOT.t3.Service\obj\Debug\UniAuto.UniRCS.CSOT.t3.Service.pdb

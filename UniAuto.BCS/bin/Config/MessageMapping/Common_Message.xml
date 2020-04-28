@@ -1,0 +1,1306 @@
+<message name="PLC_AlarmStatusChangeReport">
+  <object id="AlarmService" method="AlarmStatusChangeReport" />
+</message>
+<message name="PLC_AlarmStatusChangeReportBFG">
+  <object id="AlarmService" method="AlarmStatusChangeReport" />
+</message>
+<message name="PLC_PLCStatusChange">
+  <object id="LineService" method="PLCStatusChange" />
+</message>
+<message name="PLC_EquipmentAlive">
+  <object id="EquipmentService" method="EquipmentAlive" />
+</message>
+<message name="PLC_CIMMode">
+  <object id="EquipmentService" method="CIMMode" />
+</message>
+<message name="PLC_CIMModeChangeCommandReply">
+  <object id="EquipmentService" method="CIMModeChangeCommandReply" />
+</message>
+<message name="PLC_CIMMessageClearCommandReply">
+  <object id="CIMMessageService" method="CIMMessageClearCommandReply" />
+</message>
+<message name="PLC_CIMMessageSetCommandReply">
+  <object id="CIMMessageService" method="CIMMessageSetCommandReply" />
+</message>
+<message name="PLC_CIMMessageConfirmReport">
+  <object id="CIMMessageService" method="CIMMessageConfirmReport" />
+</message>
+<message name="PLC_UpstreamInlineMode">
+  <object id="EquipmentService" method="UpstreamInlineMode" />
+</message>
+<message name="PLC_DownstreamInlineMode">
+  <object id="EquipmentService" method="DownstreamInlineMode" />
+</message>
+<message name="PLC_LocalAlarmStatus">
+  <object id="EquipmentService" method="LocalAlarmStatus" />
+</message>
+<message name="PLC_AlignerCheckWarning">
+  <object id="CFSpecialService" method="AlignerCheckWarning" />
+</message>
+<message name="PLC_EquipmentStatusChangeReport">
+  <object id="EquipmentService" method="EquipmentStatusChangeReport" />
+</message>
+<message name="PLC_EquipmentStatusChangeReportBFG">
+  <object id="EquipmentService" method="EquipmentStatusChangeReport" />
+</message>
+<message name="PLC_EquipmentOperationModeReport">
+  <object id="EquipmentService" method="EquipmentOperationModeReport" />
+</message>
+<message name="PLC_SendWaitTimeOutReport">
+  <object id="EquipmentService" method="SendWaitTimeOutReport" />
+</message>
+<message name="PLC_EquipmentStatusStopCommandReply">
+  <object id="EquipmentService" method="EquipmentStatusStopCommandReply" />
+</message>
+<message name="PLC_SamplingRuleChangeReport">
+  <object id="EquipmentService" method="SamplingRuleChangeReport" />
+</message>
+<message name="PLC_IonizerFanEnableModeChange">
+  <object id="EquipmentService" method="IonizerFanEnableModeChange" />
+</message>
+<message name="PLC_DateTimeSetCommandReply">
+  <object id="DateTimeService" method="DateTimeSetCommandReply" />
+</message>
+<message name="PLC_JobDataCheckMode">
+  <object id="EquipmentService" method="JobDataCheckMode" />
+</message>
+<message name="PLC_RecipeIDCheckMode">
+  <object id="RecipeService" method="RecipeIDCheckMode" />
+</message>
+<message name="PLC_ProductTypeCheckMode">
+  <object id="EquipmentService" method="ProductTypeCheckMode" />
+</message>
+<message name="PLC_GroupIndexCheckMode">
+  <object id="EquipmentService" method="GroupIndexCheckMode" />
+</message>
+<message name="PLC_ProductIDCheckMode">
+  <object id="EquipmentService" method="ProductIDCheckMode" />
+</message>
+<message name="PLC_COAVersionCheckMode">
+  <object id="EquipmentService" method="COAVersionCheckMode" />
+</message>
+<message name="PLC_CurrentRecipeIDChangeReport">
+  <object id="RecipeService" method="CurrentRecipeIDChangeReport" />
+</message>
+<message name="PLC_RecipeModifyReport">
+  <object id="RecipeService" method="RecipeModifyReport" />
+</message>
+<message name="PLC_RecipeRegisterValidationCommandReply">
+  <object id="RecipeService" method="RecipeRegisterValidationCommandReply" />
+</message>
+<!--<message name="PLC_RecipeParameterRequestCommandReply#01">
+  <object id="RecipeService" method="RecipeParameterRequestCommandReply" />
+</message>-->
+<message name="PLC_RecipeParameterRequestCommandReply">
+  <object id="RecipeService" method="RecipeParameterRequestCommandReply" />
+</message>
+<message name="PLC_IonizerFanEnableModeBlock">
+  <object id="EquipmentService" method="IonizerFanEnableModeChange" />
+</message>
+<message name="PLC_SamplingRuleChangeCommandReply">
+  <object id="EquipmentService" method="SamplingRuleChangeCommandReply" />
+</message>
+<message name="PLC_CoolRunCountBlock">
+  <object id="EquipmentService" method="CoolRunCountReport" />
+</message>
+<message name="PLC_CoolRunCountSetCommandReply">
+  <object id="EquipmentService" method="CoolRunCountSetCommandReply" />
+</message>
+<message name="PLC_CoolRunCountSetReport">
+  <object id="EquipmentService" method="CoolRunCountSetReport" />
+</message>
+<message name="PLC_MaterialUsedReport">
+  <object id="MaterialService" method="ConsumeEventReport" />
+</message>
+<message name="PLC_MaterialStatusChangeReport">
+  <object id="MaterialService" method="MaterialStatusChangeReport" />
+</message>
+<message name="PLC_MaterialConsumableReport">
+  <object id="MaterialService" method="ConsumeEventReport" />
+</message>
+<message name="PLC_MPLCInterlockReply#01">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#02">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#03">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#04">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#05">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#06">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#07">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#08">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#09">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#10">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#11">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#12">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#13">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#14">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#15">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#16">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#17">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_MPLCInterlockReply#18">
+  <object id="SubBlockService" method="MPLCInterlockCommandReply" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopCV#06toCV#05">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopCV#05toCV#04">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopCV#04toDeveloper">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopCV#04toTHK">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHTransferStopHPCPtoCoater">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopCV#02toCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHDelayCV#06toCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHDelayCV#05toCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHDelayCV#04toCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHDelayHPCPtoCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHDelayCV#02toCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHTHKjudgeNGtoCoater">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHTHKjudgeNGtoHPCP">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHTHKjudgeNGtoCV#03">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopTHKtoCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopTHKtoCoater">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopTHKtoExposure">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopAOItoExposure">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopTHKtoExposure2">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopAOItoExposure2">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopAOItoCoater">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopAOItoCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopAOItoDeveloper">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopMacrotoCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopMacrotoCoater">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopMacrotoExposure">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopMacrotoExposure2">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopMacrotoDeveloper">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopTotalPitchtoExposure">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopTotalPitchtoExposure2">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHStopTotalPitchtoDeveloper">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHDailyCheckRequestTotalPitchtoCV#05">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHCV#03TCURunningHPCPtoCV#03">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#PHDevelopertoCV#04PreSend">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopCV#05ReplyCV#06">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopCV#04ReplyCV#05">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopDeveloperReplyCV#04">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopTHKReplyCV#04">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopCoaterReplyHPCP">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopCleanerReplyCV#02">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHDelayCleanerReplyCV#06">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHDelayCleanerReplyCV#05">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHDelayCleanerReplyCV#04">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHDelayCleanerReplyHPCP">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHDelayCleanerReplyCV#02">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHTHKjudgeNGCoaterReplytoTHK">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHTHKjudgeNGHPCPReplytoTHK">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHTHKjudgeNGCV#03ReplytoTHK">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopCleanerReplyTHK">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopCoaterReplyTHK">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopExposureReplyTHK">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopExposureReplyAOI">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopExposure2ReplyTHK">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopExposure2ReplyAOI">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopCoaterReplyAOI">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopCleanerReplyAOI">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopDeveloperReplyAOI">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopCleanerReplyMacro">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopCoaterReplyMacro">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopExposureReplyMacro">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopExposure2ReplyMacro">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopDeveloperReplyMacro">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopExposureReplyTotalPitch">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopExposure2ReplyTotalPitch">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHStopDeveloperReplyTotalPitch">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHDailyCheckRequestCV#05ReplyTotalPitch">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHCV#03TCURunningCV#03ReplyHPCP">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#PHDevelopertoCV#04PreSendCV#04ReplyDeveloper">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#UPKStopUnloadertoCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#UPKStopCVtoCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#UPKGlassExistUnloadertoUnpacker">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#UPKGlassExistCVtoUnpacker">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#UPKGlassExistCleanertoUnpacker">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#UPKStopCleanerReplyUnloader">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#UPKStopCleanerReplyCV">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#UPKGlassExistUnpackerReplyUnloader">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#UPKGlassExistUnpackerReplyCV">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#UPKGlassExistUnpackerReplyCleaner">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#RWKStopStrippertoCV">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#RWKStopCVIndexer">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#RWKStopCVReplyStripper">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetByEQP#RWKStopIndexerReplyCV">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#MQCDCRPitchtoIndexer">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_EQInterlockSetForEQP#MQCDCRIndexerReplyTotalPitch">
+  <object id="EquipmentService" method="EQtoEQInterlock" />
+</message>
+<message name="PLC_MaterialVerificationRequestReport">
+  <object id="CFSpecialService" method="MaterialVerificationRequest" />
+</message>
+<message name="PLC_ShortCutStatusReportBlock">
+  <object id="CFSpecialService" method="ShortCutStatusReport" />
+</message>
+<message name="PLC_ShortCutModeChangeReport">
+  <object id="CFSpecialService" method="ShortCutModeChangeReport" />
+</message>
+<message name="PLC_PermissionRequestReport">
+  <object id="CFSpecialService" method="PermissionRequestReport" />
+</message>
+<message name="PLC_GlassOutResultCommandReply">
+  <object id="CFSpecialService" method="GlassOutResultCommandReply" />
+</message>
+<message name="PLC_GlassInCheckRequestReport">
+  <object id="CFSpecialService" method="GlassInCheckRequest" />
+</message>
+<message name="PLC_LampUsedTimeReport">
+  <object id="CFSpecialService" method="LampUsedTimeReport" />
+</message>
+<message name="PLC_TankChangeReport">
+  <object id="CFSpecialService" method="TankChangeReport" />
+</message>
+<message name="PLC_AccumulativeValueReport">
+  <object id="CFSpecialService" method="AccumulativeValueReport" />
+</message>
+<message name="PLC_BypassMode">
+  <object id="CFSpecialService" method="BypassMode" />
+</message>
+<message name="PLC_TurnTableMode">
+  <object id="CFSpecialService" method="TurnTableMode" />
+</message>
+<message name="PLC_BypassInspectionEquipment#01Mode">
+  <object id="CFSpecialService" method="BypassInspectionEquipment01Mode" />
+</message>
+<message name="PLC_BypassInspectionEquipment#02Mode">
+  <object id="CFSpecialService" method="BypassInspectionEquipment02Mode" />
+</message>
+<message name="PLC_NextLineBCStatus">
+  <object id="CFSpecialService" method="NextLineBCStatus" />
+</message>
+<message name="PLC_CV#07Status">
+  <object id="CFSpecialService" method="CV07Status" />
+</message>
+<message name="PLC_IndexerAlignerDispatchMode">
+  <object id="CFSpecialService" method="IndexerAlignerDispatchMode" />
+</message>
+<message name="PLC_ReworkForceToUnloaderCST">
+  <object id="CFSpecialService" method="ReworkForceToUnloaderCST" />
+</message>
+<message name="PLC_OvenCPSafetyCheckReportBlock">
+  <object id="CFSpecialService" method="OvenCPSafetyCheckReport" />
+</message>
+<message name="PLC_QTimeCheckRequestReport">
+  <object id="CFSpecialService" method="QTimeCheckRequest" />
+</message>
+<message name="PLC_TargetLifeTimeReport">
+  <object id="CFSpecialService" method="TargetLifeTimeReport" />
+</message>
+<message name="PLC_ReworkWashableCountBlock">
+  <object id="CFSpecialService" method="ReworkWashableCountReport" />
+</message>
+<message name="PLC_SamplingSideStatusBlock">
+  <object id="CFSpecialService" method="SamplingSideStatusReport" />
+</message>
+<message name="PLC_MaskStartReport">
+  <object id="CFSpecialService" method="MaskStartReport" />
+</message>
+<message name="PLC_MaskEndReport">
+  <object id="CFSpecialService" method="MaskEndReport" />
+</message>
+<message name="PLC_MaskStatusReport">
+  <object id="CFSpecialService" method="MaskStatusReport" />
+</message>
+<message name="PLC_MaskIDRequestReport">
+  <object id="CFSpecialService" method="MaskIDRequestReport" />
+</message>
+<message name="PLC_HighCVModeChangeReport">
+  <object id="CFSpecialService" method="HighCVModeChangeReport" />
+</message>
+<message name="PLC_UnloadingPortSettingReport">
+  <object id="CFSpecialService" method="UnloadingPortSettingReport" />
+</message>
+<message name="PLC_UnloadingPortSettingCommandReply">
+  <object id="CFSpecialService" method="UnloadingPortSettingCommandReply" />
+</message>
+<message name="PLC_BufferRWJudgeCapacityChangeReport">
+  <object id="CFSpecialService" method="BufferRWJudgeCapacityChangeReport" />
+</message>
+<message name="PLC_BufferRWJudgeCapacityChangeCommandReply">
+  <object id="CFSpecialService" method="BufferRWJudgeCapacityChangeCommandReply" />
+</message>
+<message name="PLC_GlassReworkJudgeReport">
+  <object id="CFSpecialService" method="GlassReworkJudgeReport" />
+</message>
+<message name="PLC_InlineReworkModeChangeReport">
+  <object id="CFSpecialService" method="InlineReworkModeChangeReport" />
+</message>
+<message name="PLC_ExposureMaskCheckCommandReply">
+  <object id="CFSpecialService" method="ExposureMaskCheckCommandReply" />
+</message>
+<message name="PLC_JobDataRequestReport">
+  <object id="JobService" method="JobDataRequestReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#01">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#02">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#03">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#04">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#05">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#06">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#07">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#08">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#09">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#10">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#11">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ReceiveJobDataReport#12">
+  <object id="JobService" method="ReceiveJobDataReport" />
+</message>
+<message name="PLC_ProcessPauseCommandReply">
+  <object id="EquipmentService" method="ProcessPauseCommandReply" />
+</message>
+<message name="PLC_TransferStopCommandReply">
+  <object id="EquipmentService" method="TransferStopCommandReply" />
+</message>
+<message name="PLC_ProcessStopCommandReply">
+  <object id="EquipmentService" method="ProcessStopCommandReply" />
+</message>
+<message name="PLC_VCR#01EnableMode">
+  <object id="VCRService" method="VCRMode" />
+</message>
+<message name="PLC_VCR#02EnableMode">
+  <object id="VCRService" method="VCRMode" />
+</message>
+<message name="PLC_VCREnableMode">
+  <object id="VCRService" method="VCRMode" />
+</message>
+<message name="PLC_VCREventReport">
+  <object id="VCRService" method="VCREventReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#01">
+  <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#02">
+  <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#03">
+  <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#04">
+  <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#05">
+  <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#06">
+    <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#07">
+    <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#08">
+    <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#09">
+  <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#10">
+  <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#11">
+  <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_SendOutJobDataReport#12">
+  <object id="JobService" method="SendOutJobDataReport" />
+</message>
+<message name="PLC_JobRemoveRecoveryCommandReply">
+  <object id="JobService" method="JobRemoveRecoveryCommandReply" />
+</message>
+<message name="PLC_SetLastGlassCommandReply">
+  <object id="JobService" method="SetLastGlassCommandReply" />
+</message>
+<message name="PLC_VCREnableModeChangeCommandReply">
+  <object id="VCRService" method="VCRModeChangeCommandReply" />
+</message>
+<message name="PLC_CSTOperationModeChangeReport">
+  <object id="CassetteService" method="CSTOperationModeChangeReport" />
+</message>
+<message name="PLC_PartialFullMode">
+  <object id="CassetteService" method="PartialFullMode" />
+</message>
+<message name="PLC_CassetteonPortQTimeChangeReport">
+  <object id="CassetteService" method="CassetteonPortQTimeChangeReport" />
+</message>
+<message name="PLC_CassetteonPortQTimeChangeCommandReply">
+  <object id="CassetteService" method="CassetteonPortQTimeChangeCommandReply" />
+</message>
+<message name="PLC_IndexerOperationModeChangeReport">
+  <object id="EquipmentService" method="IndexerOperationModeChangeReport" />
+</message>
+<message name="PLC_IndexerOperationModeChangeCommandReply">
+  <object id="EquipmentService" method="IndexerOperationModeChangeCommandReply" />
+</message>
+<message name="PLC_FirstGlassCheckReport">
+  <object id="JobService" method="FirstGlassCheckReport" />
+</message>
+<message name="PLC_FetchOutJobDataReport">
+  <object id="JobService" method="FetchOutJobDataReport" />
+</message>
+<message name="PLC_EquipmentRunModeChangeReport">
+  <object id="EquipmentService" method="EquipmentRunModeChangeReport" />
+</message>
+<message name="PLC_EquipmentRunModeSetCommandReply">
+  <object id="EquipmentService" method="EquipmentRunModeSetCommandReply" />
+</message>
+<message name="PLC_StoreJobDataReportReply">
+  <object id="JobService" method="StoreJobDataReportReply" />
+</message>
+<message name="PLC_JobCountBlock">
+  <object id="SubBlockService" method="JobCountBlock" />
+</message>
+<message name="PLC_ProductTypeBlock">
+  <object id="SubBlockService" method="ProductTypeBlock" />
+</message>
+<message name="PLC_JobDataEditReportReply">
+  <object id="JobService" method="JobDataEditReportReply" />
+</message>
+<message name="PLC_JobDataEditReport">
+  <object id="JobService" method="JobDataEditReport" />
+</message>
+<message name="PLC_RemoveJobReportReply">
+  <object id="JobService" method="RemoveJobReportReply" />
+</message>
+<message name="PLC_RemoveJobDataReport">
+  <object id="JobService" method="RemoveJobDataReport" />
+</message>
+<message name="PLC_ProcessDataReport">
+  <object id="ProcessDataService" method="ProcessDataReport" />
+</message>
+<message name="PLC_DailyCheckForceReport">
+  <object id="DailyCheckService" method="DailyCheckForceReport" />
+</message>
+<message name="PLC_AutoRecipeChangeMode">
+  <object id="RecipeService" method="AutoRecipeChangeMode" />
+</message>
+<message name="PLC_RobotOperationMode">
+  <object id="ArraySpecialService" method="RobotOperationMode" />
+</message>
+<message name="PLC_RobotOperationModeChangeReport">
+  <object id="ArraySpecialService" method="RobotOperationModeChangeReport" />
+</message>
+<message name="PLC_RobotOperationModeCommandReply">
+  <object id="ArraySpecialService" method="RobotOperationModeCommandReply" />
+</message>
+<message name="PLC_OXRInformationRequestReport">
+  <object id="JobService" method="OXRInformationRequestReport" />
+</message>
+<message name="PLC_OXRInformationUpdateReport">
+  <object id="JobService" method="OXRInformationUpdateReport" />
+</message>
+<message name="PLC_VCRMismatchJobDataRequestReport">
+  <object id="VCRService" method="VCRMismatchJobDataRequest" />
+</message>
+<message name="PLC_EquipmentFetchGlassProportionalRuleReport">
+  <object id="ArraySpecialService" method="EqpFetchGlassProportionalRuleReport" />
+</message>
+<message name="PLC_GlassInfoChangeReport">
+  <object id="EquipmentService" method="GlassInfoChangeReport" />
+</message>
+<message name="PLC_CIMMessageSetCommand">
+  <object id="CIMMessageService" method="CIMMessageSetCommand" />
+</message>
+<message name="PLC_EquipmentFetchGlassProportionalRuleCommandReply">
+  <object id="ArraySpecialService" method="EquipmentFetchGlassProportionalRuleCommandReply" />
+</message>
+<message name="PLC_ForceCleanOutCommandReply">
+  <object id="ArraySpecialService" method="ForceCleanOutCommandReply" />
+</message>
+<message name="PLC_AbnormalForceCleanOutCommandReply">
+  <object id="ArraySpecialService" method="AbnormalForceCleanOutCommandReply" />
+</message>
+<message name="PLC_StoreJobDataReport">
+  <object id="JobService" method="StoreJobDataReport" />
+</message>
+<message name="PLC_GlassGradeMappingCommandReply">
+  <object id="ArraySpecialService" method="GlassGradeMappingCommandReply" />
+</message>
+<message name="PLC_GlassGradeMappingChangeReport">
+  <object id="ArraySpecialService" method="GlassGradeMappingChangeReport" />
+</message>
+<!--<message name="PLC_FileInfoNotifyReportForEQP#03">
+  <object id="PortService" method="FileInfoNotifyReportForEQP" />
+</message>
+<message name="PLC_FileInfoNotifyReportForEQP#04">
+  <object id="PortService" method="FileInfoNotifyReportForEQP" />
+</message>
+<message name="PLC_FileInfoNotifyReportForEQP#05">
+  <object id="PortService" method="FileInfoNotifyReportForEQP" />
+</message>
+<message name="PLC_FileInfoNotifyReportForEQP#06">
+  <object id="PortService" method="FileInfoNotifyReportForEQP" />
+</message>-->
+<message name="PLC_DefectCodeReport">
+  <object id="JobService" method="DefectCodeReport" />
+</message>
+<message name="PLC_InspectionIdleTimeSettingCommandReply">
+  <object id="EquipmentService" method="InspectionIdleTimeSettingCommandReply" />
+</message>
+<message name="PLC_LoaderOperationModeChangeReport">
+  <object id="CELLSpecialService" method="LoaderOperationModeChangeReport" />
+</message>
+<message name="PLC_ENGModeChangeRequestReport">
+  <object id="CELLSpecialService" method="ENGModeChangeRequestReport" />
+</message>
+<message name="PLC_ENGModeChangeReport">
+  <object id="CELLSpecialService" method="ENGModeChangeReport" />
+</message>
+<message name="PLC_ENGMode">
+  <object id="CELLSpecialService" method="ENGMode" />
+</message>
+<message name="PLC_RealtimeGlassCountRequestCommandReply">
+  <object id="CELLSpecialService" method="RealtimeGlassCountRequestCommandReply" />
+</message>
+<message name="PLC_CQLTModeReport">
+  <object id="CELLSpecialService" method="CQLTModeReport" />
+</message>
+<message name="PLC_CGMOGlassRequestReport">
+  <object id="CELLSpecialService" method="CGMOGlassRequestReport" />
+</message>
+<message name="PLC_FirstRunModeReport">
+  <object id="CELLSpecialService" method="FirstRunModeReport" />
+</message>
+<message name="PLC_GlassAssemblyReport">
+  <object id="CELLSpecialService" method="GlassAssemblyReport" />
+</message>
+<message name="PLC_GlassHoldReport">
+  <object id="CELLSpecialService" method="GlassHoldReport" />
+</message>
+<message name="PLC_LoaderTackTimeControlCommandReply">
+  <object id="CELLSpecialService" method="LoaderTackTimeControlCommandReply" />
+</message>
+<message name="PLC_GroupIndexBlock">
+  <object id="CELLSpecialService" method="GroupIndexBlock" />
+</message>
+<message name="PLC_ProductIDBlock">
+  <object id="CELLSpecialService" method="ProductIDBlock" />
+</message>
+<!--<message name="PLC_FileInfoNotifyReportReplyByEQP#01">
+  <object id="PortService" method="FileInfoNotifyReportReplyByEQP" />
+</message>
+<message name="PLC_FileInfoNotifyReportReplyByEQP#02">
+  <object id="PortService" method="FileInfoNotifyReportReplyByEQP" />
+</message>
+<message name="PLC_FileInfoNotifyReportReplyByEQP#03">
+  <object id="PortService" method="FileInfoNotifyReportReplyByEQP" />
+</message>
+<message name="PLC_FileInfoNotifyReportReplyByEQP#04">
+  <object id="PortService" method="FileInfoNotifyReportReplyByEQP" />
+</message>-->
+<message name="PLC_DenseBoxLabelInformationRequest">
+  <object id="DenseBoxService" method="DenseBoxLabelInformationRequest" />
+</message>
+<message name="PLC_UnloadStoreQTimeReport">
+  <object id="CELLSpecialService" method="UnloadStoreQTimeReport" />
+</message>
+<message name="PLC_UnloadGlassQTimeReport">
+  <object id="CELLSpecialService" method="UnloadGlassQTimeReport" />
+</message>
+<message name="PLC_RemoveDenseBoxReport">
+  <object id="DenseBoxService" method="RemoveDenseBoxReport" />
+</message>
+<message name="PLC_FetchOutDenseBoxReport">
+  <object id="DenseBoxService" method="FetchOutDenseBoxReport" />
+</message>
+<message name="PLC_StoreDenseBoxReport">
+  <object id="DenseBoxService" method="StoreDenseBoxReport" />
+</message>
+<message name="PLC_InLineQTimeOverCommandReply">
+  <object id="CELLSpecialService" method="InLineQTimeOverCommandReply" />
+</message>
+<message name="PLC_ProcessCompleteReport">
+  <object id="JobService" method="ProcessCompleteReport" />
+</message>
+<message name="PLC_PalletLabelInformationRequest">
+  <object id="PalletService" method="PalletLabelInformationRequest" />
+</message>
+<message name="PLC_PalletMoveToStageReport">
+  <object id="PalletService" method="PalletMoveToStageReport" />
+</message>
+<message name="PLC_PalletMoveOutStageReport">
+  <object id="PalletService" method="PalletMoveOutStageReport" />
+</message>
+<message name="PLC_PalletDataRequestReport">
+  <object id="PalletService" method="PalletDataRequestReport" />
+</message>
+<message name="PLC_UnPalletDataReport">
+  <object id="PalletService" method="UnPalletDataReport" />
+</message>
+<message name="PLC_PalletStartReport">
+  <object id="PalletService" method="PalletStartReport" />
+</message>
+<message name="PLC_PalletPackingModeChangeReport">
+  <object id="PalletService" method="PalletPackingModeChangeReport" />
+</message>
+<message name="PLC_DenseBoxDataRequest">
+  <object id="DenseBoxService" method="DenseBoxDataRequest" />
+</message>
+<message name="PLC_BufferWarningReport">
+  <object id="EquipmentService" method="BufferWarningReport" />
+</message>
+<message name="PLC_UnitCIMMode">
+  <object id="EquipmentService" method="UnitCIMMode" />
+</message>
+<message name="PLC_UnitVCREnableStatus">
+  <object id="VCRService" method="UnitVCREnableStatus" />
+</message>
+<message name="PLC_UnitENGModeStatus">
+  <object id="EquipmentService" method="UnitENGModeStatus" />
+</message>
+<message name="PLC_DenseBoxCreateReport">
+  <object id="DenseBoxService" method="DenseBoxCreateReport" />
+</message>
+<message name="PLC_DenseBoxDecreateReport">
+  <object id="DenseBoxService" method="DenseBoxDecreateReport" />
+</message>
+<message name="PLC_DenseBoxLineInReport">
+  <object id="DenseBoxService" method="DenseBoxLineInReport" />
+</message>
+<message name="PLC_DenseBoxLineInReport#01">
+  <object id="DenseBoxService" method="DenseBoxLineInReport1" />
+</message>
+<message name="PLC_DenseBoxLineInReport#02">
+  <object id="DenseBoxService" method="DenseBoxLineInReport2" />
+</message>
+<message name="PLC_DenseBoxLineOutReport">
+  <object id="DenseBoxService" method="DenseBoxLineOutReport" />
+</message>
+<message name="PLC_DenseBoxLineOutReport#01">
+  <object id="DenseBoxService" method="DenseBoxLineOutReport1" />
+</message>
+<message name="PLC_DenseBoxLineOutReport#02">
+  <object id="DenseBoxService" method="DenseBoxLineOutReport2" />
+</message>
+<message name="PLC_CassetteProcessByManualReport">
+  <object id="CELLSpecialService" method="CassetteProcessByManualReport" />
+</message>
+<message name="PLC_CassetteSettingCodeCheckMode">
+  <object id="CELLSpecialService" method="CassetteSettingCodeCheckMode" />
+</message>
+<message name="PLC_CQLTMode">
+  <object id="CELLSpecialService" method="CQLTMode" />
+</message>
+<message name="PLC_FirstRunMode">
+  <object id="CELLSpecialService" method="FirstRunMode" />
+</message>
+<message name="PLC_InspectionFlagSetReport">
+  <object id="CELLSpecialService" method="InspectionFlagSetReport" />
+</message>
+<message name="PLC_RunModeChangeReport">
+  <object id="CELLSpecialService" method="RunModeChangeReport" />
+</message>
+<message name="PLC_SupplyStopbyPassReport">
+  <object id="CELLSpecialService" method="SupplyStopbyPassReport" />
+</message>
+<message name="PLC_GlassCuttingStartReport">
+    <object id="CELLSpecialService" method="GlassCuttingStartReport" />
+</message>
+<message name="PLC_MMGControlModeReport">
+    <object id="CELLSpecialService" method="MMGControlModeReport" />
+</message>
+<message name="PLC_MMGJobDataUpdateReport">
+    <object id="CELLSpecialService" method="MMGJobDataUpdateReport" />
+</message>
+<message name="PLC_RTPPAMMaterialInfoRequest">
+    <object id="CELLSpecialService" method="RTPPAMMaterialInfoRequest" />
+</message>
+<message name="PLC_TCVDispatchingRuleChangeReport">
+    <object id="CELLSpecialService" method="TCVDispatchingRuleChangeReport" />
+</message>
+<message name="PLC_ATSLoaderOperationModeChangeReport">
+    <object id="CELLSpecialService" method="ATSLoaderOperationModeChangeReport" />
+</message>
+<message name="PLC_MaterialAuthorityRequestReport">
+    <object id="CELLSpecialService" method="MaterialAuthorityRequestReport" />
+</message>
+<message name="PLC_UnloadDispatchingRuleReport">
+    <object id="CELLSpecialService" method="UnloadDispatchingRuleReport" />
+</message>
+<message name="PLC_PortAbnormalCodeCheckRuleChangeReport">
+    <object id="CELLSpecialService" method="PortAbnormalCodeCheckRuleChangeReport" />
+</message>
+<message name="PLC_batonpassStatus">
+  <object id="PerformanceService" method="BatonPassStatus" />
+</message>
+<message name="PLC_DenseBoxIDCheckReport">
+    <object id="DenseBoxService" method="DenseBoxIDCheckReport" />
+</message>
+<message name="PLC_DenseBoxWeightCheckReport">
+    <object id="DenseBoxService" method="DenseBoxWeightCheckReport" />
+</message>
+<message name="PLC_ChangerPlanRequestReport">
+  <object id="EquipmentService" method="ChangerPlanRequestReport" />
+</message>
+<message name="PLC_ChangerPlanStatusReport">
+  <object id="EquipmentService" method="ChangerPlanStatusReport" />
+</message>
+<message name="PLC_UVMaskUseCountReport">
+  <object id="CELLSpecialService" method="UVMaskUseCountReport" />
+</message>
+<message name="PLC_MaskUseCountReport">
+    <object id="CELLSpecialService" method="MaskUseCountReport" />
+</message>
+<message name="PLC_RunModeChangeReport#01">
+  <object id="CELLSpecialService" method="RunModeChangeReport" />
+</message>
+<message name="PLC_RunModeChangeReport#02">
+  <object id="CELLSpecialService" method="RunModeChangeReport" />
+</message>
+<message name="PLC_PortAssignmentInformationReport">
+  <object id="CELLSpecialService" method="PortAssignmentInformationReport" />
+</message>
+<message name="PLC_TCVSamplingModeReport">
+    <object id="CELLSpecialService" method="TCVSamplingModeReport" />
+</message>
+<message name="PLC_InspectionAbnormalWarningReport">
+    <object id="CELLSpecialService" method="InspectionAbnormalWarningReport" />
+</message>
+<message name="PLC_InspectionWarningCountSettingReport">
+    <object id="CELLSpecialService" method="InspectionWarningCountSettingReport" />
+</message>
+<message name="PLC_LoaderDispatchRuleReport">
+    <object id="CELLSpecialService" method="LoaderDispatchRuleReport" />
+</message>
+<message name="PLC_MaskVCREventReport">
+    <object id="CELLSpecialService" method="MaskVCREventReport" />
+</message>
+<message name="PLC_LoaderDispatchModeReport">
+    <object id="CELLSpecialService" method="LoaderDispatchModeReport" />
+</message>
+<message name="PLC_MaskInformationSettingReport">
+    <object id="CELLSpecialService" method="MaskInformationSettingReport" />
+</message>
+<message name="PLC_MaskActionReport">
+    <object id="CELLSpecialService" method="MaskActionReport" />
+</message>
+<message name="PLC_PretiltAngleFlagReport">
+    <object id="CELLSpecialService" method="PretiltAngleFlagReport" />
+</message>
+<message name="PLC_OperationPermissionRequestCommand">
+    <object id="CELLSpecialService" method="OperationPermissionRequestCommand" />
+</message>
+<message name="PLC_CrossLineJobItemRequest">
+    <object id="CELLSpecialService" method="CrossLineJobItemRequest" />
+</message>
+<message name="PLC_LoaderDispatchRuleMonitor">
+    <object id="CELLSpecialService" method="LoaderDispatchRuleMonitor" />
+</message>
+<message name="PLC_WaitCassetteStatusReport">
+    <object id="EquipmentService" method="WaitCassetteStatusReport" />
+</message>
+<message name="PLC_VirtualPortOperationModeChangeReport">
+  <object id="CELLSpecialService" method="VirtualPortOperationModeChangeReport" />
+</message>
+<message name="PLC_ForceVCRReadingModeChangeReport">
+  <object id="CELLSpecialService" method="ForceVCRReadingModeChangeReport" />
+</message>
+<!-- Robot Use -->
+<!-->message name="PLC_RobotStatus">
+  <object id="RobotService" method="RobotStatus" />
+</message>
+<message name="PLC_RobotArmInfo">
+  <object id="RobotService" method="RobotArmInfo" />
+</message>
+<message name="PLC_Port#01CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#02CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#03CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#04CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#05CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#06CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#07CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#08CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#09CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Port#10CassettePositionJobInfo">
+  <object id="RobotService" method="CassettePositionJobInfo" />
+</message>
+<message name="PLC_Stage#01PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#02PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#03PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#04PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#05PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#06PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#07PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#08PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#09PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#10PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#11PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#12PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#13PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#14PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#15PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#16PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#17PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#18PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#19PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_Stage#20PositionInfo">
+  <object id="RobotService" method="StagePositionInfo" />
+</message>
+<message name="PLC_SlotJobInfo">
+  <object id="RobotService" method="SlotJobInfo" />
+</message>
+<message name="PLC_ArmSubstrateLoadEventReport">
+  <object id="RobotService" method="ArmSubstrateLoadEventReport" />
+</message>
+<message name="PLC_ArmSubstrateUnloadEventReport">
+  <object id="RobotService" method="ArmSubstrateUnloadEventReport" />
+</message>
+<message name="PLC_RobotControlCommandReply">
+  <object id="RobotService" method="RobotControlCommandReply" />
+</message>
+<message name="PLC_RobotCommandResultReport">
+  <object id="RobotService" method="RobotCommandResultReport" />
+</message-->
+<message name="PLC_JobHoldEventReport">
+  <object id="ArraySpecialService" method="JobHoldEventReport" />
+</message>
+<message name="PLC_SetRecipeGroupEndCommandReply">
+  <object id="ArraySpecialService" method="SetRecipeGroupEndCommandReply" />
+</message>
+<message name="PLC_JobDuplicateCheckMode">
+  <object id="EquipmentService" method="JobDuplicateCheckMode" />
+</message>
+<message name="PLC_OperationPermissionRequestCommandReply">
+    <object id="CELLSpecialService" method="OperationPermissionRequestCommandReply" />
+</message>
+<message name="PLC_RunModeChangeCommandReply">
+    <object id="CELLSpecialService" method="RunModeChangeCommandReply" />
+</message>
+<message name="PLC_ATSLoaderOperationModeChangeCommandReply">
+    <object id="CELLSpecialService" method="ATSLoaderOperationModeChangeCommandReply" />
+</message>
+<message name="PLC_InspectionIdleTimeSettingReport">
+  <object id="EquipmentService" method="InspectionIdleTimeSettingReport" />
+</message>
+<message name="PLC_ChangerPlanDownloadSetCommandReply">
+  <object id="EquipmentService" method="ChangerPlanDownloadSetCommandReply" />
+</message>
+<message name="PLC_JobGradeUpdateReport">
+  <object id="ArraySpecialService" method="JobGradeUpdateReport" />
+</message>
+<message name="PLC_JobGradeUpdateReportReply#01">
+  <object id="ArraySpecialService" method="JobGradeUpdateReportReply" />
+</message>
+<message name="PLC_JobGradeUpdateReportReply#02">
+  <object id="ArraySpecialService" method="JobGradeUpdateReportReply" />
+</message>
+<message name="PLC_ProcessTypeBlock">
+  <object id="ArraySpecialService" method="ProcessTypeReport" />
+</message>
+<message name="PLC_ProcessTimeBlock">
+  <object id="ArraySpecialService" method="ProcessTimeReport" />
+</message>
+<message name="PLC_LineBackupMode">
+  <object id="ArraySpecialService" method="LineBackupMode" />
+</message>
+<message name="PLC_LineBackupModeChangeReport">
+  <object id="ArraySpecialService" method="LineBackupModeChangeReport" />
+</message>
+<message name="PLC_JobLineOutCheckReport">
+  <object id="ArraySpecialService" method="JobLineOutCheckReport" />
+</message>
+<message name="PLC_JobLineOutReport">
+  <object id="ArraySpecialService" method="JobLineOutReport" />
+</message>
+<message name="PLC_JobLineInReport">
+  <object id="ArraySpecialService" method="JobLineInReport" />
+</message>
+<message name="PLC_ForceCleanOutReport">
+  <object id="ArraySpecialService" method="ForceCleanOutReport" />
+</message>
+<message name="PLC_EquipmentChamberModeChangeReport">
+  <object id="ArraySpecialService" method="EquipmentChamberModeChangeReport" />
+</message>
+<message name="PLC_OperatorLoginLogoutReport">
+  <object id="EquipmentService" method="OperatorLoginLogoutReport" />
+</message>
+<message name="PLC_FileInfoNotifyCommandReply">
+  <object id="CassetteService" method="FileInfoNotifyCommandReply" />
+</message>
+<message name="PLC_PaperBoxLabelInformationRequest">
+  <object id="PaperBoxService" method="PaperBoxLabelInformationRequest" />
+</message>
+<message name="PLC_FetchOutPaperBoxReport">
+  <object id="PaperBoxService" method="FetchOutPaperBoxReport" />
+</message>
+<message name="PLC_StorePaperBoxReport">
+  <object id="PaperBoxService" method="StorePaperBoxReport" />
+</message>
+<message name="PLC_RemovePaperBoxReport">
+  <object id="PaperBoxService" method="RemovePaperBoxReport" />
+</message>
+<message name="PLC_PaperBoxLineInReport">
+  <object id="PaperBoxService" method="PaperBoxLineInReport" />
+</message>
+<message name="PLC_BoxProcessFinishReport">
+  <object id="PaperBoxService" method="BoxProcessFinishReport" />
+</message>
+<message name="PLC_JobDataSeqNoCheckMode">
+  <object id="CELLSpecialService" method="JobDataSeqNoCheckMode" />
+</message>
+<message name="PLC_TurnAngleCheckMode">
+  <object id="CELLSpecialService" method="TurnAngleCheckMode" />
+</message>
+<message name="PLC_JobTypeforDummyCheckMode">
+  <object id="CELLSpecialService" method="JobTypeforDummyCheckMode" />
+</message>
+<message name="PLC_PanelOXInformationForGlassRequest">
+  <object id="CELLSpecialService" method="PanelOXInformationForGlassRequest" />
+</message>
+<message name="PLC_PanelOXInformationForGlassUpdateReport">
+  <object id="CELLSpecialService" method="PanelOXInformationForGlassUpdateReport" />
+</message>
+<message name="PLC_PanelOXInformationForPanelRequest">
+  <object id="CELLSpecialService" method="PanelOXInformationForPanelRequest" />
+</message>
+<message name="PLC_PanelOXInformationForPanelUpdateReport">
+  <object id="CELLSpecialService" method="PanelOXInformationForPanelUpdateReport" />
+</message>
+<message name="PLC_BlockOXInformationRequest">
+  <object id="CELLSpecialService" method="BlockOXInformationRequest" />
+</message>
+<message name="PLC_BlockOXInformationUpdateReport">
+  <object id="CELLSpecialService" method="BlockOXInformationUpdateReport" />
+</message>
+<message name="PLC_ProcessStartReport">
+  <object id="JobService" method="ProcessStartReport" />
+</message>
+<message name="PLC_ProcessFinishReport">
+  <object id="JobService" method="ProcessFinishReport" />
+</message>
+<message name="PLC_RobotFetchSequenceModeReport">
+  <object id="EquipmentService" method="RobotFetchSequenceModeReport" />
+</message>
+<message name="PLC_RobotFetchSequenceModeCommandReply">
+  <object id="EquipmentService" method="RobotFetchSequenceModeCommandReply" />
+</message>
+<message name="PLC_LotIDCreateRequestReport">
+  <object id="CELLSpecialService" method="LotIDCreateRequestReport" />
+</message>
+<message name="PLC_MaterialWeightReport">
+  <object id="MaterialService" method="MaterialWeightReport" />
+</message>
+<message name="PLC_BoxIDCheckRequest">
+  <object id="DenseBoxService" method="BoxIDCheckRequest" />
+</message>
+<message name="PLC_PortAssignmentChangeReport">
+  <object id="CELLSpecialService" method="PortAssignmentChangeReport" />
+</message>
+<message name="PLC_PortAssignmentCommand">
+  <object id="CELLSpecialService" method="PortAssignmentCommand" />
+</message>
+<message name="PLC_GlassChangeLineRequest">
+  <object id="CELLSpecialService" method="GlassChangeLineRequest" />
+</message>
+<message name="PLC_ScrapRuleCommandReply">
+  <object id="CELLSpecialService" method="ScrapRuleCommandReply" />
+</message>
+<message name="PLC_LabelInformationforBoxRequest">
+  <object id="DenseBoxService" method="LabelInformationforBoxRequest" />
+</message>
+<message name="PLC_LabelInformationforPalletRequest">
+  <object id="PalletService" method="LabelInformationforPalletRequest" />
+</message>
+<message name="PLC_PaperBoxDataRequest">
+  <object id="PaperBoxService" method="PaperBoxDataRequest" />
+</message>
+<message name="PLC_FetchOutCSTReport">
+  <object id="JobService" method="FetchOutCSTReport" />
+</message>
+<message name="PLC_StoreCSTReport">
+  <object id="JobService" method="StoreCSTReport" />
+</message>
+<message name="PLC_ReceiveCSTReport">
+  <object id="JobService" method="ReceiveCSTReport" />
+</message>
+<message name="PLC_SendOutCSTReport">
+  <object id="JobService" method="SendOutCSTReport" />
+</message>
+<message name="PLC_RemoveCSTReport">
+  <object id="JobService" method="RemoveCSTReport" />
+</message>
+<message name="PLC_UVMaskCheckRequest">
+  <object id="CELLSpecialService" method="UVMaskCheckRequest" />
+</message>
+<message name="PLC_RemoveJobDataListReport">
+  <object id="CELLSpecialService" method="RemoveJobDataListReport" />
+</message>
+<message name="PLC_PolRWLifetimeRequest">
+  <object id="CELLSpecialService" method="PolRWLifetimeRequest" />
+</message>
+<message name="PLC_JobDataRequestReport#02">
+  <object id="JobService" method="JobDataRequestReport" />
+</message>

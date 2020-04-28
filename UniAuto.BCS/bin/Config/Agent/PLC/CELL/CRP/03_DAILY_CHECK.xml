@@ -1,0 +1,20 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.0.9.0-->
+<!--DateTime: 2016-03-25 03:32:05-->
+<itemgroup name="L2ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_18_CCCRP_L2_LUL_Ver 1.0.1.xlsx" plcmap="WHCSOT_G6C_BC_Cell_18_CCCRP-PLC Address Map_Ver1.20.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EQ_Positive_pressure" item="CDA" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="EQ_Vacuum_Pressure" item="CDA" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ESD_Monitoring" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_18_CCCRP_L3_CELL REPAIR_Ver 1.0.0.xlsx" plcmap="WHCSOT_G6C_BC_Cell_18_CCCRP-PLC Address Map_Ver1.20.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MAIN_POWER" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_18_CCCRP_L4_CELL REPAIR_Ver 1.0.0.xlsx" plcmap="WHCSOT_G6C_BC_Cell_18_CCCRP-PLC Address Map_Ver1.20.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MAIN_POWER" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

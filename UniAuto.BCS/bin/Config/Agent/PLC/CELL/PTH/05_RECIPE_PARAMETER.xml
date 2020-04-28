@@ -1,0 +1,17 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-04-27 15:40:22-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_13_CCPTH_L2_Loader_Ver 1.0.0 20160405.xlsx" plcmap="WHCSOT_G6C_BC_Cell_13_CCPTH-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_13_CCPTH_L3_PTH_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_Cell_13_CCPTH-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" item="1" site="1" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Version" item="2" site="1" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="Hex" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Name" item="3" site="1" woffset="9" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_No" item="4" site="1" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

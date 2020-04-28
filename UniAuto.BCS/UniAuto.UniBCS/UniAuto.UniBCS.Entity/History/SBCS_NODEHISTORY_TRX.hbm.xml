@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.EQUIPMENTHISTORY, UniAuto.UniBCS.Entity" table="SBCS_NODEHISTORY_TRX">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="UPDATETIME" type="Timestamp">
+			<column name="UPDATETIME" length="8" sql-type="datetime" not-null="true"/>
+		</property>
+		<property name="LINEID" type="String">
+			<column name="LINEID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="NODEID" type="String">
+			<column name="NODEID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="NODENO" type="String">
+			<column name="NODENO" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="NODEATTRIBUTE" type="String">
+			<column name="NODEATTRIBUTE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="CIMMODE" type="String">
+			<column name="CIMMODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UPSTREAMINLINEMODE" type="String">
+			<column name="UPSTREAMINLINEMODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="DOWNSTREAMINLINEMODE" type="String">
+			<column name="DOWNSTREAMINLINEMODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="CURRENTRECIPEID" type="String">
+			<column name="CURRENTRECIPEID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="CURRENTSTATUS" type="String">
+			<column name="CURRENTSTATUS" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="CFJOBCOUNT" type="Int32">
+			<column name="CFJOBCOUNT" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="TFTJOBCOUNT" type="Int32">
+			<column name="TFTJOBCOUNT" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="ALARMEXIST" type="String">
+			<column name="ALARMEXIST" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="EQUIPMENTOPERATORMODE" type="String">
+			<column name="EQUIPMENTOPERATORMODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="AUTORECIPECHANGEFLAG" type="String">
+			<column name="AUTORECIPECHANGEFLAG" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+    <property name="EQUIPMENTRUNMODE" type="String">
+      <column name="EQUIPMENTRUNMODE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="PARTIALFULLMODE" type="String">
+      <column name="PARTIALFULLMODE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="JOBDATACHECKMODE" type="String">
+      <column name="JOBDATACHECKMODE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="RECIPEIDCHECKMODE" type="String">
+      <column name="RECIPEIDCHECKMODE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="PRODUCTTYPECHECKMODE" type="String">
+      <column name="PRODUCTTYPECHECKMODE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="GROUPINDEXCHECKMODE" type="String">
+      <column name="GROUPINDEXCHECKMODE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="PRODUCTIDCHECKMODE" type="String">
+      <column name="PRODUCTIDCHECKMODE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="JOBDUPLICATECHECKMODE" type="String">
+      <column name="JOBDUPLICATECHECKMODE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="COAVERSIONCHECKCHECKMODE" type="String">
+      <column name="COAVERSIONCHECKCHECKMODE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="SAMPLINGRULE" type="String">
+      <column name="SAMPLINGRULE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="SAMPLINGUNIT" type="String">
+      <column name="SAMPLINGUNIT" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="SIDEINFORMATION" type="String">
+      <column name="SIDEINFORMATION" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="TRANSACTIONID" type="String">
+      <column name="TRANSACTIONID" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+	</class>
+</hibernate-mapping>

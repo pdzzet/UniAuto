@@ -1,0 +1,732 @@
+	<message name="NIKON_ConnectStatusChanged">
+		<object id="NikonSECSService" method="ConnectStatusChanged" />
+	</message>
+	<message name="NIKON_SelectStatusChanged">
+		<object id="NikonSECSService" method="SelectStatusChanged" />
+	</message>	
+	<message name="NIKON_S1F0_E">
+		<object id="NikonSECSService" method="S1F0_E_AbortTransaction" />
+	</message>
+	<message name="NIKON_S1F1_E">
+		<object id="NikonSECSService" method="S1F1_E_AreYouThereRequest" />
+	</message>
+	<message name="NIKON_S1F1_H">
+		<object id="NikonSECSService" method="S1F1_H_AreYouThereRequest" />
+	</message>
+	<message name="NIKON_S1F2_E">
+		<object id="NikonSECSService" method="S1F2_E_OnLineData" />
+	</message>
+	<message name="NIKON_S1F2_H">
+		<object id="NikonSECSService" method="S1F2_H_OnLineData" />
+	</message>
+	<message name="NIKON_S1F3_H">
+		<object id="NikonSECSService" method="S1F3_H_SelectedEquipmentStatusRequest" />
+	</message>
+	<message name="NIKON_S1F4_1001_E">
+		<object id="NikonSECSService" method="S1F4_1001_E_SVID1001ListofEnabledAlarms" />
+	</message>
+	<message name="NIKON_S1F4_1002_E">
+		<object id="NikonSECSService" method="S1F4_1002_E_SVID1002ListofSetAlarms" />
+	</message>
+	<message name="NIKON_S1F4_1003_E">
+		<object id="NikonSECSService" method="S1F4_1003_E_SVID1003Time" />
+	</message>
+	<message name="NIKON_S1F4_1004_E">
+		<object id="NikonSECSService" method="S1F4_1004_E_SVID1004ControlMode" />
+	</message>
+	<message name="NIKON_S1F4_1005_E">
+		<object id="NikonSECSService" method="S1F4_1005_E_SVID1005ListofEnabledEvent" />
+	</message>
+	<message name="NIKON_S1F4_1006_E">
+		<object id="NikonSECSService" method="S1F4_1006_E_SVID1006PreviousProcessSate" />
+	</message>
+	<message name="NIKON_S1F4_1007_E">
+		<object id="NikonSECSService" method="S1F4_1007_E_SVID1007CurrentProcessState" />
+	</message>
+	<message name="NIKON_S1F4_1008_E">
+		<object id="NikonSECSService" method="S1F4_1008_E_SVID1008StausofAllMask" />
+	</message>
+	<message name="NIKON_S1F4_1009_E">
+		<object id="NikonSECSService" method="S1F4_1009_E_SVID1009StatusofAllMaskBufferSlots" />
+	</message>
+	<message name="NIKON_S1F4_1010_E">
+		<object id="NikonSECSService" method="S1F4_1010_E_SVID1010AllocationStatusofAllMaskBuffer" />
+	</message>
+	<message name="NIKON_S1F4_1017_E">
+		<object id="NikonSECSService" method="S1F4_1017_E_SVID1017SpoolingLoadState" />
+	</message>
+	<message name="NIKON_S1F4_1018_E">
+		<object id="NikonSECSService" method="S1F4_1018_E_SVID1018ProcessingRecipeName" />
+	</message>
+	<message name="NIKON_S1F4_1019_E">
+		<object id="NikonSECSService" method="S1F4_1019_E_SVID1019ProcessingRecipeNumber" />
+	</message>
+	<message name="NIKON_S1F4_1020_E">
+		<object id="NikonSECSService" method="S1F4_1020_E_SVID1020ProcessingLotID" />
+	</message>
+	<message name="NIKON_S1F4_1021_E">
+		<object id="NikonSECSService" method="S1F4_1021_E_SVID1021ProcessingMaskName" />
+	</message>
+	<message name="NIKON_S1F4_1022_E">
+		<object id="NikonSECSService" method="S1F4_1022_E_SVID1022ProcessingMaskSlotNumber" />
+	</message>
+	<message name="NIKON_S1F4_1023_E">
+		<object id="NikonSECSService" method="S1F4_1023_E_SVID1023ChamberTemperature" />
+	</message>
+	<message name="NIKON_S1F4_1024_E">
+		<object id="NikonSECSService" method="S1F4_1024_E_SVID1024ALCPTemperature" />
+	</message>
+	<message name="NIKON_S1F13_H">
+		<object id="NikonSECSService" method="S1F13_H_EstablishCommunicationsRequest" />
+	</message>
+	<message name="NIKON_S1F13_E">
+		<object id="NikonSECSService" method="S1F13_E_EstablishCommunicationsRequest" />
+	</message>
+	<message name="NIKON_S1F14_E">
+		<object id="NikonSECSService" method="S1F14_E_EstablishCommunicationsRequestAcknowledge" />
+	</message>
+	<message name="NIKON_S1F14_H">
+		<object id="NikonSECSService" method="S1F14_H_EstablishCommunicationsRequestAcknowledge" />
+	</message>
+	<message name="NIKON_S1F15_H">
+		<object id="NikonSECSService" method="S1F15_H_RequestOffLine" />
+	</message>
+	<message name="NIKON_S1F16_E">
+		<object id="NikonSECSService" method="S1F16_E_OffLineAcknowledge" />
+	</message>
+	<message name="NIKON_S1F17_H">
+		<object id="NikonSECSService" method="S1F17_H_RequestOnLine" />
+	</message>
+	<message name="NIKON_S1F18_E">
+		<object id="NikonSECSService" method="S1F18_E_OnLineAcknowledge" />
+	</message>
+	<message name="NIKON_S2F0_E">
+		<object id="NikonSECSService" method="S2F0_E_AbortTransaction" />
+	</message>
+	<message name="NIKON_S2F13_H">
+		<object id="NikonSECSService" method="S2F13_H_EquipmentConstantRequest" />
+	</message>
+	<message name="NIKON_S2F14_501_E">
+		<object id="NikonSECSService" method="S2F14_501_E_ECID501TimeFormat" />
+	</message>
+	<message name="NIKON_S2F14_503_E">
+		<object id="NikonSECSService" method="S2F14_503_E_ECID503TimeOutvalueofcommunicationestablishment" />
+	</message>
+	<message name="NIKON_S2F14_505_E">
+		<object id="NikonSECSService" method="S2F14_505_E_ECID505MaximumSpoolSize" />
+	</message>
+	<message name="NIKON_S2F14_506_E">
+		<object id="NikonSECSService" method="S2F14_506_E_ECID506MaximumSpoolTransmissionMessageSize" />
+	</message>
+	<message name="NIKON_S2F14_507_E">
+		<object id="NikonSECSService" method="S2F14_507_E_ECID507SpecificationWhenetheSpoolAreaBecomesFull" />
+	</message>
+	<message name="NIKON_S2F14_508_E">
+		<object id="NikonSECSService" method="S2F14_508_E_ECID508DefaultControlMode" />
+	</message>
+	<message name="NIKON_S2F14_509_E">
+		<object id="NikonSECSService" method="S2F14_509_E_ECID509DefaultOnLinemode" />
+	</message>
+	<message name="NIKON_S2F14_510_E">
+		<object id="NikonSECSService" method="S2F14_510_E_ECID510OnLineFailureState" />
+	</message>
+	<message name="NIKON_S2F15_501_H">
+		<object id="NikonSECSService" method="S2F15_501_H_ECID501NewEquipmentConstantSend" />
+	</message>
+	<message name="NIKON_S2F15_503_H">
+		<object id="NikonSECSService" method="S2F15_503_H_ECID503NewEquipmentConstantSend" />
+	</message>
+	<message name="NIKON_S2F15_505_H">
+		<object id="NikonSECSService" method="S2F15_505_H_ECID505NewEquipmentConstantSend" />
+	</message>
+	<message name="NIKON_S2F15_506_H">
+		<object id="NikonSECSService" method="S2F15_506_H_ECID506NewEquipmentConstantSend" />
+	</message>
+	<message name="NIKON_S2F15_507_H">
+		<object id="NikonSECSService" method="S2F15_507_H_ECID507NewEquipmentConstantSend" />
+	</message>
+	<message name="NIKON_S2F15_508_H">
+		<object id="NikonSECSService" method="S2F15_508_H_ECID508NewEquipmentConstantSend" />
+	</message>
+	<message name="NIKON_S2F15_509_H">
+		<object id="NikonSECSService" method="S2F15_509_H_ECID509NewEquipmentConstantSend" />
+	</message>
+	<message name="NIKON_S2F15_510_H">
+		<object id="NikonSECSService" method="S2F15_510_H_ECID510NewEquipmentConstantSend" />
+	</message>
+	<message name="NIKON_S2F16_E">
+		<object id="NikonSECSService" method="S2F16_E_NewEquipmentConstantAcknowledge" />
+	</message>
+	<message name="NIKON_S2F17_E">
+		<object id="NikonSECSService" method="S2F17_E_DateandTimeRequest" />
+	</message>
+	<message name="NIKON_S2F17_H">
+		<object id="NikonSECSService" method="S2F17_H_DateandTimeRequest" />
+	</message>
+	<message name="NIKON_S2F18_E">
+		<object id="NikonSECSService" method="S2F18_E_DateandTimeData" />
+	</message>
+	<message name="NIKON_S2F18_H">
+		<object id="NikonSECSService" method="S2F18_H_DateandTimeData" />
+	</message>
+	<message name="NIKON_S2F23_H">
+		<object id="NikonSECSService" method="S2F23_H_TraceInitializeSend" />
+	</message>
+	<message name="NIKON_S2F24_E">
+		<object id="NikonSECSService" method="S2F24_E_TraceInitializeSendAcknowledge" />
+	</message>
+	<message name="NIKON_S2F25_E">
+		<object id="NikonSECSService" method="S2F25_E_LoopbackDiagnosticRequest" />
+	</message>
+	<message name="NIKON_S2F25_H">
+		<object id="NikonSECSService" method="S2F25_H_LoopbackDiagnosticRequest" />
+	</message>
+	<message name="NIKON_S2F26_E">
+		<object id="NikonSECSService" method="S2F26_E_LoopbackDiagnosticData" />
+	</message>
+	<message name="NIKON_S2F26_H">
+		<object id="NikonSECSService" method="S2F26_H_LoopbackDiagnosticData" />
+	</message>
+	<message name="NIKON_S2F29_H">
+		<object id="NikonSECSService" method="S2F29_H_EquipmentConstantNamelistRequest" />
+	</message>
+	<message name="NIKON_S2F30_501_E">
+		<object id="NikonSECSService" method="S2F30_501_E_ECID501EquipmentConstantNamelist" />
+	</message>
+	<message name="NIKON_S2F30_503_E">
+		<object id="NikonSECSService" method="S2F30_503_E_ECID503EquipmentConstantNamelist" />
+	</message>
+	<message name="NIKON_S2F30_505_E">
+		<object id="NikonSECSService" method="S2F30_505_E_ECID505EquipmentConstantNamelist" />
+	</message>
+	<message name="NIKON_S2F30_506_E">
+		<object id="NikonSECSService" method="S2F30_506_E_ECID506EquipmentConstantNamelist" />
+	</message>
+	<message name="NIKON_S2F30_507_E">
+		<object id="NikonSECSService" method="S2F30_507_E_ECID507EquipmentConstantNamelist" />
+	</message>
+	<message name="NIKON_S2F30_508_E">
+		<object id="NikonSECSService" method="S2F30_508_E_ECID508EquipmentConstantNamelist" />
+	</message>
+	<message name="NIKON_S2F30_509_E">
+		<object id="NikonSECSService" method="S2F30_509_E_ECID509EquipmentConstantNamelist" />
+	</message>
+	<message name="NIKON_S2F30_510_E">
+		<object id="NikonSECSService" method="S2F30_510_E_ECID510EquipmentConstantNamelist" />
+	</message>
+	<message name="NIKON_S2F31_H">
+		<object id="NikonSECSService" method="S2F31_H_DateandTimeSetRequest" />
+	</message>
+	<message name="NIKON_S2F32_E">
+		<object id="NikonSECSService" method="S2F32_E_DateandTimeSetAcknowledge" />
+	</message>
+	<message name="NIKON_S2F33_H">
+		<object id="NikonSECSService" method="S2F33_H_DefineReport" />
+	</message>
+	<message name="NIKON_S2F34_E">
+		<object id="NikonSECSService" method="S2F34_E_DefineReportAcknowledge" />
+	</message>
+	<message name="NIKON_S2F35_H">
+		<object id="NikonSECSService" method="S2F35_H_LinkEventReport" />
+	</message>
+	<message name="NIKON_S2F36_E">
+		<object id="NikonSECSService" method="S2F36_E_LinkEvnetReportAcknowledge" />
+	</message>
+	<message name="NIKON_S2F37_H">
+		<object id="NikonSECSService" method="S2F37_H_EnableDisableEventReport" />
+	</message>
+	<message name="NIKON_S2F38_E">
+		<object id="NikonSECSService" method="S2F38_E_EnableDisableEvnetReportAcknowledge" />
+	</message>
+	<message name="NIKON_S2F39_H">
+		<object id="NikonSECSService" method="S2F39_H_MultiblockInquire" />
+	</message>
+	<message name="NIKON_S2F40_E">
+		<object id="NikonSECSService" method="S2F40_E_MultiblockGrant" />
+	</message>
+	<message name="NIKON_S2F41_STOP_H">
+		<object id="NikonSECSService" method="S2F41_STOP_H_STOPHostCommandSend" />
+	</message>
+	<message name="NIKON_S2F41_ABORT_H">
+		<object id="NikonSECSService" method="S2F41_ABORT_H_ABORTHostCommandSend" />
+	</message>
+	<message name="NIKON_S2F42_E">
+		<object id="NikonSECSService" method="S2F42_E_HostCommandAcknowledge" />
+	</message>
+  <message name="NIKON_S2F43_H">
+    <object id="NikonSECSService" method="S2F43_H_ResetSpoolingStreamsandFunctions" />
+  </message>
+  <message name="NIKON_S2F44_E">
+    <object id="NikonSECSService" method="S2F44_E_ResetSpoolingAcknowledge" />
+  </message>
+  <message name="NIKON_S5F0_E">
+		<object id="NikonSECSService" method="S5F0_E_AbortTransaction" />
+	</message>
+	<message name="NIKON_S5F1_E">
+		<object id="NikonSECSService" method="S5F1_E_AlarmReportSend" />
+	</message>
+	<message name="NIKON_S5F2_H">
+		<object id="NikonSECSService" method="S5F2_H_AlarmReportAcknowledge" />
+	</message>
+	<message name="NIKON_S5F3_H">
+		<object id="NikonSECSService" method="S5F3_H_EnableDisableAlarmSend" />
+	</message>
+	<message name="NIKON_S5F4_E">
+		<object id="NikonSECSService" method="S5F4_E_EnableDisableAlarmAcknowledge" />
+	</message>
+	<message name="NIKON_S5F5_H">
+		<object id="NikonSECSService" method="S5F5_H_ListAlarmsRequest" />
+	</message>
+	<message name="NIKON_S5F6_E">
+		<object id="NikonSECSService" method="S5F6_E_ListAlarmData" />
+	</message>
+	<message name="NIKON_S6F0_E">
+		<object id="NikonSECSService" method="S6F0_E_AbortTransaction" />
+	</message>
+	<message name="NIKON_S6F1_E">
+		<object id="NikonSECSService" method="S6F1_E_TraceDataSend" />
+	</message>
+	<message name="NIKON_S6F3_1_0_E">
+		<object id="NikonSECSService" method="S6F3_1_0_E_CEID1SUBCD0ProcessResultReport" />
+	</message>
+	<message name="NIKON_S6F3_1_99_E">
+		<object id="NikonSECSService" method="S6F3_1_99_E_CEID1SUBCD99ProcessResultReport" />
+	</message>
+	<message name="NIKON_S6F3_2_0_E">
+		<object id="NikonSECSService" method="S6F3_2_0_E_CEID2SUBCD0ProcessResultReport" />
+	</message>
+	<message name="NIKON_S6F3_2_99_E">
+		<object id="NikonSECSService" method="S6F3_2_99_E_CEID2SUBCD99ProcessResultReport" />
+	</message>
+	<message name="NIKON_S6F4_H">
+		<object id="NikonSECSService" method="S6F4_H_ProcessResultReportAcknowledge" />
+	</message>
+	<message name="NIKON_S6F5_E">
+		<object id="NikonSECSService" method="S6F5_E_MultiblockDataSendInquire" />
+	</message>
+	<message name="NIKON_S6F6_H">
+		<object id="NikonSECSService" method="S6F6_H_MultiblockGrant" />
+	</message>
+	<message name="NIKON_S6F11_1_E">
+		<object id="NikonSECSService" method="S6F11_1_E_CEID1EquipmentOffLine" />
+	</message>
+	<message name="NIKON_S6F11_2_E">
+		<object id="NikonSECSService" method="S6F11_2_E_CEID2HostOffLine" />
+	</message>
+	<message name="NIKON_S6F11_3_E">
+		<object id="NikonSECSService" method="S6F11_3_E_CEID3OnLineLocal" />
+	</message>
+	<message name="NIKON_S6F11_4_E">
+		<object id="NikonSECSService" method="S6F11_4_E_CEID4OnLineRemote" />
+	</message>
+	<message name="NIKON_S6F11_101_E">
+		<object id="NikonSECSService" method="S6F11_101_E_CEID101InitializeStart" />
+	</message>
+	<message name="NIKON_S6F11_102_E">
+		<object id="NikonSECSService" method="S6F11_102_E_CEID102InitializeEnd" />
+	</message>
+	<message name="NIKON_S6F11_103_E">
+		<object id="NikonSECSService" method="S6F11_103_E_CEID103SetupStart" />
+	</message>
+	<message name="NIKON_S6F11_104_E">
+		<object id="NikonSECSService" method="S6F11_104_E_CEID104JobNotPossibleState" />
+	</message>
+	<message name="NIKON_S6F11_105_E">
+		<object id="NikonSECSService" method="S6F11_105_E_CEID105JobReadyState" />
+	</message>
+	<message name="NIKON_S6F11_106_E">
+		<object id="NikonSECSService" method="S6F11_106_E_CEID106StartTransitiontoJobNotPossibleState" />
+	</message>
+	<message name="NIKON_S6F11_107_E">
+		<object id="NikonSECSService" method="S6F11_107_E_CEID107ExposureRelatedSequenceStart" />
+	</message>
+	<message name="NIKON_S6F11_108_E">
+		<object id="NikonSECSService" method="S6F11_108_E_CEID108ExposureRelatedSequenceEnd" />
+	</message>
+	<message name="NIKON_S6F11_109_E">
+		<object id="NikonSECSService" method="S6F11_109_E_CEID109PlateProcessingStart" />
+	</message>
+	<message name="NIKON_S6F11_110_E">
+		<object id="NikonSECSService" method="S6F11_110_E_CEID110PlateProcessingEnd" />
+	</message>
+	<message name="NIKON_S6F11_111_E">
+		<object id="NikonSECSService" method="S6F11_111_E_CEID111AlarmOccurred" />
+	</message>
+	<message name="NIKON_S6F11_112_E">
+		<object id="NikonSECSService" method="S6F11_112_E_CEID112AlarmCleared" />
+	</message>
+	<message name="NIKON_S6F11_113_E">
+		<object id="NikonSECSService" method="S6F11_113_E_CEID113AssistOccurred" />
+	</message>
+	<message name="NIKON_S6F11_114_E">
+		<object id="NikonSECSService" method="S6F11_114_E_CEID114AssistCleared" />
+	</message>
+	<message name="NIKON_S6F11_115_E">
+		<object id="NikonSECSService" method="S6F11_115_E_CEID115AnotherCommandStarted" />
+	</message>
+	<message name="NIKON_S6F11_116_E">
+		<object id="NikonSECSService" method="S6F11_116_E_CEID116AnotherCommandEnded" />
+	</message>
+	<message name="NIKON_S6F11_121_E">
+		<object id="NikonSECSService" method="S6F11_121_E_CEID121WarmingOccurred" />
+	</message>
+	<message name="NIKON_S6F11_122_E">
+		<object id="NikonSECSService" method="S6F11_122_E_CEID122WarmingAcknowledged" />
+	</message>
+	<message name="NIKON_S6F11_201_E">
+		<object id="NikonSECSService" method="S6F11_201_E_CEID201AllMaskInitialized" />
+	</message>
+	<message name="NIKON_S6F11_202_E">
+		<object id="NikonSECSService" method="S6F11_202_E_CEID202MaskInserted" />
+	</message>
+	<message name="NIKON_S6F11_203_E">
+		<object id="NikonSECSService" method="S6F11_203_E_CEID203MaskRemoved" />
+	</message>
+	<message name="NIKON_S6F11_204_E">
+		<object id="NikonSECSService" method="S6F11_204_E_CEID204MaskLoadedfromCase" />
+	</message>
+	<message name="NIKON_S6F11_205_E">
+		<object id="NikonSECSService" method="S6F11_205_E_CEID205MaskUnloadedtoCase" />
+	</message>
+	<message name="NIKON_S6F11_206_E">
+		<object id="NikonSECSService" method="S6F11_206_E_CEID206IDCheckStart" />
+	</message>
+	<message name="NIKON_S6F11_207_E">
+		<object id="NikonSECSService" method="S6F11_207_E_CEID207IDCheckEnd" />
+	</message>
+	<message name="NIKON_S6F11_208_E">
+		<object id="NikonSECSService" method="S6F11_208_E_CEID208ParticleCheckStart" />
+	</message>
+	<message name="NIKON_S6F11_209_E">
+		<object id="NikonSECSService" method="S6F11_209_E_CEID209ParticleCheckEnd" />
+	</message>
+	<message name="NIKON_S6F11_210_E">
+		<object id="NikonSECSService" method="S6F11_210_E_CEID210MaskSetupCompleted" />
+	</message>
+	<message name="NIKON_S6F11_211_E">
+		<object id="NikonSECSService" method="S6F11_211_E_CEID211MaskLoadCompleted" />
+	</message>
+	<message name="NIKON_S6F11_212_E">
+		<object id="NikonSECSService" method="S6F11_212_E_CEID212MaskUnloadedComplete" />
+	</message>
+	<message name="NIKON_S6F11_251_E">
+		<object id="NikonSECSService" method="S6F11_251_E_CEID251AllMaskSlotsInitialized" />
+	</message>
+	<message name="NIKON_S6F11_252_E">
+		<object id="NikonSECSService" method="S6F11_252_E_CEID252MaskCaseInserted" />
+	</message>
+	<message name="NIKON_S6F11_253_E">
+		<object id="NikonSECSService" method="S6F11_253_E_CEID253MaskCaseRemoved" />
+	</message>
+	<message name="NIKON_S6F11_254_E">
+		<object id="NikonSECSService" method="S6F11_254_E_CEID254EquipmentMaskUseStart" />
+	</message>
+	<message name="NIKON_S6F11_255_E">
+		<object id="NikonSECSService" method="S6F11_255_E_CEID255EquipmentMaskUseEnd" />
+	</message>
+	<message name="NIKON_S6F11_256_E">
+		<object id="NikonSECSService" method="S6F11_256_E_CEID256RegistertheMaskinMAT" />
+	</message>
+	<message name="NIKON_S6F11_257_E">
+		<object id="NikonSECSService" method="S6F11_257_E_CEID257DeletetheMaskfromMAT" />
+	</message>
+	<message name="NIKON_S6F11_301_E">
+		<object id="NikonSECSService" method="S6F11_301_E_CEID301PlateLoaded" />
+	</message>
+	<message name="NIKON_S6F11_302_E">
+		<object id="NikonSECSService" method="S6F11_302_E_CEID302PlateUnloaded" />
+	</message>
+	<message name="NIKON_S6F11_303_E">
+		<object id="NikonSECSService" method="S6F11_303_E_CEID303PlateScrap" />
+	</message>	
+	<message name="NIKON_S6F11_311_E">
+		<object id="NikonSECSService" method="S6F11_311_E_CEID311LotProcessingStart" />
+	</message>
+	<message name="NIKON_S6F11_312_E">
+		<object id="NikonSECSService" method="S6F11_312_E_CEID312LotProcessEnd" />
+	</message>
+	<message name="NIKON_S6F11_401_E">
+		<object id="NikonSECSService" method="S6F11_401_E_CEID401JobLoaded" />
+	</message>
+	<message name="NIKON_S6F11_402_E">
+		<object id="NikonSECSService" method="S6F11_402_E_CEID402JobCanceled" />
+	</message>
+	<message name="NIKON_S6F11_403_E">
+		<object id="NikonSECSService" method="S6F11_403_E_CEID403OperatorJobManipulation" />
+	</message>
+	<message name="NIKON_S6F11_404_E">
+		<object id="NikonSECSService" method="S6F11_404_E_CEID404JobProcessingConditionEstablished" />
+	</message>
+	<message name="NIKON_S6F11_1201_E">
+		<object id="NikonSECSService" method="S6F11_1201_E_CEID1201RecipeControlChanged" />
+	</message>
+	<message name="NIKON_S6F11_1202_E">
+		<object id="NikonSECSService" method="S6F11_1202_E_CEID1202MachineConstantChanged" />
+	</message>
+	<message name="NIKON_S6F11_1203_E">
+		<object id="NikonSECSService" method="S6F11_1203_E_CEID1203SystemParameterChanged" />
+	</message>
+	<message name="NIKON_S6F11_1204_E">
+		<object id="NikonSECSService" method="S6F11_1204_E_CEID1204MachineAdjustmentParameterChanged" />
+	</message>
+	<message name="NIKON_S6F11_1301_E">
+		<object id="NikonSECSService" method="S6F11_1301_E_CEID1301ConfirmationNoticeofTerminalServiceMessage" />
+	</message>
+	<message name="NIKON_S6F11_1302_E">
+		<object id="NikonSECSService" method="S6F11_1302_E_CEID1302HostRequestCommandErrorNotice" />
+	</message>
+	<message name="NIKON_S6F12_H">
+		<object id="NikonSECSService" method="S6F12_H_EventReportAcknowledge" />
+	</message>
+	<message name="NIKON_S6F15_H">
+		<object id="NikonSECSService" method="S6F15_H_EventReportRequest" />
+	</message>
+	<message name="NIKON_S6F16_1_E">
+		<object id="NikonSECSService" method="S6F16_1_E_CEID1EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_2_E">
+		<object id="NikonSECSService" method="S6F16_2_E_CEID2EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_3_E">
+		<object id="NikonSECSService" method="S6F16_3_E_CEID3EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_4_E">
+		<object id="NikonSECSService" method="S6F16_4_E_CEID4EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_101_E">
+		<object id="NikonSECSService" method="S6F16_101_E_CEID101EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_102_E">
+		<object id="NikonSECSService" method="S6F16_102_E_CEID102EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_103_E">
+		<object id="NikonSECSService" method="S6F16_103_E_CEID103EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_104_E">
+		<object id="NikonSECSService" method="S6F16_104_E_CEID104EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_105_E">
+		<object id="NikonSECSService" method="S6F16_105_E_CEID105EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_106_E">
+		<object id="NikonSECSService" method="S6F16_106_E_CEID106EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_107_E">
+		<object id="NikonSECSService" method="S6F16_107_E_CEID107EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_108_E">
+		<object id="NikonSECSService" method="S6F16_108_E_CEID108EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_109_E">
+		<object id="NikonSECSService" method="S6F16_109_E_CEID109EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_110_E">
+		<object id="NikonSECSService" method="S6F16_110_E_CEID110EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_111_E">
+		<object id="NikonSECSService" method="S6F16_111_E_CEID111EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_112_E">
+		<object id="NikonSECSService" method="S6F16_112_E_CEID112EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_113_E">
+		<object id="NikonSECSService" method="S6F16_113_E_CEID113EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_114_E">
+		<object id="NikonSECSService" method="S6F16_114_E_CEID114EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_115_E">
+		<object id="NikonSECSService" method="S6F16_115_E_CEID115EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_121_E">
+		<object id="NikonSECSService" method="S6F16_121_E_CEID121EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_122_E">
+		<object id="NikonSECSService" method="S6F16_122_E_CEID122EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_201_E">
+		<object id="NikonSECSService" method="S6F16_201_E_CEID201EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_202_E">
+		<object id="NikonSECSService" method="S6F16_202_E_CEID202EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_203_E">
+		<object id="NikonSECSService" method="S6F16_203_E_CEID203EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_204_E">
+		<object id="NikonSECSService" method="S6F16_204_E_CEID204EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_205_E">
+		<object id="NikonSECSService" method="S6F16_205_E_CEID205EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_206_E">
+		<object id="NikonSECSService" method="S6F16_206_E_CEID206EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_116_E">
+		<object id="NikonSECSService" method="S6F16_116_E_CEID116EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_207_E">
+		<object id="NikonSECSService" method="S6F16_207_E_CEID207EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_208_E">
+		<object id="NikonSECSService" method="S6F16_208_E_CEID208EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_209_E">
+		<object id="NikonSECSService" method="S6F16_209_E_CEID209EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_210_E">
+		<object id="NikonSECSService" method="S6F16_210_E_CEID210EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_211_E">
+		<object id="NikonSECSService" method="S6F16_211_E_CEID211EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_212_E">
+		<object id="NikonSECSService" method="S6F16_212_E_CEID212EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_251_E">
+		<object id="NikonSECSService" method="S6F16_251_E_CEID251EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_252_E">
+		<object id="NikonSECSService" method="S6F16_252_E_CEID252EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_253_E">
+		<object id="NikonSECSService" method="S6F16_253_E_CEID253EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_254_E">
+		<object id="NikonSECSService" method="S6F16_254_E_CEID254EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_255_E">
+		<object id="NikonSECSService" method="S6F16_255_E_CEID255EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_256_E">
+		<object id="NikonSECSService" method="S6F16_256_E_CEID256EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_257_E">
+		<object id="NikonSECSService" method="S6F16_257_E_CEID257EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_301_E">
+		<object id="NikonSECSService" method="S6F16_301_E_CEID301EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_302_E">
+		<object id="NikonSECSService" method="S6F16_302_E_CEID302EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_311_E">
+		<object id="NikonSECSService" method="S6F16_311_E_CEID311EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_312_E">
+		<object id="NikonSECSService" method="S6F16_312_E_CEID312EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_401_E">
+		<object id="NikonSECSService" method="S6F16_401_E_CEID401EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_402_E">
+		<object id="NikonSECSService" method="S6F16_402_E_CEID402EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_403_E">
+		<object id="NikonSECSService" method="S6F16_403_E_CEID403EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_404_E">
+		<object id="NikonSECSService" method="S6F16_404_E_CEID404EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_1201_E">
+		<object id="NikonSECSService" method="S6F16_1201_E_CEID1201EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_1202_E">
+		<object id="NikonSECSService" method="S6F16_1202_E_CEID1202EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_1203_E">
+		<object id="NikonSECSService" method="S6F16_1203_E_CEID1203EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_1204_E">
+		<object id="NikonSECSService" method="S6F16_1204_E_CEID1204EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_1301_E">
+		<object id="NikonSECSService" method="S6F16_1301_E_CEID1301EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_1302_E">
+		<object id="NikonSECSService" method="S6F16_1302_E_CEID1302EventReportData" />
+	</message>
+	<message name="NIKON_S6F16_303_E">
+		<object id="NikonSECSService" method="S6F16_303_E_CEID303EventReportData" />
+	</message>
+	<message name="NIKON_S6F19_H">
+		<object id="NikonSECSService" method="S6F19_H_IndividualReportRequest" />
+	</message>
+	<message name="NIKON_S6F20_E">
+		<object id="NikonSECSService" method="S6F20_E_IndividualReportData" />
+	</message>
+  <message name="NIKON_S6F23_H">
+    <object id="NikonSECSService" method="S6F23_H_RequestSpooledData" />
+  </message>
+  <message name="NIKON_S6F24_E">
+    <object id="NikonSECSService" method="S6F24_E_RequestSpooledDataAcknowledge" />
+  </message>
+  <message name="NIKON_S7F0_E">
+		<object id="NikonSECSService" method="S7F0_E_AbortTransaction" />
+	</message>
+	<message name="NIKON_S7F19_H">
+		<object id="NikonSECSService" method="S7F19_H_CurrentEPPDRequest" />
+	</message>
+	<message name="NIKON_S7F20_E">
+		<object id="NikonSECSService" method="S7F20_E_CurrentEPPDData" />
+	</message>
+	<message name="NIKON_S7F23_H">
+		<object id="NikonSECSService" method="S7F23_H_FormattedProcessProgramSend" />
+	</message>
+	<message name="NIKON_S7F24_E">
+		<object id="NikonSECSService" method="S7F24_E_FormattedProcessProgramAcknowledge" />
+	</message>
+	<message name="NIKON_S7F25_H">
+		<object id="NikonSECSService" method="S7F25_H_FormattedProcessProgramRequest" />
+	</message>
+	<message name="NIKON_S7F26_E">
+		<object id="NikonSECSService" method="S7F26_E_FormattedProcessProgramData" />
+	</message>
+	<message name="NIKON_S7F27_E">
+		<object id="NikonSECSService" method="S7F27_E_ProcessProgramVerificationSend" />
+	</message>
+	<message name="NIKON_S7F28_H">
+		<object id="NikonSECSService" method="S7F28_H_ProcessProgramVerificationAcknowledge" />
+	</message>
+	<message name="NIKON_S9F1_E">
+		<object id="NikonSECSService" method="S9F1_E_UnrecognizedDeviceID" />
+	</message>
+	<message name="NIKON_S9F3_E">
+		<object id="NikonSECSService" method="S9F3_E_UnrecognizedStreamType" />
+	</message>
+	<message name="NIKON_S9F5_E">
+		<object id="NikonSECSService" method="S9F5_E_UnrecognizedFunctionType" />
+	</message>
+	<message name="NIKON_S9F7_E">
+		<object id="NikonSECSService" method="S9F7_E_IllegalData" />
+	</message>
+	<message name="NIKON_S9F9_E">
+		<object id="NikonSECSService" method="S9F9_E_TransactionTimerTimeout" />
+	</message>
+	<message name="NIKON_S9F11_E">
+		<object id="NikonSECSService" method="S9F11_E_DataTooLong" />
+	</message>
+	<message name="NIKON_S9F13_E">
+		<object id="NikonSECSService" method="S9F13_E_ConversationTimeout" />
+	</message>
+	<message name="NIKON_S10F0_E">
+		<object id="NikonSECSService" method="S10F0_E_AbortTransaction" />
+	</message>
+	<message name="NIKON_S10F1_E">
+		<object id="NikonSECSService" method="S10F1_E_TerminalRequest" />
+	</message>
+	<message name="NIKON_S10F2_H">
+		<object id="NikonSECSService" method="S10F2_H_TerminalRequestAcknowledge" />
+	</message>
+	<message name="NIKON_S10F3_H">
+		<object id="NikonSECSService" method="S10F3_H_TerminalDisplaySingle" />
+	</message>
+	<message name="NIKON_S10F4_E">
+		<object id="NikonSECSService" method="S10F4_E_TerminalDisplaySingleAcknowledge" />
+	</message>
+	<message name="NIKON_S10F5_H">
+		<object id="NikonSECSService" method="S10F5_H_TerminalDisplayMulti" />
+	</message>
+	<message name="NIKON_S10F6_E">
+		<object id="NikonSECSService" method="S10F6_E_TerminalDisplayMultiAcknowledge" />
+	</message>

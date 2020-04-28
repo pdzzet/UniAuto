@@ -1,0 +1,314 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.1.0.0-->
+<!--DateTime: 2016-03-13 12:17:44-->
+<itemgroup name="L2ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L02_Loader_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="IONCDAPressure" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OTHERCDAPressure" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="VacuumUPPERPressure" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="VacuumUNDERPressure" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L04_Cleaner_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_USE" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_SET1" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_SET2" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUV_SET3" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_1_Up_USE" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_1_Up_RPM" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_1_UpDirect" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_1_Up_Gap" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_1_Dn_USE" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_1_Dn_RPM" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_1_Dn_Direct" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_1_Dn_Gap" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_2_Up_USE" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_2_Up_RPM" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_2_Up_Direct" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_2_Up_Gap" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_2_Dn_USE" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_2_Dn_RPM" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_2_Dn_Direct" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RB_1_2_Dn_Gap" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="L_Heater_TEMP" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_USE" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_Recipe_Numbe" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Lamp1_RD_Transfo" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Lamp2_RD_Transfo" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Lamp1_Used_Time_1" site="" woffset="34" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Lamp1_Used_Time_2" site="" woffset="36" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L6ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L06_Coater_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="1ST_Wiper_Count_1G" item="Coater" site="" woffset="9" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="2ND_Wiper_Count_1G" item="Coater" site="" woffset="11" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="1ST_Wiper_Count_2G" item="Coater" site="" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="2ND_Wiper_Count_2G" item="Coater" site="" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CSP1L_Count" item="Coater" site="" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CSP1R_2L_Count" item="Coater" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Tempture_Glass_Stage1" item="Coater" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="-10" reportto="MES" unit="" reportunit="0" />
+  <item name="Tempture_Glass_Stage2" item="Coater" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="-10" reportto="MES" unit="" reportunit="0" />
+  <item name="Tempture_Glass_Stage3" item="Coater" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="-10" reportto="MES" unit="" reportunit="0" />
+  <item name="Tempture_Glass_Stage4" item="Coater" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="-10" reportto="MES" unit="" reportunit="0" />
+  <item name="PR_Bottle_Weight1_1" item="Coater" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PR_Bottle_Weight1_2" item="Coater" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PR_Bottle_Weight2_1" item="Coater" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PR_Bottle_Weight2_2" item="Coater" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PR_Tempture_1" item="Coater" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="-10" reportto="MES" unit="" reportunit="0" />
+  <item name="PR_Tempture_2" item="Coater" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="-10" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L07_HPCP_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE1" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE2" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE3" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE4" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE5" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE6" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE7" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE8" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE9" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE10" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE11" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE12" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE13" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE14" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE15" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE16" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE17" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE18" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE19" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE20" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE21" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE22" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HB1_TEMP" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE1" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE2" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE3" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE4" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE5" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE6" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE7" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE8" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE9" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE10" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE11" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE12" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE13" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE14" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE15" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE16" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE17" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE18" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE19" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE20" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE21" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE22" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HB2_TEMP" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE1" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE2" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE3" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE4" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE5" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE6" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE7" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE8" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE9" site="" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE10" site="" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE11" site="" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE12" site="" woffset="66" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE13" site="" woffset="67" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE14" site="" woffset="68" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE15" site="" woffset="69" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE16" site="" woffset="70" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE17" site="" woffset="71" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE18" site="" woffset="72" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE19" site="" woffset="73" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE20" site="" woffset="74" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE21" site="" woffset="75" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE22" site="" woffset="76" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HB3_TEMP" site="" woffset="77" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE1" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE2" site="" woffset="79" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE3" site="" woffset="80" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE4" site="" woffset="81" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE5" site="" woffset="82" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE6" site="" woffset="83" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE7" site="" woffset="84" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE8" site="" woffset="85" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE9" site="" woffset="86" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE10" site="" woffset="87" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE11" site="" woffset="88" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE12" site="" woffset="89" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE13" site="" woffset="90" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE14" site="" woffset="91" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE15" site="" woffset="92" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE16" site="" woffset="93" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE17" site="" woffset="94" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE18" site="" woffset="95" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE19" site="" woffset="96" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE20" site="" woffset="97" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE21" site="" woffset="98" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE22" site="" woffset="99" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="HB4_TEMP" site="" woffset="100" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="CP1_TEMP" site="" woffset="101" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CP2_TEMP" site="" woffset="102" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L8ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L08_THK_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R_Mura_Ins_Lamp_Life" item="R_Mura_Ins_Lamp_Life" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="T_Mura_Ins_Lamp_Life" item="T_Mura_Ins_Lamp_Life" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="T/O/C_MES_Lamp_Life" item="T/O/C_MES_Lamp_Life" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Review_Lamp_Life" item="Review_Lamp_Life" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L10ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L10_Exposure_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LAMP_USE_TIME" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="MASK_EXP_GLASS" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EXP_ILLUMINATION" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L13ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L13_Developer_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Neutral_chamber_exhaust_pressure" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Developing(1)_chamber_exhaust_pressure" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Developing(2)_chamber_exhaust_pressure" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Developing(3)_chamber_exhaust_pressure" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Developing(4)_chamber_exhaust_pressure" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Washing_chamber_exhaust_pressure" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="H/M-slit-to-HPMJ_chamber_exhaust_pressure" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Air_knife_chamber_exhaust_pressure" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Hot_blow_chamber_exhaust_pressure" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Washing_chamber_air_source_pressure" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Washing_chamber_total_amount_of_supplied_air" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Upper_air_knife_air_source_pressure" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Upper_air_knife_total_amount_of_supplied_air" site="" woffset="22" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Lower_air_knife_air_source_pressure" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Lower_air_knife_total_amount_of_supplied_air" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Hot_blow_air_source_pressure" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Hot_blow_total_amount_of_supplied_air" site="" woffset="28" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ-to-A/K_chamber_shower_total_amount_of_supplied_DIW" site="" woffset="30" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_processing_tank1_temperature" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_processing_tank1_use_time" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_processing_tank1_idle_time" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_processing_tank1_number_of_glass" site="" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_processing_tank1_conductivity" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_processing_tank2_temperature" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_processing_tank2_use_time" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_processing_tank2_idle_time" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_processing_tank2_number_of_glass" site="" woffset="41" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_processing_tank2_conductivity" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_buffer_tank_temperature" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_buffer_tank_conductivity" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Developing_tank_total_amount_of_supplied_DIW" site="" woffset="46" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CCSS_total_amount_of_supplied_KOH0.04_" site="" woffset="48" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CCSS_total_amount_of_supplied_KOH4_" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CCSS_liquid_supply_pressure_KOH0.04_" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CCSS_liquid_supply_pressure_KOH4_" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="DEV_buffer_tank_total_amount_of_feed_KOH0.04_" site="" woffset="53" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Mother_liquid_tank_total_amount_of_feed_KOH4_" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DIW_tank_total_amount_of_supplied_DIW" site="" woffset="56" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(1)_current_R" site="" woffset="58" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(1)_current_S" site="" woffset="60" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(1)_current_T" site="" woffset="62" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(1)_instantaneous_power" site="" woffset="64" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(1)_total_amount_of_electric_power" site="" woffset="66" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(2)_current_R" site="" woffset="68" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(2)_current_S" site="" woffset="70" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(2)_current_T" site="" woffset="72" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(2)_instantaneous_power" site="" woffset="74" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(2)_total_amount_of_electric_power" site="" woffset="76" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(2)_instantaneous_power" site="" woffset="78" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Power_supply(2)_total_amount_of_electric_power" site="" woffset="80" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L15ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L15_AOI_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CDA1" item="CDA1" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CDA2" item="CDA2" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CDA3" item="CDA3" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CDA4" item="CDA4" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L17ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L17_CD_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Ionizer1" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Ionizer2" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L19ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L19_Macro_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Back_Light_Box_Temperature" item="1" site="1" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ION_Bar_RUN_or_STOP" item="1" site="2" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ION_Bar_Alarm1" item="1" site="3" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ION_Bar_Alarm2" item="1" site="4" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L20ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L20_Oven_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_SET_TEMP" item="SetTemp." site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_UP_L_TEMP" item="CurrentTemp." site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_UP_R_TEMP" item="CurrentTemp." site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_LO_L_TEMP" item="CurrentTemp." site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_LO_R_TEMP" item="CurrentTemp." site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_START_TIME" item="BakeLoadTime" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_END_TIME" item="BakeUnloadTime" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW1_Hz" item="Oven1FanBlower1Hz" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW2_Hz" item="Oven1FanBlower2Hz" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW3_Hz" item="Oven1FanBlower3Hz" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW4_Hz" item="Oven1FanBlower4Hz" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW5_Hz" item="Oven1FanBlower5Hz" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW6_Hz" item="Oven1FanBlower6Hz" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW7_Hz" item="Oven1FanBlower7Hz" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW8_Hz" item="Oven1FanBlower8Hz" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW9_Hz" item="Oven1FanBlower9Hz" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW10_Hz" item="Oven1FanBlower10Hz" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FAN_BLW11_Hz" item="Oven1FanBlower11Hz" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_SHUTTER_OP_TIME" item="ShutterOpenTime" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_SHUTTER_CL_TIME" item="ShutterCloseTime" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_HEAT_EXH1" item="Oven1HeaterExhaust1" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_HEAT_EXH2" item="Oven1HeaterExhaust2" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_HEAT_EXH3" item="Oven1HeaterExhaust3" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_GEN_EXH1" item="Oven1GeneralExhaust1" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_GEN_EXH2" item="Oven1GeneralExhaust2" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_GEN_EXH3" item="Oven1GeneralExhaust3" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FILTER_UP" item="Oven1FilterUpDefferent" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV1_FILTER_DN" item="Oven1FilterDownDefferent" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_SET_TEMP" item="SetTemp." site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_UP_TEMP" item="CurrentTemp." site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_LO_TEMP" item="CurrentTemp." site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_START_TIME" item="BakeLoadTime" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_END_TIME" item="BakeUnloadTime" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_FAN_BLW1_Hz" item="Oven2FanBlower1Hz" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_FAN_BLW2_Hz" item="Oven2FanBlower2Hz" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_FAN_BLW3_Hz" item="Oven2FanBlower3Hz" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_FAN_BLW4_Hz" item="Oven2FanBlower4Hz" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_FAN_BLW5_Hz" item="Oven2FanBlower5Hz" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_FAN_BLW6_Hz" item="Oven2FanBlower6Hz" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_FAN_BLW7_Hz" item="Oven2FanBlower7Hz" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_FAN_BLW8_Hz" item="Oven2FanBlower8Hz" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_FAN_BLW9_Hz" item="Oven2FanBlower9Hz" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_SHUTTER_OP_TIME" item="ShutterOpenTime" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_SHUTTER_CL_TIME" item="ShutterCloseTime" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_HEAT_EXH1" item="Oven2HeaterExhaust1" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_HEAT_EXH2" item="Oven2HeaterExhaust2" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_HEAT_EXH3" item="Oven2HeaterExhaust3" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_GEN_EXH1" item="Oven2GeneralExhaust1" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_GEN_EXH2" item="Oven2GeneralExhaust2" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_GEN_EXH3" item="Oven2GeneralExhaust3" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OV2_FILTER" item="Oven2FilterDefferent" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L22ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L22_Unloader_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="IONCDAPressure" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OTHERCDAPressure" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="VacuumUPPERPressure" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="VacuumUNDERPressure" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

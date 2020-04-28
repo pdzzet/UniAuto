@@ -1,0 +1,4 @@
+﻿<?xml version="1.0"?>
+<LinkSignal>
+	<Bit UpStream="L2" DownStream="L3" SeqNo="0101" LinkType="CELL_RBtoST" TimingChart="RBtoST" />
+</LinkSignal>

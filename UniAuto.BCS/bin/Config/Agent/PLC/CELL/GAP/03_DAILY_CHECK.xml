@@ -1,0 +1,17 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-04-27 15:26:04-->
+<itemgroup name="L4ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_14_CCGAP_L4_GMI_Ver 1.0.3 20160427.xlsx" plcmap="WHCSOT_G6C_BC_Cell_14_CCGAP-PLC Address Map_Ver1.08.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ION_Bar_RUN_or_STOP" item="1" site="2" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Back_Light_Temperature_1" item="1" site="2" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Back_Light_Temperature_2" item="1" site="3" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Back_Light_Temperature_3" item="1" site="4" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Back_Light_Temperature_4" item="1" site="5" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Back_Light_Temperature_5" item="1" site="6" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Back_Light_Temperature_6" item="1" site="7" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Back_Light_Temperature_7" item="1" site="8" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Back_Light_Temperature_8" item="1" site="9" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Back_Light_Temperature_9" item="1" site="10" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

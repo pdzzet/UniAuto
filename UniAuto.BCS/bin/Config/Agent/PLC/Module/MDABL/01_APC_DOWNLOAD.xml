@@ -1,0 +1,14 @@
+﻿<!--FileName: 01_APC_DOWNLOAD.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-04-08 15:45:00-->
+<itemgroup name="L3APCDataDownloadBlock" profile="CSOT G6 t3 EQP Profile_01_MDABL_L3_ECN_Ver 1.0.2_20160322.xlsx" plcmap="WHCSOT_G6C_BC_Module_01_MDABL-PLC Address Map_Ver1.0.9.xls">
+  <item name="Clean_pressure_Up" item="Recipe" site="" woffset="0" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Clean_pressure_Low" item="Recipe" site="" woffset="2" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="IPA_Drop_Time" item="Recipe" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Clean_Speed" item="Recipe" site="" woffset="6" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Plasma_Clean_Speed" item="Recipe" site="" woffset="8" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7APCDataDownloadBlock" profile="CSOT G6 t3 EQP Profile_01_MDABL_L7_Dispenser_Ver 1.0.5.xlsx" plcmap="WHCSOT_G6C_BC_Module_01_MDABL-PLC Address Map_Ver1.0.9.xls">
+  <item name="AgcuringtemperatureNumerator" item="AgcuringtemperatureNumerator" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="AgcuringtemperatureDenominato" item="AgcuringtemperatureDenominato" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>

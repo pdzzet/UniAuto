@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.JOBHISTORY, UniAuto.UniBCS.Entity" table="SBCS_JOBHISTORY_TRX">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="UPDATETIME" type="Timestamp">
+			<column name="UPDATETIME" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="EVENTNAME" type="String">
+			<column name="EVENTNAME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="CASSETTESEQNO" type="Int32">
+			<column name="CASSETTESEQNO" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="JOBSEQNO" type="Int32">
+			<column name="JOBSEQNO" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="JOBID" type="String">
+			<column name="JOBID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="GROUPINDEX" type="Int32">
+			<column name="GROUPINDEX" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="PRODUCTTYPE" type="Int32">
+			<column name="PRODUCTTYPE" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="CSTOPERATIONMODE" type="String">
+			<column name="CSTOPERATIONMODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="SUBSTRATETYPE" type="String">
+			<column name="SUBSTRATETYPE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="CIMMODE" type="String">
+			<column name="CIMMODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="JOBTYPE" type="String">
+			<column name="JOBTYPE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="JOBJUDGE" type="String">
+			<column name="JOBJUDGE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="SAMPLINGSLOTFLAG" type="String">
+			<column name="SAMPLINGSLOTFLAG" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="OXRINFORMATIONREQUESTFLAG" type="String">
+			<column name="OXRINFORMATIONREQUESTFLAG" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="FIRSTRUNFLAG" type="String">
+			<column name="FIRSTRUNFLAG" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="JOBGRADE" type="String">
+			<column name="JOBGRADE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PPID" type="String">
+			<column name="PPID" length="255" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="INSPRESERVATIONS" type="String">
+			<column name="INSPRESERVATIONS" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="LASTGLASSFLAG" type="String">
+			<column name="LASTGLASSFLAG" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="INSPJUDGEDDATA" type="String">
+			<column name="INSPJUDGEDDATA" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="TRACKINGDATA" type="String">
+			<column name="TRACKINGDATA" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="EQPFLAG" type="String">
+			<column name="EQPFLAG" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="OXRINFORMATION" type="String">
+			<column name="OXRINFORMATION" length="400" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="CHIPCOUNT" type="Int32">
+			<column name="CHIPCOUNT" length="4" sql-type="int" not-null="false"/>
+		</property>
+      <property name="NODENO" type="String">
+          <column name="NODENO" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="UNITNO" type="String">
+          <column name="UNITNO" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="PORTNO" type="String">
+          <column name="PORTNO" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="SLOTNO" type="String">
+          <column name="SLOTNO" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="NODEID" type="String">
+          <column name="NODEID" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+    <property name="SOURCECASSETTEID" type="String">
+      <column name="SOURCECASSETTEID" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="CURRENTCASSETTEID" type="String">
+      <column name="CURRENTCASSETTEID" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+      <property name="VCRREADGLASSID" type="String">
+          <column name="VCRREADGLASSID" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+   <property name="VCRNO" type="String">
+      <column name="VCRNO" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+      <property name="VCRRESULT" type="String">
+          <column name="VCRRESULT" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="CHIPNAME" type="String">
+          <column name="CHIPNAME" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="TARGETCASSETTESETTINGCODE" type="String">
+          <column name="TARGETCASSETTESETTINGCODE" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="ABNORMALCODE" type="String">
+          <column name="ABNORMALCODE" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="RUNMODE" type="String">
+          <column name="RUNMODE" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="TURNANGLE" type="String">
+          <column name="TURNANGLE" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="PRODUCTSPECNAME" type="String">
+          <column name="PRODUCTSPECNAME" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="PRODUCTSPECVER" type="String">
+          <column name="PRODUCTSPECVER" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="PROCESSFLOWNAME" type="String">
+          <column name="PROCESSFLOWNAME" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="PROCESSOPERATIONNAME" type="String">
+          <column name="PROCESSOPERATIONNAME" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="PRODUCTOWNER" type="String">
+          <column name="PRODUCTOWNER" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="PRODUCTSIZE" type="String">
+          <column name="PRODUCTSIZE" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="LINERECIPENAME" type="String">
+          <column name="LINERECIPENAME" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="NODESTACK" type="String">
+          <column name="NODESTACK" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="PRODUCTNAME" type="String">
+          <column name="PRODUCTNAME" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="GROUPID" type="String">
+          <column name="GROUPID" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="OWNERTYPE" type="String">
+          <column name="OWNERTYPE" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="COAVERSION" type="String">
+        <column name="COAVERSION" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="SAMPLINGVALUE" type="String">
+        <column name="SAMPLINGVALUE" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="TARGETCASSETTEID" type="String">
+        <column name="TARGETCASSETTEID" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+      <property name="UNITID" type="String">
+        <column name="UNITID" length="50" sql-type="varchar" not-null="false"/>
+      </property>
+    <property name="TRANSACTIONID" type="String">
+      <column name="TRANSACTIONID" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+  </class>
+</hibernate-mapping>

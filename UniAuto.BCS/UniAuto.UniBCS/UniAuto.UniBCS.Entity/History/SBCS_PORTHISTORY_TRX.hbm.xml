@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.PORTHISTORY, UniAuto.UniBCS.Entity" table="SBCS_PORTHISTORY_TRX">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="UPDATETIME" type="Timestamp">
+			<column name="UPDATETIME" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="LINEID" type="String">
+			<column name="LINEID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="NODEID" type="String">
+			<column name="NODEID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PORTID" type="String">
+			<column name="PORTID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PORTNO" type="Int32">
+			<column name="PORTNO" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="PORTTYPE" type="String">
+			<column name="PORTTYPE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PORTMODE" type="String">
+			<column name="PORTMODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PORTENABLEMODE" type="String">
+			<column name="PORTENABLEMODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PORTTRANSFERMODE" type="String">
+			<column name="PORTTRANSFERMODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PORTSTATUS" type="String">
+			<column name="PORTSTATUS" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="CASSETTESEQNO" type="Int32">
+			<column name="CASSETTESEQNO" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="CASSETTESTATUS" type="String">
+			<column name="CASSETTESTATUS" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="QTIMEFLAG" type="String">
+			<column name="QTIMEFLAG" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+    <property name="TRANSACTIONID" type="String">
+      <column name="TRANSACTIONID" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="GRADE" type="String">
+      <column name="GRADE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="PRODUCTTYPE" type="String">
+      <column name="PRODUCTTYPE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="CASSETTESETCODE" type="String">
+      <column name="CASSETTESETCODE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+	</class>
+</hibernate-mapping>

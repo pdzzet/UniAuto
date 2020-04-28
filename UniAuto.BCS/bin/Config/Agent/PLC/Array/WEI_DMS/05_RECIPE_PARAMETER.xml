@@ -1,0 +1,19 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.0.9.0-->
+<!--DateTime: 2016-02-24 14:26:09-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_23_TCWEI_L2_Indexer(SEEC)_Ver1.0.2_20160108.xlsx" plcmap="CSOT_G6C_BC_Array_23_TCWEI-PLC Address Map_Ver1.05.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter01" site="" woffset="12" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter02" site="" woffset="18" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter03" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter04" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter05" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter06" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter07" site="" woffset="25" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter08" site="" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter09" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter10" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter11" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

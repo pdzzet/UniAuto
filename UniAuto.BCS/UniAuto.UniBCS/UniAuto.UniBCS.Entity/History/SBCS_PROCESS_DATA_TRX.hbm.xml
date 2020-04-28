@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.PROCESSDATAHISTORY, UniAuto.UniBCS.Entity" table="SBCS_PROCESS_DATA_TRX">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="CASSETTESEQNO" type="Int32">
+			<column name="CASSETTESEQNO" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="JOBSEQNO" type="Int32">
+			<column name="JOBSEQNO" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="JOBID" type="String">
+			<column name="JOBID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="TRXID" type="String">
+			<column name="TRXID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="MESCONTROLSTATE" type="String">
+			<column name="MESCONTROLSTATE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="NODEID" type="String">
+			<column name="NODEID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UPDATETIME" type="DateTime">
+			<column name="UPDATETIME" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="FILENAMA" type="String">
+			<column name="FILENAMA" length="100" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PROCESSTIME" type="Int32">
+			<column name="PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="LOCALPROCESSSTARTTIME" type="String">
+			<column name="LOCALPROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="LOCALPROCSSSENDTIME" type="String">
+			<column name="LOCALPROCSSSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT1PROCESSTIME" type="Int32">
+			<column name="UNIT1PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT1PROCESSSTARTTIME" type="String">
+			<column name="UNIT1PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT1PROCESSENDTIME" type="String">
+			<column name="UNIT1PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT2PROCESSTIME" type="Int32">
+			<column name="UNIT2PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT2PROCESSSTARTTIME" type="String">
+			<column name="UNIT2PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT2PROCESSENDTIME" type="String">
+			<column name="UNIT2PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT3PROCESSTIME" type="Int32">
+			<column name="UNIT3PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT3PROCESSSTARTTIME" type="String">
+			<column name="UNIT3PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT3PROCESSENDTIME" type="String">
+			<column name="UNIT3PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT4PROCESSTIME" type="Int32">
+			<column name="UNIT4PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT4PROCESSSTARTTIME" type="String">
+			<column name="UNIT4PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT4PROCESSENDTIME" type="String">
+			<column name="UNIT4PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT5PROCESSTIME" type="Int32">
+			<column name="UNIT5PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT5PROCESSSTARTTIME" type="String">
+			<column name="UNIT5PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT5PROCESSENDTIME" type="String">
+			<column name="UNIT5PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT6PROCESSTIME" type="Int32">
+			<column name="UNIT6PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT6PROCESSSTARTTIME" type="String">
+			<column name="UNIT6PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT6PROCESSENDTIME" type="String">
+			<column name="UNIT6PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT7PROCESSTIME" type="Int32">
+			<column name="UNIT7PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT7PROCESSSTARTTIME" type="String">
+			<column name="UNIT7PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT7PROCESSENDTIME" type="String">
+			<column name="UNIT7PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT8PROCESSTIME" type="Int32">
+			<column name="UNIT8PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT8PROCESSSTARTTIME" type="String">
+			<column name="UNIT8PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT8PROCESSENDTIME" type="String">
+			<column name="UNIT8PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT9PROCESSTIME" type="Int32">
+			<column name="UNIT9PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT9PROCESSSTARTTIME" type="String">
+			<column name="UNIT9PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT9PROCESSENDTIME" type="String">
+			<column name="UNIT9PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT10PROCESSTIME" type="Int32">
+			<column name="UNIT10PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT10PROCESSSTARTTIME" type="String">
+			<column name="UNIT10PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT10PROCESSENDTIME" type="String">
+			<column name="UNIT10PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT11PROCESSTIME" type="Int32">
+			<column name="UNIT11PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT11PROCESSSTARTTIME" type="String">
+			<column name="UNIT11PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT11PROCESSENDTIME" type="String">
+			<column name="UNIT11PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT12PROCESSTIME" type="Int32">
+			<column name="UNIT12PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT12PROCESSSTARTTIME" type="String">
+			<column name="UNIT12PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT12PROCESSENDTIME" type="String">
+			<column name="UNIT12PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT13PROCESSTIME" type="Int32">
+			<column name="UNIT13PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT13PROCESSSTARTTIME" type="String">
+			<column name="UNIT13PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT13PROCESSENDTIME" type="String">
+			<column name="UNIT13PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT14PROCESSTIME" type="Int32">
+			<column name="UNIT14PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT14PROCESSSTARTTIME" type="String">
+			<column name="UNIT14PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT14PROCESSENDTIME" type="String">
+			<column name="UNIT14PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT15PROCESSTIME" type="Int32">
+			<column name="UNIT15PROCESSTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT15PROCESSSTARTTIME" type="String">
+			<column name="UNIT15PROCESSSTARTTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNIT15PROCESSENDTIME" type="String">
+			<column name="UNIT15PROCESSENDTIME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>

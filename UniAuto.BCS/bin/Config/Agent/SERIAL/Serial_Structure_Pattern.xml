@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT>
+  <SpecVersion Ver="0.70"></SpecVersion>
+  <SerialItem>
+    <NodeNoDeviceID Len="4"/>
+    <TrxID Len="12"/>
+    <SNo Len="4"/>
+    <InOut Len="1"/>
+    <DATETIME Len="14"/>
+    <RetCode Len="4"/>
+    <DataType Len="1"/>
+    <FilePath Len="110"/>
+    <FileName Len="50"/>
+    <DataCount Len="5"/>
+    <DataName Len="20"/>
+    <DataItem Len="10"/>
+    <TestString Len="9"/>
+    <EquipmentID Len="16"/>
+    <EQPStatus Len="1"/>
+    <INLINE Len="1"/>
+    <PPID Len="16"/>
+    <JobCount Len="4"/>
+    <AlarmID Len="4"/>
+    <AlarmText Len="80"/>
+    <AlarmLevel Len="1"/>
+    <AlarmWarnType Len="1"/>
+    <AlarmWarnCode Len="2"/>
+    <SyncTime Len="14"/>
+  </SerialItem>
+  <Reserve>
+    <UtilityDataReport_O Len="218" />
+  </Reserve>
+  <MessageSet>
+    <CIMSystemConnectionTest_I TrxID="CPCT" Dir="EQ_TO_BC" WaitReply="CIMSystemConnectionTest_O">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <TestString></TestString>
+    </CIMSystemConnectionTest_I>
+    <CIMSystemConnectionTest_O TrxID="CPCT" Dir="BC_TO_EQ" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <TestString></TestString>
+      <RetCode></RetCode>
+    </CIMSystemConnectionTest_O>
+    <DateTimeSyncCommand_I TrxID="DTSC" Dir="EQ_TO_BC" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <RetCode></RetCode>
+    </DateTimeSyncCommand_I>
+    <DateTimeSyncCommand_O TrxID="DTSC" Dir="BC_TO_EQ" WaitReply="DateTimeSyncCommand_I">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <SyncTime></SyncTime>
+    </DateTimeSyncCommand_O>
+    <EQPAlarmWarningReport_I TrxID="EQAWR" Dir="EQ_TO_BC" WaitReply="EQPAlarmWarningReport_O">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <AlarmLevel></AlarmLevel>
+      <AlarmWarnType></AlarmWarnType>
+      <AlarmWarnCode></AlarmWarnCode>
+      <AlarmID></AlarmID>
+      <AlarmText></AlarmText>
+    </EQPAlarmWarningReport_I>
+    <EQPAlarmWarningReport_O TrxID="EQAWR" Dir="BC_TO_EQ" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <AlarmWarnCode></AlarmWarnCode>
+      <RetCode></RetCode>
+    </EQPAlarmWarningReport_O>
+    <EQPStatusReport_I TrxID="EQSR" Dir="EQ_TO_BC" WaitReply="EQPStatusReport_O">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <EquipmentID></EquipmentID>
+      <EQPStatus></EQPStatus>
+      <INLINE></INLINE>
+      <PPID></PPID>
+      <JobCount></JobCount>
+      <AlarmID></AlarmID>
+      <AlarmText></AlarmText>
+    </EQPStatusReport_I>
+    <EQPStatusReport_O TrxID="EQSR" Dir="BC_TO_EQ" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <RetCode></RetCode>
+    </EQPStatusReport_O>
+    <FacilityDataReport_I TrxID="FDRPT" Dir="EQ_TO_BC" WaitReply="FacilityDataReport_O">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <DataType></DataType>
+      <DataCount></DataCount>
+      <DataItemList>
+        <DataItem></DataItem>
+      </DataItemList>
+    </FacilityDataReport_I>
+    <FacilityDataReport_O TrxID="FDRPT" Dir="BC_TO_EQ" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <RetCode></RetCode>
+    </FacilityDataReport_O>
+    <FacilityDataReportByFile_I TrxID="FDFRPT" Dir="EQ_TO_BC" WaitReply="FacilityDataReportByFile_O">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <DataType></DataType>
+      <FilePath></FilePath>
+      <FileName></FileName>
+    </FacilityDataReportByFile_I>
+    <FacilityDataReportByFile_O TrxID="FDFRPT" Dir="BC_TO_EQ" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <RetCode></RetCode>
+    </FacilityDataReportByFile_O>
+    <NiceDay_I TrxID="NICEDAY" Dir="EQ_TO_BC" WaitReply="NiceDay_O">
+      <NodeNoDeviceID></NodeNoDeviceID>
+    </NiceDay_I>
+    <NiceDay_O TrxID="NICEDAY" Dir="BC_TO_EQ" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <RetCode></RetCode>
+    </NiceDay_O>
+    <ProcessDataReport_I TrxID="PSDRPT" Dir="EQ_TO_BC" WaitReply="ProcessDataReport_O">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <DataType></DataType>
+      <DataCount></DataCount>
+      <DataItemList>
+        <DataItem></DataItem>
+      </DataItemList>
+    </ProcessDataReport_I>
+    <ProcessDataReport_O TrxID="PSDRPT" Dir="BC_TO_EQ" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <RetCode></RetCode>
+    </ProcessDataReport_O>
+    <ProcessDataReportByFile_I TrxID="PSDFRPT" Dir="EQ_TO_BC" WaitReply="ProcessDataReportByFile_O">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <DataType></DataType>
+      <FilePath></FilePath>
+      <FileName></FileName>
+    </ProcessDataReportByFile_I>
+    <ProcessDataReportByFile_O TrxID="PSDFRPT" Dir="BC_TO_EQ" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <RetCode></RetCode>
+    </ProcessDataReportByFile_O>
+    <UtilityDataReport_I TrxID="UDRPT" Dir="EQ_TO_BC" WaitReply="UtilityDataReport_O">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <DataType></DataType>
+      <DataCount></DataCount>
+      <DataItemList>
+        <DataName></DataName>
+        <DataItem></DataItem>
+      </DataItemList>
+    </UtilityDataReport_I>
+    <UtilityDataReport_O TrxID="UDRPT" Dir="BC_TO_EQ" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <RetCode></RetCode>
+    </UtilityDataReport_O>
+    <UtilityDataReportByFile_I TrxID="UDFRPT" Dir="EQ_TO_BC" WaitReply="UtilityDataReportByFile_O">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <DataType></DataType>
+      <FilePath></FilePath>
+      <FileName></FileName>
+    </UtilityDataReportByFile_I>
+    <UtilityDataReportByFile_O TrxID="UDFRPT" Dir="BC_TO_EQ" WaitReply="">
+      <NodeNoDeviceID></NodeNoDeviceID>
+      <RetCode></RetCode>
+    </UtilityDataReportByFile_O>
+</MessageSet>
+</ROOT>

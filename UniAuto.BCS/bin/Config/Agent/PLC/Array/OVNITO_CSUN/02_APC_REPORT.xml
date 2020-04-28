@@ -1,0 +1,6 @@
+﻿<!--FileName: 02_APC_REPORT.xml-->
+<!--Version: 1.0.0.0-->
+<!--DateTime: 2015-01-30 12:32:46-->
+<itemgroup name="L3APCDataReportBlock" profile="CSOT G8.5 t2 EQP Profile_01_TBCVD_L03_CDC_Ver 1.0.5.xlsx" plcmap="CSOT_G8.5B_BC_Array_01_TBCVD-PLC Address Map ver 1.07.xls">
+  <item name="RECIPEID" item="RECIPEID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>

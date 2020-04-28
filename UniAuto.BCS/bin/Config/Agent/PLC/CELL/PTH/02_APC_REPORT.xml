@@ -1,0 +1,7 @@
+﻿<!--FileName: 02_APC_REPORT.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-04-27 15:40:22-->
+<itemgroup name="L3APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_13_CCPTH_L3_PTH_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_Cell_13_CCPTH-PLC Address Map_Ver1.04.xls">
+  <item name="CDA_1Pressure" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="CDA_2Pressure" item="2" site="1" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+</itemgroup>

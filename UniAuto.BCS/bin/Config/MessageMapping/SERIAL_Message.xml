@@ -1,0 +1,33 @@
+<message name="SERIAL_CIMSystemConnectionTest_I">
+  <object id="SerialService" method="SERIAL_CIMSystemConnectionTest_I" />
+</message>
+<message name="SERIAL_DateTimeSyncCommand_I">
+  <object id="SerialService" method="SERIAL_DateTimeSyncCommand_I" />
+</message>
+<message name="SERIAL_EQPAlarmWarningReport_I">
+  <object id="SerialService" method="SERIAL_EQPAlarmWarningReport_I" />
+</message>
+<message name="SERIAL_EQPStatusReport_I">
+  <object id="SerialService" method="SERIAL_EQPStatusReport_I" />
+</message>
+<message name="SERIAL_FacilityDataReport_I">
+  <object id="SerialService" method="SERIAL_FacilityDataReport_I" />
+</message>
+<message name="SERIAL_FacilityDataReportByFile_I">
+  <object id="SerialService" method="SERIAL_FacilityDataReportByFile_I" />
+</message>
+<message name="SERIAL_NiceDay_I">
+  <object id="SerialService" method="SERIAL_NiceDay_I" />
+</message>
+<message name="SERIAL_ProcessDataReport_I">
+  <object id="SerialService" method="SERIAL_ProcessDataReport_I" />
+</message>
+<message name="SERIAL_ProcessDataReportByFile_I">
+  <object id="SerialService" method="SERIAL_ProcessDataReportByFile_I" />
+</message>
+<message name="SERIAL_UtilityDataReport_I">
+  <object id="SerialService" method="SERIAL_UtilityDataReport_I" />
+</message>
+<message name="SERIAL_UtilityDataReportByFile_I">
+  <object id="SerialService" method="SERIAL_UtilityDataReportByFile_I" />
+</message>

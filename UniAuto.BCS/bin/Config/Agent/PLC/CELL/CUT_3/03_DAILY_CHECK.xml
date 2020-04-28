@@ -1,0 +1,114 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-05-08 23:27:58-->
+<itemgroup name="L2ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_3 Line_L2_Loader_Ver 1.0.1_20160415.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EQ_Positive_pressure" item="CDA" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="EQ_Vacuum_Pressure" item="CDA" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>
+<itemgroup name="L3ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_3 Line_L3_CUT(TOP)_Ver 1.0.1_20160506.xlsx.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" item="Recipe_ID" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Version" item="Recipe_Version" site="" woffset="5" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a1_vaccum" item="TFT_UP_Table_a1_vaccum" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a1_vaccum" item="TFT_Down_Table_a1_vaccum" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a1_vaccum" item="CF_UP_Table_a1_vaccum" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a1_vaccum" item="CF_Down_Table_a1_vaccum" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a2_vaccum" item="TFT_UP_Table_a2_vaccum" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a3_vaccum" item="TFT_UP_Table_a3_vaccum" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a4_vaccum" item="TFT_UP_Table_a4_vaccum" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a5_vaccum" item="TFT_UP_Table_a5_vaccum" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a6_vaccum" item="TFT_UP_Table_a6_vaccum" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a2_vaccum" item="TFT_Down_Table_a2_vaccum" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a3_vaccum" item="TFT_Down_Table_a3_vaccum" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a4_vaccum" item="TFT_Down_Table_a4_vaccum" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a5_vaccum" item="TFT_Down_Table_a5_vaccum" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a6_vaccum" item="TFT_Down_Table_a6_vaccum" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_transhand_a1_vaccum" item="TFT_transhand_a1_vaccum" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_transhand_a2_vaccum" item="TFT_transhand_a2_vaccum" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_transhand_a3_vaccum" item="TFT_transhand_a3_vaccum" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_transhand_a4_vaccum" item="TFT_transhand_a4_vaccum" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_transhand_a5_vaccum" item="TFT_transhand_a5_vaccum" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_transhand_a6_vaccum" item="TFT_transhand_a6_vaccum" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a2_vaccum" item="CF_UP_Table_a2_vaccum" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a3_vaccum" item="CF_UP_Table_a3_vaccum" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a4_vaccum" item="CF_UP_Table_a4_vaccum" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a5_vaccum" item="CF_UP_Table_a5_vaccum" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a6_vaccum" item="CF_UP_Table_a6_vaccum" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a2_vaccum" item="CF_Down_Table_a2_vaccum" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a3_vaccum" item="CF_Down_Table_a3_vaccum" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a4_vaccum" item="CF_Down_Table_a4_vaccum" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a5_vaccum" item="CF_Down_Table_a5_vaccum" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a6_vaccum" item="CF_Down_Table_a6_vaccum" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_transhand_a1_vaccum" item="CF_transhand_a1_vaccum" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_transhand_a2_vaccum" item="CF_transhand_a2_vaccum" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_transhand_a3_vaccum" item="CF_transhand_a3_vaccum" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_transhand_a4_vaccum" item="CF_transhand_a4_vaccum" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_transhand_a5_vaccum" item="CF_transhand_a5_vaccum" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_transhand_a6_vaccum" item="CF_transhand_a6_vaccum" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a1_float" item="TFT_UP_Table_a1_float" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a2_float" item="TFT_UP_Table_a2_float" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a3_float" item="TFT_UP_Table_a3_float" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a4_float" item="TFT_UP_Table_a4_float" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a5_float" item="TFT_UP_Table_a5_float" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_UP_Table_a6_float" item="TFT_UP_Table_a6_float" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a1_float" item="TFT_Down_Table_a1_float" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a2_float" item="TFT_Down_Table_a2_float" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a3_float" item="TFT_Down_Table_a3_float" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a4_float" item="TFT_Down_Table_a4_float" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a5_float" item="TFT_Down_Table_a5_float" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_Down_Table_a6_float" item="TFT_Down_Table_a6_float" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a1_float" item="CF_UP_Table_a1_float" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a2_float" item="CF_UP_Table_a2_float" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a3_float" item="CF_UP_Table_a3_float" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a4_float" item="CF_UP_Table_a4_float" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a5_float" item="CF_UP_Table_a5_float" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_UP_Table_a6_float" item="CF_UP_Table_a6_float" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a1_float" item="CF_Down_Table_a1_float" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a2_float" item="CF_Down_Table_a2_float" site="" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a3_float" item="CF_Down_Table_a3_float" site="" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a4_float" item="CF_Down_Table_a4_float" site="" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a5_float" item="CF_Down_Table_a5_float" site="" woffset="66" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_Down_Table_a6_float" item="CF_Down_Table_a6_float" site="" woffset="67" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_3 Line_L5_BCN_Ver 1.0.1_20160506.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Recipe_Version" site="" woffset="5" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="CDA_Source_F" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="DIW_Source_F" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="CDA_Source_P" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_DIW_Source_P_front" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_DIW_Source_P_rear" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_BJ_Tank_P_front" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_BJ_Tank_P_rear" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_RB-R_Tank_P_front" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_RB-L_Tank_P_front" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_RB_Tank_P_rear" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+</itemgroup>
+<itemgroup name="L6ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_3 Line_L6_BUR_Ver 1.0.0_20160506.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MAIN_AIR" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MAIN_VAC" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TRANSFER1_L_VAC" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TRANSFER2_L_VAC" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ROBOT_L_VAC" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="STAGE_L_VAC" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FAC_SUPPLY_AIR1" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FAC_SUPPLY_AIR2" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FAC_SUPPLY_AIR3" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TRANSFER1_R_VAC" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TRANSFER2_R_VAC" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ROBOT_R_VAC" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="STAGE_R_VAC" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L8ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_3 Line_L8_Unloader_Ver 1.0.1_20160415.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EQ_Positive_pressure" item="CDA" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="EQ_Vacuum_Pressure" item="CDA" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>

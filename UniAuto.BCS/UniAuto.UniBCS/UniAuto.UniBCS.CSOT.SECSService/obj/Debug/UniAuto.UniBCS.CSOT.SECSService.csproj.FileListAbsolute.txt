@@ -1,0 +1,15 @@
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.SECSService.dll
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.SECSService.pdb
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.FrmTestSECS.resources
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.csproj.GenerateResource.Cache
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.dll
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.SECSService.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.SECSService.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.csprojAssemblyReference.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.FrmTestSECS.resources
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.csproj.GenerateResource.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.csproj.CoreCompileInputs.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.csproj.CopyComplete
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SECSService\obj\Debug\UniAuto.UniBCS.CSOT.SECSService.pdb

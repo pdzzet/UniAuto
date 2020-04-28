@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LineSetting>
+  <Shop type="CF" >
+    <LineType Name="FCUPK_TYPE1">
+      <Line LineID = "FCUPK100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "FCUPK200" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCMPH_TYPE1">
+      <Line LineID = "FCMPH100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCSPH_TYPE1">
+      <Line LineID = "FCSPH100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCRPH_TYPE1">
+      <Line LineID = "FCRPH100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCGPH_TYPE1">
+      <Line LineID = "FCGPH100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCBPH_TYPE1">
+      <Line LineID = "FCBPH100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCOPH_TYPE1">
+      <Line LineID = "FCOPH100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCMSK_TYPE1">
+      <Line LineID = "FCKCN100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCPSH_TYPE1">
+      <Line LineID = "FCQPS100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCREW_TYPE1">
+      <Line LineID = "FCWRW100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCSRT_TYPE1">
+      <Line LineID = "FCSOR100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCREP_TYPE1">
+      <Line LineID = "FCREP100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+	  <Line LineID = "FCREP400" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCREP_TYPE2">
+      <Line LineID = "FCREP200" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCREP_TYPE3">
+      <Line LineID = "FCREP300" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCMQC_TYPE1">
+      <Line LineID = "FCMQC100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCMQC_TYPE2">
+      <Line LineID = "FCMQC200" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCMAC_TYPE1">
+      <Line LineID = "FCQMA100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+	  <Line LineID = "FCQMA200" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FCAOI_TYPE1">
+      <Line LineID = "FCQAI100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+
+  </Shop>
+  <Shop type="ARRAY" >
+    <LineType Name="IMP_NISSIN">
+      <Line LineID = "TCIMP100" SocketIP="172.18.20.7" SocketPort="9000" DBConn="server=172.18.20.7;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCIMP200" SocketIP="172.18.20.12" SocketPort="9000" DBConn="server=172.18.20.12;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCIMP300" SocketIP="172.18.20.35" SocketPort="9000" DBConn="server=172.18.20.35;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCIMP400" SocketIP="172.18.20.46" SocketPort="9000" DBConn="server=172.18.20.46;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCIMP500" SocketIP="172.18.20.81" SocketPort="9000" DBConn="server=172.18.20.81;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCIMP600" SocketIP="172.18.20.82" SocketPort="9000" DBConn="server=172.18.20.82;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="ELA_JSW">
+      <Line LineID = "TCELA100" SocketIP="172.18.20.14" SocketPort="9000" DBConn="server=172.18.20.14;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCELA200" SocketIP="172.18.20.47" SocketPort="9000" DBConn="server=172.18.20.47;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCELA300" SocketIP="172.18.20.80" SocketPort="9000" DBConn="server=172.18.20.80;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="MSP_ULVAC">
+      <Line LineID = "TCMSP100" SocketIP="172.18.20.23" SocketPort="9000" DBConn="server=172.18.20.23;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCMSP300" SocketIP="172.18.20.60" SocketPort="9000" DBConn="server=172.18.20.60;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCMSP400" SocketIP="172.18.121.63" SocketPort="9000" DBConn="server=172.18.121.63;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCMSP500" SocketIP="172.18.20.59" SocketPort="9000" DBConn="server=172.18.20.59;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="ITO_ULVAC">
+      <Line LineID = "TCITO100" SocketIP="172.18.121.65" SocketPort="9000" DBConn="server=172.18.121.65;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCITO200" SocketIP="172.18.20.56" SocketPort="9000" DBConn="server=172.18.20.56;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CDO_VTECKMAC">
+      <Line LineID = "TCCDO300" SocketIP="172.18.20.71" SocketPort="9000" DBConn="server=172.18.20.71;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCCDO400" SocketIP="172.18.20.11" SocketPort="9000" DBConn="server=172.18.20.11;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="TTP_VTEC">
+      <Line LineID = "TCTTP100" SocketIP="172.18.20.28" SocketPort="9000" DBConn="server=172.18.20.28;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCTTP200" SocketIP="172.18.121.57" SocketPort="9000" DBConn="server=172.18.121.57;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="FLR_CHARM">
+      <Line LineID = "TCFLR100" SocketIP="172.18.20.45" SocketPort="9000" DBConn="server=172.18.20.45;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCFLR200" SocketIP="172.18.20.48" SocketPort="9000" DBConn="server=172.18.20.48;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCFLR300" SocketIP="172.18.121.61" SocketPort="9000" DBConn="server=172.18.121.61;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CLS_MACAOH">
+      <Line LineID = "TCCLS100" SocketIP="172.18.20.4" SocketPort="9000" DBConn="server=172.18.20.4;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCCLS300" SocketIP="172.18.20.36" SocketPort="9000" DBConn="server=172.18.20.36;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CLS_PROCDO">
+      <Line LineID = "TCCLS200" SocketIP="172.18.20.29" SocketPort="9000" DBConn="server=172.18.20.29;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="ATS_YANG">
+      <Line LineID = "TCATS100" SocketIP="172.18.20.61" SocketPort="9000" DBConn="server=172.18.20.61;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCATS200" SocketIP="172.18.20.55" SocketPort="9000" DBConn="server=172.18.20.55;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCATS300" SocketIP="172.18.121.55" SocketPort="9000" DBConn="server=172.18.121.55;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCATS400" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="TEG_YANG">
+      <Line LineID = "TCTEG100" SocketIP="172.18.20.44" SocketPort="9000" DBConn="server=172.18.20.44;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCTEG200" SocketIP="172.18.121.13" SocketPort="9000" DBConn="server=172.18.121.13;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCTEG300" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCTEG400" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="AOH_HBT">
+      <Line LineID = "TCAOH100" SocketIP="172.18.20.34" SocketPort="9000" DBConn="server=172.18.20.34;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCAOH300" SocketIP="172.18.20.68" SocketPort="9000" DBConn="server=172.18.20.68;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCAOH700" SocketIP="172.0.0.1" SocketPort="9000" DBConn="server=172.0.0.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCAOH800" SocketIP="172.18.20.18" SocketPort="9000" DBConn="server=172.18.20.18;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCAOH900" SocketIP="172.0.0.1" SocketPort="9000" DBConn="server=172.0.0.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="AOH_ORBOTECH">
+      <Line LineID = "TCAOH400" SocketIP="172.18.20.31" SocketPort="9000" DBConn="server=172.18.20.31;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="MAC_CONTREL">
+      <Line LineID = "TCMAC200" SocketIP="172.0.0.1" SocketPort="9000" DBConn="server=172.18.20.72;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCMAC600" SocketIP="172.18.20.73" SocketPort="9000" DBConn="server=172.18.20.73;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCMAC700" SocketIP="172.18.20.5" SocketPort="9000" DBConn="server=172.18.20.5;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCMAC800" SocketIP="172.18.20.53" SocketPort="9000" DBConn="server=172.18.20.53;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="NAN_SEMILAB">
+      <Line LineID = "TCNAN100" SocketIP="172.18.20.41" SocketPort="9000" DBConn="server=172.18.20.41;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCNAN300" SocketIP="172.18.121.51" SocketPort="9000" DBConn="server=172.18.121.51;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CVD_ULVAC">
+      <Line LineID = "TCCVD100" SocketIP="172.18.20.8" SocketPort="9000" DBConn="server=172.18.20.8;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCCVD200" SocketIP="172.18.20.74" SocketPort="9000" DBConn="server=172.18.20.74;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCCVD400" SocketIP="172.18.20.75" SocketPort="9000" DBConn="server=172.18.20.75;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCCVD500" SocketIP="172.0.0.1" SocketPort="9000" DBConn="server=172.0.0.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCCVD800" SocketIP="172.0.0.1" SocketPort="9000" DBConn="server=172.0.0.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CVD_AKT">
+      <Line LineID = "TCCVD300" SocketIP="172.18.20.13" SocketPort="9000" DBConn="server=172.18.20.13;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCCVD600" SocketIP="172.18.20.22" SocketPort="9000" DBConn="server=172.18.20.22;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCCVD700" SocketIP="172.18.20.58" SocketPort="9000" DBConn="server=172.18.20.58;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="DRY_ICD">
+      <Line LineID = "TCDRY100" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRY200" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRY300" SocketIP="172.18.20.77" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRY400" SocketIP="172.18.20.78" SocketPort="9000" DBConn="server=172.18.20.78;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRY500" SocketIP="172.18.20.25" SocketPort="9000" DBConn="server=172.18.20.25;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRY600" SocketIP="172.18.20.15" SocketPort="9000" DBConn="server=172.18.20.15;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRY700" SocketIP="172.18.20.33" SocketPort="9000" DBConn="server=172.18.20.33;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="DRY_YAC">
+      <Line LineID = "TCDRY800" SocketIP="172.18.20.30" SocketPort="9000" DBConn="server=172.18.20.30;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRY900" SocketIP="172.18.20.20" SocketPort="9000" DBConn="server=172.18.20.20;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRYA00" SocketIP="172.18.20.50" SocketPort="9000" DBConn="server=172.18.20.50;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRYB00" SocketIP="172.18.20.79" SocketPort="9000" DBConn="server=172.18.20.79;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRYC00" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCDRYD00" SocketIP="172.18.20.40" SocketPort="9000" DBConn="server=172.18.20.40;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="PHL_EDGEEXP">
+      <Line LineID = "TCPHL100" SocketIP="172.18.20.62" SocketPort="9000" DBConn="server=172.18.20.62;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCPHL400" SocketIP="172.18.20.38" SocketPort="9000" DBConn="server=172.18.20.38;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCPHL500" SocketIP="172.18.20.51" SocketPort="9000" DBConn="server=172.18.20.51;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCPHL600" SocketIP="172.18.20.63" SocketPort="9000" DBConn="server=172.18.20.63;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCPHL700" SocketIP="172.18.20.84" SocketPort="9000" DBConn="server=172.18.20.84;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCPHL800" SocketIP="172.18.20.85" SocketPort="9000" DBConn="server=172.18.20.85;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCPHL900" SocketIP="172.0.0.1" SocketPort="9000" DBConn="server=172.0.0.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCPHLA00" SocketIP="172.0.0.1" SocketPort="9000" DBConn="server=172.0.0.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="PHL_TITLE">
+      <Line LineID = "TCPHL200" SocketIP="172.18.20.49" SocketPort="9000" DBConn="server=172.18.20.49;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCPHL300" SocketIP="172.18.20.32" SocketPort="9000" DBConn="server=172.18.20.32;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="OVNSD_VIATRON">
+      <Line LineID = "TCOVN100" SocketIP="172.18.20.17" SocketPort="9000" DBConn="server=172.18.20.17;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCOVN200" SocketIP="172.18.20.83" SocketPort="9000" DBConn="server=172.18.20.83;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+
+    </LineType>
+    <LineType Name="OVNPL_YAC">
+      <Line LineID = "TCOVN300" SocketIP="172.18.20.16" SocketPort="9000" DBConn="server=172.18.20.16;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="OVNITO_CSUN">
+      <Line LineID = "TCOVN400" SocketIP="172.18.20.52" SocketPort="9000" DBConn="server=172.18.20.52;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+	  <Line LineID = "TCOVN500" SocketIP="172.18.121.67" SocketPort="9000" DBConn="server=172.18.121.67;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="RTA_VIATRON">
+      <Line LineID = "TCRTA100" SocketIP="172.18.20.19" SocketPort="9000" DBConn="server=172.18.20.19;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCRTA200" SocketIP="172.18.20.21" SocketPort="9000" DBConn="server=172.18.20.21;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="WET_DMS">
+      <Line LineID = "TCWET100" SocketIP="172.18.20.91" SocketPort="9000" DBConn="server=172.18.20.91;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCWET200" SocketIP="172.18.20.24" SocketPort="9000" DBConn="server=172.18.20.24;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="WEI_DMS">
+      <Line LineID = "TCWEI100" SocketIP="172.18.20.90" SocketPort="9000" DBConn="server=172.18.20.90;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCWEI200" SocketIP="172.18.20.26" SocketPort="9000" DBConn="server=172.18.20.26;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="STR_DMS">
+      <Line LineID = "TCSTR100" SocketIP="172.18.20.37" SocketPort="9000" DBConn="server=172.18.20.37;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCSTR200" SocketIP="172.18.20.39" SocketPort="9000" DBConn="server=172.18.20.39;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCSTR500" SocketIP="172.0.0.1" SocketPort="9000" DBConn="server=172.18.20.39;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCSTR700" SocketIP="172.0.0.1" SocketPort="9000" DBConn="server=172.18.20.39;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCSTR800" SocketIP="172.18.20.10" SocketPort="9000" DBConn="server=172.18.20.10;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCSTR900" SocketIP="172.18.20.27" SocketPort="9000" DBConn="server=172.18.20.27;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCSTRA00" SocketIP="172.18.20.67" SocketPort="9000" DBConn="server=172.18.20.67;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="BFG_SHUZTUNG">
+      <Line LineID = "TCBFG100" SocketIP="172.18.20.42" SocketPort="9000" DBConn="server=172.18.20.42;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CHN_SEEC">
+      <Line LineID = "TCCHN100" SocketIP="172.18.20.43" SocketPort="9000" DBConn="server=172.18.20.43;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "TCCHN200" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="SCN_TORAY">
+      <Line LineID = "TCSCN100" SocketIP="172.18.20.6" SocketPort="9000" DBConn="server=172.18.20.6;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="RSM_QUATEK">
+      <Line LineID = "TCRSM100" SocketIP="172.18.20.9" SocketPort="9000" DBConn="server=172.18.20.9;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CAC_MYTEK">
+      <Line LineID = "TCCAC100" SocketIP="172.18.20.57" SocketPort="9000" DBConn="server=172.18.20.57;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+  </Shop>
+  <Shop type="CELL" >
+    <LineType Name="PIL">
+      <Line LineID = "CCPIL100" SocketIP="172.18.113.9" SocketPort="9000" DBConn="server=172.18.113.9;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPIL200" SocketIP="127.0.0.1" SocketPort="9000" DBConn="server=localhost;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="PDR">
+      <Line LineID = "CCPDR100" SocketIP="172.18.121.3" SocketPort="9000" DBConn="server=172.18.121.3;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="TAM">
+      <Line LineID = "CCTAM100" SocketIP="172.18.121.5" SocketPort="9000" DBConn="server=172.18.121.5;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="PTH">
+      <Line LineID = "CCPTH100" SocketIP="172.18.121.7" SocketPort="9000" DBConn="server=172.18.121.7;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="GAP">
+      <Line LineID = "CCGAP100" SocketIP="172.18.113.1" SocketPort="9000" DBConn="server=172.18.113.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="ODF">
+      <Line LineID = "CCODF100" SocketIP="172.18.121.1" SocketPort="9000" DBConn="server=172.18.121.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>  
+	<LineType Name="ODF_2">
+      <Line LineID = "CCODF200" SocketIP="172.18.121.199" SocketPort="9000" DBConn="server=172.18.121.199;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="PCS">
+      <Line LineID = "CCPCS100" SocketIP="172.18.113.5" SocketPort="9000" DBConn="server=172.18.113.5;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPCS200" SocketIP="172.18.113.199" SocketPort="9000" DBConn="server=172.18.113.199;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="QPP">
+      <Line LineID = "CCQPP100" SocketIP="172.18.113.39" SocketPort="9000" DBConn="server=172.18.113.39;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CUT_1">
+      <Line LineID = "CCCUT100" SocketIP="172.18.161.9" SocketPort="9000" DBConn="server=172.18.161.9;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CUT_2">
+      <Line LineID = "CCCUT200" SocketIP="172.18.161.11" SocketPort="9000" DBConn="server=172.18.161.11;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CUT_3">
+      <Line LineID = "CCCUT300" SocketIP="172.18.161.13" SocketPort="9000" DBConn="server=172.18.161.13;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCUT500" SocketIP="172.18.161.31" SocketPort="9000" DBConn="server=172.18.161.31;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CUT_4">
+      <Line LineID = "CCCUT400" SocketIP="172.18.161.15" SocketPort="9000" DBConn="server=172.18.161.15;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCUTA00" SocketIP="172.18.161.41" SocketPort="9000" DBConn="server=172.18.161.41;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CUT_5">
+      <Line LineID = "CCCUT600" SocketIP="172.18.161.33" SocketPort="9000" DBConn="server=172.18.161.33;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCUT700" SocketIP="172.18.161.35" SocketPort="9000" DBConn="server=172.18.161.35;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CUT_6">
+      <Line LineID = "CCCUT800" SocketIP="172.18.161.37" SocketPort="9000" DBConn="server=172.18.161.37;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CUT_7">
+      <Line LineID = "CCCUT900" SocketIP="172.18.161.39" SocketPort="9000" DBConn="server=172.18.161.39;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CUT_8">
+      <Line LineID = "CCCUTB00" SocketIP="172.18.161.73" SocketPort="9000" DBConn="server=172.18.161.73;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCUTH00" SocketIP="172.18.161.85" SocketPort="9000" DBConn="server=172.18.161.85;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CUT_9">
+      <Line LineID = "CCCUTC00" SocketIP="172.18.161.75" SocketPort="9000" DBConn="server=172.18.161.75;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCUTD00" SocketIP="172.18.161.77" SocketPort="9000" DBConn="server=172.18.161.77;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCUTJ00" SocketIP="172.18.161.87" SocketPort="9000" DBConn="server=172.18.161.87;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+	</LineType>
+    <LineType Name="CUT_10">
+      <Line LineID = "CCCUTE00" SocketIP="172.18.161.79" SocketPort="9000" DBConn="server=172.18.161.79;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCUTG00" SocketIP="172.18.161.83" SocketPort="9000" DBConn="server=172.18.161.83;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCUTL00" SocketIP="172.18.161.91" SocketPort="9000" DBConn="server=172.18.161.91;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+	</LineType>
+    <LineType Name="CUT_11">
+      <Line LineID = "CCCUTF00" SocketIP="172.18.161.81" SocketPort="9000" DBConn="server=172.18.161.81;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCUTK00" SocketIP="172.18.161.89" SocketPort="9000" DBConn="server=172.18.161.89;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+	</LineType>
+    <LineType Name="CUT_12">
+      <Line LineID = "CCCUTM00" SocketIP="172.18.161.93" SocketPort="9000" DBConn="server=172.18.161.93;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+	</LineType>
+    <LineType Name="POL_1">
+      <Line LineID = "CCPOL100" SocketIP="172.18.169.1" SocketPort="9000" DBConn="server=172.18.169.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="POL_2">
+      <Line LineID = "CCPOL200" SocketIP="172.18.169.3" SocketPort="9000" DBConn="server=172.18.169.3;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="POL_3">
+      <Line LineID = "CCPOL300" SocketIP="172.18.169.5" SocketPort="9000" DBConn="server=172.18.169.5;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOL500" SocketIP="172.18.169.9" SocketPort="9000" DBConn="server=172.18.169.9;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOL900" SocketIP="172.18.169.17" SocketPort="9000" DBConn="server=172.18.169.17;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="POL_4">
+      <Line LineID = "CCPOL400" SocketIP="172.18.169.7" SocketPort="9000" DBConn="server=172.18.169.7;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="POL_5">
+      <Line LineID = "CCPOL600" SocketIP="172.18.169.11" SocketPort="9000" DBConn="server=172.18.169.11;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOL700" SocketIP="172.18.169.13" SocketPort="9000" DBConn="server=172.18.169.13;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOL800" SocketIP="172.18.169.15" SocketPort="9000" DBConn="server=172.18.169.15;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOLA00" SocketIP="172.18.169.19" SocketPort="9000" DBConn="server=172.18.169.19;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="POL_6">
+      <Line LineID = "CCPOLB00" SocketIP="172.18.169.21" SocketPort="9000" DBConn="server=172.18.169.21;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOLG00" SocketIP="172.18.169.31" SocketPort="9000" DBConn="server=172.18.169.31;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="POL_7">
+      <Line LineID = "CCPOLC00" SocketIP="172.18.169.23" SocketPort="9000" DBConn="server=172.18.169.23;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOLD00" SocketIP="172.18.169.25" SocketPort="9000" DBConn="server=172.18.169.25;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOLE00" SocketIP="172.18.169.27" SocketPort="9000" DBConn="server=172.18.169.27;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOLF00" SocketIP="172.18.169.29" SocketPort="9000" DBConn="server=172.18.169.29;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOLH00" SocketIP="172.18.169.33" SocketPort="9000" DBConn="server=172.18.169.33;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="POL_8">
+      <Line LineID = "CCPOLJ00" SocketIP="172.18.169.35" SocketPort="9000" DBConn="server=172.18.169.35;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="POL_9">
+      <Line LineID = "CCPOLK00" SocketIP="172.18.169.37" SocketPort="9000" DBConn="server=172.18.169.37;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPOLL00" SocketIP="172.18.169.39" SocketPort="9000" DBConn="server=172.18.169.39;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="RWT">
+      <Line LineID = "CCRWT100" SocketIP="172.18.161.19" SocketPort="9000" DBConn="server=172.18.161.19;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCRWT200" SocketIP="172.18.161.47" SocketPort="9000" DBConn="server=172.18.161.47;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCRWT300" SocketIP="172.18.161.49" SocketPort="9000" DBConn="server=172.18.161.49;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCRWT400" SocketIP="172.18.161.51" SocketPort="9000" DBConn="server=172.18.161.51;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCRWT500" SocketIP="172.18.161.23" SocketPort="9000" DBConn="server=172.18.161.23;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCRWT600" SocketIP="172.18.161.53" SocketPort="9000" DBConn="server=172.18.161.53;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="PCK">
+      <Line LineID = "CCPCK100" SocketIP="172.18.161.1" SocketPort="9000" DBConn="server=172.18.161.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPCK200" SocketIP="172.18.161.3" SocketPort="9000" DBConn="server=172.18.161.3;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPCK300" SocketIP="172.18.161.57" SocketPort="9000" DBConn="server=172.18.161.57;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPCK400" SocketIP="172.18.161.59" SocketPort="9000" DBConn="server=172.18.161.59;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPCK500" SocketIP="172.18.161.97" SocketPort="9000" DBConn="server=172.18.161.97;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPCK600" SocketIP="172.18.161.99" SocketPort="9000" DBConn="server=172.18.161.99;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPCK700" SocketIP="172.18.161.101" SocketPort="9000" DBConn="server=172.18.161.101;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCPCK800" SocketIP="172.18.161.103" SocketPort="9000" DBConn="server=172.18.161.103;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="PPK">
+      <Line LineID = "CCPPK100" SocketIP="172.18.161.61" SocketPort="9000" DBConn="server=172.18.161.61;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="QUP">
+      <Line LineID = "CCQUP100" SocketIP="172.18.177.3" SocketPort="9000" DBConn="server=172.18.177.3;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCQUP200" SocketIP="172.18.177.5" SocketPort="9000" DBConn="server=172.18.177.5;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCQUP300" SocketIP="172.18.177.199" SocketPort="9000" DBConn="server=172.18.177.199;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="RWK">
+      <Line LineID = "CCRWK100" SocketIP="172.18.161.21" SocketPort="9000" DBConn="server=172.18.161.21;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="SOR">
+      <Line LineID = "CCSOR100" SocketIP="172.18.161.17" SocketPort="9000" DBConn="server=172.18.161.17;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCSOR200" SocketIP="172.18.161.63" SocketPort="9000" DBConn="server=172.18.161.63;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCSOR300" SocketIP="172.18.161.65" SocketPort="9000" DBConn="server=172.18.161.65;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCSOR400" SocketIP="172.18.161.25" SocketPort="9000" DBConn="server=172.18.161.25;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCSOR500" SocketIP="172.18.161.67" SocketPort="9000" DBConn="server=172.18.161.67;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCSOR600" SocketIP="172.18.161.69" SocketPort="9000" DBConn="server=172.18.161.69;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCSOR700" SocketIP="172.18.161.105" SocketPort="9000" DBConn="server=172.18.161.105;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCSOR800" SocketIP="172.18.161.107" SocketPort="9000" DBConn="server=172.18.161.107;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CRP">
+      <Line LineID = "CCCRP100" SocketIP="172.18.161.29" SocketPort="9000" DBConn="server=172.18.161.29;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCRP200" SocketIP="172.18.161.43" SocketPort="9000" DBConn="server=172.18.161.43;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCRP300" SocketIP="172.18.161.45" SocketPort="9000" DBConn="server=172.18.161.45;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCRP400" SocketIP="172.18.161.27" SocketPort="9000" DBConn="server=172.18.161.27;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCRP500" SocketIP="172.18.161.27" SocketPort="9000" DBConn="server=172.18.161.27;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CHN">
+      <Line LineID = "CCCHN100" SocketIP="172.18.161.5" SocketPort="9000" DBConn="server=172.18.161.5;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCHN200" SocketIP="172.18.161.7" SocketPort="9000" DBConn="server=172.18.161.7;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "CCCHN300" SocketIP="172.18.161.71" SocketPort="9000" DBConn="server=172.18.161.71;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="QSR">
+      <Line LineID = "CCQSR100" SocketIP="172.18.177.1" SocketPort="9000" DBConn="server=172.18.177.1;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="CLN">
+      <Line LineID = "CCCLN100" SocketIP="172.18.161.109" SocketPort="9000" DBConn="server=172.18.161.109;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="OSM">
+      <Line LineID = "CCOOSM100" SocketIP="172.18.161.113" SocketPort="9000" DBConn="server=172.18.161.113;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="OVP">
+      <Line LineID = "CCOVP100" SocketIP="172.18.161.111" SocketPort="9000" DBConn="server=172.18.161.111;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+  </Shop>
+  <Shop type="MODULE" >
+    <LineType Name="BLL_1">
+      <Line LineID = "MDBLL100" SocketIP="172.18.177.9" SocketPort="9000" DBConn="server=172.18.177.9;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDBLL200" SocketIP="172.18.177.7" SocketPort="9000" DBConn="server=172.18.177.7;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDBLL300" SocketIP="172.18.177.63" SocketPort="9000" DBConn="server=172.18.177.63;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDBLL400" SocketIP="172.18.177.65" SocketPort="9000" DBConn="server=172.18.177.65;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDBLL500" SocketIP="172.18.177.67" SocketPort="9000" DBConn="server=172.18.177.67;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDBLL600" SocketIP="172.18.177.69" SocketPort="9000" DBConn="server=172.18.177.69;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDBLL700" SocketIP="172.18.177.71" SocketPort="9000" DBConn="server=172.18.177.71;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDBLL800" SocketIP="172.18.177.73" SocketPort="9000" DBConn="server=172.18.177.83;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="ABL_1">
+      <Line LineID = "MDABL100" SocketIP="172.18.177.11" SocketPort="9000" DBConn="server=172.18.177.11;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDABL200" SocketIP="172.18.177.13" SocketPort="9000" DBConn="server=172.18.177.13;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDABL300" SocketIP="172.18.177.15" SocketPort="9000" DBConn="server=172.18.177.15;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDABL400" SocketIP="172.18.177.17" SocketPort="9000" DBConn="server=172.18.177.17;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDABL500" SocketIP="172.18.177.19" SocketPort="9000" DBConn="server=172.18.177.19;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDABL600" SocketIP="172.18.177.21" SocketPort="9000" DBConn="server=172.18.177.21;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDABL700" SocketIP="172.18.177.23" SocketPort="9000" DBConn="server=172.18.177.23;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDABL800" SocketIP="172.18.177.25" SocketPort="9000" DBConn="server=172.18.177.25;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="PAK_1">
+      <Line LineID = "MDPAK100" SocketIP="172.18.177.83" SocketPort="9000" DBConn="server=172.18.177.83;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+    <LineType Name="OCR_1">
+      <Line LineID = "MDOCR100" SocketIP="172.18.177.35" SocketPort="9000" DBConn="server=172.18.177.35;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDOCR200" SocketIP="172.18.177.37" SocketPort="9000" DBConn="server=172.18.177.37;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDOCR300" SocketIP="172.18.177.39" SocketPort="9000" DBConn="server=172.18.177.39;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDOCR400" SocketIP="172.18.177.41" SocketPort="9000" DBConn="server=172.18.177.41;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDOCR500" SocketIP="172.18.177.43" SocketPort="9000" DBConn="server=172.18.177.43;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDOCR600" SocketIP="172.18.177.45" SocketPort="9000" DBConn="server=172.18.177.45;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDOCR700" SocketIP="172.18.177.47" SocketPort="9000" DBConn="server=172.18.177.47;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDOCR800" SocketIP="172.18.177.49" SocketPort="9000" DBConn="server=172.18.177.49;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+      <Line LineID = "MDOCR900" SocketIP="172.18.177.51" SocketPort="9000" DBConn="server=172.18.177.51;database=UNIBCS_t3;uid=sa;pwd=itc123!@#" />
+    </LineType>
+  </Shop>
+</LineSetting>
+

@@ -1,0 +1,13 @@
+﻿<!--FileName: 02_APC_REPORT.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-14 11:37:01-->
+<itemgroup name="L3APCDataReportBlock" profile="CSOT G6 t3 EQP Profile_Array_16_TCDRY_L3_DDC_Ver 1.0.1.xlsx" plcmap="CSOT_G6C_BC_Array_16_TCDRY-ICD-PLC Address Map_Ver1.04.xls">
+  <item name="CLN_Speed" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="TableVacuum1" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TableVacuum2" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="CLN_Press" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="ESD_MAX" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="ESD_MIN" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="ESD_MID" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="CLN_GAP" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+</itemgroup>

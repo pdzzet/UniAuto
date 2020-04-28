@@ -1,0 +1,8 @@
+﻿<!--FileName: 01_APC_DOWNLOAD.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-05-17 16:42:02-->
+<itemgroup name="L6APCDataDownloadBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L6_PIC_Ver 1.01_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="PI_TYPE" site="" woffset="0" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="APR_No" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="EQID" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>

@@ -1,0 +1,32 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-04-05 09:02:19-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_08_CCPCK_L2_Loader_Ver 1.0.1.xlsx" plcmap="WHCSOT_G6C_BC_Cell_08_CCPCK-PLC Address Map_Ver1.08.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="VCR_Use" item="Recipe" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_08_CCPCK_L3_PCK_Ver 1.3.20160331.xlsx" plcmap="WHCSOT_G6C_BC_Cell_08_CCPCK-PLC Address Map_Ver1.08.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PortNo" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeWorkTypeNo_1" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipePanelsize" site="" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipePanelsizeLength" site="" woffset="9" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipePanelsizeWidth" site="" woffset="11" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipePanelsizeThickness" site="" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeID" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeSpare_1" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeSpare_2" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeTotalPanelCount" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeRobotWorktype" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipePPArmVac.Type" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeCST1SettingCode" site="" woffset="21" boffset="0" wpoints="2" bpoints="32" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeCST2SettingCode" site="" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeSpareSettingCode" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeRobotVacType" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeTrayCount" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipePanelAliType" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

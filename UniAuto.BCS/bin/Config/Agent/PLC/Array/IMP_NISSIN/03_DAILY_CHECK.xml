@@ -1,0 +1,23 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-11 11:11:42-->
+<itemgroup name="L3ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_Array_01_TCIMP_L3_IMP(Nissin)_Ver 1.0_20150727.xlsx" plcmap="CSOT_G6C_BC_Array_01_TCIMP-PLC Address Map_Ver1.03.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FilMON" item="FilMON" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="BEAMTIMMON" item="BEAMTIMMON" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PFGFILMON" item="PFGFILMON" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="GLSMON" item="GLSMON" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FRMON1" item="FRMON1" site="" woffset="16" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FRMON2" item="FRMON2" site="" woffset="18" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FRMON3" item="FRMON3" site="" woffset="20" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FRMON4" item="FRMON4" site="" woffset="22" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FRMON5" item="FRMON5" site="" woffset="24" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FRMON6" item="FRMON6" site="" woffset="26" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FRMON7" item="FRMON7" site="" woffset="28" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FRMON8" item="FRMON8" site="" woffset="30" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FRMON9" item="FRMON9" site="" woffset="32" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FRMON10" item="FRMON10" site="" woffset="34" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PFRMON1" item="PFRMON1" site="" woffset="36" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PFRMON2" item="PFRMON2" site="" woffset="38" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

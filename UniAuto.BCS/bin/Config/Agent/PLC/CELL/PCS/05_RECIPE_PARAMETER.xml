@@ -1,0 +1,86 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.1.8.0-->
+<!--DateTime: 2016-06-06 16:39:38-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_03_CCPCS_L2_Loader_Ver 1.0.2_20160405.xlsx" plcmap="WHCSOT_G6C_BC_CELL_03_CCPCS-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_03_CCPCS_L3_PCS_Ver 1.0.1_20160506.xlsx" plcmap="WHCSOT_G6C_BC_CELL_03_CCPCS-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" item="Recipe_ID" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_Version" item="Recipe_Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L01" item="TFT_L01" site="" woffset="9" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L02" item="TFT_L02" site="" woffset="11" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L03" item="TFT_L03" site="" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L04" item="TFT_L04" site="" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L05" item="TFT_L05" site="" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L06" item="TFT_L06" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L07" item="TFT_L07" site="" woffset="21" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L08" item="TFT_L08" site="" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L09" item="TFT_L09" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L10" item="TFT_L10" site="" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L11" item="TFT_L11" site="" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L12" item="TFT_L12" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L13" item="TFT_L13" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L14" item="TFT_L14" site="" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_L15" item="TFT_L15" site="" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L01" item="CF_L01" site="" woffset="39" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L02" item="CF_L02" site="" woffset="41" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L03" item="CF_L03" site="" woffset="43" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L04" item="CF_L04" site="" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L05" item="CF_L05" site="" woffset="47" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L06" item="CF_L06" site="" woffset="49" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L07" item="CF_L07" site="" woffset="51" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L08" item="CF_L08" site="" woffset="53" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L09" item="CF_L09" site="" woffset="55" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L10" item="CF_L10" site="" woffset="57" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L11" item="CF_L11" site="" woffset="59" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L12" item="CF_L12" site="" woffset="61" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L13" item="CF_L13" site="" woffset="63" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_L14" item="CF_L14" site="" woffset="65" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_03_CCPCS_L4_PCC_Ver 1.0.1.xlsx" plcmap="WHCSOT_G6C_BC_CELL_03_CCPCS-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Reg_Date_Time" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Panellength" site="" woffset="9" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Panelwidth" site="" woffset="11" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Panelthick" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Inletcvspeed" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Processcvspeed" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Outletcvspeed" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB1_nip" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB1_nip" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB2_nip" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB2_nip" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB3_nip" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB3_nip" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB4_nip" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB4_nip" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB1_speed" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB1_speed" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB2_speed" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB2_speed" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB3_speed" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB3_speed" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB4_speed" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB4_speed" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB1_Dir" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB1_Dir" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB2_Dir" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB2_Dir" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB3_Dir" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB3_Dir" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB4_Dir" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB4_Dir" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Empty" />
+</itemgroup>
+<itemgroup name="L5RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_03_CCPCS_L5_QPK_Ver1.01_20160603.xlsx" plcmap="WHCSOT_G6C_BC_CELL_03_CCPCS-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

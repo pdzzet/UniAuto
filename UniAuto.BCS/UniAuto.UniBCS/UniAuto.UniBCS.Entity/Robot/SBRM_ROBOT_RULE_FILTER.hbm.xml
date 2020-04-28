@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.RobotRuleFilterEntityData, UniAuto.UniBCS.Entity" table="SBRM_ROBOT_RULE_FILTER">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="SERVERNAME" type="String">
+			<column name="SERVERNAME" length="100" sql-type="varchar" not-null="true" index="UK_SBRM_ROBOT_RULE_FILTER"/>
+		</property>
+		<property name="ROBOTNAME" type="String">
+			<column name="ROBOTNAME" length="100" sql-type="varchar" not-null="true" index="UK_SBRM_ROBOT_RULE_FILTER"/>
+		</property>
+		<property name="ROUTEID" type="String">
+			<column name="ROUTEID" length="100" sql-type="varchar" not-null="true" index="UK_SBRM_ROBOT_RULE_FILTER"/>
+		</property>
+		<property name="STEPID" type="Int32">
+			<column name="STEPID" length="4" sql-type="int" not-null="true" index="UK_SBRM_ROBOT_RULE_FILTER"/>
+		</property>
+		<property name="ITEMID" type="String">
+			<column name="ITEMID" length="100" sql-type="varchar" not-null="true" index="UK_SBRM_ROBOT_RULE_FILTER"/>
+		</property>
+		<property name="ITEMSEQ" type="Int32">
+			<column name="ITEMSEQ" length="4" sql-type="int" not-null="true"/>
+		</property>
+		<property name="DESCRIPTION" type="String">
+			<column name="DESCRIPTION" length="1000" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="OBJECTNAME" type="String">
+			<column name="OBJECTNAME" length="100" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="ISENABLED" type="String">
+			<column name="ISENABLED" length="100" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="METHODNAME" type="String">
+			<column name="METHODNAME" length="100" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="REMARKS" type="String">
+			<column name="REMARKS" length="1000" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="LASTUPDATETIME" type="DateTime">
+			<column name="LASTUPDATETIME" length="8" sql-type="datetime" not-null="true"/>
+		</property>
+	</class>
+</hibernate-mapping>

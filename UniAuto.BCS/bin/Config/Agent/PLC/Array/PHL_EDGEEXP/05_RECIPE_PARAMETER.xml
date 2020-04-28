@@ -1,0 +1,7 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.0.0.0-->
+<!--DateTime: 2015-01-30 12:32:46-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="CSOT G8.5 t2 EQP Profile_19_DPI_L2_DPI_Ver 1.2.1.xlsx" plcmap="CSOT_G8.5B_BC_CELL_19_CBDPI-PLC Address Map ver1.30.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="BOTH" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="BOTH" unit="" reportunit="0" />
+</itemgroup>

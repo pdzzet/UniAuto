@@ -1,0 +1,34 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.0.9.0-->
+<!--DateTime: 2016-02-01 09:25:06-->
+<itemgroup name="L2ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_08_FCMSK_L02_MaskCleaner_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_08_FCMSK-PLC Address Map_Ver1.04.xls">
+  <item name="ProcessStart" item="TIME" site="" woffset="0" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ProcessEnd" item="TIME" site="" woffset="3" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Mask_ID" item="ID" site="" woffset="6" boffset="0" wpoints="16" bpoints="256" expression="ASC" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_ID" item="ID" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Cycle_Time" item="TIME" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tank_Temperature" item="TEMP" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Brush_DIW_Flow" item="FLOW" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="N2_Upper_Flow" item="FLOW" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="N2_Low_Flow" item="FLOW" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Brush_KOH_Flow" item="FLOW" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="BrushScrubtray_DIW_Flow" item="FLOW" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="DIW_Rinse_Upper_Flow" item="FLOW" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="DIW_Rinse_Low_Flow" item="FLOW" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CDA_Pressure" item="CDA" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Coolwater_Flow" item="FLOW" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Brush_Rotation" item="FLOW" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Brush_Pressure" item="FLOW" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MaskSpin_Rotation" item="FLOW" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UV_Illuminance" item="FLOW" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UVUse_Time" item="TIME" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Mask_Side" item="-" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="KOH_Concentration" item="FLOW" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_08_FCMSK_L03_MaskAOI_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_08_FCMSK-PLC Address Map_Ver1.04.xls">
+  <item name="RECIPENO" item="RECIPENO" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Lamplifetime（R/F）" item="Lamplifetime（R/F）" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="light" item="light" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="`" />
+  <item name="Threshold" item="Threshold" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact" item="tact" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

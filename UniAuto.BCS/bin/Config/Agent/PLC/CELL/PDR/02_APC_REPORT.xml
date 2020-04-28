@@ -1,0 +1,43 @@
+﻿<!--FileName: 02_APC_REPORT.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-04-27 16:10:20-->
+<itemgroup name="L3APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_11_CCPDR_L3_PDR_ICD_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_Cell_11_CCPDR-PLC Address Map_Ver1.20.xls">
+  <item name="PC1_PPID" item="PC1_PPID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_GLASSID" item="PC1_GLASSID" site="" woffset="1" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_STEPNO" item="PC1_STEPNO" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_EQP_STATE" item="PC1_EQP_STATE" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_PROCESS_TIME" item="PC1_PROCESS_TIME" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_APC" item="PC1_APC" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_GAS1_FLOW" item="PC1_GAS1_FLOW" site="" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_GAS2_FLOW" item="PC1_GAS2_FLOW" site="" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_GAS3_FLOW" item="PC1_GAS3_FLOW" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_GAS4_FLOW" item="PC1_GAS4_FLOW" site="" woffset="21" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_SRF_POWER" item="PC1_SRF_POWER" site="" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_SRF_SERIES" item="PC1_SRF_SERIES" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_SRF_SHUNT" item="PC1_SRF_SHUNT" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_SRF_VPP" item="PC1_SRF_VPP" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_SRF_VDC" item="PC1_SRF_VDC" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_BOT_TOP_TEMP" item="PC1_BOT_TOP_TEMP" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_WALL_TEMP" item="PC1_WALL_TEMP" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_PRESSURE" item="PC1_PRESSURE" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_11_CCPDR_L4_PDR_ICD_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_Cell_11_CCPDR-PLC Address Map_Ver1.20.xls">
+  <item name="PC1_PPID" item="PC1_PPID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_GLASSID" item="PC1_GLASSID" site="" woffset="1" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_STEPNO" item="PC1_STEPNO" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_EQP_STATE" item="PC1_EQP_STATE" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_PROCESS_TIME" item="PC1_PROCESS_TIME" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_APC" item="PC1_APC" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_GAS1_FLOW" item="PC1_GAS1_FLOW" site="" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_GAS2_FLOW" item="PC1_GAS2_FLOW" site="" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_GAS3_FLOW" item="PC1_GAS3_FLOW" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_GAS4_FLOW" item="PC1_GAS4_FLOW" site="" woffset="21" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_SRF_POWER" item="PC1_SRF_POWER" site="" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_SRF_SERIES" item="PC1_SRF_SERIES" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_SRF_SHUNT" item="PC1_SRF_SHUNT" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_SRF_VPP" item="PC1_SRF_VPP" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_SRF_VDC" item="PC1_SRF_VDC" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_BOT_TOP_TEMP" item="PC1_BOT_TOP_TEMP" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_WALL_TEMP" item="PC1_WALL_TEMP" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="PC1_PRESSURE" item="PC1_PRESSURE" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+</itemgroup>

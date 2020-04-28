@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.PPKEVENTHISTORY, UniAuto.UniBCS.Entity" table="SBCS_PPKEVENTHISTORY_TRX">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="EVENTNAME" type="String">
+			<column name="EVENTNAME" length="100" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UPDATETIME" type="Timestamp">
+			<column name="UPDATETIME" length="8" sql-type="datetime" not-null="true"/>
+		</property>
+		<property name="NODENO" type="String">
+			<column name="NODENO" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+    <property name="NODEID" type="String">
+      <column name="NODEID" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+		<property name="CARNO" type="String">
+			<column name="CARNO" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="BOXCOUNT" type="String">
+			<column name="BOXCOUNT" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="BOXID01" type="String">
+			<column name="BOXID01" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+    <property name="BOXID02" type="String">
+      <column name="BOXID02" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="BOXTYPE" type="String">
+      <column name="BOXTYPE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+		<property name="PORTNO" type="String">
+			<column name="PORTNO" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PACKUNPACKMODE" type="String">
+			<column name="PACKUNPACKMODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="STAGEORPORTORPALLETORCAR" type="String">
+			<column name="STAGEORPORTORPALLETORCAR" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="STAGENO" type="String">
+			<column name="STAGENO" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PALLETID" type="String">
+			<column name="PALLETID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PALLETNO" type="String">
+			<column name="PALLETNO" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="REMOVEREASONFLAG" type="String">
+			<column name="REMOVEREASONFLAG" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="SOURCE" type="String">
+			<column name="SOURCE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="WEIGHT" type="String">
+			<column name="WEIGHT" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="SAMPLINGFLAG" type="String">
+			<column name="SAMPLINGFLAG" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="RETURNCODE" type="String">
+			<column name="RETURNCODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PRODUCTTYPE" type="String">
+			<column name="PRODUCTTYPE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="GRADE01" type="String">
+			<column name="GRADE01" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="GRADE02" type="String">
+			<column name="GRADE02" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="CASSETTESETTINGCODE01" type="String">
+			<column name="CASSETTESETTINGCODE01" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="CASSETTESETTINGCODE02" type="String">
+			<column name="CASSETTESETTINGCODE02" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="BOXGLASSCOUNT01" type="String">
+			<column name="BOXGLASSCOUNT01" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+    <property name="BOXGLASSCOUNT02" type="String">
+      <column name="BOXGLASSCOUNT02" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="LOTNAME" type="String">
+      <column name="LOTNAME" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="REQUESTTYPE" type="String">
+      <column name="REQUESTTYPE" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="MAXCOUNT" type="String">
+      <column name="MAXCOUNT" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="REMARK" type="String">
+      <column name="REMARK" length="1000" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="TRANSACTIONID" type="String">
+      <column name="TRANSACTIONID" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-11-18 11:56:42-->
+<itemgroup name="L3ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_Array_28_TCSCN_L3_SCN(TORAY)_Ver 1.0B.xlsx" plcmap="CSOT_G6C_BC_Array_28_TCSCN-PLC Address Map_Ver1.04.xls">
+  <item name="RecipeID" item="RecipeID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GlassID" item="GlassID" site="" woffset="6" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="LotID" item="LotID" site="" woffset="16" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ProductID" item="ProductID" site="" woffset="26" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L_LARGE_NO_F" site="" woffset="36" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="LARGE_NO_F" site="" woffset="38" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MDDLE_NO_F" site="" woffset="40" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SMALL_NO_F" site="" woffset="42" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TOTAL_NO_F" site="" woffset="44" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="JUDGE_F" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L_LARGE_NO_B" site="" woffset="47" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="LARGE_NO_B" site="" woffset="49" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MDDLE_NO_B" site="" woffset="51" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SMALL_NO_B" site="" woffset="53" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TOTAL_NO_B" site="" woffset="55" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

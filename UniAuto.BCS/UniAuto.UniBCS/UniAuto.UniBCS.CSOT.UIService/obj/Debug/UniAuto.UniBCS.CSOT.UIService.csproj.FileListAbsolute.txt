@@ -1,0 +1,12 @@
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.UIService.dll
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.UIService.pdb
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.UIService\obj\Debug\UniAuto.UniBCS.CSOT.UIService.csprojResolveAssemblyReference.cache
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.UIService\obj\Debug\UniAuto.UniBCS.CSOT.UIService.dll
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.UIService\obj\Debug\UniAuto.UniBCS.CSOT.UIService.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.UIService.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.UIService.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.UIService\obj\Debug\UniAuto.UniBCS.CSOT.UIService.csprojAssemblyReference.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.UIService\obj\Debug\UniAuto.UniBCS.CSOT.UIService.csproj.CoreCompileInputs.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.UIService\obj\Debug\UniAuto.UniBCS.CSOT.UIService.csproj.CopyComplete
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.UIService\obj\Debug\UniAuto.UniBCS.CSOT.UIService.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.UIService\obj\Debug\UniAuto.UniBCS.CSOT.UIService.pdb

@@ -1,0 +1,18 @@
+﻿<!--FileName: 06_ENERGY_REPORT.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-11 11:46:06-->
+<itemgroup name="L2EnergyVisualizationInstantaneousReportBlock" profile="CSOT G6 t3 EQP Profile_Array_05_TCCDO_L2_Indexer(SEEC)_Ver 0.1.xlsx" plcmap="CSOT_G6C_BC_Array_05_TCCDO-PLC Address Map_Ver1.03.xls">
+  <item name="DataType" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="1000000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="1000000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#3" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="1000000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3EnergyVisualizationInstantaneousReportBlock" profile="CSOT G6 t3 EQP Profile_Array_05_TCCDO_L3_CDO(VTEC)_Ver1.0.xlsx" plcmap="CSOT_G6C_BC_Array_05_TCCDO-PLC Address Map_Ver1.03.xls">
+  <item name="Power" item="Power" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="OEE" unit="" reportunit="0" />
+  <item name="CDA1" item="CDA1" site="3" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="CDA2" item="CDA2" site="4" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Vaccum" item="Vaccum" site="6" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>

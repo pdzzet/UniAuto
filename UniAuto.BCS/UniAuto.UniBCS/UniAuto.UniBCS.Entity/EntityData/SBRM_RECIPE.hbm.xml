@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.RECIPE, UniAuto.UniBCS.Entity" table="SBRM_RECIPE">
+		<id name="Id" type="Int64" unsaved-value="0">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="FABTYPE" type="String">
+			<column name="FABTYPE" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_RECIPE"/>
+		</property>
+		<property name="LINETYPE" type="String">
+			<column name="LINETYPE" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_RECIPE"/>
+		</property>
+		<property name="ONLINECONTROLSTATE" type="String">
+			<column name="ONLINECONTROLSTATE" length="50" sql-type="varchar" not-null="false" index="UK_SBRM_RECIPE"/>
+		</property>
+		<property name="LINERECIPENAME" type="String">
+			<column name="LINERECIPENAME" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_RECIPE"/>
+		</property>
+		<property name="PPID" type="String">
+			<column name="PPID" length="255" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="LASTUPDATEDT" type="Timestamp">
+			<column name="LASTUPDATEDT" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="UPDATEOPERATOR" type="String">
+			<column name="UPDATEOPERATOR" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UPDATELINEID" type="String">
+			<column name="UPDATELINEID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UPDATEPCIP" type="String">
+			<column name="UPDATEPCIP" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="REMARK" type="String">
+			<column name="REMARK" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="RECIPETYPE" type="String">
+			<column name="RECIPETYPE" length="15" sql-type="varchar" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>

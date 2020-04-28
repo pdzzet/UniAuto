@@ -1,0 +1,15 @@
+﻿<!--FileName: 01_APC_DOWNLOAD.xml-->
+<!--Version: 1.0.9.0-->
+<!--DateTime: 2016-02-25 13:42:43-->
+<itemgroup name="L4APCDataDownloadBlock" profile="CSOT G6 t3 EQP Profile_Array_02_TCELA_L4_ELA_Ver 1.05.xlsx" plcmap="CSOT_G6C_BC_Array_02_TCELA-PLC Address Map_Ver1.06.xls">
+  <item name="N2_1_IRRAD" item="1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="N2_2_IRRAD" item="2" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="N2_1_STANDBY" item="3" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="N2_2_STANDBY" item="4" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5APCDataDownloadBlock" profile="CSOT G6 t3 EQP Profile_Array_02_TCELA_L5_ELA_Ver 1.05.xlsx" plcmap="CSOT_G6C_BC_Array_02_TCELA-PLC Address Map_Ver1.06.xls">
+  <item name="N2_1_IRRAD" item="1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="N2_2_IRRAD" item="2" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="N2_1_STANDBY" item="3" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="N2_2_STANDBY" item="4" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>

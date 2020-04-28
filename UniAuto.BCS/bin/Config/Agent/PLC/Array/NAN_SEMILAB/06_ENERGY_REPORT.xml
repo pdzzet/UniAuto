@@ -1,0 +1,22 @@
+﻿<!--FileName: 06_ENERGY_REPORT.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-11 15:10:02-->
+<itemgroup name="L2EnergyVisualizationInstantaneousReportBlock" profile="CSOT G6 t3 EQP Profile_Array_13_TCNAN_L2_INDEXER(SEEC)_Ver 0.1.xlsx" plcmap="CSOT_G6C_BC_Array_13_TCNAN-PLC Address Map_Ver1.03.xls">
+  <item name="DataType" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1" item="1" site="4" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="1000000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2" item="1" site="5" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="1000000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#3" item="1" site="6" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="1000000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency" item="1" site="7" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3EnergyVisualizationInstantaneousReportBlock" profile="CSOT G6 t3 EQP Profile_Array_13_TCNAN_L3_NAN(SEMILAB)_Ver 1.1.xlsx" plcmap="CSOT_G6C_BC_Array_13_TCNAN-PLC Address Map_Ver1.03.xls">
+  <item name="VoltageR-S" item="VoltageR-S" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="VoltageS-T" item="VoltageS-T" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="VoltageT-R" item="VoltageT-R" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="CurrentR" item="CurrentR" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="CurrentS" item="CurrentS" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="CurrentT" item="CurrentT" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="TotalPowerConsumption" item="TotalPowerConsumption" site="" woffset="6" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Electric_Frequency" item="Electric_Frequency" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>

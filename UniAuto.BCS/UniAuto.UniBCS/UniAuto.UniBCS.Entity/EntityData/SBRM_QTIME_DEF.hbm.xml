@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.QtimeEntityData, UniAuto.UniBCS.Entity" table="SBRM_QTIME_DEF">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="LINEID" type="String">
+			<column name="LINEID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="SERVERNAME" type="String">
+			<column name="SERVERNAME" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="QTIMEID" type="String">
+			<column name="QTIMEID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="STARTNODENO" type="String">
+			<column name="STARTNODENO" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="STARTNODEID" type="String">
+			<column name="STARTNODEID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="STARTUNITNO" type="String">
+			<column name="STARTUNITNO" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="STARTNUNITID" type="String">
+			<column name="STARTNUNITID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="STARTEVENTMSG" type="String">
+			<column name="STARTEVENTMSG" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="ENDNODENO" type="String">
+			<column name="ENDNODENO" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="ENDNODEID" type="String">
+			<column name="ENDNODEID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="ENDUNITNO" type="String">
+			<column name="ENDUNITNO" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="ENDNUNITID" type="String">
+			<column name="ENDNUNITID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="ENDEVENTMSG" type="String">
+			<column name="ENDEVENTMSG" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="SETTIMEVALUE" type="Int32">
+			<column name="SETTIMEVALUE" length="4" sql-type="int" not-null="true"/>
+		</property>
+		<property name="REMARK" type="String">
+			<column name="REMARK" length="500" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="STARTNODERECIPEID" type="String">
+			<column name="STARTNODERECIPEID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="CFRWQTIME" type="Int32">
+			<column name="CFRWQTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+      <property name="ENABLED" type="String">
+          <column name="ENABLED" length="1" sql-type="varchar" not-null="true"/>
+      </property>
+	</class>
+</hibernate-mapping>

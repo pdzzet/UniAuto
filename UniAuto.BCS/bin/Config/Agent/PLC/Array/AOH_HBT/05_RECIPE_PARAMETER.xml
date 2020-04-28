@@ -1,0 +1,51 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-28 15:11:47-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_11_TCAOH_L2_Indexer(SEEC)_Ver 0.1.xlsx" plcmap="CSOT_G6C_BC_Array_11_TCAOH-PLC Address Map_Ver1.03.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter01" site="" woffset="12" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter02" site="" woffset="18" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter03" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter04" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter05" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter06" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter07" site="" woffset="25" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_11_TCAOH_L3_AOH(HBT)_v1.0.3.xlsx" plcmap="CSOT_G6C_BC_Array_11_TCAOH-PLC Address Map_Ver1.03.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="THRESHOLD_H" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="THRESHOLD_L" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MIN_SIZE" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" item="Recipe_ID" site="" woffset="15" boffset="0" wpoints="60" bpoints="960" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Resolution" item="Resolution" site="" woffset="75" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Glass_THK" item="Glass_THK" site="" woffset="76" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Image_Number" item="Image_Number" site="" woffset="77" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Target_Level" item="Target_Level" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Pad_Insp" item="Pad_Insp" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Zone_function" item="Zone_function" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Mask_Defect" item="Mask_Defect" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Repeat_Defect" item="Repeat_Defect" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Light_Adjust_Auto" item="Light_Adjust_Auto" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_11_TCAOH_L4_AOH(HBT)_v1.0.3.xlsx" plcmap="CSOT_G6C_BC_Array_11_TCAOH-PLC Address Map_Ver1.03.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="THRESHOLD_H" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="THRESHOLD_L" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MIN_SIZE" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" item="Recipe_ID" site="" woffset="15" boffset="0" wpoints="60" bpoints="960" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Resolution" item="Resolution" site="" woffset="75" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Glass_THK" item="Glass_THK" site="" woffset="76" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Image_Number" item="Image_Number" site="" woffset="77" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Target_Level" item="Target_Level" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Pad_Insp" item="Pad_Insp" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Zone_function" item="Zone_function" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Mask_Defect" item="Mask_Defect" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Repeat_Defect" item="Repeat_Defect" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Light_Adjust_Auto" item="Light_Adjust_Auto" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

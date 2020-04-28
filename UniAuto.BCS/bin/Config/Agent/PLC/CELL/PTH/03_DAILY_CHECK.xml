@@ -1,0 +1,10 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-04-27 15:40:22-->
+<itemgroup name="L3ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_13_CCPTH_L3_PTH_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_Cell_13_CCPTH-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CDA_1Pressure" item="1" site="1" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CDA_2Pressure" item="2" site="1" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Light#1UsingTime" item="3" site="1" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

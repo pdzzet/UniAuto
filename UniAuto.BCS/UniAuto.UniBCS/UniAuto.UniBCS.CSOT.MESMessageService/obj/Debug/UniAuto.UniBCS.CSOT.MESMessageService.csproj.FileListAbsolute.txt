@@ -1,0 +1,16 @@
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.MESMessageService.dll
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.MESMessageService.pdb
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.csprojResolveAssemblyReference.cache
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.FrmTestMES.resources
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.csproj.GenerateResource.Cache
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.dll
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.MESMessageService.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.MESMessageService.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.csprojAssemblyReference.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.FrmTestMES.resources
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.csproj.GenerateResource.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.csproj.CoreCompileInputs.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.csproj.CopyComplete
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.MESMessageService\obj\Debug\UniAuto.UniBCS.CSOT.MESMessageService.pdb

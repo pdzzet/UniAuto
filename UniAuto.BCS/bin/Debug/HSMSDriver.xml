@@ -1,0 +1,3354 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HSMSDriver</name>
+    </assembly>
+    <members>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSP">
+            <summary>
+            SEMI E37.2-95 HSMS-GS(general session) statemachine implement(Passive Mode).
+            To be intended to support the needs of complex systems containing multiple independently accessible subsystems such as cluster tools or track systems	
+            single publish port,single connection/multi connections
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase">
+            <summary>
+            abstract HSMS StateMachine
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_CurrentState">
+            <summary>
+            current connection state
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_CurrentStateSync">
+            <summary>
+            current state lock object for synchronize access
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_TransitionTable">
+            <summary>
+            state transition table object for statemachine use
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_Driver">
+            <summary>
+            HsmsDriver object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_Connection">
+            <summary>
+            HsmsConnection object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_Decoder">
+            <summary>
+            protocol decoder object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_Buffer">
+            <summary>
+            data receive buffer object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_Socket">
+            <summary>
+            socket object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_IsStarted">
+            <summary>
+            start flag
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_IsDisposed">
+            <summary>
+            disposed flag
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_PeerId">
+            <summary>
+            peer id
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_SystemBytes">
+            <summary>
+            hsms message systembytes
+            </summary>		
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_SystemBytesSync">
+            <summary>
+            systembytes lock object for synchronize access
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_LastSocketIoTimeStamp">
+            <summary>
+            last socket io timestamp
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_ParameterSettings">
+            <summary>
+            hsms parameter settings
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_Protocol">
+            <summary>
+            hsms protocol setting
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_ConnectMode">
+            <summary>
+            connect mode setting
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_IP">
+            <summary>
+            passive ipaddress setting
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_Port">
+            <summary>
+            passive port setting
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_SendBufSize">
+            <summary>
+            socket send buffer size setting
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_RecvBufSize">
+            <summary>
+            socket receive buffer size setting
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_SendTimeOut">
+            <summary>
+            socket send timeout setting
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_MessageInQueue">
+            <summary>
+            message in queue
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_ControlMessageOutQueue">
+            <summary>
+            control message out queue
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.m_DataMessageOutQueue">
+            <summary>
+            data message out queue
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.Start(Unicom.UniAuto.Net.HSMS.HsmsDriver,Unicom.UniAuto.Net.HSMS.HsmsConnection,Unicom.UniAuto.Net.HSMS.HsmsParameterSettings)">
+            <summary>
+            statemachine start,
+            may throw exception
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.Dispose">
+            <summary>
+            statmachine dispose
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.EnqueueDataMessage(Unicom.UniAuto.Net.HSMS.HsmsMessage)">
+            <summary>
+            data message enqueue operation
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.EnqueueControlMessage(Unicom.UniAuto.Net.HSMS.HsmsMessage)">
+            <summary>
+            constrol message enqueue operation
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.ChangeState(Unicom.UniAuto.Net.HSMS.HsmsConnectionState,Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventType,System.String,System.String,System.String)">
+            <summary>
+            change current connection state to newstate then do transition action
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.BuildTransitionsTable">
+            <summary>
+            build transition table (abstract method)
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.T5TimerElapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            T5 timer elapsed event handler
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.T7TimerElapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            T7 timer elapsed event handler
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.T8TimerElapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            T8 timer elapsed event handler
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.SocketStart(System.String,System.String,Unicom.UniAuto.Net.HSMS.HsmsProtocol,Unicom.UniAuto.Net.HSMS.HsmsConnectMode,Unicom.UniAuto.Net.HSMS.HsmsRingBuffer,Unicom.UniAuto.Net.HSMS.HsmsDecoder,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            socket start,
+            may throw exception
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.SocketDispose">
+            <summary>
+            socket dispose
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.ListenSocketDispose">
+            <summary>
+            listen socket dispose
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.SocketSend(System.Int32,System.Collections.Generic.List{System.ArraySegment{System.Byte}},System.String)">
+            <summary>
+            Socket send
+            </summary>
+            <param name="count">send count</param>
+            <param name="buffers">send datas</param>
+            <param name="desc">optional description</param>
+            <returns>=0 send ok
+            		 >0 send fail</returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.Connect">
+            <summary>
+            do socket connect
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.Listen">
+            <summary>
+            do socket listen
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.ConnectComplete(System.IAsyncResult)">
+            <summary>		
+            Called when a BeginConnect operation completes
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.AcceptComplete(System.IAsyncResult)">
+            <summary>		
+            Called when a BeginAccept operation completes
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.ReceiveComplete(System.IAsyncResult)">
+            <summary>
+            Called when a BeginReceive operation completes
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.HandleMessageIn">
+            <summary>
+            handle in message
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.HandleMessageOut">
+            <summary>
+            handle message out
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.HandleMessageTimeOut">
+            <summary>
+            handle message timout (T3/T6)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.CurrentState">
+            <summary>
+            get current connection state
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.IsConnected">
+            <summary>
+            is socket connected
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.NewSystemBytes">
+            <summary>
+            get new systembytes value
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.DataMessageQueueCount">
+            <summary>
+            get data message queue count
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsStateMachineBase.PeerId">
+            <summary>
+            get Peer id
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSP.Transition2Action">
+            <summary>
+            NOT_CONNECTED -> NOT_SELECTED
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSP.Transition3Action">
+            <summary>
+            SELECTED->NOT_CONNECTED(CONNECTED -> NOT_CONNECTED)
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSP.Transition4Action">
+            <summary>
+            NOT_SELECTED->NOT_CONNECTED(CONNECTED -> NOT_CONNECTED)
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSP.Transition5Action">
+            <summary>
+            NOT_SELECTED -> SELECTED
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSP.Transition6Action">
+            <summary>
+            SELECTED -> NOT_SELECTED
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSP.Transition9Action">
+            <summary>
+            NOT_CONNECTED -> NOT_CONNECTED
+            </summary>		
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsTaskInfo">
+            <summary>
+            Hsms Tasks Information
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTaskInfo.TaskList">
+            <summary>
+            hsms task list
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTaskInfo.ToString">
+            <summary>
+            task info summary
+            </summary>
+            <returns>task info summary</returns>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTaskInfo.MaxConnectionPerTask">
+            <summary>
+            max connection number per task
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsTaskInfo.TaskInfo">
+            <summary>
+            task info
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTaskInfo.TaskInfo.ConnectionList">
+            <summary>
+            connection list
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTaskInfo.TaskInfo.TaskId">
+            <summary>
+            task id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTaskInfo.TaskInfo.TaskState">
+            <summary>
+            task state
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsTaskInfo.ConnectionInfo">
+            <summary>
+            connection info
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTaskInfo.ConnectionInfo.ConnectionId">
+            <summary>
+            connection id
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsErrorCode">
+            <summary>
+            hsms error code define
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_T6TIMEOUT_ERR">
+            <summary>
+            error 10006
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_T7TIMEOUT_ERR">
+            <summary>
+            error 10007
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_T8TIMEOUT_ERR">
+            <summary>
+            error 10008
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_NO_SUCH_ENTITY_ERR">
+            <summary>
+            error 10010
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_ENTITY_NOT_SELECTED_ERR">
+            <summary>
+            error 10020
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_ENTITY_ALREADY_SELECTED_BY_THIS_CONN_ERR">
+            <summary>
+            error 10021
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_ENTITY_ALREADY_SELECTED_BY_ANOTHER_CONN_ERR">
+            <summary>
+            error 10022
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_ALREADY_EXISTS_SELECTED_ENTITY_ERR">
+            <summary>
+            error 10023
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_THIS_CONN_ALREADY_SELECTED_ERR">
+            <summary>
+            error 10024
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_NOT_SELECTED_DATA_MESSAGE_ERR">
+            <summary>
+            error 10025,recv data message not in selected state
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_NOT_SELECTED_CONTROL_MESSAGE_ERR">
+            <summary>
+            error 10026,recv control message not in selected state
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_PTYPE_NOT_SUPPORTED_ERR">
+            <summary>
+            error 10030
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_STYPE_NOT_SUPPORTED_ERR">
+            <summary>
+            error 10040
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_TRANSACTION_NOT_OPEN_ERR">
+            <summary>
+            error 10050,recv secondary message without relative outgoing primary
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_RECV_REJECT_REQ_ERR">
+            <summary>
+            eror 10060,recv reject.req
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_RECV_SELECT_RSP_NG_ERR">
+            <summary>
+            error 10070,recv select.rsp with ng select status code		
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_RECV_DESELECT_RSP_NG_ERR">
+            <summary>
+            error 10080,recv deselect.rsp with ng deselect statu scode		
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_MESSAGE_LEN_TOO_SHORT_ERR">
+            <summary>
+            error 10090
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_MESSAGE_LEN_TOO_LONG_ERR">
+            <summary>
+            error 10100
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HSMS_IMPORPER_PROTOCOL_USE_ERR">
+            <summary>
+            error 10110
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsErrorCode.HsmsErrorDesc(System.Int32)">
+            <summary>
+            error description
+            </summary>
+            <param name="code">error code</param>
+            <returns>error description</returns>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsStateTransitionTable">
+            <summary>
+            state transition table stored transitions for state machine use
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsStateTransitionTable.m_Table">
+            <summary>
+            internal dictionary object
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateTransitionTable.Register(Unicom.UniAuto.Net.HSMS.HsmsConnectionState,Unicom.UniAuto.Net.HSMS.HsmsConnectionState,System.Action)">
+            <summary>
+            register transtion
+            </summary>
+            <param name="initState">initial state</param>
+            <param name="finalState">final state</param>
+            <param name="action">transition action</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateTransitionTable.GetAction(Unicom.UniAuto.Net.HSMS.HsmsConnectionState,Unicom.UniAuto.Net.HSMS.HsmsConnectionState)">
+            <summary>
+            get transition action
+            </summary>
+            <param name="initState">inital state</param>
+            <param name="finalState">final state</param>
+            <returns>null if transition not found</returns>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1">
+            <summary>
+            include dictionary to store (key,value) with r/w acess control
+            </summary>	
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.m_KeyValDict">
+            <summary>
+            internal dictionary object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.m_LockSlim">
+            <summary>
+            rReaderWriterLockSlim object
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.Add(System.String,`0)">
+            <summary>
+            add T obj reference with key
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.Remove(System.String)">
+            <summary>
+            remove T object reference by key
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.Remove(System.Collections.Generic.List{System.String})">
+            <summary>
+            remove a list of T object reference by key
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.Get(System.String)">
+            <summary>
+            get single T object by key,return null if not find
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.Get">
+            <summary>
+            get a list of all T object
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.Exists(System.String)">
+            <summary>
+            check id exists or not
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.Clear">
+            <summary>
+            clear dictionary
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.KeyValDict">
+            <summary>
+            get internal dictionary object
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsKeyValueContainer`1.Count">
+            <summary>
+            get key/value pairs count
+            </summary>		
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventHandler">
+            <summary>
+            HsmsConnectionStateChange Event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventType">
+            <summary>
+            HsmsConnectionStateChange Event Type
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventType.Connection_Initialized">
+            <summary>
+            connection is initialized
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventType.Connection_Connected">
+            <summary>
+            connection is connected
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventType.Connection_Disconnected">
+            <summary>
+            connection is disconnected
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventType.SessionEntity_Selected">
+            <summary>
+            session entity is seleected
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventType.SessionEntity_DeSelected">
+            <summary>
+            session entity is deselected
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventType.SessionEntity_Separated">
+            <summary>
+            session entity is separated
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventArgs">
+            <summary>
+            HsmsConnectionStateChange Event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventArgs.#ctor(Unicom.UniAuto.Net.HSMS.HsmsConnectionState,Unicom.UniAuto.Net.HSMS.HsmsConnectionState,Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventType,System.String,System.String,System.String)">
+            <summary>
+             constructor
+            </summary>
+            <param name="oldstate">connection old state</param>
+            <param name="newstate">connection new state</param>
+            <param name="etype">connection state change event type</param>
+            <param name="connid">connection id</param>
+            <param name="peerid">socket peer id</param>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventArgs.OldState">
+            <summary>
+            connection old state
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventArgs.NewState">
+            <summary>
+            connection new state
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventArgs.ConnectionId">
+            <summary>
+            connection id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventArgs.PeerId">
+            <summary>
+            socket peer id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventArgs.SessionId">
+            <summary>
+            session id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventArgs.EventType">
+            <summary>
+            connection state change event type
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessageSendEventHandler">
+            <summary>
+            HsmsMessageSend Event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessageSendEventArgs">
+            <summary>
+            HsmsMessageSend Event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessageSendEventArgs.#ctor(Unicom.UniAuto.Net.HSMS.HsmsMessage,System.String,System.String,System.UInt16)">
+            <summary>
+            contructor
+            </summary>
+            <param name="message">hsms message</param>
+            <param name="connid">connection id</param>
+            <param name="peerid">socket peer id</param>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageSendEventArgs.Message">
+            <summary>
+            hsms message
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageSendEventArgs.ConnectionId">
+            <summary>
+            connection id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageSendEventArgs.PeerId">
+            <summary>
+            socket peer id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageSendEventArgs.SessionId">
+            <summary>
+            session id
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessageReceiveEventHandler">
+            <summary>
+            HsmsMessageReceive Event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessageReceiveEventArgs">
+            <summary>
+            HsmsMessageReceive Event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessageReceiveEventArgs.#ctor(Unicom.UniAuto.Net.HSMS.HsmsMessage,System.String,System.String,System.UInt16)">
+            <summary>
+            constructor
+            </summary>
+            <param name="message">hsms message</param>
+            <param name="connid">connection id</param>
+            <param name="peerid">socket peer id</param>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageReceiveEventArgs.Message">
+            <summary>
+            hsms message
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageReceiveEventArgs.ConnectionId">
+            <summary>
+            connection id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageReceiveEventArgs.PeerId">
+            <summary>
+            socket peer id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageReceiveEventArgs.SessionId">
+            <summary>
+            session id
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessageReplyT3EventHandler">
+            <summary>
+            HsmsMessageReplyT3 Event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessageReplyT3EventArgs">
+            <summary>
+            HsmsMessageReplyT3 Event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessageReplyT3EventArgs.#ctor(Unicom.UniAuto.Net.HSMS.HsmsMessage,System.String,System.String,System.UInt16)">
+            <summary>
+            constructor
+            </summary>
+            <param name="message">hsms message</param>
+            <param name="connid">connection id</param>
+            <param name="peerid">socket peer id</param>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageReplyT3EventArgs.Message">
+            <summary>
+            hsms message
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageReplyT3EventArgs.ConnectionId">
+            <summary>
+            connection id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageReplyT3EventArgs.PeerId">
+            <summary>
+            socket peer id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageReplyT3EventArgs.SessionId">
+            <summary>
+            session id
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsErrorEventHandler">
+            <summary>
+            HsmsError Event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsErrorEventArgs">
+            <summary>
+            HsmsError Event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsErrorEventArgs.#ctor(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="code">error code</param>
+            <param name="message">error message</param>
+            <param name="connid">connection id</param>
+            <param name="peerid">socket peer id</param>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsErrorEventArgs.Message">
+            <summary>
+            error message
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsErrorEventArgs.Code">
+            <summary>
+            error code
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsErrorEventArgs.ConnectionId">
+            <summary>
+            connection id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsErrorEventArgs.PeerId">
+            <summary>
+            socket peer id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsErrorEventArgs.SessionId">
+            <summary>
+            session id
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutLevelType">
+            <summary>
+            socket log level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutLevelType.TRACE">
+            <summary>
+            trace level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutLevelType.DEBUG">
+            <summary>
+            debug level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutLevelType.ERROR">
+            <summary>
+            error level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutLevelType.EXCEPTION">
+            <summary>
+            exception level
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutEventHandler">
+            <summary>
+            HsmsSocket Log Event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutEventArgs">
+            <summary>
+            HsmsSocketDebugOut Event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutEventArgs.#ctor(Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutLevelType,System.String,System.String,System.String,System.String,System.Byte[])">
+            <summary>
+            constructor
+            </summary>
+            <param name="level">debug level</param>
+            <param name="method">method name</param>
+            <param name="msg">debug message</param>
+            <param name="connid">connection id</param>
+            <param name="peerid">socket peer id</param>
+            <param name="rawdata">socket data arrival rawdata</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutEventArgs.MethodName">
+            <summary>
+            method name
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutEventArgs.Message">
+            <summary>
+            debug message
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutEventArgs.LogLevel">
+            <summary>
+            debug level
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutEventArgs.ConnectionId">
+            <summary>
+            connection id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutEventArgs.PeerId">
+            <summary>
+            socket peer id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutEventArgs.RawData">
+            <summary>
+            socket data arrival rawdata
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutLevelType">
+            <summary>
+            driver log level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutLevelType.TRACE">
+            <summary>
+            trace level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutLevelType.DEBUG">
+            <summary>
+            level level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutLevelType.ERROR">
+            <summary>
+            error level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutLevelType.EXCEPTION">
+            <summary>
+            exception level
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutEventHandler">
+            <summary>
+            Driver Log Event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutEventArgs">
+            <summary>
+            DriverDebugOut Event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutEventArgs.#ctor(Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutLevelType,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="level">debug level</param>
+            <param name="method">method name</param>
+            <param name="msg">debug message</param>
+            <param name="connid">connection id</param>
+            <param name="peerid">socket peer id</param>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutEventArgs.MethodName">
+            <summary>
+            method name
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutEventArgs.Message">
+            <summary>
+            debug message
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutEventArgs.LogLevel">
+            <summary>
+            debug level
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutEventArgs.ConnectionId">
+            <summary>
+            connection id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutEventArgs.PeerId">
+            <summary>
+            socket peer id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutEventArgs.SessionId">
+            <summary>
+            session id
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsDriverOperationException">
+            <summary>
+            driver operation exception
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriverOperationException.#ctor">
+            <summary>
+            constructor
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriverOperationException.#ctor(System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="message">exception message</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriverOperationException.#ctor(System.String,System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="message">exception message</param>
+            <param name="code">error code</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriverOperationException.#ctor(System.String,System.Exception)">
+            <summary>
+            constructor
+            </summary>
+            <param name="message">exception message</param>
+            <param name="innerException">inner exception object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriverOperationException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            constructor
+            </summary>
+            <param name="message">exception message</param>
+            <param name="code">error code</param>
+            <param name="innerException">inner exception object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriverOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            constructor
+            </summary>
+            <param name="info">serialization info object</param>
+            <param name="context">streaming context object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriverOperationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            override base GetObjectData method
+            </summary>
+            <param name="info">serialization info object</param>
+            <param name="context">stream context object</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriverOperationException.Code">
+            <summary>
+            error code
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsStateMachineSSA">
+            <summary>
+            SEMI E37.1-96E HSMS-SS(single session) statemachine implement(Active Mode).
+            point-to-point communication between one host and one equipment.
+            single publish port,single connection
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineSSA.Transition2Action">
+            <summary>
+            NOT_CONNECTED -> NOT_SELECTED
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineSSA.Transition4Action">
+            <summary>
+            NOT_SELECTED -> NOT_CONNECTED
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineSSA.Transition5Action">
+            <summary>
+            SELECTED -> NOT_CONNECTED
+            </summary>		
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsDriver">
+            <summary>
+            HSMS driver implements SEMI E37 HSMS protocol to perform communication and message exchange	
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.Init(Unicom.UniAuto.Net.HSMS.HsmsParameterSettings)">
+            <summary>
+            hsms driver initialize,auto detect license.
+            may throw exception
+            </summary>
+            <param name="settings">hsms parameter settings object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.Init(Unicom.UniAuto.Net.HSMS.HsmsParameterSettings,Unicom.UniAuto.Net.HSMS.DriverLicenseCheckMethod)">
+            <summary>
+            hsms driver initialize,assign specific license check method.
+            may throw exception
+            </summary>
+            <param name="settings">hsms parameter settings object</param>
+            <param name="method">license check method</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.Start">
+            <summary>
+            hsms driver start,
+            may throw exception
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.Stop">
+            <summary>
+            hsms driver stop		
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.InternalForceStop">
+            <summary>
+            internal Force hsms driver stop		
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.ForceStop">
+            <summary>
+            Force hsms driver stop		
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.Dispose">
+            <summary>
+            hsms driver dispose
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.Send(Unicom.UniAuto.Net.HSMS.HsmsMessage,System.UInt16)">
+            <summary>
+            send hsms data message to specific sessionid,
+            may throw exception
+            </summary>
+            <param name="message">hsms message</param>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.Select(System.UInt16,System.String)">
+            <summary>
+            establish hsms communication for an entity on a tcp/ip connection,
+            (for HSMS-GS only),
+            may throw exception
+            </summary>
+            <param name="connectionid">connection id</param>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.Deselect(System.UInt16)">
+            <summary>
+            provide a graceful end to hsms communication for an selected entity on a tcp/ip connection,
+            (for HSMS-GS only),
+            may throw exception
+            </summary>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.Seperate(System.UInt16)">
+            <summary>
+            abruptly terminate hsms communication for an selected entity on a tcp/ip connection,		
+            may throw exception
+            </summary>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.GetNewSystemBytes(System.UInt16)">
+            <summary>
+            get new systembytes
+            </summary>
+            <param name="sessionid">session id</param>
+            <returns>new systembytes</returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsSessionEntitySelected(System.UInt16)">
+            <summary>
+            Is session entity selected
+            </summary>
+            <param name="sessionid">session id</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsSessionEntityExists(System.UInt16)">
+            <summary>
+            Is session entity exists
+            </summary>
+            <param name="sessionid">session id</param>		
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_ConnectionContainer">
+            <summary>
+            hsms connection container
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_TaskContainer">
+            <summary>
+            hsmstask container
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_ParameterSettings">
+            <summary>
+            hsms paramter settings
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_IsInitialized">
+            <summary>
+            initialized flag
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_IsStarted">
+            <summary>
+            started flag
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_IsDisposed">
+            <summary>
+            disposed flag
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_DefaultConnection">
+            <summary>
+            default connection object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_NextId">
+            <summary>
+            next connection id
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_DeviceId">
+            <summary>
+            device id (for HSMS-SS only)
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_TokenSource">
+            <summary>
+            token souce
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_EnableSocketDebugOut">
+            <summary>
+            is SocketDebugOut enable
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_EnableSocketRawDataOut">
+            <summary>
+            is SocketRawDataOut enable
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_EnableDriverDebugOut">
+            <summary>
+            is driverdebugout enable
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_IsTrialVer">
+            <summary>
+            is trial version
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_IsUseKeyPro">
+            <summary>
+            is use keypro
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_IsUseLicFile">
+            <summary>
+            is use license file
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_IsDomainLic">
+            <summary>
+            is domain license
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_IsEvalLic">
+            <summary>
+            is evaluation license
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDriver.m_EvalDueDate">
+            <summary>
+            evaluation due date
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.NewDefaultConnection">
+            <summary>
+            create and start new default Connection,
+            may throw exception
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.DisposeConnection(System.String)">
+            <summary>
+            dispose connection
+            </summary>
+            <param name="connid">connectin id</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.FireConnectionStateChangeEvent(Unicom.UniAuto.Net.HSMS.HsmsConnectionState,Unicom.UniAuto.Net.HSMS.HsmsConnectionState,Unicom.UniAuto.Net.HSMS.HsmsConnectionStateChangeEventType,System.String,System.String,System.String)">
+            <summary>
+            fire ConnectionStateChange event
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.FireMessageSendEvent(Unicom.UniAuto.Net.HSMS.HsmsMessage,System.String,System.String,System.UInt16)">
+            <summary>
+            fire MessageSend event
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.FireMessageReceiveEvent(Unicom.UniAuto.Net.HSMS.HsmsMessage,System.String,System.String,System.UInt16)">
+            <summary>
+            fire MessageReceive event
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.FireMessageReplyT3Event(Unicom.UniAuto.Net.HSMS.HsmsMessage,System.String,System.String,System.UInt16)">
+            <summary>
+            fire MessageReplyT3 event
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.FireHsmsErrorEvent(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            fire HsmsError event
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.FireSocketDebugOutEvent(Unicom.UniAuto.Net.HSMS.HsmsSocketDebugOutLevelType,System.String,System.String,System.String,System.String,System.Byte[])">
+            <summary>
+            fire SocketDebugOut event
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.FireDriverDebugOutEvent(Unicom.UniAuto.Net.HSMS.HsmsDriverDebugOutLevelType,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            fire SocketDebugOut event
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.KeyProCheck(System.UInt32@,System.UInt16@)">
+            <summary>
+            keypro exists check
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.KeyProVerify(System.UInt32)">
+            <summary>
+            ROCKEY4ND verify
+            </summary>
+            <returns>retcode 0 = OK</returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.GetDLLHash256(System.Byte[]@,System.Byte[]@)">
+            <summary>
+            get dll fingerprint (use sha256)
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.Decrypt(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            decrypt pwd (use aes)
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.LicFileCheck(System.Collections.Generic.List{System.String},System.UInt16@,System.Byte[]@)">
+            <summary>
+            license file exists check
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDriver.LicFileVerify(System.Byte[])">
+            <summary>
+            license file verify
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsInitialized">
+            <summary>
+            is driver initialized
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsStarted">
+            <summary>
+            is driver started
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.ParameterSettings">
+            <summary>
+            get hsms parameter settings
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsSingleSessionProtocol">
+            <summary>
+            is driver single session protocol
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsActiveMode">
+            <summary>
+            is driver active mode
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.ConnectionInfo">
+            <summary>
+            get hsms communcation info
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.TaskInfo">
+            <summary>
+            get hsms task info
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.DeviceID">
+            <summary>
+            get device id (for HSMS only)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.EnableSocketDebugOut">
+            <summary>
+            get/set SocketDebugOut enable
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.EnableSocketRawDataOut">
+            <summary>
+            get/set SocketRawDataOut enable
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.EnableDriverDebugOut">
+            <summary>
+            get/set driverdebugout enable
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsTrialVer">
+            <summary>
+            get is driver trial version
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsUseKeyPro">
+            <summary>
+            get is driver use keypro
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsUseLicFile">
+            <summary>
+            get is driver use license file
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsDomainLic">
+            <summary>
+            get is domain license
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsEvalLic">
+            <summary>
+            get is evaluation license
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.EvalDueDate">
+            <summary>
+            get evaluation due date
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.Version">
+            <summary>
+            get dll version
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.HSMS.HsmsDriver.HsmsConnectionStateChangeEvent">
+            <summary>
+            event to notify connection state change
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.HSMS.HsmsDriver.HsmsMessageSendEvent">
+            <summary>
+            event to notity message sent
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.HSMS.HsmsDriver.HsmsMessageReceiveEvent">
+            <summary>
+            event to notity message received
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.HSMS.HsmsDriver.HsmsMessageReplyT3Event">
+            <summary>
+            event to notify message reply T3 timeout
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.HSMS.HsmsDriver.HsmsErrorEvent">
+            <summary>
+            event to notity hsms error occured
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.HSMS.HsmsDriver.HsmsSocketDebugOutEvent">
+            <summary>
+            event to notify socket log
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.HSMS.HsmsDriver.HsmsDriverDebugOutEvent">
+            <summary>
+            event to notify driver log
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.ConnectionContainer">
+            <summary>
+            get connection container
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.GlobalSource">
+            <summary>
+            get token source to apply task cancel ability
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsStopping">
+            <summary>
+            get/set is stopping flag
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.ListenSocket">
+            <summary>
+            get/set listen socket for internal use in passive mode
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.IsSocketRawDataOut">
+            <summary>
+            get is enable socket rawdata out
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.LicStopWatch">
+            <summary>
+            get/set stopwatch for license check
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.AssemblyPath">
+            <summary>
+            get assembly location path
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDriver.DefaultConnection">
+            <summary>
+            get drvier default connection
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.DriverLicenseCheckMethod">
+            <summary>
+            driver license check method
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.DriverLicenseCheckMethod.Trial">
+            <summary>
+            trial,bypass check
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.DriverLicenseCheckMethod.Keypro">
+            <summary>
+            keypro check
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.DriverLicenseCheckMethod.LicenseFileSingle">
+            <summary>
+            license file check (single license)
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.DriverLicenseCheckMethod.LicenseFileDomain">
+            <summary>
+            license file check (domain license)
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.DriverLicenseCheckMethod.LicenseFileEvaluation">
+            <summary>
+            license file check (Evaluation license)
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.DecoderState">
+            <summary>
+            decoder state
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.DecoderState.WAIT_LEN">
+            <summary>
+            wait message length data
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.DecoderState.WAIT_HEAD">
+            <summary>
+            wait message header data
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.DecoderState.WAIT_TEXT">
+            <summary>
+            wait message text data
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.DecoderState.ERROR">
+            <summary>
+            message decode fail
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessageDecodeCompleteCallBack">
+            <summary>
+            decoder message decode complete callback function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsDecoder">
+            <summary>
+            hsms protocol decoder
+            NOT ThreadSafe
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDecoder.m_State">
+            <summary>
+            decoder current state
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDecoder.m_MaxMessageLen">
+            <summary>
+            max supported hsms message length setting
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDecoder.m_InMessageLen">
+            <summary>
+            incomming message length value
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDecoder.m_InMessage">
+            <summary>
+            incomming message object
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDecoder.#ctor(System.Int32)">
+            <summary>
+            constructor with  maxmsglen
+            </summary>		
+            <param name="maxmsglen">max support hsms message length setting(>1M)</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDecoder.Decode(Unicom.UniAuto.Net.HSMS.HsmsRingBuffer,Unicom.UniAuto.Net.HSMS.HsmsMessageDecodeCompleteCallBack)">
+            <summary>
+            Decode RawBytes to HSMS message
+            </summary>
+            <param name="buffer">data buffer</param>
+            <param name="cbfunc">msg in callback function</param>
+            <returns>=0  decode ok
+                     >0  decode fail</returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDecoder.Reset">
+            <summary>
+            reset decoder
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDecoder.DecodeLEN(Unicom.UniAuto.Net.HSMS.HsmsRingBuffer)">
+            <summary>
+            decode message length
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDecoder.DecodeHEAD(Unicom.UniAuto.Net.HSMS.HsmsRingBuffer)">
+            <summary>
+            decode message header
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsDecoder.DecodeTEXT(Unicom.UniAuto.Net.HSMS.HsmsRingBuffer)">
+            <summary>
+            decode message text
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDecoder.CurrentStae">
+            <summary>
+            get decoder current state
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsDecoder.ErrorDesc">
+            <summary>
+            lastest error description
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsDecoder.CONST">
+            <summary>
+            public static constant code class
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsStateMachineSSP">
+            <summary>
+            SEMI E37.1-96E HSMS-SS(single session) statemachine implement(Passive Mode).
+            point-to-point communication between one host and one equipment.
+            single publish port,single connection
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineSSP.Transition2Action">
+            <summary>
+            NOT_CONNECTED -> NOT_SELECTED
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineSSP.Transition3Action">
+            <summary>
+            NOT_SELECTED -> SELECTED
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineSSP.Transition4Action">
+            <summary>
+            NOT_SELECTED -> NOT_CONNECTED
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineSSP.Transition5Action">
+            <summary>
+            SELECTED -> NOT_CONNECTED
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineSSP.Transition7Action">
+            <summary>
+            NOT_CONNECTED -> NOT_CONNECTED
+            </summary>		
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.m_MonitorListSync">
+            <summary>
+            monitor list lock object for synchronize access
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.m_TimeOutVal">
+            <summary>
+            timeout value
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.m_MonitorList">
+            <summary>
+            monitor list object
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.Add(System.String,Unicom.UniAuto.Net.HSMS.HsmsMessage)">
+            <summary>
+            message add to monitor list
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.RemoveReturn(System.String)">
+            <summary>
+            return message removed from monitor list
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.Remove(System.String)">
+            <summary>
+            removed message from monitor list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.Sweep">
+            <summary>
+            sweep monitor list 
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.Clear">
+            <summary>
+            clear queued message
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.TimeOutVal">
+            <summary>
+            get timeout value
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.Count">
+            <summary>
+            monitor count
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.MonitorList.#ctor">
+            <summary>
+            constructor
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.MonitorList.GetKeyForItem(Unicom.UniAuto.Net.HSMS.HsmsMessage)">
+            <summary>
+            override to provide key
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.MonitorList.RemoveReturn(System.String)">
+            <summary>
+            return message removed from monitor list
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.MonitorList.RemoveNoReturn(System.String)">
+            <summary>
+            remove message from monitor list
+            </summary>			
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTimeOutMonitor.MonitorList.Sweep(System.Int32)">
+            <summary>
+            sweep monitor list
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer">
+            <summary>
+            Hsms Task Container,manage all Tasks
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.m_Driver">
+            <summary>
+            hsmsdriver object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.m_TaskList">
+            <summary>
+            hsmstask list
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.m_MaxConnectionsPerTask">
+            <summary>
+            max connections per task
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.m_TaskWaitFrequency">
+            <summary>
+            task wait frequency
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.m_TaskWaitPeriod">
+            <summary>
+            task wait period
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.AddConnection(Unicom.UniAuto.Net.HSMS.HsmsConnection)">
+            <summary>
+            add connection object to task
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.RemoveConnectionById(System.String)">
+            <summary>
+            remove connection object from task by connection id
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.GetAllTasks">
+            <summary>
+            get all tasks from list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.MaxConnectionsPerTask">
+            <summary>
+            get max connection count per task
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.TaskWaitFrequency">
+            <summary>
+            get task wait frequency
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTaskContainer.TaskWaitPeriod">
+            <summary>
+            get task wait period
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessagePType">
+            <summary>
+            presentation type,is intended as an enumerate type defining the presentation layer message type
+            - how the message header and message text are encoded
+            1-127 reserved for subsidiary standards
+            128-255 reserved,not used
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessagePType.SECSIIMessage_Encoding">
+            <summary>
+            SECS-II encoding(00000000)
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessagePType.UserDefine_Encoding">
+            <summary>
+            User define encoding(10000000)
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsConnectionState">
+            <summary>
+            HSMS connection state
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionState.NONE">
+            <summary>
+            initial state
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionState.NOT_CONNECTED">
+            <summary>
+            the entity is ready to listen for or initiate tcp/ip coneections but either has not yet established and connection
+            or all previously established tcp/ip connections have been terminated
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionState.NOT_SELECTED">
+            <summary>
+            a substate of connected in which no HSMS session has been established or any previously established HSMS session has ended
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionState.SELECTED">
+            <summary>
+            a substate of connected in which at least on HSMS session has been established
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessageSType">
+            <summary>
+            session type,is an enumerated type identifying whether this message is an HSMS data message or HSMS control message
+            0=data message
+            other=control message
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessageSType.Data_Message">
+            <summary>
+            00000000
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessageSType.Select_req">
+            <summary>
+            00000001
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessageSType.Select_rsp">
+            <summary>
+            00000010
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessageSType.Deselect_req">
+            <summary>
+            Deselect is not to be used for HSMS-SS(use Seperate instead)
+            for HSMS-GS only
+            00000011
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessageSType.Deselect_rsp">
+            <summary>
+            00000100
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessageSType.Linktest_req">
+            <summary>
+            00000101
+            </summary> 
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessageSType.Linktest_rsp">
+            <summary>
+            00000110
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessageSType.Reject_req">
+            <summary>
+            Reject is optional for HSMS-SS	 
+            00000111
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessageSType.Seperate_req">
+            <summary>
+            00001001
+            </summary>	
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsSelectStatusCode">
+            <summary>
+            select status code(select.rsp header byte3),A code of zero indicates success of the select operation,A non-zero code indicates failure
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSelectStatusCode.Communication_Established">
+            <summary>
+            (HSMS)select was successfully completed
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSelectStatusCode.Communication_Already_Active">
+            <summary>
+            (HSMS)a previous select has already established communications to the entity being selected in this select
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSelectStatusCode.Connection_Not_Ready">
+            <summary>
+            (HSMS)the connection is not yet ready to accept select requests
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSelectStatusCode.Connection_Exhaust">
+            <summary>
+            (HSMS)the connection was accepted but the entity is already servicing a separate TCP/IP connection and is unable to service more than one at any given time
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSelectStatusCode.No_Such_Entity">
+            <summary>
+            (HSMS-GS)session id does not correspond to any session entity i available at this connection
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSelectStatusCode.Entity_In_Use_By_Another_Connection">
+            <summary>
+            (HSMS-GS)session entity corresponding to session id is not sharable connections and is already selected by another connection
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsSelectStatusCode.Entity_Selected_By_Current_Connection">
+            <summary>
+            (HSMS-GS)session entity corresponding to Session id is already selected on current connection
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo">
+            <summary>
+            Hsms Connections Information
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo.ConnectionList">
+            <summary>
+            list contains connections
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo.ToString">
+            <summary>
+            connection info summary 
+            </summary>
+            <returns>connection info summary</returns>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo.ConnectInfo">
+            <summary>
+            connect info
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo.ConnectInfo.SelectedEntityList">
+            <summary>
+            get selected entity list
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo.ConnectInfo.ConnectionId">
+            <summary>
+            get/set connection id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo.ConnectInfo.ConnectionState">
+            <summary>
+            get/set connection state
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo.ConnectInfo.PeerId">
+            <summary>
+            get/set socket peer id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo.ConnectInfo.IsConnected">
+            <summary>
+            get/set is connected
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo.EntityInfo">
+            <summary>
+            session entity info
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionInfo.EntityInfo.SessionId">
+            <summary>
+            get/set session id
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsConnection">
+            <summary>
+            HSMS connection,represent a logic linkage established top on TCP/IP between local and remote endpoint
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnection.m_SelectedSessionEntityList">
+            <summary>
+            all selected entity list in connection
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnection.m_StateMachine">
+            <summary>
+            HsmsStateMachine concrete object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnection.m_Driver">
+            <summary>
+            HsmsDriver object
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.#ctor(System.String)">
+            <summary>
+            construnctor with id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.Start(Unicom.UniAuto.Net.HSMS.HsmsDriver,Unicom.UniAuto.Net.HSMS.HsmsParameterSettings)">
+            <summary>
+            connection start
+            may throw exception
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.Dispose">
+            <summary>
+            connection dispose
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.SendDataMessage(Unicom.UniAuto.Net.HSMS.HsmsMessage)">
+            <summary>
+            send hsms data message
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.HandleMessageOut">
+            <summary>
+            handle message out
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.HandleMessageIn">
+            <summary>
+            handle message in
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.HandleMessageTimeOut">
+            <summary>
+            handle message TimeOut (T3/T6)
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.GetNewSystemBytes">
+            <summary>
+            get new systembytes
+            </summary>
+            <returns>new systembytes</returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.SendSelectReq(System.UInt16)">
+            <summary>
+            send select.req
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.SendSelectRsp(System.UInt16,Unicom.UniAuto.Net.HSMS.HsmsSelectStatusCode,System.UInt32)">
+            <summary>
+            send select.rsp
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.SendDeselectReq(System.UInt16)">
+            <summary>
+            send deselect.req
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.SendDeselectRsp(System.UInt16,Unicom.UniAuto.Net.HSMS.HsmsDeselectStatusCode,System.UInt32)">
+            <summary>
+            send deselect.rsp
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.SendLinktestReq">
+            <summary>
+            send linttest.req
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.SendLinktestRsp(System.UInt32)">
+            <summary>
+            send linttest.rsp
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.SendRejectReq(System.UInt16,System.Byte,Unicom.UniAuto.Net.HSMS.HsmsRejectReasonCode,System.UInt32)">
+            <summary>
+            send reject.req
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.SendSeperateReq(System.UInt16)">
+            <summary>
+            send seperate.req
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.GetAllSelectedSessionEntities">
+            <summary>
+            get all selected session entities from list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.GetSelectedSessionEntityById(System.String)">
+            <summary>
+            get selected session entity by session id from list
+            </summary>
+            <param name="sessionid"></param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.RemoveListSelectedSessionEntity(System.Collections.Generic.List{System.String})">
+            <summary>
+            remove a list of selected session entities from list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.RemoveSelectedSessionEntityById(System.String)">
+            <summary>
+            remove selected session entity from list by session id
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.SelectedSessionEntityCount">
+            <summary>
+            get selected session entity count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.IsSelectedSessionEntityExists(System.String)">
+            <summary>
+            check selected session session id exists
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.AddSelectedSessionEntity(Unicom.UniAuto.Net.HSMS.HsmsSessionEntity)">
+            <summary>
+            add selected session entity object to list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnection.ClearSelectedSessionEntities">
+            <summary>
+            clear selected session entities dictionary
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnection.ConnectionId">
+            <summary>
+            get connection id key
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnection.SelectedCount">
+            <summary>
+            get selected session entity count value
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnection.CurrentState">
+            <summary>
+            get current connection state
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnection.IsConnected">
+            <summary>
+            is socket connected
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnection.PeerId">
+            <summary>
+            get socket PeerId
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer">
+            <summary>
+            circular buffer
+            temporary store socket incomming data for hsms decoder
+            *NOTE: NOT ThreadSafe
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.m_Buffer">
+            <summary>
+            bytes array buffer
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.m_iSize">
+            <summary>
+            data count
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.m_pRead">
+            <summary>
+            read position
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.m_pWrite">
+            <summary>
+            write position
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.m_pWriteA">
+            <summary>
+            advance write position
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.m_iSizeA">
+            <summary>
+            advance data count
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.m_IsDisposed">
+            <summary>
+            disposed flag
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.Read(System.Int32,System.Collections.Generic.List{System.ArraySegment{System.Byte}}@)">
+            <summary>
+            read from buffer
+            </summary>
+            <param name="count">read count</param>
+            <param name="segs">return segments prepare to read</param>
+            <returns>return actual read count</returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.WriteReserve(System.Int32,System.Collections.Generic.List{System.ArraySegment{System.Byte}}@)">
+            <summary>
+            write reserve (prepare before write)
+            </summary>
+            <param name="count">reserve count</param>
+            <param name="segs">return segments prepare to write</param>
+            <returns>return actual reserve count,0=buffer full,-1=buffer disposed</returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.WriteEnd(System.Int32)">
+            <summary>
+            write end (after write)
+            </summary>
+            <param name="count">real write count</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.Expand(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            expand buffer to new larger capacity
+            </summary>
+            <param name="newCapacity">new desire size</param>
+            <param name="stepSize">expand step si ze</param>
+            <param name="maxCapacity">max expand size</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.Dispose">
+            <summary>
+            buffer dispose
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.Reset">
+            <summary>
+            buffer reset
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.Capacity">
+            <summary>
+            get buffer capacity
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.Size">
+            <summary>
+            get data size
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.BufferBytes">
+            <summary>
+            get buffer bytes array
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.ReadPos">
+            <summary>
+            get read position
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.WritePos">
+            <summary>
+            get write position
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.SizeA">
+            <summary>
+            get advance data size
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsRingBuffer.WritePosA">
+            <summary>
+            get advance write position
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings">
+            <summary>
+            Hsms Parameter settings
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.m_SessionEntityList">
+            <summary>
+            session entity list
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.ToString">
+            <summary>
+            to string description
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.Protocol">
+            <summary>
+            get/set HSMS-SS or HSMS-GS protocol
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.Mode">
+            <summary>
+            get/set Active or Passive mode
+            </summary>		
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.PassiveIP">
+            <summary>
+            get/set Passive IP
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.PassivePort">
+            <summary>
+            get/set Passive Port
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.T3">
+            <summary>
+            get/set T3 Reply Timeout 1-120(sec)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.T5">
+            <summary>
+            get/set T5 Connect Separation Timeout 1-240(sec)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.T6">
+            <summary>
+            get/set T6 Contraol Transaction Timeout 1-240(sec)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.T7">
+            <summary>
+            get/set T7 Not Selected Timeout 1-240(sec)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.T8">
+            <summary>
+            get/set T8 Network Intercharacter Timeout 1-120(sec)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.LinkTest">
+            <summary>
+            get/set Linktest Period Interval 1-300(sec)
+            0 = disable
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.PType">
+            <summary>
+            get/set message ptype
+            0=SecsII encoding(defualt), >128=user defined
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.MaxMessageLength">
+            <summary>
+            get/set Maximal supported Hsms Message Length
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.SocketSendBufSize">
+            <summary>
+            get/set socket send buffer size (bytes)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.SocketRecvBufSize">
+            <summary>
+            get/set socket receive buffer size (bytes)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.SocketSendTimeOut">
+            <summary>
+            get/set socket send timeout (ms)
+            0 or -1 = Infinite timeout,other = timeout time
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.MaxConnectionsPerTask">
+            <summary>
+            get/set max connections per task ,default=1
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.TaskWaitFrequency">
+            <summary>
+            get/set task wait frequency (times) ,default=5
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.TaskWaitPeriod">
+            <summary>
+            get/set task wait period time (ms) ,default=5
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.LicenseFileLocation">
+            <summary>
+            get/set extra license file search path,can assign multi search paths seperated by ;
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsParameterSettings.SessionEntityList">
+            <summary>
+            get Session Entity List
+            sessionid range 0-65535(HSMS-GS) or 0-32767(HSMS-SS)
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsProtocol">
+            <summary>
+            Hsms protocol type
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsProtocol.HSMS_SS">
+            <summary>
+            single session
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsProtocol.HSMS_GS">
+            <summary>
+            general session
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsDeselectStatusCode">
+            <summary>
+            deselect status code(deselect.rsp header byte3)
+            A code of zero indicates success of the deselect operation,A non-zero code indicates failure
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDeselectStatusCode.Communication_Ended">
+            <summary>
+            deselect was successfully completed
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDeselectStatusCode.Communication_Not_Established">
+            <summary>
+            hsms commnuication has not yet been estalished with a select or has already been ended with a previous deselect
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsDeselectStatusCode.Communication_Busy">
+            <summary>
+            the session is still in use by the responing entity and so it cannot yet relinquish it gracefully,if the original requester must terminate communications the separate procedure should be used as a last resort
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.Properties.Resources">
+            <summary>
+              用於查詢當地語系化字串等的強型別資源類別
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.Properties.Resources.ResourceManager">
+            <summary>
+              傳回這個類別使用的快取的 ResourceManager 執行個體。
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.Properties.Resources.Culture">
+            <summary>
+              覆寫目前執行緒的 CurrentUICulture 屬性，對象是所有
+              使用這個強型別資源類別的資源查閱。
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsTask">
+            <summary>
+            Hsms Task,represent a logic thread to handle message in/out/timeout in connections
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTask.m_Driver">
+            <summary>
+            HsmsDriver object
+            </summary>		
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTask.m_Task">
+            <summary>
+            task object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTask.m_Token">
+            <summary>
+            cancel token
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTask.m_MaxConnectionsPerTask">
+            <summary>
+            max connection count per task
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTask.m_TaskWaitFrequency">
+            <summary>
+            task wait frequency
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTask.m_TaskWaitPeriod">
+            <summary>
+            task wait period
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsTask.m_ConnectionList">
+            <summary>
+            connection list belongs to this task
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTask.GetAllConnections">
+            <summary>
+            get all connections from list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTask.GetConnectionById(System.String)">
+            <summary>
+            get connection by Id from list
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTask.RemoveListConnections(System.Collections.Generic.List{System.String})">
+            <summary>
+            remove a list of connections from list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTask.RemoveConnectionById(System.String)">
+            <summary>
+            remove connection from list by Id
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTask.IsConnectionExists(System.String)">
+            <summary>
+            check connection id exists
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTask.AddConnection(Unicom.UniAuto.Net.HSMS.HsmsConnection)">
+            <summary>
+            add connection object to list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsTask.ClearConnections">
+            <summary>
+            clear connection dictionary
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTask.TaskState">
+            <summary>
+            task status
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTask.TaskId">
+            <summary>
+            task id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsTask.ConnectionCount">
+            <summary>
+            get connection count
+            </summary>		
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsRejectReasonCode">
+            <summary>
+            reject reason code(reject.req header byte3),always non-zero
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRejectReasonCode.SType_Not_Supported">
+            <summary>
+            a message was received whose SType value not defined in the HSMS standard or the particular subsidiary standard supported by the entity
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRejectReasonCode.PType_Not_Supported">
+            <summary>
+            as above,but for PType
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRejectReasonCode.Transaction_Not_Open">
+            <summary>
+            a response control message was received when there was no outstanding request message which corresponded to it
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRejectReasonCode.Entity_Not_Selected">
+            <summary>
+            a data message was received when not in the SELECTED status
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsRejectReasonCode.UserDefine_Reason">
+            <summary>
+            user define reason, code > 128
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsConnectMode">
+            <summary>
+            HSMS connect mode
+            HSMS restricts an entity to one of the following modes - passive mode or active mode
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectMode.Passive">
+            <summary>
+            passive mode is used when the local entity listens for and accepts a connection procedure initiated by the remote entity
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectMode.Active">
+            <summary>
+            active mode is used when the connect procedure is initiated by the local entity
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSA">
+            <summary>
+            SEMI E37.2-95 HSMS-GS(general session) statemachine implement(Active Mode).
+            To be intended to support the needs of complex systems containing multiple independently accessible subsystems such as cluster tools or track systems	
+            single publish port,single connection/multi connections
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSA.Transition2Action">
+            <summary>
+            NOT_CONNECTED -> NOT_SELECTED
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSA.Transition3Action">
+            <summary>
+            SELECTED->NOT_CONNECTED(CONNECTED -> NOT_CONNECTED)
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsStateMachineGSA.Transition4Action">
+            <summary>
+            NOT_SELECTED->NOT_CONNECTED(CONNECTED -> NOT_CONNECTED)
+            </summary>		
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer">
+            <summary>
+            HSMS connection container,manage all connections and all session entities
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.m_ConnectionList">
+            <summary>
+            all connection list
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.m_SessionEntityList">
+            <summary>
+            all session entity list
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.GetAllConnections">
+            <summary>
+            get all connections from list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.GetConnectionById(System.String)">
+            <summary>
+            get connection by Id from list
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.RemoveListConnections(System.Collections.Generic.List{System.String})">
+            <summary>
+            remove a list of connections from list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.RemoveConnectionById(System.String)">
+            <summary>
+            remove connection from list by Id
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.IsConnectionExists(System.String)">
+            <summary>
+            check connection id exists
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.AddConnection(Unicom.UniAuto.Net.HSMS.HsmsConnection)">
+            <summary>
+            add connection object to list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.CreateConnection(System.String)">
+            <summary>
+            create connection object,null if create fail
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.ClearConnections">
+            <summary>
+            clear connection dictionary
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.GetAllSessionEntitys">
+            <summary>
+            get all session entities from list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.GetSessionEntityById(System.String)">
+            <summary>
+            get session entity by session id from list
+            </summary>
+            <param name="sessionid"></param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.IsSessionEntityExists(System.String)">
+            <summary>
+            check SessionEntity sessionid exists
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.AddSessionEntity(Unicom.UniAuto.Net.HSMS.HsmsSessionEntity)">
+            <summary>
+            add session entity object to list
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.ClearSessionEntitys">
+            <summary>
+            clear session entity dictionary
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.ConnectionCount">
+            <summary>
+            get connection count
+            </summary>		
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsConnectionContainer.SessionEntityCount">
+            <summary>
+            get session entity count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader">
+            <summary>
+            0-1  Session ID (Device ID)
+            2    Header Byte 2  (for PType=0 => wbit(bit 7),stream(bit 6-0))
+            3    Header Byte 3  (for PType=0 => function(bit 7-0),the LSB(bit 0)of function define data message primary(1)/reply(0))
+            4    PType(presentation type,0=SECSII message encoding)
+            5    SType(session type,0=data message,other=control message)
+            6-9  System Bytes
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.m_HeaderBytes">
+            <summary>
+            header bytes array
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.#ctor(System.Byte[])">
+            <summary>
+            constructor
+            </summary>
+            <param name="head">header bytes array</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.ToString">
+            <summary>
+            message header info summary
+            </summary>
+            <returns>message header info summary</returns>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.HeaderBytes">
+            <summary>
+            get header bytes array
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.DeviceId">
+            <summary>
+            get/set (HSMS-SS) device id,a 15-bit field in the message header 
+            used to identify a subentity within the equipment
+            0-32767
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.SessionId">
+            <summary>
+            get/set session id which is A 16-bit unsigned integer value field in the message header 
+            used to provide an association by reference between control message(perticlularly select and deselect) and subsequent data messages
+            byte 0 is MSB(byte),byte 1 is LSB(byte)
+            In HSMS-SS control message's session id whill always assume the special value 0xFFFF(all bits set)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.HeaderByte2">
+            <summary>
+            header byte 2
+            for control message,it contains 0 or statue code(reject ptype/stype)
+            for data message and ptype=0,it contains wbit and secs stream
+            for data message and ptype !=0,custom define
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.WBit">
+            <summary>
+            get/set reply expected flag(0 or 1)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.Stream">
+            <summary>
+            get/set SECS Stream,7 bit usigned int value
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.HeaderByte3">
+            <summary>
+            header byte 3
+            for control message,it conatins 0 or status code(select status/deselect status/reject reasoncode)
+            for data message and ptype=0,it contains the secs function
+            for data message and ptype !=0,custom define
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.Function">
+            <summary>
+            get/set SECS Function,8 bit usigned int value
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.PrimaryOrReply">
+            <summary>
+            get/set data message is primary(1) or Reply(0)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.PType">
+            <summary>
+            get/set presention type which is an enumerated type defining how the message header and message text are encoded
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.SType">
+            <summary>
+            get/set session type which is an enumerated type identifying whether this message is HSMS Data Message or other HSMS Control Messages
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessageHeader.SystemBytes">
+            <summary>
+            get/set systembytes which is used to identify a transaction uniquely among the set of open transactions
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessage">
+            <summary>
+            HSMS Message struct format=>
+              message length (4 bytes)
+              message header (10 bytes)
+              message text (0-n bytes)
+            Message Length is transmitted MSB(byte) first and LSB(byte) last
+            the minimum possible message length is 10 (header only)
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.m_LengthBytes">
+            <summary>
+            message length bytes array (4)
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.m_HeaderBytes">
+            <summary>
+            message header bytes array (10)
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.m_Header">
+            <summary>
+            message header object
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.m_TextBytes">
+            <summary>
+            message text bytes array (0-n)
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.m_IsDisposed">
+            <summary>
+            disposed flag
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.m_TextBytesLength">
+            <summary>
+            textbytes length
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessage.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessage.#ctor(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            constructor
+            </summary>
+            <param name="len">message length bytes array</param>
+            <param name="head">message header bytes array</param>
+            <param name="text">message text bytes array</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessage.LengthHexString">
+            <summary>
+            message length hex string
+            </summary>		
+            <returns>hex string</returns> 
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessage.HeaderHexString">
+            <summary>
+            message header hex string
+            </summary>		
+            <returns>hex string</returns> 
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessage.TextHexString">
+            <summary>
+            message text hex string
+            </summary>
+            <returns>hex string</returns> 
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessage.Dispose">
+            <summary>
+            message dispose
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessage.Clone">
+            <summary>
+            message clone
+            </summary>	
+            <returns>new message object</returns> 
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessage.ByteArrayToHexString(System.Byte[],System.String@)">
+            <summary>
+            byte array convert to hex string
+            </summary>
+            <param name="buf">bytes buffer</param>
+            <param name="hexstring">hex string</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.HsmsMessage.HexStringToByteArray(System.String,System.Byte[]@,System.Int32@,System.String@)">
+            <summary>
+            hex string convert to byte array
+            </summary>
+            <param name="buf">bytes buffer</param>
+            <param name="datalen">buffer real datalen</param>
+            <param name="error">error message</param>
+            <param name="hexstring">hex string</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.LengthBytes">
+            <summary>
+            get message length bytes array
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.HeaderBytes">
+            <summary>
+            get message header bytes array
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.Header">
+            <summary>
+            get message header object
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.TextBytes">
+            <summary>
+            get/set message text bytes array,null if control message
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.MessageLength">
+            <summary>
+            get/set message length
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.IsDataMessage">
+            <summary>
+            is data message
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.IsNotOpenTransaction">
+            <summary>
+            flag to indicate that secondary reply message doesn't match any primary out message (maybe T3 timeout)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.Tag">
+            <summary>
+            get/set user object attached to message,
+            reply's tag will copy from primary's tag
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.TimeStamp">
+            <summary>
+            get/set message timestamp (sendtime/recvtime)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.TextBytesLength">
+            <summary>
+            get/set textbytes length
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.XItemTree">
+            <summary>
+            get/set xitem tree
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.HSMS.HsmsMessage.EventType">
+            <summary>
+            get/set message event type (send/recv/replyT3)
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST">
+            <summary>
+            public static constant code class
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_LENGTH_BYTES_LEN">
+            <summary>
+            define  message length bytes len=4
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_HEADER_BYTES_LEN">
+            <summary>
+            define message header bytes len=10
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_SEND_RESULT_OK">
+            <summary>
+            message send result code=ok
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_SEND_SOCKET_IS_NULL_ERR">
+            <summary>
+            message send result error code 20001
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_SEND_DRIVER_NOT_STARTED_ERR">
+            <summary>
+            message send result error code 20002
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_SEND_DRIVER_ALREADY_DISPOSED_ERR">
+            <summary>
+            message send result error code 20003
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_SEND_SOCKET_NOT_CONNECTED_ERR">
+            <summary>
+            message send result error code 20004
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_SEND_EXCEPTION_OCCURE_ERR">
+            <summary>
+            message send result error code 20005
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_SEND_SOCKET_EXCEPTION_OCCURE_ERR">
+            <summary>
+            message send result error code 20006
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_SEND_ENTITY_NOT_SELECTED_ERR">
+            <summary>
+            message send result error code 20007
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_SEND_ENTITY_ALREADY_SELECTED_ERR">
+            <summary>
+            message send result error code 20008
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.HsmsMessage.CONST.MESSAGE_SEND_NO_SUCH_ENTITY_ERR">
+            <summary>
+            message send result error code 20009
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.MessageEventType">
+            <summary>
+            message event type (send/receive/replyT3)
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.MessageEventType.SendEvent">
+            <summary>
+            message send event
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.MessageEventType.ReceiveEvent">
+            <summary>
+            message receive event
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.MessageEventType.ReplyT3Event">
+            <summary>
+            message reply T3 timeout event
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.HSMS.RockeyAPI">
+            <summary>
+            rokey4nd api to access and operate keypro hardware
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.RockeyX64(System.UInt16,System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte@)">
+            Return Type: WORD->unsigned short
+            function: WORD->unsigned short
+            handle: WORD*
+            lp1: DWORD*
+            lp2: DWORD*
+            p1: WORD*
+            p2: WORD*
+            p3: WORD*
+            p4: WORD*
+            buffer: BYTE*
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.Find(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to check if a sepcific rockey4nd is attached to the usb port		
+            <para>p1=Password 1</para>		
+            <para>p2=Password 2</para>
+            <para>p3=Password 3(optional)</para>
+            <para>p4=Password 4(optional)</para>
+            <para>return lp1=Hardware ID(HID)</para> 
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.FindNext(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to check if another sepcific rockey4nd is attached to the usb port
+            <para>p1=Password 1</para>		
+            <para>p2=Password 2</para>
+            <para>p3=Password 3(optional)</para>
+            <para>p4=Password 4(optional)</para>
+            <para>return lp1=Hardware ID(HID)</para> 
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.Open(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to open a rocket4nd dongle with specified passwords or hardware id
+            <para>p1=Password 1</para>		
+            <para>p2=Password 2</para>
+            <para>p3=Password 3(optional)</para>
+            <para>p4=Password 4(optional)</para>
+            <para>lp1=Hardware ID(HID)</para> 		
+            <para>return handle=Rockey4ND's Handle</para> 
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.Close(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to close a rocket4nd dongle with specified handle		
+            <para>handle=Rockey4ND's Handle</para> 				
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.ReadUDZ(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to read the contents of the Uer Data Zone(UDZ)
+            <para>handle=Rockey4ND's Handle</para>		
+            <para>p1=offset of UDZ(zero base)</para>
+            <para>p2=length(unit is byte)</para>
+            <para>buffer=address of buffer</para>		
+            <para>return buffer=the contents of UDZ</para> 
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.WriteUDZ(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to write the data to the Uer Data Zone(UDZ)
+            <para>handle=Rockey4ND's Handle</para>		
+            <para>p1=offset of UDZ(zero base)</para>
+            <para>p2=length(unit is byte)</para>
+            <para>buffer=address of buffer</para>				
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.ReadUserID(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to read the user defined user id from the User ID Zone(UIZ)
+            <para>handle=Rockey4ND's Handle</para>
+            <para>return lp1=User ID</para> 
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.WriteUserID(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to write the user defined user id to the User ID Zone(UIZ)
+            <para>handle=Rockey4ND's Handle</para>
+            <para>lp1=User ID</para> 
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.GetRandomNumber(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to get a random number from the dongle
+            <para>handle=Rockey4ND's Handle</para>
+            <para>return p1,p2,p3,p4=random number</para> 
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.GetHashNumber(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to get return codes form the input of a seed code
+            <para>handle=Rockey4ND's Handle</para>
+            <para>lp2=Seed Code</para> 
+            <para>return p1=code1,p2=code2,p3=code3,p4=code4</para>
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.SetModule(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to write a vlaue to a specific Rockey4ND module and set the decrement attribute
+            <para>handle=Rockey4ND's Handle</para>		
+            <para>p1=Module Number(0-63)</para>
+            <para>p2=Module Unit Value</para>
+            <para>p3=if decreasing is allowed(1=allowed,0=not allowed)</para>				
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.CheckModule(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to read the attirbutes of a specific Rockey4ND module
+            <para>handle=Rockey4ND's Handle</para>		
+            <para>p1=Module Number(0-63)</para>
+            <para>return p2=zero value attribute(1=module value is not zero)</para>
+            <para>p3=decrement attribute(1=module can be decreased)</para>				
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.DecreaseModuleValue(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to decrease the value in a specified ROCKEY4ND module by 1
+            <para>handle=Rockey4ND's Handle</para>		
+            <para>p1=module number</para>
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.WriteAlgorithm(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to write user-defined mathematical instructions to the User Algorithm Zone(UAZ)
+            <para>handle=Rockey4ND's Handle</para>		
+            <para>p1=position of first instruction in UAZ buffer</para>
+            <para>buffer=the algorithm command string</para>		
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.Calculate1(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to return the results of a calculation performed in ROCKEY4ND calculate1 function
+            <para>handle=Rockey4ND's Handle</para>
+            <para>lp1=start point of calculation</para>
+            <para>lp2=module number</para>
+            <para>p1=input value 1</para>		
+            <para>p2=input value 2</para>
+            <para>p3=input value 3</para>
+            <para>p4=input value 4</para>		
+            <para>return p1,p2,p3,p4=the results of calculation</para> 
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.Calculate2(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to return the results of a calculation performed in ROCKEY4ND calculate2 function
+            <para>handle=Rockey4ND's Handle</para>
+            <para>lp1=start point of calculation</para>
+            <para>lp2=seed code(32 bit)</para>
+            <para>p1=input value 1</para>		
+            <para>p2=input value 2</para>
+            <para>p3=input value 3</para>
+            <para>p4=input value 4</para>		
+            <para>return p1,p2,p3,p4=the results of calculation</para> 
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.Calculate3(System.UInt16@,System.UInt32@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt16@,System.UInt16@,System.Byte[]@)">
+            <summary>
+            to return the results of a calculation performed in ROCKEY4ND calculate3 function
+            <para>handle=Rockey4ND's Handle</para>
+            <para>lp1=start point of calculation</para>
+            <para>lp2=module number</para>
+            <para>p1=input value 1</para>		
+            <para>p2=input value 2</para>
+            <para>p3=input value 3</para>
+            <para>p4=input value 4</para>		
+            <para>return p1,p2,p3,p4=the results of calculation</para> 
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.HSMS.RockeyAPI.ErrorDesc(System.UInt16)">
+            <summary>
+            get error description by code
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_FIND">
+            RY_FIND -> 1
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_FIND_NEXT">
+            RY_FIND_NEXT -> 2
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_OPEN">
+            RY_OPEN -> 3
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_CLOSE">
+            RY_CLOSE -> 4
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_READ">
+            RY_READ -> 5
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_WRITE">
+            RY_WRITE -> 6
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_RANDOM">
+            RY_RANDOM -> 7
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_SEED">
+            RY_SEED -> 8
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_WRITE_USERID">
+            RY_WRITE_USERID -> 9
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_READ_USERID">
+            RY_READ_USERID -> 10
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_SET_MOUDLE">
+            RY_SET_MOUDLE -> 11
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_CHECK_MOUDLE">
+            RY_CHECK_MOUDLE -> 12
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_WRITE_ARITHMETIC">
+            RY_WRITE_ARITHMETIC -> 13
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_CALCULATE1">
+            RY_CALCULATE1 -> 14
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_CALCULATE2">
+            RY_CALCULATE2 -> 15
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_CALCULATE3">
+            RY_CALCULATE3 -> 16
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_DECREASE">
+            RY_DECREASE -> 17
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Function.RY_CALLNET">
+            RY_CALLNET -> 18
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_SUCCESS">
+            ERR_SUCCESS -> 0
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_NO_ROCKEY">
+            ERR_NO_ROCKEY -> 3
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_INVALID_PASSWORD">
+            ERR_INVALID_PASSWORD -> 4
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_INVALID_PASSWORD_OR_ID">
+            ERR_INVALID_PASSWORD_OR_ID -> 5
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_SETID">
+            ERR_SETID -> 6
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_INVALID_ADDR_OR_SIZE">
+            ERR_INVALID_ADDR_OR_SIZE -> 7
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_UNKNOWN_COMMAND">
+            ERR_UNKNOWN_COMMAND -> 8
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_NOTBELEVEL3">
+            ERR_NOTBELEVEL3 -> 9
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_READ">
+            ERR_READ -> 10
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_WRITE">
+            ERR_WRITE -> 11
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_RANDOM">
+            ERR_RANDOM -> 12
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_SEED">
+            ERR_SEED -> 13
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_CALCULATE">
+            ERR_CALCULATE -> 14
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_NO_OPEN">
+            ERR_NO_OPEN -> 15
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_OPEN_OVERFLOW">
+            ERR_OPEN_OVERFLOW -> 16
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_NOMORE">
+            ERR_NOMORE -> 17
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_NEED_FIND">
+            ERR_NEED_FIND -> 18
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_DECREASE">
+            ERR_DECREASE -> 19
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_AR_BADCOMMAND">
+            ERR_AR_BADCOMMAND -> 20
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_AR_UNKNOWN_OPCODE">
+            ERR_AR_UNKNOWN_OPCODE -> 21
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_AR_WRONGBEGIN">
+            ERR_AR_WRONGBEGIN -> 22
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_AR_WRONG_END">
+            ERR_AR_WRONG_END -> 23
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_AR_VALUEOVERFLOW">
+            ERR_AR_VALUEOVERFLOW -> 24
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_TOOMUCHTHREAD">
+            ERR_TOOMUCHTHREAD -> 25
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_RECEIVE_NULL">
+            ERR_RECEIVE_NULL -> 0x100
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_UNKNOWN_SYSTEM">
+            ERR_UNKNOWN_SYSTEM -> 0x102
+        </member>
+        <member name="F:Unicom.UniAuto.Net.HSMS.RockeyAPI.Error.ERR_UNKNOWN">
+            ERR_UNKNOWN -> 0xffff
+        </member>
+    </members>
+</doc>

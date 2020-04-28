@@ -1,0 +1,853 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-05-09 10:07:22-->
+<itemgroup name="L3ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_1 Line_L3_CUT(Shirai)_Ver 1.0.2_20160506.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="RecipeID" item="ASCII" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Just_Cut_1_Press" item="Press" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Just_Cut_2_Press" item="Press" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Just_Cut_3_Press" item="Press" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Just_Cut_4_Press" item="Press" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Terminal_1_Press" item="Press" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Terminal_2_Press" item="Press" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Terminal_3_Press" item="Press" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Terminal_4_Press" item="Press" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Main_Cut_Speed" item="Speed" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Main_Incision" item="Distance" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="B-Main_Cut_Press" item="Press" site="" woffset="11" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B-Term_Cut_Press" item="Press" site="" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B-Main_Cut_Speed" item="Press" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B-Main_Incision" item="Distance" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A-Main_Cut_Press" item="Press" site="" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A-Term_Cut_Press" item="Press" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A-Main_Cut_Speed" item="Speed" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A-Main_Incision" item="Distance" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_JustCut1_Press" item="Press" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_JustCut2_Press" item="Press" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_JustCut3_Press" item="Press" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_JustCut4_Press" item="Press" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_JustCut5_Press" item="Press" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_Term_1_Press" item="Press" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_Term_2_Press" item="Press" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_Term_3_Press" item="Press" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_Term_4_Press" item="Press" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_Term_5_Press" item="Press" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_Main_Cut_Speed" item="Speed" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_Main_Incision" item="Distance" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_JustCut1_Press" item="Press" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_JustCut2_Press" item="Press" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_JustCut3_Press" item="Press" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_JustCut4_Press" item="Press" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_JustCut5_Press" item="Press" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_Term_1_Press" item="Press" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_Term_2_Press" item="Press" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_Term_3_Press" item="Press" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_Term_4_Press" item="Press" site="" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_Term_5_Press" item="Press" site="" woffset="47" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_Main_Cut_Speed" item="Speed" site="" woffset="49" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_Main_Incision" item="Distance" site="" woffset="51" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip_Size_X_mm" item="Distance" site="" woffset="53" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip_Size_Y_mm" item="Distance" site="" woffset="55" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip_Size_X_mm_1" item="Distance" site="" woffset="57" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip_Size_Y_mm_1" item="Distance" site="" woffset="59" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_1 Line_L4_BEV_Ver 1.0.1_20160506.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="OPERATOR_ID" site="" woffset="0" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RECIPE_ID" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_CUT_SPD" item="mm/s" site="" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="GD_GRIND_SPD" item="mm/s" site="" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="ION_POWER_ON/OFF" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GC_SPD_RPM_W" item="RPM" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GC_SPD_RPM_Z" item="RPM" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GD_SPD_RPM_W" item="RPM" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GD_SPD_RPM_Z" item="RPM" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GD_SPD_RPM_E" item="RPM" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GD_SPD_RPM_V" item="RPM" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GC_SPD_A_W" item="A" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="GC_SPD_A_Z" item="A" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="GD_SPD_A_W" item="A" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="GD_SPD_A_Z" item="A" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="GD_SPD_A_E" item="A" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="GD_SPD_A_V" item="A" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Offset_UP" item="㎛" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Offset_DOWN" item="㎛" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Offset_UP" item="㎛" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Offset_DOWN" item="㎛" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Offset_UP" item="㎛" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Offset_DOWN" item="㎛" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Offset_UP" item="㎛" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Offset_DOWN" item="㎛" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_L4_C_Offset" item="㎛" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_L3_C_Offset" item="㎛" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="C01_Offset" item="㎛" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="C02_Offset" item="㎛" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="C03_Offset" item="㎛" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="C04_Offset" item="㎛" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R01_Y_Offset" item="㎛" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R02_Y_Offset" item="㎛" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R03_Y_Offset" item="㎛" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R04_Y_Offset" item="㎛" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R01_X_Offset" item="㎛" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R02_X_Offset" item="㎛" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R03_X_Offset" item="㎛" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R04_X_Offset" item="㎛" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Grinding_UP" item="㎛" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Grinding_DOWN" item="㎛" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Grinding_UP" item="㎛" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Grinding_DOWN" item="㎛" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Grinding_UP" item="㎛" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Grinding_DOWN" item="㎛" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Grinding_UP" item="㎛" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Grinding_DOWN" item="㎛" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_L4_C_Grinding" item="㎛" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_L3_C_Grinding" item="㎛" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="C01_Grinding" item="㎛" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="C02_Grinding" item="㎛" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="C03_Grinding" item="㎛" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="C04_Grinding" item="㎛" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R01_Y_Grinding" item="㎛" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R02_Y_Grinding" item="㎛" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R03_Y_Grinding" item="㎛" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R04_Y_Grinding" item="㎛" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R01_X_Grinding" item="㎛" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R02_X_Grinding" item="㎛" site="" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R03_X_Grinding" item="㎛" site="" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="R04_X_Grinding" item="㎛" site="" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_UP_Slant_01" item="㎛" site="" woffset="66" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_UP_Slant_02" item="㎛" site="" woffset="67" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_UP_Slant_03" item="㎛" site="" woffset="68" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_UP_Slant_04" item="㎛" site="" woffset="69" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_DOWN_Slant_01" item="㎛" site="" woffset="70" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_DOWN_Slant_02" item="㎛" site="" woffset="71" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_DOWN_Slant_03" item="㎛" site="" woffset="72" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_DOWN_Slant_04" item="㎛" site="" woffset="73" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_UP_Slant_01" item="㎛" site="" woffset="74" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_UP_Slant_02" item="㎛" site="" woffset="75" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_UP_Slant_03" item="㎛" site="" woffset="76" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_UP_Slant_04" item="㎛" site="" woffset="77" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_DOWN_Slant_01" item="㎛" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_DOWN_Slant_02" item="㎛" site="" woffset="79" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_DOWN_Slant_03" item="㎛" site="" woffset="80" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_DOWN_Slant_04" item="㎛" site="" woffset="81" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_UP_Slant_01" item="㎛" site="" woffset="82" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_UP_Slant_02" item="㎛" site="" woffset="83" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_UP_Slant_03" item="㎛" site="" woffset="84" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_UP_Slant_04" item="㎛" site="" woffset="85" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_DOWN_Slant_01" item="㎛" site="" woffset="86" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_DOWN_Slant_02" item="㎛" site="" woffset="87" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_DOWN_Slant_03" item="㎛" site="" woffset="88" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_DOWN_Slant_04" item="㎛" site="" woffset="89" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_UP_Slant_01" item="㎛" site="" woffset="90" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_UP_Slant_02" item="㎛" site="" woffset="91" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_UP_Slant_03" item="㎛" site="" woffset="92" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_UP_Slant_04" item="㎛" site="" woffset="93" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_DOWN_Slant_01" item="㎛" site="" woffset="94" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_DOWN_Slant_02" item="㎛" site="" woffset="95" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_DOWN_Slant_03" item="㎛" site="" woffset="96" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_DOWN_Slant_04" item="㎛" site="" woffset="97" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_C01" item="㎛" site="" woffset="98" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_C02" item="㎛" site="" woffset="99" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_C03" item="㎛" site="" woffset="100" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_C04" item="㎛" site="" woffset="101" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L1_UP_1" item="㎛" site="" woffset="102" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L1_UP_2" item="㎛" site="" woffset="103" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L1_UP_3" item="㎛" site="" woffset="104" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L1_UP_4" item="㎛" site="" woffset="105" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L1_UP_5" item="㎛" site="" woffset="106" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L1_DOWN_1" item="㎛" site="" woffset="107" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L1_DOWN_2" item="㎛" site="" woffset="108" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L1_DOWN_3" item="㎛" site="" woffset="109" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L1_DOWN_4" item="㎛" site="" woffset="110" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L1_DOWN_5" item="㎛" site="" woffset="111" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L2_UP_1" item="㎛" site="" woffset="112" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L2_UP_2" item="㎛" site="" woffset="113" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L2_UP_3" item="㎛" site="" woffset="114" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L2_UP_4" item="㎛" site="" woffset="115" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L2_UP_5" item="㎛" site="" woffset="116" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L2_DOWN_1" item="㎛" site="" woffset="117" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L2_DOWN_2" item="㎛" site="" woffset="118" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L2_DOWN_3" item="㎛" site="" woffset="119" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L2_DOWN_4" item="㎛" site="" woffset="120" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L2_DOWN_5" item="㎛" site="" woffset="121" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L3_UP_1" item="㎛" site="" woffset="122" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L3_UP_2" item="㎛" site="" woffset="123" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L3_UP_3" item="㎛" site="" woffset="124" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L3_UP_4" item="㎛" site="" woffset="125" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L3_UP_5" item="㎛" site="" woffset="126" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L3_DOWN_1" item="㎛" site="" woffset="127" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L3_DOWN_2" item="㎛" site="" woffset="128" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L3_DOWN_3" item="㎛" site="" woffset="129" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L3_DOWN_4" item="㎛" site="" woffset="130" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L3_DOWN_5" item="㎛" site="" woffset="131" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L4_UP_1" item="㎛" site="" woffset="132" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L4_UP_2" item="㎛" site="" woffset="133" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L4_UP_3" item="㎛" site="" woffset="134" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L4_UP_4" item="㎛" site="" woffset="135" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L4_UP_5" item="㎛" site="" woffset="136" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L4_DOWN_1" item="㎛" site="" woffset="137" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L4_DOWN_2" item="㎛" site="" woffset="138" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L4_DOWN_3" item="㎛" site="" woffset="139" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L4_DOWN_4" item="㎛" site="" woffset="140" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grinding_L4_DOWN_5" item="㎛" site="" woffset="141" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Index01_Vacuum" item="VAC" site="" woffset="142" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Index02_Vacuum" item="VAC" site="" woffset="143" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Index03_Vacuum" item="VAC" site="" woffset="144" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="EQ_ID" site="" woffset="145" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIP_ID" site="" woffset="146" boffset="0" wpoints="8" bpoints="128" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_THICK" site="" woffset="154" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_THICK" site="" woffset="155" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="MARK_TO_CF_L_1" site="" woffset="156" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="MARK_TO_CF_L_2" site="" woffset="157" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="MARK_TO_CF_L_3" site="" woffset="158" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="MARK_TO_CF_L_4" site="" woffset="159" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="MARK_TO_TFT_L_1" site="" woffset="160" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="MARK_TO_TFT_L_2" site="" woffset="161" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="MARK_TO_TFT_L_3" site="" woffset="162" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="MARK_TO_TFT_L_4" site="" woffset="163" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="LONG_MARK_TO_MARK" site="" woffset="164" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="SHORT_MARK_TO_MARK" site="" woffset="166" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="PANEL_CF_SIZE_L" site="" woffset="168" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="PANEL_CF_SIZE_W" site="" woffset="170" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="PANEL_TFT_SIZE_L" site="" woffset="172" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="PANEL_TFT_SIZE_W" site="" woffset="174" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="SHORT_DEGREE" site="" woffset="176" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="LONG_DEGREE" site="" woffset="177" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_CNT" site="" woffset="178" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_01_X" site="" woffset="179" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_01_Y" site="" woffset="180" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_02_X" site="" woffset="181" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_02_Y" site="" woffset="182" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_03_X" site="" woffset="183" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_03_Y" site="" woffset="184" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_04_X" site="" woffset="185" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_04_Y" site="" woffset="186" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_05_X" site="" woffset="187" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_05_Y" site="" woffset="188" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_06_X" site="" woffset="189" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_06_Y" site="" woffset="190" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_07_X" site="" woffset="191" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_07_Y" site="" woffset="192" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_08_X" site="" woffset="193" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_08_Y" site="" woffset="194" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_09_X" site="" woffset="195" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_09_Y" site="" woffset="196" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_10_X" site="" woffset="197" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CHIPPING_10_Y" site="" woffset="198" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_CNT" site="" woffset="199" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_01_X" site="" woffset="200" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_01_Y" site="" woffset="201" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_02_X" site="" woffset="202" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_02_Y" site="" woffset="203" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_03_X" site="" woffset="204" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_03_Y" site="" woffset="205" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_04_X" site="" woffset="206" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_04_Y" site="" woffset="207" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_05_X" site="" woffset="208" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_05_Y" site="" woffset="209" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_06_X" site="" woffset="210" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_06_Y" site="" woffset="211" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_07_X" site="" woffset="212" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_07_Y" site="" woffset="213" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_08_X" site="" woffset="214" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_08_Y" site="" woffset="215" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_09_X" site="" woffset="216" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_09_Y" site="" woffset="217" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_10_X" site="" woffset="218" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BROKEN_10_Y" site="" woffset="219" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_CNT" site="" woffset="220" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_01_X" site="" woffset="221" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_01_Y" site="" woffset="222" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_02_X" site="" woffset="223" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_02_Y" site="" woffset="224" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_03_X" site="" woffset="225" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_03_Y" site="" woffset="226" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_04_X" site="" woffset="227" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_04_Y" site="" woffset="228" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_05_X" site="" woffset="229" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_05_Y" site="" woffset="230" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_06_X" site="" woffset="231" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_06_Y" site="" woffset="232" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_07_X" site="" woffset="233" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_07_Y" site="" woffset="234" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_08_X" site="" woffset="235" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_08_Y" site="" woffset="236" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_09_X" site="" woffset="237" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_09_Y" site="" woffset="238" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_10_X" site="" woffset="239" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="BULI_10_Y" site="" woffset="240" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="S_INSPECTION_TIME" site="" woffset="241" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L_INSPECTION_TIME" site="" woffset="244" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="INSPECTION_Y_N" site="" woffset="247" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_WHEEL_LIFE_1" item="m" site="" woffset="248" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_WHEEL_LIFE_2" item="m" site="" woffset="250" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="L_WHEEL_LIFE_1" item="m" site="" woffset="252" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="L_WHEEL_LIFE_2" item="m" site="" woffset="254" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="L_WHEEL_LIFE_3" item="m" site="" woffset="256" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="L_WHEEL_LIFE_4" item="m" site="" woffset="258" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="GC_Align_Retry_1" site="" woffset="260" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GD_Align_Retry_2" site="" woffset="261" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ION_ALARM_ON/OFF" site="" woffset="262" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Load_Type" site="" woffset="263" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_1 Line_L5_BCN_Ver 1.0.1_20160506.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Panel_length" site="" woffset="0" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Panel_width" site="" woffset="2" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Panel_thick" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Inlet_cv_speed" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Process_cv_speed" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Outlet_cv_speed" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB1_nip" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB1_nip" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB2_nip" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB2_nip" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB3_nip" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB3_nip" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB4_nip" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB4_nip" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB1_speed" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB1_speed" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB2_speed" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB2_speed" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB3_speed" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB3_speed" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB4_speed" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB4_speed" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB1_Dir" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB1_Dir" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB2_Dir" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB2_Dir" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB3_Dir" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB3_Dir" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Upper_RB4_Dir" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Lower_RB4_Dir" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="CDA_Source_F" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="DIW_Source_F" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Exhaust_P" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="CDA_Source_P" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Filter_DIW_Source_P_front" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Filter_DIW_Source_P_rear" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Filter_BJ_Tank_P_front" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Filter_BJ_Tank_P_rear" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Filter_RB-R_Tank_P_front" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Filter_RB-L_Tank_P_front" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Filter_RB_Tank_P_rear" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_1-1_upper_p" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_1-1_lower_p" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_2-1_upper_p" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_2-1_lower_p" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_3-1_upper_p" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_3-1_lower_p" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_1-2_upper_p" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_1-2_lower_p" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_2-2_upper_p" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_2-2_lower_p" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_3-2_upper_p" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="Air_knife_3-2_lower_p" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="BJ1_CDA_upper_p" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="BJ1_CDA_lower_p" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="BJ2_CDA_upper_p" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="BJ2_CDA_lower_p" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="BJ1_DIW_upper_p" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="BJ1_DIW_lower_p" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="BJ2_DIW_upper_p" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="BJ2_DIW_lower_p" site="" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="HP_DIW_upper_p" site="" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="HP_DIW_lower_p" site="" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="ESD1" site="" woffset="66" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+  <item name="ESD2" site="" woffset="67" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" dailychecktype="Empty" />
+</itemgroup>
+<itemgroup name="L6ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_1 Line_L6_BUR_Ver 1.0.0_20160506.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Measurement_Tact_time" item="MeasurementTacttime" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CLDATE_YEAR" item="CLDATE_YEAR" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CLDATE_MMDD" item="CLDATE_MMDD" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CLTIME_HHMM" item="CLTIME_HHMM" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CLTIME_SSWK" item="CLTIME_SSWK" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_Version_YEAR" item="RecipeVersion_YEAR" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_Version_MMDD" item="RecipeVersion_MMDD" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_Version_HHMM" item="RecipeVersion_HHMM" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_Version_SSWK" item="RecipeVersion_SSWK" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L_Side_Y_N" item="L_Side_Y_N" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="R_Side_Y_N" item="R_Side_Y_N" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CCD1_Light_VAL" item="CCD1_Light_VAL" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CCD2_Light_VAL" item="CCD2_Light_VAL" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CCD3_Light_VAL" item="CCD3_Light_VAL" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CCD4_Light_VAL" item="CCD4_Light_VAL" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L1_CF1" item="DimL1_CF1" site="" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L1_CF2" item="DimL1_CF2" site="" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L1_TFT1" item="DimL1_TFT1" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L1_TFT2" item="DimL1_TFT2" site="" woffset="21" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L2_CF1" item="DimL2_CF1" site="" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L2_CF2" item="DimL2_CF2" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L2_TFT1" item="DimL2_TFT1" site="" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L2_TFT2" item="DimL2_TFT2" site="" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L3_CF1" item="DimL3_CF1" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L3_CF2" item="DimL3_CF2" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L3_TFT1" item="DimL3_TFT1" site="" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L3_TFT2" item="DimL3_TFT2" site="" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L4_CF1" item="DimL4_CF1" site="" woffset="39" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L4_CF2" item="DimL4_CF2" site="" woffset="41" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L4_TFT1" item="DimL4_TFT1" site="" woffset="43" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L4_TFT2" item="DimL4_TFT2" site="" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_Total_Judgment" item="PanelTotalJudgment" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="NG_Kind" item="NGKind" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_count" item="Defectcount" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_Item_1" item="DefectItem1" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_1_Size_Depth" item="Defect1SizeDepth" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_1_Size_Width" item="Defect1SizeWidth" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect1_pos_x" item="Defect1pos_x" site="" woffset="53" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect1_pos_y" item="Defect1pos_y" site="" woffset="55" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_1_Side" item="Defect1Side" site="" woffset="57" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_Item_2" item="DefectItem2" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_2_Size_Depth" item="Defect2SizeDepth" site="" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_2_Size_Width" item="Defect2SizeWidth" site="" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect2_pos_x" item="Defect2pos_x" site="" woffset="65" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect2_pos_y" item="Defect2pos_y" site="" woffset="67" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_2_Side" item="Defect2Side" site="" woffset="69" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_Item_3" item="DefectItem3" site="" woffset="74" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_3_Size_Depth" item="Defect3SizeDepth" site="" woffset="75" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_3_Size_Width" item="Defect3SizeWidth" site="" woffset="76" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect3_pos_x" item="Defect3pos_x" site="" woffset="77" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect3_pos_y" item="Defect3pos_y" site="" woffset="79" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_3_Side" item="Defect3Side" site="" woffset="81" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_Item_4" item="DefectItem4" site="" woffset="86" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_4_Size_Depth" item="Defect4SizeDepth" site="" woffset="87" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_4_Size_Width" item="Defect4SizeWidth" site="" woffset="88" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect4_pos_x" item="Defect4pos_x" site="" woffset="89" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect4_pos_y" item="Defect4pos_y" site="" woffset="91" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_4_Side" item="Defect4Side" site="" woffset="93" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_Item_5" item="DefectItem5" site="" woffset="98" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_5_Size_Depth" item="Defect5SizeDepth" site="" woffset="99" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_5_Size_Width" item="Defect5SizeWidth" site="" woffset="100" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect5_pos_x" item="Defect5pos_x" site="" woffset="101" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect5_pos_y" item="Defect5pos_y" site="" woffset="103" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_5_Side" item="Defect5Side" site="" woffset="105" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L1_TFT_SETTING" item="DimL1_TFT_SETTING" site="" woffset="110" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L2_TFT_SETTING" item="DimL2_TFT_SETTING" site="" woffset="112" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L3_TFT_SETTING" item="DimL3_TFT_SETTING" site="" woffset="114" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L4_TFT_SETTING" item="DimL4_TFT_SETTING" site="" woffset="116" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L1_CF_SETTING" item="DimL1_CF_SETTING" site="" woffset="118" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L2_CF_SETTING" item="DimL2_CF_SETTING" site="" woffset="120" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L3_CF_SETTING" item="DimL3_CF_SETTING" site="" woffset="122" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_L4_CF_SETTING" item="DimL4_CF_SETTING" site="" woffset="124" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dim_Control_Limit" item="DimControlLimit" site="" woffset="126" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_CF_Burr_D" item="L1_CF_Burr_D" site="" woffset="128" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_CF_Broken_D" item="L1_CF_Broken_D" site="" woffset="129" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_CF_Shell_D" item="L1_CF_Shell_D" site="" woffset="130" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_CF_Crack_D" item="L1_CF_Crack_D" site="" woffset="131" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_CF_Crack_Under_Glass_D" item="L1_CF_CrackUnderGlass_D" site="" woffset="132" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_CF_Burr_W" item="L1_CF_Burr_W" site="" woffset="133" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_CF_Broken_W" item="L1_CF_Broken_W" site="" woffset="134" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_CF_Shell_W" item="L1_CF_Shell_W" site="" woffset="135" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_CF_Crack_W" item="L1_CF_Crack_W" site="" woffset="136" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_CF_Crack_Under_Glass_W" item="L1_CF_CrackUnderGlass_W" site="" woffset="137" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_CF_Burr_D" item="L2_CF_Burr_D" site="" woffset="138" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_CF_Broken_D" item="L2_CF_Broken_D" site="" woffset="139" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_CF_Shell_D" item="L2_CF_Shell_D" site="" woffset="140" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_CF_Crack_D" item="L2_CF_Crack_D" site="" woffset="141" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_CF_Crack_Under_Glass_D" item="L2_CF_CrackUnderGlass_D" site="" woffset="142" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_CF_Burr_W" item="L2_CF_Burr_W" site="" woffset="143" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_CF_Broken_W" item="L2_CF_Broken_W" site="" woffset="144" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_CF_Shell_W" item="L2_CF_Shell_W" site="" woffset="145" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_CF_Crack_W" item="L2_CF_Crack_W" site="" woffset="146" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_CF_Crack_Under_Glass_W" item="L2_CF_CrackUnderGlass_W" site="" woffset="147" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_CF_Burr_D" item="L3_CF_Burr_D" site="" woffset="148" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_CF_Broken_D" item="L3_CF_Broken_D" site="" woffset="149" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_CF_Shell_D" item="L3_CF_Shell_D" site="" woffset="150" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_CF_Crack_D" item="L3_CF_Crack_D" site="" woffset="151" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_CF_Crack_Under_Glass_D" item="L3_CF_CrackUnderGlass_D" site="" woffset="152" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_CF_Burr_W" item="L3_CF_Burr_W" site="" woffset="153" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_CF_Broken_W" item="L3_CF_Broken_W" site="" woffset="154" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_CF_Shell_W" item="L3_CF_Shell_W" site="" woffset="155" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_CF_Crack_W" item="L3_CF_Crack_W" site="" woffset="156" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_CF_Crack_Under_Glass_W" item="L3_CF_CrackUnderGlass_W" site="" woffset="157" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_CF_Burr_D" item="L4_CF_Burr_D" site="" woffset="158" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_CF_Broken_D" item="L4_CF_Broken_D" site="" woffset="159" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_CF_Shell_D" item="L4_CF_Shell_D" site="" woffset="160" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_CF_Crack_D" item="L4_CF_Crack_D" site="" woffset="161" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_CF_Crack_Under_Glass_D" item="L4_CF_CrackUnderGlass_D" site="" woffset="162" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_CF_Burr_W" item="L4_CF_Burr_W" site="" woffset="163" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_CF_Broken_W" item="L4_CF_Broken_W" site="" woffset="164" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_CF_Shell_W" item="L4_CF_Shell_W" site="" woffset="165" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_CF_Crack_W" item="L4_CF_Crack_W" site="" woffset="166" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_CF_Crack_Under_Glass_W" item="L4_CF_CrackUnderGlass_W" site="" woffset="167" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_TFT_Burr_D" item="L1_TFT_Burr_D" site="" woffset="168" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_TFT_Broken_D" item="L1_TFT_Broken_D" site="" woffset="169" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_TFT_Shell_D" item="L1_TFT_Shell_D" site="" woffset="170" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_TFT_Crack_D" item="L1_TFT_Crack_D" site="" woffset="171" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_TFT_Crack_Under_Glass_D" item="L1_TFT_CrackUnderGlass_D" site="" woffset="172" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_TFT_Burr_W" item="L1_TFT_Burr_W" site="" woffset="173" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_TFT_Broken_W" item="L1_TFT_Broken_W" site="" woffset="174" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_TFT_Shell_W" item="L1_TFT_Shell_W" site="" woffset="175" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_TFT_Crack_W" item="L1_TFT_Crack_W" site="" woffset="176" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_TFT_Crack_Under_Glass_W" item="L1_TFT_CrackUnderGlass_W" site="" woffset="177" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_TFT_Burr_D" item="L2_TFT_Burr_D" site="" woffset="178" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_TFT_Broken_D" item="L2_TFT_Broken_D" site="" woffset="179" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_TFT_Shell_D" item="L2_TFT_Shell_D" site="" woffset="180" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_TFT_Crack_D" item="L2_TFT_Crack_D" site="" woffset="181" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_TFT_Crack_Under_Glass_D" item="L2_TFT_CrackUnderGlass_D" site="" woffset="182" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_TFT_Burr_W" item="L2_TFT_Burr_W" site="" woffset="183" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_TFT_Broken_W" item="L2_TFT_Broken_W" site="" woffset="184" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_TFT_Shell_W" item="L2_TFT_Shell_W" site="" woffset="185" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_TFT_Crack_W" item="L2_TFT_Crack_W" site="" woffset="186" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_TFT_Crack_Under_Glass_W" item="L2_TFT_CrackUnderGlass_W" site="" woffset="187" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_TFT_Burr_D" item="L3_TFT_Burr_D" site="" woffset="188" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_TFT_Broken_D" item="L3_TFT_Broken_D" site="" woffset="189" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_TFT_Shell_D" item="L3_TFT_Shell_D" site="" woffset="190" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_TFT_Crack_D" item="L3_TFT_Crack_D" site="" woffset="191" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_TFT_Crack_Under_Glass_D" item="L3_TFT_CrackUnderGlass_D" site="" woffset="192" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_TFT_Burr_W" item="L3_TFT_Burr_W" site="" woffset="193" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_TFT_Broken_W" item="L3_TFT_Broken_W" site="" woffset="194" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_TFT_Shell_W" item="L3_TFT_Shell_W" site="" woffset="195" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_TFT_Crack_W" item="L3_TFT_Crack_W" site="" woffset="196" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_TFT_Crack_Under_Glass_W" item="L3_TFT_CrackUnderGlass_W" site="" woffset="197" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_TFT_Burr_D" item="L4_TFT_Burr_D" site="" woffset="198" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_TFT_Broken_D" item="L4_TFT_Broken_D" site="" woffset="199" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_TFT_Shell_D" item="L4_TFT_Shell_D" site="" woffset="200" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_TFT_Crack_D" item="L4_TFT_Crack_D" site="" woffset="201" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_TFT_Crack_Under_Glass_D" item="L4_TFT_CrackUnderGlass_D" site="" woffset="202" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_TFT_Burr_W" item="L4_TFT_Burr_W" site="" woffset="203" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_TFT_Broken_W" item="L4_TFT_Broken_W" site="" woffset="204" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_TFT_Shell_W" item="L4_TFT_Shell_W" site="" woffset="205" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_TFT_Crack_W" item="L4_TFT_Crack_W" site="" woffset="206" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_TFT_Crack_Under_Glass_W" item="L4_TFT_CrackUnderGlass_W" site="" woffset="207" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_CF_Burr_D" item="C1_CF_Burr_D" site="" woffset="208" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_CF_Broken_D" item="C1_CF_Broken_D" site="" woffset="209" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_CF_Shell_D" item="C1_CF_Shell_D" site="" woffset="210" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_CF_Crack_D" item="C1_CF_Crack_D" site="" woffset="211" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_CF_Crack_Under_Glass_D" item="C1_CF_CrackUnderGlass_D" site="" woffset="212" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_CF_Burr_W" item="C1_CF_Burr_W" site="" woffset="213" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_CF_Broken_W" item="C1_CF_Broken_W" site="" woffset="214" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_CF_Shell_W" item="C1_CF_Shell_W" site="" woffset="215" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_CF_Crack_W" item="C1_CF_Crack_W" site="" woffset="216" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_CF_Crack_Under_Glass_W" item="C1_CF_CrackUnderGlass_W" site="" woffset="217" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_CF_Burr_D" item="C2_CF_Burr_D" site="" woffset="218" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_CF_Broken_D" item="C2_CF_Broken_D" site="" woffset="219" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_CF_Shell_D" item="C2_CF_Shell_D" site="" woffset="220" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_CF_Crack_D" item="C2_CF_Crack_D" site="" woffset="221" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_CF_Crack_Under_Glass_D" item="C2_CF_CrackUnderGlass_D" site="" woffset="222" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_CF_Burr_W" item="C2_CF_Burr_W" site="" woffset="223" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_CF_Broken_W" item="C2_CF_Broken_W" site="" woffset="224" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_CF_Shell_W" item="C2_CF_Shell_W" site="" woffset="225" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_CF_Crack_W" item="C2_CF_Crack_W" site="" woffset="226" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_CF_Crack_Under_Glass_W" item="C2_CF_CrackUnderGlass_W" site="" woffset="227" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_CF_Burr_D" item="C3_CF_Burr_D" site="" woffset="228" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_CF_Broken_D" item="C3_CF_Broken_D" site="" woffset="229" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_CF_Shell_D" item="C3_CF_Shell_D" site="" woffset="230" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_CF_Crack_D" item="C3_CF_Crack_D" site="" woffset="231" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_CF_Crack_Under_Glass_D" item="C3_CF_CrackUnderGlass_D" site="" woffset="232" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_CF_Burr_W" item="C3_CF_Burr_W" site="" woffset="233" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_CF_Broken_W" item="C3_CF_Broken_W" site="" woffset="234" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_CF_Shell_W" item="C3_CF_Shell_W" site="" woffset="235" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_CF_Crack_W" item="C3_CF_Crack_W" site="" woffset="236" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_CF_Crack_Under_Glass_W" item="C3_CF_CrackUnderGlass_W" site="" woffset="237" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_CF_Burr_D" item="C4_CF_Burr_D" site="" woffset="238" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_CF_Broken_D" item="C4_CF_Broken_D" site="" woffset="239" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_CF_Shell_D" item="C4_CF_Shell_D" site="" woffset="240" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_CF_Crack_D" item="C4_CF_Crack_D" site="" woffset="241" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_CF_Crack_Under_Glass_D" item="C4_CF_CrackUnderGlass_D" site="" woffset="242" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_CF_Burr_W" item="C4_CF_Burr_W" site="" woffset="243" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_CF_Broken_W" item="C4_CF_Broken_W" site="" woffset="244" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_CF_Shell_W" item="C4_CF_Shell_W" site="" woffset="245" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_CF_Crack_W" item="C4_CF_Crack_W" site="" woffset="246" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_CF_Crack_Under_Glass_W" item="C4_CF_CrackUnderGlass_W" site="" woffset="247" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_TFT_Burr_D" item="C1_TFT_Burr_D" site="" woffset="248" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_TFT_Broken_D" item="C1_TFT_Broken_D" site="" woffset="249" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_TFT_Shell_D" item="C1_TFT_Shell_D" site="" woffset="250" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_TFT_Crack_D" item="C1_TFT_Crack_D" site="" woffset="251" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_TFT_Crack_Under_Glass_D" item="C1_TFT_CrackUnderGlass_D" site="" woffset="252" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_TFT_Burr_W" item="C1_TFT_Burr_W" site="" woffset="253" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_TFT_Broken_W" item="C1_TFT_Broken_W" site="" woffset="254" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_TFT_Shell_W" item="C1_TFT_Shell_W" site="" woffset="255" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_TFT_Crack_W" item="C1_TFT_Crack_W" site="" woffset="256" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C1_TFT_Crack_Under_Glass_W" item="C1_TFT_CrackUnderGlass_W" site="" woffset="257" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_TFT_Burr_D" item="C2_TFT_Burr_D" site="" woffset="258" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_TFT_Broken_D" item="C2_TFT_Broken_D" site="" woffset="259" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_TFT_Shell_D" item="C2_TFT_Shell_D" site="" woffset="260" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_TFT_Crack_D" item="C2_TFT_Crack_D" site="" woffset="261" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_TFT_Crack_Under_Glass_D" item="C2_TFT_CrackUnderGlass_D" site="" woffset="262" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_TFT_Burr_W" item="C2_TFT_Burr_W" site="" woffset="263" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_TFT_Broken_W" item="C2_TFT_Broken_W" site="" woffset="264" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_TFT_Shell_W" item="C2_TFT_Shell_W" site="" woffset="265" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_TFT_Crack_W" item="C2_TFT_Crack_W" site="" woffset="266" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C2_TFT_Crack_Under_Glass_W" item="C2_TFT_CrackUnderGlass_W" site="" woffset="267" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_TFT_Burr_D" item="C3_TFT_Burr_D" site="" woffset="268" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_TFT_Broken_D" item="C3_TFT_Broken_D" site="" woffset="269" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_TFT_Shell_D" item="C3_TFT_Shell_D" site="" woffset="270" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_TFT_Crack_D" item="C3_TFT_Crack_D" site="" woffset="271" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_TFT_Crack_Under_Glass_D" item="C3_TFT_CrackUnderGlass_D" site="" woffset="272" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_TFT_Burr_W" item="C3_TFT_Burr_W" site="" woffset="273" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_TFT_Broken_W" item="C3_TFT_Broken_W" site="" woffset="274" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_TFT_Shell_W" item="C3_TFT_Shell_W" site="" woffset="275" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_TFT_Crack_W" item="C3_TFT_Crack_W" site="" woffset="276" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C3_TFT_Crack_Under_Glass_W" item="C3_TFT_CrackUnderGlass_W" site="" woffset="277" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_TFT_Burr_D" item="C4_TFT_Burr_D" site="" woffset="278" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_TFT_Broken_D" item="C4_TFT_Broken_D" site="" woffset="279" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_TFT_Shell_D" item="C4_TFT_Shell_D" site="" woffset="280" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_TFT_Crack_D" item="C4_TFT_Crack_D" site="" woffset="281" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_TFT_Crack_Under_Glass_D" item="C4_TFT_CrackUnderGlass_D" site="" woffset="282" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_TFT_Burr_W" item="C4_TFT_Burr_W" site="" woffset="283" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_TFT_Broken_W" item="C4_TFT_Broken_W" site="" woffset="284" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_TFT_Shell_W" item="C4_TFT_Shell_W" site="" woffset="285" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_TFT_Crack_W" item="C4_TFT_Crack_W" site="" woffset="286" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C4_TFT_Crack_Under_Glass_W" item="C4_TFT_CrackUnderGlass_W" site="" woffset="287" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect__pass_count" item="Defectpasscount" site="" woffset="288" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_Item_1" item="DefectpassItem1" site="" woffset="289" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_1_Size_Depth" item="Defectpass1SizeDepth" site="" woffset="290" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_1_Size_Width" item="Defectpass1SizeWidth" site="" woffset="291" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_1_pos_x" item="Defectpass1pos_x" site="" woffset="292" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_1_pos_y" item="Defectpass1pos_y" site="" woffset="294" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_1_Side" item="Defectpass1Side" site="" woffset="296" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_Item_2" item="DefectpassItem2" site="" woffset="301" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_2_Size_Depth" item="Defectpass2SizeDepth" site="" woffset="302" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_2_Size_Width" item="Defectpass2SizeWidth" site="" woffset="303" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_2_pos_x" item="Defectpass2pos_x" site="" woffset="304" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_2_pos_y" item="Defectpass2pos_y" site="" woffset="306" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_2_Side" item="Defectpass2Side" site="" woffset="308" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_Item_3" item="DefectpassItem3" site="" woffset="313" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_3_Size_Depth" item="Defectpass3SizeDepth" site="" woffset="314" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_3_Size_Width" item="Defectpass3SizeWidth" site="" woffset="315" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_3_pos_x" item="Defectpass3pos_x" site="" woffset="316" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_3_pos_y" item="Defectpass3pos_y" site="" woffset="318" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_3_Side" item="Defectpass3Side" site="" woffset="320" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_Item_4" item="DefectpassItem4" site="" woffset="325" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_4_Size_Depth" item="Defectpass4SizeDepth" site="" woffset="326" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_4_Size_Width" item="Defectpass4SizeWidth" site="" woffset="327" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_4_pos_x" item="Defectpass4pos_x" site="" woffset="328" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_4_pos_y" item="Defectpass4pos_y" site="" woffset="330" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_4_Side" item="Defectpass4Side" site="" woffset="332" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_Item_5" item="DefectpassItem5" site="" woffset="337" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_5_Size_Depth" item="Defectpass5SizeDepth" site="" woffset="338" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_5_Size_Width" item="Defectpass5SizeWidth" site="" woffset="339" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_5_pos_x" item="Defectpass5pos_x" site="" woffset="340" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_5_pos_y" item="Defectpass5pos_y" site="" woffset="342" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Defect_pass_5_Side" item="Defectpass5Side" site="" woffset="344" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L1_CF_Broken_D" item="P_L1_CF_Broken_D" site="" woffset="349" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L1_CF_Shell_D" item="P_L1_CF_Shell_D" site="" woffset="350" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L1_CF_Broken_W" item="P_L1_CF_Broken_W" site="" woffset="351" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L1_CF_Shell_W" item="P_L1_CF_Shell_W" site="" woffset="352" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L2_CF_Broken_D" item="P_L2_CF_Broken_D" site="" woffset="353" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L2_CF_Shell_D" item="P_L2_CF_Shell_D" site="" woffset="354" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L2_CF_Broken_W" item="P_L2_CF_Broken_W" site="" woffset="355" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L2_CF_Shell_W" item="P_L2_CF_Shell_W" site="" woffset="356" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L3_CF_Broken_D" item="P_L3_CF_Broken_D" site="" woffset="357" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L3_CF_Shell_D" item="P_L3_CF_Shell_D" site="" woffset="358" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L3_CF_Broken_W" item="P_L3_CF_Broken_W" site="" woffset="359" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L3_CF_Shell_W" item="P_L3_CF_Shell_W" site="" woffset="360" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L4_CF_Broken_D" item="P_L4_CF_Broken_D" site="" woffset="361" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L4_CF_Shell_D" item="P_L4_CF_Shell_D" site="" woffset="362" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L4_CF_Broken_W" item="P_L4_CF_Broken_W" site="" woffset="363" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L4_CF_Shell_W" item="P_L4_CF_Shell_W" site="" woffset="364" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L1_TFT_Broken_D" item="P_L1_TFT_Broken_D" site="" woffset="365" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L1_TFT_Shell_D" item="P_L1_TFT_Shell_D" site="" woffset="366" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L1_TFT_Broken_W" item="P_L1_TFT_Broken_W" site="" woffset="367" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L1_TFT_Shell_W" item="P_L1_TFT_Shell_W" site="" woffset="368" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L2_TFT_Broken_D" item="P_L2_TFT_Broken_D" site="" woffset="369" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L2_TFT_Shell_D" item="P_L2_TFT_Shell_D" site="" woffset="370" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L2_TFT_Broken_W" item="P_L2_TFT_Broken_W" site="" woffset="371" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L2_TFT_Shell_W" item="P_L2_TFT_Shell_W" site="" woffset="372" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L3_TFT_Broken_D" item="P_L3_TFT_Broken_D" site="" woffset="373" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L3_TFT_Shell_D" item="P_L3_TFT_Shell_D" site="" woffset="374" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L3_TFT_Broken_W" item="P_L3_TFT_Broken_W" site="" woffset="375" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L3_TFT_Shell_W" item="P_L3_TFT_Shell_W" site="" woffset="376" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L4_TFT_Broken_D" item="P_L4_TFT_Broken_D" site="" woffset="377" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L4_TFT_Shell_D" item="P_L4_TFT_Shell_D" site="" woffset="378" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L4_TFT_Broken_W" item="P_L4_TFT_Broken_W" site="" woffset="379" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_L4_TFT_Shell_W" item="P_L4_TFT_Shell_W" site="" woffset="380" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C1_CF_Broken_D" item="P_C1_CF_Broken_D" site="" woffset="381" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C1_CF_Shell_D" item="P_C1_CF_Shell_D" site="" woffset="382" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C1_CF_Broken_W" item="P_C1_CF_Broken_W" site="" woffset="383" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C1_CF_Shell_W" item="P_C1_CF_Shell_W" site="" woffset="384" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C2_CF_Broken_D" item="P_C2_CF_Broken_D" site="" woffset="385" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C2_CF_Shell_D" item="P_C2_CF_Shell_D" site="" woffset="386" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C2_CF_Broken_W" item="P_C2_CF_Broken_W" site="" woffset="387" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C2_CF_Shell_W" item="P_C2_CF_Shell_W" site="" woffset="388" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C3_CF_Broken_D" item="P_C3_CF_Broken_D" site="" woffset="389" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C3_CF_Shell_D" item="P_C3_CF_Shell_D" site="" woffset="390" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C3_CF_Broken_W" item="P_C3_CF_Broken_W" site="" woffset="391" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C3_CF_Shell_W" item="P_C3_CF_Shell_W" site="" woffset="392" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C4_CF_Broken_D" item="P_C4_CF_Broken_D" site="" woffset="393" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C4_CF_Shell_D" item="P_C4_CF_Shell_D" site="" woffset="394" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C4_CF_Broken_W" item="P_C4_CF_Broken_W" site="" woffset="395" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C4_CF_Shell_W" item="P_C4_CF_Shell_W" site="" woffset="396" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C1_TFT_Broken_D" item="P_C1_TFT_Broken_D" site="" woffset="397" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C1_TFT_Shell_D" item="P_C1_TFT_Shell_D" site="" woffset="398" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C1_TFT_Broken_W" item="P_C1_TFT_Broken_W" site="" woffset="399" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C1_TFT_Shell_W" item="P_C1_TFT_Shell_W" site="" woffset="400" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C2_TFT_Broken_D" item="P_C2_TFT_Broken_D" site="" woffset="401" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C2_TFT_Shell_D" item="P_C2_TFT_Shell_D" site="" woffset="402" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C2_TFT_Broken_W" item="P_C2_TFT_Broken_W" site="" woffset="403" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C2_TFT_Shell_W" item="P_C2_TFT_Shell_W" site="" woffset="404" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C3_TFT_Broken_D" item="P_C3_TFT_Broken_D" site="" woffset="405" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C3_TFT_Shell_D" item="P_C3_TFT_Shell_D" site="" woffset="406" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C3_TFT_Broken_W" item="P_C3_TFT_Broken_W" site="" woffset="407" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C3_TFT_Shell_W" item="P_C3_TFT_Shell_W" site="" woffset="408" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C4_TFT_Broken_D" item="P_C4_TFT_Broken_D" site="" woffset="409" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C4_TFT_Shell_D" item="P_C4_TFT_Shell_D" site="" woffset="410" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C4_TFT_Broken_W" item="P_C4_TFT_Broken_W" site="" woffset="411" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_C4_TFT_Shell_W" item="P_C4_TFT_Shell_W" site="" woffset="412" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Threshold_Start/End" item="L1_Threshold_Start/End" site="" woffset="413" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Threshold_Cut" item="L1_Threshold_Cut" site="" woffset="414" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Threshold_Grind" item="L1_Threshold_Grind" site="" woffset="415" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Threshold_TFT_Chipping" item="L1_Threshold_TFT_Chipping" site="" woffset="416" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Threshold_TFT_Bali" item="L1_Threshold_TFT_Bali" site="" woffset="417" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Threshold_CF_Chipping" item="L1_Threshold_CF_Chipping" site="" woffset="418" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L1_Threshold_CF_Bali" item="L1_Threshold_CF_Bali" site="" woffset="419" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Threshold_Start/End" item="L2_Threshold_Start/End" site="" woffset="420" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Threshold_Cut" item="L2_Threshold_Cut" site="" woffset="421" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Threshold_Grind" item="L2_Threshold_Grind" site="" woffset="422" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Threshold_TFT_Chipping" item="L2_Threshold_TFT_Chipping" site="" woffset="423" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Threshold_TFT_Bali" item="L2_Threshold_TFT_Bali" site="" woffset="424" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Threshold_CF_Chipping" item="L2_Threshold_CF_Chipping" site="" woffset="425" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L2_Threshold_CF_Bali" item="L2_Threshold_CF_Bali" site="" woffset="426" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Threshold_Start/End" item="L3_Threshold_Start/End" site="" woffset="427" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Threshold_Cut" item="L3_Threshold_Cut" site="" woffset="428" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Threshold_Grind" item="L3_Threshold_Grind" site="" woffset="429" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Threshold_TFT_Chipping" item="L3_Threshold_TFT_Chipping" site="" woffset="430" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Threshold_TFT_Bali" item="L3_Threshold_TFT_Bali" site="" woffset="431" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Threshold_CF_Chipping" item="L3_Threshold_CF_Chipping" site="" woffset="432" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L3_Threshold_CF_Bali" item="L3_Threshold_CF_Bali" site="" woffset="433" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Threshold_Start/End" item="L4_Threshold_Start/End" site="" woffset="434" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Threshold_Cut" item="L4_Threshold_Cut" site="" woffset="435" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Threshold_Grind" item="L4_Threshold_Grind" site="" woffset="436" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Threshold_TFT_Chipping" item="L4_Threshold_TFT_Chipping" site="" woffset="437" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Threshold_TFT_Bali" item="L4_Threshold_TFT_Bali" site="" woffset="438" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Threshold_CF_Chipping" item="L4_Threshold_CF_Chipping" site="" woffset="439" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="L4_Threshold_CF_Bali" item="L4_Threshold_CF_Bali" site="" woffset="440" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Filter1_Dx" item="Filter1_Dx" site="" woffset="441" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Filter1_Dy" item="Filter1_Dy" site="" woffset="442" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Filter1_pos_x" item="Filter1pos_x" site="" woffset="443" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Filter1_pos_y" item="Filter1pos_y" site="" woffset="445" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BURR_Yield" item="BURR_Yield" site="" woffset="447" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PPID" item="PPID" site="" woffset="449" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_in_time_YYMM" item="Panelintime_YYMM" site="" woffset="459" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_in_time_DDHH" item="Panelintime_DDHH" site="" woffset="460" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_in_time_mmSS" item="Panelintime_mmSS" site="" woffset="461" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_out_time_YYMM" item="Panelouttime_YYMM" site="" woffset="462" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_out_time_DDHH" item="Panelouttime_DDHH" site="" woffset="463" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_out_time_mmSS" item="Panelouttime_mmSS" site="" woffset="464" boffset="0" wpoints="1" bpoints="16" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Rework_CST_Slot_No" item="ReworkCSTSlotNo" site="" woffset="465" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="NG_CST_Slot_No" item="NGCSTSlotNo" site="" woffset="466" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="VI_Port_Slot_No" item="VIPortSlotNo" site="" woffset="467" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OK_BF_Slot_No" item="OK_BFSlotNo" site="" woffset="468" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Input_Direction" item="InputDirection" site="" woffset="469" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Stage_Size" item="StageSize" site="" woffset="470" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ESD_Monitor_Data" item="ESDMonitorData" site="" woffset="471" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Ionlizer_OK_Warning" item="IonlizerOK_Warning" site="" woffset="472" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="VCR_Judge_Result" item="VCR_Judge_Result" site="" woffset="473" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Data_SAMPLE_SET" item="Data_SAMPLE_SET" site="" woffset="474" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Data_SAMPLE_Count" item="Data_SAMPLE_Count" site="" woffset="475" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="1st_Rejudge_Result" item="1st_Rejudge_Result" site="" woffset="476" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="2st_Rejudge_Result" item="2st_Rejudge_Result" site="" woffset="477" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="1st_Rejudge_OPID" item="1st_Rejudge_OPID" site="" woffset="478" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Rejudge_Count" item="Rejudge_Count" site="" woffset="483" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L1_TFT1" item="Grind_L1_TFT1" site="" woffset="484" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L1_TFT2" item="Grind_L1_TFT2" site="" woffset="486" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L1_CF1" item="Grind_L1_CF1" site="" woffset="488" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L1_CF2" item="Grind_L1_CF2" site="" woffset="490" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L2_TFT" item="Grind_L2_TFT" site="" woffset="492" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L2_TFT1" item="Grind_L2_TFT" site="" woffset="494" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L2_CF" item="Grind_L2_CF" site="" woffset="496" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L3_TFT" item="Grind_L3_TFT" site="" woffset="498" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L3_CF" item="Grind_L3_CF" site="" woffset="500" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L4_TFT" item="Grind_L4_TFT" site="" woffset="502" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_L4_CF" item="Grind_L4_CF" site="" woffset="504" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_C1" item="Grind_C1" site="" woffset="506" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_C2" item="Grind_C2" site="" woffset="508" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_C3" item="Grind_C3" site="" woffset="510" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_C4" item="Grind_C4" site="" woffset="512" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Panel_Total_Judgment" item="AOIPanelTotalJudgment" site="" woffset="514" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_NG_Kind" item="AOINGKind" site="" woffset="515" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_count" item="AOIDefectcount" site="" woffset="516" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Item_1" item="AOIDefectItem1" site="" woffset="517" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_1_Size_Dx" item="AOIDefect1SizeDx" site="" woffset="518" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_1_Size_Dy" item="AOIDefect1SizeDy" site="" woffset="519" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_1_pos_x" item="AOIDefect1pos_x" site="" woffset="520" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_1_pos_y" item="AOIDefect1pos_y" site="" woffset="522" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Item_2" item="AOIDefectItem2" site="" woffset="524" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_2_Size_Dx" item="AOIDefect2SizeDx" site="" woffset="525" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_2_Size_Dy" item="AOIDefect2SizeDy" site="" woffset="526" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_2_pos_x" item="AOIDefect2pos_x" site="" woffset="527" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_2_pos_y" item="AOIDefect2pos_y" site="" woffset="529" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Item_3" item="AOIDefectItem3" site="" woffset="531" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_3_Size_Dx" item="AOIDefect3SizeDx" site="" woffset="532" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_3_Size_Dy" item="AOIDefect3SizeDy" site="" woffset="533" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_3_pos_x" item="AOIDefect3pos_x" site="" woffset="534" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_3_pos_y" item="AOIDefect3pos_y" site="" woffset="536" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Item_4" item="AOIDefectItem4" site="" woffset="538" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_4_Size_Dx" item="AOIDefect4SizeDx" site="" woffset="539" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_4_Size_Dy" item="AOIDefect4SizeDy" site="" woffset="540" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_4_pos_x" item="AOIDefect4pos_x" site="" woffset="541" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_4_pos_y" item="AOIDefect4pos_y" site="" woffset="543" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Item_5" item="AOIDefectItem5" site="" woffset="545" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_5_Size_Dx" item="AOIDefect5SizeDx" site="" woffset="546" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_5_Size_Dy" item="AOIDefect5SizeDy" site="" woffset="547" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_5_pos_x" item="AOIDefect5pos_x" site="" woffset="548" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_5_pos_y" item="AOIDefect5pos_y" site="" woffset="550" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_CF_Crack_Dx" item="AOI_CF_Crack_Dx" site="" woffset="552" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_CF_Crack_Dy" item="AOI_CF_Crack_Dy" site="" woffset="553" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_TFT_Crack_Dx" item="AOI_TFT_Crack_Dx" site="" woffset="554" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_TFT_Crack_Dy" item="AOI_TFT_Crack_Dy" site="" woffset="555" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_CF_Dimple_Dx" item="AOI_CF_Dimple_Dx" site="" woffset="556" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_CF_Dimple_Dy" item="AOI_CF_Dimple_Dy" site="" woffset="557" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_TFT_Dimple_Dx" item="AOI_TFT_Dimple_Dx" site="" woffset="558" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_TFT_Dimple_Dx1" item="AOI_TFT_Dimple_Dx" site="" woffset="559" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_CF_Pimple_Dx" item="AOI_CF_Pimple_Dx" site="" woffset="560" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_CF_Pimple_Dy" item="AOI_CF_Pimple_Dy" site="" woffset="561" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_TFT_Pimple_Dx" item="AOI_TFT_Pimple_Dx" site="" woffset="562" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_TFT_Pimple_Dx1" item="AOI_TFT_Pimple_Dx" site="" woffset="563" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_CF_Scrach_Dx" item="AOI_CF_Scrach_Dx" site="" woffset="564" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_CF_Scrach_Dy" item="AOI_CF_Scrach_Dy" site="" woffset="565" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_TFT_Scrach_Dx" item="AOI_TFT_Scrach_Dx" site="" woffset="566" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_TFT_Scrach_Dx1" item="AOI_TFT_Scrach_Dx" site="" woffset="567" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Pass_count" item="AOIDefectPasscount" site="" woffset="568" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Pass_Item_1" item="AOIDefectPassItem1" site="" woffset="569" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_1_Size_Dx" item="AOIDefectpass1SizeDx" site="" woffset="570" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_1_Size_Dy" item="AOIDefectpass1SizeDy" site="" woffset="571" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_1__pos_x" item="AOIDefectpass1pos_x" site="" woffset="572" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_1_pos_y" item="AOIDefectpass1pos_y" site="" woffset="574" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Pass_Item_2" item="AOIDefectPassItem2" site="" woffset="576" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_2_Size_Dx" item="AOIDefectpass2SizeDx" site="" woffset="577" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_2_Size_Dy" item="AOIDefectpass2SizeDy" site="" woffset="578" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_2__pos_x" item="AOIDefectpass2pos_x" site="" woffset="579" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_2_pos_y" item="AOIDefectpass2pos_y" site="" woffset="581" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Pass_Item_3" item="AOIDefectPassItem3" site="" woffset="583" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_3_Size_Dx" item="AOIDefectpass3SizeDx" site="" woffset="584" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_3_Size_Dy" item="AOIDefectpass3SizeDy" site="" woffset="585" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_3__pos_x" item="AOIDefectpass3pos_x" site="" woffset="586" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_3_pos_y" item="AOIDefectpass3pos_y" site="" woffset="588" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Pass_Item_4" item="AOIDefectPassItem4" site="" woffset="590" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_4_Size_Dx" item="AOIDefectpass4SizeDx" site="" woffset="591" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_4_Size_Dy" item="AOIDefectpass4SizeDy" site="" woffset="592" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_4__pos_x" item="AOIDefectpass4pos_x" site="" woffset="593" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_4_pos_y" item="AOIDefectpass4pos_y" site="" woffset="595" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_Pass_Item_5" item="AOIDefectPassItem5" site="" woffset="597" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_5_Size_Dx" item="AOIDefectpass5SizeDx" site="" woffset="598" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_5_Size_Dy" item="AOIDefectpass5SizeDy" site="" woffset="599" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_5__pos_x" item="AOIDefectpass5pos_x" site="" woffset="600" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Defect_pass_5_pos_y" item="AOIDefectpass5pos_y" site="" woffset="602" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_AOI_CF_Dimple_Dx" item="P_AOI_CF_Dimple_Dx" site="" woffset="604" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_AOI_CF_Dimple_Dy" item="P_AOI_CF_Dimple_Dy" site="" woffset="605" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_AOI_TFT_Dimple_Dx" item="P_AOI_TFT_Dimple_Dx" site="" woffset="606" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_AOI_TFT_Dimple_Dx1" item="P_AOI_TFT_Dimple_Dx" site="" woffset="607" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_AOI_CF_Pimple_Dx" item="P_AOI_CF_Pimple_Dx" site="" woffset="608" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_AOI_CF_Pimple_Dy" item="P_AOI_CF_Pimple_Dy" site="" woffset="609" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_AOI_TFT_Pimple_Dx" item="P_AOI_TFT_Pimple_Dx" site="" woffset="610" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="P_AOI_TFT_Pimple_Dx1" item="P_AOI_TFT_Pimple_Dx" site="" woffset="611" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AOI_Dimple_Class" item="AOIDimpleClass" site="" woffset="612" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_Dim_L1_TFT_SETTING" item="GrindDimL1_TFT_SETTING" site="" woffset="613" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_Dim_L2_TFT_SETTING" item="GrindDimL2_TFT_SETTING" site="" woffset="614" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_Dim_L3_TFT_SETTING" item="GrindDimL3_TFT_SETTING" site="" woffset="615" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_Dim_L4_TFT_SETTING" item="GrindDimL4_TFT_SETTING" site="" woffset="616" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_Dim_L1_CF_SETTING" item="GrindDimL1_CF_SETTING" site="" woffset="617" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_Dim_L2_CF_SETTING" item="GrindDimL2_CF_SETTING" site="" woffset="618" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_Dim_L3_CF_SETTING" item="GrindDimL3_CF_SETTING" site="" woffset="619" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_Dim_L4_CF_SETTING" item="GrindDimL4_CF_SETTING" site="" woffset="620" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_Dim_Control_Limit" item="GrindDimControlLimit" site="" woffset="621" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_C1_SETTING" item="Grind_C1_SETTING" site="" woffset="623" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_C2_SETTING" item="Grind_C2_SETTING" site="" woffset="625" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_C3_SETTING" item="Grind_C3_SETTING" site="" woffset="627" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Grind_C4_SETTING" item="Grind_C4_SETTING" site="" woffset="629" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Fnail_Defect_1" item="Fnail_Defect_1" site="" woffset="631" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Fnail_Defect_2" item="Fnail_Defect_2" site="" woffset="632" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Fnail_Defect_3" item="Fnail_Defect_3" site="" woffset="633" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PanelOPJudgment" item="PanelOPJudgment" site="" woffset="634" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

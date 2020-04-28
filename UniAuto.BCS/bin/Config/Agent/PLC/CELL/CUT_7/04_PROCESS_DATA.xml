@@ -1,0 +1,62 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.0.0.0-->
+<!--DateTime: 2015-03-16 14:11:54-->
+<itemgroup name="L2ProcessDataItemBlock" profile="CSOT G8.5 t2 EQP Profile_19_DPI_L2_DPI_Ver 1.2.1.xlsx" plcmap="CSOT_G8.5B_BC_CELL_19_CBDPI-PLC Address Map ver1.30.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="BOTH" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="BOTH" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+ <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="BOTH" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="BOTH" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L6ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L8ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L9ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L10ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L11ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L12ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L13ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L14ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L15ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L16ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L17ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L18ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L19ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L20ProcessDataItemBlock" profile="XXX" plcmap="XXX">
+  <item name="TEST1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

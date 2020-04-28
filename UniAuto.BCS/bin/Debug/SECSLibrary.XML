@@ -1,0 +1,891 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SECSLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:Unicom.UniAuto.Net.SECS.XItem">
+            <summary>
+            extended secs item
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt)">
+            <summary>
+            0 item count
+            </summary>
+            <param name="format">item format</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String)">
+            <summary>
+            0 item count
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(System.Collections.Generic.List{Unicom.UniAuto.Net.SECS.XItem})">
+            <summary>
+            L
+            </summary>
+            <param name="items">list of xitems</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.Collections.Generic.List{Unicom.UniAuto.Net.SECS.XItem})">
+            <summary>
+            L
+            </summary>	
+            <param name="format">item format</param>
+            <param name="items">list of xitems</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.Collections.Generic.List{Unicom.UniAuto.Net.SECS.XItem})">
+            <summary>
+            L
+            </summary>	
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="items">list of xitems</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(System.Collections.Generic.IEnumerable{Unicom.UniAuto.Net.SECS.XItem})">
+            <summary>
+            L
+            </summary>	
+            <param name="items">enumerable xitems</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.Collections.Generic.IEnumerable{Unicom.UniAuto.Net.SECS.XItem})">
+            <summary>
+            L
+            </summary>
+            <param name="format">item format</param>
+            <param name="items">enumerable xitems</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.Collections.Generic.IEnumerable{Unicom.UniAuto.Net.SECS.XItem})">
+            <summary>
+            L
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="items">enumerable xitems</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.XItem[])">
+            <summary>
+            L
+            </summary>
+            <param name="items">array of xitem</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,Unicom.UniAuto.Net.SECS.XItem[])">
+            <summary>
+            L
+            </summary>
+            <param name="format">item format</param>
+            <param name="items">array of xitem</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,Unicom.UniAuto.Net.SECS.XItem[])">
+            <summary>
+            L
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="items">array of xitem</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.Object[])">
+            <summary>
+            L
+            </summary>
+            <param name="format">item format</param>
+            <param name="items">array of object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.Object[])">
+            <summary>
+            L
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="items">array of object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.SByte[])">
+            <summary>
+            I1
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of sbyte</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.Byte[])">
+            <summary>
+            U1,B
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of byte</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.Int16[])">
+            <summary>
+            I2
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of short</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.UInt16[])">
+            <summary>
+            U2
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of ushort</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.Int32[])">
+            <summary>
+            I4
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of int</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.UInt32[])">
+            <summary>
+            U4
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of uint</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.Int64[])">
+            <summary>
+            I8
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of long</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.UInt64[])">
+            <summary>
+            U8
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of ulong</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.Single[])">
+            <summary>
+            F4
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of float</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.Double[])">
+            <summary>
+            F8
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of double</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.Boolean[])">
+            <summary>
+            Bool
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">array of bool</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.#ctor(Unicom.UniAuto.Net.SECS.Fmt,System.String,System.String)">
+            <summary>
+            A
+            </summary>
+            <param name="format">item format</param>
+            <param name="name">item name</param>
+            <param name="value">string object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.GetItem(System.Int32,Unicom.UniAuto.Net.SECS.Fmt,System.String)">
+            <summary>
+            get item by index and format and count from items list,
+            may throw exception
+            </summary>
+            <param name="format">desire item format</param>
+            <param name="index">desire item index (0 base)</param>
+            <param name="itemcount">desire item count</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.SetValue(Unicom.UniAuto.Net.SECS.Fmt,System.Object[])">
+            <summary>
+            set item value with format
+            </summary>
+            <param name="format">item format</param>
+            <param name="value">item value object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.GetValue``1">
+            <summary>
+            get item value with type cast
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.XItem.ToSML(System.String)">
+            <summary>
+            to sml string
+            </summary>
+            <param name="debug">debug option,""=default,S=standard,D=debug</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.Format">
+            <summary>
+            get/set item format
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.Count">
+            <summary>
+            get/set item count
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.Items">
+            <summary>
+            get/set item list
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.Value">
+            <summary>
+            get/set item value
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.ValueError">
+            <summary>
+            get/set value error flag
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.IsRoot">
+            <summary>
+            is root item
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.StartOffset">
+            <summary>
+            start offset in rawdata bytes
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.StartOffsetByte">
+            <summary>
+            start offset byte data
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.Desc">
+            <summary>
+            get/set item description
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.Name">
+            <summary>
+            get/set item name
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.XItem.Tag">
+            <summary>
+            user attach object
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.SECS.SecsErrorCode">
+            <summary>
+            secs error code
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.DECODE_ITEM_ILLEGAL_FORMAT_CODE_ERR">
+            <summary>
+            ILLEGAL_FORMAT_CODE
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.DECODE_ITEM_NUM_OF_LENGTH_BYTE_IS_ZERO_ERR">
+            <summary>
+            NUM_OF_LENGTH_BYTE_IS_ZERO
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.DECODE_ITEM_FORMAT_IS_UNMATCH_WITH_DESIRE_ERR">
+            <summary>
+            FORMAT_IS_UNMATCH_WITH_DESIRE
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.DECODE_PARSEBYTES_LIST_IS_TOO_SHORT_ERR">
+            <summary>
+            LIST_IS_TOO_SHORT
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.DECODE_PARSEBYTES_LIST_IS_TOO_LONG_ERR">
+            <summary>
+            LIST_IS_TOO_LONG
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.DECODE_PARSEBYTES_MESSAGE_PARSE_EXCEPTION_ERR">
+            <summary>
+            MESSAGE_PARSE_EXCEPTION
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.DECODE_GETITEM_ILLEGAL_DATA_ERR">
+            <summary>
+            ILLEGAL_DATA
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.DECODE_ITEMIN_ITEM_PARSE_EXCEPTION_ERR">
+            <summary>
+            ITEM_PARSE_EXCEPTION
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.ENCODE_ITEM_VALUE_CONVERSION_FAIL_ERR">
+            <summary>
+            ITEM_VALUE_CONVERSION_FAIL
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.ENCODE_ITEM_TOTAL_LENGTH_OUT_OF_RANGE_ERR">
+            <summary>
+            TOTAL_LENGTH_OUT_OF_RANGE
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.ENCODE_ITEMOUT_ITEM_CONVERT_EXCEPTION_ERR">
+            <summary>
+            ITEM_CONVERT_EXCEPTION
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.INSUFFICIENT_BUFFER_LENGTH_ERR">
+            <summary>
+            INSUFFICIENT_BUFFER_LENGTH
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.PARSEBYTES_INVALID_ROOT_ITEM_ASSIGN_ERR">
+            <summary>
+            INVALID_ROOT_ITEM_ASSIGN
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.SecsErrorCode.BINDTOCALSS_ROOT_ITEM_IS_NULL_ERR">
+            <summary>
+            ROOT_ITEM_IS_NULL
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.SECS.Fmt">
+            <summary>
+            secs item format code
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.L">
+            <summary>
+            000000 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.B">
+            <summary>
+            001000 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.Boolean">
+            <summary>
+            001001 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.A">
+            <summary>
+            010000 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.I8">
+            <summary>
+            011000 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.I1">
+            <summary>
+            011001 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.I2">
+            <summary>
+            011010 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.I4">
+            <summary>
+            011100 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.F8">
+            <summary>
+            100000 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.F4">
+            <summary>
+            100100 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.U8">
+            <summary>
+            101000 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.U1">
+            <summary>
+            101001 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.U2">
+            <summary>
+            101010 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.U4">
+            <summary>
+            101100 00
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.SECS.Fmt.ROOT">
+            <summary>
+            111111 11 root item (virtual)
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.SECS.SecsException">
+            <summary>
+            Secs exception
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsException.#ctor">
+            <summary>
+            constructor
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsException.#ctor(System.String,Unicom.UniAuto.Net.SECS.SecsErrorCode)">
+            <summary>
+            constructor
+            </summary>
+            <param name="message">exception message</param>
+            <param name="code">secs error code</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsException.#ctor(System.String,Unicom.UniAuto.Net.SECS.SecsErrorCode,System.Exception)">
+            <summary>
+            constructor
+            </summary>
+            <param name="message">exception message</param>
+            <param name="code">secs error code</param>
+            <param name="innerException">inner exception object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            constructor
+            </summary>
+            <param name="info">serializtion info object</param>
+            <param name="context">stream context object</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.SecsException.ErrCode">
+            <summary>
+            get/set error code
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.SECS.SecsLib">
+            <summary>
+            secs tool functions libary
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.Send(Unicom.UniAuto.Net.HSMS.HsmsDriver,System.Byte,System.Byte,System.Byte,System.Byte,System.UInt16,Unicom.UniAuto.Net.SECS.XItem,System.Object,System.UInt32)">
+            <summary>
+            tool function to send secs message(use XItem Tree),
+            may throw exception
+            </summary>
+            <param name="primaryorreply">1=primary,0=reply</param>
+            <param name="wbit">1=wait reply,0=no wait</param>
+            <param name="systembytes">systembytes</param> 
+            <param name="root">xitem tree</param> 
+            <param name="driver">hsmsdriver</param>
+            <param name="function">message function</param>		
+            <param name="stream">message stream</param>
+            <param name="sessionid">session id</param>
+            <param name="tag">user object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.Send(Unicom.UniAuto.Net.HSMS.HsmsDriver,System.Byte,System.Byte,System.Byte,System.Byte,System.UInt16,System.Byte[],System.Int32,System.Object,System.UInt32)">
+            <summary>
+            tool function to send secs message(use byte[] array),
+            may throw exception
+            </summary>
+            <param name="primaryorreply">1=primary,0=reply</param>
+            <param name="wbit">1=wait reply,0=no wait</param>
+            <param name="systembytes">systembytes</param> 
+            <param name="rawdata">rawdata bytes array</param> 
+            <param name="datalen">real data len in bytes</param>
+            <param name="driver">hsmsdriver</param>
+            <param name="function">message function</param>
+            <param name="sessionid">session id</param>
+            <param name="stream">message stream</param>
+            <param name="tag">user object</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.Send(Unicom.UniAuto.Net.HSMS.HsmsDriver,Unicom.UniAuto.Net.HSMS.HsmsMessage,System.UInt16)">
+            <summary>
+            tool function to send secs message(use Hsms message),
+            may throw exception
+            </summary>
+            <param name="message">hsms message</param> 
+            <param name="driver">hsmsdriver</param>
+            <param name="sessionid">session id</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemIn(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32@,System.Object@)">
+            <summary>
+            decode item format/count/value from rawbytes buffer at current offset,will check format
+            may throw exception
+            </summary>	
+            <param name="buf">buffer stored rawdata</param>
+            <param name="itemFormatCheck">item format to check</param>
+            <param name="itemCount">item count</param>
+            <param name="itemValue">item value object
+            <para>return null if item count=0</para>
+            <para>return null if format=L</para>
+            <para>return sbyte[] if format=I1</para>
+            <para>return short[] if format=I2</para>
+            <para>return int[] if format=I4</para>
+            <para>return long[] if format=I8</para>
+            <para>return byte[] if format=U1</para>
+            <para>return ushort[] if format=U2</para>
+            <para>return uint[] if format=U4</para>
+            <para>return ulong[] if format=U8</para>
+            <para>return float[] if format=F4</para>
+            <para>return double[] if format=F8</para>
+            <para>return string if format=A</para>
+            <para>return byte[] if format=B</para> 
+            <para>return bool[] if format=Boolean</para> 
+            </param>
+            <param name="offset">buffer offset</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemIn(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt@,System.Int32@,System.Object@)">
+            <summary>
+            decode item format/count/value from rawbytes buffer at current offset,
+            may throw exception
+            </summary>	
+            <param name="buf">buffer stored rawdata</param>
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param>
+            <param name="itemValue">item value object
+            <para>return null if item count=0</para>
+            <para>return null if format=L</para>
+            <para>return sbyte[] if format=I1</para>
+            <para>return short[] if format=I2</para>
+            <para>return int[] if format=I4</para>
+            <para>return long[] if format=I8</para>
+            <para>return byte[] if format=U1</para>
+            <para>return ushort[] if format=U2</para>
+            <para>return uint[] if format=U4</para>
+            <para>return ulong[] if format=U8</para>
+            <para>return float[] if format=F4</para>
+            <para>return double[] if format=F8</para>
+            <para>return string if format=A</para>
+            <para>return byte[] if format=B</para> 
+            <para>return bool[] if format=Boolean</para> 
+            </param>
+            <param name="offset">buffer offset</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Object)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object</param>				
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Byte[])">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object(array of byte)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.SByte[])">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object(array of sbyte)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.UInt16[])">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object(array of ushort)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Int16[])">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object(array of short)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.UInt32[])">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object(array of uint)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Int32[])">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object(array of int)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.UInt64[])">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object(array of ulong)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Int64[])">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object((array of long)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Single[])">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object(array of float)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Double[])">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value object(array of double)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 				
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.String)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(string)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Byte)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(byte)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.SByte)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(sbyte)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.UInt16)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(ushort)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Int16)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(short)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.UInt32)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(uint)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Int32)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(int)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.UInt64)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(ulong)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Int64)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(long)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Single)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(float)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ItemOut(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Double)">
+            <summary>
+            encode item format/count/value into rawbytes buffer from current offset,
+            may throw exception
+            </summary>		
+            <param name="buf">buffer store encoded rawdata,auto expaned if necessary</param>
+            <param name="offset">buffer offset</param> 
+            <param name="itemFormat">item format</param>
+            <param name="itemCount">item count</param> 
+            <param name="itemValue">item value(double)</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.GetItemType(System.Byte[],System.Int32)">
+            <summary>
+            get item format code from rawbytes buffer at current offset
+            </summary>
+            <param name="buf">buffer stored rawdata</param>
+            <param name="offset">buffer offset</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ByteArrayToHexString(System.Byte[],System.String@)">
+            <summary>
+            byte array convert to hex string
+            </summary>
+            <param name="buf">bytes buffer</param>
+            <param name="hexstring">hex string</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.HexStringToByteArray(System.String,System.Byte[]@,System.Int32@,System.String@)">
+            <summary>
+            hex string convert to byte array
+            </summary>
+            <param name="buf">bytes buffer</param>
+            <param name="datalen">buffer real datalen</param>
+            <param name="error">error message</param>
+            <param name="hexstring">hex string</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ConvertToBytes(Unicom.UniAuto.Net.SECS.XItem@,System.Byte[]@,System.Int32@)">
+            <summary>
+            convert xitem tree to bytes rawdata,
+            may throw exception
+            </summary>
+            <param name="buf">target bytes buffer</param>
+            <param name="item">xitem object</param>
+            <param name="offset">buffer offset</param>		"
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.FillBuf(System.Byte[]@,System.Int32@,Unicom.UniAuto.Net.SECS.Fmt,System.Int32,System.Object)">
+            <summary>
+            fill rawdata into buffer with specific format/count/value
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.ParseBytes(System.Byte[],System.Int32,Unicom.UniAuto.Net.SECS.XItem)">
+            <summary>
+            parse each item from rawdata bytes buffer into xitem tree,
+            may throw exception
+            </summary>
+            <param name="buf">source bytes buffer</param>
+            <param name="datalen">buffer real datalen in bytes</param>
+            <param name="root">xitem root item</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.SECS.SecsLib.GetKeyItem(Unicom.UniAuto.Net.SECS.XItem,System.Int32,System.Int32[],System.String@)">
+            <summary>
+            get key item from tree,use each level and index to locate item in tree
+            </summary>
+            <param name="RootItem">root item (item.isroot=true)</param>
+            <param name="ItemLevel">item's level > 0</param>
+            <param name="ItemIndex">item's index array(each level's index,index > 0)</param>
+            <param name="error">error message if error occured</param>
+            <returns>key item,null if not found or error occured</returns>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.SecsLib.DataEncoding">
+            <summary>
+            get/set encoding for format A data
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.SECS.SecsLib.Version">
+            <summary>
+            get dll version
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Components>
+  <Component Name="form">
+    <Properties>
+      <Property Caption="Resolution" Value="1260,1000" Type="String" ItemList="" Tip="傳回或設定物件的高度與寬度。" />
+      <Property Caption="ID" Value="Form1" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+      <Property Caption="BlockControl" Value="False" Type="Boolean" ItemList="" Tip="程式碼中用於是否產生BlockControl頁面。" />
+    </Properties>
+  </Component>
+  <Component Name="NODE">
+    <Properties>
+      <Property Caption="EQNUMBER" Value="" Type="String" ItemList="" Tip="程式碼中用於物件的EQNUMBER屬性。" />
+      <Property Caption="Location" Value="188,73" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+      <Property Caption="BlockType" Value="True" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+      <Property Caption="ID" Value="N0200" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+      <Property Caption="Size" Value="329,220" Type="Size" ItemList="" Tip="傳回或設定物件的高度與寬度。" />
+      <Property Caption="BackGroundColor" Value="255,224,224,224" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+      <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+      <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+      <Property Caption="BorderStyle" Value="Solid" Type="String" ItemList="Inset,Solid,None" Tip="設定物件的邊框種類。" />
+    </Properties>
+    <Component Name="SHAPE">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="Fixed" Value="False" Type="Boolean" ItemList="" Tip="設定物件是否固定在畫面上。" />
+        <Property Caption="ID" Value="EQSTATUS" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="Location" Value="4,5" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="Size" Value="319,210" Type="Size" ItemList="" Tip="傳回或設定物件的高度與寬度。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="BackGroundColor" Value="255,192,192,192" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="BorderStyle" Value="Solid" Type="String" ItemList="Inset,Solid,None" Tip="設定物件的邊框種類。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+    <Component Name="LABEL">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="Fixed" Value="False" Type="Boolean" ItemList="" Tip="設定物件是否固定在畫面上。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件的背景顏色" />
+        <Property Caption="BorderStyle" Value="Solid" Type="String" ItemList="Inset,Solid,None" Tip="設定物件的邊框種類。" />
+        <Property Caption="LinkUrl" Value="" Type="String" ItemList="" Tip="傳回或設定控制Link URL 的位置。" />
+        <Property Caption="AutoSize" Value="False" Type="Boolean" ItemList="" Tip="指定控制項是否會自動調整本身的大小，以符合其內容。" />
+        <Property Caption="Location" Value="9,9" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="NodeName" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="Size" Value="310,20" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="ItemDescription" Value="Node_Name" Type="String" ItemList="" Tip="傳回或設定物件的描述" />
+        <Property Caption="Text" Value="L2-Loader/Unload" Type="String" ItemList="" Tip="設定物件上的文字。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+        <Property Caption="Font" Value="" Type="FontText" ItemList="" Tip="設定物件的文字屬性。">
+          <color Caption="FontColor" Value="255,0,0,0" />
+          <fontFamily Caption="FontName" Value="Verdana" />
+          <fontSize Caption="FontSize" Value="10" />
+          <fontStyle Caption="Italic" Value="False" />
+          <fontWeight Caption="Bold" Value="False" />
+          <textAlign Caption="TextAlign" Value="Center" />
+          <textDecoration Caption="Underline" Value="False" />
+        </Property>
+      </Properties>
+    </Component>
+    <Component Name="LABEL">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="Fixed" Value="False" Type="Boolean" ItemList="" Tip="設定物件是否固定在畫面上。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件的背景顏色" />
+        <Property Caption="BorderStyle" Value="Solid" Type="String" ItemList="Inset,Solid,None" Tip="設定物件的邊框種類。" />
+        <Property Caption="LinkUrl" Value="" Type="String" ItemList="" Tip="傳回或設定控制Link URL 的位置。" />
+        <Property Caption="AutoSize" Value="False" Type="Boolean" ItemList="" Tip="指定控制項是否會自動調整本身的大小，以符合其內容。" />
+        <Property Caption="Location" Value="9,30" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="TotalCount" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="Size" Value="80,20" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="ItemDescription" Value="Total_Count" Type="String" ItemList="" Tip="傳回或設定物件的描述" />
+        <Property Caption="Text" Value="0000" Type="String" ItemList="" Tip="設定物件上的文字。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+        <Property Caption="Font" Value="" Type="FontText" ItemList="" Tip="設定物件的文字屬性。">
+          <color Caption="FontColor" Value="255,0,0,0" />
+          <fontFamily Caption="FontName" Value="Verdana" />
+          <fontSize Caption="FontSize" Value="10" />
+          <fontStyle Caption="Italic" Value="False" />
+          <fontWeight Caption="Bold" Value="False" />
+          <textAlign Caption="TextAlign" Value="Center" />
+          <textDecoration Caption="Underline" Value="False" />
+        </Property>
+      </Properties>
+    </Component>
+    <Component Name="PICTUREBOX">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="Location" Value="9,55" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="CC01" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="SizeMode" Value="Stretch" Type="String" ItemList="Normal,Stretch,Zoom" Tip="控制PictureBox如何處理影像放置位置以及控制大小。" />
+        <Property Caption="Size" Value="35,35" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="BackGroundImage" Value="" Type="String" ItemList="" Tip="傳回或設定背景圖片。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+    <Component Name="PICTUREBOX">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="Location" Value="9,95" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="CC02" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="SizeMode" Value="Stretch" Type="String" ItemList="Normal,Stretch,Zoom" Tip="控制PictureBox如何處理影像放置位置以及控制大小。" />
+        <Property Caption="Size" Value="35,35" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="BackGroundImage" Value="" Type="String" ItemList="" Tip="傳回或設定背景圖片。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+    <Component Name="PICTUREBOX">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="Location" Value="9,175" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="CC04" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="SizeMode" Value="Stretch" Type="String" ItemList="Normal,Stretch,Zoom" Tip="控制PictureBox如何處理影像放置位置以及控制大小。" />
+        <Property Caption="Size" Value="35,35" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="BackGroundImage" Value="" Type="String" ItemList="" Tip="傳回或設定背景圖片。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+    <Component Name="PICTUREBOX">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="Location" Value="9,135" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="CC03" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="SizeMode" Value="Stretch" Type="String" ItemList="Normal,Stretch,Zoom" Tip="控制PictureBox如何處理影像放置位置以及控制大小。" />
+        <Property Caption="Size" Value="35,35" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="BackGroundImage" Value="" Type="String" ItemList="" Tip="傳回或設定背景圖片。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+    <Component Name="PICTUREBOX">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="Location" Value="50,175" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="CC08" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="SizeMode" Value="Stretch" Type="String" ItemList="Normal,Stretch,Zoom" Tip="控制PictureBox如何處理影像放置位置以及控制大小。" />
+        <Property Caption="Size" Value="35,35" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="BackGroundImage" Value="" Type="String" ItemList="" Tip="傳回或設定背景圖片。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+    <Component Name="PICTUREBOX">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="Location" Value="50,135" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="CC07" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="SizeMode" Value="Stretch" Type="String" ItemList="Normal,Stretch,Zoom" Tip="控制PictureBox如何處理影像放置位置以及控制大小。" />
+        <Property Caption="Size" Value="35,35" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="BackGroundImage" Value="" Type="String" ItemList="" Tip="傳回或設定背景圖片。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+    <Component Name="PICTUREBOX">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="Location" Value="50,95" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="CC06" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="SizeMode" Value="Stretch" Type="String" ItemList="Normal,Stretch,Zoom" Tip="控制PictureBox如何處理影像放置位置以及控制大小。" />
+        <Property Caption="Size" Value="35,35" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="BackGroundImage" Value="" Type="String" ItemList="" Tip="傳回或設定背景圖片。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+    <Component Name="PICTUREBOX">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="Location" Value="50,55" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="CC05" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="SizeMode" Value="Stretch" Type="String" ItemList="Normal,Stretch,Zoom" Tip="控制PictureBox如何處理影像放置位置以及控制大小。" />
+        <Property Caption="Size" Value="35,35" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="BackGroundImage" Value="" Type="String" ItemList="" Tip="傳回或設定背景圖片。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+    <Component Name="PICTUREBOX">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="BackGroundColor" Value="255,165,42,42" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="Location" Value="95,115" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="UN01:RD01" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="SizeMode" Value="Stretch" Type="String" ItemList="Normal,Stretch,Zoom" Tip="控制PictureBox如何處理影像放置位置以及控制大小。" />
+        <Property Caption="Size" Value="35,35" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="BackGroundImage" Value="" Type="String" ItemList="" Tip="傳回或設定背景圖片。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+    <Component Name="LABEL">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="Fixed" Value="False" Type="Boolean" ItemList="" Tip="設定物件是否固定在畫面上。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件的背景顏色" />
+        <Property Caption="BorderStyle" Value="Solid" Type="String" ItemList="Inset,Solid,None" Tip="設定物件的邊框種類。" />
+        <Property Caption="LinkUrl" Value="" Type="String" ItemList="" Tip="傳回或設定控制Link URL 的位置。" />
+        <Property Caption="AutoSize" Value="False" Type="Boolean" ItemList="" Tip="指定控制項是否會自動調整本身的大小，以符合其內容。" />
+        <Property Caption="Location" Value="139,88" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="UN50" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="Size" Value="154,85" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="ItemDescription" Value="" Type="String" ItemList="" Tip="傳回或設定物件的描述" />
+        <Property Caption="Text" Value="Alignment" Type="String" ItemList="" Tip="設定物件上的文字。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="" Type="String" ItemList="" Tip="設定物件的父類別。" />
+        <Property Caption="Font" Value="" Type="FontText" ItemList="" Tip="設定物件的文字屬性。">
+          <color Caption="FontColor" Value="255,0,0,0" />
+          <fontFamily Caption="FontName" Value="Verdana" />
+          <fontSize Caption="FontSize" Value="10" />
+          <fontStyle Caption="Italic" Value="False" />
+          <fontWeight Caption="Bold" Value="False" />
+          <textAlign Caption="TextAlign" Value="Right" />
+          <textDecoration Caption="Underline" Value="False" />
+        </Property>
+      </Properties>
+    </Component>
+    <Component Name="LABEL">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="Fixed" Value="False" Type="Boolean" ItemList="" Tip="設定物件是否固定在畫面上。" />
+        <Property Caption="BackGroundColor" Value="255,255,255,255" Type="Color" ItemList="" Tip="傳回或設定物件的背景顏色" />
+        <Property Caption="BorderStyle" Value="Solid" Type="String" ItemList="Inset,Solid,None" Tip="設定物件的邊框種類。" />
+        <Property Caption="LinkUrl" Value="" Type="String" ItemList="" Tip="傳回或設定控制Link URL 的位置。" />
+        <Property Caption="AutoSize" Value="False" Type="Boolean" ItemList="" Tip="指定控制項是否會自動調整本身的大小，以符合其內容。" />
+        <Property Caption="Location" Value="143,110" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="UN51" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="Size" Value="36,40" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="ItemDescription" Value="" Type="String" ItemList="" Tip="傳回或設定物件的描述" />
+        <Property Caption="Text" Value="ST" Type="String" ItemList="" Tip="設定物件上的文字。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="UN50" Type="String" ItemList="" Tip="設定物件的父類別。" />
+        <Property Caption="Font" Value="" Type="FontText" ItemList="" Tip="設定物件的文字屬性。">
+          <color Caption="FontColor" Value="255,0,0,0" />
+          <fontFamily Caption="FontName" Value="Verdana" />
+          <fontSize Caption="FontSize" Value="10" />
+          <fontStyle Caption="Italic" Value="False" />
+          <fontWeight Caption="Bold" Value="False" />
+          <textAlign Caption="TextAlign" Value="Center" />
+          <textDecoration Caption="Underline" Value="False" />
+        </Property>
+      </Properties>
+    </Component>
+    <Component Name="PICTUREBOX">
+      <Properties>
+        <Property Caption="BlockType" Value="False" Type="Boolean" ItemList="" Tip="當程式自動產生BlockControl頁面時,設定物件的BlockControl表示物件的狀態。" />
+        <Property Caption="BackGroundColor" Value="255,165,42,42" Type="Color" ItemList="" Tip="傳回或設定物件填滿的顏色。" />
+        <Property Caption="Location" Value="180,118" Type="Point" ItemList="" Tip="傳回或設定物件在容器上的絕對位置。" />
+        <Property Caption="ID" Value="VR01" Type="String" ItemList="" Tip="程式碼中用於辨別物件的名稱。" />
+        <Property Caption="SizeMode" Value="Stretch" Type="String" ItemList="Normal,Stretch,Zoom" Tip="控制PictureBox如何處理影像放置位置以及控制大小。" />
+        <Property Caption="Size" Value="25,25" Type="Size" ItemList="" Tip="傳回或設定物件的大小" />
+        <Property Caption="BackGroundImage" Value="" Type="String" ItemList="" Tip="傳回或設定背景圖片。" />
+        <Property Caption="Enabled" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否啟用。" />
+        <Property Caption="Visible" Value="True" Type="Boolean" ItemList="" Tip="設定物件是否顯示。" />
+        <Property Caption="ParentName" Value="UN50" Type="String" ItemList="" Tip="設定物件的父類別。" />
+      </Properties>
+    </Component>
+  </Component>
+</Components>

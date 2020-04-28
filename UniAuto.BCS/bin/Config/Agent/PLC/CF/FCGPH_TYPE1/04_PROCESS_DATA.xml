@@ -1,0 +1,766 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.1.0.0-->
+<!--DateTime: 2016-03-13 12:17:44-->
+<itemgroup name="L2ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L02_Loader_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="TactTime" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="IONCDAPressure" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="OTHERCDAPressure" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="VacuumUPPERPressure" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="VacuumUNDERPressure" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PortNo" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L04_Cleaner_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe_Nnmber" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_Name" site="" woffset="1" boffset="0" wpoints="7" bpoints="112" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_Time" site="" woffset="8" boffset="0" wpoints="3" bpoints="48" expression="Hex" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_Time" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="INCV_Speed" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR_Speed" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OUTCV_Speed" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="INCV_Zone_TT" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR_Zone_TT" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="OUTCV_Zone_TT" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="L_Heater_USE" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Rinse_Process_Time" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_USE" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_SET1" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_SET2" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_SET3" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_1_Up_USE" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_1_Up_RPM" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_1_UpDirect" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_1_Up_Gap" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_1_Dn_USE" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_1_Dn_RPM" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_1_Dn_Direct" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_1_Dn_Gap" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_2_Up_USE" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_2_Up_RPM" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_2_Up_Direct" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_2_Up_Gap" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_2_Dn_USE" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_2_Dn_RPM" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_2_Dn_Direct" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RB_1_2_Dn_Gap" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="L_Heater_TEMP" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HPMJ_USE" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HPMJ_Recipe_Numbe" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR1_EXH_DM03" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR1_CDA_IN_FL03" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR1_UP_AC_IN_PG05" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR1_LO_AC_IN_PG07" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR2_EXH_DM05" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR1_AQUA_DIW_FL04" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR1_LO_DIW_FL05" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR1_UP_DIW_FL06" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR3_EXH_DM06" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR2_LO_DIW_FL08" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR2_UP_DIW_FL09" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR2_AQUA_DIW_FL10" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR4_EXH_DM07" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR3_LO_DIW_FL11" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR3_UP_DIW_FL12" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR3_AQUA_DIW_FL13" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="AK_EXH_DM08" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AK_EXH_DM09" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR4_LO_DIW_FL14" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR4_UP_DIW_FL16" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR4_AQUA_DIW_FL17" site="" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="AK_LO_CDA_IN_FL18" site="" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AK_UP_CDA_IN_FL19" site="" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AK_WATER_REGISTER" site="" woffset="66" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AK_LO_CDA_IN_PG11" site="" woffset="67" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AK_UP_CDA_IN_PG13" site="" woffset="68" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_EXH_DM10" site="" woffset="69" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_EXH_DM11" site="" woffset="70" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_ION_CDA_IN_FL20" site="" woffset="71" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_HOT_CDA_IN_FL21" site="" woffset="72" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_DRIVING_AIR_FL22" site="" woffset="73" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_ION_CDA_IN_PG15" site="" woffset="74" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_HOT_CDA_IN_PG17" site="" woffset="75" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_DRIV_AIR_PG19" site="" woffset="76" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_CDA_IN_FL02" site="" woffset="77" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_EXH_DM01" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_EXH_DM02" site="" woffset="79" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_N2_INBF_FLT_PG1" site="" woffset="80" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_N2_INAF_FLT_PG2" site="" woffset="81" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_CDA_IN_PG03" site="" woffset="82" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="EUV_INTEG_FL01" site="" woffset="83" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR2_INTEG_FL07" site="" woffset="85" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR4_INTEG_FL15" site="" woffset="87" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="SWR1_CDA_IN_FL03_ITG" site="" woffset="89" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AK_LO_CDA_IN_FL18_ITG" site="" woffset="91" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="AK_UP_CDA_IN_FL19_ITG" site="" woffset="93" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_ION_CDA_FL20_ITG" site="" woffset="95" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_HOT_CDA_FL21_ITG" site="" woffset="97" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="BUF2_DRIV_AIR_FL22_ITG" site="" woffset="99" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TIC01_Current_PV" site="" woffset="101" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="TIC02_Current_PV" site="" woffset="103" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Lamp1_RD_Transfo" site="" woffset="105" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Lamp2_RD_Transfo" site="" woffset="106" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Lamp1_Used_Time_1" site="" woffset="107" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L6ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L06_Coater_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe_IDPPID" item="Recipe" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Coating_Recipe_No" item="Recipe" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Initial_Recipe_No" item="Recipe" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Standby_Recipe_No" item="Recipe" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Mainte_Recipe_No" item="Recipe" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Job_Recipe_No" item="Recipe" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="VCD_Recipe_No" item="Recipe" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Coating_leng" item="Recipe" site="" woffset="8" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Coating_width" item="Recipe" site="" woffset="10" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Squeegee_leng" item="Recipe" site="" woffset="12" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Coa_start_margin" item="Recipe" site="" woffset="14" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Pre_dis_clearance" item="Recipe" site="" woffset="16" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="1st_Pre_dis_vol" item="Recipe" site="" woffset="18" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="1st_Pre_dis_speed" item="Recipe" site="" woffset="20" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="1st_Tim_aft_Pre_dis" item="Recipe" site="" woffset="22" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Pump_stop_mode" item="Recipe" site="" woffset="24" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Coating_clearance_1" item="Recipe" site="" woffset="26" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tim_before_dis_start" item="Recipe" site="" woffset="28" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dispense_volume" item="Recipe" site="" woffset="30" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Dispense_speed" item="Recipe" site="" woffset="32" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Pump_acc_time" item="Recipe" site="" woffset="34" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Pump_dec_time" item="Recipe" site="" woffset="36" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tim_after_dis_start" item="Recipe" site="" woffset="38" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Coating_speed" item="Recipe" site="" woffset="40" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Gantry_acc_time" item="Recipe" site="" woffset="42" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Gantry_dec_time" item="Recipe" site="" woffset="44" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Nozzle_up_speed" item="Recipe" site="" woffset="46" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Nozzle_up_acc_time" item="Recipe" site="" woffset="48" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Vertical_up_pat_sel" item="Recipe" site="" woffset="50" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tim_bef_rnozzle_up" item="Recipe" site="" woffset="52" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Pump_acc_step" item="Recipe" site="" woffset="54" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Step1_speed" item="Recipe" site="" woffset="56" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Step1_acc_time" item="Recipe" site="" woffset="58" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Step2_speed" item="Recipe" site="" woffset="60" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Step2_acc_time" item="Recipe" site="" woffset="62" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Suction_speed" item="Recipe" site="" woffset="64" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Coa_acc_curve_sel" item="Recipe" site="" woffset="66" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="1st_Pre_dis_Hei_sel" item="Recipe" site="" woffset="68" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Pre_dis_down_del_tim" item="Recipe" site="" woffset="70" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="2st_Pre_dis_vol" item="Recipe" site="" woffset="72" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="2st_Pre_dis_speed" item="Recipe" site="" woffset="74" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="2st_Tim_aft_Pre_dis" item="Recipe" site="" woffset="76" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="2nd_Pre_dis_delay" item="Recipe" site="" woffset="78" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Initial_dis_volume" item="Recipe" site="" woffset="80" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Wiping_speed" item="Recipe" site="" woffset="82" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Slow_mode1" item="Recipe" site="" woffset="88" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Slow_angle1" item="Recipe" site="" woffset="89" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Slow_time1" item="Recipe" site="" woffset="90" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Slow_Pres1" item="Recipe" site="" woffset="91" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Main_mode" item="Recipe" site="" woffset="93" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Main_time" item="Recipe" site="" woffset="94" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Main_Pres" item="Recipe" site="" woffset="95" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="After_vac_time" item="Recipe" site="" woffset="97" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Gantry_No" item="Coater" site="" woffset="101" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Pump_No" item="Coater" site="" woffset="102" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Coating_Clearance_2" item="Coater" site="" woffset="103" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CSP_Pressure" item="Coater" site="" woffset="105" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Total_Discharge" item="Coater" site="" woffset="107" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Particle_Detect_Pos" item="Coater" site="" woffset="109" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tempture_Glass_Up" item="Coater" site="" woffset="111" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tempture_Glass_Down" item="Coater" site="" woffset="112" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1ST_Wiper_Count" item="Coater" site="" woffset="113" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="2ND_Wiper_Count" item="Coater" site="" woffset="115" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CSP1L_Count" item="Coater" site="" woffset="117" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CSP1R_Count" item="Coater" site="" woffset="119" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="VCD_Information" item="VCD" site="" woffset="121" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="VCD_Re_vacuum" item="VCD" site="" woffset="122" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="VCD_Time_re_vac" item="VCD" site="" woffset="124" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PR_ID" item="Coater" site="" woffset="127" boffset="0" wpoints="15" bpoints="240" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L07_HPCP_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="RECIPE_NO." site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP_LOAD_TIME" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP_UNLOAD_TIME" site="" woffset="4" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP_PROCESSING_STAGE_NO." site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP_PROCESS_TEMP." site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HB_PROCESS_TEMP." site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP_LOAD_TIME" site="" woffset="10" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP_UNLOAD_TIME" site="" woffset="13" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP_PROCESSING_STAGE_NO." site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP_PROCESS_TEMP." site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="RECIPE_ID" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE1" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE2" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE3" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE4" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE5" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE6" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE7" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE8" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE9" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE10" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE11" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE12" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE13" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE14" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE15" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE16" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE17" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE18" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE19" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE20" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE21" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TEMP_ZONE22" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HB1_TEMP" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE1" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE2" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE3" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE4" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE5" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE6" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE7" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE8" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE9" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE10" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE11" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE12" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE13" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE14" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE15" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE16" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE17" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE18" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE19" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE20" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE21" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TEMP_ZONE22" site="" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HB2_TEMP" site="" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE1" site="" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE2" site="" woffset="66" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE3" site="" woffset="67" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE4" site="" woffset="68" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE5" site="" woffset="69" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE6" site="" woffset="70" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE7" site="" woffset="71" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE8" site="" woffset="72" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE9" site="" woffset="73" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE10" site="" woffset="74" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE11" site="" woffset="75" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE12" site="" woffset="76" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE13" site="" woffset="77" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE14" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE15" site="" woffset="79" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE16" site="" woffset="80" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE17" site="" woffset="81" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE18" site="" woffset="82" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE19" site="" woffset="83" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE20" site="" woffset="84" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE21" site="" woffset="85" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TEMP_ZONE22" site="" woffset="86" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HB3_TEMP" site="" woffset="87" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE1" site="" woffset="88" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE2" site="" woffset="89" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE3" site="" woffset="90" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE4" site="" woffset="91" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE5" site="" woffset="92" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE6" site="" woffset="93" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE7" site="" woffset="94" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE8" site="" woffset="95" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE9" site="" woffset="96" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE10" site="" woffset="97" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE11" site="" woffset="98" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE12" site="" woffset="99" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE13" site="" woffset="100" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE14" site="" woffset="101" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE15" site="" woffset="102" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE16" site="" woffset="103" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE17" site="" woffset="104" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE18" site="" woffset="105" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE19" site="" woffset="106" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE20" site="" woffset="107" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE21" site="" woffset="108" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TEMP_ZONE22" site="" woffset="109" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HB4_TEMP" site="" woffset="110" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP1_TEMP" site="" woffset="111" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP2_TEMP" site="" woffset="112" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_PROXI_POSITION" site="" woffset="113" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_PROXI_POSITION" site="" woffset="114" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_PROXI_POSITION" site="" woffset="115" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_PROXI_POSITION" site="" woffset="116" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP1_PROXI_POSITION" site="" woffset="117" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP2_PROXI_POSITION" site="" woffset="118" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_TOP_PROCESS_TIME" site="" woffset="119" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_PROXI_PROCESS_TIME" site="" woffset="120" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP1_CONTACT_PROCESS_TIME" site="" woffset="121" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_TOP_PROCESS_TIME" site="" woffset="122" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_PROXI_PROCESS_TIME" site="" woffset="123" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP2_CONTACT_PROCESS_TIME" site="" woffset="124" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_TOP_PROCESS_TIME" site="" woffset="125" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_PROXI_PROCESS_TIME" site="" woffset="126" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP3_CONTACT_PROCESS_TIME" site="" woffset="127" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_TOP_PROCESS_TIME" site="" woffset="128" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_PROXI_PROCESS_TIME" site="" woffset="129" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HP4_CONTACT_PROCESS_TIME" site="" woffset="130" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP1_TOP_PROCESS_TIME" site="" woffset="131" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP1_PROXI_PROCESS_TIME" site="" woffset="132" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP1_CONTACT_PROCESS_TIME" site="" woffset="133" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP2_TOP_PROCESS_TIME" site="" woffset="134" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP2_PROXI_PROCESS_TIME" site="" woffset="135" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP2_CONTACT_PROCESS_TIME" site="" woffset="136" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L8ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L08_THK_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="GLASS_Judge" item="GLASS_Judge" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RecipeID" item="RecipeID" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TB01_S_Count" item="M_TB01_S_Count" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TB01_M_Count" item="M_TB01_M_Count" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TB01_L_Count" item="M_TB01_L_Count" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TB01_O_Count" item="M_TB01_O_Count" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TW01_S_Count" item="M_TW01_S_Count" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TW01_M_Count" item="M_TW01_M_Count" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TW01_L_Count" item="M_TW01_L_Count" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TW01_O_Count" item="M_TW01_O_Count" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YB01_S_Count" item="M_YB01_S_Count" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YB01_M_Count" item="M_YB01_L_Count" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YB01_L_Count" item="M_YB01_M_Count" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YB01_O_Count" item="M_YB01_O_Count" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YW01_S_Count" item="M_YW01_S_Count" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YW01_M_Count" item="M_YW01_M_Count" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YW01_L_Count" item="M_YW01_L_Count" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YW01_O_Count" item="M_YW01_O_Count" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TB02_S_Count" item="M_TB02_S_Count" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TB02_M_Count" item="M_TB02_M_Count" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TB02_L_Count" item="M_TB02_L_Count" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TB02_O_Count" item="M_TB02_O_Count" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TW02_S_Count" item="M_TW02_S_Count" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TW02_M_Count" item="M_TW02_M_Count" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TW02_L_Count" item="M_TW02_L_Count" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_TW02_O_Count" item="M_TW02_O_Count" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YB02_S_Count" item="M_YB02_S_Count" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YB02_M_Count" item="M_YB02_M_Count" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YB02_L_Count" item="M_YB02_L_Count" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YB02_O_Count" item="M_YB02_O_Count" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YW02_S_Count" item="M_YW02_S_Count" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YW02_M_Count" item="M_YW02_M_Count" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YW02_L_Count" item="M_YW02_L_Count" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_YW02_O_Count" item="M_YW02_O_Count" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PB01_S_Count" item="M_PB01_S_Count" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PB01_M_Count" item="M_PB01_M_Count" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PB01_L_Count" item="M_PB01_L_Count" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PB01_O_Count" item="M_PB01_O_Count" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PW01_S_Count" item="M_PW01_S_Count" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PW01_M_Count" item="M_PW01_M_Count" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PW01_L_Count" item="M_PW01_L_Count" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PW01_O_Count" item="M_PW01_O_Count" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PB02_S_Count" item="M_PB02_S_Count" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PB02_M_Count" item="M_PB02_M_Count" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PB02_L_Count" item="M_PB02_L_Count" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PB02_O_Count" item="M_PB02_O_Count" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PW02_S_Count" item="M_PW02_S_Count" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PW02_M_Count" item="M_PW02_M_Count" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PW02_L_Count" item="M_PW02_L_Count" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_PW02_O_Count" item="M_PW02_O_Count" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_S_Count" item="M_S_Count" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_E_Count" item="M_E_Count" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_OK_Panel_Count" item="M_OK_Panel_Count" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_NG_Panel_Count" item="M_NG_Panel_Count" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_GR_Panel_Count" item="M_GR_Panel_Count" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_Judge" item="M_Judge" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_Common_Defect" item="M_Common_Defect" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="THK_Judge" item="THK_Judge" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="THK_Point_Number" item="THK_Point_Number" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="THK_OK_Point_Number" item="THK_OK_Point_Number" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="THK_NG_Point_Number" item="THK_NG_Point_Number" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="THK_GR_Point_Number" item="THK_GR_Point_Number" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M01_illm_Ave" item="M01_illm_Ave" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M02_illm_Ave" item="M02_illm_Ave" site="" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M03_illm_Ave" item="M03_illm_Ave" site="" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M01_illm_Adjust" item="M01_illm_Adjust" site="" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M02_illm_Adjust" item="M02_illm_Adjust" site="" woffset="66" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M03_illm_Adjust" item="M03_illm_Adjust" site="" woffset="67" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="R_Mura_Ins_Lamp_Life" item="R_Mura_Ins_Lamp_Life" site="" woffset="68" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="T_Mura_Ins_Lamp_Life" item="T_Mura_Ins_Lamp_Life" site="" woffset="69" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="T/O/C_MES_Lamp_Life" item="T/O/C_MES_Lamp_Life" site="" woffset="70" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Review_Lamp_Life" item="Review_Lamp_Life" site="" woffset="71" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MuraScan_TIME" item="MuraScan_TIME" site="" woffset="72" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="THKorODorCM_MES_TIME" item="THKorODorCM_MES_TIME" site="" woffset="73" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L10ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L10_Exposure_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="MAIN_RECIPE_ID" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="SUB_RECIPE_ID" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ALGA_MASK_ID" site="3" woffset="2" boffset="0" wpoints="12" bpoints="192" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ALG_CYCL_TIME" site="4" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="EDC_LAMP_USED_TIME" site="5" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="MSK_SHOT_CNT" site="6" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ALGA_CHM_TEMP_S1" site="7" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="ALGA_CHM_TEMP_S2" site="8" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLASS_DATA_WK_KIND" site="9" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLASS_DATA_WK_DIR" site="10" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ALGA_FILETER" site="11" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="Hex" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="F_ALGA_PA_ACCU_X1" site="12" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="F_ALGA_PA_ACCU_X2" site="13" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="F_ALGA_PA_ACCU_Y1" site="14" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="F_ALGA_PA_ACCU_Y2" site="15" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="F_ALGA_PA_CNT" site="16" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="F_ALGA_PA_TIME" site="17" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="F_ALGA_WC_TEMP" site="18" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="F_ALGA_WCW_TEMP" site="19" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="F_ALGA_CP_TEMP" site="20" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="F_ALGA_CPW_TEMP" site="21" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_ALGA_PA_ACCU_X1" site="22" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_ALGA_PA_ACCU_X2" site="23" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_ALGA_PA_ACCU_Y1" site="24" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_ALGA_PA_ACCU_Y2" site="25" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_ALGA_PA_CNT" site="26" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_ALGA_PA_TIME" site="27" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_ALGA_WC_TEMP" site="28" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_ALGA_WCW_TEMP" site="29" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_ALGA_CP_TEMP" site="30" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="B_ALGA_CPW_TEMP" site="31" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="STAGE_ID" site="32" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_EXP_ILL" site="33" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_EXP_PWR" site="34" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_EXP_TIM" site="35" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_GAP_FL" site="36" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_GAP_FR" site="37" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_GAP_BL" site="38" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_GAP_BR" site="39" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_GAP_TIM" site="40" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_GAP_RETRY_CNT" site="41" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_X_FL" site="42" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_Y_FL" site="43" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_X_FR" site="44" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_Y_FR" site="45" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_X_BL" site="46" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_Y_BL" site="47" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_X_BR" site="48" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_Y_BR" site="49" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_TH" site="50" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_MXC" site="51" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_MYL" site="52" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_MYR" site="53" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_TIM" site="54" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_ALG_RETRY_CNT" site="55" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_RESERV_1" site="56" woffset="66" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_RESERV_2" site="57" woffset="67" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_RESERV_3" site="58" woffset="68" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_EXP_OFT_X" site="59" woffset="69" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_EXP_OFT_Y" site="60" woffset="70" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_EXP_OFT_Z" site="61" woffset="71" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="1_RESERV_4" site="62" woffset="72" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_EXP_ILL" site="63" woffset="73" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_EXP_PWR" site="64" woffset="74" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_EXP_TIM" site="65" woffset="75" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_GAP_FL" site="66" woffset="76" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_GAP_FR" site="67" woffset="77" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_GAP_BL" site="68" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_GAP_BR" site="69" woffset="79" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_GAP_TIM" site="70" woffset="80" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_GAP_RETRY_CNT" site="71" woffset="81" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_X_FL" site="72" woffset="82" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_Y_FL" site="73" woffset="83" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_X_FR" site="74" woffset="84" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_Y_FR" site="75" woffset="85" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_X_BL" site="76" woffset="86" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_Y_BL" site="77" woffset="87" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_X_BR" site="78" woffset="88" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_Y_BR" site="79" woffset="89" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_TH" site="80" woffset="90" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_MXC" site="81" woffset="91" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_MYL" site="82" woffset="92" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_MYR" site="83" woffset="93" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_TIM" site="84" woffset="94" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_ALG_RETRY_CNT" site="85" woffset="95" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_RESERV_1" site="86" woffset="96" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_RESERV_2" site="87" woffset="97" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_RESERV_3" site="88" woffset="98" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_EXP_OFT_X" site="89" woffset="99" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_EXP_OFT_Y" site="90" woffset="100" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_EXP_OFT_Z" site="91" woffset="101" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="2_RESERV_4" site="92" woffset="102" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_EXP_ILL" site="93" woffset="103" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_EXP_PWR" site="94" woffset="104" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_EXP_TIM" site="95" woffset="105" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_GAP_FL" site="96" woffset="106" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_GAP_FR" site="97" woffset="107" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_GAP_BL" site="98" woffset="108" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_GAP_BR" site="99" woffset="109" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_GAP_TIM" site="100" woffset="110" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_GAP_RETRY_CNT" site="101" woffset="111" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_X_FL" site="102" woffset="112" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_Y_FL" site="103" woffset="113" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_X_FR" site="104" woffset="114" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_Y_FR" site="105" woffset="115" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_X_BL" site="106" woffset="116" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_Y_BL" site="107" woffset="117" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_X_BR" site="108" woffset="118" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_Y_BR" site="109" woffset="119" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_TH" site="110" woffset="120" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_MXC" site="111" woffset="121" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_MYL" site="112" woffset="122" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_MYR" site="113" woffset="123" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_TIM" site="114" woffset="124" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_ALG_RETRY_CNT" site="115" woffset="125" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_RESERV_1" site="116" woffset="126" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_RESERV_2" site="117" woffset="127" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_RESERV_3" site="118" woffset="128" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_EXP_OFT_X" site="119" woffset="129" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_EXP_OFT_Y" site="120" woffset="130" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_EXP_OFT_Z" site="121" woffset="131" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="3_RESERV_4" site="122" woffset="132" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_EXP_ILL" site="123" woffset="133" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_EXP_PWR" site="124" woffset="134" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_EXP_TIM" site="125" woffset="135" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_GAP_FL" site="126" woffset="136" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_GAP_FR" site="127" woffset="137" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_GAP_BL" site="128" woffset="138" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_GAP_BR" site="129" woffset="139" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_GAP_TIM" site="130" woffset="140" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_GAP_RETRY_CNT" site="131" woffset="141" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_X_FL" site="132" woffset="142" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_Y_FL" site="133" woffset="143" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_X_FR" site="134" woffset="144" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_Y_FR" site="135" woffset="145" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_X_BL" site="136" woffset="146" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_Y_BL" site="137" woffset="147" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_X_BR" site="138" woffset="148" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_Y_BR" site="139" woffset="149" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_TH" site="140" woffset="150" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_MXC" site="141" woffset="151" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_MYL" site="142" woffset="152" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_MYR" site="143" woffset="153" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_TIM" site="144" woffset="154" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_ALG_RETRY_CNT" site="145" woffset="155" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_RESERV_1" site="146" woffset="156" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_RESERV_2" site="147" woffset="157" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_RESERV_3" site="148" woffset="158" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_EXP_OFT_X" site="149" woffset="159" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_EXP_OFT_Y" site="150" woffset="160" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_EXP_OFT_Z" site="151" woffset="161" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="4_RESERV_4" site="152" woffset="162" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_EXP_ILL" site="153" woffset="163" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_EXP_PWR" site="154" woffset="164" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_EXP_TIM" site="155" woffset="165" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_GAP_FL" site="156" woffset="166" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_GAP_FR" site="157" woffset="167" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_GAP_BL" site="158" woffset="168" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_GAP_BR" site="159" woffset="169" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_GAP_TIM" site="160" woffset="170" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_GAP_RETRY_CNT" site="161" woffset="171" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_X_FL" site="162" woffset="172" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_Y_FL" site="163" woffset="173" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_X_FR" site="164" woffset="174" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_Y_FR" site="165" woffset="175" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_X_BL" site="166" woffset="176" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_Y_BL" site="167" woffset="177" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_X_BR" site="168" woffset="178" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_Y_BR" site="169" woffset="179" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_TH" site="170" woffset="180" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_MXC" site="171" woffset="181" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_MYL" site="172" woffset="182" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_MYR" site="173" woffset="183" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_TIM" site="174" woffset="184" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_ALG_RETRY_CNT" site="175" woffset="185" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_RESERV_1" site="176" woffset="186" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_RESERV_2" site="177" woffset="187" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_RESERV_3" site="178" woffset="188" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_EXP_OFT_X" site="179" woffset="189" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_EXP_OFT_Y" site="180" woffset="190" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_EXP_OFT_Z" site="181" woffset="191" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="5_RESERV_4" site="182" woffset="192" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_EXP_ILL" site="183" woffset="193" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_EXP_PWR" site="184" woffset="194" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_EXP_TIM" site="185" woffset="195" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_GAP_FL" site="186" woffset="196" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_GAP_FR" site="187" woffset="197" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_GAP_BL" site="188" woffset="198" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_GAP_BR" site="189" woffset="199" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_GAP_TIM" site="190" woffset="200" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_GAP_RETRY_CNT" site="191" woffset="201" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_X_FL" site="192" woffset="202" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_Y_FL" site="193" woffset="203" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_X_FR" site="194" woffset="204" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_Y_FR" site="195" woffset="205" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_X_BL" site="196" woffset="206" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_Y_BL" site="197" woffset="207" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_X_BR" site="198" woffset="208" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_Y_BR" site="199" woffset="209" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_TH" site="200" woffset="210" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_MXC" site="201" woffset="211" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_MYL" site="202" woffset="212" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_MYR" site="203" woffset="213" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_TIM" site="204" woffset="214" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_ALG_RETRY_CNT" site="205" woffset="215" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_RESERV_1" site="206" woffset="216" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_RESERV_2" site="207" woffset="217" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_RESERV_3" site="208" woffset="218" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_EXP_OFT_X" site="209" woffset="219" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_EXP_OFT_Y" site="210" woffset="220" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_EXP_OFT_Z" site="211" woffset="221" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="6_RESERV_4" site="212" woffset="222" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_EXP_ILL" site="213" woffset="223" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_EXP_PWR" site="214" woffset="224" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_EXP_TIM" site="215" woffset="225" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_GAP_FL" site="216" woffset="226" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_GAP_FR" site="217" woffset="227" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_GAP_BL" site="218" woffset="228" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_GAP_BR" site="219" woffset="229" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_GAP_TIM" site="220" woffset="230" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_GAP_RETRY_CNT" site="221" woffset="231" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_X_FL" site="222" woffset="232" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_Y_FL" site="223" woffset="233" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_X_FR" site="224" woffset="234" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_Y_FR" site="225" woffset="235" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_X_BL" site="226" woffset="236" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_Y_BL" site="227" woffset="237" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_X_BR" site="228" woffset="238" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_Y_BR" site="229" woffset="239" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_TH" site="230" woffset="240" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_MXC" site="231" woffset="241" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_MYL" site="232" woffset="242" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_MYR" site="233" woffset="243" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_TIM" site="234" woffset="244" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_ALG_RETRY_CNT" site="235" woffset="245" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_RESERV_1" site="236" woffset="246" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_RESERV_2" site="237" woffset="247" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_RESERV_3" site="238" woffset="248" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_EXP_OFT_X" site="239" woffset="249" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_EXP_OFT_Y" site="240" woffset="250" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_EXP_OFT_Z" site="241" woffset="251" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="7_RESERV_4" site="242" woffset="252" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_EXP_ILL" site="243" woffset="253" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_EXP_PWR" site="244" woffset="254" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_EXP_TIM" site="245" woffset="255" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_GAP_FL" site="246" woffset="256" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_GAP_FR" site="247" woffset="257" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_GAP_BL" site="248" woffset="258" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_GAP_BR" site="249" woffset="259" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_GAP_TIM" site="250" woffset="260" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_GAP_RETRY_CNT" site="251" woffset="261" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_X_FL" site="252" woffset="262" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_Y_FL" site="253" woffset="263" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_X_FR" site="254" woffset="264" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_Y_FR" site="255" woffset="265" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_X_BL" site="256" woffset="266" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_Y_BL" site="257" woffset="267" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_X_BR" site="258" woffset="268" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_Y_BR" site="259" woffset="269" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_TH" site="260" woffset="270" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_MXC" site="261" woffset="271" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_MYL" site="262" woffset="272" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_MYR" site="263" woffset="273" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_TIM" site="264" woffset="274" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_ALG_RETRY_CNT" site="265" woffset="275" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_RESERV_1" site="266" woffset="276" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_RESERV_2" site="267" woffset="277" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_RESERV_3" site="268" woffset="278" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_EXP_OFT_X" site="269" woffset="279" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_EXP_OFT_Y" site="270" woffset="280" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_EXP_OFT_Z" site="271" woffset="281" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="8_RESERV_4" site="272" woffset="282" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L13ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L13_Developer_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="DEV_processing_tank_Number" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DEV_processing_tank_temperature" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="DEV_processing_tank_use_time" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DEV_processing_tank_idle_time" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DEV_processing_tank_number_of_glass" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DEV_processing_tank_conductivity" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing(1)_chamber_slit_nozzle_flow" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing(1)_chamber_slit_nozzle_pressure" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing(1)_chamber_shower_flow" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing(1)_chamber_upper_shower_pressure" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing(2)_chamber_shower_flow" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing(2)_chamber_upper_shower_pressure" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing(3)_chamber_shower_flow" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing(3)_chamber_upper_shower_pressure" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing(4)_chamber_shower_flow" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing(4)_chamber_upper_shower_pressure" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Washing_chamber_entrance_slit_nozzle_flow" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Washing_chamber_entrance_slit_nozzle_pressure" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Washing_chamber_upstream_shower_flow" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Washing_chamber_upstream_upper_shower_pressure" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Washing_chamber_downstream_shower_flow" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Washing_chamber_downstream_upper_shower_pressure" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Washing_chamber_exit_slit_nozzle_flow" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Washing_chamber_exit_slit_nozzle_pressure" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="H/M-slit_chamber_shower_flow" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="H/M-slit_chamber_upper_shower_pressure" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="H/M-slit_chamber_H/M-slit_shower_flow" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="H/M-slit_chamber_H/M-slit_shower_pressure" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="H/M-slit_chamber_H/M-slit_air_flow" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="H/M-slit_chamber_H/M-slit_air_pressure" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="HPMJ-to-A/K_chamber_shower_flow" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HPMJ_chamber_upper_shower_pressure" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="HPMJ_chamber_HPMJ_pressure" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="HPMJ_unit_DIW_flow" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="HPMJ_unit_CO2_flow" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="HPMJ_unit_resistivity" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Air_knife_chamber_upper_air_knife_flow" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Air_knife_chamber_upper_air_knife_pressure" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Air_knife_chamber_lower_air_knife_flow" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Air_knife_chamber_lower_air_knife_pressure" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Hot_blow_chamber_temperature" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Hot_blow_chamber_air_flow" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Developing_processing_time" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Rinse_processing_time" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L15ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L15_AOI_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe_ID" item="Recipe_ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Ref_Lamp_Life_Time" item="Ref_Lamp_Life_Time" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tra_Lamp_Life_Time" item="Tra_Lamp_Life_Time" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Ref_Light_Level" item="Ref_Light_Level" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tra_Light_Level" item="Tra_Light_Level" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Ref_Light_Target" item="Ref_Light_Target" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tra_Light_Target" item="Tra_Light_Target" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_LD_HS" item="Tact_LD_HS" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_Clamp_AOI" item="Tact_Clamp_AOI" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_Inspection_AOI" item="Tact_Inspection_AOI" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_Unclamp_AOI" item="Tact_Unclamp_AOI" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_LD_CV_UP_AOI" item="Tact_LD_CV_UP_AOI" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_Total_AOI" item="Tact_Total_AOI" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_Transfer_REV" item="Tact_Transfer_REV" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_Clamp_REV" item="Tact_Clamp_REV" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_Review" item="Tact_Review" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_Unclamp_REV" item="Tact_Unclamp_REV" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_ULD_HS" item="Tact_ULD_HS" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_Total_REV" item="Tact_Total_REV" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L19ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L19_Macro_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe_ID" item="6" site="1" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip_Count" item="1" site="2" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Glass_Judge" item="1" site="3" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L20ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L20_Oven_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe_NO" item="RecipeNo." site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN_NO" item="OvenNo." site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN1_SLOT_NO" item="Chamber1SlotNo." site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN1_SET_TEMP" item="Oven1SetTemp." site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN1_PROCESS_TEMP" item="Oven1ProcessBakeTemp." site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN1_SET_TIME" item="Oven1ProcessSettingTime" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN1_PROCESS_TIME" item="Oven1ProcessTime" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN2_SLOT_NO" item="Chamber2SlotNo." site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN2_SET_TEMP" item="Oven2SetTemp." site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN2_PROCESS_TEMP" item="Oven2ProcessBakeTemp." site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN2_SET_TIME" item="Oven2ProcessSettingTime" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OVEN2_PROCESS_TIME" item="Oven2ProcessTime" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP_SLOT_NO" item="CoolingSlotNo." site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP_SET_TIME" item="CoolingSetTime" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CP_PROCESS_TIME" item="CoolingProcessTime" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV1_HEAT_EXH1" item="Oven1HeaterExhaust1" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV1_HEAT_EXH2" item="Oven1HeaterExhaust2" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV1_HEAT_EXH3" item="Oven1HeaterExhaust3" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV1_GEN_EXH1" item="Oven1GeneralExhaust1" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV1_GEN_EXH2" item="Oven1GeneralExhaust2" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV1_GEN_EXH3" item="Oven1GeneralExhaust3" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV1_FILTER_UP" item="Oven1FilterUpDefferent" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV1_FILTER_DN" item="Oven1FilterDownDefferent" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV2_HEAT_EXH1" item="Oven2HeaterExhaust1" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV2_HEAT_EXH2" item="Oven2HeaterExhaust2" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV2_HEAT_EXH3" item="Oven2HeaterExhaust3" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV2_GEN_EXH1" item="Oven2GeneralExhaust1" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV2_GEN_EXH2" item="Oven2GeneralExhaust2" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV2_GEN_EXH3" item="Oven2GeneralExhaust3" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OV2_FILTER" item="Oven2FilterDefferent" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L22ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_05_FCGPH_L22_Unloader_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_05_FCGPH-PLC Address Map_Ver1.07.xls">
+  <item name="TactTime" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="IONCDAPressure" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="OTHERCDAPressure" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="VacuumUPPERPressure" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="VacuumUNDERPressure" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PortNo" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

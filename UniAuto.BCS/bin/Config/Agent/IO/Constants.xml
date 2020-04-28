@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT>
+  <constant name="ALARMSTATUS" default="" >
+    <values>
+      <item key ="0" value= "CLEAR"/>
+      <item key ="1" value= "SET"/>
+    </values>
+	</constant>
+	<constant name="ALARMLEVEL">
+    <values>
+      <item key ="0" value= "W"/>
+      <item key ="1" value= "A"/>
+    </values>
+	</constant>
+	<constant name="EQPSTATUS">
+    <values>
+      <item key ="1" value= "SETUP"/>
+	    <item key ="2" value= "STOP"/>
+	    <item key ="3" value= "PAUSE"/>
+	    <item key ="4" value= "IDLE"/>
+	    <item key ="5" value= "RUN"/>
+    </values>
+	</constant>
+  <constant name="UNITTATUS">
+    <values>
+      <item key ="0" value= "NOUNIT"/>
+      <item key ="1" value= "SETUP"/>
+      <item key ="2" value= "STOP"/>
+      <item key ="3" value= "PAUSE"/>
+      <item key ="4" value= "IDLE"/>
+      <item key ="5" value= "RUN"/>
+    </values>
+  </constant>
+  <constant name="VCRRESULT">
+    <values>
+      <item key ="1" value= "OK"/>
+      <item key ="2" value= "UNMATCH"/>
+      <item key ="3" value= "NG"/>
+      <item key ="4" value= "NG"/>
+      <item key ="5" value= "PASS"/>
+    </values>
+  </constant>
+  <constant name="MES_PORTUSETYPE">
+    <values>
+      <item key ="0" value= ""/>
+      <item key ="1" value= "TFT"/>
+      <item key ="2" value= "CF"/>
+      <item key ="3" value= "DM"/>
+      <item key ="4" value= "MQC"/>
+      <item key ="5" value= "HT"/>
+      <item key ="6" value= "LT"/>
+      <item key ="7" value= "ENG"/>
+      <item key ="8" value= "IGZO"/>
+      <item key ="9" value= "ILC"/>
+      <item key ="10" value= "FLC"/>
+      <item key ="11" value= "TR"/>
+      <item key ="12" value= "TK"/>
+      <item key ="13" value= "UV"/>
+      <item key ="14" value= ""/>
+      <item key ="15" value= "OK"/>
+      <item key ="16" value= "NG"/>
+      <item key ="17" value= "MIX"/>
+      <item key ="18" value= "EMP"/>
+      <item key ="19" value= "RW"/>
+      <item key ="20" value= ""/>
+      <item key ="21" value= ""/>
+      <item key ="22" value= ""/>
+      <item key ="23" value= ""/>
+      <item key ="24" value= "RJ"/>
+      <item key ="25" value= ""/>
+      <item key ="26" value= ""/>
+    </values>
+  </constant>
+  <constant name="MES_PORTENABLEFLAG">
+    <values>
+      <item key ="0" value= ""/>
+      <item key ="1" value= "ENABLE"/>
+      <item key ="2" value= "DISABLE"/>
+    </values>
+  </constant>
+  <constant name="MES_PORTTYPE">
+    <values>
+      <item key ="0" value= ""/>
+      <item key ="1" value= "PL"/>
+      <item key ="2" value= "PU"/>
+      <item key ="3" value= "PB"/>
+      <item key ="4" value= "BB"/>
+      <item key ="5" value= "BL"/>
+      <item key ="6" value= "BU"/>
+    </values>
+  </constant>
+  <constant name="MES_PORTOPERMODE">
+    <values>
+        <item key ="0" value= ""/>
+      <item key ="1" value= "PACK"/>
+      <item key ="2" value= "UNPACK"/>
+    </values>
+  </constant>
+  <constant name="MES_PORTTRANSFERSTATE">
+    <values>
+        <item key ="0" value= ""/>
+      <item key ="1" value= "LR"/>
+      <item key ="2" value= "LC"/>
+      <item key ="3" value= "UR"/>
+      <item key ="4" value= "UC"/>
+    </values>
+  </constant>
+  <constant name="MES_PORTACCESSMODE">
+    <values>
+        <item key ="0" value= ""/>
+      <item key ="1" value= "MANUAL"/>
+      <item key ="2" value= "AUTO"/>
+      <item key ="3" value= "AUTO"/>
+    </values>
+  </constant>
+  <constant name="MES_MATERIALSTATE">
+    <values>
+        <item key ="0" value= ""/>
+      <item key ="1" value= "MOUNT"/>
+      <item key ="2" value= "DISMOUNT"/>
+      <item key ="3" value= "INUSE"/>
+      <item key ="4" value= "PREPARE"/>
+    </values>
+  </constant>
+  <constant name="CSOTSECS_ALARMLEVEL">
+    <values>
+      <item key ="1" value= "W"/>
+      <item key ="2" value= "A"/>
+    </values>
+  </constant>
+  <constant name="CSOTSECS_ALARMCATEGORIES">
+    <values>
+      <item key ="0" value= "Not used"/>
+      <item key ="1" value= "Personal safety"/>
+      <item key ="2" value= "Equipment safety"/>
+      <item key ="3" value= "Parameter control warning"/>
+      <item key ="4" value= "Parameter control error"/>
+      <item key ="5" value= "Irrecoverable error"/>
+      <item key ="6" value= "Equipment status warning"/>
+      <item key ="7" value= "Attention flags"/>
+      <item key ="8" value= "Data integrity"/>
+    </values>
+  </constant>
+  <constant name="NIKONSECS_PROCESSSTATE">
+    <values>
+      <item key ="0" value= "SETUP"/>
+      <item key ="1" value= "STOP"/>
+      <item key ="2" value= "SETUP"/>
+      <item key ="3" value= "IDLE"/>
+      <item key ="4" value= "RUN"/>
+      <item key ="5" value= "RUN"/>
+      <item key ="6" value= "PAUSE"/>
+      <item key ="7" value= "PAUSE"/>
+      <item key ="8" value= "RUN"/>
+      <item key ="9" value= "STOP"/>
+    </values>
+  </constant>
+  <constant name="NIKONSECS_MASKSTATE">
+    <values>
+      <item key ="0" value= "DISMOUNT"/>
+      <item key ="1" value= "MOUNT"/>
+      <item key ="2" value= "PREPARE"/>
+      <item key ="3" value= "PREPARE"/>
+      <item key ="4" value= "PREPARE"/>
+      <item key ="5" value= "PREPARE"/>
+      <item key ="6" value= "INUSE"/>
+    </values>
+  </constant>
+  <constant name="PLC_ARRAY_JOBJUDGE" default="0">
+    <values>
+      <item key ="G" value= "1" discription="Good"/>
+      <item key ="N" value= "2" discription="No Good"/>
+      <item key ="R" value= "3" discription="Re work"/>
+      <item key ="P" value= "5" discription="Repair"/>
+      <item key ="S" value= "4" discription="Scrap"/>
+    </values>
+  </constant>
+  <constant name="PLC_CF_JOBJUDGE" default="0">
+    <values>
+      <item key ="OK" value= "1" discription="Good"/>
+      <item key ="NG" value= "2" discription="No Good"/>
+      <item key ="RP" value= "5" discription="Required Repair"/>
+      <item key ="IR" value= "6" discription="Ink Repair"/>
+      <item key ="RW" value= "3" discription="Rework"/>
+    </values>
+  </constant>
+  <constant name="PLC_CELL_JOBJUDGE" default="0">
+    <values>
+      <item key ="G" value= "1" discription="Good"/>
+      <item key ="N" value= "2" discription="No Good"/>
+      <item key ="R" value= "3" discription="Re work"/>
+      <item key ="P" value= "5" discription="Repair"/>
+      <item key ="S" value= "4" discription="Scrap"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_JOBJUDGE_BC" default="INSPECTION_SKIP">
+    <values>
+      <item key ="0" value= "INSPECTION_SKIP"/>
+      <item key ="1" value= "OK"/>
+      <item key ="2" value= "NG"/>
+      <item key ="3" value= "REQUIRED_REWORK"/>
+      <item key ="4" value= "REJECT"/>
+      <item key ="5" value= "REQUIRED_REPAIR"/>
+	    <item key ="6" value= "REJUDGE"/>
+      <item key ="9" value= "FILM_REWORK"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_JOBJUDGE_MES" default="">
+    <values>
+      <item key ="0" value= ""/>
+      <item key ="1" value= "G"/>
+      <item key ="2" value= "N"/>
+      <item key ="3" value= "R"/>
+      <item key ="4" value= "S"/>
+      <item key ="5" value= "P"/>
+	    <item key ="6" value= ""/>
+      <item key ="7" value= ""/>
+      <item key ="8" value= ""/>
+      <item key ="9" value= "F"/>
+    </values>
+  </constant>  
+  <constant name="CELL_JOBJUDGE_BC" default="INSPECTION_SKIP">
+    <values>
+      <item key ="0" value= "INSPECTION_SKIP"/>
+      <item key ="1" value= "OK"/>
+      <item key ="2" value= "NG"/>
+      <item key ="3" value= "REQUIRED_REWORK"/>
+      <item key ="4" value= "REJECT"/>
+      <item key ="5" value= "REQUIRED_REPAIR"/>
+	  <item key ="6" value= "REJUDGE"/>
+      <item key ="7" value= "NEED_TO_CHECK"/>
+    </values>
+  </constant>  
+  <constant name="CELL_JOBJUDGE_MES" default="G">
+    <values>
+      <item key ="0" value= "G"/>
+      <item key ="1" value= "G"/>
+      <item key ="2" value= "N"/>
+      <item key ="3" value= "R"/>
+      <item key ="4" value= "PD"/>
+      <item key ="5" value= "RP"/>
+      <item key ="6" value= "IR"/>
+      <item key ="7" value= "O"/>
+      <item key ="8" value= "RV"/>
+      <item key ="9" value= "RJ"/>
+    </values>
+  </constant>  
+  <constant name="CF_JOBJUDGE_BC" default="INSPECTION_SKIP">
+    <values>
+      <item key ="0" value= "INSPECTION_SKIP"/>
+      <item key ="1" value= "OK"/>
+      <item key ="2" value= "NG"/>
+      <item key ="3" value= "REQUIRED_REWORK"/>
+      <item key ="4" value= "REJECT"/>
+      <item key ="5" value= "REQUIRED_REPAIR"/>
+      <item key ="7" value= "DR"/>
+    </values>
+  </constant>  
+   <constant name="CF_JOBJUDGE_MES" default="">
+    <values>
+      <item key ="0" value= ""/>
+      <item key ="1" value= "OK"/>
+      <item key ="2" value= "NG"/>
+      <item key ="3" value= "RW"/>
+      <item key ="4" value= "PD"/>
+      <item key ="5" value= "RP"/>
+      <item key ="6" value= "IR"/>
+      <item key ="7" value= "OTHER"/>
+      <item key ="8" value= "RV"/>
+    </values>
+  </constant>  
+  <constant name="INDEXEROPERATIONMODE" default="">
+    <values>
+      <item key ="0" value= "Sampling Mode"/>
+      <item key ="1" value= "Sorter Mode"/>
+      <item key ="2" value= "Changer Mode"/>
+      <item key ="3" value= "Cool Run Mode"/>
+      <item key ="4" value= "Force Clean Out"/>
+      <item key ="5" value= "Mix-Run Mode"/>
+      <item key ="7" value= "MQC Mode"/>
+      <item key ="8" value= "Through Mode"/>
+      <item key ="9" value= "Fix Mode"/>
+      <item key ="10" value= "Random Mode"/>
+    </values>
+  </constant> 
+   <constant name="MES_LINEOPERMODE_FLC" default="">
+    <values>
+      <item key ="1" value= "ILC"/>
+      <item key ="2" value= "CVD"/>
+    </values>
+  </constant>
+  <constant name="PLC_OXRINFO_AC" default="0000">
+    <values>
+      <item key =" " value= "0000"/>
+      <item key ="X" value= "0000"/>
+      <item key ="R" value= "1000"/>
+      <item key ="L" value= "0100"/>
+      <item key ="O" value= "1100"/>
+      <item key ="F" value= "0010"/>
+    </values>
+  </constant>
+  <constant name="PLC_OXRINFO_CELL" default="00">
+    <values>
+      <item key =" " value= "00"/>
+      <item key ="X" value= "00"/>
+      <item key ="R" value= "10"/>
+      <item key ="O" value= "01"/>
+    </values>
+  </constant>
+  <constant name="PLC_OXRINFO2_AC" default="X">
+    <values>
+      <item key ="0000" value= "X"/>
+      <item key ="1000" value= "R"/>
+      <item key ="0100" value= "L"/>
+      <item key ="1100" value= "O"/>
+      <item key ="0010" value= "F"/>
+    </values>
+  </constant>
+  <constant name="PLC_OXRINFO2_CELL" default="X">
+    <values>
+      <item key ="00" value= "X"/>
+      <item key ="10" value= "R"/>
+      <item key ="01" value= "O"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_PHOTO_PRE_INLINE_ID" default="0">
+    <values>
+      <item key =" " value= "0"/>
+      <item key ="TBPHL100" value= "21"/>
+      <item key ="TBPHL200" value= "22"/>
+      <item key ="TBPHL300" value= "23"/>
+      <item key ="TBPHL400" value= "24"/>
+      <item key ="TBPHL500" value= "25"/>
+      <item key ="TBPHL600" value= "26"/>
+      <item key ="TBPHL700" value= "27"/>
+      <item key ="TBPHL800" value= "28"/>
+      <item key ="TBPHL900" value= "29"/>
+      <item key ="TBPHLA00" value= "30"/>
+      <item key ="TBPHLB00" value= "31"/>
+      <item key ="TBPHLC00" value= "32"/>
+      <item key ="TBPHLD00" value= "33"/>
+      <item key ="TBPHLE00" value= "34"/>
+      <item key ="TBPHLF00" value= "35"/>
+      <item key ="TBPHLG00" value= "36"/>
+    </values>
+  </constant>
+  <constant name="PLC_ARRAY_THICKNESS" default="0">
+    <values>
+      <item key =" " value= "0"/>
+      <item key ="0.3" value= "1"/>
+      <item key ="0.4" value= "2"/>
+      <item key ="0.5" value= "3"/>
+      <item key ="0.6" value= "4"/>
+      <item key ="0.7" value= "5"/>
+    </values>
+  </constant>
+  <constant name="PIL_TACKTIME_CHECKUNIT_L6" default="0">
+    <values>
+      <item key="DEFAULT" value="0" />
+      <item key="CHECKUNIT" value="1,2" />
+    </values>
+  </constant>
+  <constant name="PIL_TACKTIME_CHECKUNIT_L7" default="0">
+    <values>
+      <item key="DEFAULT" value="0" />
+      <item key="CHECKUNIT" value="1,2" />
+    </values>
+  </constant>
+  <constant name="PIL_TACKTIME_CHECKUNIT_L15" default="0">
+    <values>
+      <item key="DEFAULT" value="0" />
+      <item key="CHECKUNIT" value="1,2" />
+    </values>
+  </constant>
+  <constant name="PIL_TACKTIME_DELAYTIME_L6" default="5">
+    <values>
+      <item key="DOWN0" value="5" />
+      <item key="DOWN1" value="10" />
+    </values>
+  </constant>
+  <constant name="PIL_TACKTIME_DELAYTIME_L7" default="5">
+    <values>
+      <item key="DOWN0" value="5" />
+      <item key="DOWN1" value="10" />
+    </values>
+  </constant>
+  <constant name="PIL_TACKTIME_DELAYTIME_L15" default="5">
+    <values>
+      <item key="DOWN0" value="5" />
+      <item key="DOWN1" value="10" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_CHECKUNIT_L7" default="0">
+    <values>
+      <item key="DEFAULT" value="0" />
+      <item key="CHECKUNIT" value="1,2,3,4" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_CHECKUNIT_L11" default="0">
+    <values>
+      <item key="DEFAULT" value="0" />
+      <item key="CHECKUNIT" value="1,2" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_CHECKUNIT_L13" default="0">
+    <values>
+      <item key="DEFAULT" value="0" />
+      <item key="CHECKUNIT" value="1,2,3" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_CHECKUNIT_L14" default="0">
+    <values>
+      <item key="DEFAULT" value="0" />
+      <item key="CHECKUNIT" value="1,2" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_CHECKUNIT_L16" default="0">
+    <values>
+      <item key="DEFAULT" value="0" />
+      <item key="CHECKUNIT" value="1,2" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_CHECKUNIT_L19" default="0">
+    <values>
+      <item key="DEFAULT" value="0" />
+      <item key="CHECKUNIT" value="1,2,3" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_DELAYTIME_L7" default="5">
+    <values>
+      <item key="DOWN0" value="5" />
+      <item key="DOWN1" value="10" />
+      <item key="DOWN2" value="20" />
+      <item key="DOWN3" value="30" />
+      <item key="DOWN4" value="40" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_DELAYTIME_L11" default="5">
+    <values>
+      <item key="DOWN0" value="5" />
+      <item key="DOWN1" value="10" />
+      <item key="DOWN2" value="30" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_DELAYTIME_L13" default="5">
+    <values>
+      <item key="DOWN0" value="5" />
+      <item key="DOWN1" value="20" />
+      <item key="DOWN2" value="30" />
+      <item key="DOWN3" value="30" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_DELAYTIME_L14" default="5">
+    <values>
+      <item key="DOWN0" value="5" />
+      <item key="DOWN1" value="30" />
+      <item key="DOWN2" value="40" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_DELAYTIME_L16" default="5">
+    <values>
+      <item key="DOWN0" value="5" />
+      <item key="DOWN1" value="30" />
+      <item key="DOWN2" value="40" />
+    </values>
+  </constant>
+  <constant name="ODF_TACKTIME_DELAYTIME_L19" default="5">
+    <values>
+      <item key ="DOWN0" value= "5"/>
+      <item key ="DOWN1" value= "30"/>
+      <item key ="DOWN2" value= "40"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_RUNMODE_CVD" default="0">
+    <values>
+      <item key ="1" value= "" discription="2S"/>
+      <item key ="2" value= "" discription="2D"/>
+      <item key ="3" value= "" discription="4P1"/>
+      <item key ="4" value= "" discription="4P2"/>
+      <item key ="5" value= "" discription="2O"/>
+      <item key ="6" value= "" discription="2Q"/>
+      <item key ="7" value= "" discription="4Q"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_RUNMODE_DRY" default="0">
+    <values>
+      <item key ="1" value= "" discription="Normal"/>
+      <item key ="2" value= "" discription="IGZO"/>
+      <item key ="3" value= "" discription="MQC"/>
+      <item key ="4" value= "" discription="ENG"/>
+      <item key ="5" value= "" discription="A(Reserved)"/>
+      <item key ="6" value= "" discription="B(Reserved)"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_RUNMODE_FLC" default="0" >
+    <values>
+      <item key ="1" value= "" discription="Normal"/>
+      <item key ="2" value= "" discription="CVD"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_RUNMODE_ILC" default="0" >
+    <values>
+      <item key ="1" value= "" discription="ILC"/>
+      <item key ="2" value= "" discription="FLC"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_RUNMODE_OVN" default="0" >
+    <values>
+      <item key ="1" value= "" discription="NORMAL"/>
+      <item key ="2" value= "" discription="MQC"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_RUNMODE_TPE" default="0" >
+    <values>
+      <item key ="1" value= "" discription="Aging Enable"/>
+      <item key ="2" value= "" discription="Aging Disable"/>
+      <item key ="3" value= "" discription="Daily Check"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_RUNMODE_MAC" default="0" >
+    <values>
+      <item key ="1" value= "" discription="Normal"/>
+      <item key ="2" value= "" discription="Turn"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_RUNMODE_PVD" default="0" >
+    <values>
+      <item key ="1" value= "" discription="NORMAL"/>
+      <item key ="2" value= "" discription="MIX"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_RUNMODE_ELA" default="0" >
+    <values>
+      <item key ="1" value= "" discription="NORMAL"/>
+      <item key ="2" value= "" discription="MQC"/>
+    </values>
+  </constant>
+  <constant name="ARRAY_RUNMODE_BFG" default="0" >
+    <values>
+      <item key ="1" value= "" discription="Normal"/>
+      <item key ="2" value= "" discription="Scrape"/>
+    </values>
+  </constant>
+  
+  <constant name="ARRAY_CHAMBERMODE_CVD" default="0" >
+    <values>
+      <item key ="1" value= "" discription="PROD"/>
+      <item key ="2" value= "" discription="MQC"/>
+    </values>
+  </constant>
+
+  <constant name="ARRAY_CHAMBERMODE_DRY" default="0" >
+    <values>
+      <item key ="1" value= "" discription="MQC"/>
+      <item key ="2" value= "" discription="PS"/>
+      <item key ="3" value= "" discription="GE"/>
+      <item key ="4" value= "" discription="ILD"/>
+      <item key ="5" value= "" discription="SD"/>
+      <item key ="6" value= "" discription="PV"/>
+      <item key ="7" value= "" discription="ASH"/>
+      <item key ="8" value= "" discription="PLN"/>
+    </values>
+  </constant>
+
+  <constant name="ARRAY_CHAMBERMODE_PVD" default="0" >
+    <values>
+      <item key ="1" value= "" discription="MQC1"/>
+      <item key ="2" value= "" discription="MQC2"/>
+      <item key ="3" value= "" discription="LS"/>
+      <item key ="4" value= "" discription="GE"/>
+      <item key ="5" value= "" discription="SD"/>
+      <item key ="6" value= "" discription="M3"/>
+      <item key ="7" value= "" discription="BITO"/>
+      <item key ="8" value= "" discription="TITO"/>
+    </values>
+  </constant>
+
+  <constant name="CF_PHOTOBACKUP" default="">
+    <values>
+      <item key ="1300" value= "10000000"/>
+      <item key ="2300" value= "01000000"/>
+      <item key ="3300" value= "00100000"/>
+      <item key ="4300" value= "00010000"/>
+      <item key ="5300" value= "00001000"/>
+      <item key ="6200" value= "00000100"/>
+      <item key ="6300" value= "00000100"/>
+      <item key ="" value= "000000000"/>
+    </values>
+  </constant>
+  
+  <constant name="CF_RUNMODE_UPK" default="0" >
+    <values>
+      <item key ="1" value= "TFTDENSE" discription="TFT"/>
+      <item key ="2" value= "CFDENSE" discription="CF"/>
+    </values>
+  </constant>
+  <constant name="CF_RUNMODE_UPKULD" default="0" >
+    <values>
+      <item key ="3" value= "NORMAL" discription="NORMAL"/>
+      <item key ="4" value= "RE-CLEAN" discription="RE-CLEAN"/>
+    </values>
+  </constant>
+  <constant name="CF_RUNMODE_MAC" default="0" >
+    <values>
+      <item key ="1" value= "FIMACRO" discription="FIP"/>
+      <item key ="2" value= "MQC" discription="MQC"/>
+      <item key ="3" value ="BMACRO" discription="B-Macro"/>
+    </values>
+  </constant>
+  <constant name="CF_RUNMODE_REP" default="0" >
+    <values>
+      <item key ="1" value= "NORMAL" discription="Repair"/>
+      <item key ="2" value= "INK" discription="Ink Repair"/>
+    </values>
+  </constant>
+  <constant name="CF_RUNMODE_MQC_TTP" default="0" >
+    <values>
+      <item key ="1" value= "Aging Enable" discription="AGING-ENABLE"/>
+      <item key ="2" value= "Aging Disable" discription="AGING-DISABLE"/>
+    </values>
+  </constant>
+  <constant name="CSOT_SECS_RUNMODE" default="NORN" >
+    <values>
+      <item key ="NORN" value= "NORMAL" discription="Normal Mode"/>
+      <item key ="PASS" value= "PASS" discription="Pass Mode"/>
+      <item key ="APAS" value= "APAS" discription="Abnormal Pass Mode"/>
+      <item key ="MQC" value= "MQC" discription="MQC"/>
+      <item key ="MIX" value= "MIX" discription="MIX"/>
+      <item key ="PS" value= "PS" discription="PS(DRY Only)"/>
+      <item key ="GE" value= "GE" discription="GE(DRY Only)"/>
+      <item key ="ILD" value= "ILD" discription="ILD(DRY Only)"/>
+      <item key ="SD" value= "SD" discription="SD(DRY Only)"/>
+      <item key ="PV" value= "PV" discription="PV(DRY Only)"/>
+      <item key ="ASH" value= "ASH" discription="ASH(DRY Only)"/>
+      <item key ="PLN" value= "PLN" discription="PL(DRY Only)"/>
+      <item key ="PROD" value= "PROD" discription="PROD(CVD Only)"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_PIL" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "NORMAL"/>
+      <item key ="2" value= "CROSSLINEMODE1"/>
+      <item key ="3" value= "CROSSLINEMODE2"/>
+      <item key ="4" value= "CROSSLINEMODE3"/>
+      <item key ="5" value= "BACKFLOWMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_RWK" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "INLINEMODE"/>
+      <item key ="2" value= "REWORKMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_QUP" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "TYPEAMODE"/>
+      <item key ="2" value= "TYPEBMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_PDR" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "NORMAL"/>
+      <item key ="2" value= "SORTERMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_TAM" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "INSPECTIONMODE"/>
+      <item key ="2" value= "SORTERMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_PTH" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "INSPECTIONMODE"/>
+      <item key ="2" value= "REPAIRMODE"/>
+      <item key ="3" value= "SORTERMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_GAP" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "GAPANDSORTERMODE"/>
+      <item key ="2" value= "GMIANDSORTERMODE"/>
+      <item key ="3" value= "GAPANDGMIMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_RWT" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "INSPECTIONMODE"/>
+      <item key ="2" value= "SORTERMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_SOR" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "GRADEMODE"/>
+      <item key ="2" value= "FLAGMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_CHN" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "CSTTOTRAYMIX"/>
+      <item key ="2" value= "CSTMIXTOTRAY"/>
+      <item key ="3" value= "CSTTOTRAYALL"/>
+      <item key ="4" value= "CSTTOTRAYNG"/>
+      <item key ="5" value= "TRAYMIXTOCST"/>
+      <item key ="6" value= "TRAYTOCSTALL"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_CRP" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "INSPECTIONMODE"/>
+      <item key ="2" value= "REPAIRMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_QSR" default="NORMAL">
+    <values>
+      <item key ="0" value= "NORMAL"/>
+      <item key ="1" value= "FLAGMODE"/>
+    </values>
+  </constant>
+  <constant name="CELL_RUNMODE_PCK" default="NORMAL">
+    <values>
+      <item key ="0" value= "UNKNOW"/>
+      <item key ="1" value= "NORMAL"/>
+      <item key ="2" value= "CHANGER"/>
+    </values>
+  </constant>
+  <constant name="CELL_ARRAYTTPEQVERCODE" default="0">
+    <values>
+      <item key ="" value= "0"/>
+      <item key ="AKT1" value= "1"/>
+      <item key ="AKT2" value= "2"/>
+      <item key ="AKT3" value= "3"/>
+      <item key ="ULVAC1" value= "4"/>
+      <item key ="ULVAC2" value= "5"/>
+      <item key ="ULVAC3" value= "6"/>
+    </values>
+  </constant>
+  <!-- For Robot Panel Size Check ,UpArm=UP ,LowArm=LOW , AnyArm=UP,LOW-->
+  <constant name="ROBOT_PANEL_SIZE_FLAG" default="">
+    <values>
+      <item key ="0" value= ""/>
+      <item key ="1" value= "UP" discription="B1 Size: 22~39.5"/>
+      <item key ="2" value= "UP" discription="B2 Size: 39.5~57"/>
+      <item key ="3" value= "LOW" discription="S1 Size: 57~65"/>
+      <item key ="4" value= "LOW" discription="S2 Size: 65~76"/>
+    </values>
+  </constant>
+  <!-- For Robot PMT Line RunMode Priority Key=RunMode , Value= Priority 1>2>3.... -->
+  <constant name="CBPMT_RUNMODE_PRIORITY" default="">
+    <values>
+      <item key ="0" value= ""/>
+      <item key ="1" value= "1" discription="Sampling Mode_PMI"/>
+      <item key ="2" value= "1" discription="Sort Mode_PMI"/>
+      <item key ="3" value= "1" discription="Cassette Changer Mode_PMI"/>
+      <item key ="4" value= "2" discription="Sort Mode_PTI"/>
+      <item key ="5" value= "2" discription="Cassette Changer Mode_PTI"/>
+      <item key ="6" value= "2" discription="Thickness Inspection_PTI"/>
+      <item key ="7" value= "2" discription="Photo Inspection_PTI"/>
+    </values>
+  </constant>
+  <!-- For Robot PMT Line Define RunMode is PMI or PTI -->
+  <constant name="CBPMT_RUNMODE_DEFINELINE" default="UNKNOWN">
+    <values>
+      <item key ="0" value= "UNKNOWN"/>
+      <item key ="1" value= "PMI" discription="Sampling Mode_PMI"/>
+      <item key ="2" value= "PMI" discription="Sort Mode_PMI"/>
+      <item key ="3" value= "PMI" discription="Cassette Changer Mode_PMI"/>
+      <item key ="4" value= "PTI" discription="Sort Mode_PTI"/>
+      <item key ="5" value= "PTI" discription="Cassette Changer Mode_PTI"/>
+      <item key ="6" value= "PTI" discription="Thickness Inspection_PTI"/>
+      <item key ="7" value= "PTI" discription="Photo Inspection_PTI"/>
+    </values>
+  </constant>
+  <!-- For Robot PMT Line Define PMI,PTI StageNo -->
+  <constant name="CBPMT_EQP_STAGENO" default="">
+    <values>
+      <item key ="PMI" value= "11"/>
+      <item key ="PTI" value= "12"/>
+    </values>
+  </constant>
+  <!-- For Robot SOR Line Define SunRunMode -->
+  <constant name="CBSOR_SUBRUNMODE" default="No Define">
+    <values>
+      <item key ="1" value= "CheckJobToUnlaoder"/>
+      <item key ="2" value= "CheckJobToDPF"/>
+      <item key ="3" value= "CheckJobInOutAlignment"/>
+      <item key ="4" value= "CheckJobGetFromLoader"/>
+      <item key ="5" value= "CheckJobGetFromDPF"/>
+    </values>
+  </constant>
+  <!-- For Robot SOR Line Define Alignment,DPF StageNo -->
+  <constant name="CBSOR_EQP_STAGENO" default="">
+    <values>
+      <item key ="ALIGNMENT" value= "11"/>
+      <item key ="DPF" value= "12"/>
+    </values>
+  </constant>
+  <!-- For Robot PRM Line Define PRM NodeNo -->
+  <constant name="CBPRM_EQP_NODENO" default="L3">
+    <values>
+      <item key ="PRM" value= "L3"/>
+    </values>
+  </constant>
+  <!--For PMT Robot Unloader Dispatch Rule Check by RunMode Use Judge Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBPMT_ULD_CHECK_PORTJUDGE" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="1" discription="Sampling Mode_PMI" />
+      <item key="2" value="1" discription="Sort Mode_PMI" />
+      <item key="3" value="0" discription="Cassette Changer Mode_PMI" />
+      <item key="4" value="0" discription="Sort Mode_PTI" />
+      <item key="5" value="0" discription="Cassette Changer Mode_PTI" />
+      <item key="6" value="0" discription="Thickness Inspection_PTI" />
+      <item key="7" value="0" discription="Photo Inspection_PTI" />
+    </values>
+  </constant>
+  <!--For PMT Robot Unloader Dispatch Rule Check by AbnormalRule Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBPMT_ULD_CHECK_ABNORMALCODE" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="0" discription="Sampling Mode_PMI" />
+      <item key="2" value="1" discription="Sort Mode_PMI" />
+      <item key="3" value="0" discription="Cassette Changer Mode_PMI" />
+      <item key="4" value="1" discription="Sort Mode_PTI" />
+      <item key="5" value="0" discription="Cassette Changer Mode_PTI" />
+      <item key="6" value="0" discription="Thickness Inspection_PTI" />
+      <item key="7" value="0" discription="Photo Inspection_PTI" />
+    </values>
+  </constant>
+  <!--For PMT Robot Unloader Dispatch Rule Check by Grade Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBPMT_ULD_CHECK_GRADE" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="0" discription="Sampling Mode_PMI" />
+      <item key="2" value="0" discription="Sort Mode_PMI" />
+      <item key="3" value="0" discription="Cassette Changer Mode_PMI" />
+      <item key="4" value="0" discription="Sort Mode_PTI" />
+      <item key="5" value="0" discription="Cassette Changer Mode_PTI" />
+      <item key="6" value="0" discription="Thickness Inspection_PTI" />
+      <item key="7" value="0" discription="Photo Inspection_PTI" />
+    </values>
+  </constant>
+  <constant name="CBPMT_ULD_CHECK_NODESTACK" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="0" discription="Sampling Mode_PMI" />
+      <item key="2" value="0" discription="Sort Mode_PMI" />
+      <item key="3" value="1" discription="Cassette Changer Mode_PMI" />
+      <item key="4" value="0" discription="Sort Mode_PTI" />
+      <item key="5" value="1" discription="Cassette Changer Mode_PTI" />
+      <item key="6" value="0" discription="Thickness Inspection_PTI" />
+      <item key="7" value="0" discription="Photo Inspection_PTI" />
+    </values>
+  </constant>
+  <!--For PMT Robot Unloader Dispatch Rule Check by CST SetCode Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBPMT_ULD_CHECK_CSTSETCODE" default="1">
+    <values>
+      <item key="0" value="0" />
+      <item key="1" value="0" discription="Sampling Mode_PMI" />
+      <item key="2" value="0" discription="Sort Mode_PMI" />
+      <item key="3" value="0" discription="Cassette Changer Mode_PMI" />
+      <item key="4" value="0" discription="Sort Mode_PTI" />
+      <item key="5" value="0" discription="Cassette Changer Mode_PTI" />
+      <item key="6" value="0" discription="Thickness Inspection_PTI" />
+      <item key="7" value="0" discription="Photo Inspection_PTI" />
+    </values>
+  </constant>
+  <!--For PRM Robot Unloader Dispatch Rule Check by RunMode Use Judge Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBPRM_ULD_CHECK_PORTJUDGE" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="0" discription="RemoveMode_TFTCF" />
+      <item key="2" value="0" discription="RemoveMode_TFT" />
+      <item key="3" value="0" discription="RemoveMode_CF" />
+      <item key="4" value="0" discription="RemoveMode_VirtualLoaderPortTFTCF" />
+      <item key="5" value="0" discription="RemoveMode_VirtualLoaderPortTFT" />
+      <item key="6" value="0" discription="RemoveMode_VirtualLoaderPortCF" />
+      <item key="7" value="0" discription="RemoveMode_VirtualLoaderUnloaderPortTFTCF" />
+      <item key="8" value="0" discription="RemoveMode_VirtualLoaderUnloaderPortTFT" />
+      <item key="9" value="0" discription="RemoveMode_VirtualLoaderUnloaderPortCF" />
+      <item key="10" value="0" discription="InspectionMode_TFTCF" />
+      <item key="11" value="0" discription="InspectionMode_TFT" />
+      <item key="12" value="0" discription="InspectionMode_CF" />
+      <item key="13" value="0" discription="InspectionMode_VirtaulPortTFTCF" />
+      <item key="14" value="0" discription="InspectionMode_VirtaulPortTFT" />
+      <item key="15" value="0" discription="InspectionMode_VirtaulPortCF" />
+    </values>
+  </constant>
+  <!--For PRM Robot Unloader Dispatch Rule Check by AbnormalRule Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBPRM_ULD_CHECK_ABNORMALCODE" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="1" discription="RemoveMode_TFTCF" />
+      <item key="2" value="1" discription="RemoveMode_TFT" />
+      <item key="3" value="1" discription="RemoveMode_CF" />
+      <item key="4" value="1" discription="RemoveMode_VirtualLoaderPortTFTCF" />
+      <item key="5" value="1" discription="RemoveMode_VirtualLoaderPortTFT" />
+      <item key="6" value="1" discription="RemoveMode_VirtualLoaderPortCF" />
+      <item key="7" value="1" discription="RemoveMode_VirtualLoaderUnloaderPortTFTCF" />
+      <item key="8" value="1" discription="RemoveMode_VirtualLoaderUnloaderPortTFT" />
+      <item key="9" value="1" discription="RemoveMode_VirtualLoaderUnloaderPortCF" />
+      <item key="10" value="1" discription="InspectionMode_TFTCF" />
+      <item key="11" value="1" discription="InspectionMode_TFT" />
+      <item key="12" value="1" discription="InspectionMode_CF" />
+      <item key="13" value="1" discription="InspectionMode_VirtaulPortTFTCF" />
+      <item key="14" value="1" discription="InspectionMode_VirtaulPortTFT" />
+      <item key="15" value="1" discription="InspectionMode_VirtaulPortCF" />
+    </values>
+  </constant>
+  <!--For PRM Robot Unloader Dispatch Rule Check by Grade Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBPRM_ULD_CHECK_GRADE" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="1" discription="RemoveMode_TFTCF" />
+      <item key="2" value="1" discription="RemoveMode_TFT" />
+      <item key="3" value="1" discription="RemoveMode_CF" />
+      <item key="4" value="1" discription="RemoveMode_VirtualLoaderPortTFTCF" />
+      <item key="5" value="1" discription="RemoveMode_VirtualLoaderPortTFT" />
+      <item key="6" value="1" discription="RemoveMode_VirtualLoaderPortCF" />
+      <item key="7" value="1" discription="RemoveMode_VirtualLoaderUnloaderPortTFTCF" />
+      <item key="8" value="1" discription="RemoveMode_VirtualLoaderUnloaderPortTFT" />
+      <item key="9" value="1" discription="RemoveMode_VirtualLoaderUnloaderPortCF" />
+      <item key="10" value="1" discription="InspectionMode_TFTCF" />
+      <item key="11" value="1" discription="InspectionMode_TFT" />
+      <item key="12" value="1" discription="InspectionMode_CF" />
+      <item key="13" value="1" discription="InspectionMode_VirtaulPortTFTCF" />
+      <item key="14" value="1" discription="InspectionMode_VirtaulPortTFT" />
+      <item key="15" value="1" discription="InspectionMode_VirtaulPortCF" />
+    </values>
+  </constant>
+  <constant name="CBPRM_ULD_CHECK_NODESTACK" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="0" discription="RemoveMode_TFTCF" />
+      <item key="2" value="0" discription="RemoveMode_TFT" />
+      <item key="3" value="0" discription="RemoveMode_CF" />
+      <item key="4" value="0" discription="RemoveMode_VirtualLoaderPortTFTCF" />
+      <item key="5" value="0" discription="RemoveMode_VirtualLoaderPortTFT" />
+      <item key="6" value="0" discription="RemoveMode_VirtualLoaderPortCF" />
+      <item key="7" value="0" discription="RemoveMode_VirtualLoaderUnloaderPortTFTCF" />
+      <item key="8" value="0" discription="RemoveMode_VirtualLoaderUnloaderPortTFT" />
+      <item key="9" value="0" discription="RemoveMode_VirtualLoaderUnloaderPortCF" />
+      <item key="10" value="0" discription="InspectionMode_TFTCF" />
+      <item key="11" value="0" discription="InspectionMode_TFT" />
+      <item key="12" value="0" discription="InspectionMode_CF" />
+      <item key="13" value="0" discription="InspectionMode_VirtaulPortTFTCF" />
+      <item key="14" value="0" discription="InspectionMode_VirtaulPortTFT" />
+      <item key="15" value="0" discription="InspectionMode_VirtaulPortCF" />
+    </values>
+  </constant>
+  <!--For PRM Robot Unloader Dispatch Rule Check by CST SetCode Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBPRM_ULD_CHECK_CSTSETCODE" default="1">
+    <values>
+      <item key="0" value="0" />
+      <item key="1" value="0" discription="RemoveMode_TFTCF" />
+      <item key="2" value="0" discription="RemoveMode_TFT" />
+      <item key="3" value="0" discription="RemoveMode_CF" />
+      <item key="4" value="0" discription="RemoveMode_VirtualLoaderPortTFTCF" />
+      <item key="5" value="0" discription="RemoveMode_VirtualLoaderPortTFT" />
+      <item key="6" value="0" discription="RemoveMode_VirtualLoaderPortCF" />
+      <item key="7" value="0" discription="RemoveMode_VirtualLoaderUnloaderPortTFTCF" />
+      <item key="8" value="0" discription="RemoveMode_VirtualLoaderUnloaderPortTFT" />
+      <item key="9" value="0" discription="RemoveMode_VirtualLoaderUnloaderPortCF" />
+      <item key="10" value="0" discription="InspectionMode_TFTCF" />
+      <item key="11" value="0" discription="InspectionMode_TFT" />
+      <item key="12" value="0" discription="InspectionMode_CF" />
+      <item key="13" value="0" discription="InspectionMode_VirtaulPortTFTCF" />
+      <item key="14" value="0" discription="InspectionMode_VirtaulPortTFT" />
+      <item key="15" value="0" discription="InspectionMode_VirtaulPortCF" />
+    </values>
+  </constant>
+  <!--For SOR Robot Unloader Dispatch Rule Check by RunMode Use Judge Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBSOR_ULD_CHECK_PORTJUDGE" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="0" discription="3699_BSOR" />
+      <item key="2" value="0" discription="3698_BSOR2" />
+      <item key="3" value="0" discription="4699_CSOR" />
+      <item key="4" value="0" discription="4698_CSOR2" />
+      <item key="5" value="1" discription="4701_UNPACK" />
+      <item key="6" value="0" discription="4720_PACK4720" />
+      <item key="7" value="0" discription="4700_PACK4700" />
+      <item key="8" value="0" discription="4640_CHANGE" />
+      <item key="9" value="0" discription="4730_PACK4730" />
+      <item key="10" value="0" discription="4696_MERGE01" />
+      <item key="11" value="0" discription="4697_MERGE02" />
+    </values>
+  </constant>
+  <!--For SOR Robot Unloader Dispatch Rule Check by AbnormalRule Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBSOR_ULD_CHECK_ABNORMALCODE" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="1" discription="3699_BSOR" />
+      <item key="2" value="1" discription="3698_BSOR2" />
+      <item key="3" value="1" discription="4699_CSOR" />
+      <item key="4" value="1" discription="4698_CSOR2" />
+      <item key="5" value="1" discription="4701_UNPACK" />
+      <item key="6" value="1" discription="4720_PACK4720" />
+      <item key="7" value="1" discription="4700_PACK4700" />
+      <item key="8" value="1" discription="4640_CHANGE" />
+      <item key="9" value="1" discription="4730_PACK4730" />
+      <item key="10" value="1" discription="4696_MERGE01" />
+      <item key="11" value="1" discription="4697_MERGE02" />
+    </values>
+  </constant>
+  <!--For SOR Robot Unloader Dispatch Rule Check by Grade Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBSOR_ULD_CHECK_GRADE" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="1" discription="3699_BSOR" />
+      <item key="2" value="1" discription="3698_BSOR2" />
+      <item key="3" value="1" discription="4699_CSOR" />
+      <item key="4" value="1" discription="4698_CSOR2" />
+      <item key="5" value="1" discription="4701_UNPACK" />
+      <item key="6" value="1" discription="4720_PACK4720" />
+      <item key="7" value="1" discription="4700_PACK4700" />
+      <item key="8" value="1" discription="4640_CHANGE" />
+      <item key="9" value="1" discription="4730_PACK4730" />
+      <item key="10" value="1" discription="4696_MERGE01" />
+      <item key="11" value="1" discription="4697_MERGE02" />
+    </values>
+  </constant>
+  <constant name="CBSOR_ULD_CHECK_NODESTACK" default="1">
+    <values>
+      <item key="0" value="1" />
+      <item key="1" value="0" discription="3699_BSOR" />
+      <item key="2" value="0" discription="3698_BSOR2" />
+      <item key="3" value="0" discription="4699_CSOR" />
+      <item key="4" value="0" discription="4698_CSOR2" />
+      <item key="5" value="0" discription="4701_UNPACK" />
+      <item key="6" value="0" discription="4720_PACK4720" />
+      <item key="7" value="0" discription="4700_PACK4700" />
+      <item key="8" value="1" discription="4640_CHANGE" />
+      <item key="9" value="0" discription="4730_PACK4730" />
+      <item key="10" value="0" discription="4696_MERGE01" />
+      <item key="11" value="0" discription="4697_MERGE02" />
+    </values>
+  </constant>
+  <!--For SOR Robot Unloader Dispatch Rule Check by CST SetCode Enable Setting. 0:DISABLE 1:ENABLE,DEFAULT=1 -->
+  <constant name="CBSOR_ULD_CHECK_CSTSETCODE" default="1">
+    <values>
+      <item key="0" value="0" />
+      <item key="1" value="0" discription="3699_BSOR" />
+      <item key="2" value="0" discription="3698_BSOR2" />
+      <item key="3" value="0" discription="4699_CSOR" />
+      <item key="4" value="0" discription="4698_CSOR2" />
+      <item key="5" value="0" discription="4701_UNPACK" />
+      <item key="6" value="0" discription="4720_PACK4720" />
+      <item key="7" value="0" discription="4700_PACK4700" />
+      <item key="8" value="0" discription="4640_CHANGE" />
+      <item key="9" value="0" discription="4730_PACK4730" />
+      <item key="10" value="0" discription="4696_MERGE01" />
+      <item key="11" value="0" discription="4697_MERGE02" />
+    </values>
+  </constant>
+  <!-- MSP LINE -->
+  <constant name="PVD_PROCESS_DATA_TARGETLIFE" default="0">
+    <value>
+      <item key="" value="TRUE"/>
+    </value>
+  </constant>
+  <constant name="PVD_PROCESS_DATA_PVDTRAY" default="0">
+    <value>
+      <item key="" value="TRUE"/>
+    </value>
+  </constant>
+  <constant name="PVD_PROCESS_DATA_PVDCARRIER" default="0">
+    <value>
+      <item key="" value="TRUE"/>
+    </value>
+  </constant>
+  <constant name="PVD_PROCESS_DATA_PVDMASK" default="0">
+    <value>
+      <item key="" value="TRUE"/>
+    </value>
+  </constant>
+  <!-- MSP LINE for AKT-->
+  <constant name="PVD_AKT_PROCESS_DATA_TARGETLIFE" default="0">
+    <value>
+      <item key="" value="TRUE"/>
+    </value>
+  </constant>
+  <!-- ITO LINE -->
+  <constant name="ITO_PROCESS_DATA_TARGETLIFE" default="0">
+    <value>
+      <item key="" value="TRUE"/>
+    </value>
+  </constant>
+  <constant name="ITO_PROCESS_DATA_PVDTRAY" default="0">
+    <value>
+      <item key="" value="TRUE"/>
+    </value>
+  </constant>
+  <constant name="ITO_PROCESS_DATA_PVDCARRIER" default="0">
+    <value>
+      <item key="" value="TRUE"/>
+    </value>
+  </constant>
+  <constant name="ITO_PROCESS_DATA_PVDMASK" default="0">
+    <value>
+      <item key="" value="TRUE"/>
+    </value>
+  </constant>
+  <constant name="OPI_CVD_PROCESSTYPE" default="1">
+    <value>
+      <item key="1" value="NORMAL"/>
+      <item key="2" value="HT"/>
+      <item key="3" value="LT"/>
+      <item key="4" value="IGZO"/>
+      <item key="5" value="MQC"/>
+    </value>
+  </constant>
+  <constant name="OPI_DRY_PROCESSTYPE" default="1">
+    <value>
+      <item key="1" value="NORMAL"/>
+      <item key="2" value="IGZO"/>
+      <item key="3" value="MQC"/>
+      <item key="4" value="ENG"/>
+      <item key="5" value="A"/>
+      <item key="6" value="B"/>
+    </value>
+  </constant>
+  <constant name="IDXMODE_TO_RUNMODE" default="1">
+    <value>
+      <item key="1" value="SAMPLING"/>
+      <item key="2" value="SORT"/>
+      <item key="3" value="GLASS_CHANGER"/>
+      <item key="4" value="COOL_RUN"/>
+      <item key="5" value="FORCE_CLEAN_OUT"/>
+      <item key="6" value="Mix Run"/>
+      <item key="7" value="MQC"/>
+      <item key="8" value="THROUGH"/>
+      <item key="9" value="FIX"/>
+      <item key="10" value="RANDOM"/>      
+    </value>
+  </constant>
+  <!-- Nikon Material Life Change -->
+  <constant name="NIKON_PROCESS_DATA_MATERIALLIFE" default="0">
+    <value>
+      <item key="LAMP1_TIME" value="TRUE"/>
+      <item key="LAMP2_TIME" value="TRUE"/>
+      <item key="LAMP3_TIME" value="TRUE"/>
+    </value>
+  </constant>
+  <!-- DRY TEL Material Life Change -->
+  <constant name="DRY_TEL_SPECIAL_DATA_MATERIALLIFE" default="0">
+    <value>
+      <item key="" value="TRUE"/>
+    </value>
+  </constant>
+  <!--ProcessType-->
+  <constant name="PROCESSTYPE_CVD" default="NotDefine">
+    <value>
+      <item key="0" value="0:PRODUCT"/>
+      <item key="1" value="1:MQC"/>
+    </value>
+  </constant>
+  <constant name="PROCESSTYPE_DRY" default="NotDefine">
+    <value>
+      <item key="0" value="0:PRODUCT"/>
+      <item key="1" value="1:MQC"/>
+      <item key="2" value="2:PS"/>
+      <item key="3" value="3:GE"/>
+      <item key="4" value="4:ILD"/>
+      <item key="5" value="5:SD"/>
+      <item key="6" value="6:PV"/>
+      <item key="7" value="7:ASH"/>
+      <item key="8" value="8:PLN"/>
+    </value>
+  </constant>
+  <constant name="PROCESSTYPE_PVD" default="NotDefine">
+    <value>
+      <item key="0" value="0:PRODUCT"/>
+      <item key="1" value="1:MQC1"/>
+      <item key="2" value="2:MQC2"/>
+      <item key="3" value="3:LS"/>
+      <item key="4" value="4:GE"/>
+      <item key="5" value="5:SD"/>
+      <item key="6" value="6:M3"/>
+      <item key="7" value="7:BITO"/>
+      <item key="8" value="8:TITO"/>
+    </value>
+  </constant>
+  <constant name="CVD_ProportionalRule_Force" default="1">
+    <value>
+      <item key="TCCVD100" value="False"/>
+      <item key="TCCVD300" value="False"/>
+      <item key="TCCVD600" value="False"/>
+      <item key="TCCVD700" value="False"/>
+    </value>
+  </constant>
+  <constant name="DRY_PutPriority_UDRQ" default="true">
+    <value>
+    	<item key="TCDRY500" value="true"/>
+      <item key="TCDRY600" value="true"/>
+      <item key="TCDRY700" value="true"/>
+      <item key="TCDRY800" value="true"/>
+      <item key="TCDRY900" value="true"/>
+      <item key="TCDRYA00" value="true"/>
+      <item key="TCCVDD00" value="true"/>
+    </value>
+  </constant> 
+ <constant name="PRIORITY_JOB_GRADE" default="1">
+    <values>
+	  <item key ="OK" value= "5"/>
+      <item key ="NG" value= "4"/>
+      <item key ="AD" value= "3"/>
+      <item key ="PL" value= "2"/>
+	  <item key ="JG" value= "1"/>
+    </values>
+  </constant>
+  <constant name="CELL_JOBJUDGE_CHANGE_GRADE_MES" default="OK">
+    <values>
+      <item key ="G" value= "OK"/>
+      <item key ="N" value= "NG"/>
+      <item key ="R" value= "RW"/>
+      <item key ="RJ" value= "RJ"/>
+    </values>
+  </constant>
+</ROOT>

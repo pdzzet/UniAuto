@@ -1,0 +1,81 @@
+﻿<!--FileName: 06_ENERGY_REPORT.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-11 11:11:42-->
+<itemgroup name="L2EnergyVisualizationInstantaneousReportBlock" profile="CSOT G6 t3 EQP Profile_Array_01_TCIMP_L2_Indexer(SEEC)_Ver 0.1.xlsx" plcmap="CSOT_G6C_BC_Array_01_TCIMP-PLC Address Map_Ver1.03.xls">
+  <item name="DataType" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo" item="1" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo" item="1" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1" item="1" site="4" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="1000000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2" item="1" site="5" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="1000000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#3" item="1" site="6" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="1000000" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency" item="1" site="7" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3EnergyVisualizationInstantaneousReportBlock" profile="CSOT G6 t3 EQP Profile_Array_01_TCIMP_L3_IMP(Nissin)_Ver 1.0_20150727.xlsx" plcmap="CSOT_G6C_BC_Array_01_TCIMP-PLC Address Map_Ver1.03.xls">
+  <item name="AIR_INTEGR_FLW" item="AIR_INTEGR_FLW" site="" woffset="0" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N2_INTEGR_FLW" item="N2_INTEGR_FLW" site="" woffset="2" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PCW_INTEGR_FLW" item="PCW_INTEGR_FLW" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="ELECT_CONDUCT" item="ELECT_CONDUCT" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="COOL_TEMP" item="COOL_TEMP" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PURE_WTR_TEMP" item="PURE_WTR_TEMP" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="COOL_WTR_FLW_RTE" item="COOL_WTR_FLW_RTE" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="CIRCULA_WTR_FLW_RTE" item="CIRCULA_WTR_FLW_RTE" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PURE_WTR_FLW_RTE" item="PURE_WTR_FLW_RTE" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PG1_PRESS" item="PG1_PRESS" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PG2_PRESS" item="PG2_PRESS" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N01_VOL1" item="N01_VOL1" site="" woffset="14" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N01_VOL2" item="N01_VOL2" site="" woffset="16" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N01_VOL3" item="N01_VOL3" site="" woffset="18" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N01_CUR1" item="N01_CUR1" site="" woffset="20" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N01_CUR2" item="N01_CUR2" site="" woffset="22" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N01_CUR3" item="N01_CUR3" site="" woffset="24" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N01_ACT_PW" item="N01_ACT_PW" site="" woffset="26" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N01_INTEGR_PW" item="N01_INTEGR_PW" site="" woffset="28" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N02_VOL1" item="N02_VOL1" site="" woffset="30" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N02_VOL2" item="N02_VOL2" site="" woffset="32" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N02_VOL3" item="N02_VOL3" site="" woffset="34" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N02_CUR1" item="N02_CUR1" site="" woffset="36" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N02_CUR2" item="N02_CUR2" site="" woffset="38" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N02_CUR3" item="N02_CUR3" site="" woffset="40" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N02_ACT_PW" item="N02_ACT_PW" site="" woffset="42" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N02_INTEGR_PW" item="N02_INTEGR_PW" site="" woffset="44" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N03_VOL1" item="N03_VOL1" site="" woffset="46" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N03_VOL2" item="N03_VOL2" site="" woffset="48" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N03_VOL3" item="N03_VOL3" site="" woffset="50" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N03_CUR1" item="N03_CUR1" site="" woffset="52" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N03_CUR2" item="N03_CUR2" site="" woffset="54" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N03_CUR3" item="N03_CUR3" site="" woffset="56" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N03_ACT_PW" item="N03_ACT_PW" site="" woffset="58" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N03_INTEGR_PW" item="N03_INTEGR_PW" site="" woffset="60" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N04_VOL1" item="N04_VOL1" site="" woffset="62" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N04_VOL2" item="N04_VOL2" site="" woffset="64" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N04_VOL3" item="N04_VOL3" site="" woffset="66" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N04_CUR1" item="N04_CUR1" site="" woffset="68" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N04_CUR2" item="N04_CUR2" site="" woffset="70" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N04_CUR3" item="N04_CUR3" site="" woffset="72" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N04_ACT_PW" item="N04_ACT_PW" site="" woffset="74" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N04_INTEGR_PW" item="N04_INTEGR_PW" site="" woffset="76" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N05_VOL1" item="N05_VOL1" site="" woffset="78" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N05_VOL2" item="N05_VOL2" site="" woffset="80" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N05_VOL3" item="N05_VOL3" site="" woffset="82" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N05_CUR1" item="N05_CUR1" site="" woffset="84" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N05_CUR2" item="N05_CUR2" site="" woffset="86" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N05_CUR3" item="N05_CUR3" site="" woffset="88" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N05_ACT_PW" item="N05_ACT_PW" site="" woffset="90" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N05_INTEGR_PW" item="N05_INTEGR_PW" site="" woffset="92" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N06_VOL1" item="N06_VOL1" site="" woffset="94" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N06_VOL2" item="N06_VOL2" site="" woffset="96" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N06_VOL3" item="N06_VOL3" site="" woffset="98" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N06_CUR1" item="N06_CUR1" site="" woffset="100" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N06_CUR2" item="N06_CUR2" site="" woffset="102" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N06_CUR3" item="N06_CUR3" site="" woffset="104" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N06_ACT_PW" item="N06_ACT_PW" site="" woffset="106" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N06_INTEGR_PW" item="N06_INTEGR_PW" site="" woffset="108" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N07_VOL1" item="N07_VOL1" site="" woffset="110" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N07_VOL2" item="N07_VOL2" site="" woffset="112" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N07_VOL3" item="N07_VOL3" site="" woffset="114" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N07_CUR1" item="N07_CUR1" site="" woffset="116" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N07_CUR2" item="N07_CUR2" site="" woffset="118" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N07_CUR3" item="N07_CUR3" site="" woffset="120" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N07_ACT_PW" item="N07_ACT_PW" site="" woffset="122" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="N07_INTEGR_PW" item="N07_INTEGR_PW" site="" woffset="124" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>

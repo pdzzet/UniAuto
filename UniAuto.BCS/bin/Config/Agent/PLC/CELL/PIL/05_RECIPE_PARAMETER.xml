@@ -1,0 +1,199 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-05-17 16:42:02-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L2_Loader_Ver 1.0.0.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L3_BPC_Ver 1.0.3_20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TACT_TIME" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PROC_TRANSFER_SPD" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="GLS_THICKNESS" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DUMMY_GLS_PROC_SEL" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="GLS_DIR_CHANGE_SEL" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="INCV_ION_PROC_SEL" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CV_ION_PROC_SEL" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="AP1_RECIPE_NUM" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET_SW_PROC_SEL" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="BR_PROC_SEL" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="BR_ROT_SPD" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="BR_ROT_DIR" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="UPR_BR2_PUSHING" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LWR_BR2_PUSHING" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="UPR_BR3_PUSHING" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="UPR_BR4_PUSHING" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LWR_BR3_PUSHING" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LWR_BR4_PUSHING" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="UPSTRM_HM_PROC_SEL" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DNSTRM_HM_PROC_SEL" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HM_CHMBR_SW_PROC_SEL" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HMS_PROC_SEL" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HPSW_PROC_SEL" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_PROC_SEL" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SW_CHMBR_SW_PROC_SEL" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="AK_ION_PROC_SEL" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HOT_BLOW_PROC_SEL" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="IR_ION_PROC_SEL" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="AP2_RECIPE_NUM" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CPO_ION_PROC_SEL" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="USC_PROC_SEL" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="USC_ION_PROC_SEL" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OUTCV_ION_PROC_SEL" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L4_PIB_Ver 1.0.1_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Glass_Angle" item="Glass_Angle" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L5_BPI_Ver 1.0.3_20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" item="Recipe_ID" site="" woffset="5" boffset="0" wpoints="20" bpoints="320" expression="ASCII" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Recipe_Version" item="Recipe_Version" site="" woffset="25" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Glass_THK" item="Glass_THK" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Image_Number" item="Image_Number" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Gray_Level" item="Gray_Level" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Threshold" item="Threshold" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Pad_Insp" item="Pad_Insp" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Zone_function" item="Zone_function" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Back_Light" item="Back_Light" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L6RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L6_PIC_Ver 1.01_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Print_Speed" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Anilox_Speed" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="P/C_Roteto_Speed" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Glass_Thickness" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Print_Compens" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="I/P_Model_no" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Disp_Speed" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PI_Liq_No" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="APR_No" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EQID" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L7_PPO_Ver 1.01_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HP1_SET_TEMP" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP1_SET_TIME" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP1_Purge_Set_TEMP" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP2_SET_TEMP" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP2_SET_TIME" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP2_Purge_Set_TEMP" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP3_SET_TEMP" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP3_SET_TIME" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP3_Purge_Set_TEMP" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP4_SET_TEMP" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP4_SET_TIME" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP4_Purge_Set_TEMP" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP5_SET_TEMP" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP5_SET_TIME" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP5_Purge_Set_TEMP" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP6_SET_TEMP" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP6_SET_TIME" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP6_Purge_Set_TEMP" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP7_SET_TEMP" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP7_SET_TIME" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP7_Purge_Set_TEMP" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP8_SET_TEMP" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP8_SET_TIME" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="HP8_Purge_Set_TEMP" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+</itemgroup>
+<itemgroup name="L8RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L8_PIT01_Ver 1.0.2_20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L9RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L9_PIN_Ver 1.0.3_20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" item="Recipe_ID" site="" woffset="5" boffset="0" wpoints="20" bpoints="320" expression="ASCII" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Recipe_Version" item="Recipe_Version" site="" woffset="25" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Glass_THK" item="Glass_THK" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Image_Number" item="Image_Number" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Gray_Level" item="Gray_Level" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Threshold" item="Threshold" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Pad_Insp" item="Pad_Insp" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Zone_function" item="Zone_function" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="Back_Light" item="Back_Light" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="ASCLL" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L10RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L10_PIT02_Ver 1.0.1_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L11RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L11_PMO_Ver 1.01_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L12RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L12_Unloader_Ver 1.0.0.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L13RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L13_ADC_Ver 1.02_20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Recipe_Memo" site="" woffset="6" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Cleaner_Inverter_Frequens" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Conveyor_Speed" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Cleaning_Speed" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Convery1_ESD_average_value" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Convery4_ESD_average_value" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+</itemgroup>
+<itemgroup name="L14RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L14_PIT03_Ver 1.0.1_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L15RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L15_PPA_Ver 1.0.1_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PPA1_RecipeID" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA1_PA_Direction" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA1_PA_Angle" site="" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA1_Stage_Speed" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA1_Lamp_Combination" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA1_Lamp1_Use" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA1_Lamp2_Use" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA1_Lamp3_Use" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA2_RecipeID" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA2_PA_Direction" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA2_PA_Angle" site="" woffset="16" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA2_Stage_Speed" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA2_Lamp_Combination" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA2_Lamp1_Use" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA2_Lamp2_Use" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PPA2_Lamp3_Use" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+</itemgroup>
+<itemgroup name="L16RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L16_PIT04_Ver 1.0.0.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Turn_Table01_Turn" item="1" site="1" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Turn_Table02_Turn" item="1" site="2" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+</itemgroup>
+<itemgroup name="L17RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L17_PAO_Ver 1.01_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L19RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L19_Unloader_Ver 1.0.0.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

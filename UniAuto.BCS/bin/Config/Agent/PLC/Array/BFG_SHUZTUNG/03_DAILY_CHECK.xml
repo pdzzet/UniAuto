@@ -1,0 +1,10 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.0.6.0-->
+<!--DateTime: 2015-09-23 09:31:16-->
+<itemgroup name="L3ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_Array_26_TCBFG_L3_BFG(SHUZTUNG)_20150609 Ver 1.0.xlsx" plcmap="CSOT_G6C_BC_Array_26_TCBFG-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DCK_VCR_Enable" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="int" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DCK_Power" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="UnsignedLong" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DCK_Gas" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="UnsignedLong" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

@@ -1,0 +1,77 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-04-08 15:45:00-->
+<itemgroup name="L3ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_01_MDABL_L3_ECN_Ver 1.0.2_20160322.xlsx" plcmap="WHCSOT_G6C_BC_Module_01_MDABL-PLC Address Map_Ver1.0.9.xls">
+  <item name="Clean_pressure_Up" item="Recipe" site="" woffset="0" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Clean_pressure_Low" item="Recipe" site="" woffset="2" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="IPA_Drop_Time" item="Recipe" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Clean_Speed" item="Recipe" site="" woffset="6" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Plasma_Clean_Speed" item="Recipe" site="" woffset="8" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_01_MDABL_L4_COG_Ver 1.0.3.xlsx" plcmap="WHCSOT_G6C_BC_Module_01_MDABL-PLC Address Map_Ver1.0.9.xls">
+  <item name="RECIPE_ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECIPE_NAME" site="" woffset="1" boffset="0" wpoints="20" bpoints="320" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ACF_BONDING_TEMP" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ACF_BONDING_LOAD" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ACF_BONDING_TIME" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_TEMP" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_LOAD" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_TIME" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_TEMP" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_LOAD" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_TIME" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_OFFSET_X" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_OFFSET_Y" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_OFFSET_T" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_OFFSET_X" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_OFFSET_Y" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_OFFSET_T" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_01_MDABL_L5_FOG_Ver 1.0.3.xlsx" plcmap="WHCSOT_G6C_BC_Module_01_MDABL-PLC Address Map_Ver1.0.9.xls">
+  <item name="RECIPE_ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECIPE_NAME" site="" woffset="1" boffset="0" wpoints="20" bpoints="320" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ACF_BONDING_TEMP" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ACF_BONDING_LOAD" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ACF_BONDING_TIME" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_TEMP" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_LOAD" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_TIME" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_TEMP" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_LOAD" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_TIME" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_OFFSET_X" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_OFFSET_Y" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PRE_BONDING_OFFSET_T" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_OFFSET_X" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_OFFSET_Y" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="FINAL_BONDING_OFFSET_T" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L6ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_01_MDABL_L6_AOI_Ver 1.0.3.xlsx" plcmap="WHCSOT_G6C_BC_Module_01_MDABL-PLC Address Map_Ver1.0.9.xls">
+  <item name="COG_OFFSET_X" item="Recipe" site="" woffset="0" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="COG_OFFSET_Y" item="Recipe" site="" woffset="2" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FOG_OFFSET_X" item="Recipe" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FOG_OFFSET_Y" item="Recipe" site="" woffset="6" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FOG_Count_10" item="Recipe" site="" woffset="8" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_01_MDABL_L7_Dispenser_Ver 1.0.5.xlsx" plcmap="WHCSOT_G6C_BC_Module_01_MDABL-PLC Address Map_Ver1.0.9.xls">
+  <item name="AgcuringtemperatureNumerator1" item="AgcuringtemperatureNumerator1" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="AgcuringtemperatureDenominato1" item="AgcuringtemperatureDenominato1" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="AgcuringtemperatureNumerator2" item="AgcuringtemperatureNumerator2" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="AgcuringtemperatureDenominato2" item="AgcuringtemperatureDenominato2" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="AgConsumableNumerator1" item="AgConsumableNumerator1" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="AgConsumableDenominato1" item="AgConsumableDenominato1" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="AgConsumableNumerator2" item="AgConsumableNumerator2" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="AgConsumableDenominato2" item="AgConsumableDenominato2" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="FPCConsumableNumerator1" item="FPCConsumableNumerator1" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="FPCConsumableDenominato1" item="FPCConsumableDenominato1" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="FPCConsumableNumerator2" item="FPCConsumableNumerator2" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="FPCConsumableDenominato2" item="FPCConsumableDenominato2" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="ICUVConsumableNumerator1" item="ICUVConsumableNumerator1" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="ICUVConsumableDenominato1" item="ICUVConsumableDenominato1" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="ICUVConsumableNumerator2" item="ICUVConsumableNumerator2" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="ICUVConsumableDenominato2" item="ICUVConsumableDenominato2" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="ICUVConsumableNumerator3" item="ICUVConsumableNumerator3" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="ICUVConsumableDenominato3" item="ICUVConsumableDenominato3" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="ICUVConsumableNumerator4" item="ICUVConsumableNumerator4" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+  <item name="ICUVConsumableDenominato4" item="ICUVConsumableDenominato4" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" />
+</itemgroup>

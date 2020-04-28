@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<config>		
+	<agents>
+    <TCPDN330>
+      <ConnectMode>Active</ConnectMode>
+      <!--Active | Passive-->
+      <Role>Host</Role>
+      <!--Equipment | Host-->
+      <Device>1</Device>
+      <PassiveIP>172.18.25.203</PassiveIP>
+      <PassivePort>7000</PassivePort>
+      <LogEnable>True</LogEnable>
+      <!--True | False-->
+      <ReplyError>True</ReplyError>
+      <!--True | False-->
+      <LinkTest>60</LinkTest>
+      <T3>45</T3>
+      <T5>10</T5>
+      <T6>5</T6>
+      <T7>10</T7>
+      <T8>5</T8>
+      <LocalNO>L3</LocalNO>
+    </TCPDN330>
+    <TCPNK380>
+      <ConnectMode>Active</ConnectMode>
+      <!--Active | Passive-->
+      <Role>Host</Role>
+      <!--Equipment | Host-->
+      <Device>1</Device>
+      <PassiveIP>172.18.25.105</PassiveIP>
+      <PassivePort>7001</PassivePort>
+      <LogEnable>True</LogEnable>
+      <!--True | False-->
+      <ReplyError>True</ReplyError>
+      <!--True | False-->
+      <LinkTest>60</LinkTest>
+      <T3>45</T3>
+      <T5>10</T5>
+      <T6>5</T6>
+      <T7>10</T7>
+      <T8>5</T8>
+      <LocalNO>L4</LocalNO>
+    </TCPNK380>
+	</agents>
+</config>		

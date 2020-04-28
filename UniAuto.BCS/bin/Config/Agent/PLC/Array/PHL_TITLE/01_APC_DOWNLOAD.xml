@@ -1,0 +1,9 @@
+﻿<!--FileName: 01_APC_DOWNLOAD.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-16 10:43:29-->
+<itemgroup name="L5APCDataDownloadBlock" profile="CSOT G6 t3 EQP Profile_Array_17_TCPHL_L5_TITLER(TORAY)_Ver 1.0.xlsx" plcmap="CSOT_G6C_BC_Array_17_TCPHL-PLC Address Map_Ver1.03.xls">
+  <item name="EE_LAMP1_LIMIT_TIME" item="EE_LAMP1_LIMIT_TIME" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="EE_LAMP2_LIMIT_TIME" item="EE_LAMP2_LIMIT_TIME" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="EE_LAMP3_LIMIT_TIME" item="EE_LAMP3_LIMIT_TIME" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="ID_LD_LIMIT_TIME" item="ID_LD_LIMIT_TIME" site="" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>

@@ -1,0 +1,249 @@
+<message name="PLC_EQtoEQInterlockEvent#01">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#02">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#03">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#04">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#05">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#06">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#07">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#08">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#09">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#10">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#11">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#12">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#13">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#14">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#15">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#16">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#17">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#18">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#19">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#20">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#21">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#22">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#23">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#24">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockEvent#25">
+  <object id="EqToEqService" method="EQtoEQInterlockEvent" />
+</message>
+<message name="PLC_EQtoEQInterlockWord#01">
+  <object id="EqToEqService" method="EQtoEQInterlockWord" />
+</message>
+<message name="PLC_EQtoEQInterlockWord#02">
+  <object id="EqToEqService" method="EQtoEQInterlockWord" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#01">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#02">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#03">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#04">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#05">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#06">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#07">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#08">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#09">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#10">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#11">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#12">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#13">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#14">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#15">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#16">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#17">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#18">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#19">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#20">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#21">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#22">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#23">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#24">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBit#25">
+  <object id="EqToEqService" method="EQtoEQInterlockBit" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#01">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#02">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#03">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#04">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#05">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#06">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#07">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#08">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#09">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#10">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#11">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#12">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#13">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#14">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#15">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#16">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#17">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#18">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#19">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#20">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#21">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#22">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#23">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#24">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#25">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#26">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#27">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#28">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#29">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#30">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>
+<message name="PLC_EQtoEQInterlockBitReply#31">
+  <object id="EqToEqService" method="EQtoEQInterlockBitReply" />
+</message>

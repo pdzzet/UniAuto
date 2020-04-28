@@ -1,0 +1,16 @@
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.SocketService.dll
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.SocketService.pdb
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.csprojResolveAssemblyReference.cache
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.Test.FrmTest.resources
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.csproj.GenerateResource.Cache
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.dll
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.SocketService.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.CSOT.SocketService.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.csprojAssemblyReference.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.Test.FrmTest.resources
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.csproj.GenerateResource.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.csproj.CoreCompileInputs.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.csproj.CopyComplete
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.CSOT.SocketService\obj\Debug\UniAuto.UniBCS.CSOT.SocketService.pdb

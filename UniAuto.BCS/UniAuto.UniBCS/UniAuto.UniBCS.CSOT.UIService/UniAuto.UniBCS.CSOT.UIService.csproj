@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B0C2A04-F310-4F41-99E4-CE56E49E5993}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniAuto.UniBCS.CSOT.UIService</RootNamespace>
+    <AssemblyName>UniAuto.UniBCS.CSOT.UIService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>"%24/WHCSOT.G6C.BC/BC/UniAuto.BCS", MLWDAAAA</SccProjectName>
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\..\bin\Debug\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniAuto.UniBCS.Core, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\UniAuto.UniBCS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UniAuto.UniBCS.Log, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\debug\UniAuto.UniBCS.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="UniAuto.UniBCS.MISC, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\debug\UniAuto.UniBCS.MISC.dll</HintPath>
+    </Reference>
+    <Reference Include="UniAuto.UniBCS.PLCAgent.Data, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\UniAuto.UniBCS.PLCAgent.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="00_AssistFunction.cs" />
+    <Compile Include="01_Layout.cs" />
+    <Compile Include="02_Monitor.cs" />
+    <Compile Include="04_Setting.cs" />
+    <Compile Include="05_Param.cs" />
+    <Compile Include="06_History.cs" />
+    <Compile Include="07_OfflineModeCassetteDataSend.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="08_RobotInfo.cs" />
+    <Compile Include="03_Operation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UniAuto.UniBCS.EntityManager\UniAuto.UniBCS.EntityManager.csproj">
+      <Project>{3AF798BF-0431-4121-9DE7-87E25E23219B}</Project>
+      <Name>UniAuto.UniBCS.EntityManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniAuto.UniBCS.Entity\UniAuto.UniBCS.Entity.csproj">
+      <Project>{D8255DBB-D5B9-4654-BD15-2A6A7130500D}</Project>
+      <Name>UniAuto.UniBCS.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniAuto.UniBCS.MesSpec\UniAuto.UniBCS.MesSpec.csproj">
+      <Project>{A8B1897B-7852-48E7-8D55-7F5E6B168F23}</Project>
+      <Name>UniAuto.UniBCS.MesSpec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniAuto.UniBCS.OpiSpec\UniAuto.UniBCS.OpiSpec.csproj">
+      <Project>{621B0C6D-25B7-477A-B22C-C86A3624EE67}</Project>
+      <Name>UniAuto.UniBCS.OpiSpec</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

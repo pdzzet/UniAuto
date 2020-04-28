@@ -1,0 +1,43 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-28 15:11:47-->
+<itemgroup name="L3ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_Array_11_TCAOH_L3_AOH(HBT)_v1.0.3.xlsx" plcmap="CSOT_G6C_BC_Array_11_TCAOH-PLC Address Map_Ver1.03.xls">
+  <item name="Recipe_ID" item="Recipe_ID" site="" woffset="0" boffset="0" wpoints="60" bpoints="960" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Glass_ID" item="Glass_ID" site="" woffset="60" boffset="0" wpoints="60" bpoints="960" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Lot_ID" item="Lot_ID" site="" woffset="120" boffset="0" wpoints="60" bpoints="960" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Product_ID" item="Product_ID" site="" woffset="180" boffset="0" wpoints="60" bpoints="960" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Gray_Level" item="Gray_Level" site="" woffset="240" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Image_Number" item="Image_Number" site="" woffset="241" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Inspection_Start_Time" item="Inspection_Start_Time" site="" woffset="242" boffset="0" wpoints="12" bpoints="192" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Inspection_End_Time" item="Inspection_End_Time" site="" woffset="254" boffset="0" wpoints="12" bpoints="192" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Processing_Time" item="Processing_Time" site="" woffset="266" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_JUDGEMENT" item="GLS_JUDGEMENT" site="" woffset="267" boffset="0" wpoints="2" bpoints="32" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_PANEL_COUNT" item="GLS_PANEL_COUNT" site="" woffset="269" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_PANEL_G" item="GLS_PANEL_OK" site="" woffset="270" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_PANEL_N" item="GLS_PANEL_NG" site="" woffset="271" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_PANEL_R" item="GLS_PANEL_REPAIR" site="" woffset="272" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_DEFECT_SUM" item="GLS_DEFECT_SUM" site="" woffset="273" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_DEFECT_L" item="GLS_DEFECT_L" site="" woffset="274" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_DEFECT_M" item="GLS_DEFECT_M" site="" woffset="275" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_DEFECT_S" item="GLS_DEFECT_S" site="" woffset="276" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_Array_11_TCAOH_L4_AOH(HBT)_v1.0.3.xlsx" plcmap="CSOT_G6C_BC_Array_11_TCAOH-PLC Address Map_Ver1.03.xls">
+  <item name="Recipe_ID" item="Recipe_ID" site="" woffset="0" boffset="0" wpoints="60" bpoints="960" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Glass_ID" item="Glass_ID" site="" woffset="60" boffset="0" wpoints="60" bpoints="960" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Lot_ID" item="Lot_ID" site="" woffset="120" boffset="0" wpoints="60" bpoints="960" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Product_ID" item="Product_ID" site="" woffset="180" boffset="0" wpoints="60" bpoints="960" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Gray_Level" item="Gray_Level" site="" woffset="240" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Image_Number" item="Image_Number" site="" woffset="241" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Inspection_Start_Time" item="Inspection_Start_Time" site="" woffset="242" boffset="0" wpoints="12" bpoints="192" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Inspection_End_Time" item="Inspection_End_Time" site="" woffset="254" boffset="0" wpoints="12" bpoints="192" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Processing_Time" item="Processing_Time" site="" woffset="266" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_JUDGEMENT" item="GLS_JUDGEMENT" site="" woffset="267" boffset="0" wpoints="2" bpoints="32" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_PANEL_COUNT" item="GLS_PANEL_COUNT" site="" woffset="269" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_PANEL_G" item="GLS_PANEL_OK" site="" woffset="270" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_PANEL_N" item="GLS_PANEL_NG" site="" woffset="271" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_PANEL_R" item="GLS_PANEL_REPAIR" site="" woffset="272" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_DEFECT_SUM" item="GLS_DEFECT_SUM" site="" woffset="273" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_DEFECT_L" item="GLS_DEFECT_L" site="" woffset="274" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_DEFECT_M" item="GLS_DEFECT_M" site="" woffset="275" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLS_DEFECT_S" item="GLS_DEFECT_S" site="" woffset="276" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

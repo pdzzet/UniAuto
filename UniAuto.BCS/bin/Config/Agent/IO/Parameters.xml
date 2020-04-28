@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+  <parameter name="BCALIVE" value="4000" discription="BCAlive Delay Time" type="integer" />
+  <parameter name="EQPALIVE" value="10000" discription="Equipment Alive Time" type="integer" />
+  <parameter name="T1" value="4000" discription="Equipment Reply Timeout" type="integer" />
+  <parameter name="MAPDOWNLOAD_T1" value="10000" discription="CST Data Download Reply Timeout" type="integer" />
+  <parameter name="T2" value="4000" discription="Equipment Clear timeout" type="integer" />
+  <parameter name="EVENTDELAYTIME" value="200" discription="PLC Transaction Event Delay Time (ms)" type="integer" />
+  <parameter name="MESTIMEOUT" value="10000" discription="MES Reply timeout" type="integer" />
+  <parameter name="BCBITTIMEOUT" value="600000" discription="BC Bit check Timeout" type="integer" />
+  <parameter name="POSITIONCHECKTIME" value="1000" discription="Position Change Check Time,Setting Value than 100,if Setting 0 Function Disable" type="integer" />
+  <parameter name="RECIPEREGISTERTIMEOUT" value="120000" discription="Recipe Register Timeout " type="integer" />
+  <parameter name="RECIPEREGISTERBCSTIMEOUT" value="10000" discription="Recipe Register Timeout for Other Line " type="integer" />
+  <parameter name="RECIPEPARAMETERTIMEOUT" value="30000" discription="Recipe Parameter Timeout " type="integer" />
+  <parameter name="RECIPEPARAMETER_T1" value="20000" discription="Recipe Parameter T1 Timeout for EQ " type="integer" />
+  <parameter name="RECIPEPARAMETERBCSTIMEOUT" value="20000" discription="Recipe Parameter Timeout for other Line " type="integer" />
+  <parameter name="CSOTSECSDATATIMEOUT" value="60000" discription="CSOT SECS Discrete Variable Data Timeout" type="integer" />
+  <parameter name="NIKONSECSDATATIMEOUT" value="60000" discription="Nikon SECS Discrete Variable Data Timeout" type="integer" />
+  <parameter name="REALTIMEGLASSCOUNTTIME" value="15000" discription="Realtime Glass Count Request Command TimeOut" type="integer" />
+  <parameter name="NETWORKNO" value="1" discription="PLC Network No for Cell" type="integer" />
+  <parameter name="VALIDATETIMEOUT" value="120000" discription="Validate Cassette or Box Timeout" type="integer" />
+  <parameter name="MESSYNCREPORT" value="True" discription="MES Synchronization Report" type="bool" />
+  <parameter name="EVISORREPORT" value="True" discription="Evisor is Report Flag" type="bool" />
+  <parameter name="RESTARTSERVER" value="false" discription="Restart Server flag" type="bool" />
+  <parameter name="MONITORQUEUECOUNT" value="80" discription="Evisor Service Monitor queue Count" type="integer" />
+  <parameter name="OFFLINEREPLYEQP" value="true" discription="When BC and MES Offline Auto Reply EQ" type="bool" />
+  <parameter name="OPIMAXCOUNT" value="6" discription="OPI Max Connection Count" type="integer" />
+  <parameter name="TACTTIME" value="15" discription="Equipment Receive Glass (Minute)" type="integer" />
+  <!--Add by Frank For MES Current DateTime -->
+  <parameter name="MES_CurrentDateTime" value="true" discription="CurrentDateTime" type="bool" />
+  <!-- for Array CAC -->
+  <parameter name="CAC_PPID" value="01" discription="Array CAC EQ Recipe" type="string" />
+  <!-- for CELL CLN -->
+  <parameter name="CLN_PPID" value="01" discription="CELL CLN EQ Recipe" type="string" />
+  <!--For Robot Show Detail Log -->
+  <parameter name="SHOW_ROBOT_DETIAL_LOG" value="false" discription="Show Robot Detail Log" type="bool" />
+  <!--For Robot Send Can not issue Robot Command Log to OPI -->
+  <parameter name="SHOW_CANNOT_ISSUE_ROBOTCMD_MSG" value="true" discription="Show Can not Issue Robot Cmd Msg" type="bool" />
+  <!--For Monitor Robot Status Change From Idle To Runnning default:300000ms-->
+  <parameter name="ROBOT_CMD_WAITACTIVE_TIMEOUT" value="300000" discription="Robot Command Active Timeout" type="integer" />
+  <!--For Monitor Robot Command RT2 TimeOut. default:300000ms-->
+  <parameter name="ROBOT_CMD_RT2_TIMEOUT" value="300000" discription="Robot Command RT2 Timeout" type="integer" />
+  <!--For Robot SEMI Mode Stop real Time Get StageInfo -->
+  <parameter name="ROBOT_SEMI_STOP_GETSTAGEINFO" value="false" discription="Robot SEMI Mode Stop Get StageInfo" type="bool" />
+  <!--Robot Both Port Job Can Store to notSourceSlotNo -->
+  <parameter name="ROBOT_BOTHPORTJOB_CAN_STORETO_NOTSOURCESLOTNO" value="false" discription="Both Port Job Can Store to notSourceSlotNo" type="bool" />
+  <!-- Robot Auto Show Detail Log by Interval Setting. 1=300ms . default 2000 =600s . 0 =No Auto Show Detail Log -->
+  <parameter name="ROBOT_AUTO_SHOW_DETIAL_LOG_INTERVAL" value="2000" discription="Robot Show Detail Log by Interval setting" type="integer" />
+  <!--For Monitor Force Return CST Without LDRQ. default:300Sec-->
+  <parameter name="ROBOT_FORCE_RETURN_CST_WITHOUT_LDRQ_TIMEOUT" value="300" discription="Robot Monitor Force Return CST Without LDRQ TimeOut" type="integer" />
+  <!--***Robot Parameter Setting**-->
+  <parameter name="TTP_DAILYCHECK_TRX" value="L3_EQtoEQInterlockSetForEQP#03" discription="Array TTP Line Get EQtoEQ InterLock DailyCheck Bit Trx Name" type="string" />
+   <parameter name="CF_TTP_DAILYCHECK_TRX" value="L3_EQInterlockSetForEQP#MQCDCRPitchtoIndexer" discription="CF MQC TTP Line Get EQtoEQ InterLock DailyCheck Bit Trx Name" type="string" />
+   <parameter name="ROBOT_CHECK_ROUTE_BYPASS" value="true" discription="Cassette Data Download will Check Robot Route, is False won't Reply NG" type="bool" />
+    <!--***Report Switch-Head**-->
+  <!--Recipe ID Check-->
+  <parameter name="S_REMOTE_RECIPE_ID_CHECK" value="true" discription="[Online Remote] When Cst Data Request, Recipe ID Check Switch" type="bool" />
+  <parameter name="S_LOCAL_RECIPE_ID_CHECK" value="true" discription="[Online Local] When Cst Data Request, Recipe ID Check Switch" type="bool" />
+  <parameter name="S_OFFLINE_RECIPE_ID_CHECK" value="true" discription="[Offline] When Cst Data Request, Recipe ID Check Switch" type="bool" />
+  <!--Recipe Parameter Check-->
+  <parameter name="S_REMOTE_RECIPE_PARAMETER_CHECK" value="true" discription="[Online Remote] When Cst Data Request, Recipe Parameter Check Switch" type="bool" />
+  <parameter name="S_LOCAL_RECIPE_PARAMETER_CHECK" value="true" discription="[Online Local] When Cst Data Request, Recipe Parameter Check Switch" type="bool" />
+  <parameter name="S_OFFLINE_RECIPE_PARAMETER_CHECK" value="true" discription="[Offline] When Cst Data Request, Recipe Parameter Check Switch" type="bool" />
+  <!--Port Mode Check-->
+  <parameter name="S_ONLINE_PORT_MODE_CHECK" value="false" discription="[Online] When Cst Data Request, Port Mode Check Switch" type="bool" />
+  <parameter name="S_OFFLINE_PORT_MODE_CHECK" value="false" discription="[Offline] When Cst Data Request, Port Mode Check Switch" type="bool" />
+  <!--Data Request Special Rule Check-->
+  <parameter name="S_ONLINE_SPECIAL_RULE_CHECK" value="true" discription="[Online] When Cst Data Request, SPECIAL DATA Check Switch" type="bool" />
+  <parameter name="S_OFFLINE_SPECIAL_RULE_CHECK" value="true" discription="[Offline] When Cst Data Request, SPECIAL DATA Check Switch" type="bool" />
+  <!-- -->
+  <parameter name="S_MANUAL_ALARM_MES" value="true" discription="When Manual Mode, Report the Alarm to MES Switch" type="bool" />
+  <parameter name="S_DATA_DOWNLOAD_REPLY_ERROR_AUTO_CANCEL" value="false" discription="When the Download Data Reply Error, Automatic Cancel Cst Switch" type="bool" />
+  <!-- -->
+  <parameter name="S_EQUIPMENT_STATUS_STOP_COMMAND" value="false" discription="Equipment Status Stop Command Mode true is Enable false false is Disable" type="bool"></parameter>
+  <!-- -->
+  <parameter name="S_PORT_FUNCTION_CHECK_NO_CST" value="true" discription="OPI Port Function Command Check No Cassette Switch" type="bool"></parameter>
+  <!-- -->
+  <parameter name="S_RECORD_OPI_STATUS_LOG" value="false" discription="OPI Request/BC Report Status Log" type="bool" />
+  <!--***Report Switch-End**-->
+  <parameter name="EDC_REPORT_BY_FTP_RETRY_COUNT" value="3" discription="Retry Count of Connection Remote Computer" type="integer" />
+  <parameter name="CELL_PTI_LINEID" value="CBPTI100" discription="CELL Speciall PMT  PTI Line ID" type="string" />
+  <parameter name="CELL_PTI_NODEID" value="CBPTI11B" discription="CELL Speciall PMT Line NODE ID" type="string" />
+  <parameter name="CELL_PTI_UNITID" value="CBPTI120" discription="CELL Speciall PMT Line Unit ID" type="string" />
+  <parameter name="CELL_PMT_AUTO_CANCEL_CST_LOG" value="true" discription="Recode CELL PMT Line Auto Abort CST ,Get CST Slot Info Log" type="bool" />
+  <parameter name="CUT_OXINFO_COUNT_MISMATCH_CANCEL_CST" value="false" discription="When CUT MES Validate Cassette Reply OXINFO Count  and SUB PRODUCT NAME Mismatch" type="bool" />
+  <parameter name="ProdcutOverTimer" value="7" discription="Product Glass Delete Time" type="integer" />
+  <parameter name="DummyOverTimer" value="15" discription="Dummy Glass Delete Time" type="integer" />
+  <parameter name="UVMaskOverTimer" value="60" discription="UV Mask Delete Time" type="integer" />
+  <parameter name="PLCBOARDSTATUSCHECK" value="30000" discription="PLC board Status Check Time" type="integer" />    
+  <parameter name="PANEL_RECIPE_ID_CHECK" value="true" discription="[Online Remote/Local] When PANEL_RECIPE_ID_CHECK Data Request, Recipe ID Check Switch" type="bool" />
+  <parameter name="PANEL_RECIPE_PARA_CHECK" value="true" discription="[Online Local/Local] When PANEL_RECIPE_PARA_CHECK Data Request, Recipe Para Check Switch" type="bool" />
+  <!--***CF Short Cut Recipe Check**-->
+  <parameter name="SHORTCUT_RECIPE_ID_SKIP_CHECK" value="false" discription="When Short Cut Mode Enable, Recipe ID Skip Check Switch" type="bool" />
+  <parameter name="SHORTCUT_RECIPE_PARAMETER_SKIP_CHECK" value="false" discription="When Short Cut Mode Enable, Recipe Parameter Skip Check Switch" type="bool" />
+  <!--FOR TWO STAGE GET GET PUT PUT -->
+  <parameter name="STAGE_GETGET_PUTPUT_WAIT_TIME" value="500" discription="MilliSecond For Waitting Two Stages SendReady or ReceiveAble" type="integer" />
+  <!--FOR TCOVN SD -->
+  <parameter name="RTC_WAIT_TIME" value="120" discription="Second For failed to process and back to cassette" type="integer" />
+  <!--FOR FIX STAGE-->
+  <parameter name="FIX_STAGE_WAIT_TIME" value="1500" discription="MilliSecond For Waitting Fix Stage ReceiveAble" type="integer" />
+  <!-- for Array ELA -->
+  <parameter name="ELA_COMPENSATION_TIME" value="0" discription="ELA COMPENSATION TIME For Put Glass to Clean" type="integer" />
+  <parameter name="ELA_Clean_OverQTime" value="0" discription="ELA Clean Send Out Wait QTime" type="integer" />
+  <parameter name="PREFETCH_DELAY_TIME" value="60" discription="Second For Pre-Fetch Delay Time" type="integer" />
+  <parameter name="APC_ENABLE" value="true" discription="if value is true then Message report to APC ,value is false don't report to APC" type="bool" />
+  <parameter name="ROBOT_ENABLE_CALL_CASSETTE_SERVICE" value="True" discription="Enable Robot to Call Cassette Service CassetteStoreQTimeProcessEnd" type="bool" />
+  <!-- for CF MQC -->
+  <parameter name="EQPRTC_WAIT_TIME" value="300" discription="Downstream EQP can't receive Job,so Upstream EQP will send out Job return to CST" type="integer" />
+  <!-- for Array PPID by Pass -->
+  <parameter name="ARRAY_PPIDBYPASS_TCELA100" value="L4,L5" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCELA200" value="L4,L5" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCELA300" value="L4,L5" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCTEG200" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCTEG300" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCTEG400" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCFLR200" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCFLR300" value="L3,L4,L5" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCAOH400" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCAOH800" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCCDO300" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCCDO400" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCATS200" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCATS300" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCATS400" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+  <parameter name="ARRAY_PPIDBYPASS_TCMAC600" value="L3,L4" discription="EQ CIM OFF AND BC CHANGE PPID BY PASS" type="string" />
+
+  <!-- for Array Main Eqp Tracking Data Check ByPass when TrackOut's Process Result data -->
+  <parameter name="ARRAY_MAINEQPTRACKINGDATACEHCK" value="BFG_SHUZTUNG,CAC_MYTEK,TEG_YANG,FLR_CHARM,AOH_ORBOTECH,AOH_HBT,CDO_VTECKMAC,ATS_YANG,MAC_CONTREL,CVD_ULVAC,OVNSD_VIATRON"  discription="MAIN EQP TRACKING DATA CHECK BYPASS WHEN LOTEND PROCESS RESULT DATA" type="string" />
+
+  <!-- for File Format Delete -->
+  <parameter name="FileFormatOverTimer" value="10" discription="File Format Delete Time" type="integer" />
+  <parameter name="FileFormatPath" value="D:\FileData\" discription="File Format Delete Path" type="string" />
+
+  <!-- for Cell Special Line Job On Arm Move -->
+  <parameter name="ROBOT_CELLSPECIALLINE_JOBONARM_MOVE" value="false" discription="Cell Special Line Open Robot Job On Arm Move" type="bool" />
+  
+  <!-- for 1Arm1Job On Arm Move -->
+  <parameter name="ROBOT_JOBONARM_MOVE" value="false" discription="Common Type 1Arm1Job Open Robot Job On Arm Move,but not contain array OVNITO and OVNPL" type="bool" />
+
+   <!-- for Array DRY -->
+  <parameter name="DRY_SEND_OUT_CHECK" value="30" discription="Seconds For check Dry send out time  interval" type="integer" />
+</parameters>

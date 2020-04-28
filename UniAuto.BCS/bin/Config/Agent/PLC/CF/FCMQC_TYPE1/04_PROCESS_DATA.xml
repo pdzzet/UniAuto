@@ -1,0 +1,11 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.1.3.0-->
+<!--DateTime: 2016-03-18 16:58:28-->
+<itemgroup name="L2ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_CF_14_FCMQC-TTP_L02_Indexer_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_14_FCMQC-TTP-PLC Address Map_Ver1.04.xls">
+  <item name="TactTime" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="IONCDAPressure" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="OTHERCDAPressure" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="VacuumUPPERPressure" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="VacuumUNDERPressure" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PortNo" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

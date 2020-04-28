@@ -1,0 +1,58 @@
+﻿<!--FileName: 06_ENERGY_REPORT.xml-->
+<!--Version: 1.0.9.0-->
+<!--DateTime: 2016-02-24 13:10:16-->
+<itemgroup name="L2EnergyVisualizationInstantaneousReportBlock" profile="CSOT G6 t3 EQP Profile_Array_10_TCTEG_L2_Indexer(SEEC)_Ver1.0.2_20160108.xlsx" plcmap="CSOT_G6C_BC_Array_10_TCTEG-PLC Address Map_Ver1.03.xls">
+  <item name="DataType" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UnitNo" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="InstrumentNo" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#1" site="" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="100" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#2" site="" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="100" reportto="OEE" unit="" reportunit="0" />
+  <item name="Value#3" site="" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="100" reportto="OEE" unit="" reportunit="0" />
+  <item name="Frequency" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="*" operand="100" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3EnergyVisualizationInstantaneousReportBlock" profile="CSOT G6 t3 EQP Profile_Array_10_TCTEG_L3_TEG(YANG)_Ver 1.0.xlsx" plcmap="CSOT_G6C_BC_Array_10_TCTEG-PLC Address Map_Ver1.03.xls">
+  <item name="PRESURE_VIS" site="" woffset="0" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PRESURE_VAC" site="" woffset="5" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PRESURE_CDA1" site="" woffset="10" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PRESURE_ION1" site="" woffset="15" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PRESURE_ION2" site="" woffset="20" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PRESURE_ION3" site="" woffset="25" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="STATIC_ELEC(ESD)" site="" woffset="30" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_V-RS" site="" woffset="35" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_V-ST" site="" woffset="40" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_V-TR" site="" woffset="45" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_A-R" site="" woffset="50" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_A-S" site="" woffset="55" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_A-T" site="" woffset="60" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPSPower" site="" woffset="65" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="F.CDA" site="" woffset="70" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="F.ION1" site="" woffset="75" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UPS_V" site="" woffset="80" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UPS_A" site="" woffset="85" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UPSPower" site="" woffset="90" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="F.ION2" site="" woffset="95" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="F.ION3" site="" woffset="100" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4EnergyVisualizationInstantaneousReportBlock" profile="CSOT G6 t3 EQP Profile_Array_10_TCTEG_L4_TEG(YANG)_Ver 1.0.xlsx" plcmap="CSOT_G6C_BC_Array_10_TCTEG-PLC Address Map_Ver1.03.xls">
+  <item name="PRESURE_VIS" site="" woffset="0" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PRESURE_VAC" site="" woffset="5" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PRESURE_CDA1" site="" woffset="10" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PRESURE_ION1" site="" woffset="15" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PRESURE_ION2" site="" woffset="20" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="PRESURE_ION3" site="" woffset="25" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="STATIC_ELEC(ESD)" site="" woffset="30" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_V-RS" site="" woffset="35" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_V-ST" site="" woffset="40" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_V-TR" site="" woffset="45" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_A-R" site="" woffset="50" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_A-S" site="" woffset="55" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPS_A-T" site="" woffset="60" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="GPSPower" site="" woffset="65" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="F.CDA" site="" woffset="70" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="F.ION1" site="" woffset="75" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UPS_V" site="" woffset="80" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UPS_A" site="" woffset="85" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="UPSPower" site="" woffset="90" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="F.ION2" site="" woffset="95" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+  <item name="F.ION3" site="" woffset="100" boffset="0" wpoints="5" bpoints="80" expression="ASCII" valueoperator="" operand="0" reportto="OEE" unit="" reportunit="0" />
+</itemgroup>

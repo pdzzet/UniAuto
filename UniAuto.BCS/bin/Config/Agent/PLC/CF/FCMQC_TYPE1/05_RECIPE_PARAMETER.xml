@@ -1,0 +1,134 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.1.3.0-->
+<!--DateTime: 2016-03-18 16:58:28-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_CF_14_FCMQC-TTP_L02_Indexer_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_14_FCMQC-TTP-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_CF_14_FCMQC-TTP_L03_TTP_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_14_FCMQC-TTP-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Modify_Start_Time" item="Modify_Start_Time" site="" woffset="10" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Modify_End_Time" item="Modify_End_Time" site="" woffset="13" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Modify_Time" item="Modify_Time" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_NO" item="Recipe_NO" site="" woffset="17" boffset="0" wpoints="12" bpoints="192" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Macro1" item="Recipe_Macro1" site="" woffset="29" boffset="0" wpoints="20" bpoints="320" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Macro2" item="Recipe_Macro2" site="" woffset="49" boffset="0" wpoints="20" bpoints="320" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Macro3" item="Recipe_Macro3" site="" woffset="69" boffset="0" wpoints="20" bpoints="320" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Macro4" item="Recipe_Macro4" site="" woffset="89" boffset="0" wpoints="20" bpoints="320" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Macro5" item="Recipe_Macro5" site="" woffset="109" boffset="0" wpoints="20" bpoints="320" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Macro6" item="Recipe_Macro6" site="" woffset="129" boffset="0" wpoints="20" bpoints="320" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_CF_14_FCMQC-TTP_L04_MCPD_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_14_FCMQC-TTP-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECPID" item="RECPID" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECPNA" item="RECPNA" site="" woffset="11" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECPDT" item="RECPDT" site="" woffset="21" boffset="0" wpoints="7" bpoints="112" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Reference_No" item="Reference_No" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Light_Source" item="Light_Source" site="" woffset="29" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RY_NG_UP1" item="RY_NG_UP" site="" woffset="39" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RY_Alarm_UP1" item="RY_Alarm_UP" site="" woffset="41" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RY_Alarm_Down1" item="RY_Alarm_Down" site="" woffset="43" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RY_NG_Down1" item="RY_NG_Down" site="" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Rx_NG_UP1" item="Rx_NG_UP" site="" woffset="47" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Rx_Alarm_UP" item="Rx_Alarm_UP" site="" woffset="49" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Rx_Alarm_Down" item="Rx_Alarm_Down" site="" woffset="51" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Rx_NG_Down" item="Rx_NG_Down" site="" woffset="53" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Ry_NG_UP2" item="Ry_NG_UP" site="" woffset="55" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Ry_Alarm_UP2" item="Ry_Alarm_UP" site="" woffset="57" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Ry_Alarm_Down2" item="Ry_Alarm_Down" site="" woffset="59" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Ry_NG_Down2" item="Ry_NG_Down" site="" woffset="61" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="GY_NG_UP1" item="GY_NG_UP" site="" woffset="63" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="GY_Alarm_UP1" item="GY_Alarm_UP" site="" woffset="65" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="GY_Alarm_Down1" item="GY_Alarm_Down" site="" woffset="67" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="GY_NG_Down1" item="GY_NG_Down" site="" woffset="69" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Gx_NG_UP" item="Gx_NG_UP" site="" woffset="71" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Gx_Alarm_UP" item="Gx_Alarm_UP" site="" woffset="73" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Gx_Alarm_Down" item="Gx_Alarm_Down" site="" woffset="75" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Gx_NG_Down" item="Gx_NG_Down" site="" woffset="77" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Gy_NG_UP2" item="Gy_NG_UP" site="" woffset="79" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Gy_Alarm_UP2" item="Gy_Alarm_UP" site="" woffset="81" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Gy_Alarm_Down2" item="Gy_Alarm_Down" site="" woffset="83" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Gy_NG_Down2" item="Gy_NG_Down" site="" woffset="85" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="BY_NG_UP1" item="BY_NG_UP" site="" woffset="87" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="BY_Alarm_UP1" item="BY_Alarm_UP" site="" woffset="89" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="BY_Alarm_Down1" item="BY_Alarm_Down" site="" woffset="91" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="BY_NG_Down1" item="BY_NG_Down" site="" woffset="93" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Bx_NG_UP" item="Bx_NG_UP" site="" woffset="95" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Bx_Alarm_UP" item="Bx_Alarm_UP" site="" woffset="97" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Bx_Alarm_Down" item="Bx_Alarm_Down" site="" woffset="99" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Bx_NG_Down" item="Bx_NG_Down" site="" woffset="101" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="By_NG_UP2" item="By_NG_UP" site="" woffset="103" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="By_Alarm_UP2" item="By_Alarm_UP" site="" woffset="105" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="By_Alarm_Down2" item="By_Alarm_Down" site="" woffset="107" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="By_NG_Down2" item="By_NG_Down" site="" woffset="109" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="WY_NG_UP1" item="WY_NG_UP" site="" woffset="111" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="WY_Alarm_UP1" item="WY_Alarm_UP" site="" woffset="113" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="WY_Alarm_Down1" item="WY_Alarm_Down" site="" woffset="115" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="WY_NG_Down1" item="WY_NG_Down" site="" woffset="117" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Wx_NG_UP" item="Wx_NG_UP" site="" woffset="119" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Wx_Alarm_UP" item="Wx_Alarm_UP" site="" woffset="121" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Wx_Alarm_Down" item="Wx_Alarm_Down" site="" woffset="123" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Wx_NG_Down" item="Wx_NG_Down" site="" woffset="125" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Wy_NG_UP2" item="Wy_NG_UP" site="" woffset="127" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Wy_Alarm_UP2" item="Wy_Alarm_UP" site="" woffset="129" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Wy_Alarm_Down2" item="Wy_Alarm_Down" site="" woffset="131" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Wy_NG_Down2" item="Wy_NG_Down" site="" woffset="133" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OD_NG_UP" item="OD_NG_UP" site="" woffset="135" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OD_Alarm_UP" item="OD_Alarm_UP" site="" woffset="137" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OD_Alarm_Down" item="OD_Alarm_Down" site="" woffset="139" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="OD_NG_Down" item="OD_NG_Down" site="" woffset="141" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Thick_NG_UP" item="Thick_NG_UP" site="" woffset="143" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Thick_Alarm_UP" item="Thick_Alarm_UP" site="" woffset="145" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Thick_Alarm_Down" item="Thick_Alarm_Down" site="" woffset="147" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Thick_NG_Down" item="Thick_NG_Down" site="" woffset="149" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Tran_550nm_NG_UP" item="Tran_550nm_NG_UP" site="" woffset="151" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Tran_550nm_Alarm_UP" item="Tran_550nm_Alarm_UP" site="" woffset="153" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Tran_550nm_Alarm_Down" item="Tran_550nm_Alarm_Down" site="" woffset="155" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Tran_550nm_NG_Down" item="Tran_550nm_NG_Down" site="" woffset="157" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Ref_550m_NG_UP" item="Ref_550m_NG_UP" site="" woffset="159" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Ref_550m_Alarm_UP" item="Ref_550m_Alarm_UP" site="" woffset="161" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Ref_550m_Alarm_Down" item="Ref_550m_Alarm_Down" site="" woffset="163" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Ref_550m_NG_Down" item="Ref_550m_NG_Down" site="" woffset="165" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_CF_14_FCMQC-TTP_L05_SP_Ver 1.0.4.xls" plcmap="CSOT_G6C_BC_CF_14_FCMQC-TTP-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FPRecipe" site="" woffset="10" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FPRecipeNo." site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeValueMin(T1)" site="" woffset="21" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeValueMax(T1)" site="" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeAverageMin(T1)" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeAverageMax(T1)" site="" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeUniformityMin(T1)" site="" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeUniformityMax(T1)" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeValueMin(T2)" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeValueMax(T2)" site="" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeAverageMin(T2)" site="" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeAverageMax(T2)" site="" woffset="39" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeUniformityMin(T2)" site="" woffset="41" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeUniformityMax(T2)" site="" woffset="43" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeValueMin(T3)" site="" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeValueMax(T3)" site="" woffset="47" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeAverageMin(T3)" site="" woffset="49" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeAverageMax(T3)" site="" woffset="51" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeUniformityMin(T3)" site="" woffset="53" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeUniformityMax(T3)" site="" woffset="55" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeValueMin(T4)" site="" woffset="57" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeValueMax(T4)" site="" woffset="59" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeAverageMin(T4)" site="" woffset="61" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeAverageMax(T4)" site="" woffset="63" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeUniformityMin(T4)" site="" woffset="65" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeUniformityMax(T4)" site="" woffset="67" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeValueMin(T5)" site="" woffset="69" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeValueMax(T5)" site="" woffset="71" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeAverageMin(T5)" site="" woffset="73" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeAverageMax(T5)" site="" woffset="75" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeUniformityMin(T5)" site="" woffset="77" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+  <item name="JudgeUniformityMax(T5)" site="" woffset="79" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

@@ -1,0 +1,100 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-05-09 10:07:22-->
+<itemgroup name="L2ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_1 Line_L2_Loader_Ver 1.0.1_20160415.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EQ_Positive_pressure" item="CDA" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="EQ_Vacuum_Pressure" item="CDA" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>
+<itemgroup name="L3ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_1 Line_L3_CUT(Shirai)_Ver 1.0.2_20160506.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="InCV_U_D_AssistP" item="Press" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="In_CV_U_D_Assist" item="Press" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Multi_CDA1_Press" item="Press" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Multi_CDA2_Press" item="Press" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Multi_Vac_Press" item="Vacuum" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Multi_Cyl__BlowP" item="Press" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="MultiFloat_BlowP" item="Press" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Multi_STG_EjectP" item="Press" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Stick_CDA1_Press" item="Press" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Stick_CDA2_Press" item="Press" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Stick_Vac1_Press" item="Vacuum" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Stick_Vac2_Press" item="Vacuum" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Stick_All_PadSuc" item="Vacuum" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Stick_TbSucPress" item="Vacuum" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_CDA1_Press" item="Press" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_Vac1_Press" item="Vacuum" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_CDA2_Press" item="Press" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_CDA3;4_Press" item="Press" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_B_Air_BackUp" item="Press" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ProA_STG_V-Break" item="Press" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ProA_STG_Ejector" item="Press" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ProB_STG_V-Break" item="Press" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ProB_STG_Ejector" item="Press" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_L_CDA_Press1" item="Press" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_L_Vac_Press1" item="Vacuum" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_L_CDA_Press2" item="Press" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_L_Vac_Press2" item="Vacuum" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_L_TB_Blow_P" item="Press" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_R_CDA_Press1" item="Press" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_R_Vac_Press1" item="Vacuum" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_R_CDA_Press2" item="Press" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_R_Vac_Press2" item="Vacuum" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Pro_R_TB_Blow_P" item="Press" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Out_CV_Vac_Press" item="Vacuum" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Out_CV_CDA_Press" item="Press" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>
+<itemgroup name="L4ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_1 Line_L4_BEV_Ver 1.0.1_20160506.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="GC_Retry" item="Quantity" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="GD_Retry" item="Quantity" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Coner_DIW_FLOW" item="L" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Grinding_DIW_FLOW" item="L" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Index_01_Vacuum" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Coner_Table_Vacuum" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Index_02_Vacuum" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Grinding_Table_Vacuum" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Index_03_Vacuum" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_1 Line_L5_BCN_Ver 1.0.1_20160506.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Recipe_Version" site="" woffset="5" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="CDA_Source_F" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="DIW_Source_F" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="CDA_Source_P" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_DIW_Source_P_front" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_DIW_Source_P_rear" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_BJ_Tank_P_front" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_BJ_Tank_P_rear" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_RB-R_Tank_P_front" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_RB-L_Tank_P_front" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+  <item name="Filter_RB_Tank_P_rear" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Daily" />
+</itemgroup>
+<itemgroup name="L6ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_1 Line_L6_BUR_Ver 1.0.0_20160506.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MAIN_AIR" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MAIN_VAC" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TRANSFER1_L_VAC" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TRANSFER2_L_VAC" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ROBOT_L_VAC" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="STAGE_L_VAC" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FAC_SUPPLY_AIR1" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FAC_SUPPLY_AIR2" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="FAC_SUPPLY_AIR3" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TRANSFER1_R_VAC" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TRANSFER2_R_VAC" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ROBOT_R_VAC" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="STAGE_R_VAC" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L8ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_04_CCCUT_1 Line_L8_Unloader_Ver 1.0.1_20160415.xlsx" plcmap="WHCSOT_G6C_BC_Cell_04_CCCUT-PLC Address Map_Ver1.24.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EQ_Positive_pressure" item="CDA" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="EQ_Vacuum_Pressure" item="CDA" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>

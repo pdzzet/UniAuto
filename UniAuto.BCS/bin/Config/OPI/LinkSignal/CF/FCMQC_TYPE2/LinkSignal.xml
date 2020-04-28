@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<LinkSignal>
+	<Bit UpStream="L2" DownStream="L3" SeqNo="0101" LinkType="CF_RBExchange_RBtoST" TimingChart="RBExchange" />
+	<Bit UpStream="L2" DownStream="L3" SeqNo="0202" LinkType="CF_RBExchange_RBtoST" TimingChart="RBExchange" />
+	<Bit UpStream="L2" DownStream="L4" SeqNo="0201" LinkType="CF_RBExchange_RBtoST" TimingChart="RBExchange" />
+	<Bit UpStream="L2" DownStream="L4" SeqNo="0301" LinkType="CF_RBExchange_RBtoST" TimingChart="RBExchange" />
+	<Bit UpStream="L2" DownStream="L5" SeqNo="0301" LinkType="CF_RBExchange_RBtoST" TimingChart="RBExchange" />
+	<Bit UpStream="L2" DownStream="L3" SeqNo="0402" LinkType="CF_RBExchange_RBtoST" TimingChart="RBExchange" />
+	<Bit UpStream="L3" DownStream="L2" SeqNo="0101" LinkType="CF_RBExchange_STtoRB" TimingChart="RBExchange" />
+	<Bit UpStream="L3" DownStream="L2" SeqNo="0202" LinkType="CF_RBExchange_STtoRB" TimingChart="RBExchange" />
+	<Bit UpStream="L3" DownStream="L2" SeqNo="0204" LinkType="CF_RBExchange_STtoRB" TimingChart="RBExchange" />
+	<Bit UpStream="L4" DownStream="L2" SeqNo="0102" LinkType="CF_RBExchange_STtoRB" TimingChart="RBExchange" />
+	<Bit UpStream="L4" DownStream="L2" SeqNo="0103" LinkType="CF_RBExchange_STtoRB" TimingChart="RBExchange" />
+	<Bit UpStream="L5" DownStream="L2" SeqNo="0103" LinkType="CF_RBExchange_STtoRB" TimingChart="RBExchange" />
+</LinkSignal>

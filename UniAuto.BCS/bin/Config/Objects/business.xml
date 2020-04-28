@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:db="http://www.springframework.net/database">
+  <object id="MESService" type="UniAuto.UniBCS.CSOT.MESMessageService.MESService,UniAuto.UniBCS.CSOT.MESMessageService" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+    <property name="FileFormatManager" ref="FileFormatManager">
+    </property>
+  </object>
+  <object id="OEEService" type="UniAuto.UniBCS.CSOT.MESMessageService.OEEService,UniAuto.UniBCS.CSOT.MESMessageService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="EDAService" type="UniAuto.UniBCS.CSOT.MESMessageService.EDAService,UniAuto.UniBCS.CSOT.MESMessageService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="APCService" type="UniAuto.UniBCS.CSOT.MESMessageService.APCService,UniAuto.UniBCS.CSOT.MESMessageService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="AlarmService" type="UniAuto.UniBCS.CSOT.CommonService.AlarmService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="APCDataService" type="UniAuto.UniBCS.CSOT.CommonService.APCDataService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="CIMMessageService" type="UniAuto.UniBCS.CSOT.CommonService.CIMMessageService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="DailyCheckService" type="UniAuto.UniBCS.CSOT.CommonService.DailyCheckService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="DateTimeService" type="UniAuto.UniBCS.CSOT.CommonService.DateTimeService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="EnergyVisualizationService" type="UniAuto.UniBCS.CSOT.CommonService.EnergyVisualizationService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="EquipmentService" type="UniAuto.UniBCS.CSOT.CommonService.EquipmentService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="JobService" type="UniAuto.UniBCS.CSOT.CommonService.JobService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="LineService" type="UniAuto.UniBCS.CSOT.CommonService.LineService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="MaterialService" type="UniAuto.UniBCS.CSOT.CommonService.MaterialService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="ProcessDataService" type="UniAuto.UniBCS.CSOT.CommonService.ProcessDataService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+    <property name="ConfigFileName" value="..\Config\Agent\IO\EDCbyFTPSetting.xml">
+    </property>
+  </object>
+  <object id="RecipeService" type="UniAuto.UniBCS.CSOT.CommonService.RecipeService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="SubBlockService" type="UniAuto.UniBCS.CSOT.CommonService.SubBlockService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="VCRService" type="UniAuto.UniBCS.CSOT.CommonService.VCRService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="CassetteService" type="UniAuto.UniBCS.CSOT.PortService.CassetteService,UniAuto.UniBCS.CSOT.PortService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="PortService" type="UniAuto.UniBCS.CSOT.PortService.PortService,UniAuto.UniBCS.CSOT.PortService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="UIService" type="UniAuto.UniBCS.CSOT.UIService.UIService,UniAuto.UniBCS.CSOT.UIService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+    <property name="FileFormatManager" ref="FileFormatManager">
+    </property>
+  </object>
+  <object id="SerialService" type="UniAuto.UniBCS.CSOT.SerialPortService.SerialPortService,UniAuto.UniBCS.CSOT.SerialPortService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <!--<object id="FrmTest" type="UniAuto.UniBCS.CSOT.CommonService.Test.FrmTest,UniAuto.UniBCS.CSOT.CommonService" >
+  </object>-->
+  <object id="NikonSECSService" type="UniAuto.UniBCS.CSOT.SECSService.NikonSECSService,UniAuto.UniBCS.CSOT.SECSService" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="CSOTSECSService" type="UniAuto.UniBCS.CSOT.SECSService.CSOTSECSService,UniAuto.UniBCS.CSOT.SECSService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="ArraySpecialService" type="UniAuto.UniBCS.CSOT.LineSpecialService.ArraySpecialService,UniAuto.UniBCS.CSOT.LineSpecialService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="CFSpecialService" type="UniAuto.UniBCS.CSOT.LineSpecialService.CFSpecialService,UniAuto.UniBCS.CSOT.LineSpecialService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="CELLSpecialService" type="UniAuto.UniBCS.CSOT.LineSpecialService.CELLSpecialService,UniAuto.UniBCS.CSOT.LineSpecialService" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+    <property name="ConfigFileName" value="..\Config\Agent\IO\EDCbyFTPSetting.xml">
+    </property>
+    <property name="FileFormatManager" ref="FileFormatManager">
+    </property>
+  </object>
+  <object id="DenseBoxService" type="UniAuto.UniBCS.CSOT.LineSpecialService.DenseBoxService,UniAuto.UniBCS.CSOT.LineSpecialService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="DenseBoxPortService" type="UniAuto.UniBCS.CSOT.LineSpecialService.DenseBoxPortService,UniAuto.UniBCS.CSOT.LineSpecialService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="DenseBoxCassetteService" type="UniAuto.UniBCS.CSOT.LineSpecialService.DenseBoxCassetteService,UniAuto.UniBCS.CSOT.LineSpecialService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="PaperBoxService" type="UniAuto.UniBCS.CSOT.LineSpecialService.PaperBoxService,UniAuto.UniBCS.CSOT.LineSpecialService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="ActiveSocketService" type="UniAuto.UniBCS.CSOT.SocketService.ActiveSocketService,UniAuto.UniBCS.CSOT.SocketService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+    <property name="FileFormatManager" ref="FileFormatManager">
+    </property>
+  </object>
+  <object id="PassiveSocketService" type="UniAuto.UniBCS.CSOT.SocketService.PassiveSocketService,UniAuto.UniBCS.CSOT.SocketService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+    <property name="FileFormatManager" ref="FileFormatManager">
+    </property>
+  </object>
+  <object id="PalletService" type="UniAuto.UniBCS.CSOT.LineSpecialService.PalletService,UniAuto.UniBCS.CSOT.LineSpecialService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="EqToEqService" type="UniAuto.UniBCS.CSOT.LineSpecialService.EqToEqService,UniAuto.UniBCS.CSOT.LineSpecialService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+    <property name="FormatFile" value="..\Config\Agent\IO\EQToEQ-CELL.xml">
+    </property>
+  </object>
+  <!--<object id="FrmTestSECS" type="UniAuto.UniBCS.CSOT.SECSService.FrmTestSECS,UniAuto.UniBCS.CSOT.SECSService" >
+  </object>-->
+  <object id="PerformanceService" type="UniAuto.UniBCS.CSOT.CommonService.PerformanceService,UniAuto.UniBCS.CSOT.CommonService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="PerformanceService">
+    </property>
+  </object>
+  <object id="EvisorService" type="UniAuto.UniBCS.CSOT.MESMessageService.EvisorService,UniAuto.UniBCS.CSOT.MESMessageService" init-method="Init" parent="AbstractService">
+    <property name="LogName" value="Service">
+    </property>
+    <property name="Interval" value="300">
+    </property>
+    <property name="EvisorFolder" value="D:\UnicomLog\Monitor\">
+    </property>
+  </object>
+  <!-- For Robot Use -->
+  <object id="RobotCoreService" type="UniAuto.UniRCS.Core.RobotCoreService,UniAuto.UniRCS.Core" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+    <property name="IsEnable" value="True">
+    </property>
+  </object>
+  <object id="RobotService" type="UniAuto.UniRCS.CSOT.t3.Service.RobotStatusService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+  <object id="RobotCommandService" type="UniAuto.UniRCS.CSOT.t3.Service.RobotCommandService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+  <object id="RobotSelectJobService" type="UniAuto.UniRCS.CSOT.t3.Service.RobotSelectJobService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+  <object id="RobotRouteConditionService" type="UniAuto.UniRCS.CSOT.t3.Service.RobotRouteConditionService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+  <object id="JobFilterService" type="UniAuto.UniRCS.CSOT.t3.Service.JobFilterService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+  <object id="JobOrderByService" type="UniAuto.UniRCS.CSOT.t3.Service.JobOrderByService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+  <object id="JobProcessResultActionService" type="UniAuto.UniRCS.CSOT.t3.Service.JobProcessResultActionService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+  <object id="RobotSpecialService" type="UniAuto.UniRCS.CSOT.t3.Service.RobotSpecialService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+  <object id="JobStageSelectService" type="UniAuto.UniRCS.CSOT.t3.Service.JobStageSelectService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+  <object id="JobRouteStepByPassService" type="UniAuto.UniRCS.CSOT.t3.Service.JobRouteStepByPassService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+  <object id="JobRouteStepJumpService" type="UniAuto.UniRCS.CSOT.t3.Service.JobRouteStepJumpService,UniAuto.UniRCS.CSOT.t3.Service" init-method="Init" destroy-method="Destroy" parent="AbstractService">
+    <property name="LogName" value="RobotService">
+    </property>
+  </object>
+</objects>

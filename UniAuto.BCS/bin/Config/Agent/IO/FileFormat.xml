@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sections>
+  <section name="ACShop" type="Job" fileName="{Glass_ID}.dat" filePath="D:\FileData\" >
+    <item key="1" name="Glass_ID" property="GlassChipMaskBlockID" format="{name}={property}』" length="20"/>
+    <item key="2" name="Product_ID" property="MesCstBody.LOTLIST[0].PRODUCTSPECNAME" format="{name}={property}』" length="14"/>
+    <item key="3" name="Owner_ID" property="MesProduct.OWNERID" format="{name}={property}』" length="14"/>
+    <item key="4" name="Owner_Type" property="MesProduct.OWNERTYPE" format="{name}={property}』" length="14"/>
+    <item key="5" name="Lot_ID" property="MesCstBody.LOTLIST[0].LOTNAME" format="{name}={property}』" length="12"/>
+    <item key="6" name="PFCD" property="MesCstBody.LOTLIST[0].PRODUCTSPECNAME" format="{name}={property}』" length="20"/>
+    <item key="7" name="Process_ID" property="MesCstBody.LOTLIST[0].PROCESSOPERATIONNAME" format="{name}={property}』" length="5"/>
+    <item key="8" name="Recipe_ID" property="LineRecipeName" format="{name}={property}』" length="32"/>
+    <item key="9" name="CST_ID" property="FromCstID" format="{name}={property}』" length="6"/>
+    <item key="10" name="Slot_ID" property="FromSlotNo" format="{name}={property}』" length="2"/>
+    <item key="11" name="Production_Type" property="ProductType.Value" format="{name}={property}』" length="20"/>
+    <item key="12" name="Product_Group" property="MesCstBody.LOTLIST[0].PRODUCTSPECGROUP" format="{name}={property}』" length="20"/>
+    <item key="13" name="Product_Info" property="" format="{name}={property}』" length="50"/>
+    <item key="14" name="LOT_Info" property="" format="{name}={property}』" length="50"/>
+    <item key="15" name="Defect_Code" property="HostDefectCodeData" format="{name}={property}』" length="2399"/>
+    <item key="16" name="From_Site" property="MesCstBody.LOTLIST[0].ORIENTEDSITE" format="{name}={property}』" length="5"/>
+    <item key="17" name="Current_Site" property="MesCstBody.LOTLIST[0].CURRENTSITE" format="{name}={property}』" length="5"/>
+    <item key="18" name="From_Shop" property="MesCstBody.LOTLIST[0].ORIENTEDFACTORYNAME" format="{name}={property}』" length="5"/>
+    <item key="19" name="Current_Shop" property="MesCstBody.LOTLIST[0].CURRENTFACTORYNAME" format="{name}={property}』" length="5"/>
+    <item key="20" name="Pre_Inline_ID" property="" format="{name}={property}』" length="100"/>
+    <item key="21" name="Pre_Tool_ID" property="" format="{name}={property}』" length="100"/>
+    <item key="22" name="CSP_Number" property="CfSpecial.AbnormalCode.CSPNUMBER" format="{name}={property}』" length="10"/> 
+    <item key="23" name="VCD_Chamber" property="CfSpecial.AbnormalCode.VCDSIDE" format="{name}={property}』" length="10"/>
+    <item key="24" name="HP_Chamber" property="CfSpecial.AbnormalCode.HPCHAMBER" format="{name}={property}』" length="10"/>
+    <item key="25" name="CP_Chamber" property="" format="{name}={property}』" length="10"/>
+    <item key="26" name="ALN_Stage_Number" property="CfSpecial.AbnormalCode.ALNSIDE" format="{name}={property}』" length="10"/>
+    <item key="27" name="OVEN_Chamber" property="CfSpecial.AbnormalCode.OVENSIDE" format="{name}={property}』" length="10"/>
+    <item key="28" name="Sputter_Side" property="" format="{name}={property}』" length="10"/>
+    <item key="29" name="PR_Lot" property="CfSpecial.AbnormalCode.PRLOT" format="{name}={property}』" length="50"/>
+    <item key="30" name="Dispense_Speed" property="CfSpecial.AbnormalCode.DISPENSESPEED" format="{name}={property}』" length="50"/>
+    <item key="31" name="Array_Inline_ID" property="CfSpecial.AbnormalCode.ArrayPhotoPre_InlineID" format="{name}={property}』" length="100"/>
+    <item key="32" name="Array_Tool_ID" property="" format="{name}={property}』" length="100"/>
+    <item key="33" name="OXR_Infomation" property="OXRInformation" format="{name}={property}』" length="1200"/>
+    <item key="34" name="Thickness" property="MesCstBody.LOTLIST[0].PRODUCTTHICKNESS" format="{name}={property}』" length="1"/>
+    <item key="35" name="MMGFlag" property="MMGFlag" format="{name}={property}』" length="1"/>
+    <item key="36" name="PANELSIZE" property="PANELSIZE" format="{name}={property}』" length="4000"/>
+    <item key="37" name="REVPROCESSOPERATIONNAME" property="MesProduct.REVPROCESSOPERATIONNAME" format="{name}={property}』" length="5"/>
+    <item key="38" name="LASTMAINPPID" property="ArraySpecial.LastMainPPID" format="{name}={property}』" length="100"/>
+    <item key="39" name="LASTMAINEQPNAME" property="ArraySpecial.LastMainEqpName" format="{name}={property}』" length="100"/>
+    <item key="40" name="LASTMAINCHAMBERNAME" property="ArraySpecial.LastMainChamberName" format="{name}={property}』" length="100"/>
+    <item key="41" name="Group_ID" property="MesProduct.GROUPID" format="{name}={property}』" length="15"/>
+    <item key="42" name="AUTOSAMPLEFLAG" property="MesCstBody.LOTLIST[0].AUTOSAMPLEFLAG" format="{name}={property}』" length="1"/>
+  </section>
+
+  <section name="CELLShopFEOL" type="Job" fileName="{Glass_ID}.dat" filePath="D:\FileData\" >
+    <item key="1" name="Glass_ID" property="GlassChipMaskBlockID" format="{name}={property}』" length="20"/>
+    <item key="2" name="Glass_Type" property="GLASSTYPE" format="{name}={property}』" length="14"/>
+    <item key="3" name="Product_ID" property="MesCstBody.LOTLIST[0].PRODUCTSPECNAME" format="{name}={property}』" length="14"/>
+    <item key="4" name="Owner_ID" property="MesProduct.OWNERID" format="{name}={property}』" length="14"/>
+    <item key="5" name="Owner_Type" property="MesProduct.OWNERTYPE" format="{name}={property}』" length="14"/>
+    <item key="6" name="Lot_ID" property="MesCstBody.LOTLIST[0].LOTNAME" format="{name}={property}』" length="12"/>
+    <item key="7" name="Process_ID" property="MesCstBody.LOTLIST[0].PROCESSOPERATIONNAME" format="{name}={property}』" length="4"/>
+    <item key="8" name="Recipe_ID" property="LineRecipeName" format="{name}={property}』" length="40"/>
+    <item key="9" name="CST_ID" property="FromCstID" format="{name}={property}』" length="6"/>
+    <item key="10" name="Slot_ID" property="FromSlotNo" format="{name}={property}』" length="2"/>
+    <item key="11" name="PreProcess_ID_1" property="" format="{name}={property}』" length="4"/>
+    <item key="12" name="Group_ID" property="MesProduct.GROUPID" format="{name}={property}』" length="15"/>
+    <item key="13" name="ArrayProductSpecName" property="MesProduct.ARRAYPRODUCTSPECNAME" format="{name}={property}』" length="14"/>
+    <item key="14" name="CFProductSpecName" property="" format="{name}={property}』" length="14"/>
+    <item key="15" name="Product_Info" property="" format="{name}={property}』" length="50"/>
+    <item key="16" name="LOT_Info" property="" format="{name}={property}』" length="50"/>
+    <item key="17" name="Product_Group" property="MesCstBody.LOTLIST[0].PRODUCTSPECGROUP" format="{name}={property}』" length="20"/>
+    <item key="18" name="From_Site" property="MesCstBody.LOTLIST[0].ORIENTEDSITE" format="{name}={property}』" length="5"/>
+    <item key="19" name="Current_Site" property="MesCstBody.LOTLIST[0].CURRENTSITE" format="{name}={property}』" length="5"/>
+    <item key="20" name="From_Shop" property="MesCstBody.LOTLIST[0].ORIENTEDFACTORYNAME" format="{name}={property}』" length="5"/>
+    <item key="21" name="Current_Shop" property="MesCstBody.LOTLIST[0].CURRENTFACTORYNAME" format="{name}={property}』" length="5"/>
+    <item key="22" name="Thickness" property="MesCstBody.LOTLIST[0].PRODUCTTHICKNESS" format="{name}={property}』" length="1"/>
+    <item key="23" name="MMGFlag" property="MMGFlag" format="{name}={property}』" length="1"/>
+    <item key="24" name="PANELSIZE" property="PANELSIZE" format="{name}={property}』" length="4000"/>
+  </section>
+
+  <section name="CELLShopBEOL" type="Job" fileName="{Panel_ID}.dat" filePath="D:\FileData\" >
+    <item key="1" name="Panel_ID" property="GlassChipMaskBlockID" format="{name}={property}』" length="20"/>
+    <item key="2" name="Glass_Type" property="GLASSTYPE" format="{name}={property}』" length="14"/>
+    <item key="3" name="Product_ID" property="MesCstBody.LOTLIST[0].PRODUCTSPECNAME" format="{name}={property}』" length="14"/>
+    <item key="4" name="Owner_ID" property="MesProduct.OWNERID" format="{name}={property}』" length="14"/>
+    <item key="5" name="Owner_Type" property="MesProduct.OWNERTYPE" format="{name}={property}』" length="14"/>
+    <item key="6" name="Lot_ID" property="MesCstBody.LOTLIST[0].LOTNAME" format="{name}={property}』" length="12"/>
+    <item key="7" name="Process_ID" property="MesCstBody.LOTLIST[0].PROCESSOPERATIONNAME" format="{name}={property}』" length="4"/>
+    <item key="8" name="Recipe_ID" property="LineRecipeName" format="{name}={property}』" length="40"/>
+    <item key="9" name="SaleOrder" property="MesCstBody.LOTLIST[0].SALEORDER" format="{name}={property}』" length="10"/>
+    <item key="10" name="CF_Glass_ID" property="MesProduct.CFPRODUCTNAME" format="{name}={property}』" length="20"/>
+    <item key="11" name="Array_Lot_ID" property="MesProduct.ARRAYLOTNAME" format="{name}={property}』" length="12"/>
+    <item key="12" name="Array_Glass_ID" property="MesProduct.ARRAYPRODUCTNAME" format="{name}={property}』" length="20"/>
+    <item key="13" name="CF_Glass_OX_Info" property="MesProduct.CFSUBPRODUCTGRADE" format="{name}={property}』" length="52"/>
+    <item key="14" name="TFT_Panel_Judge" property="MesProduct.ARRAYSUBPRODUCTGRADE" format="{name}={property}』" length="2"/>
+    <item key="15" name="PreProcess_ID_1" property="" format="{name}={property}』" length="4"/>
+    <item key="16" name="Group_ID" property="MesProduct.GROUPID" format="{name}={property}』" length="15"/>
+    <item key="17" name="Product_Group" property="MesCstBody.LOTLIST[0].PRODUCTSPECGROUP" format="{name}={property}』" length="20"/>
+    <item key="18" name="From_Site" property="MesCstBody.LOTLIST[0].ORIENTEDSITE" format="{name}={property}』" length="5"/>
+    <item key="19" name="Current_Site" property="MesCstBody.LOTLIST[0].CURRENTSITE" format="{name}={property}』" length="5"/>
+    <item key="20" name="From_Shop" property="MesCstBody.LOTLIST[0].ORIENTEDFACTORYNAME" format="{name}={property}』" length="5"/>
+    <item key="21" name="Current_Shop" property="MesCstBody.LOTLIST[0].CURRENTFACTORYNAME" format="{name}={property}』" length="5"/>
+    <item key="22" name="Thickness" property="MesCstBody.LOTLIST[0].PRODUCTTHICKNESS" format="{name}={property}』" length="1"/>
+    <item key="23" name="MMGFlag" property="MMGFlag" format="{name}={property}』" length="1"/>
+    <item key="24" name="PANELSIZE" property="PANELSIZE" format="{name}={property}』" length="4000"/>
+  </section>
+
+  <section name="CCLineJPS" type="Job" fileName="{Panel ID}_JPS.dat" filePath="D:\FileData\" >
+    <item key="1" name="CST ID" property="FromCstID" format="{name}={property}』" length="8"/>
+    <item key="2" name="PFCD" property="MesCstBody.LOTLIST[0].PRODUCTSPECNAME" format="{name}={property}』" length="12"/>
+    <item key="3" name="Owner" property="MesCstBody.LOTLIST[0].PRODUCTOWNER" format="{name}={property}』" length="4"/>
+    <item key="4" name="Process Num" property="MesCstBody.LOTLIST[0].PROCESSOPERATIONNAME" format="{name}={property}』" length="4"/>
+    <item key="5" name="Port ID" property="01" format="{name}={property}』" length="2"/>
+    <item key="6" name="Port Type" property="MesProduct.SUBPRODUCTJPSGRADE" format="{name}={property}』" length="2"/>
+    <item key="7" name="Destination Fab" property="" format="{name}={property}』" length="6"/>
+    <item key="8" name="PanelCount" property="" format="{name}={property}』" length="5"/>
+    <item key="9" name="RMANO" property="" format="{name}={property}』" length="12"/>
+    <item key="10" name="OQCNO" property="" format="{name}={property}』" length="12"/>
+    <item key="11" name="Source Fab" property="" format="{name}={property}』" length="6"/>
+    <item key="12" name="Slot Num" property="" format="{name}={property}』" length="4"/>
+    <item key="13" name="Panel ID" property="GlassChipMaskBlockID" format="{name}={property}』" length="20"/>
+    <item key="14" name="Light ON Panel Grade" property="" format="{name}={property}』" length="2"/>
+    <item key="15" name="Light ON Reason Code" property="" format="{name}={property}』" length="5"/>
+    <item key="16" name="TFT Repair Grade" property="MesProduct.ARRAYSUBPRODUCTGRADE" format="{name}={property}』" length="2"/>
+    <item key="17" name="CF Panel ID" property="MesProduct.CFPRODUCTNAME" format="{name}={property}』" length="20"/>
+    <item key="18" name="CF Panel O/X Information" property="MesProduct.CFSUBPRODUCTGRADE" format="{name}={property}』" length="6"/>
+    <item key="19" name="Panel Owner Type" property="OWNERTYPE" format="{name}={property}』" length="1"/>
+    <item key="20" name="F Grade" property="CellSpecial.FGradeFlag" format="{name}={property}』" length="4"/>
+    <item key="21" name="Abnormal TFT" property="CellSpecial.AbnormalTFT" format="{name}={property}』" length="4"/>
+    <item key="22" name="Abnormal LCD" property="CellSpecial.AbnormalLCD" format="{name}={property}』" length="12"/>
+    <item key="23" name="Group ID" property="MesProduct.GROUPID" format="{name}={property}』" length="12"/>
+    <item key="24" name="Repair Rework Count" property="" format="{name}={property}』" length="2"/>
+    <item key="25" name="Polarizer  Rework Count" property="" format="{name}={property}』" length="2"/>
+    <item key="26" name="LCD Q-tap Lot/Group ID" property="CellSpecial.LcdQtapLotGroupID" format="{name}={property}』" length="4"/>
+    <item key="27" name="SK Flag" property="" format="{name}={property}』" length="4"/>
+    <item key="28" name="CF R Defect code" property="" format="{name}={property}』" length="4"/>
+    <item key="29" name="ODF AK Flag" property="MesProduct.SUBPRODUCTJPSFLAG" format="{name}={property}』" length="4"/>
+    <item key="30" name="BPAM rework flag" property="" format="{name}={property}』" length="2"/>
+    <item key="31" name="LCD Bright dot flag" property="" format="{name}={property}』" length="2"/>
+    <item key="32" name="CF PS height err flag" property="CellSpecial.DeCreateFlag" format="{name}={property}』" length="1"/>
+    <item key="33" name="PI inspection NG flag" property="" format="{name}={property}』" length="1"/>
+    <item key="34" name="PI over bake flag" property="" format="{name}={property}』" length="1"/>
+    <item key="35" name="PI over Q time flag" property="" format="{name}={property}』" length="1"/>
+    <item key="36" name="ODF over bake flag" property="" format="{name}={property}』" length="1"/>
+    <item key="37" name="ODF over Q time flag" property="" format="{name}={property}』" length="1"/>
+    <item key="38" name="HVA over bake flag" property="" format="{name}={property}』" length="1"/>
+    <item key="39" name="HVA over Q time flag" property="" format="{name}={property}』" length="1"/>
+    <item key="40" name="Seal inspection flag" property="" format="{name}={property}』" length="1"/>
+    <item key="41" name="ODF checker flag" property="" format="{name}={property}』" length="1"/>
+    <item key="42" name="ODF Door open flag" property="" format="{name}={property}』" length="1"/>
+    <item key="43" name="Product ID" property="MesCstBody.LOTLIST[0].PRODUCTSPECNAME" format="{name}={property}』" length="12"/>
+    <item key="44" name="Owner ID" property="MesProduct.OWNERID" format="{name}={property}』" length="6"/>
+    <item key="45" name="PreProcess_ID_1" property="" format="{name}={property}』" length="4"/>
+    <item key="46" name="panel Spare1" property="CellSpecial.PanelSpare1" format="{name}={property}』" length="30"/>
+    <item key="47" name="panel Spare2" property="CellSpecial.PanelSpare2" format="{name}={property}』" length="30"/>
+    <item key="48" name="panel Spare3" property="CellSpecial.PanelSpare3" format="{name}={property}』" length="30"/>
+    <item key="49" name="panel Spare4" property="CellSpecial.PanelSpare4" format="{name}={property}』" length="30"/>
+    <item key="50" name="panel Spare5" property="CellSpecial.PanelSpare5" format="{name}={property}』" length="30"/>
+    <item key="51" name="panel Spare6" property="CellSpecial.PanelSpare6" format="{name}={property}』" length="30"/>
+    <item key="52" name="panel Spare7" property="CellSpecial.PanelSpare7" format="{name}={property}』" length="30"/>
+    <item key="53" name="panel Spare8" property="CellSpecial.PanelSpare8" format="{name}={property}』" length="30"/>
+    <item key="54" name="panel Spare9" property="CellSpecial.PanelSpare9" format="{name}={property}』" length="30"/>
+    <item key="55" name="panel Spare10" property="CellSpecial.PanelSpare10" format="{name}={property}』" length="30"/>
+    <item key="56" name="panel Spare11" property="CellSpecial.PanelSpare11" format="{name}={property}』" length="30"/>
+    <item key="57" name="panel Spare12" property="CellSpecial.PanelSpare12" format="{name}={property}』" length="30"/>
+    <item key="58" name="panel Spare13" property="CellSpecial.PanelSpare13" format="{name}={property}』" length="30"/>
+    <item key="59" name="panel Spare14" property="CellSpecial.PanelSpare14" format="{name}={property}』" length="30"/>
+    <item key="60" name="panel Spare15" property="CellSpecial.PanelSpare15" format="{name}={property}』" length="30"/>
+  </section>
+
+  <section name="MODShop" type="Job" fileName="{Panel_ID}.dat" filePath="D:\FileData\" >
+    <item key="1" name="OWER_CODE" property="MesProduct.OWNERID" format="{name}={property}』" length="4"/>
+    <item key="2" name="OWER_Type" property="MesProduct.OWNERTYPE" format="{name}={property}』" length="6"/>
+    <item key="3" name="Product_ID" property="MesCstBody.LOTLIST[0].PRODUCTSPECNAME" format="{name}={property}』" length="12"/>
+    <item key="4" name="Process_ID" property="MesCstBody.LOTLIST[0].PROCESSOPERATIONNAME" format="{name}={property}』" length="4"/>
+    <item key="5" name="Panel_ID" property="GlassChipMaskBlockID" format="{name}={property}』" length="20"/>
+  </section>
+</sections>

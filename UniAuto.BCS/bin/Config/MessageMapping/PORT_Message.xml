@@ -1,0 +1,1536 @@
+<message name="PLC_Port#01PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#02PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#03PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#04PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#05PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#06PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#07PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#08PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#09PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#10PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#11PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#12PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#13PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#14PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#15PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#16PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#17PortStatusChangeReport">
+		<object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#18PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#19PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#20PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#21PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#22PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#23PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#24PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#25PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#26PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#27PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#28PortStatusChangeReport">
+  <object id="PortService" method="PortStatusChangeReport" />
+</message>
+<message name="PLC_Port#01PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#02PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#03PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#04PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#05PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#06PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#07PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#08PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#09PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#10PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#11PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#12PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#13PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#14PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#15PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#16PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#17PortTypeChangeReport">
+		<object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#18PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#19PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#20PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#21PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#22PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#23PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#24PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#25PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#26PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#27PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#28PortTypeChangeReport">
+  <object id="PortService" method="PortTypeChangeReport" />
+</message>
+<message name="PLC_Port#01PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#02PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#03PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#04PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#05PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#06PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#07PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#08PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#09PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#10PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#11PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#12PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#13PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#14PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#15PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#16PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#17PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#18PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#19PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#20PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#21PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#22PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#23PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#24PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#25PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#26PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#27PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#28PortTypeChangeCommandReply">
+  <object id="PortService" method="PortTypeChangeCommandReply" />
+</message>
+<message name="PLC_Port#01PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#02PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#03PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#04PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#05PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#06PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#07PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#08PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#09PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#10PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#11PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#12PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#13PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#14PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#15PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#16PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#17PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#18PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#19PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#20PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#21PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#22PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#23PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#24PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#25PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#26PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#27PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#28PortModeChangeReport">
+  <object id="PortService" method="PortModeChangeReport" />
+</message>
+<message name="PLC_Port#01PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#02PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#03PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#04PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#05PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#06PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#07PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#08PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#09PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#10PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#11PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#12PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#13PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#14PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#15PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#16PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#17PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#18PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#19PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#20PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#21PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#22PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#23PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#24PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#25PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#26PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#27PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#28PortModeChangeCommandReply">
+  <object id="PortService" method="PortModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#01PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#02PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#03PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#04PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#05PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#06PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#07PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#08PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#09PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#10PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#11PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#12PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#13PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#14PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#15PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#16PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#17PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#18PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#19PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#20PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#21PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#22PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#23PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#24PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#25PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#26PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#27PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#28PortTransferModeChangeReport">
+  <object id="PortService" method="PortTransferModeChangeReport" />
+</message>
+<message name="PLC_Port#01PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#02PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#03PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#04PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#05PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#06PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#07PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#08PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#09PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#10PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#11PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#12PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#13PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#14PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#15PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#16PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#17PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#18PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#19PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#20PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#21PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#22PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#23PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#24PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#25PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#26PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#27PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#28PortTransferModeChangeCommandReply">
+  <object id="PortService" method="PortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#01PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#02PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#03PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#04PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#05PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#06PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#07PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#08PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#09PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#10PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#11PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#12PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#13PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#14PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#15PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#16PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#17PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#18PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#19PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#20PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#21PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#22PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#23PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#24PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#25PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#26PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#27PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#28PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#29PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#30PortEnableModeChangeReport">
+  <object id="PortService" method="PortEnableModeChangeReport" />
+</message>
+<message name="PLC_Port#01PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#02PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#03PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#04PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#05PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#06PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#07PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#08PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#09PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#10PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#11PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#12PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#13PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#14PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#15PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#16PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#17PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#18PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#19PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#20PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#21PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#22PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#23PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#24PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#25PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#26PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#27PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_Port#28PortEnableModeChangeCommandReply">
+  <object id="PortService" method="PortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_PortDownReport">
+  <object id="PortService" method="PortDownReport" />
+</message>
+<message name="PLC_PortDownRealStatusBlock">
+  <object id="PortService" method="PortDownRealStatusBlock" />
+</message>
+<message name="PLC_Port#01CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#02CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#03CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#04CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#05CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#06CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#07CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#08CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#09CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#10CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#11CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#12CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#13CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#14CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#15CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#16CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#17CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#18CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#19CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#20CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#21CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#22CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#23CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#24CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#25CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#26CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#27CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#28CassetteStatusChangeReport">
+  <object id="CassetteService" method="CassetteStatusChangeReport" />
+</message>
+<message name="PLC_Port#01CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#02CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#03CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#04CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#05CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#06CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#07CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#08CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#09CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#10CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#11CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#12CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#13CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#14CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#15CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#16CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#17CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#18CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#19CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#20CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#21CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#22CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#23CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#24CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#25CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#26CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#27CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#28CassetteControlCommandReply">
+  <object id="CassetteService" method="CassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#01PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#02PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#03PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#04PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#05PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#06PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#07PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#08PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#09PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#10PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#11PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#12PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#13PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#14PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#15PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#16PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#17PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#18PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#19PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#20PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#21PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#22PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#23PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#24PortPackingModeChangeReport">
+    <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#25PortPackingModeChangeReport">
+  <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#26PortPackingModeChangeReport">
+  <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#27PortPackingModeChangeReport">
+  <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_Port#28PortPackingModeChangeReport">
+  <object id="PortService" method="PortOperModeChangeReport" />
+</message>
+<message name="PLC_DP#01CassetteSettingCodeChangeReport">
+    <object id="DenseBoxService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_DP#02CassetteSettingCodeChangeReport">
+    <object id="DenseBoxService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_DP#03CassetteSettingCodeChangeReport">
+    <object id="DenseBoxService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_DP#04CassetteSettingCodeChangeReport">
+    <object id="DenseBoxService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_DP#05CassetteSettingCodeChangeReport">
+    <object id="DenseBoxService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_DP#06CassetteSettingCodeChangeReport">
+    <object id="DenseBoxService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_DP#07CassetteSettingCodeChangeReport">
+    <object id="DenseBoxService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_Port#01CassetteSettingCodeChangeReport">
+    <object id="PortService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_Port#02CassetteSettingCodeChangeReport">
+    <object id="PortService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_Port#03CassetteSettingCodeChangeReport">
+    <object id="PortService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_Port#04CassetteSettingCodeChangeReport">
+    <object id="PortService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_Port#05CassetteSettingCodeChangeReport">
+    <object id="PortService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_Port#06CassetteSettingCodeChangeReport">
+    <object id="PortService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_Port#07CassetteSettingCodeChangeReport">
+    <object id="PortService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_Port#08CassetteSettingCodeChangeReport">
+    <object id="PortService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_Port#09CassetteSettingCodeChangeReport">
+    <object id="PortService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_Port#10CassetteSettingCodeChangeReport">
+    <object id="PortService" method="CassetteSettingCodeChangeReport" />
+</message>
+<message name="PLC_DP#01PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#02PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#03PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#04PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#05PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#06PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#07PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#08PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#09PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#10PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#11PortStatusChangeReport">
+  <object id="DenseBoxPortService" method="DPPortStatusChangeReport" />
+</message>
+<message name="PLC_DP#01PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#02PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#03PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#04PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#05PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#06PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#07PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#08PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#09PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#10PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#11PortTypeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeReport" />
+</message>
+<message name="PLC_DP#01PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#02PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#03PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#04PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#05PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#06PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#07PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#08PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#09PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#10PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#11PortTypeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTypeChangeCommandReply" />
+</message>
+<message name="PLC_DP#01PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#02PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#03PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#04PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#05PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#06PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#07PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#08PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#09PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#10PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#11PortModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortModeChangeReport" />
+</message>
+<message name="PLC_DP#01PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#02PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#03PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#04PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#05PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#06PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#07PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#08PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#09PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#10PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#11PortModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#01PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#02PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#03PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#04PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#05PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#06PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#07PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#08PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#09PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#10PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#11PortTransferModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeReport" />
+</message>
+<message name="PLC_DP#01PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#02PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#03PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#04PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#05PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#06PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#07PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#08PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#09PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#10PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#11PortTransferModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortTransferModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#01PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#02PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#03PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#04PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#05PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#06PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#07PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#08PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#09PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#10PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#11PortEnableModeChangeReport">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeReport" />
+</message>
+<message name="PLC_DP#01PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#02PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#03PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#04PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#05PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#06PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#07PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#08PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#09PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#10PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#11PortEnableModeChangeCommandReply">
+  <object id="DenseBoxPortService" method="DPPortEnableModeChangeCommandReply" />
+</message>
+<message name="PLC_DP#01CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#02CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#03CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#04CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#05CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#06CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#07CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#08CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#09CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#10CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#11CassetteStatusChangeReport">
+  <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReport" />
+</message>
+<message name="PLC_DP#01CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_DP#02CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_DP#03CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_DP#04CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_DP#05CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_DP#06CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_DP#07CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_DP#08CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_DP#09CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_DP#10CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_DP#11CassetteControlCommandReply">
+  <object id="DenseBoxCassetteService" method="DPCassetteControlCommandReply" />
+</message>
+<message name="PLC_Port#01JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#02JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#03JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#04JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#05JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#06JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#07JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#08JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#09JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#10JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#11JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#12JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#13JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#14JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#15JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#16JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#17JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#18JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#19JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#20JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#21JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#22JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#23JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#24JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#25JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#26JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#27JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_Port#28JobCountinCassette">
+  <object id="PortService" method="JobCountInCassette" />
+</message>
+<message name="PLC_DP#01DPICassetteStatusChangeReport">
+    <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReportDPI" />
+</message>
+<message name="PLC_DP#02DPICassetteStatusChangeReport">
+    <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReportDPI" />
+</message>
+<message name="PLC_DP#03DPICassetteStatusChangeReport">
+    <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReportDPI" />
+</message>
+<message name="PLC_DP#04DPICassetteStatusChangeReport">
+    <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReportDPI" />
+</message>
+<message name="PLC_DP#05DPICassetteStatusChangeReport">
+    <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReportDPI" />
+</message>
+<message name="PLC_DP#06DPICassetteStatusChangeReport">
+    <object id="DenseBoxCassetteService" method="DPCassetteStatusChangeReportDPI" />
+</message>

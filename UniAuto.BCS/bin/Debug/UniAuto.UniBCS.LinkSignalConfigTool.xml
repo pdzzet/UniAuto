@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <LinkSignalType>
+    <Type Name="ARRAY_CVtoCV" TimingChart="CVtoCV"></Type>
+	<Type Name="ARRAY_RBtoST" TimingChart="RBtoST"></Type>
+	<Type Name="ARRAY_STtoRB" TimingChart="STtoRB"></Type>
+	<Type Name="ARRAY_RBtoST_GetPut" TimingChart="GetPut"></Type>
+    <Type Name="ARRAY_STtoRB_GetPut" TimingChart="GetPut"></Type>
+    <Type Name="ARRAY_STtoRB_SingleMode" TimingChart="STtoRB_SingleMode"></Type>
+	<Type Name="ARRAY_RBtoST_SingleMode" TimingChart="RBtoST_SingleMode"></Type>
+	<Type Name="ARRAY_STtoRB_RBExchange" TimingChart="RBExchange"></Type>
+	<Type Name="ARRAY_RBtoST_RBExchange" TimingChart="RBExchange"></Type>
+	<Type Name="ARRAY_RBtoST_DualModeForDoubleGlass" TimingChart="RBtoST_DualModeForDoubleGlass"></Type>
+	<Type Name="ARRAY_STtoRB_DualModeForDoubleGlass" TimingChart="STtoRB_DualModeForDoubleGlass"></Type>	
+    <Type Name="ARRAY_STtoRB_GetPutForDRY" TimingChart="STtoRB_SingleMode"></Type>
+	<Type Name="ARRAY_RBtoST_GetPutForDRY" TimingChart="RBtoST_SingleMode"></Type>
+	<Type Name="ARRAY_RBtoST_GetPutSolt" TimingChart="GetPutSolt"></Type>
+    <Type Name="ARRAY_STtoRB_GetPutSolt" TimingChart="GetPutSolt"></Type>
+    <Type Name="ARRAY_RBtoST_DualModeForOneGlass" TimingChart="RBtoST_DualModeForOneGlass"></Type>
+    <Type Name="ARRAY_STtoRB_DualModeForOneGlass" TimingChart="STtoRB_DualModeForOneGlass"></Type>
+	<Type Name="ARRAY_RBtoST_PinUp" TimingChart="RBtoST_PinUp"></Type>
+    <Type Name="ARRAY_STtoRB_PinDown" TimingChart="STtoRB_PinDown"></Type>
+    <Type Name="ARRAY_STtoRB_DualModeForOVNITO" TimingChart="STtoRB_DualModeForOVNITO"></Type>	
+	<Type Name="CELL_CVtoCV" TimingChart="CVtoCV"></Type>
+    <Type Name="CELL_STtoRB" TimingChart="STtoRB"></Type>
+	<Type Name="CELL_RBtoST" TimingChart="RBtoST"></Type>
+	<Type Name="CELL_CVtoCV_Multi" TimingChart="CVtoCVForTwoGlass"></Type>	
+	<Type Name="CELL_STtoRB_Multi" TimingChart="STtoRB_DualModeForDoubleGlass"></Type>	
+	<Type Name="CELL_RBtoST_Multi" TimingChart="RBtoST_DualModeForDoubleGlass"></Type>	
+	<Type Name="CF_CVtoCV" TimingChart="CVtoCV"></Type>
+    <Type Name="CF_GetPut_RBtoST" TimingChart="GetPut"></Type>
+    <Type Name="CF_GetPut_STtoRB" TimingChart="GetPut"></Type>
+    <Type Name="CF_RBExchange_RBtoST" TimingChart="RBExchange"></Type>
+    <Type Name="CF_RBExchange_STtoRB" TimingChart="RBExchange"></Type>
+    <Type Name="CF_RBtoST" TimingChart="RBtoST"></Type>
+	<Type Name="CF_STtoRB" TimingChart="STtoRB"></Type>
+    <Type Name="CF_STtoRB_DualModeForOneGlass" TimingChart="STtoRB_DualModeForOneGlass"></Type>    
+    <Type Name="CF_STtoRB_DualModeForOVNITO" TimingChart="STtoRB_DualModeForOVNITO"></Type>
+  </LinkSignalType>
+  <LinkSignalTable>
+    <Shop Name="ARRAY">
+      <Upstream>
+        <LinkSignal No="01" Name="Upstream Inline"></LinkSignal>
+        <LinkSignal No="02"	Name="Upstream Trouble"></LinkSignal>
+        <LinkSignal No="03"	Name="Send Ready"></LinkSignal>
+        <LinkSignal No="04"	Name="Send"></LinkSignal>
+        <LinkSignal No="05"	Name="Job Transfer"></LinkSignal>
+        <LinkSignal No="06"	Name="Send Cancel"></LinkSignal>
+        <LinkSignal No="07"	Name="Exchange Execute"></LinkSignal>
+        <LinkSignal No="08"	Name="Double Glass"></LinkSignal>
+        <LinkSignal No="09"	Name="Send Job Reserve"></LinkSignal>
+        <LinkSignal No="10"	Name="Send OK"></LinkSignal>
+		<LinkSignal No="14"	Name="Pin Up Request"></LinkSignal>
+		<LinkSignal No="15"	Name="Pin Down Complete"></LinkSignal>
+        <LinkSignal No="17"	Name="Slot Number#01"></LinkSignal>
+        <LinkSignal No="18"	Name="Slot Number#02"></LinkSignal>
+        <LinkSignal No="19"	Name="Slot Number#03"></LinkSignal>
+        <LinkSignal No="20"	Name="Slot Number#04"></LinkSignal>
+        <LinkSignal No="21"	Name="Slot Number#05"></LinkSignal>
+        <LinkSignal No="22"	Name="Slot Number#06"></LinkSignal>
+		<LinkSignal No="23"	Name="Glass Count#01"></LinkSignal>
+		<LinkSignal No="24"	Name="Glass Count#02"></LinkSignal>
+		<LinkSignal No="25"	Name="Glass Count#03"></LinkSignal>
+		<LinkSignal No="26"	Name="Glass Count#04"></LinkSignal>
+      </Upstream>
+      <Downstream>
+        <LinkSignal No="01" Name="Downstream Inline"></LinkSignal>
+        <LinkSignal No="02" Name="Downstream Trouble"></LinkSignal>
+        <LinkSignal No="03" Name="Receive Able"></LinkSignal>
+        <LinkSignal No="04" Name="Receive"></LinkSignal>
+        <LinkSignal No="05" Name="Job Transfer"></LinkSignal>
+        <LinkSignal No="06" Name="Receive Cancel"></LinkSignal>
+        <LinkSignal No="07" Name="Exchange Possible"></LinkSignal>
+        <LinkSignal No="08" Name="Double Glass"></LinkSignal>
+        <LinkSignal No="09" Name="Receive Job Reserve"></LinkSignal>
+		<LinkSignal No="10" Name="Receive OK"></LinkSignal>
+        <LinkSignal No="11" Name="Transfer Stop Request"></LinkSignal>
+        <LinkSignal No="12" Name="Dummy Glass Request"></LinkSignal>
+        <LinkSignal No="13" Name="Glass Exist"></LinkSignal>		
+		<LinkSignal No="14"	Name="Pin Up Complete"></LinkSignal>
+		<LinkSignal No="15"	Name="Pin Down Request"></LinkSignal>		
+        <LinkSignal No="17" Name="Slot Number#01"></LinkSignal>
+        <LinkSignal No="18" Name="Slot Number#02"></LinkSignal>
+        <LinkSignal No="19" Name="Slot Number#03"></LinkSignal>
+        <LinkSignal No="20" Name="Slot Number#04"></LinkSignal>
+        <LinkSignal No="21" Name="Slot Number#05"></LinkSignal>
+        <LinkSignal No="22" Name="Slot Number#06"></LinkSignal>
+        <LinkSignal No="23" Name="Glass Count#01"></LinkSignal>
+        <LinkSignal No="24" Name="Glass Count#02"></LinkSignal>
+        <LinkSignal No="25" Name="Glass Count#03"></LinkSignal>
+        <LinkSignal No="26" Name="Glass Count#04"></LinkSignal>
+        <LinkSignal No="27" Name="Receive Type#01"></LinkSignal>
+		<LinkSignal No="28" Name="Receive Type#02"></LinkSignal>
+		<LinkSignal No="29" Name="Receive Type#03"></LinkSignal>
+		<LinkSignal No="30" Name="Receive Type#04"></LinkSignal>
+		<LinkSignal No="31" Name="Receive Type#05"></LinkSignal>
+		<LinkSignal No="32" Name="Receive Type#06"></LinkSignal>
+      </Downstream>
+    </Shop>
+    <Shop Name="CELL">
+      <Upstream>
+        <LinkSignal No="01" Name="Upstream Inline"></LinkSignal>
+        <LinkSignal No="02" Name="Upstream Trouble"></LinkSignal>
+        <LinkSignal No="03" Name="Send Ready"></LinkSignal>
+        <LinkSignal No="04" Name="Send"></LinkSignal>
+        <LinkSignal No="05" Name="Job Transfer"></LinkSignal>
+        <LinkSignal No="06" Name="Send Cancel"></LinkSignal>
+        <LinkSignal No="07" Name="Exchange Execute"></LinkSignal>
+        <LinkSignal No="08" Name="Double Glass"></LinkSignal>
+        <LinkSignal No="10" Name="Send OK"></LinkSignal>		
+		<LinkSignal No="11" Name="Pin Up Request"></LinkSignal>
+		<LinkSignal No="12" Name="Pin Down Complete"></LinkSignal>		
+        <LinkSignal No="14" Name="Slot Number#01"></LinkSignal>
+        <LinkSignal No="15" Name="Slot Number#02"></LinkSignal>
+        <LinkSignal No="16" Name="Slot Number#03"></LinkSignal>
+        <LinkSignal No="17" Name="Slot Number#04"></LinkSignal>
+        <LinkSignal No="18" Name="Slot Number#05"></LinkSignal>
+        <LinkSignal No="19" Name="Slot Number#06"></LinkSignal>		
+        <LinkSignal No="25" Name="Panel Position#01"></LinkSignal>
+        <LinkSignal No="26" Name="Panel Position#02"></LinkSignal>
+        <LinkSignal No="27" Name="Panel Position#03"></LinkSignal>
+        <LinkSignal No="28" Name="Panel Position#04"></LinkSignal>
+        <LinkSignal No="29" Name="Panel Position#05"></LinkSignal>
+        <LinkSignal No="30" Name="Panel Position#06"></LinkSignal>
+		<LinkSignal No="31" Name="Panel Position#07"></LinkSignal>
+        <LinkSignal No="32" Name="Panel Position#08"></LinkSignal>
+      </Upstream>
+      <Downstream>
+        <LinkSignal No="01" Name="Downstream Inline"></LinkSignal>
+        <LinkSignal No="02" Name="Downstream Trouble"></LinkSignal>
+        <LinkSignal No="03" Name="Receive Able"></LinkSignal>
+        <LinkSignal No="04" Name="Receive"></LinkSignal>
+        <LinkSignal No="05" Name="Job Transfer"></LinkSignal>
+        <LinkSignal No="06" Name="Receive Cancel"></LinkSignal>
+        <LinkSignal No="07" Name="Exchange Possible"></LinkSignal>
+        <LinkSignal No="08" Name="Double Glass"></LinkSignal>
+        <LinkSignal No="10" Name="Receive OK"></LinkSignal>
+        <LinkSignal No="11" Name="Pin Up Complete"></LinkSignal>
+        <LinkSignal No="12" Name="Pin Down Request"></LinkSignal>
+        <LinkSignal No="14" Name="Slot Number#01"></LinkSignal>
+        <LinkSignal No="15" Name="Slot Number#02"></LinkSignal>
+        <LinkSignal No="16" Name="Slot Number#03"></LinkSignal>
+        <LinkSignal No="17" Name="Slot Number#04"></LinkSignal>
+        <LinkSignal No="18" Name="Slot Number#05"></LinkSignal>
+        <LinkSignal No="19" Name="Slot Number#06"></LinkSignal>			
+        <LinkSignal No="25" Name="Panel Position#01"></LinkSignal>
+        <LinkSignal No="26" Name="Panel Position#02"></LinkSignal>
+        <LinkSignal No="27" Name="Panel Position#03"></LinkSignal>
+        <LinkSignal No="28" Name="Panel Position#04"></LinkSignal>
+        <LinkSignal No="29" Name="Panel Position#05"></LinkSignal>
+        <LinkSignal No="30" Name="Panel Position#06"></LinkSignal>
+		<LinkSignal No="31" Name="Panel Position#07"></LinkSignal>
+        <LinkSignal No="32" Name="Panel Position#08"></LinkSignal>
+      </Downstream>
+    </Shop>
+    <Shop Name="CF">
+      <Upstream>
+        <LinkSignal No="01" Name="Upstream Inline"></LinkSignal>
+        <LinkSignal No="02"	Name="Upstream Trouble"></LinkSignal>
+        <LinkSignal No="03"	Name="Send Ready"></LinkSignal>
+        <LinkSignal No="04"	Name="Send"></LinkSignal>
+        <LinkSignal No="05"	Name="Job Transfer"></LinkSignal>
+        <LinkSignal No="06"	Name="Send Cancel"></LinkSignal>
+        <LinkSignal No="07"	Name="Exchange Execute"></LinkSignal>
+        <LinkSignal No="08"	Name="Double Glass"></LinkSignal>
+        <LinkSignal No="09"	Name="Send Job Reserve"></LinkSignal>
+        <LinkSignal No="10"	Name="Send OK"></LinkSignal>
+        <LinkSignal No="17"	Name="Slot Number#01"></LinkSignal>
+        <LinkSignal No="18"	Name="Slot Number#02"></LinkSignal>
+        <LinkSignal No="19"	Name="Slot Number#03"></LinkSignal>
+        <LinkSignal No="20"	Name="Slot Number#04"></LinkSignal>
+        <LinkSignal No="21"	Name="Slot Number#05"></LinkSignal>
+        <LinkSignal No="22"	Name="Slot Number#06"></LinkSignal>		
+        <LinkSignal No="26"	Name="Short Vicinity"></LinkSignal>
+        <LinkSignal No="27"	Name="Long Vicinity"></LinkSignal>
+        <LinkSignal No="28"	Name="Preparation Completion"></LinkSignal>
+        <LinkSignal No="29"	Name="In Inspecting"></LinkSignal>
+        <LinkSignal No="30"	Name="OK Judge"></LinkSignal>
+        <LinkSignal No="31"	Name="NG Judge"></LinkSignal>
+        <LinkSignal No="32"	Name="Return Mode"></LinkSignal>		
+      </Upstream>
+      <Downstream>
+        <LinkSignal No="01" Name="Downstream Inline"></LinkSignal>
+        <LinkSignal No="02" Name="Downstream Trouble"></LinkSignal>
+        <LinkSignal No="03" Name="Receive Able"></LinkSignal>
+        <LinkSignal No="04" Name="Receive"></LinkSignal>
+        <LinkSignal No="05" Name="Job Transfer"></LinkSignal>
+        <LinkSignal No="06" Name="Receive Cancel"></LinkSignal>
+        <LinkSignal No="07" Name="Exchange Possible"></LinkSignal>
+        <LinkSignal No="08" Name="Double Glass"></LinkSignal>
+        <LinkSignal No="09" Name="Receive Job Reserve"></LinkSignal>
+        <LinkSignal No="11" Name="Transfer Stop Request"></LinkSignal>
+        <LinkSignal No="12" Name="Dummy Glass Request"></LinkSignal>
+        <LinkSignal No="13" Name="Glass Exist"></LinkSignal>
+        <LinkSignal No="17" Name="Slot Number#01"></LinkSignal>
+        <LinkSignal No="18" Name="Slot Number#02"></LinkSignal>
+        <LinkSignal No="19" Name="Slot Number#03"></LinkSignal>
+        <LinkSignal No="20" Name="Slot Number#04"></LinkSignal>
+        <LinkSignal No="21" Name="Slot Number#05"></LinkSignal>
+        <LinkSignal No="22" Name="Slot Number#06"></LinkSignal>
+        <LinkSignal No="23" Name="Glass Count#01"></LinkSignal>
+        <LinkSignal No="24" Name="Glass Count#02"></LinkSignal>
+        <LinkSignal No="25" Name="Glass Count#03"></LinkSignal>
+        <LinkSignal No="26" Name="Glass Count#04"></LinkSignal>
+        <LinkSignal No="27" Name="Glass Count#05"></LinkSignal>		
+        <LinkSignal No="28"	Name="Preparation Permission"></LinkSignal>
+        <LinkSignal No="29"	Name="Inspection Result Update"></LinkSignal>
+        <LinkSignal No="30"	Name="Return Mode"></LinkSignal>	
+      </Downstream>
+    </Shop>
+    <Shop Name="MODULE">
+      <Upstream>
+        <LinkSignal No="01" Name="Upstream Inline"></LinkSignal>
+        <LinkSignal No="02" Name="Upstream Trouble"></LinkSignal>
+        <LinkSignal No="03" Name="Send Ready"></LinkSignal>
+        <LinkSignal No="04" Name="Send"></LinkSignal>
+        <LinkSignal No="05" Name="Job Transfer"></LinkSignal>
+        <LinkSignal No="06" Name="Send Cancel"></LinkSignal>
+        <LinkSignal No="07" Name="Exchange Execute"></LinkSignal>
+        <LinkSignal No="08" Name="Double Glass"></LinkSignal>
+        <LinkSignal No="10" Name="Send OK"></LinkSignal>				
+        <LinkSignal No="14" Name="Slot Number#01"></LinkSignal>
+        <LinkSignal No="15" Name="Slot Number#02"></LinkSignal>
+        <LinkSignal No="16" Name="Slot Number#03"></LinkSignal>
+        <LinkSignal No="17" Name="Slot Number#04"></LinkSignal>
+        <LinkSignal No="18" Name="Slot Number#05"></LinkSignal>
+        <LinkSignal No="19" Name="Slot Number#06"></LinkSignal>		
+        <LinkSignal No="25" Name="Panel Position#01"></LinkSignal>
+        <LinkSignal No="26" Name="Panel Position#02"></LinkSignal>
+        <LinkSignal No="27" Name="Panel Position#03"></LinkSignal>
+        <LinkSignal No="28" Name="Panel Position#04"></LinkSignal>
+        <LinkSignal No="29" Name="Panel Position#05"></LinkSignal>
+        <LinkSignal No="30" Name="Panel Position#06"></LinkSignal>
+		<LinkSignal No="31" Name="Panel Position#07"></LinkSignal>
+        <LinkSignal No="32" Name="Panel Position#08"></LinkSignal>
+      </Upstream>
+      <Downstream>
+        <LinkSignal No="01" Name="Downstream Inline"></LinkSignal>
+        <LinkSignal No="02" Name="Downstream Trouble"></LinkSignal>
+        <LinkSignal No="03" Name="Receive Able"></LinkSignal>
+        <LinkSignal No="04" Name="Receive"></LinkSignal>
+        <LinkSignal No="05" Name="Job Transfer"></LinkSignal>
+        <LinkSignal No="06" Name="Receive Cancel"></LinkSignal>
+        <LinkSignal No="07" Name="Exchange Possible"></LinkSignal>
+        <LinkSignal No="08" Name="Double Glass"></LinkSignal>
+        <LinkSignal No="10" Name="Receive OK"></LinkSignal>
+        <LinkSignal No="14" Name="Slot Number#01"></LinkSignal>
+        <LinkSignal No="15" Name="Slot Number#02"></LinkSignal>
+        <LinkSignal No="16" Name="Slot Number#03"></LinkSignal>
+        <LinkSignal No="17" Name="Slot Number#04"></LinkSignal>
+        <LinkSignal No="18" Name="Slot Number#05"></LinkSignal>
+        <LinkSignal No="19" Name="Slot Number#06"></LinkSignal>			
+        <LinkSignal No="25" Name="Panel Position#01"></LinkSignal>
+        <LinkSignal No="26" Name="Panel Position#02"></LinkSignal>
+        <LinkSignal No="27" Name="Panel Position#03"></LinkSignal>
+        <LinkSignal No="28" Name="Panel Position#04"></LinkSignal>
+        <LinkSignal No="29" Name="Panel Position#05"></LinkSignal>
+        <LinkSignal No="30" Name="Panel Position#06"></LinkSignal>
+		<LinkSignal No="31" Name="Panel Position#07"></LinkSignal>
+        <LinkSignal No="32" Name="Panel Position#08"></LinkSignal>
+      </Downstream>
+    </Shop>  
+  </LinkSignalTable>
+</configuration>

@@ -1,0 +1,318 @@
+﻿<!--FileName: 02_APC_REPORT.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-05-18 16:11:15-->
+<itemgroup name="L3APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L3_BOC_Ver 1.0.3 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="TACT_TIME" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="In_CV_Speed" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="IPA_SWR_CV_Speed" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="OUT_CV_Speed" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SWR_Type" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_USE_" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HPMJ_Recipes_NO" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Dn_USE" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Dn_RPM" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Dn_Directio" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-1_Dn_Gap" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Dn_USE" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Dn_RPM" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Dn_Directio" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="R/B1-2_Dn_Gap" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="Turn_Angle" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LOW_Angle" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="IPA_DIW_Supply_Mode" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L5_BOO_Ver 1.0.3 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="HA_S01C_PV" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S01F_PV" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S01B_PV" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S01L_PV" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S01R_PV" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S02C_PV" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S02F_PV" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S02B_PV" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S02L_PV" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S02R_PV" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S03C_PV" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S03F_PV" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S03B_PV" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S03L_PV" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S03R_PV" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S04C_PV" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S04F_PV" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S04B_PV" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S04L_PV" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S04R_PV" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S05C_PV" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S05F_PV" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S05B_PV" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S05L_PV" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S05R_PV" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S06C_PV" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S06F_PV" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S06B_PV" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S06L_PV" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S06R_PV" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S07C_PV" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S07F_PV" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S07B_PV" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S07L_PV" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S07R_PV" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S08C_PV" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S08F_PV" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S08B_PV" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S08L_PV" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S08R_PV" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S09C_PV" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S09F_PV" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S09B_PV" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S09L_PV" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S09R_PV" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S10C_PV" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S10F_PV" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S10B_PV" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S10L_PV" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S10R_PV" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S11C_PV" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S11F_PV" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S11B_PV" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S11L_PV" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S11R_PV" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S12C_PV" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S12F_PV" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S12B_PV" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S12L_PV" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S12R_PV" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S13C_PV" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S13F_PV" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S13B_PV" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S13L_PV" site="" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S13R_PV" site="" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S14C_PV" site="" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S14F_PV" site="" woffset="66" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S14B_PV" site="" woffset="67" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S14L_PV" site="" woffset="68" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S14R_PV" site="" woffset="69" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S15C_PV" site="" woffset="70" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S15F_PV" site="" woffset="71" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S15B_PV" site="" woffset="72" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S15L_PV" site="" woffset="73" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S15R_PV" site="" woffset="74" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S16C_PV" site="" woffset="75" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S16F_PV" site="" woffset="76" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S16B_PV" site="" woffset="77" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S16L_PV" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_S16R_PV" site="" woffset="79" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_SRC_PV" site="" woffset="80" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_SRF_PV" site="" woffset="81" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_SRB_PV" site="" woffset="82" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_SRL_PV" site="" woffset="83" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_SRR_PV" site="" woffset="84" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_P1C_PV" site="" woffset="85" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_P2C_PV" site="" woffset="86" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_P3C_PV" site="" woffset="87" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_P4C_PV" site="" woffset="88" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_P1M_PV" site="" woffset="89" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_P2M_PV" site="" woffset="90" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_P3M_PV" site="" woffset="91" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HA_P4M_PV" site="" woffset="92" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L8APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L8_SLI_Ver 1.0.3 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="CDA_1_Pressure" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="CDA_2_Pressure" item="2" site="1" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="Vacuum_Pressure" item="3" site="1" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L9APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L9_DRC_Ver 1.0.3 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="Upper_Cleaner_Pressure" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="Lower_Cleaner_Pressure" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="Cleaning_Speed" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="ESD_Measurement" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Upper_Cleaner_Head_Gap" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="Lower_Cleaner_Head_Gap" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="Primary_Pressure(Cylinder)" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="Primary_Pressure(Ionizer)" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="Secondary_Pressure(Cylinder)" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="Secondary_Pressure(Ionizer)" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L11APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L11_VPO_Ver 1.0.2 20160427.xls" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="WATERFLOW" item="WATERFLOW" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="CDA_PRE" item="PRESSURE" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="CDA_FLOW" item="FLOW" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="N2_PRES" item="PRESSURE" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="N2_FLOW" item="FLOW" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E01_VAC_PRE" item="PRESSURE" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E02_VAC_PRE" item="PRESSURE" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E03_VAC_PRE" item="PRESSURE" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E04_VAC_PRE" item="PRESSURE" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E05_VAC_PRE" item="PRESSURE" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E06_VAC_PRE" item="PRESSURE" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E07_VAC_PRE" item="PRESSURE" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E08_VAC_PRE" item="PRESSURE" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E09_VAC_PRE" item="PRESSURE" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E10_VAC_PRE" item="PRESSURE" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E11_VAC_PRE" item="PRESSURE" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E12_VAC_PRE" item="PRESSURE" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E13_VAC_PRE" item="PRESSURE" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E14_VAC_PRE" item="PRESSURE" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="E01_HWP_TMP" item="TEMPERATURE" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E02_HWP_TMP" item="TEMPERATURE" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E03_HWP_TMP" item="TEMPERATURE" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E04_HWP_TMP" item="TEMPERATURE" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E05_HWP_TMP" item="TEMPERATURE" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E06_HWP_TMP" item="TEMPERATURE" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E07_HWP_TMP" item="TEMPERATURE" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E08_HWP_TMP" item="TEMPERATURE" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E09_HWP_TMP" item="TEMPERATURE" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E10_HWP_TMP" item="TEMPERATURE" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E11_HWP_TMP" item="TEMPERATURE" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E12_HWP_TMP" item="TEMPERATURE" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E13_HWP_TMP" item="TEMPERATURE" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="E14_HWP_TMP" item="TEMPERATURE" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR1_TMP" item="TEMPERATURE" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR2_TMP" item="TEMPERATURE" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR3_TMP" item="TEMPERATURE" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR4_TMP" item="TEMPERATURE" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR1_FLOW" item="WATERFLOW" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR2_FLOW" item="WATERFLOW" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR3_FLOW" item="WATERFLOW" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR4_FLOW" item="WATERFLOW" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR1_PRESS" item="PRESSURE" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR2_PRESS" item="PRESSURE" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR3_PRESS" item="PRESSURE" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="CIR4_PRESS" item="PRESSURE" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW111" item="POSITION" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW121" item="POSITION" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW211" item="POSITION" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW221" item="POSITION" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW231" item="POSITION" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW241" item="POSITION" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW311" item="POSITION" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW321" item="POSITION" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW331" item="POSITION" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW341" item="POSITION" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW411" item="POSITION" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SVW421" item="POSITION" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L14APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L14_VAC_Ver 1.0.6 20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="VAC1_CDA_Pressure" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC1_N2_Pressure" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC1_Vaccum_Pressure" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC1_DP1_Current" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC1_DP2_Current" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC1_DP1_Case_Temp" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC1_DP2_Case_Temp" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC1_DP1_N2" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC1_DP2_N2" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC1_DP1_PCW" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC1_DP2_PCW" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_CDA_Pressure" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_N2_Pressure" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_Vaccum_Pressure" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_DP1_Current" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_DP2_Current" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_DP1_Case_Temp" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_DP2_Case_Temp" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_DP1_N2" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_DP2_N2" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_DP1_PCW" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="VAC2_DP2_PCW" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L15APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L15_MAI_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="CDA_Pressure" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="Vaccum_Pressure" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="STG_OUT_VAC" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="STG_IN_VAC" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TRQ_GNTRY_Y11" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TRQ_GNTRY_Y12" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TRQ_HEAD_X11" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TRQ_HEAD_X12" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TRQ_HEAD_X13" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TRQ_HEAD_X14" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TRQ_LIFT_PIN" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L16APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L16_SUV_Ver 1.0.2 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="S1_Body_cooling_water" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_CDA_Status" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_UVLampPower_Max" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_UVLampPower_Ave" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_Ionizer_Status" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_UVL_Time_Ave" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_UVL_Time_Max" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_UVL_Time_Min" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_Lamp_cooler_water" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_T_on_mask" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_T_on_stage" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_Vac_of_Mask_Ave" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_Vac_of_Mask_Max" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_Vac_of_Mask_Min" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_Vacuum" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_CDA_Ave" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_Voltage" site="" woffset="16" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_Current" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_Power" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_Body_cooling_water" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_CDA_Status" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_UVLampPower_Max" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_UVLampPower_Ave" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_Ionizer_Status" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_UVL_Time_Ave" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_UVL_Time_Max" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_UVL_Time_Min" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_Lamp_cooler_water" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_T_on_mask" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_T_on_stage" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_Vac_of_Mask_Ave" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_Vac_of_Mask_Max" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_Vac_of_Mask_Min" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_Vacuum" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_CDA_Ave" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_Voltage" site="" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_Current" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_Power" site="" woffset="40" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_VSLampPower_Max" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_VSLampPower_Ave" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_VSL_Time_Ave" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_VSL_Time_Max" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S1_VSL_Time_Min" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_VSLampPower_Max" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_VSLampPower_Ave" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_VSL_Time_Ave" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_VSL_Time_Max" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="S2_VSL_Time_Min" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L18APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L18_LCI_Ver 1.0.2 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="CDA_1_Pressure" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="CDA_2_Pressure" item="2" site="1" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="Vacuum_Pressure" item="3" site="1" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L19APCDataReportBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_02_CCODF_L19_SMO_Ver 1.0.3. 20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_02_CCODF-PLC Address Map_Ver1.23.xls">
+  <item name="Oven1_HHEAPA_Pressure_Diff" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven1_HI_Temp_exhaust_Pressure_Diff" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven1_Intake_Pressure_Diff" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven1_Cylinder_Shutter_CDA_Pressure" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven_Control_box1_temperature" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven_Control_box2_temperature" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven1_temperature_point1" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven1_temperature_point2" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven1_temperature_point3" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven1_temperature_point4" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven1_temperature_point5" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven1_temperature_point6" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven1_Voltage" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven1_A" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven1_Watt" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven2_HHEAPA_Pressure_Diff" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven2_HI_Temp_exhaust_Pressure_Diff" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven2_Intake_Pressure_Diff" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven2_Cylinder_Shutter_CDA_Pressure" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven_Control_box1_temperature1" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven_Control_box2_temperature2" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven2_temperature_point1" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven2_temperature_point2" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven2_temperature_point3" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven2_temperature_point4" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven2_temperature_point5" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven2_temperature_point6" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="Oven2_Voltage" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven2_A" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Oven2_Watt" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>

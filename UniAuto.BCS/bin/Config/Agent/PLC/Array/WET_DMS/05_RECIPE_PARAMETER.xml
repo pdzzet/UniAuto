@@ -1,0 +1,89 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.0.9.0-->
+<!--DateTime: 2016-02-25 16:13:59-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_25_TCWET_L2_Indexer(SEEC)_Ver1.0.2_20160108.xlsx" plcmap="CSOT_G6C_BC_Array_25_TCWET-PLC Address Map_Ver1.05.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter01" site="" woffset="12" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter02" site="" woffset="18" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter03" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter04" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter05" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter06" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter07" site="" woffset="25" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter08" site="" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter09" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter10" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="*" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeParameter11" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="CSOT G6 t3 EQP Profile_Array_25_TCWET_L3_TCWET(DMS)_Ver 1.0.xlsx" plcmap="CSOT_G6C_BC_Array_25_TCWET-PLC Address Map_Ver1.05.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECIPE_No." site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECIPE_Name" site="" woffset="13" boffset="0" wpoints="7" bpoints="112" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Version" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TACTTIME" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="LoadingzoneSpeed" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUVzoneSpeed" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="UpperEtchzoneSpeed" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EtchzoneC/VSpeed" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RinsezoneSpeed" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="UnloadingzoneSpeed" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LoadingzoneTactTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="EUVzoneTactTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="UpeerETCHzoneTactTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ElevatorzoneTactTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH1zoneTactTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH2zoneTactTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH3zoneTactTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="RinsezoneTactTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="RinseInTactTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="UnloadingzoneTactTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="EUVProcessTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch1ProcessTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch2ProcessTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch3ProcessTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="RinseProcessTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCHTankUseTemp." site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH1C/VOSCSpeed" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH2C/VOSCSpeed" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH3C/VOSCSpeed" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch1C/VOSCTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch2C/VOSCTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch3C/VOSCTime" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch1PipeOSCUse/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch1PipeOSCSpeed(Cycle)" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch2PipeOSCUse/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch2PipeOSCSpeed(Cycle)" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch3PipeOSCUse/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch3PipeOSCSpeed(Cycle)" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch1AquaKnifeUse/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch2AquaKnifeUse/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Etch3AquaKnifeUse/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUVUse/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUVLamp1Use/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUVLamp2Use/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EUVLamp3Use/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="BUF_SWR1AquaKnifeUse/Nonuse" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TactTimeBuffer" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TankChemicalbasedot" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH1Step1Mode" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH1Step2Mode" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH1Step1Time" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH1Step2Time" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH2Step1Mode" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH2Step2Mode" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH2Step3Mode" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH2Step1Time" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH2Step2Time" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH2Step3Time" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH3Step1Mode" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH3Step2Mode" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH3Step3Mode" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH3Step4Mode" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH3Step1Time" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH3Step2Time" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ETCH3Step3Time" site="" woffset="20" boffset="0" wpoints="3" bpoints="48" expression="Binary" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

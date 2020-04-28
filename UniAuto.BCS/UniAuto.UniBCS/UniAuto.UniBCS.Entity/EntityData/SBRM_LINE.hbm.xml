@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.LineEntityData, UniAuto.UniBCS.Entity" table="SBRM_LINE">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="LINEID" type="String">
+			<column name="LINEID" length="50" sql-type="varchar" not-null="true" unique="true" index="UK_SBRM_LINE"/>
+		</property>
+		<property name="LINENAME" type="String">
+			<column name="LINENAME" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="LINETYPE" type="String">
+			<column name="LINETYPE" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="FABTYPE" type="String">
+			<column name="FABTYPE" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="SERVERNAME" type="String">
+			<column name="SERVERNAME" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="JOBDATALINETYPE" type="String">
+			<column name="JOBDATALINETYPE" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="NEXTLINEID" type="String">
+			<column name="NEXTLINEID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+    <property name="CHECKCROSSRECIPE" type="String">
+      <column name="CHECKCROSSRECIPE" length="1" sql-type="varchar" not-null="false"/>
+    </property>
+  </class>
+</hibernate-mapping>

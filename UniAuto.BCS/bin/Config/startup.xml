@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<framework>
+  <servername>FCREP200</servername>
+  <version>1.0.3.1</version>
+  <linetype>FCREP_TYPE2</linetype>
+  <object-definition>
+    <core>..\Config\Objects\core.xml</core>
+    <agent>..\Config\Objects\agent.xml</agent>
+    <business>..\Config\objects\business.xml</business>
+  </object-definition>
+  <agentlist>
+    <agent enabled="true">PLCAgent</agent>
+    <agent enabled="true">MESAgent</agent>
+    <agent enabled="true">OPIAgent</agent>
+    <agent enabled="true">OEEAgent</agent>
+    <agent enabled="true">EDAAgent</agent>
+    <agent enabled="true">EDAAgent2</agent>
+    <agent enabled="true">APCAgent</agent>
+  </agentlist>
+</framework>

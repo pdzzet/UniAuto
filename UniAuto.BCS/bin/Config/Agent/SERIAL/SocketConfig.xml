@@ -1,0 +1,5 @@
+<ROOT>
+  <OPIAgent Name="SerialAgent" T3TimeoutSecond="15">
+    <Param IP="127.0.0.1" Port="6000"/>
+  </OPIAgent>
+</ROOT>

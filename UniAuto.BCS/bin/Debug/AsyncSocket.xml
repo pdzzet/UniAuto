@@ -1,0 +1,988 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AsyncSocket</name>
+    </assembly>
+    <members>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketWrapper">
+            <summary>
+            .net socket wrapper
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.AsyncSocketServer">
+            <summary>
+            AsyncSocket Server (multi session) implements IAsyncSocket interface
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.IAsyncSocket">
+            <summary>
+            <para>asyncsocket interface to interact with socket</para>
+            <para>contains socket operation,send/recv data message,get socket info,event notify</para>
+            <para>NOTE* need dispose asyncsocket to clean resource</para>
+            </summary>
+            <para>export function :</para>
+            <para>    socket operation =>Init;Start;Stop;Dispose;TraceEnabe;DataEncoding</para>
+            <para>                       T5RetryIntervalMS;GetNewReqSNo;</para>
+            <para>    socket info => IsInited;IsStarted;IsConnected;IsSessionExists</para>
+            <para>                   KeepAliveEnable;KeepAliveIntervalMs</para>
+            <para>				   GetSessionInfo;GetInMessageQueueDepth;bufferPoolInfo</para>
+            <para>    data send => Send;MultiSend</para>
+            <para>    data recv => Poll</para>
+            <para>    event => LogEvent;RawDataEvent;ConnectedEvent;CloseEvent</para>	
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.Init(System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            init anyncsocket
+            </summary>
+            <param name="ip">sokcet ip address</param>
+            <param name="port">sokcet port</param>
+            <param name="keepalive">is keepalive enable</param>
+            <param name="keepaliveIntervalMS">keepalive interval(ms)</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.Start">
+            <summary>
+            start anyncsocket
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.Stop(System.String)">
+            <summary>
+            stop anyncsocket or stop session if sessionId not empty,clear queued message
+            </summary>
+            <param name="SessionId">asyncsocket session id(do stop session if not empty)</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.Poll">
+            <summary>
+            polling message,return null if no message
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.IsConnected(System.String)">
+            <summary>
+            is asyncsocket session connected,sessionId is ignored by client
+            </summary>
+            <param name="sessionId">socket session id(sessionId is ignored by client)</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.GetNewReqSNo(System.String)">
+            <summary>
+            get new request sno by session id,sessionId is ignored by client;
+            return 1~99999 if success,return 0 if sessionId not exists or not start yet
+            </summary>
+            <param name="sessionId">asyncsocket session id(sessionId is ignored by client)</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.Send(System.String,System.String,System.String)">
+            <summary>
+            send string data out to specific session,sessionId is ignored by client
+            </summary>
+            <param name="data">send string data</param>	
+            <param name="reqsno">send request serial no</param>		
+            <param name="sessionId">asyncsocket session id(sessionId is ignored by client)</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.Send(System.Byte[],System.Int32,System.String,System.String)">
+            <summary>
+            send byte array data out to specific session,sessionId is ignored by client
+            </summary>
+            <param name="data">send bytes data</param>	
+            <param name="datalen">data length</param>
+            <param name="reqsno">send request serial no</param>		
+            <param name="sessionId">asyncsocket session id(sessionId is ignored by client)</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.Send(Unicom.UniAuto.Net.Socket.DataMessage)">
+            <summary>
+            send  data out to specific session,sessionId is ignored by client
+            </summary>
+            <param name="message">datamessage object</param>	
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.MultiSend(System.String,System.String)">
+            <summary>
+            Send string data out to all connected sessions
+            </summary>
+            <param name="data">string data</param>	
+            <param name="reqsno">send request serial no</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.MultiSend(System.Byte[],System.Int32,System.String)">
+            <summary>
+            Send byte arrary data out to all connected sessions
+            </summary>
+            <param name="data">send data</param>	
+            <param name="datalen">data length</param>
+            <param name="reqsno">send request serial no</param>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.GetSessionInfo(System.String)">
+            <summary>
+            get asyncsocket session info by sessionid
+            </summary>		
+            <param name="sessionId">asyncsocket session id(return all sessions if sessionId is empty)</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.GetInMessageQueueDepth">
+            <summary>
+            get current in message queue depth
+            </summary>
+            <returns>queue depth</returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IAsyncSocket.GetOutMessageQueueDepth">
+            <summary>
+            get current out message queue depth
+            </summary>
+            <returns>queue depth</returns>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.IAsyncSocket.LogEvent">
+            <summary>
+            event to notify anyncsocket error/trace log output
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.IAsyncSocket.RawDataEvent">
+            <summary>
+            event to notify socket rawdata in
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.IAsyncSocket.ConnectedEvent">
+            <summary>
+            event to notify anyncsocket session connected
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.IAsyncSocket.CloseEvent">
+            <summary>
+            event to notify anyncsocket session Close
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.IAsyncSocket.IsInited">
+            <summary>
+            get/set is anyncsocket inited by init operation
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.IAsyncSocket.IsStarted">
+            <summary>
+            get/set is anyncsocket started by start operation
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.IAsyncSocket.TraceEnable">
+            <summary>
+            get/set is anyncsocket tracelog output enable
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.IAsyncSocket.DataEncoding">
+            <summary>
+            get/set data encoding
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.IAsyncSocket.BufferPoolInfo">
+            <summary>
+            get anyncsocket buffer pool info
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.IAsyncSocket.T5RetryIntervalMS">
+            <summary>
+            get/set set anyncsocket reconnect/relisten interval
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.IAsyncSocket.KeepAliveEnable">
+            <summary>
+            get is keepalive enable
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.IAsyncSocket.KeepAliveIntervalMS">
+            <summary>
+            get keepalive interval
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.IsConnected(System.String)">
+            <summary>
+            is asyncsocket connected,sessionId is ignored by client
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.GetNewReqSNo(System.String)">
+            <summary>
+            new request sno,sessionId is ignored by client
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.Init(System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            init asyncsocket
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.Start">
+            <summary>
+            start asyncsocket and do auto listen operation
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.Stop(System.String)">
+            <summary>
+            stop and close asyncsocket,clear queued message,allow stop many times as needed
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.Send(System.String,System.String,System.String)">
+            <summary>
+            send data out,sessionId is ignored by client
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.Send(System.Byte[],System.Int32,System.String,System.String)">
+            <summary>
+            send data out,sessionId is ignored by client
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.Send(Unicom.UniAuto.Net.Socket.DataMessage)">
+            <summary>
+            send data out,sessionId is ignored by client
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.MultiSend(System.String,System.String)">
+            <summary>
+            Send to all connected peer
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.MultiSend(System.Byte[],System.Int32,System.String)">
+            <summary>
+            Send to all connected peer
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.Poll">
+            <summary>
+            polling message,return null if no message
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.Dispose">
+            <summary>
+            dispose object
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.GetSessionInfo(System.String)">
+            <summary>
+            get all or single session's info
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.GetInMessageQueueDepth">
+            <summary>
+            get message queue depth
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.GetOutMessageQueueDepth">
+            <summary>
+            get message queue depth
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.ListenSocketDispose">
+            <summary>
+            socket dispose
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.Listen">
+            <summary>
+            do socket listen
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.AcceptComplete(System.IAsyncResult)">
+            <summary>		
+            Called when a BeginAccept operation completes
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.RecvEventArg_Completed(System.Object,System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            This method is called whenever a recv opreation is completed on a socket 		
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.StartReceive(System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            start async receive operation
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.ProcessReceive(System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            Called when a ReceiveAsync operation completes
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.SendEventArg_Completed(System.Object,System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            This method is called whenever a send opreation is completed on a socket 		
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.StartSend(System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            start async send operation
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketServer.ProcessSend(System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            Called when a SendAsync operation completes
+            </summary>		
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.AsyncSocketServer.RawDataEvent">
+            <summary>
+            event to notify asyncsocket rawdata in
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.AsyncSocketServer.LogEvent">
+            <summary>
+            event to notify asyncsocket error/trace log
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.AsyncSocketServer.ConnectedEvent">
+            <summary>
+            event to notify asyncsocket session connected
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.AsyncSocketServer.CloseEvent">
+            <summary>
+            event to notify asyncsocket session Close
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketServer.DataEncoding">
+            <summary>
+            data encoding
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketServer.TraceEnable">
+            <summary>
+            enable asyncsocket tracelog
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketServer.IsInited">
+            <summary>
+            asyncsocket is inited after init operation
+            </summary>		
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketServer.IsStarted">
+            <summary>
+            asyncsocket is started after start operation
+            </summary>		
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketServer.BufferPoolInfo">
+            <summary>
+            asyncsocket buffer pool info
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketServer.T5RetryIntervalMS">
+            <summary>
+            set asyncsocket reconnect/relisten interval
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketServer.KeepAliveEnable">
+            <summary>
+            is keepalive enable
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketServer.KeepAliveIntervalMS">
+            <summary>
+            keepalive interval(ms)
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.AsyncUserToken">
+            <summary>
+            This class is designed for use as the object to be assigned to the SocketAsyncEventArgs.UserToken property. 
+            modify from MSDN sample code
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncUserToken.T8Timer_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            T8 timer elapsed event handler
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.AsyncUserToken.T8TimeOutEvent">
+            <summary>
+            Event Notify when T8 TimeOut occured
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.AsyncUserToken.T8TimeOutEventHandler">
+            <summary>
+            T8TimeOut Event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.AsyncUserToken.T8TimeOutEventArgs">
+            <summary>
+            T8TimeOut Event argurments
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.BufferManager">
+            <summary>
+            This class creates multiple buffer which can be assigned to SocketAsyncEventArgs objects for use
+            with each socket I/O operation.  This enables bufffers to be easily reused and gaurds against fragmenting heap memory.
+            modify from MSDN sample code
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.BufferManager.SetSendBuffer(System.Net.Sockets.SocketAsyncEventArgs,System.Byte[])">
+            <summary>
+            Assigns send buffers from the buffer pool to the specified SocketAsyncEventArgs object
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.BufferManager.SetSendBuffer(System.Net.Sockets.SocketAsyncEventArgs,System.Byte[],System.Int32,System.Byte[],System.Int32)">
+            <summary>
+            Assigns length and send buffers from the buffer pool to the specified SocketAsyncEventArgs object
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.BufferManager.SetRecvBuffer(System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            Assigns a recv buffer from the buffer pool to the specified SocketAsyncEventArgs object
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.BufferManager.GetBuffer(System.Byte[]@,System.UInt32@,System.Int32@)">
+            <summary>
+            internal get buffer function
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.BufferManager.FreeBuffer(System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            Removes the buffer from a SocketAsyncEventArg object.This frees the buffer back to the buffer pool
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.DataMessage">
+            <summary>
+            data structure that hold message when doing socket send or poll operation
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.DataMessage.TimeStamp">
+            <summary>
+            event datetime
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.DataMessage.ReqSNo">
+            <summary>
+            serial no
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.DataMessage.Message">
+            <summary>
+            message body
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.DataMessage.Length">
+            <summary>
+            message length
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.DataMessage.SessionId">
+            <summary>
+            session id
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SessionInfo">
+            <summary>
+            asyncsocket session information
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SessionInfo.SessionId">
+            <summary>
+            get/set session id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SessionInfo.CreateTimeStamp">
+            <summary>
+            get/set session create time
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SessionInfo.InOutTimeStamp">
+            <summary>
+            get/set session socket in/out time
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SessionInfo.IsConnected">
+            <summary>
+            get/set is socket connected flag
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SessionInfo.Info">
+            <summary>
+            get/set extra session info string
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketAsyncEventArgPool">
+            <summary>
+            Represents a collection of resusable SocketAsyncEventArgs objects.  
+            modify from MSDN sample code
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.SocketAsyncEventArgPool.Push(System.Net.Sockets.SocketAsyncEventArgs)">
+            <summary>
+            return a SocketAsyncEventArg instance to the pool
+            </summary>        
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.SocketAsyncEventArgPool.Pop">
+            <summary>
+            get a SocketAsyncEventArgs instance from the pool
+            </summary>        
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SocketAsyncEventArgPool.Count">
+            <summary>
+            The number of SocketAsyncEventArgs instances in the pool
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketConnectedEventHandler">
+            <summary>
+            asyncsocket session connected event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketConnectedEventArgs">
+            <summary>
+            asyncsocket session connected event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.SocketConnectedEventArgs.#ctor(System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="session">asyncsocket session id</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SocketConnectedEventArgs.SessionId">
+            <summary>
+            asyncsocket session id
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketCloseEventHandler">
+            <summary>
+            asyncsocket session close event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketCloseEventArgs">
+            <summary>
+            asyncsocket session close event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.SocketCloseEventArgs.#ctor(System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="session">asyncsocket session id</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SocketCloseEventArgs.SessionId">
+            <summary>
+            asyncsocket session id
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketRawDataEventHandler">
+            <summary>
+            socket rawdata in event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketRawDataEventArgs">
+            <summary>
+            asyncsocket rawdata in event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.SocketRawDataEventArgs.#ctor(System.String,System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            constructor
+            </summary>
+            <param name="session">asyncsocket session id</param>
+            <param name="data">asyncsocket raw data buffer</param>
+            <param name="offset">buffer start offset</param>
+            <param name="totalbytes">total data length</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SocketRawDataEventArgs.SessionId">
+            <summary>
+            asyncsocket session id
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SocketRawDataEventArgs.RawData">
+            <summary>
+            asyncsocket raw data buffer
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SocketRawDataEventArgs.Offset">
+            <summary>
+            buffer start offset
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SocketRawDataEventArgs.TotalBytes">
+            <summary>
+            total data length
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketLogLevelType">
+            <summary>
+            asyncsocket log output level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.SocketLogLevelType.TRACE">
+            <summary>
+            trace level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.SocketLogLevelType.DEBUG">
+            <summary>
+            debug level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.SocketLogLevelType.ERROR">
+            <summary>
+            error level
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.SocketLogLevelType.EXCEPTION">
+            <summary>
+            exception level
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketLogEventHandler">
+            <summary>
+            asyncsocket log output event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.SocketLogEventArgs">
+            <summary>
+            asyncsocket log output event argurments
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.SocketLogEventArgs.#ctor(Unicom.UniAuto.Net.Socket.SocketLogLevelType,System.String,System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="level">log level</param>
+            <param name="method">log method name</param>
+            <param name="msg">log message</param>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SocketLogEventArgs.MethodName">
+            <summary>
+            log method name
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SocketLogEventArgs.Message">
+            <summary>
+            log message
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.SocketLogEventArgs.LogLevel">
+            <summary>
+            log level
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.AsyncSocketClient">
+            <summary>
+            AsyncSocket client (single session) implements IAsyncSocket interface		
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.IsConnected(System.String)">
+            <summary>
+            is socket connected,sessionId is ignored by client
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.GetNewReqSNo(System.String)">
+            <summary>
+            new request sno,sessionId is ignored by client
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.Init(System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            init socket
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.Start">
+            <summary>
+            start socket and do auto connect operation
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.Stop(System.String)">
+            <summary>
+            stop and close socket,,clear queued message,allow stop many times as needed
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.Send(System.String,System.String,System.String)">
+            <summary>
+            send data out,sessionId is ignored by client
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.Send(System.Byte[],System.Int32,System.String,System.String)">
+            <summary>
+            send data out,sessionId is ignored by client
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.Send(Unicom.UniAuto.Net.Socket.DataMessage)">
+            <summary>
+            send data out,sessionId is ignored by client
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.MultiSend(System.String,System.String)">
+            <summary>
+            Send to all connected peer
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.MultiSend(System.Byte[],System.Int32,System.String)">
+            <summary>
+            Send to all connected peer
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.Poll">
+            <summary>
+            polling message,return null if no message
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.Dispose">
+            <summary>
+            dispose object
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.GetSessionInfo(System.String)">
+            <summary>
+            get all session's info
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.GetInMessageQueueDepth">
+            <summary>
+            get message queue depth
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.GetOutMessageQueueDepth">
+            <summary>
+            get message queue depth
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.Connect">
+            <summary>
+            do socket connect
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.ConnectComplete(System.IAsyncResult)">
+            <summary>		
+            Called when a BeginConnect operation completes
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.ReceiveComplete(System.IAsyncResult)">
+            <summary>
+            Called when a BeginReceive operation completes
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.SocketSend(System.Int32,System.Collections.Generic.List{System.ArraySegment{System.Byte}})">
+            <summary>
+            Socket send
+            </summary>
+            <param name="count">send count</param>
+            <param name="buffers">send datas</param>
+            <returns>=0 send ok
+            		 >0 send fail</returns>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.SocketDispose">
+            <summary>
+            socket dispose
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketClient.HandleMessageOut">
+            <summary>
+            handle message out
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.AsyncSocketClient.RawDataEvent">
+            <summary>
+            event to notify asyncsocket rawdata in
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.AsyncSocketClient.LogEvent">
+            <summary>
+            event to notify asyncsocket error/trace log
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.AsyncSocketClient.ConnectedEvent">
+            <summary>
+            event to notify asyncsocket session connected
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.AsyncSocketClient.CloseEvent">
+            <summary>
+            event to notify asyncsocket session Close
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.DataEncoding">
+            <summary>
+            data encoding
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.TraceEnable">
+            <summary>
+            enable socket tracelog
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.IsInited">
+            <summary>
+            socket is inited after init operation
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.IsStarted">
+            <summary>
+            socket is started after start operation
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.BufferPoolInfo">
+            <summary>
+            socket buffer pool info
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.BufferSize">
+            <summary>
+            socket send/recv buffer size
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.T5RetryIntervalMS">
+            <summary>
+            set socket reconnect/relisten interval
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.SendTimeOutMS">
+            <summary>
+            socket send timeout(ms)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.TaskWaitFrequency">
+            <summary>
+            Task Wait Frequency
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.TaskWaitPeriodMS">
+            <summary>
+            Task Wait Period(ms)
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.KeepAliveEnable">
+            <summary>
+            is keepalive enable
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.AsyncSocketClient.KeepAliveIntervalMS">
+            <summary>
+            keepalive interval(ms)
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.IProtoDecoder">
+            <summary>
+            protocol decoder interface declare
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IProtoDecoder.Decode(System.Byte[],System.Int32,System.Int32,System.Text.Encoding)">
+            <summary>
+            decode socket arrival data
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.IProtoDecoder.Reset">
+            <summary>
+            Reset decoder
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.IProtoDecoder.MessageInEvent">
+            <summary>
+            Event Notify when Message In
+            </summary>
+        </member>
+        <member name="P:Unicom.UniAuto.Net.Socket.IProtoDecoder.HasDataBuffered">
+            <summary>
+            has data buffered
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.MessageInEventHandler">
+            <summary>
+            MessageIn Event handler function declare
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.MessageInEventArgs">
+            <summary>
+            MessageIn Event argurments
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.CustomProtoDecoder">
+            <summary>
+            custom protocol decoder implement IProtoDecoder	
+            message length(int 4 bytes)+message text(1~N bytes)
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.m_MaxMessageLen">
+            <summary>
+            max supported message length setting
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.m_InMessageLen">
+            <summary>
+            incomming message length value
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.m_MessageLengthBytes">
+            <summary>
+            messagelength bytes buffer
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.m_MessageLengthBytesOffset">
+            <summary>
+            messagelength bytes buffer offset
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.m_TotalMessageLengthBytes">
+            <summary>
+            total messagelength bytes length
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.m_MessageTextBytes">
+            <summary>
+            messagetext bytes buffer
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.m_MessageTextBytesOffset">
+            <summary>
+            messagetext bytes buffer offset
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.m_TotalMessageTextBytes">
+            <summary>
+            total messagetext bytes length
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.Decode(System.Byte[],System.Int32,System.Int32,System.Text.Encoding)">
+            <summary>
+            packet decode method
+            </summary>		
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.DecodeLEN">
+            <summary>
+            decode message length
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.DecodeTEXT(System.Text.Encoding)">
+            <summary>
+            decode message text
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.Reset">
+            <summary>
+            reset decoder
+            </summary>
+        </member>
+        <member name="E:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.MessageInEvent">
+            <summary>
+            Event Notify when Message In		
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.DecoderState">
+            <summary>
+            decoder state
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.DecoderState.WAIT_LEN">
+            <summary>
+            wait message length data
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.DecoderState.WAIT_TEXT">
+            <summary>
+            wait message text data
+            </summary>
+        </member>
+        <member name="F:Unicom.UniAuto.Net.Socket.CustomProtoDecoder.DecoderState.ERROR">
+            <summary>
+            message decode fail
+            </summary>
+        </member>
+        <member name="T:Unicom.UniAuto.Net.Socket.AsyncSocketFactory">
+            <summary>
+            factory to create asyncsocket
+            </summary>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketFactory.CreateClient(System.Int32)">
+            <summary>
+            create asyncsocket client
+            </summary>		
+            <param name="buffersize">asyncsocket buffer size(minimal 1024byte)</param>
+        </member>
+        <member name="M:Unicom.UniAuto.Net.Socket.AsyncSocketFactory.CreateServer(System.Int32,System.Int32)">
+            <summary>
+            create asyncsocket server;may throw exception
+            </summary>		
+            <param name="buffersize">asyncsocket buffer size(minimal 1024byte)</param>
+            <param name="buffercount">asyncsocket buffer count(minimal 128)</param>
+        </member>
+    </members>
+</doc>

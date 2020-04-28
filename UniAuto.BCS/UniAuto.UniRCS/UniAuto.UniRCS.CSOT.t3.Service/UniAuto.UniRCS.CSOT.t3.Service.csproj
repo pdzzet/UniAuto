@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1956DC87-7B9C-499B-8CD0-C2D38BA3F90F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniAuto.UniRCS.CSOT.t3.Service</RootNamespace>
+    <AssemblyName>UniAuto.UniRCS.CSOT.t3.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>"%24/WHCSOT.G6C.BC/BC/UniAuto.BCS", MLWDAAAA</SccProjectName>
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Spring.Core, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniAuto.UniBCS.Core, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\UniAuto.UniBCS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UniAuto.UniBCS.Log, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\UniAuto.UniBCS.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="UniAuto.UniBCS.MISC, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\UniAuto.UniBCS.MISC.dll</HintPath>
+    </Reference>
+    <Reference Include="UniAuto.UniBCS.PLCAgent.Data, Version=1.3.0.29, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\UniAuto.UniBCS.PLCAgent.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="JobFilterService.cs" />
+    <Compile Include="JobFilterService01.cs" />
+    <Compile Include="JobFilterService02.cs" />
+    <Compile Include="JobFilterService03.cs" />
+    <Compile Include="JobFilterService04.cs" />
+    <Compile Include="JobOrderByService.cs" />
+    <Compile Include="JobOrderByService01.cs" />
+    <Compile Include="JobProcessResultActionService.cs" />
+    <Compile Include="JobRouteStepByPassService.cs" />
+    <Compile Include="JobRouteStepJumpService.cs" />
+    <Compile Include="JobRouteStepJumpService01.cs" />
+    <Compile Include="JobRouteStepJumpService02.cs" />
+    <Compile Include="JobStageSelectService.cs" />
+    <Compile Include="RobotCommandService.cs" />
+    <Compile Include="RobotRouteConditionService.cs" />
+    <Compile Include="RobotRouteConditionService01.cs" />
+    <Compile Include="RobotRouteConditionService02.cs" />
+    <Compile Include="RobotSelectJobService.cs" />
+    <Compile Include="RobotSelectJobService01.cs" />
+    <Compile Include="RobotSelectJobService02.cs" />
+    <Compile Include="RobotSelectJobService03.cs" />
+    <Compile Include="RobotSelectJobService04.cs" />
+    <Compile Include="RobotSpecialService.cs" />
+    <Compile Include="RobotSpecialService01.cs" />
+    <Compile Include="RobotStatusService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\UniAuto.UniBCS\UniAuto.UniBCS.EntityManager\UniAuto.UniBCS.EntityManager.csproj">
+      <Project>{3AF798BF-0431-4121-9DE7-87E25E23219B}</Project>
+      <Name>UniAuto.UniBCS.EntityManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UniAuto.UniBCS\UniAuto.UniBCS.Entity\UniAuto.UniBCS.Entity.csproj">
+      <Project>{D8255DBB-D5B9-4654-BD15-2A6A7130500D}</Project>
+      <Name>UniAuto.UniBCS.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UniAuto.UniBCS\UniAuto.UniBCS.OpiSpec\UniAuto.UniBCS.OpiSpec.csproj">
+      <Project>{621B0C6D-25B7-477A-B22C-C86A3624EE67}</Project>
+      <Name>UniAuto.UniBCS.OpiSpec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniAuto.UniRCS.Core\UniAuto.UniRCS.Core.csproj">
+      <Project>{2B35966E-4838-4D09-9376-B12379E767A6}</Project>
+      <Name>UniAuto.UniRCS.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

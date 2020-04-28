@@ -1,0 +1,174 @@
+<message name="MES_MessageSend">
+  <object id="MESService" method="MES_MessageSend" />
+</message>
+<message name="MES_TibcoOpen">
+  <object id="MESService" method="MES_TibcoOpen" />
+</message>
+<message name="APC_TibcoOpen">
+  <object id="APCService" method="APC_TibcoOpen" />
+</message>
+<message name="OEE_TibcoOpen">
+  <object id="OEEService" method="OEE_TibcoOpen" />
+</message>
+<message name="EDA_TibcoOpen">
+  <object id="EDAService" method="EDA_TibcoOpen" />
+</message>
+<message name="MES_AreYouThereReply">
+  <object id="MESService" method="MES_AreYouThereReply" />
+</message>
+<message name="MES_BoxLabelInformationReply">
+  <object id="MESService" method="MES_BoxLabelInformationReply" />
+</message>
+<message name="MES_BoxLineOutReply">
+  <object id="MESService" method="MES_BoxLineOutReply" />
+</message>
+<message name="MES_BoxIdCreateReply">
+  <object id="MESService" method="MES_BoxIdCreateReply" />
+</message>
+<message name="MES_BoxProcessEndReply">
+  <object id="MESService" method="MES_BoxProcessEndReply" />
+</message>
+<message name="MES_BoxProcessLineReply">
+  <object id="MESService" method="MES_BoxProcessLineReply" />
+</message>
+<message name="MES_CFShortCutPermitReply">
+  <object id="MESService" method="MES_CFShortCutPermitReply" />
+</message>
+<message name="MES_CFShortCutGlassProcessEndReply">
+  <object id="MESService" method="MES_CFShortCutGlassProcessEndReply" />
+</message>
+<message name="MES_CFShortCutModeChangeReply">
+  <object id="MESService" method="MES_CFShortCutModeChangeReply" />
+</message>
+<message name="MES_ChangePlanReply">
+  <object id="MESService" method="MES_ChangePlanReply" />
+</message>
+<message name="MES_CheckBoxNameReply">
+  <object id="MESService" method="MES_CheckBoxNameReply" />
+</message>
+<message name="MES_CheckLocalPPIDReply">
+  <object id="MESService" method="MES_CheckLocalPPIDReply" />
+</message>
+<message name="MES_CheckRecipeParameterReply">
+  <object id="MESService" method="MES_CheckRecipeParameterReply" />
+</message>
+<message name="MES_CIMMessageSend">
+  <object id="MESService" method="MES_CIMMessageSend" />
+</message>
+<message name="MES_CurrentDateTime">
+  <object id="MESService" method="MES_CurrentDateTime" />
+</message>
+<message name="MES_FacilityCriteriaSend">
+  <object id="MESService" method="MES_FacilityCriteriaSend" />
+</message>
+<message name="MES_FacilityParameterRequest">
+  <object id="MESService" method="MES_FacilityParameterRequest" />
+</message>
+<message name="MES_FacilityCheckRequest">
+  <object id="MESService" method="MES_FacilityCheckRequest" />
+</message>
+<message name="MES_LotProcessAbnormalEndReply">
+  <object id="MESService" method="MES_LotProcessAbnormalEndReply" />
+</message>
+<message name="MES_LotProcessEndReply">
+  <object id="MESService" method="MES_LotProcessEndReply" />
+</message>
+<message name="MES_LotProcessStartReply">
+  <object id="MESService" method="MES_LotProcessStartReply" />
+</message>
+<message name="MES_MachineModeChangeReply">
+  <object id="MESService" method="MES_MachineModeChangeReply" />
+</message>
+<message name="MES_MaskStateChangedReply">
+  <object id="MESService" method="MES_MaskStateChangedReply" />
+</message>
+<message name="MES_MachineSiteChangeReply" >
+  <object id="MESService" method="MES_MachineSiteChangeReply" />
+</message>
+<message name="MES_MaskLocationChangedReply">
+  <object id="MESService" method="MES_MaskLocationChangedReply" />
+</message>
+<message name="MES_MaterialMountReply">
+  <object id="MESService" method="MES_MaterialMountReply" />
+</message>
+<message name="MES_MaterialStateChangedReply">
+  <object id="MESService" method="MES_MaterialStateChangedReply" />
+</message>
+<message name="MES_MachineControlStateChangeRequest">
+  <object id="MESService" method="MES_MachineControlStateChangeRequest" />
+</message>
+<message name="MES_MaxCutGlassProcessEndReply">
+  <object id="MESService" method="MES_MaxCutGlassProcessEndReply" />
+</message>
+<message name="MES_OutBoxProcessEndReply">
+  <object id="MESService" method="MES_OutBoxProcessEndReply" />
+</message>
+<message name="MES_PanelInformationReply">
+  <object id="MESService" method="MES_PanelInformationReply" />
+</message>
+<message name="MES_PalletIdCreateReply">
+  <object id="MESService" method="MES_PalletIdCreateReply" />
+</message>
+<message name="MES_PalletLabelInformationReply">
+  <object id="MESService" method="MES_PalletLabelInformationReply" />
+</message>
+<message name="MES_PalletProcessEndReply">
+  <object id="MESService" method="MES_PalletProcessEndReply" />
+</message>
+<message name="MES_PortOperModeChangeReply">
+  <object id="MESService" method="MES_PortOperModeChangeReply" />
+</message>
+<message name="MES_PreCheckRecipeParameterRequest">
+  <object id="MESService" method="MES_PreCheckRecipeParameterRequest" />
+</message>
+<message name="MES_RecipeParameterChangeReply">
+  <object id="MESService" method="MES_RecipeParameterChangeReply" />
+</message>
+<message name="MES_RecipeParameterRequest">
+  <object id="MESService" method="MES_RecipeParameterRequest" />
+</message>
+<message name="MES_RecipeRegisterRequest">
+  <object id="MESService" method="MES_RecipeRegisterRequest" />
+</message>
+<message name="MES_RecipeIDRegisterCheckRequest">
+  <object id="MESService" method="MES_RecipeIDRegisterCheckRequest" />
+</message>
+<message name="MES_RuncardIdCreateReply">
+  <object id="MESService" method="MES_RuncardIdCreateReply" />
+</message>
+<message name="MES_RuncardLableInformationReply">
+  <object id="MESService" method="MES_RuncardLableInformationReply" />
+</message>
+<message name="MES_TerminalMessageSend">
+  <object id="MESService" method="MES_TerminalMessageSend" />
+</message>
+<message name="MES_ValidateBoxReply">
+  <object id="MESService" method="MES_ValidateBoxReply" />
+</message>
+<message name="MES_ValidateBoxWeightReply">
+  <object id="MESService" method="MES_ValidateBoxWeightReply" />
+</message>
+<message name="MES_ValidateCleanCassetteReply">
+  <object id="MESService" method="MES_ValidateCleanCassetteReply" />
+</message>
+<message name="MES_ValidateCassetteReply">
+  <object id="MESService" method="MES_ValidateCassetteReply" />
+</message>
+<message name="MES_ValidateGlassReply">
+  <object id="MESService" method="MES_ValidateGlassReply" />
+</message>
+<message name="MES_ValidateMaskPrepareReply">
+  <object id="MESService" method="MES_ValidateMaskPrepareReply" />
+</message>
+<message name="MES_ValidateMaskReply">
+  <object id="MESService" method="MES_ValidateMaskReply" />
+</message>
+<message name="MES_ValidateMaskByCarrierReply">
+  <object id="MESService" method="MES_ValidateMaskByCarrierReply" />
+</message>
+<message name="MES_ValidatePalletReply">
+  <object id="MESService" method="MES_ValidatePalletReply" />
+</message>
+<message name="MES_MachineStateChanged">
+  <object id="MESService" method="MES_MachineStateChanged" />
+</message>

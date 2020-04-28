@@ -1,0 +1,9 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-11 15:10:02-->
+<itemgroup name="L3ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_Array_13_TCNAN_L3_NAN(SEMILAB)_Ver 1.1.xlsx" plcmap="CSOT_G6C_BC_Array_13_TCNAN-PLC Address Map_Ver1.03.xls">
+  <item name="LOT_ID" site="" woffset="0" boffset="0" wpoints="9" bpoints="144" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GLASS_ID" site="" woffset="9" boffset="0" wpoints="11" bpoints="176" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RECIPE_ID" site="" woffset="20" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="START_TIME" site="" woffset="22" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

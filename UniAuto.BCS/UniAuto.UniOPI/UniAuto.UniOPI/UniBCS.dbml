@@ -1,0 +1,1203 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="UNIBCS_t3" Class="UniBCSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=NOBUHIKO-PC;Initial Catalog=UNIBCS_t3;User ID=sa" SettingsObjectName="UniOPI.Properties.Settings" SettingsPropertyName="UNIBCS_t3ConnectionString10" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SBCS_ASSEMBLY_TRX" Member="SBCS_ASSEMBLY_TRX">
+    <Type Name="SBCS_ASSEMBLY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TFTCASSETTESEQNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TFTJOBSEQNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TFTJOBID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CFCASSETTESEQNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CFJOBSEQNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CFJOBID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_CHANGEPLANHISTORY_TRX" Member="SBCS_CHANGEPLANHISTORY_TRX">
+    <Type Name="SBCS_CHANGEPLANHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PLANID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SOURCECASSETTEID" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="TARGETASSETTEID" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="PLANSTATUS" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_CIMMESSAGE_TRX" Member="SBCS_CIMMESSAGE_TRX">
+    <Type Name="SBCS_CIMMESSAGE_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MESSAGEID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MESSAGETEXT" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="MESSAGESTATUS" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="OPERATORID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARK" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_INCOMPLETECST" Member="SBCS_INCOMPLETECST">
+    <Type Name="SBCS_INCOMPLETECST">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CASSETTEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CASSETTESEQNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PORTID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MESTRXID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FILENAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STATE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NGREASON" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_OPIHISTORY_TRX" Member="SBCS_OPIHISTORY_TRX">
+    <Type Name="SBCS_OPIHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SESSECTIONID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="OPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="OPERATORID" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="DIRECTION" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MESSAGENAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MESSAGETRX" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="RETURNCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RETURNMESSAGE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="COMMANDKEY" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="COMMANDDATA" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="COMMANDTYPE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PROCESSRESULT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PROCESSNGMESSAGE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_PROCESS_DATA_TRX" Member="SBCS_PROCESS_DATA_TRX">
+    <Type Name="SBCS_PROCESS_DATA_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CASSETTESEQNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JOBSEQNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JOBID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRXID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MESCONTROLSTATE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FILENAMA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOCALPROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LOCALPROCSSSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT1PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT1PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT1PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT2PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT2PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT2PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT3PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT3PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT3PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT4PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT4PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT4PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT5PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT5PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT5PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT6PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT6PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT6PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT7PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT7PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT7PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT8PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT8PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT8PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT9PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT9PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT9PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT10PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT10PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT10PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT11PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT11PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT11PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT12PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT12PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT12PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT13PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT13PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT13PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT14PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT14PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT14PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT15PROCESSTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT15PROCESSSTARTTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT15PROCESSENDTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ALARM" Member="SBRM_ALARM">
+    <Type Name="SBRM_ALARM">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ALARMLEVEL" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ALARMID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ALARMCODE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ALARMTEXT" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_APCDATADOWNLOAD" Member="SBRM_APCDATADOWNLOAD">
+    <Type Name="SBRM_APCDATADOWNLOAD">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SVID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PARAMETERNAME" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ITEM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="RANGE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPERATOR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOTRATIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTTO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTUNITNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EXPRESSION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBDATAITEMNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_APCDATAREPORT" Member="SBRM_APCDATAREPORT">
+    <Type Name="SBRM_APCDATAREPORT">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SVID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PARAMETERNAME" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ITEM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="RANGE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPERATOR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOTRATIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTTO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTUNITNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EXPRESSION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBDATAITEMNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_DAILYCHECKDATA" Member="SBRM_DAILYCHECKDATA">
+    <Type Name="SBRM_DAILYCHECKDATA">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SVID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PARAMETERNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ITEM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="RANGE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPERATOR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOTRATIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTTO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTUNITNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EXPRESSION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBDATAITEMNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ENERGYVISUALIZATIONDATA" Member="SBRM_ENERGYVISUALIZATIONDATA">
+    <Type Name="SBRM_ENERGYVISUALIZATIONDATA">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SVID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PARAMETERNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ITEM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="RANGE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPERATOR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOTRATIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTTO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTUNITNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EXPRESSION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBDATAITEMNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_EQPSTAGE" Member="SBRM_EQPSTAGE">
+    <Type Name="SBRM_EQPSTAGE">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LineType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTPOSITIONNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DIRECTION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_LINESTATUSSPEC" Member="SBRM_LINESTATUSSPEC">
+    <Type Name="SBRM_LINESTATUSSPEC">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CONDITIONSTATUS" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CONDITIONSEQNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EQPNOLIST" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="OPERATORID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_NODE" Member="SBRM_NODE">
+    <Type Name="SBRM_NODE">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="REPORTMODE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODEATTRIBUTE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RECIPEIDX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RECIPELEN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RECIPESEQ" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITCOUNT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NODENAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RECIPEREGVALIDATIONENABLED" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="USERUNMODE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="USEINDEXERMODE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="USEEDCREPORT" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="VCRCOUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MPLCINTERLOCKCOUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="POSITIONPLCTRXNO" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="OPITYPE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EQPPROFILE" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="RECIPEPARAVALIDATIONENABLED" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="APCREPORT" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="APCREPORTTIME" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ENERGYREPORT" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ENERGYREPORTTIME" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VCRTYPE" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_OPI_SECS_CTRL" Member="SBRM_OPI_SECS_CTRL">
+    <Type Name="SBRM_OPI_SECS_CTRL">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SECSTYPE" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SECS" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="COLUMNNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SEQNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMVALUE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EFFECTCOLUMN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REFERCOLUMN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REFERVALUE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_OPI_USER_ACCOUNT" Member="SBRM_OPI_USER_ACCOUNT">
+    <Type Name="SBRM_OPI_USER_ACCOUNT">
+      <Column Name="USER_ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLIENT_KEY" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="USER_NAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="E_MAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LOCAL_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DEFAULT_FACTORY_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DEFAULT_AREA_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="UACACTIVE" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="TRX_DATETIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TRX_USER_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADD_DATETIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ADD_USER_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_OPI_USER_GROUP" Member="SBRM_OPI_USER_GROUP">
+    <Type Name="SBRM_OPI_USER_GROUP">
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GROUP_NAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BUTTON_KEY" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VISIBLE" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ENABLE" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_PORT" Member="SBRM_PORT">
+    <Type Name="SBRM_PORT">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PORTNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PORTID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MAXCOUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PORTATTRIBUTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PROCESSSTARTTYPE" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="POSITIONPLCTRXNO" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="MAPPINGENABLE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CSTTYPE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_POSITION" Member="SBRM_POSITION">
+    <Type Name="SBRM_POSITION">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITTYPE" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="POSITIONNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="POSITIONNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_PROCESSDATA" Member="SBRM_PROCESSDATA">
+    <Type Name="SBRM_PROCESSDATA">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SVID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PARAMETERNAME" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ITEM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="RANGE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPERATOR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOTRATIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTTO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTUNITNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EXPRESSION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBDATAITEMNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_QTIME_DEF" Member="SBRM_QTIME_DEF">
+    <Type Name="SBRM_QTIME_DEF">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="QTIMEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STARTNODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STARTNODEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STARTUNITNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STARTNUNITID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STARTEVENTMSG" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ENDNODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ENDNODEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ENDUNITNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ENDNUNITID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ENDEVENTMSG" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SETTIMEVALUE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="REMARK" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="STARTNODERECIPEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CFRWQTIME" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ENABLED" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_RECIPE" Member="SBRM_RECIPE">
+    <Type Name="SBRM_RECIPE">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FABTYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ONLINECONTROLSTATE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LINERECIPENAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PPID" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="LASTUPDATEDT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATEOPERATOR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UPDATELINEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UPDATEPCIP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REMARK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_RECIPEPARAMETER" Member="SBRM_RECIPEPARAMETER">
+    <Type Name="SBRM_RECIPEPARAMETER">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SVID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PARAMETERNAME" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ITEM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="RANGE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPERATOR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOTRATIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTTO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REPORTUNITNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UNIT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EXPRESSION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOFFSET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BPOINTS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBDATAITEMNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT" Member="SBRM_ROBOT">
+    <Type Name="SBRM_ROBOT">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PORTFETCHSEQ" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SLOTFETCHSEQ" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PORTSTORESEQ" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SLOTSTORESEQ" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITNO" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTARMQTY" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ARMJOBQTY" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_SECS_VARIABLEDATA" Member="SBRM_SECS_VARIABLEDATA">
+    <Type Name="SBRM_SECS_VARIABLEDATA">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DATATYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TRID" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ITEM_NAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ITEM_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ITEM_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ITEM_SET" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="SP1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SP2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SP3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_SKIPREPORT" Member="SBRM_SKIPREPORT">
+    <Type Name="SBRM_SKIPREPORT">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SKIPAGENT" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SKIPREPORTTRX" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SKIPCONDITION" Type="System.String" DbType="VarChar(512) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_SUBBLOCK_CTRL" Member="SBRM_SUBBLOCK_CTRL">
+    <Type Name="SBRM_SUBBLOCK_CTRL">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBBLOCKID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STARTEQP" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CONTROLEQP" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STARTEVENTMSG" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="INTERLOCKNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NEXTSUBBLOCKEQP" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NEXTSUBBLOCKEQPLIST" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ENABLED" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="INTERLOCKREPLYNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARK" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_SUBJOBDATA" Member="SBRM_SUBJOBDATA">
+    <Type Name="SBRM_SUBJOBDATA">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMLENGTH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SUBITEMNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBITEMDESC" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBITEMLOFFSET" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SUBITEMLENGTH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MEMO" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_HISTABLEPARAM" Member="SBRM_HISTABLEPARAM">
+    <Type Name="SBRM_HISTABLEPARAM">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HISTORYTYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TABLENAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FIELDKEY" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FIELDCAPTION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FIELDTYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FIELDDISPLAY" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="FIELDVALUE" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="FIELDDEFAULT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FIELDCOMBOSQL" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FIELDCOMBORELATION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FIELDSEQUENCE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FIELDATTRIBUTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ITEMCONDITION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_HISTABLEFIELDS" Member="SBRM_HISTABLEFIELDS">
+    <Type Name="SBRM_HISTABLEFIELDS">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HISTORYTYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TABLENAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TIMESTAMPFIELD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QUERYFIELDS" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DISPLAYFIELDS" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="FIELDWIDTH" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="SORTFIELDS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_CHANGEPLAN" Member="SBRM_CHANGEPLAN">
+    <Type Name="SBRM_CHANGEPLAN">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PLANID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SOURCECASSETTEID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SLOTNO" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="JOBID" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TARGETASSETTEID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TARGETSLOTNO" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="OPERATORID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_PROC_RESULT_HANDLE" Member="SBRM_ROBOT_PROC_RESULT_HANDLE">
+    <Type Name="SBRM_ROBOT_PROC_RESULT_HANDLE">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STEPID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMSEQ" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="METHODNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LASTUPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_RULE_FILTER" Member="SBRM_ROBOT_RULE_FILTER">
+    <Type Name="SBRM_ROBOT_RULE_FILTER">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STEPID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMSEQ" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="METHODNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="LASTUPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_RULE_ORDERBY" Member="SBRM_ROBOT_RULE_ORDERBY">
+    <Type Name="SBRM_ROBOT_RULE_ORDERBY">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STEPID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMSEQ" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="METHODNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ORDERBY" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="LASTUPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_UNIT" Member="SBRM_UNIT">
+    <Type Name="SBRM_UNIT">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="POSITIONPLCTRXNO" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="UNITATTRIBUTE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="USERUNMODE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_RECIPETABLE_TRX" Member="SBCS_RECIPETABLE_TRX">
+    <Type Name="SBCS_RECIPETABLE_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MODIFYTYPE" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ONLINECONTROLSTATE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LINERECIPENAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PPID" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="OPERATORID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UPDATEPCIP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REMARK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_OPI_LINE_FUNCTION" Member="SBRM_OPI_LINE_FUNCTION">
+    <Type Name="SBRM_OPI_LINE_FUNCTION">
+      <Column Name="BUTTON_KEY" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VISIBLE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_TERMINALMESSAGE_TRX" Member="SBCS_TERMINALMESSAGE_TRX">
+    <Type Name="SBCS_TERMINALMESSAGE_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CAPTION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TERMINALTEXT" Type="System.String" DbType="VarChar(5000) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_OPI_PARAMETER" Member="SBRM_OPI_PARAMETER">
+    <Type Name="SBRM_OPI_PARAMETER">
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="KEYWORD" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SUBKEY" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ITEMVALUE" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CONDITION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_MPLC_INTERLOCK" Member="SBRM_MPLC_INTERLOCK">
+    <Type Name="SBRM_MPLC_INTERLOCK">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PLCTRXNO" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARK" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_LINE" Member="SBRM_LINE">
+    <Type Name="SBRM_LINE">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINENAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FABTYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="JOBDATALINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NEXTLINEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKCROSSRECIPE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="HISTORYTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPI_FUNCTION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_RULE_STAGE_SELECT" Member="SBRM_ROBOT_RULE_STAGE_SELECT">
+    <Type Name="SBRM_ROBOT_RULE_STAGE_SELECT">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STEPID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMSEQ" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="METHODNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="LASTUPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_RULE_ROUTESTEP_BYPASS" Member="SBRM_ROBOT_RULE_ROUTESTEP_BYPASS">
+    <Type Name="SBRM_ROBOT_RULE_ROUTESTEP_BYPASS">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STEPID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BYPASSCONDITIONID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="GOTOSTEPID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="METHODNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="BYPASSITEMSEQ" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="LASTUPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_RULE_ROUTESTEP_JUMP" Member="SBRM_ROBOT_RULE_ROUTESTEP_JUMP">
+    <Type Name="SBRM_ROBOT_RULE_ROUTESTEP_JUMP">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STEPID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="JUMPCONDITIONID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="GOTOSTEPID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="METHODNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="JUMPITEMSEQ" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="LASTUPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_ROBOTMESSAGE_TRX" Member="SBCS_ROBOTMESSAGE_TRX">
+    <Type Name="SBCS_ROBOTMESSAGE_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MESSAGETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TERMINALTEXT" Type="System.String" DbType="VarChar(5000) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_OPI_NODE_DEF" Member="SBRM_OPI_NODE_DEF">
+    <Type Name="SBRM_OPI_NODE_DEF">
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OBJECTKEY" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_RULE_JOB_SELECT" Member="SBRM_ROBOT_RULE_JOB_SELECT">
+    <Type Name="SBRM_ROBOT_RULE_JOB_SELECT">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SELECTTYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ITEMSEQ" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STAGETYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="METHODNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="LASTUPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_CST_CONTROL_DEF" Member="SBRM_CST_CONTROL_DEF">
+    <Type Name="SBRM_CST_CONTROL_DEF">
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MESCONTROLMODE" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PORTIDLIST" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="OBJECTLEVEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="COMBOBOXITEMS" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="OBJECTTAG" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="RANGE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RANGETEXT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CHECKEMPTY" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DEFAULTVALUE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_OPI_BUTTON_RELATION" Member="SBRM_OPI_BUTTON_RELATION">
+    <Type Name="SBRM_OPI_BUTTON_RELATION">
+      <Column Name="BUTTON_KEY" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MIN_BUTTON_ID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="SUB_BUTTON_ID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="FUN_BUTTON_ID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="BUTTON_CAPTION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BUTTON_SEQUENCE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ACTIVE" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="IMAGE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BUTTON_DESC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_ROUTE_STEP" Member="SBRM_ROBOT_ROUTE_STEP">
+    <Type Name="SBRM_ROBOT_ROUTE_STEP">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STEPID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="ROBOTACTION" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTUSEARM" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTRULE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STAGEIDLIST" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="INPUTTRACKDATA" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="OUTPUTTRACKDATA" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="LASTUPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NEXTSTEPID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CROSSSTAGEFLAG" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_METHOD_DEF" Member="SBRM_ROBOT_METHOD_DEF">
+    <Type Name="SBRM_ROBOT_METHOD_DEF">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="METHODNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="METHODRULETYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="AUTHOR" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LASTUPDATEDATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="FUNCKEY" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_STAGE" Member="SBRM_ROBOT_STAGE">
+    <Type Name="SBRM_ROBOT_STAGE">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STAGEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STAGENAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="STAGEIDBYNODE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STAGETYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PRIORITY" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="STAGEREPORTTRXNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STAGEJOBDATATRXNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ISMULTISLOT" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SLOTMAXCOUNT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RECIPECHENCKFLAG" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DUMMYCHECKFLAG" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="GETREADYFLAG" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PUTREADYFLAG" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PREFETCHFLAG" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="WAITFRONTFLAG" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="UPSTREAMPATHTRXNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="UPSTREAMJOBDATAPATHTRXNAME" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="DOWNSTREAMPATHTRXNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DOWNSTREAMJOBDATAPATHTRXNAME" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="TRACKDATASEQLIST" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CASSETTETYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SLOTFETCHSEQ" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SLOTSTORESEQ" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EXCHANGETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EQROBOTIFTYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="RTCREWORKFLAG" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_ROUTE_MST" Member="SBRM_ROBOT_ROUTE_MST">
+    <Type Name="SBRM_ROBOT_ROUTE_MST">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTENAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="LASTUPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="RTCMODEFLAG" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUTEPRIORITY" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RTCFORCERETURNFLAG" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBRM_ROBOT_ROUTE_CONDITION" Member="SBRM_ROBOT_ROUTE_CONDITION">
+    <Type Name="SBRM_ROBOT_ROUTE_CONDITION">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ROUTEID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ROBOTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CONDITIONID" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="OBJECTNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="METHODNAME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ISENABLED" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="LASTUPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CONDITIONSEQ" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ROUTEPRIORITY" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_CASSETTEHISTORY_TRX" Member="SBCS_CASSETTEHISTORY_TRX">
+    <Type Name="SBCS_CASSETTEHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CASSETTEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CASSETTESEQNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CASSETTESTATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBCOUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PORTID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBEXISTENCE" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CASSETTECONTROLCOMMAND" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMMANDRETURNCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPERATORID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMPLETEDCASSETTEDATA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LOADINGCASSETTETYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QTIMEFLAG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PARTIALFULLFLAG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOADTIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PROCESSSTARTTIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PROCESSENDTIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CASSETTESETCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_ALARMHISTORY_TRX" Member="SBCS_ALARMHISTORY_TRX">
+    <Type Name="SBCS_ALARMHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EVENTNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ALARMID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ALARMCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ALARMLEVEL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ALARMTEXT" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ALARMSTATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ALARMUNIT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_MATERIAL_TRX" Member="SBCS_MATERIAL_TRX">
+    <Type Name="SBCS_MATERIAL_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITNO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MATERIALID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MATERIALCOUNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MATERIALSTATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MATERIALTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPERATORID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOTNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OLDMATERIALID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PERMITCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_UNITHISTORY_TRX" Member="SBCS_UNITHISTORY_TRX">
+    <Type Name="SBCS_UNITHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITSTATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_NODEHISTORY_TRX" Member="SBCS_NODEHISTORY_TRX">
+    <Type Name="SBCS_NODEHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODEATTRIBUTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CIMMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UPSTREAMINLINEMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOWNSTREAMINLINEMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CURRENTRECIPEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CURRENTSTATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CFJOBCOUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TFTJOBCOUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ALARMEXIST" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EQUIPMENTOPERATORMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AUTORECIPECHANGEFLAG" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EQUIPMENTRUNMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PARTIALFULLMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBDATACHECKMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RECIPEIDCHECKMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTTYPECHECKMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GROUPINDEXCHECKMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTIDCHECKMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBDUPLICATECHECKMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COAVERSIONCHECKCHECKMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SAMPLINGRULE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SAMPLINGUNIT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SIDEINFORMATION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_JOBHISTORY_TRX" Member="SBCS_JOBHISTORY_TRX">
+    <Type Name="SBCS_JOBHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EVENTNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CASSETTESEQNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JOBSEQNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JOBID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GROUPINDEX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PRODUCTTYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CSTOPERATIONMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SUBSTRATETYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CIMMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBJUDGE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SAMPLINGSLOTFLAG" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OXRINFORMATIONREQUESTFLAG" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FIRSTRUNFLAG" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBGRADE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PPID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="INSPRESERVATIONS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LASTGLASSFLAG" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INSPJUDGEDDATA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRACKINGDATA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EQPFLAG" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OXRINFORMATION" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="CHIPCOUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PORTNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOTNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SOURCECASSETTEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CURRENTCASSETTEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VCRREADGLASSID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VCRRESULT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHIPNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TARGETCASSETTESETTINGCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ABNORMALCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RUNMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TURNANGLE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTSPECNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTSPECVER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PROCESSFLOWNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PROCESSOPERATIONNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTOWNER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTSIZE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LINERECIPENAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NODESTACK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GROUPID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OWNERTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VCRNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COAVERSION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SAMPLINGVALUE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TARGETCASSETTEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TURNFLAG" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_DEFECTCODEHISTORY_TRX" Member="SBCS_DEFECTCODEHISTORY_TRX">
+    <Type Name="SBCS_DEFECTCODEHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CASSETTESEQNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JOBSEQNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JOBID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PLANID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DEFECTCODES" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+      <Column Name="REMARK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_PPKEVENTHISTORY_TRX" Member="SBCS_PPKEVENTHISTORY_TRX">
+    <Type Name="SBCS_PPKEVENTHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EVENTNAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NODENO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CARNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOXCOUNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOXID01" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOXID02" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PORTNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PACKUNPACKMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STAGEORPORTORPALLETORCAR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STAGENO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PALLETID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PALLETNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REMOVEREASONFLAG" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SOURCE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WEIGHT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SAMPLINGFLAG" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RETURNCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GRADE01" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GRADE02" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CASSETTESETTINGCODE01" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CASSETTESETTINGCODE02" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOXGLASSCOUNT01" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOXGLASSCOUNT02" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REMARK" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BOXTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LOTNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REQUESTTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MAXCOUNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_LINEHISTORY_TRX" Member="SBCS_LINEHISTORY_TRX">
+    <Type Name="SBCS_LINEHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINETYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FABTYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LINESTATUS" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CSTOPERATIONMODE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EQPCOUNT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LINEOPERATIONMODE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MESCONNECTIONSTATE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ONLINECONTROLSTATE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INDEXEROPERATIONMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SHORTCUTMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SBCS_PORTHISTORY_TRX" Member="SBCS_PORTHISTORY_TRX">
+    <Type Name="SBCS_PORTHISTORY_TRX">
+      <Column Name="OBJECTKEY" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UPDATETIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LINEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NODEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PORTID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PORTNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PORTTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PORTMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PORTENABLEMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PORTTRANSFERMODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PORTSTATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CASSETTESEQNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CASSETTESTATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QTIMEFLAG" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRANSACTIONID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GRADE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CASSETTESETCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

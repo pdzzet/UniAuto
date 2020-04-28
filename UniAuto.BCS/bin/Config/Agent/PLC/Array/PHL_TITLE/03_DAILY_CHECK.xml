@@ -1,0 +1,24 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.0.8.0-->
+<!--DateTime: 2015-12-16 10:43:29-->
+<itemgroup name="L5ProcessDataDailyCheckBlock" profile="CSOT G6 t3 EQP Profile_Array_17_TCPHL_L5_TITLER(TORAY)_Ver 1.0.xlsx" plcmap="CSOT_G6C_BC_Array_17_TCPHL-PLC Address Map_Ver1.03.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="6" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EE_LAMP1_USE_TIME" item="EE_LAMP1_USE_TIME" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EE_LAMP1_POWER" item="EE_LAMP1_POWER" site="" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="EE_LAMP2_USE_TIME" item="EE_LAMP2_USE_TIME" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EE_LAMP2_POWER" item="EE_LAMP2_POWER" site="" woffset="16" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="EE_LAMP3_USE_TIME" item="EE_LAMP3_USE_TIME" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EE_LAMP3_POWER" item="EE_LAMP3_POWER" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ID_LD_USE_TIME" item="ID_LD_USE_TIME" site="" woffset="21" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="ID_HEAD1_POWER" item="ID_HEAD1_POWER" site="" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ID_HEAD2_POWER" item="ID_HEAD2_POWER" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ID_HEAD3_POWER" item="ID_HEAD3_POWER" site="" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ID_HEAD4_POWER" item="ID_HEAD4_POWER" site="" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ID_HEAD5_POWER" item="ID_HEAD5_POWER" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="ID_HEAD6_POWER" item="ID_HEAD6_POWER" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="TEMPERTURE" item="TEMPERTURE" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CDA_PRESSURE" item="CDA_PRESSURE" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="VAC_PRESSURE" item="VAC_PRESSURE" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EXH_PRESSURE" item="EXH_PRESSURE" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

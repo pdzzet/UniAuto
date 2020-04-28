@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="UniAuto.UniBCS.Entity.RobotRouteMstEntityData, UniAuto.UniBCS.Entity" table="SBRM_ROBOT_ROUTE_MST">
+    <id name="Id" type="Int64" unsaved-value="null">
+      <column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+      <generator class="native" />
+    </id>
+    <property name="SERVERNAME" type="String">
+      <column name="SERVERNAME" length="100" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="ROBOTNAME" type="String">
+      <column name="ROBOTNAME" length="100" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="ROUTEID" type="String">
+      <column name="ROUTEID" length="100" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="ROUTENAME" type="String">
+      <column name="ROUTENAME" length="100" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="LINETYPE" type="String">
+      <column name="LINETYPE" length="100" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="ISENABLED" type="String">
+      <column name="ISENABLED" length="100" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="DESCRIPTION" type="String">
+      <column name="DESCRIPTION" length="1000" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="REMARKS" type="String">
+      <column name="REMARKS" length="1000" sql-type="varchar" not-null="false"/>
+    </property>
+    <property name="LASTUPDATETIME" type="DateTime">
+      <column name="LASTUPDATETIME" length="8" sql-type="datetime" not-null="true"/>
+    </property>
+    <property name="RTCMODEFLAG" type="String">
+      <column name="RTCMODEFLAG" length="100" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="ROUTEPRIORITY" type="Int32">
+      <column name="ROUTEPRIORITY" length="4" sql-type="int" not-null="true"/>
+    </property>
+    <property name="RTCFORCERETURNFLAG" type="String">
+      <column name="RTCFORCERETURNFLAG" length="100" sql-type="varchar" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

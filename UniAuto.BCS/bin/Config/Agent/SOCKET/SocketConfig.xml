@@ -1,0 +1,8 @@
+<ROOT>
+  <ActiveSocketAgent Name="ActiveSocketAgent" T3TimeoutSecond="15">
+    <Param IP="127.0.0.1" Port="6000"/>
+  </ActiveSocketAgent>
+  <PassiveSocketAgent Name="PassiveSocketAgent" T3TimeoutSecond="15">
+    <Param IP="127.0.0.1" Port="7000"/>
+  </PassiveSocketAgent>
+</ROOT>

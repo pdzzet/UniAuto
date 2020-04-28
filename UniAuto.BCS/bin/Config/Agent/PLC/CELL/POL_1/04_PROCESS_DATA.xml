@@ -1,0 +1,193 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.1.8.0-->
+<!--DateTime: 2016-06-22 13:55:46-->
+<itemgroup name="L3ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L3_OHV_Ver 1.0.1_20160518.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="EQ_ID" site="" woffset="0" boffset="0" wpoints="3" bpoints="48" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_ID" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OperatorID" site="" woffset="4" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Operatorlevel" site="" woffset="8" boffset="0" wpoints="3" bpoints="48" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_ID" site="" woffset="11" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="INPUT_TIME" site="" woffset="21" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OUTPUT_TIME" site="" woffset="24" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PanelGrade" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DCRalignmentSpeed" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DCRreadpanelID" site="" woffset="29" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA,MES" unit="" reportunit="0" />
+  <item name="Ionbar1Use" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Ionbar2Use" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Ionbar3Use" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CV2_High_Speed" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CV2_Low_Speed" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Output_CV_High_Speed" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TactTime" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Lifter_DRV_Speed" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DCR_Align_DRV_Speed" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Entrance_DRV_Position0" site="" woffset="48" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Entrance_DRV_Position1" site="" woffset="50" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Entrance_DRV_Position2" site="" woffset="52" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Manulloadermode" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DCR_Align_DRV_Position" site="" woffset="55" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Entrance_Port_position" site="" woffset="57" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="PanelLeftFlow" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PanelRightFlow" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="LeftDcrUse" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RightDcrUse" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L4_PCN_Ver 1.0.2_20160621.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Panel_Size_X" item="PanelSize" site="" woffset="0" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_Size_Y" item="PanelSize" site="" woffset="2" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_Size_Z" item="PanelSize" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip#1_In-Tr_Brush_Speed" item="ChipRemove1Information" site="" woffset="6" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip#1_In_Brush_Speed" item="ChipRemove1Information" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip#1_In_Brush_Direction" item="ChipRemove1Information" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip#1_In_Brush_Use" item="ChipRemove1Information" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_X_Speed" item="ChipRemove1Information" site="" woffset="11" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_Y_Speed" item="ChipRemove1Information" site="" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_T_Speed" item="ChipRemove1Information" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_Z1_Position" item="ChipRemove1Information" site="" woffset="16" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_Z2_Position" item="ChipRemove1Information" site="" woffset="18" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_Z1_Off_Set" item="ChipRemove1Information" site="" woffset="20" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_Z2_Off_Set" item="ChipRemove1Information" site="" woffset="22" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_Z1_P_Used_No" item="ChipRemove1Information" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_Z2_P_Used_No" item="ChipRemove1Information" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_X_Speed" item="ChipRemove2Information" site="" woffset="26" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_Y_Speed" item="ChipRemove2Information" site="" woffset="28" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_T_Speed" item="ChipRemove2Information" site="" woffset="30" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_Z1_Position" item="ChipRemove2Information" site="" woffset="32" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_Z2_Position" item="ChipRemove2Information" site="" woffset="34" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_Z1_Off_Set" item="ChipRemove2Information" site="" woffset="36" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_Z2_Off_Set" item="ChipRemove2Information" site="" woffset="38" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_Z1_P_Used_No" item="ChipRemove2Information" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_Z2_P_Used_No" item="ChipRemove2Information" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="LoadingCV_Speed" item="LoadingConveyorSpeed" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OutCV_Speed" item="OutConveyorSpeed" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_1U_CDA_Press" item="AirKnifePress" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_1L_CDA_Press" item="AirKnifePress" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_2U_CDA_Press" item="AirKnifePress" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_2L_CDA_Press" item="AirKnifePress" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_3U_CDA_Press" item="AirKnifePress" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_3L_CDA_Press" item="AirKnifePress" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip#1_R_S_N" item="Chip#1RemoveStage" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chip#2_R_S_N" item="Chip#2RemoveStage" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L5_PAM_Ver 1.0.2_20160603.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="EQP_ID" item="EQP_ID" site="" woffset="0" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Input_Time" item="Input_Time" site="" woffset="4" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Output_Time" item="Output_Time" site="" woffset="7" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Operator_ID" item="Operator_ID" site="" woffset="10" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_ID" item="Recipe_ID" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_Grade" item="Panel_Grade" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_ID" item="Panel_ID" site="" woffset="16" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Ion_Use" item="Ion_Use" site="" woffset="26" boffset="0" wpoints="2" bpoints="32" expression="Hex" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="ESD_Monitor_1" item="ESD_Monitor_1" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="ESD_Monitor_2" item="ESD_Monitor_2" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="ESD_Monitor_3" item="ESD_Monitor_3" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="Particle_Count_Use" item="Particle_Count_Use" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Particle_Count_1" item="Particle_Count_1" site="" woffset="32" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Particle_Count_2" item="Particle_Count_2" site="" woffset="34" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PANEL_X_LENGTH" item="PANEL_X_LENGTH" site="" woffset="36" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="PANEL_Y_LENGTH" item="PANEL_Y_LENGTH" site="" woffset="38" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="PANEL_THICKNESS" item="PANEL_THICKNESS" site="" woffset="40" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_Attach_Use" item="CF_Attach_Use" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_Panel_CAM_USE" item="CF_Panel_CAM_USE" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_CAM_USE" item="CF_POL_CAM_USE" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Cartridge_ID" item="CF_POL_Cartridge_ID" site="" woffset="45" boffset="0" wpoints="15" bpoints="240" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_PORT_NO" item="CF_POL_PORT_NO" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_LOT_ID" item="CF_POL_LOT_ID" site="" woffset="61" boffset="0" wpoints="15" bpoints="240" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_LOT_NO" item="CF_POL_LOT_NO" site="" woffset="76" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Stocker_Shake_Number" item="CF_POL_Stocker_Shake_Number" site="" woffset="78" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Two_Sheet_Inspection_use" item="CF_POL_Two_Sheet_Inspection_use" site="" woffset="79" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_X_LENGTH" item="CF_POL_X_LENGTH" site="" woffset="80" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Y_LENGTH" item="CF_POL_Y_LENGTH" site="" woffset="82" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_THICKNESS" item="CF_POL_THICKNESS" site="" woffset="84" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_ATTACH_X_LENGTH" item="CF_POL_ATTACH_X_LENGTH" site="" woffset="86" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_ATTACH_Y_LENGTH" item="CF_POL_ATTACH_Y_LENGTH" site="" woffset="88" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_ATTACH_theta_" item="CF_POL_ATTACH_theta_" site="" woffset="90" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attach_Offset_X" item="CF_POL_Attach_Offset_X" site="" woffset="92" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attach_Offset_Y" item="CF_POL_Attach_Offset_Y" site="" woffset="94" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attach_Offset_theta" item="CF_POL_Attach_Offset_theta" site="" woffset="96" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Peeling_Speed1" item="CF_POL_Peeling_Speed1" site="" woffset="98" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Peeling_Speed2" item="CF_POL_Peeling_Speed2" site="" woffset="99" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Peeling_Speed3" item="CF_POL_Peeling_Speed3" site="" woffset="100" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Peeling_Speed_Change_Distance_1_to_2" item="CF_POL_Peeling_Speed_Change_Distance_1_to_2" site="" woffset="101" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Peeling_Speed_Change_Distance_2_to_3" item="CF_POL_Peeling_Speed_Change_Distance_2_to_3" site="" woffset="103" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Peeling_Delay_Time" item="CF_POL_Peeling_Delay_Time" site="" woffset="105" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Transfer_Speed" item="CF_POL_Transfer_Speed" site="" woffset="106" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attach_Press1" item="CF_POL_Attach_Press1" site="" woffset="107" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attach_Press2" item="CF_POL_Attach_Press2" site="" woffset="108" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attach_Press3" item="CF_POL_Attach_Press3" site="" woffset="109" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attach_Begin_Gap" item="CF_POL_Attach_Begin_Gap" site="" woffset="110" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attacn_End_Gap" item="CF_POL_Attacn_End_Gap" site="" woffset="112" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attacn_Begin_Speed_1" item="CF_POL_Attacn_Begin_Speed_1" site="" woffset="114" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attacn_Begin_Speed_2" item="CF_POL_Attacn_Begin_Speed_2" site="" woffset="115" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attacn_Begin_Speed_3" item="CF_POL_Attacn_Begin_Speed_3" site="" woffset="116" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attacn_Speed_Change_Distance_1_to_2" item="CF_POL_Attacn_Speed_Change_Distance_1_to_2" site="" woffset="117" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_POL_Attacn_Speed_Change_Distance_2_to_3" item="CF_POL_Attacn_Speed_Change_Distance_2_to_3" site="" woffset="119" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="CF_Attach_Delay_Time" item="CF_Attach_Delay_Time" site="" woffset="121" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_Attach_Use" item="TFT_Attach_Use" site="" woffset="122" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_Panel_CAM_USE" item="TFT_Panel_CAM_USE" site="" woffset="123" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_CAM_USE" item="TFT_POL_CAM_USE" site="" woffset="124" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Cartridge_ID" item="TFT_POL_Cartridge_ID" site="" woffset="125" boffset="0" wpoints="15" bpoints="240" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_PART_NO" item="TFT_POL_PART_NO" site="" woffset="140" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_LOT_ID" item="TFT_POL_LOT_ID" site="" woffset="141" boffset="0" wpoints="15" bpoints="240" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_LOT_NO" item="TFT_POL_LOT_NO" site="" woffset="156" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Stocker_Shake_Number" item="TFT_POL_Stocker_Shake_Number" site="" woffset="158" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Two_Sheet_Inspection_use" item="TFT_POL_Two_Sheet_Inspection_use" site="" woffset="159" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_X_LENGTH" item="TFT_POL_X_LENGTH" site="" woffset="160" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Y_LENGTH" item="TFT_POL_Y_LENGTH" site="" woffset="162" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_THICKNESS" item="TFT_POL_THICKNESS" site="" woffset="164" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_ATTACH_X_LENGTH" item="TFT_POL_ATTACH_X_LENGTH" site="" woffset="166" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_ATTACH_Y_LENGTH" item="TFT_POL_ATTACH_Y_LENGTH" site="" woffset="168" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_ATTACH_theta_" item="TFT_POL_ATTACH_theta_" site="" woffset="170" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attach_Offset_X" item="TFT_POL_Attach_Offset_X" site="" woffset="172" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attach_Offset_Y" item="TFT_POL_Attach_Offset_Y" site="" woffset="174" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attach_Offset_theta" item="TFT_POL_Attach_Offset_theta" site="" woffset="176" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Peeling_Speed1" item="TFT_POL_Peeling_Speed1" site="" woffset="178" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Peeling_Speed2" item="TFT_POL_Peeling_Speed2" site="" woffset="179" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Peeling_Speed3" item="TFT_POL_Peeling_Speed3" site="" woffset="180" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Peeling_Speed_Change_Distance_1_to_2" item="TFT_POL_Peeling_Speed_Change_Distance_1_to_2" site="" woffset="181" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Peeling_Speed_Change_Distance_2_to_3" item="TFT_POL_Peeling_Speed_Change_Distance_2_to_3" site="" woffset="183" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Peeling_Delay_Time" item="TFT_POL_Peeling_Delay_Time" site="" woffset="185" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Transfer_Speed" item="TFT_POL_Transfer_Speed" site="" woffset="186" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attach_Press1" item="TFT_POL_Attach_Press1" site="" woffset="187" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attach_Press2" item="TFT_POL_Attach_Press2" site="" woffset="188" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attach_Press3" item="TFT_POL_Attach_Press3" site="" woffset="189" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attach_Begin_Gap" item="TFT_POL_Attach_Begin_Gap" site="" woffset="190" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attacn_End_Gap" item="TFT_POL_Attacn_End_Gap" site="" woffset="192" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attacn_Begin_Speed_1" item="TFT_POL_Attacn_Begin_Speed_1" site="" woffset="194" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attacn_Begin_Speed_2" item="TFT_POL_Attacn_Begin_Speed_2" site="" woffset="195" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attacn_Begin_Speed_3" item="TFT_POL_Attacn_Begin_Speed_3" site="" woffset="196" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attacn_Speed_Change_Distance_1_to_2" item="TFT_POL_Attacn_Speed_Change_Distance_1_to_2" site="" woffset="197" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_POL_Attacn_Speed_Change_Distance_2_to_3" item="TFT_POL_Attacn_Speed_Change_Distance_2_to_3" site="" woffset="199" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="EDA" unit="" reportunit="0" />
+  <item name="TFT_Attach_Delay_Time" item="TFT_Attach_Delay_Time" site="" woffset="201" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="POL_Size_Abnormal_Flag" item="POL_Size_Abnormal_Flag" site="" woffset="202" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Path_NO" item="Path_NO" site="" woffset="203" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Upstream_Using_HD" item="Upstream_Using_HD" site="" woffset="204" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Downstream_Using_HD" item="Downstream_Using_HD" site="" woffset="205" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Upstream_Using_Stage" item="Upstream_Using_Stage" site="" woffset="206" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Downstream_Using_Stage" item="Downstream_Using_Stage" site="" woffset="207" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Manual_Judge_History" item="Manual_Judge_History" site="" woffset="208" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Manual_Judge_Panel_Out_Time" item="Manual_Judge_Panel_Out_Time" site="" woffset="209" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Manual_Judge_Panel_In_Time" item="Manual_Judge_Panel_In_Time" site="" woffset="212" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Manual_Judge_Grade" item="Manual_Judge_Grade" site="" woffset="215" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Tact_time" item="Tact_time" site="" woffset="216" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L6ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L6_ACV_Ver 1.0.1_20160621.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe_ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Glass_Chip_ID" site="" woffset="1" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Operater_ID" site="" woffset="11" boffset="0" wpoints="8" bpoints="128" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Process_temp_ST" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Process_press_ST" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Process_temp_MD" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Process_press_MD" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Process_temp_ED" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Process_press_ED" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Process_time" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Chamber_NO" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Location" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Job_Y_N" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_Port_Y_N" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="UP_Press_Time" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Down_Press_Time" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="M_Port_Cycle" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Ion_Bar_on_Y_N" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

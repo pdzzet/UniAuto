@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.EquipmentEntityData, UniAuto.UniBCS.Entity" table="SBRM_NODE">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="LINEID" type="String">
+			<column name="LINEID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="SERVERNAME" type="String">
+			<column name="SERVERNAME" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="NODENO" type="String">
+			<column name="NODENO" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_NODE"/>
+		</property>
+		<property name="NODEID" type="String">
+			<column name="NODEID" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_NODE"/>
+		</property>
+		<property name="REPORTMODE" type="String">
+			<column name="REPORTMODE" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="NODEATTRIBUTE" type="String">
+			<column name="NODEATTRIBUTE" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="RECIPEIDX" type="Int32">
+			<column name="RECIPEIDX" length="4" sql-type="int" not-null="true"/>
+		</property>
+		<property name="RECIPELEN" type="Int32">
+			<column name="RECIPELEN" length="4" sql-type="int" not-null="true"/>
+		</property>
+		<property name="RECIPESEQ" type="String">
+			<column name="RECIPESEQ" length="10" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UNITCOUNT" type="Int32">
+			<column name="UNITCOUNT" length="4" sql-type="int" not-null="true"/>
+		</property>
+		<property name="NODENAME" type="String">
+			<column name="NODENAME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="RECIPEREGVALIDATIONENABLED" type="String">
+			<column name="RECIPEREGVALIDATIONENABLED" length="1" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="USERUNMODE" type="String">
+			<column name="USERUNMODE" length="1" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="USEINDEXERMODE" type="String">
+			<column name="USEINDEXERMODE" length="1" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="USEEDCREPORT" type="String">
+			<column name="USEEDCREPORT" length="1" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="VCRCOUNT" type="Int32">
+			<column name="VCRCOUNT" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="MPLCINTERLOCKCOUNT" type="Int32">
+			<column name="MPLCINTERLOCKCOUNT" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="POSITIONPLCTRXNO" type="String">
+			<column name="POSITIONPLCTRXNO" length="2" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="OPITYPE" type="String">
+			<column name="OPITYPE" length="20" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="EQPPROFILE" type="String">
+			<column name="EQPPROFILE" length="255" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="RECIPEPARAVALIDATIONENABLED" type="String">
+			<column name="RECIPEPARAVALIDATIONENABLED" length="1" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="APCREPORT" type="String">
+			<column name="APCREPORT" length="1" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="APCREPORTTIME" type="Int32">
+			<column name="APCREPORTTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="ENERGYREPORT" type="String">
+			<column name="ENERGYREPORT" length="1" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="ENERGYREPORTTIME" type="Int32">
+			<column name="ENERGYREPORTTIME" length="4" sql-type="int" not-null="false"/>
+		</property>
+    <property name="VCRTYPE" type="String">
+      <column name="VCRTYPE" length="2" sql-type="varchar" not-null="false"/>
+    </property>
+	</class>
+</hibernate-mapping>

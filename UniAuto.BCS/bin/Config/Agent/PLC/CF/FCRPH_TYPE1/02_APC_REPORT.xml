@@ -1,0 +1,165 @@
+﻿<!--FileName: 02_APC_REPORT.xml-->
+<!--Version: 1.1.0.0-->
+<!--DateTime: 2016-03-13 13:49:57-->
+<itemgroup name="L4APCDataReportBlock" profile="CSOT G6 t3 EQP Profile_CF_04_FCRPH_L04_Cleaner_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_04_FCRPH-PLC Address Map_Ver1.07.xls">
+  <item name="Recipe_Nnmber" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Recipe_Name" site="" woffset="1" boffset="0" wpoints="7" bpoints="112" expression="ASCII" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Recipe_Time" site="" woffset="8" boffset="0" wpoints="3" bpoints="48" expression="Hex" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Tact_Time" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="INCV_Speed" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR_Speed" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="OUTCV_Speed" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="INCV_Zone_TT" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR_Zone_TT" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="OUTCV_Zone_TT" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="L_Heater_USE" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Rinse_Process_Time" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR1_EXH_DM03" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR1_CDA_IN_FL03" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR1_UP_AC_IN_PG05" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR1_LO_AC_IN_PG07" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR2_EXH_DM05" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR1_AQUA_DIW_FL04" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR1_LO_DIW_FL05" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR1_UP_DIW_FL06" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR3_EXH_DM06" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR2_LO_DIW_FL08" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR2_UP_DIW_FL09" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR2_AQUA_DIW_FL10" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR4_EXH_DM07" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR3_LO_DIW_FL11" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR3_UP_DIW_FL12" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR3_AQUA_DIW_FL13" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="AK_EXH_DM08" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="AK_EXH_DM09" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR4_LO_DIW_FL14" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR4_UP_DIW_FL16" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR4_AQUA_DIW_FL17" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="AK_LO_CDA_IN_FL18" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="AK_UP_CDA_IN_FL19" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="AK_WATER_REGISTER" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="AK_LO_CDA_IN_PG11" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="AK_UP_CDA_IN_PG13" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_EXH_DM10" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_EXH_DM11" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_ION_CDA_IN_FL20" site="" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_HOT_CDA_IN_FL21" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_DRIVING_AIR_FL22" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_ION_CDA_IN_PG15" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_HOT_CDA_IN_PG17" site="" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_DRIV_AIR_PG19" site="" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="EUV_CDA_IN_FL02" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="EUV_EXH_DM01" site="" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="EUV_EXH_DM02" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="EUV_N2_INBF_FLT_PG1" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="EUV_N2_INAF_FLT_PG2" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="EUV_CDA_IN_PG03" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="EUV_INTEG_FL01" site="" woffset="60" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR2_INTEG_FL07" site="" woffset="62" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR4_INTEG_FL15" site="" woffset="64" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SWR1_CDA_IN_FL03_ITG" site="" woffset="66" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="AK_LO_CDA_IN_FL18_ITG" site="" woffset="68" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="AK_UP_CDA_IN_FL19_ITG" site="" woffset="70" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_ION_CDA_FL20_ITG" site="" woffset="72" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_HOT_CDA_FL21_ITG" site="" woffset="74" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="BUF2_DRIV_AIR_FL22_ITG" site="" woffset="76" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="TIC01_Current_PV" site="" woffset="78" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TIC02_Current_PV" site="" woffset="80" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="Lamp1_RD_Transfo" site="" woffset="82" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="Lamp2_RD_Transfo" site="" woffset="83" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="Lamp1_Used_Time_1" site="" woffset="84" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="Lamp1_Used_Time_2" site="" woffset="86" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L6APCDataReportBlock" profile="CSOT G6 t3 EQP Profile_CF_04_FCRPH_L06_Coater_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_04_FCRPH-PLC Address Map_Ver1.07.xls">
+  <item name="PAR_SIG1" item="Coater" site="1" woffset="0" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="PAR_SIG2" item="Coater" site="2" woffset="2" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="GLS_TEMP" item="Coater" site="3" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="GLS_THICK" item="Coater" site="4" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="NOZ_ZV1L" item="Coater" site="5" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="NOZ_ZV1R" item="Coater" site="6" woffset="9" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="POS_X1L" item="Coater" site="7" woffset="11" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="TOL_X1L" item="Coater" site="8" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="POS_X1R" item="Coater" site="9" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="TOL_X1R" item="Coater" site="10" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="NOZ_ZV2L" item="Coater" site="5" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="NOZ_ZV2R" item="Coater" site="6" woffset="21" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="POS_X2L" item="Coater" site="7" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="TOL_X2L" item="Coater" site="8" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="POS_X2R" item="Coater" site="9" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="TOL_X2R" item="Coater" site="10" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="POS_CSP1L" item="Coater" site="11" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="DIS_PRES_CSP1L" item="Coater" site="12" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="POS_CSP1R_2L" item="Coater" site="13" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="-1000" reportto="APC" unit="" reportunit="0" />
+  <item name="DIS_PRES_CSP1R_2L" item="Coater" site="14" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="-10000" reportto="APC" unit="" reportunit="0" />
+  <item name="NOZ_DIS_PRES" item="Coater" site="15" woffset="39" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="PRES_VCD1" item="Coater" site="16" woffset="41" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PRES_VCD2" item="Coater" site="17" woffset="43" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="PRES_VCD3" item="Coater" site="18" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="ESD_SER" item="Coater" site="19" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="STG_VAC1" item="Coater" site="20" woffset="48" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="STG_VAC2" item="Coater" site="21" woffset="50" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="STG_VAC3" item="Coater" site="22" woffset="52" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="POS_LF1" item="Coater" site="23" woffset="54" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="POS_LF2" item="Coater" site="24" woffset="56" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="POS_LF3" item="Coater" site="25" woffset="58" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="Vac_Vent_Tank" item="Coater" site="22" woffset="60" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="10000" reportto="APC" unit="" reportunit="0" />
+  <item name="ULD_1AXIS_L" item="Robot" site="5" woffset="68" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="ULD_2AXIS_L" item="Robot" site="6" woffset="69" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="ULD_3AXIS_L" item="Robot" site="7" woffset="70" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="ULD_4AXIS_L" item="Robot" site="8" woffset="71" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="ULD_5AXIS_L" item="Robot" site="9" woffset="72" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="ULD_6AXIS_L" item="Robot" site="10" woffset="73" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7APCDataReportBlock" profile="CSOT G6 t3 EQP Profile_CF_04_FCRPH_L07_HPCP_Ver 1.0.5.xlsx" plcmap="CSOT_G6C_BC_CF_04_FCRPH-PLC Address Map_Ver1.07.xls">
+  <item name="HP_CDA_PRESSURE" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="HB_AIR_PRESSURE" site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="HP_VACUUM_PRESSURE" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="HP_ADSORPTION_DESTURUCTION_PRESSURE" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="HP_EXHAUST_PRESSURE" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="CP_CDA_PRESSURE" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="CP1_VACUUM_PRESSURE" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="CP2_VACUUM_PRESSURE" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="CP_ADSORPTION_DESTURUCTION_PRESSURE" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="CP1_PCW_PRESSURE" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="CP2_PCW_PRESSURE" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="CP_EXHAUST_PRESSURE" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L10APCDataReportBlock" profile="CSOT G6 t3 EQP Profile_CF_04_FCRPH_L10_Exposure_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_04_FCRPH-PLC Address Map_Ver1.07.xls">
+  <item name="TEMP_CHMB_S1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_CHMB_S2" site="2" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_STAGE_F" site="3" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_STAGE_B" site="4" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_CP_F" site="5" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_CP_B" site="6" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_1" site="7" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_2" site="8" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_3" site="9" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_4" site="10" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_WSF_CHI" site="11" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_PAF_CHI" site="12" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_WSB_CHI" site="13" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_PAB_CHI" site="14" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_CHM_MAIN" site="15" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_CHM_SPOT" site="16" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_5" site="17" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_6" site="18" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_7" site="19" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_8" site="20" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_9" site="21" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_10" site="22" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_11" site="23" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_Reserved_12" site="24" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="100" reportto="APC" unit="" reportunit="0" />
+  <item name="TEMP_CHM_MASK" site="25" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_LAMP_USED_TIME" site="26" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_LAMP_VOLTAGE" site="27" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="APC_LAMP_CURRENT" site="28" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L20APCDataReportBlock" profile="CSOT G6 t3 EQP Profile_CF_04_FCRPH_L20_Oven_Ver 1.0.4.xlsx" plcmap="CSOT_G6C_BC_CF_04_FCRPH-PLC Address Map_Ver1.07.xls">
+  <item name="CONTROL_TEMP_ALARM" item="TemperatureStabilityRange" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="FAN_OFF_TEMP" item="FanOffTemp." site="" woffset="1" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="OVEN_OVERTEMP_ALARM" item="OverTemp.Alamr" site="" woffset="2" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="OVEN_TEMP_SAFETY_TIME" item="TemperatureStabilityTime" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="MAINT_DOOR_OPEN_TEMP" item="MaintenanceDoorOpenTemp." site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="APC" unit="" reportunit="0" />
+  <item name="SERVO_OVERLOAD_WARNING" item="ServoMotorOverloadWarning" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+  <item name="SERVO_OVERLOAD_ERROR" item="ServoMotorOverloadError" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="APC" unit="" reportunit="0" />
+</itemgroup>

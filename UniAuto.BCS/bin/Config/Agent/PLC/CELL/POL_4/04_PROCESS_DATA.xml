@@ -1,0 +1,153 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.1.8.0-->
+<!--DateTime: 2016-06-22 17:45:40-->
+<itemgroup name="L3ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_4_L3_OHV_Ver 1.0.0_20160429.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="EQ_ID" site="" woffset="0" boffset="0" wpoints="3" bpoints="48" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_ID" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OperatorID" site="" woffset="4" boffset="0" wpoints="4" bpoints="64" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Operatorlevel" site="" woffset="8" boffset="0" wpoints="3" bpoints="48" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Panel_ID" site="" woffset="11" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="INPUT_TIME" site="" woffset="21" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="OUTPUT_TIME" site="" woffset="24" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PanelGrade" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DCRalignmentSpeed" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DCRreadpanelID" site="" woffset="29" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA,MES" unit="" reportunit="0" />
+  <item name="Ionbar1Use" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Ionbar2Use" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Ionbar3Use" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CV2_High_Speed" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="CV2_Low_Speed" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Output_CV_High_Speed" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="TactTime" site="" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Lifter_DRV_Speed" site="" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DCR_Align_DRV_Speed" site="" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Entrance_DRV_Position0" site="" woffset="48" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Entrance_DRV_Position1" site="" woffset="50" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Entrance_DRV_Position2" site="" woffset="52" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Manulloadermode" site="" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="DCR_Align_DRV_Position" site="" woffset="55" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Entrance_Port_position" site="" woffset="57" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="PanelLeftFlow" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PanelRightFlow" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="LeftDcrUse" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="RightDcrUse" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_4_L4_PCN_Ver1.0.1_20160621.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="RecipeID" item="RecipeID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LCD_Length" item="LCD_Length" site="" woffset="1" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="LCD_Width" item="LCD_Width" site="" woffset="3" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="LCD_Thickness" item="LCD_Thickness" site="" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="MiddleCF-1Grindingpressure" item="MiddleCF-1Grindingpressure" site="" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="MiddleCF-2Grindingpressure" item="MiddleCF-2Grindingpressure" site="" woffset="9" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="MiddleTFT-1Grindingpressure" item="MiddleTFT-1Grindingpressure" site="" woffset="11" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="MiddleTFT-2Grindingpressure" item="MiddleTFT-2Grindingpressure" site="" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="MiddleCFPressingamount" item="MiddleCFPressingamount" site="" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="MiddleTFTPressingamount" item="MiddleTFTPressingamount" site="" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CF-LPlatform_speed" item="CF-LPlatform_speed" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CF-RPlatform_speed" item="CF-RPlatform_speed" site="" woffset="21" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT-LPlatform_speed" item="TFT-LPlatform_speed" site="" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT-RPlatform_speed" item="TFT-RPlatform_speed" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="MiddleCFGrindingtimes" item="MiddleCFGrindingtimes" site="" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MiddleTFTGrindingtimes" item="MiddleTFTGrindingtimes" site="" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CFGrindingPlatformFlag" item="CFGrindingPlatformFlag" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFTGrindingPlatformFlag" item="TFTGrindingPlatformFlag" site="" woffset="33" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="UsagecountofCFAbrasivecloth" item="UsagecountofCFAbrasivecloth" site="" woffset="35" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="UsagecountofTFTAbrasivecloth" item="UsagecountofTFTAbrasivecloth" site="" woffset="37" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="BRUSH_1_DIR" item="BRUSH_1_DIR" site="" woffset="39" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="BRUSH_1_SPD" item="BRUSH_1_SPD" site="" woffset="41" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="BRUSH_2_DIR" item="BRUSH_2_DIR" site="" woffset="43" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="BRUSH_2_SPD" item="BRUSH_2_SPD" site="" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF-1GrindingaxisSpeed" item="CF-1GrindingaxisSpeed" site="" woffset="47" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF-2GrindingaxisSpeed" item="CF-2GrindingaxisSpeed" site="" woffset="49" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT-1GrindingaxisSpeed" item="TFT-1GrindingaxisSpeed" site="" woffset="51" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT-2GrindingaxisSpeed" item="TFT-2GrindingaxisSpeed" site="" woffset="53" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Gaspressure" item="Gaspressure" site="" woffset="55" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Waterpressure" item="Waterpressure" site="" woffset="57" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Watertankflag" item="Watertankflag" site="" woffset="59" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Electrostaticbarflag" item="Electrostaticbarflag" site="" woffset="61" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_4_L5_PAM_Ver1.0.1_20160620.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="LCD_Length" item="LCD_Length" site="" woffset="0" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="LCD_Width" item="LCD_Width" site="" woffset="2" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="LCD_Thickness" item="LCD_Thickness" site="" woffset="4" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POL_Length" item="POL_Length" site="" woffset="6" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POL_Width" item="POL_Width" site="" woffset="8" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="POL_Thickness" item="POL_Thickness" site="" woffset="10" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_TF_pressure" item="CF_TF_pressure" site="" woffset="12" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_YP_pressure" item="CF_YP_pressure" site="" woffset="14" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_TF_pressure" item="TFT_TF_pressure" site="" woffset="16" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_YP_pressure" item="TFT_YP_pressure" site="" woffset="18" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_TF_slow_speed" item="CF_TF_slow_speed" site="" woffset="20" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_TF_fast_speed" item="CF_TF_fast_speed" site="" woffset="22" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_TF_slow_distance" item="CF_TF_slow_distance" site="" woffset="24" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_TF_separationdistance" item="CF_TF_separationdistance" site="" woffset="26" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_TF_slow_speed" item="TFT_TF_slow_speed" site="" woffset="28" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_TF_fast_speed" item="TFT_TF_fast_speed" site="" woffset="30" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_TF_slow_distance" item="TFT_TF_slow_distance" site="" woffset="32" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_TF_separationdistance" item="TFT_TF_separationdistance" site="" woffset="34" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_left_POL_SM_fast_speed" item="CF_left_POL_SM_fast_speed" site="" woffset="36" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_left_POL_SM_slow_speed" item="CF_left_POL_SM_slow_speed" site="" woffset="38" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_left_POL_SM_Theratiooffastandslow" item="CF_left_POL_SM_Theratiooffastandslow" site="" woffset="40" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_right_POL_SM_fast_speed" item="CF_right_POL_SM_fast_speed" site="" woffset="42" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_right_POL_SM_slow_speed" item="CF_right_POL_SM_slow_speed" site="" woffset="44" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_right_POL_SM_Theratiooffastandslow" item="CF_right_POL_SM_Theratiooffastandslow" site="" woffset="46" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_left_POL_SM_fast_speed" item="TFT_left_POL_SM_fast_speed" site="" woffset="48" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_left_POL_SM_slow_speed" item="TFT_left_POL_SM_slow_speed" site="" woffset="50" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_left_POL_SM_Theratiooffastandslow" item="TFT_left_POL_SM_Theratiooffastandslow" site="" woffset="52" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_right_POL_SM_fast_speed" item="TFT_right_POL_SM_fast_speed" site="" woffset="54" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_right_POL_SM_slow_speed" item="TFT_right_POL_SM_slow_speed" site="" woffset="56" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_right_POL_SM_Theratiooffastandslow" item="TFT_right_POL_SM_Theratiooffastandslow" site="" woffset="58" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_DP_IonizerFan" item="CF_DP_IonizerFan" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_DP_IonizerFan" item="TFT_DP_IonizerFan" site="" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_left_SM_onizerFan" item="CF_left_SM_onizerFan" site="" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_right_SM_onizerFan" item="CF_right_SM_onizerFan" site="" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_left_LH_onizerFan" item="CF_left_LH_onizerFan" site="" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_right_LH_onizerFan" item="CF_right_LH_onizerFan" site="" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_left_SM_onizerFan" item="TFT_left_SM_onizerFan" site="" woffset="66" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_right_SM_onizerFan" item="TFT_right_SM_onizerFan" site="" woffset="67" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_left_LH_onizerFan" item="TFT_left_LH_onizerFan" site="" woffset="68" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_right_LH_onizerFan" item="TFT_right_LH_onizerFan" site="" woffset="69" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_left_TF_platformonizervalue" item="CF_left_TF_platformonizervalue" site="" woffset="70" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_right_TF_platformonizervalue" item="CF_right_TF_platformonizervalue" site="" woffset="71" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_left_TF_platformonizervalue" item="TFT_left_TF_platformonizervalue" site="" woffset="72" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_right_TF_platformonizervalue" item="TFT_right_TF_platformonizervalue" site="" woffset="73" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_airparticle(0.3um)" item="CF_airparticle(0.3um)" site="" woffset="74" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_airparticle(0.5um)" item="CF_airparticle(0.5um)" site="" woffset="76" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_airparticle(1um)" item="CF_airparticle(1um)" site="" woffset="78" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_airparticle(0.3um)" item="TFT_airparticle(0.3um)" site="" woffset="80" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_airparticle(0.5um)" item="TFT_airparticle(0.5um)" site="" woffset="82" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_airparticle(1um)" item="TFT_airparticle(1um)" site="" woffset="84" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="SamplingCount" item="SamplingCount" site="" woffset="86" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CassetteSequenceNo" item="CassetteSequenceNo" site="" woffset="88" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="JobSequenceNo" item="JobSequenceNo" site="" woffset="89" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="GlassID" item="GlassID" site="" woffset="90" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RecipeID" item="RecipeID" site="" woffset="100" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CameracurrentlyusedRecipenumber" item="CameracurrentlyusedRecipenumber" site="" woffset="101" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="WhethertheglassafterSampling" item="WhethertheglassafterSampling" site="" woffset="102" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="feedstockSlotNumber#01" item="feedstockSlotNumber#01" site="" woffset="103" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="feedstockSlotNumber#02" item="feedstockSlotNumber#02" site="" woffset="104" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DischargeSlotNumber#01" item="DischargeSlotNumber#01" site="" woffset="105" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DischargeSlotNumber#02" item="DischargeSlotNumber#02" site="" woffset="106" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_left_TF_platform_TF" item="CF_left_TF_platform_TF" site="" woffset="107" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CF_right_TF_platform_TF" item="CF_right_TF_platform_TF" site="" woffset="108" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_left_TF_platform_TF" item="TFT_left_TF_platform_TF" site="" woffset="109" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="TFT_right_TF_platform_TF" item="TFT_right_TF_platform_TF" site="" woffset="110" boffset="0" wpoints="1" bpoints="16" expression="LONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MaterialID" item="MaterialID" site="" woffset="111" boffset="0" wpoints="15" bpoints="240" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="LotID" item="LotID" site="" woffset="126" boffset="0" wpoints="19" bpoints="304" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L6ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_4_L6_ACV_Ver 1.0.0_20160429.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe_ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="GlassChipID" site="" woffset="1" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Operater_ID" site="" woffset="11" boffset="0" wpoints="8" bpoints="128" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Processtemp_ST" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Processpress_ST" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Processtemp_MD" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Processpress_MD" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Processtemp_ED" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="EDA" unit="" reportunit="0" />
+  <item name="Processpress_ED" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="Processtime" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="EDA" unit="" reportunit="0" />
+  <item name="ChamberNO" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Location" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="JobY/N" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MPotY/N" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

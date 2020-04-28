@@ -1,0 +1,429 @@
+	<message name="CSOT_ConnectStatusChanged">
+		<object id="CSOTSECSService" method="ConnectStatusChanged" />
+	</message>
+	<message name="CSOT_SelectStatusChanged">
+		<object id="CSOTSECSService" method="SelectStatusChanged" />
+	</message>	
+	<message name="CSOT_S1F0_E">
+		<object id="CSOTSECSService" method="S1F0_E_AbortTransaction" />
+	</message>
+	<message name="CSOT_S1F0_H">
+		<object id="CSOTSECSService" method="S1F0_H_AbortTransaction" />
+	</message>
+	<message name="CSOT_S1F1_E">
+		<object id="CSOTSECSService" method="S1F1_E_AreYouThereRequest" />
+	</message>
+	<message name="CSOT_S1F1_H">
+		<object id="CSOTSECSService" method="S1F1_H_AreYouThereRequest" />
+	</message>
+	<message name="CSOT_S1F2_E">
+		<object id="CSOTSECSService" method="S1F2_E_OnlineData" />
+	</message>
+	<message name="CSOT_S1F2_H">
+		<object id="CSOTSECSService" method="S1F2_H_OnlineData" />
+	</message>
+	<message name="CSOT_S1F5_H">
+		<object id="CSOTSECSService" method="S1F5_H_FormattedStatusRequest" />
+	</message>
+	<message name="CSOT_S1F6_01_E">
+		<object id="CSOTSECSService" method="S1F6_01_E_EquipmentInformationInquire" />
+	</message>
+	<message name="CSOT_S1F6_02_E">
+		<object id="CSOTSECSService" method="S1F6_02_E_APCImportantUtilityFacilityDataInquire" />
+	</message>
+	<message name="CSOT_S1F6_04_E">
+		<object id="CSOTSECSService" method="S1F6_04_E_APCNormalUtilityFacilityDataInquire" />
+	</message>
+	<message name="CSOT_S1F6_05_E">
+		<object id="CSOTSECSService" method="S1F6_05_E_UtilityDataInquire" />
+	</message>
+	<message name="CSOT_S1F6_06_E">
+		<object id="CSOTSECSService" method="S1F6_06_E_SpecialDataInquire" />
+	</message>
+	<message name="CSOT_S1F6_03_E">
+		<object id="CSOTSECSService" method="S1F6_03_E_MaterialDataInquire" />
+	</message>
+	<message name="CSOT_S1F6_07_E">
+		<object id="CSOTSECSService" method="S1F6_07_E_APCImportantUtilityFacilityDataInquireforID" />
+	</message>
+	<message name="CSOT_S1F6_08_E">
+		<object id="CSOTSECSService" method="S1F6_08_E_APCNormalUtilityFacilityDataInquireforID" />
+	</message>
+	<message name="CSOT_S1F6_09_E">
+		<object id="CSOTSECSService" method="S1F6_09_E_UtilityDataInquireforID" />
+	</message>
+	<message name="CSOT_S1F6_10_E">
+		<object id="CSOTSECSService" method="S1F6_10_E_SpecialDataInquireforID" />
+	</message>
+	<message name="CSOT_S1F13_E">
+		<object id="CSOTSECSService" method="S1F13_E_EstablishCommunicationsRequest" />
+	</message>
+	<message name="CSOT_S1F13_H">
+		<object id="CSOTSECSService" method="S1F13_H_EstablishCommunicationsRequest" />
+	</message>
+	<message name="CSOT_S1F14_H">
+		<object id="CSOTSECSService" method="S1F14_H_EstablishCommunicationsRequestAcknowledge" />
+	</message>
+	<message name="CSOT_S1F14_E">
+		<object id="CSOTSECSService" method="S1F14_E_EstablishCommunicationsRequestAcknowledge" />
+	</message>
+	<message name="CSOT_S1F15_H">
+		<object id="CSOTSECSService" method="S1F15_H_OfflineRequest" />
+	</message>
+	<message name="CSOT_S1F16_E">
+		<object id="CSOTSECSService" method="S1F16_E_OfflineAcknowledge" />
+	</message>
+	<message name="CSOT_S1F17_H">
+		<object id="CSOTSECSService" method="S1F17_H_OnlineRequest" />
+	</message>
+	<message name="CSOT_S1F18_E">
+		<object id="CSOTSECSService" method="S1F18_E_OnlineAcknowledge" />
+	</message>
+	<message name="CSOT_S2F0_E">
+		<object id="CSOTSECSService" method="S2F0_E_AbortTransaction" />
+	</message>
+	<message name="CSOT_S2F0_H">
+		<object id="CSOTSECSService" method="S2F0_H_AbortTransaction" />
+	</message>
+	<message name="CSOT_S2F15_H">
+		<object id="CSOTSECSService" method="S2F15_H_NewEquipmentConstantSend" />
+	</message>
+	<message name="CSOT_S2F16_E">
+		<object id="CSOTSECSService" method="S2F16_E_NewEquipmentConstantAcknowledge" />
+	</message>
+	<message name="CSOT_S2F17_E">
+		<object id="CSOTSECSService" method="S2F17_E_DateandTimeRequest" />
+	</message>
+	<message name="CSOT_S2F18_H">
+		<object id="CSOTSECSService" method="S2F18_H_DateandTimeData" />
+	</message>
+	<message name="CSOT_S2F19_H">
+		<object id="CSOTSECSService" method="S2F19_H_DataSetCommand" />
+	</message>
+	<message name="CSOT_S2F20_E">
+		<object id="CSOTSECSService" method="S2F20_E_DataSetCommandAcknowledge" />
+	</message>
+	<message name="CSOT_S2F21_H">
+		<object id="CSOTSECSService" method="S2F21_H_DataSetCommandforID" />
+	</message>
+	<message name="CSOT_S2F22_E">
+		<object id="CSOTSECSService" method="S2F22_E_DataSetCommandforIDAcknowledge" />
+	</message>
+	<message name="CSOT_S2F23_H">
+		<object id="CSOTSECSService" method="S2F23_H_DataItemMappingTableRequest" />
+	</message>
+	<message name="CSOT_S2F24_E">
+		<object id="CSOTSECSService" method="S2F24_E_DataItemMappingTable" />
+	</message>
+	<message name="CSOT_S2F25_E">
+		<object id="CSOTSECSService" method="S2F25_E_LoopbackDiagnosticRequest" />
+	</message>
+	<message name="CSOT_S2F25_H">
+		<object id="CSOTSECSService" method="S2F25_H_LoopbackDiagnosticRequest" />
+	</message>
+	<message name="CSOT_S2F26_E">
+		<object id="CSOTSECSService" method="S2F26_E_LoopbackDiagnosticData" />
+	</message>
+	<message name="CSOT_S2F26_H">
+		<object id="CSOTSECSService" method="S2F26_H_LoopbackDiagnosticData" />
+	</message>
+	<message name="CSOT_S2F29_H">
+		<object id="CSOTSECSService" method="S2F29_H_EquipmentConstantNamlistRequest" />
+	</message>
+	<message name="CSOT_S2F30_E">
+		<object id="CSOTSECSService" method="S2F30_E_EquipmentConstantNamelist" />
+	</message>
+	<message name="CSOT_S2F31_H">
+		<object id="CSOTSECSService" method="S2F31_H_DateandTimeSetRequest" />
+	</message>
+	<message name="CSOT_S2F32_E">
+		<object id="CSOTSECSService" method="S2F32_E_DateandTimeSetAcknowledge" />
+	</message>
+	<message name="CSOT_S2F41_H">
+		<object id="CSOTSECSService" method="S2F41_H_HostCommandSend" />
+	</message>
+	<message name="CSOT_S2F42_E">
+		<object id="CSOTSECSService" method="S2F42_E_HostCommandAcknowledge" />
+	</message>
+	<message name="CSOT_S2F103_H">
+		<object id="CSOTSECSService" method="S2F103_H_LotStartInformSend" />
+	</message>
+	<message name="CSOT_S2F104_E">
+		<object id="CSOTSECSService" method="S2F104_E_LotStartInformAcknowledge" />
+	</message>
+	<message name="CSOT_S2F105_H">
+		<object id="CSOTSECSService" method="S2F105_H_LotEndInformSend" />
+	</message>
+	<message name="CSOT_S2F106_E">
+		<object id="CSOTSECSService" method="S2F106_E_LotEndInformAcknowledge" />
+	</message>
+	<message name="CSOT_S2F111_H">
+		<object id="CSOTSECSService" method="S2F111_H_ForcedCleanOutCommandSend" />
+	</message>
+	<message name="CSOT_S2F112_E">
+		<object id="CSOTSECSService" method="S2F112_E_ForcedCleanOutCommandAcknowledge" />
+	</message>
+	<message name="CSOT_S2F115_H">
+		<object id="CSOTSECSService" method="S2F115_H_GlassDataDownload" />
+	</message>
+	<message name="CSOT_S2F116_E">
+		<object id="CSOTSECSService" method="S2F116_E_GlassDataDownloadAcknowledge" />
+	</message>
+	<message name="CSOT_S2F117_H">
+		<object id="CSOTSECSService" method="S2F117_H_GlassEraseRecoveryInformationSend" />
+	</message>
+	<message name="CSOT_S2F118_E">
+		<object id="CSOTSECSService" method="S2F118_E_GlassEraseRecoveryInformationAcknowledge" />
+	</message>
+	<message name="CSOT_S2F119_H">
+		<object id="CSOTSECSService" method="S2F119_H_EquipmentModeChangeCommandSend" />
+	</message>
+	<message name="CSOT_S2F120_E">
+		<object id="CSOTSECSService" method="S2F120_E_EquipmentModeChangeCommandAcknowledge" />
+	</message>
+	<message name="CSOT_S2F121_H">
+		<object id="CSOTSECSService" method="S2F121_H_APCDataDownloadCommandSend" />
+	</message>
+	<message name="CSOT_S2F122_E">
+		<object id="CSOTSECSService" method="S2F122_E_APCDataDownloadCommandAcknowledge" />
+	</message>
+	<message name="CSOT_S2F123_H">
+		<object id="CSOTSECSService" method="S2F123_H_SetGlassRecipeGroupEndFlagSend" />
+	</message>
+	<message name="CSOT_S2F124_E">
+		<object id="CSOTSECSService" method="S2F124_E_SetGlassRecipeGroupEndFlagAcknowledge" />
+	</message>
+	<message name="CSOT_S5F0_E">
+		<object id="CSOTSECSService" method="S5F0_E_AbortTransaction" />
+	</message>
+	<message name="CSOT_S5F0_H">
+		<object id="CSOTSECSService" method="S5F0_H_AbortTransaction" />
+	</message>
+	<message name="CSOT_S5F1_E">
+		<object id="CSOTSECSService" method="S5F1_E_AlarmReportSend" />
+	</message>
+	<message name="CSOT_S5F2_H">
+		<object id="CSOTSECSService" method="S5F2_H_AlarmReportAcknowledge" />
+	</message>
+	<message name="CSOT_S5F5_H">
+		<object id="CSOTSECSService" method="S5F5_H_ListAlarmRequest" />
+	</message>
+	<message name="CSOT_S5F6_E">
+		<object id="CSOTSECSService" method="S5F6_E_ListAlarmData" />
+	</message>
+	<message name="CSOT_S6F0_E">
+		<object id="CSOTSECSService" method="S6F0_E_AbortTransaction" />
+	</message>
+	<message name="CSOT_S6F0_H">
+		<object id="CSOTSECSService" method="S6F0_H_AbortTransaction" />
+	</message>
+	<message name="CSOT_S6F3_01_E">
+		<object id="CSOTSECSService" method="S6F3_01_E_GlassProcessDataInformationReport" />
+	</message>
+	<message name="CSOT_S6F3_02_E">
+		<object id="CSOTSECSService" method="S6F3_02_E_LotProcessDataInformationReport" />
+	</message>
+	<message name="CSOT_S6F3_03_E">
+		<object id="CSOTSECSService" method="S6F3_03_E_GlassHistoryReport" />
+	</message>
+	<message name="CSOT_S6F3_04_E">
+		<object id="CSOTSECSService" method="S6F3_04_E_APCImportantDataInformationReport" />
+	</message>
+	<message name="CSOT_S6F3_05_E">
+		<object id="CSOTSECSService" method="S6F3_05_E_APCNormalDataInformationReport" />
+	</message>
+	<message name="CSOT_S6F3_06_E">
+		<object id="CSOTSECSService" method="S6F3_06_E_GlassProcessDataInformationReportfortestEQ" />
+	</message>
+	<message name="CSOT_S6F3_07_E">
+		<object id="CSOTSECSService" method="S6F3_07_E_GlassDefectCodeInformationReportfortestEQ" />
+	</message>
+	<message name="CSOT_S6F3_08_E">
+		<object id="CSOTSECSService" method="S6F3_08_E_SpecialDataInformationReport" />
+	</message>
+	<message name="CSOT_S6F3_09_E">
+		<object id="CSOTSECSService" method="S6F3_09_E_APCImportantDataInformationReportforID" />
+	</message>
+	<message name="CSOT_S6F3_10_E">
+		<object id="CSOTSECSService" method="S6F3_10_E_APCNormalDataInformationReportforID" />
+	</message>
+	<message name="CSOT_S6F3_11_E">
+		<object id="CSOTSECSService" method="S6F3_11_E_SpecialDataInformationReportforID" />
+	</message>
+	<message name="CSOT_S6F4_H">
+		<object id="CSOTSECSService" method="S6F4_H_DiscreteVariableDataAcknowledge" />
+	</message>
+	<message name="CSOT_S6F11_01_E">
+		<object id="CSOTSECSService" method="S6F11_01_E_ControlModeChange" />
+	</message>
+	<message name="CSOT_S6F11_02_E">
+		<object id="CSOTSECSService" method="S6F11_02_E_EquipmentModeChange" />
+	</message>
+	<message name="CSOT_S6F11_03_E">
+		<object id="CSOTSECSService" method="S6F11_03_E_EquipmentStatusChange" />
+	</message>
+	<message name="CSOT_S6F11_04_E">
+		<object id="CSOTSECSService" method="S6F11_04_E_MaskStatusChange" />
+	</message>
+	<message name="CSOT_S6F11_05_E">
+		<object id="CSOTSECSService" method="S6F11_05_E_ProcessProgramChange" />
+	</message>
+	<message name="CSOT_S6F11_06_E">
+		<object id="CSOTSECSService" method="S6F11_06_E_ProcessProgramModifyorCreateorDelete" />
+	</message>
+	<message name="CSOT_S6F11_07_E">
+		<object id="CSOTSECSService" method="S6F11_07_E_GlassEraseReport" />
+	</message>
+	<message name="CSOT_S6F11_08_E">
+		<object id="CSOTSECSService" method="S6F11_08_E_JOBINEQPReport" />
+	</message>
+	<message name="CSOT_S6F11_09_E">
+		<object id="CSOTSECSService" method="S6F11_09_E_JOBOUTEQPReport" />
+	</message>
+	<message name="CSOT_S6F11_10_E">
+		<object id="CSOTSECSService" method="S6F11_10_E_JobProcessStartReport" />
+	</message>
+	<message name="CSOT_S6F11_11_E">
+		<object id="CSOTSECSService" method="S6F11_11_E_JobProcessEndReport" />
+	</message>
+	<message name="CSOT_S6F11_12_E">
+		<object id="CSOTSECSService" method="S6F11_12_E_CummyRequest" />
+	</message>
+	<message name="CSOT_S6F11_14_E">
+		<object id="CSOTSECSService" method="S6F11_14_E_GlassDataRequest" />
+	</message>
+	<message name="CSOT_S6F11_15_E">
+		<object id="CSOTSECSService" method="S6F11_15_E_GlassPositionReport" />
+	</message>
+	<message name="CSOT_S6F11_16_E">
+		<object id="CSOTSECSService" method="S6F11_16_E_GlassRecoveredReport" />
+	</message>
+	<message name="CSOT_S6F11_18_E">
+		<object id="CSOTSECSService" method="S6F11_18_E_GlassDataEdit" />
+	</message>
+	<message name="CSOT_S6F11_19_E">
+		<object id="CSOTSECSService" method="S6F11_19_E_JobInSubEQReport" />
+	</message>
+	<message name="CSOT_S6F11_20_E">
+		<object id="CSOTSECSService" method="S6F11_20_E_JobOutSubEQReport" />
+	</message>
+	<message name="CSOT_S6F11_21_E">
+		<object id="CSOTSECSService" method="S6F11_21_E_JobHoldRequest" />
+	</message>
+	<message name="CSOT_S6F11_22_E">
+		<object id="CSOTSECSService" method="S6F11_22_E_OXRInformationUpdateReport" />
+	</message>
+	<message name="CSOT_S6F11_23_E">
+		<object id="CSOTSECSService" method="S6F11_23_E_MaterialStatusChange" />
+	</message>
+	<message name="CSOT_S6F11_24_E">
+		<object id="CSOTSECSService" method="S6F11_24_E_MaterialConsumableReport" />
+	</message>
+	<message name="CSOT_S6F11_25_E">
+		<object id="CSOTSECSService" method="S6F11_25_E_VCRStatusReport" />
+	</message>
+	<message name="CSOT_S6F11_26_E">
+		<object id="CSOTSECSService" method="S6F11_26_E_VCRReadReport" />
+	</message>
+	<message name="CSOT_S6F11_27_E">
+		<object id="CSOTSECSService" method="S6F11_27_E_OperatorLoginLogoutReport" />
+	</message>
+	<message name="CSOT_S6F12_H">
+		<object id="CSOTSECSService" method="S6F12_H_EventReportAcknowledge" />
+	</message>
+	<message name="CSOT_S6F31_E">
+		<object id="CSOTSECSService" method="S6F31_E_OXRInformationDownloadRequest" />
+	</message>
+	<message name="CSOT_S6F32_H">
+		<object id="CSOTSECSService" method="S6F32_H_OXRInformationDownloadData" />
+	</message>
+	<message name="CSOT_S7F0_E">
+		<object id="CSOTSECSService" method="S7F0_E_AbortTransaction" />
+	</message>
+	<message name="CSOT_S7F0_H">
+		<object id="CSOTSECSService" method="S7F0_H_AbortTransaction" />
+	</message>
+	<message name="CSOT_S7F19_H">
+		<object id="CSOTSECSService" method="S7F19_H_CurrentEPPDRequest" />
+	</message>
+	<message name="CSOT_S7F20_E">
+		<object id="CSOTSECSService" method="S7F20_E_CurrentEPPDData" />
+	</message>
+	<message name="CSOT_S7F23_H">
+		<object id="CSOTSECSService" method="S7F23_H_FormattedProcessProgramSend" />
+	</message>
+	<message name="CSOT_S7F24_E">
+		<object id="CSOTSECSService" method="S7F24_E_FormattedProcessProgramAcknowledge" />
+	</message>
+	<message name="CSOT_S7F25_H">
+		<object id="CSOTSECSService" method="S7F25_H_FormattedProcessProgramRequest" />
+	</message>
+	<message name="CSOT_S7F26_E">
+		<object id="CSOTSECSService" method="S7F26_E_FormattedProcessProgramData" />
+	</message>
+	<message name="CSOT_S7F27_E">
+		<object id="CSOTSECSService" method="S7F27_E_ProcessProgramVerificationSend" />
+	</message>
+	<message name="CSOT_S7F28_H">
+		<object id="CSOTSECSService" method="S7F28_H_ProcessProgramVerificationAcknowledge" />
+	</message>
+	<message name="CSOT_S7F73_H">
+		<object id="CSOTSECSService" method="S7F73_H_RecipeIDCheck" />
+	</message>
+	<message name="CSOT_S7F74_E">
+		<object id="CSOTSECSService" method="S7F74_E_RecipeIDCheckAcknowledge" />
+	</message>
+	<message name="CSOT_S9F1_E">
+		<object id="CSOTSECSService" method="S9F1_E_UnrecognizedDeviceID" />
+	</message>
+	<message name="CSOT_S9F3_E">
+		<object id="CSOTSECSService" method="S9F3_E_UnrecognizedStreamType" />
+	</message>
+	<message name="CSOT_S9F5_E">
+		<object id="CSOTSECSService" method="S9F5_E_UnrecognizedFunctionType" />
+	</message>
+	<message name="CSOT_S9F7_E">
+		<object id="CSOTSECSService" method="S9F7_E_IllegalData" />
+	</message>	
+	<message name="CSOT_S9F9_E">
+		<object id="CSOTSECSService" method="S9F9_E_TransactionTimerTimeout" />
+	</message>
+	<message name="CSOT_S9F11_E">
+		<object id="CSOTSECSService" method="S9F11_E_DataTooLong" />
+	</message>
+	<message name="CSOT_S10F0_E">
+		<object id="CSOTSECSService" method="S10F0_E_AbortTransaction" />
+	</message>
+	<message name="CSOT_S10F0_H">
+		<object id="CSOTSECSService" method="S10F0_H_AbortTransaction" />
+	</message>
+	<message name="CSOT_S10F3_H">
+		<object id="CSOTSECSService" method="S10F3_H_TerminalDisplaySingle" />
+	</message>
+	<message name="CSOT_S10F4_E">
+		<object id="CSOTSECSService" method="S10F4_E_TerminalDisplaySingleAcknowledge" />
+	</message>
+	<message name="CSOT_S10F5_H">
+		<object id="CSOTSECSService" method="S10F5_H_TerminalDisplaySingleforDNSLC" />
+	</message>
+	<message name="CSOT_S10F6_E">
+		<object id="CSOTSECSService" method="S10F6_E_TerminalDisplaySingleforDNSLCAcknowledge" />
+	</message>
+	<message name="CSOT_S64F0_E">
+		<object id="CSOTSECSService" method="S64F0_E_AbortTransaction" />
+	</message>
+	<message name="CSOT_S64F0_H">
+		<object id="CSOTSECSService" method="S64F0_H_AbortTransaction" />
+	</message>
+	<message name="CSOT_S64F1_H">
+		<object id="CSOTSECSService" method="S64F1_H_MeasurementResultSend" />
+	</message>
+	<message name="CSOT_S64F2_E">
+		<object id="CSOTSECSService" method="S64F2_E_MeasurementResultSendAcknowledge" />
+	</message>
+	<message name="CSOT_S64F3_E">
+		<object id="CSOTSECSService" method="S64F3_E_FeedbackResultSend" />
+	</message>
+	<message name="CSOT_S64F4_H">
+		<object id="CSOTSECSService" method="S64F4_H_FeedbackResultSendAcknowledge" />
+	</message>

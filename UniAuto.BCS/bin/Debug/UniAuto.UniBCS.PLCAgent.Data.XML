@@ -1,0 +1,1405 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UniAuto.UniBCS.PLCAgent.Data</name>
+    </assembly>
+    <members>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum">
+            <summary>
+            expression enumeration
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.NONE">
+            <summary>
+            none
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.INT">
+            <summary>
+            "INT"= 轉碼成Uint16.
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.SINT">
+            <summary>
+            "SINT"=轉碼成Int16.
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.LONG">
+            <summary>
+            "LONG"=轉碼成Uint32.
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.SLONG">
+            <summary>
+            "SLONG"=轉碼成Int32.
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.EXP">
+            <summary>
+            "EXP"=轉碼成Float.
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.ASCII">
+            <summary>
+            "ASCII"= 轉碼成 ASCII.
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.HEX">
+            <summary>
+            "HEX"=轉碼成 HEX.
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.BIT">
+            <summary>
+            "BIT"= 轉成Bit，只有 0 or 1.
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.BIN">
+            <summary>
+            "BIN" = 轉碼成Binary 0101001(用於Word的轉換)
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.ItemExpressionEnum.BCD">
+            <summary>
+            "BCD"=轉碼成 BCD
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogMenuCatalogEnum">
+            <summary>
+            trxcatalog menucatalog enumeration
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogMenuCatalogEnum.CommonFunction">
+            <summary>
+            common function
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogMenuCatalogEnum.PortManagement">
+            <summary>
+            port management
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogMenuCatalogEnum.SpecialFunction">
+            <summary>
+            sepcial function
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogMenuCatalogEnum.LineSpecialFunction">
+            <summary>
+            line special function
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalog">
+            <summary>
+            trxcatalog class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalog.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalog.Mappings">
+            <summary>
+            get mapping collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalog.FromTrxCatalog">
+            <summary>
+            get from trxcatalog
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalog.ToTrxCatalog">
+            <summary>
+            get to trxcatalog
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalog.Primary">
+            <summary>
+            get primary (BCS/EQP)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalog.TrxCatalogAction">
+            <summary>
+            get action (PBW_SBW,PBW_SB,PBW,PB,PW,PB_SBW,PB_SB)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalog.MenuCatalog">
+            <summary>
+            get menucatalog (CommonFunction,PortManagement,SpecialFunction,LineSpecialFunction)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalog.Chart">
+            <summary>
+            get chart
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata">
+            <summary>
+            event metadata class
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.Name">
+            <summary>
+            get Event的名稱
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.LogicalStationNo">
+            <summary>
+            get logical station no (1-1023)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.DeviceCode">
+            <summary>
+            get PLC的Device類型(B,W,D,..)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.Address">
+            <summary>
+            get 開始的Address,例如:0x1000, 0x2000, (16 or 10 base)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.Points">
+            <summary>
+            get 總共佔了多少的點位數. 如果deviceCode=B，Point單位=bit.如果deviceCode=W，Points單位=W." (10 base)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.SkipDecode">
+            <summary>
+            get is skip deocde item
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.IsBitDeviceType">
+            <summary>
+            get is bit device type
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.IsAddressHex">
+            <summary>
+            get is address is 16 base
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.StartAddress10">
+            <summary>
+            get start address (10 base)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.IsApplyTransform">
+            <summary>
+            get is apply Transform
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.OriginalAddress">
+            <summary>
+            get Original開始的Address,例如:0x1000, 0x2000, (16 or 10 base)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.OriginalStartAddress10">
+            <summary>
+            get Original start address (10 base)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.OriginalDeviceCode">
+            <summary>
+            get Original PLC的Device類型(B,W,D,..)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventMetadata.IsOriginalAddressHex">
+            <summary>
+            get is Original address is 16 base
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ExpressionSINT">
+            <summary>
+            SINT expression class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionSINT.Decode(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            SINT decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~2</param>		
+            <param name="itemBOffset">item bit offset(10 base),range=0~15</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~16</param>
+            <param name="iodata">source plc io data</param>
+            <returns>short value</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionSINT.Encode(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            SINT encode method,may throw exception
+            </summary>
+            <param name="sintString">sint string data</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~2</param>		
+            <param name="itemBOffset">item bit offset(10 base),range=0~15</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~16</param>
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ExpressionASCII">
+            <summary>
+            ASCII expression class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionASCII.Decode(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            ASCII decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~M</param>	
+            <param name="itemBOffset">item bit offset(10 base),range=0 or 8</param>
+            <param name="itemBPoints">item bit points(10 base),range=8~R (R is multiple of 8)</param>
+            <param name="iodata">source plc io data</param>
+            <returns>string value</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionASCII.Encode(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            ASCII encode method
+            </summary>
+            <param name="ascString">ascii string data</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~M</param>	
+            <param name="itemBOffset">item bit offset(10 base),range=0 or 8</param>
+            <param name="itemBPoints">item bit points(10 base),range=8~R (R is multiple of 8)</param>
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.TrxTriggerConditionEnum">
+            <summary>
+            trx triggercondition enumeration
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxTriggerConditionEnum.NONE">
+            <summary>
+            none
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxTriggerConditionEnum.OFF">
+            <summary>
+            bit 1->0 trigger
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxTriggerConditionEnum.ON">
+            <summary>
+            bit 0->1 trigger
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxTriggerConditionEnum.CHANGE">
+            <summary>
+            change trigger
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.LogStyleEnum">
+            <summary>
+            Save Trace Style
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.LogStyleEnum.HEAD">
+            <summary>
+            No Save Log
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.LogStyleEnum.RAWDATA">
+            <summary>
+            Save Raw Data
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.LogStyleEnum.DETAIL">
+            <summary>
+            Save Raw data and item data
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.Id">
+            <summary>
+            id class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Id.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Id.Name">
+            <summary>
+            get id name(key)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Id.Value">
+            <summary>
+            get id value
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ExpressionLONG">
+            <summary>
+            LONG expression class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionLONG.Decode(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            LONG decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~3</param>		
+            <param name="itemBOffset">item bit offset(10 base),range=0~15</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~32</param>
+            <param name="iodata">source plc io data</param>
+            <returns>uint value</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionLONG.Encode(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            LONG encode method,may throw exception
+            </summary>
+            <param name="longString">ulong string data</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~3</param>		
+            <param name="itemBOffset">item bit offset(10 base),range=0~15</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~32</param>
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ExpressionINT">
+            <summary>
+            INT expression class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionINT.Decode(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            INT decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~2</param>		
+            <param name="itemBOffset">item bit offset(10 base),range=0~15</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~16</param>
+            <param name="iodata">source plc io data</param>
+            <returns>ushort value</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionINT.Encode(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            INT encode method,may throw exception
+            </summary>
+            <param name="intString">uint string data</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~2</param>		
+            <param name="itemBOffset">item bit offset(10 base),range=0~15</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~16</param>
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ItemMetadata">
+            <summary>
+            item metadata class
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.ItemMetadata.Name">
+            <summary>
+            get Item的名稱
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.ItemMetadata.WordOffset">
+            <summary>
+            get Device Code以Word為單位的Offset位置，Item在Group的Word的Offset位置，從0~n .
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.ItemMetadata.BitOffset">
+            <summary>
+            get Bit的Offset位置.
+            <br>Case1:如果DeviceCode的單位為Word,是指從第幾個Word開始(w)的第幾個Bit(b),須配合woffset使用,從0~n.</br>
+            <br>Case2:Item在Group的Bit的Offset位置，從第幾個Bit開始(b), 從0~n.</br>
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.ItemMetadata.WordPoints">
+            <summary>
+            get DeviceCode單位為是Word的使用長度.
+            <br>Case1: Item在Group的佔用點位數,0~n</br>
+            <br>If Event.DeviceCode=W or ZR device是以Word為單位.</br>
+            </summary>									
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.ItemMetadata.BitPoints">
+             <summary>
+             get total bit points
+            <br>Case1:Item在Group的佔用Word長度(w)，佔用的幾個bit的長度(b)</br>
+            <br>Case2:Item在Group的佔用bit的長度.</br>
+             </summary>	
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.ItemMetadata.Expression">
+            <summary>
+            get item expression
+            <br>HEX =Hex and BCD混用.</br>
+            <br>ASCII 轉碼成 ASCII.</br>
+            <br>INT 轉碼成Uint16.</br>
+            <br>SINT 轉碼成Int16.</br>
+            <br>LONG 轉碼成Uint32.</br>
+            <br>SLONG 轉碼成Int32.</br>
+            <br>EXP 轉碼成Float.</br>
+            <br>BIT 轉成Bit，只有 0 or 1.</br>
+            <br>BIN 轉碼成Binary 0101001(用於Word的轉換)</br>
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ExpressionEXP">
+            <summary>
+            EXP expression class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionEXP.Decode_IEEE754(System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            EXP decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=2</param>		
+            <param name="iodata">source plc io data</param>
+            <returns>float value</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionEXP.Decode(System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            EXP decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=2</param>		
+            <param name="iodata">source plc io data</param>
+            <returns>string value</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionEXP.Encode_IEEE754(System.String,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            EXP encode method
+            </summary>
+            <param name="floatString">float string data</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=2</param>		
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionEXP.Encode(System.String,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            EXP encode method
+            </summary>
+            <param name="expString">float string data</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=2</param>		
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ExpressionBIT">
+            <summary>
+            BIT expression class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionBIT.Decode(System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            BIT decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemBOffset">item bit offset(10 base),range=0~N</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~M</param>
+            <param name="iodata">source plc io data</param>
+            <returns>bit string(從低到高)</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionBIT.Encode(System.String,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            BIT encode method
+            </summary>
+            <param name="bitString">bit string data(從低到高)</param>
+            <param name="itemBOffset">item bit offset(10 base),range=0~N</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~M</param>
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.TrxTypeEnum">
+            <summary>
+            Trx type enumeration
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxTypeEnum.Receive">
+            <summary>
+            receive from plc
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxTypeEnum.Send">
+            <summary>
+            send to plc
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.EventGroupDirEnum">
+            <summary>
+            eventgroup dir enumeration
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.EventGroupDirEnum.E2B">
+            <summary>
+            EQP to BC
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.EventGroupDirEnum.B2E">
+            <summary>
+            EQP to BC
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ItemGroup">
+            <summary>
+            itemgroup class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ItemGroup.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.ItemGroup.Name">
+            <summary>
+            get itemgroup name(key)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.ItemGroup.Items">
+            <summary>
+            get item collection
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.InternalFlagsEnum">
+            <summary>
+            internal flag enumeration
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.InternalFlagsEnum.None">
+            <summary>
+            none
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.InternalFlagsEnum.IsTrxRead">
+            <summary>
+            is read
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.InternalFlagsEnum.IsTrxWrite">
+            <summary>
+            is write
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.InternalFlagsEnum.IsTrxRawWrite">
+            <summary>
+            is write raw
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.InternalFlagsEnum.IsTrxTrigger">
+            <summary>
+            is trigger
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.InternalFlagsEnum.IsTrxRandWrite">
+            <summary>
+            is random write
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.InternalFlagsEnum.IsDirectRead">
+            <summary>
+            is direct read
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.InternalFlagsEnum.IsSyncRead">
+            <summary>
+            is sync read
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.InternalFlagsEnum.IsSyncWrite">
+            <summary>
+            is sync write
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.EventGroupMetadata">
+            <summary>
+            eventgroup metadata class
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroupMetadata.Name">
+            <summary>
+            get EventGroup的名稱
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroupMetadata.Dir">
+            <summary>
+            get eventgroup dir (B2E,E2B)
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ExpressionHEX">
+            <summary>
+            HEX expression class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionHEX.Decode(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            HEX decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~M</param>
+            <param name="itemBOffset">item bit offset(10 base),range=0 or 4 or 8 or 12</param>
+            <param name="itemBPoints">item bit points(10 base),range=4~R (R is multiple of 4)</param>
+            <param name="iodata">source plc io data</param>
+            <returns>string value</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionHEX.Encode(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            HEX encode method
+            </summary>
+            <param name="hexString">hex string data</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~M</param>	
+            <param name="itemBOffset">item bit offset(10 base),range=0 or 4 or 8 or 12</param>
+            <param name="itemBPoints">item bit points(10 base),range=4~R (R is multiple of 4)</param> 
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.WatchData">
+            <summary>
+            watchdata class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.WatchData.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.WatchData.CopyNewSnapShot(System.Int16[],System.String@)">
+            <summary>
+            copy new scan data snapshot
+            </summary>
+            <param name="destArray">dest array</param>	
+            <param name="reason">ng reason</param>
+            <returns></returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.WatchData.CopyTemp2New(System.String@)">
+            <summary>
+            copy temp to new
+            </summary>		
+            <param name="reason">ng reason</param>
+            <returns></returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.WatchData.PutData(System.Int16[],System.String@)">
+            <summary>
+            put new scan data
+            </summary>
+            <param name="newInput">new input scan data</param>
+            <param name="reason">ng reason</param>
+            <returns></returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.Name">
+            <summary>
+            get item name(key)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.LogicalStationNo">
+            <summary>
+            logic station no (1-1023)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.Address">
+            <summary>
+            開始的Address,例如:0x100000, 001000 (16 or 10)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.Points">
+            <summary>
+            總共佔了多少的點位數. 如果deviceCode=B，Point單位=bit.如果deviceCode=W，Points單位=W."
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.DeviceCode">
+            <summary>
+            PLC的Device類型(B,W,D,..)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.ScanIntervalMS">
+            <summary>
+            get plc scan interval(ms)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.LastScanDT">
+            <summary>
+            get last scan datetime
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.ScanStopWatch">
+            <summary>
+            scan stopwatch
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.LastScanSpentTime">
+            <summary>
+            get last scan spent time
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.ScanPerSec">
+            <summary>
+            current scan per sec
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.MaxScanPerSec">
+            <summary>
+            max scan per sec
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.AvgScanPerSec">
+            <summary>
+            avarage scan per sec
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.LastScanErrorDT">
+            <summary>
+            get last scan Error datetime
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.LastScanError">
+            <summary>
+            get last scan Error
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.LastPutDataDT">
+            <summary>
+            get last putdata datetime
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.IsBitDeviceType">
+            <summary>
+            get is bit device type
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.NewSnapShot">
+            <summary>
+            new scan data snapshot
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.TempSnapShot">
+            <summary>
+            temp scan data snapshot
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.IsDataInited">
+            <summary>
+            is data inited
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.IsAddressHex">
+            <summary>
+            is address is 16 base
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.StartAddress10">
+            <summary>
+            start address (10 base),fix 0
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.WatchData.ScanBuffer">
+            <summary>
+            get reference to scan buffer 
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.Event">
+            <summary>
+            event class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Event.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Event.Clone">
+            <summary>
+            clone this event
+            </summary>
+            <returns>a copy of event object</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Event.GetHexRawData">
+            <summary>
+            get hex string
+            </summary>
+            <returns>hex string</returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Event.Name">
+            <summary>
+            get event name(key)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Event.Items">
+            <summary>
+            get item collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Event.Item(System.Int32)">
+            <summary>
+            get item object
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Event.Item(System.String)">
+            <summary>
+            get item object
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Event.Metadata">
+            <summary>
+            get event metadata
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Event.RawData">
+            <summary>
+            raw data buffer	
+            <br>ex1:</br>
+            <br>DeviceCode="B",Address="10",Point="1" (B10)</br>
+            <br>RawData[0]=0x1=0000 0000 0000 0001 (offset0=B10=1)</br>
+            <br>ex2:</br>
+            <br>DeviceCode="B",Address="10",Point="5" (B10~B14)</br>
+            <br>RawData[0]=0x1D=0000 0000 0001 1101 (offset0=B10=1,offset1=B11=0,offset2=B12=1,offset3=B13=1,offset4=B14=1)</br>
+            <br>ex3:</br>
+            <br>DeviceCode="B",Address="10",Point="17" (B10~B20)</br>
+            <br>RawData[0]=0x1D=0000 0000 0001 1101 (offset0=B10=1,offset1=B11=0,offset2=B12=1,offset3=B13=1,offset4=B14=1,offset5=B15=0 .....offset15=B1F=0)</br>
+            <br>RawData[1]=0x01=0000 0000 0000 0001 (offset0=B20=1)</br>
+            <br>ex4:</br>
+            <br>DeviceCode="W",Address="10",Point="5"  (W10~W14)</br>
+            <br>RawData[0]=W10,RawData[1]=W11,RawData[2]=W12,RawData[3]=W13,RawData[4]=W14</br>
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Event.IsDisable">
+            <summary>
+            is event disable
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Event.OpDelayTimeMS">
+            <summary>
+            write operation delay time(ms),0=no delay
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ExpressionBIN">
+            <summary>
+            BIT expression class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionBIN.Decode(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            BIN decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~M</param>		
+            <param name="itemBOffset">item bit offset(10 base),range=0~15</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~R</param>
+            <param name="iodata">source plc io data</param>
+            <returns>bit string(從低到高)</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionBIN.Encode(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+             BIN encode method
+            </summary>
+            <param name="bitString">bit string data(從低到高)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~M</param>		
+            <param name="itemBOffset">item bit offset(10 base),range=0~15</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~R</param>
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.Mapping">
+            <summary>
+            mapping class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Mapping.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Mapping.FromItem">
+            <summary>
+            get from item
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Mapping.ToItem">
+            <summary>
+            get to item
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1">
+            <summary>
+            string keyed object collection
+            </summary>
+            <typeparam name="T">object type</typeparam>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1.CopyTo(System.Array,System.Int32)">
+            <summary>
+            copy to dest array
+            </summary>
+            <param name="dest">destination array object</param>
+            <param name="index">start index</param>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1.Get(System.String)">
+            <summary>
+            get T object by string key 
+            Add throw KeyNotFoundException Notify User Key Name; 20150303 Tom
+            </summary>
+            <param name="name">string key</param>
+            <returns>T object</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1.Get(System.Int32)">
+            <summary>
+            get T object by numeric index
+            Add Throw IndexOutOfRangeExecption Notity User Index;  20150303 Tom
+            </summary>
+            <param name="index">numeric index</param>
+            <returns>T object</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1.GetKey(System.Int32)">
+            <summary>
+            get string key by numeric index
+            </summary>
+            <param name="index">numeric index</param>
+            <returns>string key</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1.Add(System.String,`0)">
+            <summary>
+            add T object to collection
+            </summary>
+            <param name="key">string key</param>
+            <param name="value">T object</param>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1.AllKeys">
+            <summary>
+            get all keys in collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1.AllValues">
+            <summary>
+            get all objects in collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1.Item(System.Int32)">
+            <summary>
+            get T object by numeric index
+            </summary>
+            <param name="index">numeric index</param>
+            <returns>T object</returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1.Item(System.String)">
+            <summary>
+            get T object by string key
+            </summary>
+            <param name="name">string key</param>
+            <returns>T object</returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.NameObjectCollection`1.LookupOnly">
+            <summary>
+            let collection read only
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.TrxMetadata">
+            <summary>
+            trx metadata class
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxMetadata.InitTriggerEnd">
+            <summary>
+            get is init trigger end (0=not end,1=end)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxMetadata.Name">
+            <summary>
+            get Trx的名稱
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxMetadata.TrxType">
+            <summary>
+            get trx type (Receive/Send)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxMetadata.TriggerCondition">
+            <summary>
+            get trx triggercondition (ON/OFF/CHANGE)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.TrxMetadata.NodeNo">
+            <summary>
+            get node no
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.Trx">
+            <summary>
+            trx class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Trx.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Trx.Clone">
+            <summary>
+            clone this trx
+            </summary>
+            <returns>a copy of trx object</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Trx.ClearTrxWith0">
+            <summary>
+            clear trx items with 0 values
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Trx.ToString">
+            <summary>
+            to log string
+            </summary>
+            <returns>log string</returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.Name">
+            <summary>
+            get trx name(key),must have
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.EventGroups">
+            <summary>
+            get eventgroup collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.Item(System.Int32)">
+            <summary>
+            get EventGroup 
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.Item(System.String)">
+            <summary>
+            get eventgroup
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.Metadata">
+            <summary>
+            get trx metadata
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.ReqSNo">
+            <summary>
+            get request sno
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.TrackKey">
+            <summary>
+            get/set tracking key
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.TrxFlags">
+            <summary>
+            get/set trx flags,must have
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.Tag">
+            <summary>
+            get/set user object
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.WriteCompleteStations">
+            <summary>
+            get dictionary for write complete stations with PLCOpReqResult
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.ReadCompleteStations">
+            <summary>
+            get dictionary for read complete stations with PLCOpReqResult
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.IsInitTrigger">
+            <summary>
+            get is init trigger
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Trx.UserAttributes">
+            <summary>
+            get user define attribute collection
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogPrimaryEnum">
+            <summary>
+            TrxCatalog Primary enumeration
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogPrimaryEnum.BCS">
+            <summary>
+            主動端=BC
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogPrimaryEnum.EQP">
+            <summary>
+            主動端=EQ
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogActionEnum">
+            <summary>
+            trxcatalog action enumeration
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogActionEnum.PBW_SBW">
+            <summary>
+            PBW/SBW
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogActionEnum.PBW_SB">
+            <summary>
+            PBW/SB
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogActionEnum.PBW">
+            <summary>
+            PBW
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogActionEnum.PB">
+            <summary>
+            PB
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogActionEnum.PW">
+            <summary>
+            PW
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogActionEnum.PB_SBW">
+            <summary>
+            PB/SBW
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogActionEnum.PB_SB">
+            <summary>
+            PB/SB
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogActionEnum.PWI_SWI">
+            <summary>
+            PWI/SWI
+            </summary>
+        </member>
+        <member name="F:UniAuto.UniBCS.PLCAgent.PLC.TrxCatalogActionEnum.PWI">
+            <summary>
+            PWI
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ExpressionSLONG">
+            <summary>
+            SLONG expression class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionSLONG.Decode(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            SLONG decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~3</param>		
+            <param name="itemBOffset">item bit offset(10 base),range=0~15</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~32</param>
+            <param name="iodata">source plc io data</param>
+            <returns>int value</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionSLONG.Encode(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            SLONG encode method,may throw exception
+            </summary>
+            <param name="slongString">slong string data</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~3</param>		
+            <param name="itemBOffset">item bit offset(10 base),range=0~15</param>
+            <param name="itemBPoints">item bit points(10 base),range=1~32</param>
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ExpressionBCD">
+            <summary>
+            BCD expression class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionBCD.Decode(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            BCD decode method
+            </summary>		
+            <param name="evtStartAddress10">event start address(10 base)</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~M</param>	
+            <param name="itemBOffset">item bit offset(10 base),range=0</param>
+            <param name="itemBPoints">item bit points(10 base),range=16~R (R is multiple of 16)</param>
+            <param name="iodata">source plc io data</param>
+            <returns>string value</returns>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ExpressionBCD.Encode(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int16[])">
+            <summary>
+            BCD encode method
+            </summary>
+            <param name="bcdString">bcd string data</param>
+            <param name="itemWOffset">item word offset(10 base),range=0~N</param>
+            <param name="itemWPoints">item word points(10 base),range=1~M</param>	
+            <param name="itemBOffset">item bit offset(10 base),range=0 </param>
+            <param name="itemBPoints">item bit points(10 base),range=16~R (R is multiple of 16)</param>
+            <param name="iodata">dest plc io data</param>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.PLCDataModel">
+            <summary>
+            plc data model class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.PLCDataModel.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.PLCDataModel.ItemGroupCollection">
+            <summary>
+            get itemgroup collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.PLCDataModel.EventMap">
+            <summary>
+            get event collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.PLCDataModel.Transaction">
+            <summary>
+            get trx collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.PLCDataModel.Scan">
+            <summary>
+            get watchdata collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.PLCDataModel.Pair">
+            <summary>
+            get trxcatalog collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.PLCDataModel.ItemDefineCollection">
+            <summary>
+            get itemdefine collection
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.ItemDefine">
+            <summary>
+            itemdefine class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.ItemDefine.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.ItemDefine.Name">
+            <summary>
+            get itemdefine name(key)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.ItemDefine.IDs">
+            <summary>
+            get id collection
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.Item">
+            <summary>
+            item class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Item.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.Item.Clone">
+            <summary>
+            clone this item
+            </summary>
+            <returns>a copy of item object</returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Item.Name">
+            <summary>
+            get item name(key)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Item.Value">
+            <summary>
+            get/set item value
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Item.Metadata">
+            <summary>
+            get item metadata
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.Item.UserAttributes">
+            <summary>
+            get user define attribute collection
+            </summary>
+        </member>
+        <member name="T:UniAuto.UniBCS.PLCAgent.PLC.EventGroup">
+            <summary>
+            eventgroup class
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.Clone">
+            <summary>
+            clone this eventgroup
+            </summary>
+            <returns>a copy of eventgroup object</returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.Name">
+            <summary>
+            get eventgroup name(key)
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.Events">
+            <summary>
+            get event collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.Item(System.Int32)">
+            <summary>
+            get event object
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.Item(System.String)">
+            <summary>
+            get event object
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.TriggerEventNames">
+            <summary>
+            get trigger event name collection
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.Metadata">
+            <summary>
+            get eventgroup metadata
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.IsDisable">
+            <summary>
+            is eventgroup disable
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.IsMergeEvent">
+            <summary>
+            get/set is merge event option
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.MergeBuffer">
+            <summary>
+            get/set merge buffer
+            </summary>
+        </member>
+        <member name="P:UniAuto.UniBCS.PLCAgent.PLC.EventGroup.LogStyle">
+            <summary>
+            get/set Log Style defaule is Detial
+            </summary>
+        </member>
+    </members>
+</doc>

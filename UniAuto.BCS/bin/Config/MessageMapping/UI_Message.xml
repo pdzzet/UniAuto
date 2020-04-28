@@ -1,0 +1,441 @@
+<message name="OPI_CONNECT">
+  <object id="UIService" method="OPI_CONNECT" />
+</message>
+<message name="OPI_DISCONNECT">
+  <object id="UIService" method="OPI_DISCONNECT" />
+</message>
+<message name="OPI_MessageSend">
+  <object id="UIService" method="OPI_MessageSend" />
+</message>
+<message name="OPI_MessageRecv">
+  <object id="UIService" method="OPI_MessageRecv" />
+</message>
+<message name="OPI_AreYouThereRequest">
+  <object id="UIService" method="OPI_AreYouThereRequest" />
+</message>
+<message name="OPI_AllDataUpdateRequest">
+  <object id="UIService" method="OPI_AllDataUpdateRequest" />
+</message>
+<message name ="OPI_EquipmentStatusReportReply">
+  <object id="UIService" method="OPI_EquipmentStatusReportReply" />
+</message>
+<message name="OPI_EquipmentStatusRequest">
+  <object id="UIService" method="OPI_EquipmentStatusRequest" />
+</message>
+<message name="OPI_PortCSTStatusReportReply">
+  <object id="UIService" method="OPI_PortCSTStatusReportReply" />
+</message>
+<message name="OPI_PortStatusRequest">
+  <object id="UIService" method="OPI_PortStatusRequest" />
+</message>
+<message name="OPI_LineStatusReportReply">
+  <object id="UIService" method="OPI_LineStatusReportReply" />
+</message>
+<message name="OPI_LineStatusRequest">
+  <object id="UIService" method="OPI_LineStatusRequest" />
+</message>
+<message name="OPI_LinkSignalDataRequest">
+  <object id="UIService" method="OPI_LinkSignalDataRequest" />
+</message>
+<message name="OPI_DatabaseReloadRequest">
+  <object id="UIService" method="OPI_DatabaseReloadRequest" />
+</message>
+<message name="OPI_EachPositionRequest">
+  <object id="UIService" method="OPI_EachPositionRequest" />
+</message>
+<message name="OPI_SlotPositionRequest">
+  <object id="UIService" method="OPI_SlotPositionRequest" />
+</message>
+<message name="OPI_JobDataRequest">
+  <object id="UIService" method="OPI_JobDataRequest" />
+</message>
+<message name="OPI_JobDataCategoryRequest">
+  <object id="UIService" method="OPI_JobDataCategoryRequest" />
+</message>
+<message name="OPI_LineModeChangeRequest">
+  <object id="UIService" method="OPI_LineModeChangeRequest" />
+</message>
+<message name="OPI_DateTimeCalibrationRequest">
+  <object id="UIService" method="OPI_DateTimeCalibrationRequest" />
+</message>
+<message name="OPI_LocalModeCassetteDataSend">
+  <object id="UIService" method="OPI_LocalModeCassetteDataSend" />
+</message>
+<message name="OPI_LocalModeCassetteDataSend_DPI">
+  <object id="UIService" method="OPI_LocalModeCassetteDataSend_DPI" />
+</message>
+<message name="OPI_OfflineModeCassetteDataSend">
+  <object id="UIService" method="OPI_OfflineModeCassetteDataSend" />
+</message>
+<message name="OPI_OfflineModeCassetteDataSend_DPI">
+  <object id="UIService" method="OPI_OfflineModeCassetteDataSend_DPI" />
+</message>
+<message name="OPI_OfflineModeCassetteDataSend_PRM">
+  <object id="UIService" method="OPI_OfflineModeCassetteDataSend_PRM" />
+</message>
+<message name="OPI_CassetteMapDownloadResultReply">
+  <object id="UIService" method="OPI_CassetteMapDownloadResultReply" />
+</message>
+<message name="OPI_CassetteMapDownloadResultReply_DPI">
+  <object id="UIService" method="OPI_CassetteMapDownloadResultReply_DPI" />
+</message>
+<message name="OPI_CassetteCommandRequest">
+  <object id="UIService" method="OPI_CassetteCommandRequest" />
+</message>
+<message name="OPI_PortCommandRequest">
+  <object id="UIService" method="OPI_PortCommandRequest" />
+</message>
+<message name="OPI_CIMMessageDataRequest">
+  <object id="UIService" method="OPI_CIMMessageDataRequest" />
+</message>
+<message name="OPI_CIMMessageCommandRequest">
+  <object id="UIService" method="OPI_CIMMessageCommandRequest" />
+</message>
+<message name="OPI_LocalCassetteDataRequest">
+  <object id="UIService" method="OPI_LocalCassetteDataRequest" />
+</message>
+<message name="OPI_LocalCassetteDataRequest_DPI">
+  <object id="UIService" method="OPI_LocalCassetteDataRequest_DPI" />
+</message>
+<message name="OPI_OfflineCassetteDataRequest">
+  <object id="UIService" method="OPI_OfflineCassetteDataRequest" />
+</message>
+<message name="OPI_OfflineCassetteDataRequest_DPI">
+  <object id="UIService" method="OPI_OfflineCassetteDataRequest_DPI" />
+</message>
+<message name="OPI_CIMModeChangeRequest">
+  <object id="UIService" method="OPI_CIMModeChangeRequest" />
+</message>
+<message name="OPI_IncompleteCassetteDataRequest">
+  <object id="UIService" method="OPI_IncompleteCassetteDataRequest" />
+</message>
+<message name="OPI_IncompleteCassetteCommand">
+  <object id="UIService" method="OPI_IncompleteCassetteCommand" />
+</message>
+<message name="OPI_IncompleteCassetteEditSave">
+  <object id="UIService" method="OPI_IncompleteCassetteEditSave" />
+</message>
+<message name="OPI_BCSTerminalMessageInformReply">
+  <object id="UIService" method="OPI_BCSTerminalMessageInformReply" />
+</message>
+<message name="OPI_OPILinkTest">
+  <object id="UIService" method="OPI_OPILinkTest" />
+</message>
+<message name="OPI_BCSLinkTestReply">
+  <object id="UIService" method="OPI_BCSLinkTestReply" />
+</message>
+<message name="OPI_SamplingRuleChangeCommand">
+  <object id="UIService" method="OPI_SamplingRuleChangeCommand" />
+</message>
+<message name="OPI_EquipmentRunModeSetCommand">
+  <object id="UIService" method="OPI_EquipmentRunModeSetCommand" />
+</message>
+<message name="OPI_BCControlCommand">
+  <object id="UIService" method="OPI_BCControlCommand" />
+</message>
+<message name="OPI_ForceCleanOutCommand">
+  <object id="UIService" method="OPI_ForceCleanOutCommand" />
+</message>
+<message name="OPI_RobotOperationModeRequest">
+  <object id="UIService" method="OPI_RobotOperationModeRequest" />
+</message>
+<message name="OPI_RobotOperationModeCommand">
+  <object id="UIService" method="OPI_RobotOperationModeCommand" />
+</message>
+<message name="OPI_EquipmentFetchGlassCommand">
+  <object id="UIService" method="OPI_EquipmentFetchGlassCommand" />
+</message>
+<message name="OPI_GlassGradeMappingCommand">
+  <object id="UIService" method="OPI_GlassGradeMappingCommand" />
+</message>
+<message name="OPI_EquipmentAlarmStatusRequest">
+  <object id="UIService" method="OPI_EquipmentAlarmStatusRequest" />
+</message>
+<message name="OPI_ProcessDataHistoryRequest">
+  <object id="UIService" method="OPI_ProcessDataHistoryRequest" />
+</message>
+<message name="OPI_RobotCommandRequest">
+  <object id="UIService" method="OPI_RobotCommandRequest" />
+</message>
+<message name="OPI_RobotMessageReportReply">
+  <object id="UIService" method="OPI_RobotMessageReportReply" />
+</message>
+<message name="OPI_RobotCommandReportReply">
+  <object id="UIService" method="OPI_RobotCommandReportReply" />
+</message>
+<message name="OPI_RobotCurrentModeRequest">
+  <object id="UIService" method="OPI_RobotCurrentModeRequest" />
+</message>
+<message name="OPI_RobotModeChangeRequest">
+  <object id="UIService" method="OPI_RobotModeChangeRequest" />
+</message>
+<message name="OPI_RobotJobSendToSameEQRequest">
+  <object id="UIService" method="OPI_RobotJobSendToSameEQRequest" />
+</message>
+<message name="OPI_RobotStageInfoRequest">
+  <object id="UIService" method="OPI_RobotStageInfoRequest" />
+</message>
+<message name="OPI_RobotStageInfoReportReply">
+  <object id="UIService" method="OPI_RobotStageInfoReportReply" />
+</message>
+<message name="OPI_RobotCurrentModeReportReply">
+  <object id="UIService" method="OPI_RobotCurrentModeReportReply" />
+</message>
+<message name="OPI_RobotRouteSettingRequest">
+  <object id="UIService" method="OPI_RobotRouteSettingRequest" />
+</message>
+<message name="OPI_MESAliveRequest">
+  <object id="UIService" method="OPI_MESAliveRequest" />
+</message>
+<message name="OPI_AllEquipmentStatusRequest">
+  <object id="UIService" method="OPI_AllEquipmentStatusRequest" />
+</message>
+<message name="OPI_ProcessDataReportRequest">
+  <object id="UIService" method="OPI_ProcessDataReportRequest" />
+</message>
+<message name="OPI_DailyCheckReportRequest">
+  <object id="UIService" method="OPI_DailyCheckReportRequest" />
+</message>
+<message name="OPI_EnergyVisualizationReportRequest">
+  <object id="UIService" method="OPI_EnergyVisualizationReportRequest" />
+</message>
+<message name="OPI_APCDataReportRequest">
+  <object id="UIService" method="OPI_APCDataReportRequest" />
+</message>
+<message name="OPI_RecipeParameterReportRequest">
+  <object id="UIService" method="OPI_RecipeParameterReportRequest" />
+</message>
+<message name="OPI_IndexerOperationModeChangeRequest">
+  <object id="UIService" method="OPI_IndexerOperationModeChangeRequest" />
+</message>
+<message name="OPI_CoolRunSetRequest">
+  <object id="UIService" method="OPI_CoolRunSetRequest" />
+</message>
+<message name="OPI_VCRStatusChangeRequest">
+  <object id="UIService" method="OPI_VCRStatusChangeRequest" />
+</message>
+<message name="OPI_MPLCInterlockChangeRequest">
+  <object id="UIService" method="OPI_MPLCInterlockChangeRequest" />
+</message>
+<message name="OPI_SECSFunctionRequest">
+  <object id="UIService" method="OPI_SECSFunctionRequest" />
+</message>
+<message name="OPI_CFMaterialStatusRequest">
+  <object id="UIService" method="OPI_CFMaterialStatusRequest" />
+</message>
+<message name="OPI_CellMaterialStatusRequest">
+  <object id="UIService" method="OPI_CellMaterialStatusRequest" />
+</message>
+<message name="OPI_POLMaterialStatusRequest">
+  <object id="UIService" method="OPI_POLMaterialStatusRequest" />
+</message>
+<message name="OPI_CassetteOnPortQTimeRequest">
+  <object id="UIService" method="OPI_CassetteOnPortQTimeRequest" />
+</message>
+<message name="OPI_RealTimeGlassCountRequest">
+  <object id="UIService" method="OPI_RealTimeGlassCountRequest" />
+</message>
+<message name="OPI_InspectionIdleTimeRequest">
+  <object id="UIService" method="OPI_InspectionIdleTimeRequest" />
+</message>
+<message name="OPI_ClientInformationRequest">
+  <object id="UIService" method="OPI_ClientInformationRequest" />
+</message>
+<message name="OPI_SamplingRuleDataRequest">
+  <object id="UIService" method="OPI_SamplingRuleDataRequest" />
+</message>
+<message name="OPI_CreateInspFileRequest">
+  <object id="UIService" method="OPI_CreateInspFileRequest" />
+</message>
+<message name="OPI_PLCTrxNameRequest">
+  <object id="UIService" method="OPI_PLCTrxNameRequest" />
+</message>
+<message name="OPI_PLCTrxDataRequest">
+  <object id="UIService" method="OPI_PLCTrxDataRequest" />
+</message>
+<message name="OPI_RecipeRegisterValidationCommandRequest">
+  <object id="UIService" method="OPI_RecipeRegisterValidationCommandRequest" />
+</message>
+<message name="OPI_RecipeRegisterValidationReturnReply">
+  <object id="UIService" method="OPI_RecipeRegisterValidationReturnReply" />
+</message>
+<message name="OPI_DisconnectUsersRequest">
+  <object id="UIService" method="OPI_DisconnectUsersRequest" />
+</message>
+<message name="OPI_ClientDisconnectReply">
+  <object id="UIService" method="OPI_ClientDisconnectReply" />
+</message>
+<message name="OPI_GlassGradeMappingChangeReportRequest">
+  <object id="UIService" method="OPI_GlassGradeMappingChangeReportRequest" />
+</message>
+<message name="OPI_IonizerFanModeReportRequest">
+  <object id="UIService" method="OPI_IonizerFanModeReportRequest" />
+</message>
+<message name="OPI_EquipmentDataLinkStatusRequst">
+  <object id="UIService" method="OPI_EquipmentDataLinkStatusRequst" />
+</message>
+<message name="OPI_EquipmentDataLinkStatusReportReply">
+  <object id="UIService" method="OPI_EquipmentDataLinkStatusReportReply" />
+</message>
+<message name="OPI_CurrentChangerPlanRequest">
+  <object id="UIService" method="OPI_CurrentChangerPlanRequest" />
+</message>
+<message name="OPI_CurrentChangerPlanReportReply">
+  <object id="UIService" method="OPI_CurrentChangerPlanReportReply" />
+</message>
+<message name="OPI_EquipmentReportSettingRequest">
+  <object id="UIService" method="OPI_EquipmentReportSettingRequest" />
+</message>
+<message name="OPI_DenseStatusReportReply">
+  <object id="UIService" method="OPI_DenseStatusReportReply" />
+</message>
+<message name="OPI_DenseStatusRequest">
+  <object id="UIService" method="OPI_DenseStatusRequest" />
+</message>
+<message name="OPI_PalletStatusReportReply">
+  <object id="UIService" method="OPI_PalletStatusReportReply" />
+</message>
+<message name="OPI_PalletStatusRequest">
+  <object id="UIService" method="OPI_PalletStatusRequest" />
+</message>
+<message name="OPI_LocalModeDenseDataRequest">
+  <object id="UIService" method="OPI_LocalModeDenseDataRequest" />
+</message>
+<message name="OPI_LocalModeDenseDataSend">
+  <object id="UIService" method="OPI_LocalModeDenseDataSend" />
+</message>
+<message name="OPI_OfflineDenseDataSend">
+  <object id="UIService" method="OPI_OfflineDenseDataSend" />
+</message>
+<message name="OPI_LocalModePalletDataRequest">
+  <object id="UIService" method="OPI_LocalModePalletDataRequest" />
+</message>
+<message name="OPI_LocalModePalletDataSend">
+  <object id="UIService" method="OPI_LocalModePalletDataSend" />
+</message>
+<message name="OPI_OfflinePalletDataSend">
+  <object id="UIService" method="OPI_OfflinePalletDataSend" />
+</message>
+<message name="OPI_OperationPermissionRequest">
+  <object id="UIService" method="OPI_OperationPermissionRequest" />
+</message>
+<message name="OPI_OperationPermissionResultReportReply">
+  <object id="UIService" method="OPI_OperationPermissionResultReportReply" />
+</message>
+<message name="OPI_ForceCleanOutCommandReportRequest">
+  <object id="UIService" method="OPI_ForceCleanOutCommandReportRequest" />
+</message>
+<message name="OPI_OperationRunModeChangeRequest">
+  <object id="UIService" method="OPI_OperationRunModeChangeRequest" />
+</message>
+<message name="OPI_OperationRunModeResultReportReply">
+  <object id="UIService" method="OPI_OperationRunModeResultReportReply" />
+</message>
+<message name="OPI_JobDataOperationRequest">
+  <object id="UIService" method="OPI_JobDataOperationRequest" />
+</message>
+<message name="OPI_ChangerPlanDownloadSetCommandRequest">
+  <object id="UIService" method="OPI_ChangerPlanDownloadSetCommandRequest" />
+</message>
+<message name="OPI_EquipmentFetchGlassRuleRequest">
+  <object id="UIService" method="OPI_EquipmentFetchGlassRuleRequest" />
+</message>
+<message name="OPI_BCSInfoRequest">
+  <object id="UIService" method="OPI_BCSInfoRequest" />
+</message>
+<message name="OPI_RobotRouteStepInfoRequest">
+  <object id="UIService" method="OPI_RobotRouteStepInfoRequest" />
+</message>
+<message name="OPI_BCControlCommandInfoRequest">
+  <object id="UIService" method="OPI_BCControlCommandInfoRequest" />
+</message>
+<message name="OPI_RobotUnloaderDispatchRuleRequest">
+  <object id="UIService" method="OPI_RobotUnloaderDispatchRuleRequest" />
+</message>
+<message name="OPI_RobotUnloaderDispatchRuleReportReply">
+  <object id="UIService" method="OPI_RobotUnloaderDispatchRuleReportReply" />
+</message>
+<message name="OPI_ODFTrackTimeSettingChangeRequest">
+  <object id="UIService" method="OPI_ODFTrackTimeSettingChangeRequest" />
+</message>
+<message name="OPI_ODFTrackTimeSettingRequest">
+  <object id="UIService" method="OPI_ODFTrackTimeSettingRequest" />
+</message>
+<message name="OPI_StagePositionInfoRequest">
+  <object id="UIService" method="OPI_StagePositionInfoRequest" />
+</message>
+<message name="OPI_MaterialStatusReportRequest">
+  <object id="UIService" method="OPI_MaterialStatusReportRequest" />
+</message>
+<message name="OPI_IncompleteBoxDataRequest">
+  <object id="UIService" method="OPI_IncompleteBoxDataRequest" />
+</message>
+<message name="OPI_IncompleteBoxEditSave">
+  <object id="UIService" method="OPI_IncompleteBoxEditSave" />
+</message>
+<message name="OPI_UnloadingPortSettingReportRequest">
+  <object id="UIService" method="OPI_UnloadingPortSettingReportRequest" />
+</message>
+<message name="OPI_UnloadingPortSettingCommandRequest">
+  <object id="UIService" method="OPI_UnloadingPortSettingCommandRequest" />
+</message>
+<message name="OPI_BufferRWJudgeCapacityChangeReportRequest">
+  <object id="UIService" method="OPI_BufferRWJudgeCapacityChangeReportRequest" />
+</message>
+<message name="OPI_BufferRWJudgeCapacityChangeRequest">
+  <object id="UIService" method="OPI_BufferRWJudgeCapacityChangeRequest" />
+</message>
+<message name="OPI_RobotFetchSequenceModeChangeRequest">
+  <object id="UIService" method="OPI_RobotFetchSequenceModeChangeRequest" />
+</message>
+<message name="OPI_DefectCodeReportRequest">
+  <object id="UIService" method="OPI_DefectCodeReportRequest" />
+</message>
+<message name="OPI_UnitRunModeChangeRequest">
+  <object id="UIService" method="OPI_UnitRunModeChangeRequest" />
+</message>
+<message name="OPI_ProductTypeInfoRequest">
+  <object id="UIService" method="OPI_ProductTypeInfoRequest" />
+</message>
+<message name="OPI_RobotRouteCurrentStepInfoRequest">
+  <object id="UIService" method="OPI_RobotRouteCurrentStepInfoRequest" />
+</message>
+<message name="OPI_RobotRouteCurrentStepChangeRequest">
+  <object id="UIService" method="OPI_RobotRouteCurrentStepChangeRequest" />
+</message>
+<message name="OPI_RobotCommandHoldRequest">
+  <object id="UIService" method="OPI_RobotCommandHoldRequest" />
+</message>
+<message name="OPI_RobotRouteCurrentStepNoRequest">
+  <object id="UIService" method="OPI_RobotRouteCurrentStepNoRequest" />
+</message>
+<message name="OPI_RobotStopRunReasonRequest">
+  <object id="UIService" method="OPI_RobotStopRunReasonRequest" />
+</message>
+<message name="OPI_InspectionFlowPriorityInfoRequest">
+  <object id="UIService" method="OPI_InspectionFlowPriorityInfoReply" />
+</message>
+<message name="OPI_InspectionFlowPriorityChangeRequest">
+  <object id="UIService" method="OPI_InspectionFlowPriorityChangeReply" />
+</message>
+<message name="OPI_BCSParameterDataInfoRequest">
+  <object id="UIService" method="OPI_BCSParameterDataInfoRequest" />
+</message>
+<message name="OPI_BCSParameterDataChangeRequest">
+  <object id="UIService" method="OPI_BCSParameterDataChangeRequest" />
+</message>
+<message name="OPI_PortAssignmentCommandRequest">
+  <object id="UIService" method="OPI_PortAssignmentCommandRequest" />
+</message>
+<message name="OPI_PPKLocalModeDenseDataRequest">
+  <object id="UIService" method="OPI_PPKLocalModeDenseDataRequest" />
+</message>
+<message name="OPI_PPKLocalModeDenseDataSend">
+  <object id="UIService" method="OPI_PPKLocalModeDenseDataSend" />
+</message>
+<message name="OPI_PPKOfflineDenseDataSend">
+  <object id="UIService" method="OPI_PPKOfflineDenseDataSend" />
+</message>
+<message name="OPI_RobotWipCreateRequest">
+  <object id="UIService" method="OPI_RobotWipCreateRequest" />
+</message>

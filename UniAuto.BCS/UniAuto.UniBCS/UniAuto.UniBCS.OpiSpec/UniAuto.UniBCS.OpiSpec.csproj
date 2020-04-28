@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{621B0C6D-25B7-477A-B22C-C86A3624EE67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniAuto.UniBCS.OpiSpec</RootNamespace>
+    <AssemblyName>UniAuto.UniBCS.OpiSpec</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>"%24/WHCSOT.G6C.BC/BC/UniAuto.BCS", MLWDAAAA</SccProjectName>
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common\HelpAttribute.cs" />
+    <Compile Include="Message\APCDataReportReply.cs" />
+    <Compile Include="Message\APCDataReportRequest.cs" />
+    <Compile Include="Message\BCSParameterDataChangeReply.cs" />
+    <Compile Include="Message\BCSParameterDataChangeRequest.cs" />
+    <Compile Include="Message\BCSParameterDataInfoReply.cs" />
+    <Compile Include="Message\BCSParameterDataInfoRequest.cs" />
+    <Compile Include="Message\FileDataCreateReply.cs" />
+    <Compile Include="Message\FileDataCreateRequest.cs" />
+    <Compile Include="Message\InspectionFlowPriorityChangeReply.cs" />
+    <Compile Include="Message\InspectionFlowPriorityChangeRequest.cs" />
+    <Compile Include="Message\InspectionFlowPriorityInfoReply.cs" />
+    <Compile Include="Message\InspectionFlowPriorityInfoReport.cs" />
+    <Compile Include="Message\InspectionFlowPriorityInfoRequest.cs" />
+    <Compile Include="Message\CellMaterialStatusReply.cs" />
+    <Compile Include="Message\CellMaterialStatusRequest.cs" />
+    <Compile Include="Message\DefectCodeReportReply.cs" />
+    <Compile Include="Message\BufferRWJudgeCapacityChangeReply.cs" />
+    <Compile Include="Message\BufferRWJudgeCapacityChangeReportReply.cs" />
+    <Compile Include="Message\BufferRWJudgeCapacityChangeReportRequest.cs" />
+    <Compile Include="Message\BufferRWJudgeCapacityChangeRequest.cs" />
+    <Compile Include="Message\BCControlCommandInfoReply.cs" />
+    <Compile Include="Message\BCControlCommandInfoRequest.cs" />
+    <Compile Include="Message\BCSInfoReply.cs" />
+    <Compile Include="Message\BCSInfoRequest.cs" />
+    <Compile Include="Common\Body.cs" />
+    <Compile Include="Common\Header.cs" />
+    <Compile Include="Common\Message.cs" />
+    <Compile Include="Common\Return.cs" />
+    <Compile Include="Common\SerializableDictionary.cs" />
+    <Compile Include="Common\Spec.cs" />
+    <Compile Include="Common\StringWriterUTF8.cs" />
+    <Compile Include="Message\AllDataUpdateReply.cs" />
+    <Compile Include="Message\AllDataUpdateRequest.cs" />
+    <Compile Include="Message\AllEquipmentStatusReply.cs" />
+    <Compile Include="Message\AllEquipmentStatusRequest.cs" />
+    <Compile Include="Message\AreYouThereReply.cs" />
+    <Compile Include="Message\AreYouThereRequest.cs" />
+    <Compile Include="Message\BCControlCommand.cs" />
+    <Compile Include="Message\BCControlCommandReply.cs" />
+    <Compile Include="Message\BCSTerminalMessageInform.cs" />
+    <Compile Include="Message\CassetteCommandReply.cs" />
+    <Compile Include="Message\CassetteCommandRequest.cs" />
+    <Compile Include="Message\CassetteMapDownloadResultReport.cs" />
+    <Compile Include="Message\CassetteOnPortQTimeReply.cs" />
+    <Compile Include="Message\CassetteOnPortQTimeRequest.cs" />
+    <Compile Include="Message\CFMaterialStatusReply.cs" />
+    <Compile Include="Message\CFMaterialStatusRequest.cs" />
+    <Compile Include="Message\ChangerPlanDownloadSetCommandReply.cs" />
+    <Compile Include="Message\ChangerPlanDownloadSetCommandRequest.cs" />
+    <Compile Include="Message\CIMMessageCommandReply.cs" />
+    <Compile Include="Message\CIMMessageCommandRequest.cs" />
+    <Compile Include="Message\CIMMessageDataReply.cs" />
+    <Compile Include="Message\CIMMessageDataRequest.cs" />
+    <Compile Include="Message\CIMModeChangeReply.cs" />
+    <Compile Include="Message\CIMModeChangeRequest.cs" />
+    <Compile Include="Message\ClientDisconnectReply.cs" />
+    <Compile Include="Message\ClientDisconnectRequest.cs" />
+    <Compile Include="Message\ClientInformationReply.cs" />
+    <Compile Include="Message\ClientInformationRequest.cs" />
+    <Compile Include="Message\CoolRunSetReply.cs" />
+    <Compile Include="Message\CoolRunSetRequest.cs" />
+    <Compile Include="Message\CreateInspFileReply.cs" />
+    <Compile Include="Message\CreateInspFileRequest.cs" />
+    <Compile Include="Message\CurrentChangerPlanReport.cs" />
+    <Compile Include="Message\CurrentChangerPlanRequest.cs" />
+    <Compile Include="Message\CurrentChangerPlanRequestReply.cs" />
+    <Compile Include="Message\DailyCheckReportReply.cs" />
+    <Compile Include="Message\DailyCheckReportRequest.cs" />
+    <Compile Include="Message\DatabaseReloadReply.cs" />
+    <Compile Include="Message\DatabaseReloadRequest.cs" />
+    <Compile Include="Message\DateTimeCalibrationReply.cs" />
+    <Compile Include="Message\DateTimeCalibrationRequest.cs" />
+    <Compile Include="Message\DefectCodeReportRequest.cs" />
+    <Compile Include="Message\DenseStatusReply.cs" />
+    <Compile Include="Message\DenseStatusReport.cs" />
+    <Compile Include="Message\DenseStatusRequest.cs" />
+    <Compile Include="Message\DisconnectUsersReply.cs" />
+    <Compile Include="Message\DisconnectUsersRequest.cs" />
+    <Compile Include="Message\EachPositionReply.cs" />
+    <Compile Include="Message\EachPositionRequest.cs" />
+    <Compile Include="Message\EnergyVisualizationReportReply.cs" />
+    <Compile Include="Message\EnergyVisualizationReportRequest.cs" />
+    <Compile Include="Message\EquipmentAlarmStatusReply.cs" />
+    <Compile Include="Message\EquipmentAlarmStatusRequest.cs" />
+    <Compile Include="Message\EquipmentDataLinkStatusReply.cs" />
+    <Compile Include="Message\EquipmentDataLinkStatusReport.cs" />
+    <Compile Include="Message\EquipmentDataLinkStatusRequst.cs" />
+    <Compile Include="Message\EquipmentFetchGlassCommand.cs" />
+    <Compile Include="Message\EquipmentFetchGlassCommandReply.cs" />
+    <Compile Include="Message\EquipmentFetchGlassRuleReply.cs" />
+    <Compile Include="Message\EquipmentFetchGlassRuleRequest.cs" />
+    <Compile Include="Message\EquipmentReportSettingRequest.cs" />
+    <Compile Include="Message\EquipmentReportSettingRequestReply.cs" />
+    <Compile Include="Message\EquipmentRunModeSetCommand.cs" />
+    <Compile Include="Message\EquipmentRunModeSetCommandReply.cs" />
+    <Compile Include="Message\EquipmentStatusReply.cs" />
+    <Compile Include="Message\EquipmentStatusReport.cs" />
+    <Compile Include="Message\EquipmentStatusRequest.cs" />
+    <Compile Include="Message\ForceCleanOutCommand.cs" />
+    <Compile Include="Message\ForceCleanOutCommandReply.cs" />
+    <Compile Include="Message\ForceCleanOutCommandReportReply.cs" />
+    <Compile Include="Message\ForceCleanOutCommandReportRequest.cs" />
+    <Compile Include="Message\IncompleteBoxDataReply.cs" />
+    <Compile Include="Message\IncompleteBoxDataRequest.cs" />
+    <Compile Include="Message\IncompleteBoxEditSave.cs" />
+    <Compile Include="Message\IncompleteBoxEditSaveReply.cs" />
+    <Compile Include="Message\IncompleteCassetteCategoryReply.cs" />
+    <Compile Include="Message\IncompleteCassetteCategoryRequest.cs" />
+    <Compile Include="Message\IncompleteCassetteCommand.cs" />
+    <Compile Include="Message\IncompleteCassetteCommandReply.cs" />
+    <Compile Include="Message\IncompleteCassetteDataReply.cs" />
+    <Compile Include="Message\IncompleteCassetteDataRequest.cs" />
+    <Compile Include="Message\IncompleteCassetteEditSave.cs" />
+    <Compile Include="Message\IncompleteCassetteEditSaveReply.cs" />
+    <Compile Include="Message\IndexerOperationModeChangeReply.cs" />
+    <Compile Include="Message\IndexerOperationModeChangeRequest.cs" />
+    <Compile Include="Message\InspectionIdleTimeReply.cs" />
+    <Compile Include="Message\InspectionIdleTimeRequest.cs" />
+    <Compile Include="Message\IonizerFanModeReportReply.cs" />
+    <Compile Include="Message\IonizerFanModeReportRequest.cs" />
+    <Compile Include="Message\JobCountReply.cs" />
+    <Compile Include="Message\JobCountReport.cs" />
+    <Compile Include="Message\JobDataCategoryReply.cs" />
+    <Compile Include="Message\JobDataCategoryRequest.cs" />
+    <Compile Include="Message\JobDataOperationReply.cs" />
+    <Compile Include="Message\JobDataOperationRequest.cs" />
+    <Compile Include="Message\JobDataReply.cs" />
+    <Compile Include="Message\JobDataRequest.cs" />
+    <Compile Include="Message\LineModeChangeReply.cs" />
+    <Compile Include="Message\LineModeChangeRequest.cs" />
+    <Compile Include="Message\LineStatusReply.cs" />
+    <Compile Include="Message\LineStatusReport.cs" />
+    <Compile Include="Message\LineStatusRequest.cs" />
+    <Compile Include="Message\LinkSignalDataReply.cs" />
+    <Compile Include="Message\LinkSignalDataRequest.cs" />
+    <Compile Include="Message\LocalCassetteDataReply.cs" />
+    <Compile Include="Message\LocalCassetteDataReply_DPI.cs" />
+    <Compile Include="Message\LocalCassetteDataRequest.cs" />
+    <Compile Include="Message\LocalCassetteDataRequest_DPI.cs" />
+    <Compile Include="Message\LocalModeCassetteDataSend.cs" />
+    <Compile Include="Message\LocalModeCassetteDataSendReply.cs" />
+    <Compile Include="Message\LocalModeCassetteDataSend_DPI.cs" />
+    <Compile Include="Message\LocalModeDenseDataReply.cs" />
+    <Compile Include="Message\LocalModeDenseDataRequest.cs" />
+    <Compile Include="Message\LocalModeDenseDataSend.cs" />
+    <Compile Include="Message\LocalModeDenseDataSendReply.cs" />
+    <Compile Include="Message\LocalModePalletDataReply.cs" />
+    <Compile Include="Message\LocalModePalletDataRequest.cs" />
+    <Compile Include="Message\LocalModePalletDataSend.cs" />
+    <Compile Include="Message\LocalModePalletDataSendReply.cs" />
+    <Compile Include="Message\MaterialRealWeightReport.cs" />
+    <Compile Include="Message\MaterialStatusReply.cs" />
+    <Compile Include="Message\MaterialStatusReportReply.cs" />
+    <Compile Include="Message\MaterialStatusReportRequest.cs" />
+    <Compile Include="Message\MaterialStatusRequest.cs" />
+    <Compile Include="Message\MESAliveReply.cs" />
+    <Compile Include="Message\MESAliveRequest.cs" />
+    <Compile Include="Message\MESDateTimeCalibrationReply.cs" />
+    <Compile Include="Message\MESDateTimeCalibrationRequest.cs" />
+    <Compile Include="Message\MPLCInterlockChangeReply.cs" />
+    <Compile Include="Message\MPLCInterlockChangeRequest.cs" />
+    <Compile Include="Message\ODFTrackTimeSettingChangeReply.cs" />
+    <Compile Include="Message\ODFTrackTimeSettingChangeRequest.cs" />
+    <Compile Include="Message\ODFTrackTimeSettingReply.cs" />
+    <Compile Include="Message\ODFTrackTimeSettingRequest.cs" />
+    <Compile Include="Message\OfflineCassetteDataReply.cs" />
+    <Compile Include="Message\OfflineCassetteDataRequest.cs" />
+    <Compile Include="Message\OfflineDenseDataSend.cs" />
+    <Compile Include="Message\OfflineDenseDataSendReply.cs" />
+    <Compile Include="Message\OfflineModeCassetteDataSend.cs" />
+    <Compile Include="Message\OfflineModeCassetteDataSendReply.cs" />
+    <Compile Include="Message\OfflinePalletDataSend.cs" />
+    <Compile Include="Message\OfflinePalletDataSendReply.cs" />
+    <Compile Include="Message\OPIFlashMessage.cs" />
+    <Compile Include="Message\OPIFlashMessageReply.cs" />
+    <Compile Include="Message\OPILinkTest.cs" />
+    <Compile Include="Message\OPILinkTestReply.cs" />
+    <Compile Include="Message\PalletStatusReply.cs" />
+    <Compile Include="Message\PalletStatusReport.cs" />
+    <Compile Include="Message\PalletStatusRequest.cs" />
+    <Compile Include="Message\PIJobCountReport.cs" />
+    <Compile Include="Message\PLCTrxDataReply.cs" />
+    <Compile Include="Message\PLCTrxDataRequest.cs" />
+    <Compile Include="Message\PLCTrxNameReply.cs" />
+    <Compile Include="Message\PLCTrxNameRequest.cs" />
+    <Compile Include="Message\POLMaterialStatusReply.cs" />
+    <Compile Include="Message\POLMaterialStatusRequest.cs" />
+    <Compile Include="Message\PortAssignmentCommandReply.cs" />
+    <Compile Include="Message\PortAssignmentCommandRequest.cs" />
+    <Compile Include="Message\PortCommandReply.cs" />
+    <Compile Include="Message\PortCommandRequest.cs" />
+    <Compile Include="Message\PortCSTStatusReport.cs" />
+    <Compile Include="Message\PortStatusReply.cs" />
+    <Compile Include="Message\PortStatusRequest.cs" />
+    <Compile Include="Message\PPKLocalModeDenseDataSend.cs" />
+    <Compile Include="Message\PPKLocalModeDenseDataSendReply.cs" />
+    <Compile Include="Message\PPKOfflineDenseDataSend.cs" />
+    <Compile Include="Message\PPKOfflineDenseDataSendReplycs.cs" />
+    <Compile Include="Message\ProcessDataHistoryReply.cs" />
+    <Compile Include="Message\ProcessDataHistoryRequest.cs" />
+    <Compile Include="Message\ProcessDataReportReply.cs" />
+    <Compile Include="Message\ProcessDataReportRequest.cs" />
+    <Compile Include="Message\ProductTypeInfoRequest.cs" />
+    <Compile Include="Message\ProductTypeInfoRequestReply.cs" />
+    <Compile Include="Message\RecipeParameterReportRequest.cs" />
+    <Compile Include="Message\RecipeParameterReportRequestReply.cs" />
+    <Compile Include="Message\RecipeParameterReturnReport.cs" />
+    <Compile Include="Message\RecipeRegisterValidationCommandReply.cs" />
+    <Compile Include="Message\RecipeRegisterValidationCommandRequest.cs" />
+    <Compile Include="Message\RecipeRegisterValidationReturnReport.cs" />
+    <Compile Include="Message\RobotCommandHoldReply.cs" />
+    <Compile Include="Message\RobotCommandHoldRequest.cs" />
+    <Compile Include="Message\RobotCommandReport.cs" />
+    <Compile Include="Message\RobotJobSendToSameEQReply.cs" />
+    <Compile Include="Message\RobotJobSendToSameEQRequest.cs" />
+    <Compile Include="Message\RobotMessageReport.cs" />
+    <Compile Include="Message\RobotCurrentModeReply.cs" />
+    <Compile Include="Message\RobotCurrentModeReport.cs" />
+    <Compile Include="Message\RobotCurrentModeRequest.cs" />
+    <Compile Include="Message\RobotFetchSequenceModeChangeReply.cs" />
+    <Compile Include="Message\RobotFetchSequenceModeChangeRequest.cs" />
+    <Compile Include="Message\RobotModeChangeReply.cs" />
+    <Compile Include="Message\RobotModeChangeRequest.cs" />
+    <Compile Include="Message\RobotOperationModeCommand.cs" />
+    <Compile Include="Message\RobotOperationModeCommandReply.cs" />
+    <Compile Include="Message\RobotOperationModeReply.cs" />
+    <Compile Include="Message\RobotOperationModeRequest.cs" />
+    <Compile Include="Message\RobotRouteSettingReply.cs" />
+    <Compile Include="Message\RobotRouteSettingRequest.cs" />
+    <Compile Include="Message\RobotRouteStepInfoReply.cs" />
+    <Compile Include="Message\RobotRouteStepInfoRequest.cs" />
+    <Compile Include="Message\RobotCommandReply.cs" />
+    <Compile Include="Message\RobotCommandRequest.cs" />
+    <Compile Include="Message\RobotStageInfoReport.cs" />
+    <Compile Include="Message\RobotStageInfoRequest.cs" />
+    <Compile Include="Message\RobotStageInfoRequestReply.cs" />
+    <Compile Include="Message\RobotStopRunReasonReply.cs" />
+    <Compile Include="Message\RobotStopRunReasonRequest.cs" />
+    <Compile Include="Message\RobotUnloaderDispatchRuleReply.cs" />
+    <Compile Include="Message\RobotUnloaderDispatchRuleReport.cs" />
+    <Compile Include="Message\RobotUnloaderDispatchRuleRequest.cs" />
+    <Compile Include="Message\SamplingRuleChangeCommand.cs" />
+    <Compile Include="Message\SamplingRuleChangeCommandReply.cs" />
+    <Compile Include="Message\SamplingRuleDataReply.cs" />
+    <Compile Include="Message\SamplingRuleDataRequest.cs" />
+    <Compile Include="Message\SECSFunctionReply.cs" />
+    <Compile Include="Message\SECSFunctionRequest.cs" />
+    <Compile Include="Message\SlotPositionReply.cs" />
+    <Compile Include="Message\SlotPositionRequest.cs" />
+    <Compile Include="Message\StagePositionInfoRequest.cs" />
+    <Compile Include="Message\UnitRunModeChangeReply.cs" />
+    <Compile Include="Message\UnitRunModeChangeRequest.cs" />
+    <Compile Include="Message\VCRStatusChangeReply.cs" />
+    <Compile Include="Message\VCRStatusChangeRequest.cs" />
+    <Compile Include="Message\PPKLocalModeDenseDataReply.cs" />
+    <Compile Include="Message\PPKLocalModeDenseDataRequest.cs" />
+    <Compile Include="Message\RobotWipCreateReply.cs" />
+    <Compile Include="Message\RobotWipCreateRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Message\StagePositionInfoReply.cs" />
+    <Compile Include="Message\UnloadingPortSettingReportRequest.cs" />
+    <Compile Include="Message\UnloadingPortSettingCommandReply.cs" />
+    <Compile Include="Message\UnloadingPortSettingCommandRequest.cs" />
+    <Compile Include="Message\UnloadingPortSettingReportReply.cs" />
+    <Compile Include="Message\RobotRouteCurrentStepChangeReply.cs" />
+    <Compile Include="Message\RobotRouteCurrentStepChangeRequest.cs" />
+    <Compile Include="Message\RobotRouteCurrentStepNoReply.cs" />
+    <Compile Include="Message\RobotRouteCurrentStepNoRequest.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

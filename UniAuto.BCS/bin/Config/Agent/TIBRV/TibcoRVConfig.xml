@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+  <TRVAgent Name="MESAgent" SelfSubject="WHCSOT.G6C.BC.DEV.MES.Listen.{ServerName}" TargetSubject="WHCSOT.G6C.MES.DEV.FAB.PEMsvr" FieldName="xmlData" T3TimeoutSecond="15">
+    <Param Service="8200" Network="" Daemon="tcp:7500" />
+  </TRVAgent>
+  <TRVAgent Name="EDAAgent" SelfSubject="WHCSOT.G6C.BC.DEV.EDA.Listen.{ServerName}" TargetSubject="WHCSOT.G6C.BC.DEV.EDC.ALL.PDS" FieldName="xmlData" T3TimeoutSecond="15">
+    <Param Service="7300" Network="" Daemon="tcp:7500" />
+  </TRVAgent>
+  <TRVAgent Name="EDAAgent2" SelfSubject="WHCSOT.G6C.BC.DEV.EDA.Listen.{ServerName}" TargetSubject="WHCSOT.G6C.BC.PROD.EDC.SubEQP" FieldName="xmlData" T3TimeoutSecond="15">
+    <Param Service="9300" Network="" Daemon="tcp:7500" />
+  </TRVAgent>
+  <TRVAgent Name="OEEAgent" SelfSubject="WHCSOT.G6C.BC.DEV.OEE.Listen.{ServerName}" TargetSubject="WHCSOT.G6C.BC.DEV.OEE" FieldName="xmlData" T3TimeoutSecond="15">
+    <Param Service="7200" Network="" Daemon="tcp:7500" />
+  </TRVAgent>
+  <TRVAgent Name="APCAgent" SelfSubject="WHCSOT.G6C.BC.DEV.APC.Listen.{ServerName}" TargetSubject="WHCSOT.G6C.BC.PROD.FDC" FieldName="xmlData" T3TimeoutSecond="15">
+    <Param Service="7300" Network="" Daemon="tcp:7500" />
+  </TRVAgent>
+</ROOT>

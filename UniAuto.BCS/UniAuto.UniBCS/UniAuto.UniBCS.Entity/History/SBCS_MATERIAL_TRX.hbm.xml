@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.MATERIALHISTORY, UniAuto.UniBCS.Entity" table="SBCS_MATERIAL_TRX">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="NODEID" type="String">
+			<column name="NODEID" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="UNITNO" type="String">
+			<column name="UNITNO" length="10" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="UPDATETIME" type="Timestamp">
+			<column name="UPDATETIME" length="8" sql-type="datetime" not-null="true"/>
+		</property>
+		<property name="MATERIALID" type="String">
+			<column name="MATERIALID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="MATERIALCOUNT" type="String">
+			<column name="MATERIALCOUNT" length="4" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="MATERIALSTATUS" type="String">
+			<column name="MATERIALSTATUS" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="MATERIALTYPE" type="String">
+			<column name="MATERIALTYPE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="OPERATORID" type="String">
+			<column name="OPERATORID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="SLOTNO" type="String">
+			<column name="SLOTNO" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="OLDMATERIALID" type="String">
+			<column name="OLDMATERIALID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PERMITCODE" type="String">
+			<column name="PERMITCODE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+    <property name="TRANSACTIONID" type="String">
+      <column name="TRANSACTIONID" length="50" sql-type="varchar" not-null="false"/>
+    </property>
+	</class>
+</hibernate-mapping>

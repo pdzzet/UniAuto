@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.SECSVARIABLEDATA, UniAuto.UniBCS.Entity" table="SBRM_SECS_VARIABLEDATA">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="LINETYPE" type="String">
+			<column name="LINETYPE" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_SECS_VARIABLEDATA"/>
+		</property>
+		<property name="LINEID" type="String">
+			<column name="LINEID" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_SECS_VARIABLEDATA"/>
+		</property>
+		<property name="SERVERNAME" type="String">
+			<column name="SERVERNAME" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="NODENO" type="String">
+			<column name="NODENO" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_SECS_VARIABLEDATA"/>
+		</property>
+		<property name="DATATYPE" type="String">
+			<column name="DATATYPE" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_SECS_VARIABLEDATA"/>
+		</property>
+		<property name="TRID" type="String">
+			<column name="TRID" length="30" sql-type="varchar" not-null="false" index="UK_SBRM_SECS_VARIABLEDATA"/>
+		</property>
+		<property name="ITEMNAME" type="String">
+			<column name="ITEM_NAME" length="50" sql-type="varchar" not-null="false" index="UK_SBRM_SECS_VARIABLEDATA"/>
+		</property>
+		<property name="ITEMTYPE" type="String">
+			<column name="ITEM_TYPE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="ITEMID" type="String">
+			<column name="ITEM_ID" length="50" sql-type="varchar" not-null="false" index="UK_SBRM_SECS_VARIABLEDATA"/>
+		</property>
+		<property name="DESCRIPTION" type="String">
+			<column name="DESCRIPTION" length="255" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="ITEMSET" type="String">
+			<column name="ITEM_SET" length="1" sql-type="char" not-null="false"/>
+		</property>
+		<property name="SP1" type="String">
+			<column name="SP1" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="SP2" type="String">
+			<column name="SP2" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="SP3" type="String">
+			<column name="SP3" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>

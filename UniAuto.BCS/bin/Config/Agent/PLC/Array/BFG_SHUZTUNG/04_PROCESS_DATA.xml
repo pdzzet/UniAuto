@@ -1,0 +1,8 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.0.6.0-->
+<!--DateTime: 2015-09-23 09:31:16-->
+<itemgroup name="L3ProcessDataItemBlock" profile="CSOT G6 t3 EQP Profile_Array_26_TCBFG_L3_BFG(SHUZTUNG)_20150609 Ver 1.0.xlsx" plcmap="CSOT_G6C_BC_Array_26_TCBFG-PLC Address Map_Ver1.04.xls">
+  <item name="PDB_Smash_SendOut" site="" woffset="3" boffset="0" wpoints="1" bpoints="16" expression="int" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PDB_Smash_Remove" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="int" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="PDB_Cut_Remove" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="int" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

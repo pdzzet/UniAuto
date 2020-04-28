@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.RecipeParameterEntityData, UniAuto.UniBCS.Entity" table="SBRM_RECIPEPARAMETER">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="LINETYPE" type="String">
+			<column name="LINETYPE" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_RECIPEPARAMETER"/>
+		</property>
+		<property name="LINEID" type="String">
+			<column name="LINEID" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_RECIPEPARAMETER"/>
+		</property>
+		<property name="SERVERNAME" type="String">
+			<column name="SERVERNAME" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="NODENO" type="String">
+			<column name="NODENO" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_RECIPEPARAMETER"/>
+		</property>
+		<property name="SVID" type="String">
+			<column name="SVID" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="PARAMETERNAME" type="String">
+			<column name="PARAMETERNAME" length="50" sql-type="varchar" not-null="false" index="UK_SBRM_RECIPEPARAMETER"/>
+		</property>
+		<property name="ITEM" type="String">
+			<column name="ITEM" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="SITE" type="String">
+			<column name="SITE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="DESCRIPTION" type="String">
+			<column name="DESCRIPTION" length="255" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="RANGE" type="String">
+			<column name="RANGE" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="OPERATOR" type="String">
+			<column name="OPERATOR" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="DOTRATIO" type="String">
+			<column name="DOTRATIO" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="REPORTTO" type="String">
+			<column name="REPORTTO" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="REPORTUNITNO" type="Int32">
+			<column name="REPORTUNITNO" length="4" sql-type="int" not-null="false"/>
+		</property>
+		<property name="UNIT" type="String">
+			<column name="UNIT" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="EXPRESSION" type="String">
+			<column name="EXPRESSION" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="WOFFSET" type="String">
+			<column name="WOFFSET" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="WPOINTS" type="String">
+			<column name="WPOINTS" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="BOFFSET" type="String">
+			<column name="BOFFSET" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="BPOINTS" type="String">
+			<column name="BPOINTS" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="JOBDATAITEMNAME" type="String">
+			<column name="JOBDATAITEMNAME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>

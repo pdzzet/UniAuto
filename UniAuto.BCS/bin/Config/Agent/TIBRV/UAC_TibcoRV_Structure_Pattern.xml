@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT>
+  <SpecVersion Ver="1.00"></SpecVersion>
+  <MessageSet>
+    <UserCreate Dir="MES_TO_BC" WaitReply="">
+      <USERID></USERID>
+      <USERNAME></USERNAME>
+      <USERGROUPNAME></USERGROUPNAME>
+      <PASSWORD></PASSWORD>
+      <LOCALENAME></LOCALENAME>
+      <EMAIL></EMAIL>
+      <DEFAULTFACTORYNAME></DEFAULTFACTORYNAME>
+      <DEFAULTAREANAME></DEFAULTAREANAME>
+    </UserCreate>
+    <UserUpdate Dir="MES_TO_BC" WaitReply="">
+      <USERID></USERID>
+      <USERNAME></USERNAME>
+      <USERGROUPNAME></USERGROUPNAME>
+      <PASSWORD></PASSWORD>
+      <LOCALENAME></LOCALENAME>
+      <EMAIL></EMAIL>
+      <DEFAULTFACTORYNAME></DEFAULTFACTORYNAME>
+      <DEFAULTAREANAME></DEFAULTAREANAME>
+    </UserUpdate>
+    <UserDelete Dir="MES_TO_BC" WaitReply="">
+      <USERID></USERID>
+    </UserDelete>
+    <UserChangePassword Dir="MES_TO_BC" WaitReply="">
+      <USERID></USERID>
+      <OLDPASSWORD></OLDPASSWORD>
+      <NEWPASSWORD></NEWPASSWORD>
+    </UserChangePassword>
+  </MessageSet>
+</ROOT>

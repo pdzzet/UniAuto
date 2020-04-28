@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.PositionEntityData, UniAuto.UniBCS.Entity" table="SBRM_POSITION">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="LINEID" type="String">
+			<column name="LINEID" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_POSITION"/>
+		</property>
+		<property name="NODENO" type="String">
+			<column name="NODENO" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_POSITION"/>
+		</property>
+		<property name="UNITTYPE" type="String">
+			<column name="UNITTYPE" length="1" sql-type="varchar" not-null="false"/>
+		</property>
+    <property name="UNITNO" type="String">
+      <column name="UNITNO" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_POSITION"/>
+    </property>
+    <property name="POSITIONNO" type="Int32">
+      <column name="POSITIONNO" length="1" sql-type="int" not-null="true" index="UK_SBRM_POSITION"/>
+    </property>
+		<property name="POSITIONNAME" type="String">
+			<column name="POSITIONNAME" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>

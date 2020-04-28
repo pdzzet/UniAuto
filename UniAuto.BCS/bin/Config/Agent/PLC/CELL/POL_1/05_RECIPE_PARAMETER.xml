@@ -1,0 +1,142 @@
+﻿<!--FileName: 05_RECIPE_PARAMETER.xml-->
+<!--Version: 1.1.8.0-->
+<!--DateTime: 2016-06-22 13:55:46-->
+<itemgroup name="L2RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L2_Loader_Ver 1.0.0_20160415.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="VCR_Use" item="Recipe" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L3RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L3_OHV_Ver 1.0.1_20160518.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="panellength" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="panelwidth" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="panelthickness" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L4_PCN_Ver 1.0.2_20160621.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECPID" item="RECPID" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECPNA" item="RECPNA" site="" woffset="6" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="RECPDT" item="RECPDT" site="" woffset="16" boffset="0" wpoints="7" bpoints="112" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="C_R_1_T_Speed" item="ChipRemove1Information" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_T_Speed" item="ChipRemove2Information" site="" woffset="24" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_Z1_Off_Set" item="ChipRemove1Information" site="" woffset="26" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_1_Z2_Off_Set" item="ChipRemove1Information" site="" woffset="28" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_Z1_Off_Set" item="ChipRemove2Information" site="" woffset="30" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="C_R_2_Z2_Off_Set" item="ChipRemove2Information" site="" woffset="32" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_1U_CDA_Press" item="AirKnifePress" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_1L_CDA_Press" item="AirKnifePress" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_2U_CDA_Press" item="AirKnifePress" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_2L_CDA_Press" item="AirKnifePress" site="" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_3U_CDA_Press" item="AirKnifePress" site="" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+  <item name="A_K_3L_CDA_Press" item="AirKnifePress" site="" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="/" operand="1000" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L5_PAM_Ver 1.0.2_20160603.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="PANEL_X_LENGTH" item="PANEL_X_LENGTH" site="" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PANEL_Y_LENGTH" item="PANEL_Y_LENGTH" site="" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="PANEL_THICKNESS" item="PANEL_THICKNESS" site="" woffset="9" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_Attach_Use" item="CF_Attach_Use" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_Panel_CAM_USE" item="CF_Panel_CAM_USE" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_CAM_USE" item="CF_POL_CAM_USE" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Two_Sheet_Inspection_use" item="CF_POL_Two_Sheet_Inspection_use" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_X_LENGTH" item="CF_POL_X_LENGTH" site="" woffset="15" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Y_LENGTH" item="CF_POL_Y_LENGTH" site="" woffset="17" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_THICKNESS" item="CF_POL_THICKNESS" site="" woffset="19" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_ATTACH_X_LENGTH" item="CF_POL_ATTACH_X_LENGTH" site="" woffset="21" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_ATTACH_Y_LENGTH" item="CF_POL_ATTACH_Y_LENGTH" site="" woffset="23" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_ATTACH_theta_" item="CF_POL_ATTACH_theta_" site="" woffset="25" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attach_Offset_X" item="CF_POL_Attach_Offset_X" site="" woffset="27" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attach_Offset_Y" item="CF_POL_Attach_Offset_Y" site="" woffset="29" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attach_Offset_theta" item="CF_POL_Attach_Offset_theta" site="" woffset="31" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Peeling_Speed1" item="CF_POL_Peeling_Speed1" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Peeling_Speed2" item="CF_POL_Peeling_Speed2" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Peeling_Speed3" item="CF_POL_Peeling_Speed3" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Peeling_Speed_Change_Distance_1_to_2" item="CF_POL_Peeling_Speed_Change_Distance_1_to_2" site="" woffset="36" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Peeling_Speed_Change_Distance_2_to_3" item="CF_POL_Peeling_Speed_Change_Distance_2_to_3" site="" woffset="38" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Peeling_Delay_Time" item="CF_POL_Peeling_Delay_Time" site="" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Transfer_Speed" item="CF_POL_Transfer_Speed" site="" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attach_Press1" item="CF_POL_Attach_Press1" site="" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attach_Press2" item="CF_POL_Attach_Press2" site="" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attach_Press3" item="CF_POL_Attach_Press3" site="" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attach_Begin_Gap" item="CF_POL_Attach_Begin_Gap" site="" woffset="45" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attacn_End_Gap" item="CF_POL_Attacn_End_Gap" site="" woffset="47" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attacn_Begin_Speed_1" item="CF_POL_Attacn_Begin_Speed_1" site="" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attacn_Begin_Speed_2" item="CF_POL_Attacn_Begin_Speed_2" site="" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attacn_Begin_Speed_3" item="CF_POL_Attacn_Begin_Speed_3" site="" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attacn_Speed_Change_Distance_1_to_2" item="CF_POL_Attacn_Speed_Change_Distance_1_to_2" site="" woffset="52" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_POL_Attacn_Speed_Change_Distance_2_to_3" item="CF_POL_Attacn_Speed_Change_Distance_2_to_3" site="" woffset="54" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="CF_Attach_Delay_Time" item="CF_Attach_Delay_Time" site="" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_Attach_Use" item="TFT_Attach_Use" site="" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_Panel_CAM_USE" item="TFT_Panel_CAM_USE" site="" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_CAM_USE" item="TFT_POL_CAM_USE" site="" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Two_Sheet_Inspection_use" item="TFT_POL_Two_Sheet_Inspection_use" site="" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_X_LENGTH" item="TFT_POL_X_LENGTH" site="" woffset="61" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Y_LENGTH" item="TFT_POL_Y_LENGTH" site="" woffset="63" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_THICKNESS" item="TFT_POL_THICKNESS" site="" woffset="65" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_ATTACH_X_LENGTH" item="TFT_POL_ATTACH_X_LENGTH" site="" woffset="67" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_ATTACH_Y_LENGTH" item="TFT_POL_ATTACH_Y_LENGTH" site="" woffset="69" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_ATTACH_theta_" item="TFT_POL_ATTACH_theta_" site="" woffset="71" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attach_Offset_X" item="TFT_POL_Attach_Offset_X" site="" woffset="73" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attach_Offset_Y" item="TFT_POL_Attach_Offset_Y" site="" woffset="75" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attach_Offset_theta" item="TFT_POL_Attach_Offset_theta" site="" woffset="77" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Peeling_Speed1" item="TFT_POL_Peeling_Speed1" site="" woffset="79" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Peeling_Speed2" item="TFT_POL_Peeling_Speed2" site="" woffset="80" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Peeling_Speed3" item="TFT_POL_Peeling_Speed3" site="" woffset="81" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Peeling_Speed_Change_Distance_1_to_2" item="TFT_POL_Peeling_Speed_Change_Distance_1_to_2" site="" woffset="82" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Peeling_Speed_Change_Distance_2_to_3" item="TFT_POL_Peeling_Speed_Change_Distance_2_to_3" site="" woffset="84" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Peeling_Delay_Time" item="TFT_POL_Peeling_Delay_Time" site="" woffset="86" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Transfer_Speed" item="TFT_POL_Transfer_Speed" site="" woffset="87" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attach_Press1" item="TFT_POL_Attach_Press1" site="" woffset="88" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attach_Press2" item="TFT_POL_Attach_Press2" site="" woffset="89" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attach_Press3" item="TFT_POL_Attach_Press3" site="" woffset="90" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attach_Begin_Gap" item="TFT_POL_Attach_Begin_Gap" site="" woffset="91" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attacn_End_Gap" item="TFT_POL_Attacn_End_Gap" site="" woffset="93" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attacn_Begin_Speed_1" item="TFT_POL_Attacn_Begin_Speed_1" site="" woffset="95" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attacn_Begin_Speed_2" item="TFT_POL_Attacn_Begin_Speed_2" site="" woffset="96" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attacn_Begin_Speed_3" item="TFT_POL_Attacn_Begin_Speed_3" site="" woffset="97" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attacn_Speed_Change_Distance_1_to_2" item="TFT_POL_Attacn_Speed_Change_Distance_1_to_2" site="" woffset="98" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_POL_Attacn_Speed_Change_Distance_2_to_3" item="TFT_POL_Attacn_Speed_Change_Distance_2_to_3" site="" woffset="100" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="10000" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+  <item name="TFT_Attach_Delay_Time" item="TFT_Attach_Delay_Time" site="" woffset="102" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" dailychecktype="Recipe" />
+</itemgroup>
+<itemgroup name="L6RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L6_ACV_Ver 1.0.1_20160621.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#1_Recipe_Temp" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#1_Recipe_Pressure" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#1_Recipe_Time" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#2_Recipe_Temp" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#2_Recipe_Pressure" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#2_Recipe_Time" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#3_Recipe_Temp" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#3_Recipe_Pressure" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#3_Recipe_Time" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#4_Recipe_Temp" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#4_Recipe_Pressure" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#4_Recipe_Time" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#5_Recipe_Temp" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#5_Recipe_Pressure" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="CH#5_Recipe_Time" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Panel_Length" site="" woffset="20" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+  <item name="Panel_Wide" site="" woffset="22" boffset="0" wpoints="2" bpoints="32" expression="LONG" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L7_LOI_Ver 1.0.0.20160331.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Panel_Size" item="1" site="1" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="MarkToMark" item="1" site="2" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="ITN" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L8RecipeParameterRequestReplyBlock" profile="WHCSOT G6C t3 EQP Profile_Cell_05_CCPOL_1_L8_Unloader_Ver 1.0.0_20160415.xlsx" plcmap="WHCSOT_G6C_BC_CELL_05_CCPOL-PLC Address Map_Ver1.09.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Port No" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="VCR_Use" item="Recipe" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

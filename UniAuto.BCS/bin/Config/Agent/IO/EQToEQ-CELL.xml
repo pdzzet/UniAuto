@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<line type="CRP">
+		<event name="L2_B_RunModeChangeRequest(LDtoCRP#1)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L2_B_RunModeChangeRequest(LDtoCRP#2)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RunModeChangeRequestReply(CRP#1toLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_RunModeChangeRequestReply(CRP#2toLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_GlassExistRequestReply(CRP#1toLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_GlassExistRequestReply(CRP#2toLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+	</line>
+	<line type="GAP">
+		<event name="L2_B_RunModeChangeRequest(LDtoGAP)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode(LDtoGAP)</item>
+			</itemlist>
+		</event>
+		<event name="L2_B_RunModeChangeRequest(LDtoGMI)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode(LDtoGMI)</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RunModeChangeRequestReply(GAPtoLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_RunModeChangeRequestReply(GMItoLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_GlassExistRequestReply(GAPtoLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_GlassExistRequestReply(GMItoLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+	</line>
+	<line type="ODF">
+		<event name="L3_B_BOCENGModeGlassCountReport">
+			<itemlist>
+				<item>BOCENGModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L7_B_SDPENGModeGlassCountReport">
+			<itemlist>
+				<item>SDPENGModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L13_B_LCDENGModeGlassCountReport">
+			<itemlist>
+				<item>LCDENGModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L14_B_VACENGModeGlassCountReport">
+			<itemlist>
+				<item>VACENGModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L16_B_SUVENGModeGlassCountReport">
+			<itemlist>
+				<item>SUVENGModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L13_B_LCDCQLTModeGlassCountReport">
+			<itemlist>
+				<item>LCDCQLTModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L14_VACCQLTModeGlassCountReport">
+			<itemlist>
+				<item>VACCQLTModeGlassCount</item>
+			</itemlist>
+		</event>
+    <event name="L16_B_SUVCQLTModeGlassCountReport">
+      <itemlist>
+        <item>SUVCQLTModeGlassCount</item>
+      </itemlist>
+    </event>
+    <event name="L18_B_LCICQLTModeGlassCountReport">
+      <itemlist>
+        <item>LCICQLTModeGlassCount</item>
+      </itemlist>
+    </event>
+		<event name="L13_B_PairedCFGlassIDRequest(LCDtoODT3)">
+			<itemlist>
+				<item>TFT/CFGlassID</item>
+			</itemlist>
+		</event>
+    <event name="L10_B_PairedCFGlassIDRequestReply(ODT3toLCD)">
+      <itemlist>
+        <item>TFT/CFGlassID</item>
+      </itemlist>
+    </event>
+	</line>
+	<line type="PDR">
+		<event name="L2_B_RunModeChangeRequest(LDtoPDR#01)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L2_B_RunModeChangeRequest(LDtoPDR#02)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RunModeChangeRequestReply(PDR#01toLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_RunModeChangeRequestReply(PDR#02toLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_GlassExistRequestReply(PDR#01toLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_GlassExistRequestReply(PDR#02toLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+	</line>
+	<line type="PIL">
+		<event name="L9_B_PINToPIT2ReviewResultReport">
+			<itemlist>
+				<item>CassetteSequenceNo</item>
+				<item>JobSequenceNo</item>
+				<item>GlassID</item>
+				<item>NewJudge</item>
+				<item>BackCrackFlag</item>
+				<item>BlockOXInformation</item>
+				<item>OperatorID</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_BPCENGModeGlassCountReport">
+			<itemlist>
+				<item>BPCENGModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_BPCCQLTModeGlassCountReport">
+			<itemlist>
+				<item>BPCCQLTModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L6_B_PICCQLTModeGlassCountReport">
+			<itemlist>
+				<item>PICENGModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L6_B_PICENGModeGlassCountReport">
+			<itemlist>
+				<item>PICCQLTModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L7_B_PPOENGModeGlassCountReport">
+			<itemlist>
+				<item>PPOENGModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L7_B_PPOCQLTModeGlassCountReport">
+			<itemlist>
+				<item>PPOCQLTModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L11_B_PMOENGModeGlassCountReport">
+			<itemlist>
+				<item>PMOENGModeGlassCount</item>
+			</itemlist>
+		</event>
+		<event name="L11_B_PMOCQLTModeGlassCountReport">
+			<itemlist>
+				<item>PMOCQLTModeGlassCount</item>
+			</itemlist>
+		</event>
+    <event name="L6_B_ITODummyRequest(PICtoPIB)">
+      <itemlist>
+        <item>ITODummyRequestCount(PICtoPIB)</item>
+      </itemlist>
+    </event>
+    <event name="L4_B_ITODummyRequest(PIBtoLD)">
+      <itemlist>
+        <item>ITODummyRequestCount(PIBtoLD)</item>
+      </itemlist>
+    </event>
+    <event name="L2_B_ITODummyRequestReply(LDtoPIB)">
+      <itemlist>
+        <item>ITODummyRequestReturnCode(LDtoPIB)</item>
+      </itemlist>
+    </event>
+	</line>
+	<line type="PTH">
+		<event name="L2_B_RunModeChangeRequest(LDtoPTH)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RunModeChangeRequestReply(PTHtoLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_GlassExistRequestReply(PTHtoLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+	</line>
+  <line type="PCK">
+    <event name="L2_B_RunModeChangeRequest(LDtoPCK)">
+      <itemlist>
+        <item>RunModeChangeRequestRunMode</item>
+      </itemlist>
+    </event>
+    <event name="L3_B_RunModeChangeRequestReply(PCKtoLD)">
+      <itemlist>
+        <item>RunModeChangeRequestReplyReturnCode</item>
+      </itemlist>
+    </event>
+  </line>
+	<line type="RWK">
+		<event name="L2_B_RunModeChangeRequest(LDtoPCN)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L2_B_RunModeChangeRequest(LDtoPAM)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RunModeChangeRequest(PCNtoLD)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RunModeChangeRequest(PCNtoPAM)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_RunModeChangeRequest(PAMtoLD)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_RunModeChangeRequest(PAMtoPCN)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RunModeChangeRequestReply(PCNtoLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_RunModeChangeRequestReply(PAMtoLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L2_B_RunModeChangeRequestReply(LDtoPCN)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_RunModeChangeRequestReply(PAMtoPCN)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L2_B_RunModeChangeRequestReply(LDtoPAM)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RunModeChangeRequestReply(PCNtoPAM)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RecipeChangeRequestReply(PCNtoLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_RecipeChangeRequestReply(PAMtoLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L5_B_RecipeChangeRequestReply(ACVtoLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L2_B_RecipeChangeRequestReply(LDtoPCN)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_RecipeChangeRequestReply(PAMtoPCN)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L5_B_RecipeChangeRequestReply(ACVtoPCN)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L2_B_RecipeChangeRequestReply(LDtoPAM)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RecipeChangeRequestReply(PCNtoPAM)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L5_B_RecipeChangeRequestReply(ACVtoPAM)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>	
+		<event name="L2_B_RecipeChangeRequestReply(LDtoACV)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RecipeChangeRequestReply(PCNtoACV)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L4_B_RecipeChangeRequestReply(PAMtoACV)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+	</line>
+	<line type="RWT">
+		<event name="L2_B_RunModeChangeRequest(LDtoRWT)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RunModeChangeRequestReply(RWTtoLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_GlassExistRequestReply(RWTtoLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+	</line>
+	<line type="TAM">
+		<event name="L2_B_RunModeChangeRequest(LDtoTAM)">
+			<itemlist>
+				<item>RunModeChangeRequestRunMode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_RunModeChangeRequestReply(TAMtoLD)">
+			<itemlist>
+				<item>RunModeChangeRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+		<event name="L3_B_GlassExistRequestReply(TAMtoLD)">
+			<itemlist>
+				<item>GlassExistRequestReplyReturnCode</item>
+			</itemlist>
+		</event>
+	</line>
+</config>

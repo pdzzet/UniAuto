@@ -1,0 +1,1829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<secs>
+  <message name="S1F0_E" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="1" func="0" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S1F0_H" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="1" func="0" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S1F1_E" agent="" node="" tid="" abort="False" caption="Are You There Request">
+    <header stream="1" func="1" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S1F1_H" agent="" node="" tid="" abort="False" caption="Are You There Request">
+    <header stream="1" func="1" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S1F2_E" agent="" node="" tid="" abort="False" caption="Online Data">
+    <header stream="1" func="2" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <MDLN name="MDLN" type="A" len="6" fixlen="False" />
+        <SOFTREV name="SOFTREV" type="A" len="6" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F2_H" agent="" node="" tid="" abort="False" caption="Online Data">
+    <header stream="1" func="2" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="0" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F5_H" agent="" node="" tid="" abort="False" caption="Formatted Status Request">
+    <header stream="1" func="5" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <SFCD name="SFCD" type="A" len="2" fixlen="True" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F6_01_E" agent="" node="" tid="" abort="False" caption="SFCD 01_Equipment Information Inquire">
+    <header stream="1" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="SFCD" keyvalue="01" keyposition="2">
+      <array1 name="List" type="L" len="10">
+        <SFCD name="SFCD" type="A" len="2" fixlen="False" />
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <CTRLMODE name="CTRLMODE" type="A" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <RECOVERY name="RECOVERY" type="A" len="1" fixlen="False" />
+        <INLINE name="INLINE" type="A" len="1" fixlen="False" />
+        <PPID name="PPID" type="A" len="16" fixlen="False" />
+        <GLASS_COUNT name="GLASS_COUNT" type="A" len="4" fixlen="False" />
+        <array2 name="List (Sub Equipment Count)" type="L" len="?">
+          <array3 name="List (Sub Equipment Info)" type="L" len="11">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <SUBEQPMODE name="SUBEQPMODE" type="A" len="4" fixlen="False" />
+            <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+            <PPID name="PPID" type="A" len="16" fixlen="False" />
+            <PPVER name="PPVER" type="A" len="14" fixlen="False" />
+            <GLASS_COUNT name="GLASS_COUNT" type="A" len="4" fixlen="False" />
+            <INLINE name="INLINE" type="A" len="1" fixlen="False" />
+            <AUTO name="AUTO" type="A" len="1" fixlen="False" />
+            <MANUAL name="MANUAL" type="A" len="1" fixlen="False" />
+            <ALID name="ALID" type="U4" len="1" fixlen="False" />
+            <ALTX name="ALTX" type="A" len="80" fixlen="False" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F6_02_E" agent="" node="" tid="" abort="False" caption="SFCD 02_APC Important Utility Facility Data Inquire">
+    <header stream="1" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="SFCD" keyvalue="02" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <SFCD name="SFCD" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List (Eqp Count or SubEqp Count)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCNAME name="DCNAME" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F6_04_E" agent="" node="" tid="" abort="False" caption="SFCD 04_APC Normal Utility Facility Data Inquire">
+    <header stream="1" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="SFCD" keyvalue="04" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <SFCD name="SFCD" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List (Eqp Count or SubEqp Count)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCNAME name="DCNAME" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F6_05_E" agent="" node="" tid="" abort="False" caption="SFCD 05_Utility Data Inquire">
+    <header stream="1" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="SFCD" keyvalue="05" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <SFCD name="SFCD" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List (Eqp Count or SubEqp Count)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCNAME name="DCNAME" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F6_06_E" agent="" node="" tid="" abort="False" caption="SFCD 06_Special Data Inquire">
+    <header stream="1" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="SFCD" keyvalue="06" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <SFCD name="SFCD" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List (Eqp Count or SubEqp Count)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCNAME name="DCNAME" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F6_03_E" agent="" node="" tid="" abort="False" caption="SFCD 03_Material Data Inquire">
+    <header stream="1" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="SFCD" keyvalue="03" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <SFCD name="SFCD" type="A" len="2" fixlen="False" />
+        <array2 name="List (number of material slots)" type="L" len="?">
+          <array3 name="List" type="L" len="3">
+            <MATERIALSL name="MATERIALSL" type="A" len="2" fixlen="False" />
+            <MATERIALID name="MATERIALID" type="A" len="30" fixlen="False" />
+            <MATERIALST name="MATERIALST" type="A" len="1" fixlen="False" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F6_07_E" agent="" node="" tid="" abort="False" caption="SFCD 07_APC Important Utility Facility Data Inquire for ID">
+    <header stream="1" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="SFCD" keyvalue="07" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <SFCD name="SFCD" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List (Eqp Count or SubEqp Count)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCID name="DCID" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F6_08_E" agent="" node="" tid="" abort="False" caption="SFCD 08_APC Normal Utility Facility Data Inquire for ID">
+    <header stream="1" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="SFCD" keyvalue="08" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <SFCD name="SFCD" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List (Eqp Count or SubEqp Count)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCID name="DCID" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F6_09_E" agent="" node="" tid="" abort="False" caption="SFCD 09_Utility Data Inquire for ID">
+    <header stream="1" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="SFCD" keyvalue="09" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <SFCD name="SFCD" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List (Eqp Count or SubEqp Count)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCID name="DCID" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F6_10_E" agent="" node="" tid="" abort="False" caption="SFCD 10_Special Data Inquire for ID">
+    <header stream="1" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="SFCD" keyvalue="10" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <SFCD name="SFCD" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List (Eqp Count or SubEqp Count)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCID name="DCID" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F13_E" agent="" node="" tid="" abort="False" caption="Establish Communications Request">
+    <header stream="1" func="13" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <MDLN name="MDLN" type="A" len="6" fixlen="False" />
+        <SOFTREV name="SOFTREV" type="A" len="6" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F13_H" agent="" node="" tid="" abort="False" caption="Establish Communications Request">
+    <header stream="1" func="13" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="0" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F14_H" agent="" node="" tid="" abort="False" caption="Establish Communications Request Acknowledge">
+    <header stream="1" func="14" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <COMMACK name="COMMACK" type="B" len="1" fixlen="False" />
+        <array2 name="List" type="L" len="0" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F14_E" agent="" node="" tid="" abort="False" caption="Establish Communications Request Acknowledge">
+    <header stream="1" func="14" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <COMMACK name="COMMACK" type="B" len="1" fixlen="False" />
+        <array2 name="List" type="L" len="2">
+          <MDLN name="MDLN" type="A" len="6" fixlen="False" />
+          <SOFTREV name="SOFTREV" type="A" len="6" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F15_H" agent="" node="" tid="" abort="False" caption="Offline Request">
+    <header stream="1" func="15" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S1F16_E" agent="" node="" tid="" abort="False" caption="Offline Acknowledge">
+    <header stream="1" func="16" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <OFLACK name="OFLACK" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S1F17_H" agent="" node="" tid="" abort="False" caption="Online Request">
+    <header stream="1" func="17" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S1F18_E" agent="" node="" tid="" abort="False" caption="Online Acknowledge">
+    <header stream="1" func="18" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ONLACK name="ONLACK" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F0_E" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="2" func="0" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S2F0_H" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="2" func="0" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S2F15_H" agent="" node="" tid="" abort="False" caption="New Equipment Constant Send">
+    <header stream="2" func="15" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="?">
+        <array2 name="List" type="L" len="2">
+          <ECID name="ECID" type="U4" len="1" fixlen="False" />
+          <ECV name="ECV" type="A" len="16" fixlen="True" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F16_E" agent="" node="" tid="" abort="False" caption="New Equipment Constant Acknowledge">
+    <header stream="2" func="16" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <EAC name="EAC" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F17_E" agent="" node="" tid="" abort="True" caption="Date and Time Request">
+    <header stream="2" func="17" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S2F18_H" agent="" node="" tid="" abort="False" caption="Date and Time Data">
+    <header stream="2" func="18" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <DATETIME name="DATETIME" type="A" len="14" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F19_H" agent="" node="" tid="" abort="False" caption="Data Set Command">
+    <header stream="2" func="19" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="?">
+        <array2 name="List" type="L" len="5">
+          <FUNCTIONNAME name="FUNCTIONNAME" type="A" len="4" fixlen="False" />
+          <SUBFUNCTIONCODE name="SUBFUNCTIONCODE" type="A" len="2" fixlen="False" />
+          <USEFLAG name="USEFLAG" type="A" len="1" fixlen="False" />
+          <REPORTFREQUENCY name="REPORTFREQUENCY" type="A" len="8" fixlen="True" />
+          <array3 name="List" type="L" len="?">
+            <DATANAME name="DATANAME" type="A" len="30" fixlen="True" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F20_E" agent="" node="" tid="" abort="False" caption="Data Set Command Acknowledge">
+    <header stream="2" func="20" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACK name="ACK" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F21_H" agent="" node="" tid="" abort="False" caption="Data Set Command for ID">
+    <header stream="2" func="21" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="?">
+        <array2 name="List" type="L" len="5">
+          <FUNCTIONNAME name="FUNCTIONNAME" type="A" len="4" fixlen="False" />
+          <SUBFUNCTIONCODE name="SUBFUNCTIONCODE" type="A" len="2" fixlen="False" />
+          <USEFLAG name="USEFLAG" type="A" len="1" fixlen="False" />
+          <REPORTFREQUENCY name="REPORTFREQUENCY" type="A" len="8" fixlen="True" />
+          <array3 name="List" type="L" len="?">
+            <DATAID name="DATAID" type="A" len="30" fixlen="True" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F22_E" agent="" node="" tid="" abort="False" caption="Data Set Command for ID Acknowledge">
+    <header stream="2" func="22" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACK name="ACK" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F23_H" agent="" node="" tid="" abort="False" caption="Data Item Mapping Table Request">
+    <header stream="2" func="23" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S2F24_E" agent="" node="" tid="" abort="False" caption="Data Item Mapping Table">
+    <header stream="2" func="24" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="?">
+        <array2 name="List" type="L" len="2">
+          <DATANAME name="DATANAME" type="A" len="30" fixlen="False" />
+          <DATAID name="DATAID" type="A" len="30" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F25_E" agent="" node="" tid="" abort="False" caption="Loopback Diagnostic Request">
+    <header stream="2" func="25" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ABS name="ABS" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F25_H" agent="" node="" tid="" abort="False" caption="Loopback Diagnostic Request">
+    <header stream="2" func="25" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ABS name="ABS" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F26_E" agent="" node="" tid="" abort="False" caption="Loopback Diagnostic Data">
+    <header stream="2" func="26" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ABS name="ABS" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F26_H" agent="" node="" tid="" abort="False" caption="Loopback Diagnostic Data">
+    <header stream="2" func="26" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ABS name="ABS" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F29_H" agent="" node="" tid="" abort="False" caption="Equipment Constant Namlist Request">
+    <header stream="2" func="29" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="?">
+        <ECID name="ECID" type="U4" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F30_E" agent="" node="" tid="" abort="False" caption="Equipment Constant Namelist">
+    <header stream="2" func="30" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="?">
+        <array2 name="List" type="L" len="6">
+          <ECID name="ECID" type="U4" len="1" fixlen="False" />
+          <ECNAME name="ECNAME" type="A" len="16" fixlen="False" />
+          <ECMIN name="ECMIN" type="A" len="16" fixlen="False" />
+          <ECMAX name="ECMAX" type="A" len="16" fixlen="False" />
+          <ECDEF name="ECDEF" type="A" len="16" fixlen="False" />
+          <UNITS name="UNITS" type="A" len="16" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F31_H" agent="" node="" tid="" abort="False" caption="Date and Time Set Request">
+    <header stream="2" func="31" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <DATETIME name="DATETIME" type="A" len="14" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F32_E" agent="" node="" tid="" abort="False" caption="Date and Time Set Acknowledge">
+    <header stream="2" func="32" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <TIACK name="TIACK" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F41_H" agent="" node="" tid="" abort="False" caption="Host Command Send">
+    <header stream="2" func="41" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <RCMD name="RCMD" type="A" len="10" fixlen="True" />
+        <array2 name="List" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <CPNAME name="CPNAME" type="A" len="16" fixlen="True" />
+            <CPVAL name="CPVAL" type="A" len="10" fixlen="True" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F42_E" agent="" node="" tid="" abort="False" caption="Host Command Acknowledge">
+    <header stream="2" func="42" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <HCACK name="HCACK" type="B" len="1" fixlen="False" />
+        <array2 name="List" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <CPNAME name="CPNAME" type="A" len="16" fixlen="False" />
+            <CPACK name="CPACK" type="B" len="1" fixlen="False" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F103_H" agent="" node="" tid="" abort="False" caption="LotStart Inform Send">
+    <header stream="2" func="103" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="3">
+        <LOTID name="LOTID" type="A" len="20" fixlen="True" />
+        <GLASSID name="GLASSID" type="A" len="20" fixlen="True" />
+        <PPID name="PPID" type="A" len="16" fixlen="True" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F104_E" agent="" node="" tid="" abort="False" caption="LotStart Inform Acknowledge">
+    <header stream="2" func="104" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="1">
+        <ACKC5 name="ACKC5" type="B" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F105_H" agent="" node="" tid="" abort="False" caption="LotEnd Inform Send">
+    <header stream="2" func="105" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="4">
+        <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="True" />
+        <SLOT name="SLOT" type="A" len="3" fixlen="True" />
+        <GLASSID name="GLASSID" type="A" len="20" fixlen="True" />
+        <PPID name="PPID" type="A" len="16" fixlen="True" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F106_E" agent="" node="" tid="" abort="False" caption="LotEnd Inform Acknowledge">
+    <header stream="2" func="106" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="1">
+        <ACKC5 name="ACKC5" type="B" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F111_H" agent="" node="" tid="" abort="False" caption="Forced Clean Out Command Send">
+    <header stream="2" func="111" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="True" />
+        <CLEANOUT name="CLEANOUT" type="A" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F112_E" agent="" node="" tid="" abort="False" caption="Forced Clean Out Command Acknowledge">
+    <header stream="2" func="112" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="1">
+        <ACKC name="ACKC" type="B" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F115_H" agent="" node="" tid="" abort="False" caption="Glass Data Download">
+    <header stream="2" func="115" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="5">
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="True" />
+        <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="True" />
+        <CSTOPERMODE name="CSTOPERMODE" type="A" len="1" fixlen="True" />
+        <SUBSTRATETYPE name="SUBSTRATETYPE" type="A" len="1" fixlen="True" />
+        <array2 name="List" type="L" len="1">
+          <array3 name="List" type="L" len="8">
+            <SLOT name="SLOT" type="A" len="3" fixlen="True" />
+            <GLASSID name="GLASSID" type="A" len="20" fixlen="True" />
+            <ALLPPID name="ALLPPID" type="A" len="50" fixlen="True" />
+            <PRODUCT name="PRODUCT" type="A" len="16" fixlen="True" />
+            <JOBTYPE name="JOBTYPE" type="A" len="1" fixlen="True" />
+            <DUMMYTYPE name="DUMMYTYPE" type="A" len="1" fixlen="True" />
+            <JOBJUDGE name="JOBJUDGE" type="A" len="1" fixlen="True" />
+            <JOBGRADE name="JOBGRADE" type="A" len="4" fixlen="True" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F116_E" agent="" node="" tid="" abort="False" caption="Glass Data Download Acknowledge">
+    <header stream="2" func="116" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="1">
+        <ACKC name="ACKC" type="B" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F117_H" agent="" node="" tid="" abort="False" caption="Glass Erase Recovery Information Send">
+    <header stream="2" func="117" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="5">
+        <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="True" />
+        <SLOT name="SLOT" type="A" len="3" fixlen="True" />
+        <GLASSID name="GLASSID" type="A" len="20" fixlen="True" />
+        <ER name="ER" type="A" len="1" fixlen="False" />
+        <LASTGLSFLAG name="LASTGLSFLAG" type="A" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F118_E" agent="" node="" tid="" abort="False" caption="Glass Erase Recovery Information Acknowledge">
+    <header stream="2" func="118" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="1">
+        <ACKC name="ACKC" type="B" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F119_H" agent="" node="" tid="" abort="False" caption="Equipment Mode Change Command Send">
+    <header stream="2" func="119" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="3">
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="True" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="True" />
+        <array2 name="List" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQPID name="SUBEQPID" type="A" len="16" fixlen="True" />
+            <SUBMODE name="SUBMODE" type="A" len="4" fixlen="True" />
+          </array3>
+        </array2>        
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F120_E" agent="" node="" tid="" abort="False" caption="Equipment Mode Change Command Acknowledge">
+    <header stream="2" func="120" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="1">
+        <ACKC name="ACKC" type="B" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F121_H" agent="" node="" tid="" abort="False" caption="APC Data Download Command Send">
+    <header stream="2" func="121" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="True" />
+        <array2 name="List" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <APCNAME name="APCNAME" type="A" len="16" fixlen="True" />
+            <APCVALUE name="APCVALUE" type="A" len="16" fixlen="True" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F122_E" agent="" node="" tid="" abort="False" caption="APC Data Download Command Acknowledge">
+    <header stream="2" func="122" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="1">
+        <ACKC name="ACKC" type="B" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F123_H" agent="" node="" tid="" abort="False" caption="Set Glass Recipe Group End Flag Send">
+    <header stream="2" func="123" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="4">
+        <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="True" />
+        <SLOT name="SLOT" type="A" len="3" fixlen="True" />
+        <GLASSID name="GLASSID" type="A" len="20" fixlen="True" />
+        <RECIPEENDFLAG name="RECIPEENDFLAG" type="A" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S2F124_E" agent="" node="" tid="" abort="False" caption="Set Glass Recipe Group End Flag Acknowledge">
+    <header stream="2" func="124" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="1">
+        <ACKC name="ACKC" type="B" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S5F0_E" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="5" func="0" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S5F0_H" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="5" func="0" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S5F1_E" agent="" node="" tid="" abort="True" caption="Alarm Report Send">
+    <header stream="5" func="1" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="5">
+        <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+        <ALCD name="ALCD" type="B" len="1" fixlen="False" />
+        <ALID name="ALID" type="U4" len="1" fixlen="False" />
+        <ALTX name="ALTX" type="A" len="80" fixlen="False" />
+        <ALLEVEL name="ALLEVEL" type="A" len="1" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S5F2_H" agent="" node="" tid="" abort="False" caption="Alarm Report Acknowledge">
+    <header stream="5" func="2" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACKC5 name="ACKC5" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S5F5_H" agent="" node="" tid="" abort="False" caption="List Alarm Request">
+    <header stream="5" func="5" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S5F6_E" agent="" node="" tid="" abort="False" caption="List Alarm Data">
+    <header stream="5" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="?">
+        <array2 name="List" type="L" len="4">
+          <ALCD name="ALCD" type="B" len="1" fixlen="False" />
+          <ALID name="ALID" type="U4" len="1" fixlen="False" />
+          <ALTX name="ALTX" type="A" len="80" fixlen="False" />
+          <ALLEVEL name="ALLEVEL" type="A" len="1" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F0_E" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="6" func="0" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S6F0_H" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="6" func="0" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S6F3_01_E" agent="" node="" tid="" abort="True" caption="DVID 01_Glass Process Data Information Report">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="01" keyposition="2">
+      <array1 name="List" type="L" len="6">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <OPERATIONID name="OPERATIONID" type="A" len="16" fixlen="False" />
+        <array2 name="List" type="L" len="9">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+          <PPID name="PPID" type="A" len="16" fixlen="False" />
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <UNIQUEID name="UNIQUEID" type="A" len="6" fixlen="False" />
+          <PPVER name="PPVER" type="A" len="14" fixlen="False" />
+          <CARRIERID name="CARRIERID" type="A" len="10" fixlen="False" />
+          <PROCESS_RESULT name="PROCESS_RESULT" type="A" len="1" fixlen="False" />
+          <array3 name="List" type="L" len="?">
+            <array4 name="List" type="L" len="3">
+              <PDCNAME name="PDCNAME" type="A" len="30" fixlen="False" />
+              <PDCTYPE name="PDCTYPE" type="A" len="3" fixlen="False" />
+              <PDCVALUE name="PDCVALUE" type="A" len="32" fixlen="False" />
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F3_02_E" agent="" node="" tid="" abort="True" caption="DVID 02_Lot Process Data Information Report">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="02" keyposition="2">
+      <array1 name="List" type="L" len="6">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <OPERATIONID name="OPERATIONID" type="A" len="16" fixlen="False" />
+        <array2 name="List" type="L" len="6">
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <UNIQUEID name="UNIQUEID" type="A" len="6" fixlen="False" />
+          <LOTSTARTTIME name="LOTSTARTTIME" type="A" len="14" fixlen="False" />
+          <LOTENDTIME name="LOTENDTIME" type="A" len="14" fixlen="False" />
+          <PPVER name="PPVER" type="A" len="14" fixlen="False" />
+          <array3 name="List" type="L" len="?">
+            <array4 name="List" type="L" len="3">
+              <PDCNAME name="PDCNAME" type="A" len="30" fixlen="False" />
+              <PDCTYPE name="PDCTYPE" type="A" len="3" fixlen="False" />
+              <PDCVALUE name="PDCVALUE" type="A" len="16" fixlen="False" />
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F3_03_E" agent="" node="" tid="" abort="True" caption="DVID 03_Glass History Report">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="03" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="5">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <GSTARTIME name="GSTARTIME" type="A" len="14" fixlen="False" />
+          <GPRENTIME name="GPRENTIME" type="A" len="14" fixlen="False" />
+          <GPROCTIME name="GPROCTIME" type="A" len="4" fixlen="False" />
+          <array3 name="List" type="L" len="?">
+            <array4 name="List" type="L" len="5">
+              <UNITID name="UNITID" type="A" len="16" fixlen="False" />
+              <PROCESS_RESULT name="PROCESS_RESULT" type="A" len="1" fixlen="False" />
+              <UGSTARTIME name="UGSTARTIME" type="A" len="14" fixlen="False" />
+              <UGPRENTIME name="UGPRENTIME" type="A" len="14" fixlen="False" />
+              <UGPROCTIME name="UGPROCTIME" type="A" len="4" fixlen="False" />
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F3_04_E" agent="" node="" tid="" abort="True" caption="DVID 04_APC Important Data Information Report">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="04" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCNAME name="DCNAME" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F3_05_E" agent="" node="" tid="" abort="True" caption="DVID 05_APC Normal Data Information Report">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="05" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCNAME name="DCNAME" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F3_06_E" agent="" node="" tid="" abort="True" caption="DVID 06_Glass Process Data Information Report for test EQ">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="06" keyposition="2">
+      <array1 name="List" type="L" len="7">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <REPORTFLAG name="REPORTFLAG" type="A" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <OPERATIONID name="OPERATIONID" type="A" len="16" fixlen="False" />
+        <array2 name="List" type="L" len="9">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+          <PPID name="PPID" type="A" len="16" fixlen="False" />
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <UNIQUEID name="UNIQUEID" type="A" len="6" fixlen="False" />
+          <PPVER name="PPVER" type="A" len="14" fixlen="False" />
+          <CARRIERID name="CARRIERID" type="A" len="10" fixlen="False" />
+          <PROCESS_RESULT name="PROCESS_RESULT" type="A" len="1" fixlen="False" />
+          <array3 name="List" type="L" len="?">
+            <array4 name="List" type="L" len="2">
+              <GROUPNAME name="GROUPNAME" type="A" len="16" fixlen="False" />
+              <array5 name="List" type="L" len="?">
+                <array6 name="List" type="L" len="2">
+                  <SITENAME name="SITENAME" type="A" len="4" fixlen="False" />
+                  <array7 name="List" type="L" len="3">
+                    <PDCNAME name="PDCNAME" type="A" len="30" fixlen="False" />
+                    <PDCTYPE name="PDCTYPE" type="A" len="3" fixlen="False" />
+                    <PDCVALUE name="PDCVALUE" type="A" len="32" fixlen="False" />
+                  </array7>
+                </array6>
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F3_07_E" agent="" node="" tid="" abort="True" caption="DVID 07_Glass Defect Code Information Report for test EQ">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="07" keyposition="2">
+      <array1 name="List" type="L" len="6">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <REPORTFLAG name="REPORTFLAG" type="A" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <OPERATIONID name="OPERATIONID" type="A" len="16" fixlen="False" />
+        <array2 name="List" type="L" len="9">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+          <PPID name="PPID" type="A" len="16" fixlen="False" />
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <UNIQUEID name="UNIQUEID" type="A" len="6" fixlen="False" />
+          <PPVER name="PPVER" type="A" len="14" fixlen="False" />
+          <CARRIERID name="CARRIERID" type="A" len="10" fixlen="False" />
+          <PROCESS_RESULT name="PROCESS_RESULT" type="A" len="1" fixlen="False" />
+          <array3 name="List" type="L" len="?">
+            <array4 name="List" type="L" len="4">
+              <PANELID name="PANELID" type="A" len="20" fixlen="False" />
+              <PANELPOSITION name="PANELPOSITION" type="A" len="32" fixlen="False" />
+              <PANEL_RESULT name="PANEL_RESULT" type="A" len="10" fixlen="False" />
+              <array5 name="List" type="L" len="?">
+                <array6 name="List" type="L" len="3">
+                  <DEFECTCODEPOSITION name="DEFECTCODEPOSITION" type="A" len="32" fixlen="False" />
+                  <DEFECTCODE name="DEFECTCODE" type="A" len="16" fixlen="False" />
+                  <DEFECTCODE_RESULT name="DEFECTCODE_RESULT" type="A" len="10" fixlen="False" />
+                </array6>
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F3_08_E" agent="" node="" tid="" abort="True" caption="DVID 08_Special Data Information Report">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="08" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCNAME name="DCNAME" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F3_09_E" agent="" node="" tid="" abort="True" caption="DVID 09_APC Important Data Information Report for ID">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="09" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCNAME name="DCID" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F3_10_E" agent="" node="" tid="" abort="True" caption="DVID 10_APC Normal Data Information Report for ID">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="10" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCNAME name="DCID" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F3_11_E" agent="" node="" tid="" abort="True" caption="DVID 11_Special Data Information Report for ID">
+    <header stream="6" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="DVID" keyvalue="11" keyposition="2">
+      <array1 name="List" type="L" len="5">
+        <DVID name="DVID" type="A" len="2" fixlen="False" />
+        <SUBCD name="SUBCD" type="U4" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <array2 name="List" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of data items)" type="L" len="?">
+              <array5 name="List" type="L" len="3">
+                <DCNAME name="DCID" type="A" len="30" fixlen="False" />
+                <DCTYPE name="DCTYPE" type="A" len="3" fixlen="False" />
+                <DCVALUE name="DCVALUE" type="A" len="16" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F4_H" agent="" node="" tid="" abort="False" caption="Discrete Variable Data Acknowledge">
+    <header stream="6" func="4" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACKC6 name="ACKC6" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_01_E" agent="" node="" tid="" abort="False" caption="CEID 01_Control Mode Change">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="01" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="2">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <CTRLMODE name="CTRLMODE" type="A" len="1" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_02_E" agent="" node="" tid="" abort="True" caption="CEID 02_Equipment Mode Change">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="02" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="3">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+          <array3 name="List (number of sub equipments)" type="L" len="?">
+            <array4 name="List" type="L" len="2">
+              <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+              <SUBEQPMODE name="SUBEQPMODE" type="A" len="4" fixlen="False" />
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_03_E" agent="" node="" tid="" abort="True" caption="CEID 03_Equipment Status Change">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="03" keyposition="2">
+      <array1 name="List" type="L" len="12">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <CTRLMODE name="CTRLMODE" type="A" len="1" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <RECOVERY name="RECOVERY" type="A" len="1" fixlen="False" />
+        <INLINE name="INLINE" type="A" len="1" fixlen="False" />
+        <PPID name="PPID" type="A" len="16" fixlen="False" />
+        <GLASS_COUNT name="GLASS_COUNT" type="A" len="4" fixlen="False" />
+        <ALID name="ALID" type="U4" len="1" fixlen="False" />
+        <ALTX name="ALTX" type="A" len="80" fixlen="False" />
+        <array2 name="List (number of sub equipments)" type="L" len="?">
+          <array3 name="List (Sub Equipment Info)" type="L" len="11">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <SUBEQPMODE name="SUBEQPMODE" type="A" len="4" fixlen="False" />
+            <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+            <PPID name="PPID" type="A" len="16" fixlen="False" />
+            <GLASS_COUNT name="GLASS_COUNT" type="A" len="4" fixlen="False" />
+            <RECOVERY name="RECOVERY" type="A" len="1" fixlen="False" />
+            <INLINE name="INLINE" type="A" len="1" fixlen="False" />
+            <AUTO name="AUTO" type="A" len="1" fixlen="False" />
+            <MANUAL name="MANUAL" type="A" len="1" fixlen="False" />
+            <ALID name="ALID" type="U4" len="1" fixlen="False" />
+            <ALTX name="ALTX" type="A" len="80" fixlen="False" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_04_E" agent="" node="" tid="" abort="True" caption="CEID 04_Mask Status Change">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="04" keyposition="2">
+      <array1 name="List" type="L" len="3">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <array2 name="List (number of material slots)" type="L" len="?">
+          <array3 name="List" type="L" len="3">
+            <MATERIALSL name="MATERIALSL" type="A" len="2" fixlen="False" />
+            <MATERIALID name="MATERIALID" type="A" len="30" fixlen="False" />
+            <MATERIALST name="MATERIALST" type="A" len="1" fixlen="False" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_05_E" agent="" node="" tid="" abort="True" caption="CEID 05_Process Program Change">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="05" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="4">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+          <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+          <PPID name="PPID" type="A" len="16" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_06_E" agent="" node="" tid="" abort="True" caption="CEID 06_Process Program Modify or Create or Delete">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="06" keyposition="2">
+      <array1 name="List" type="L" len="4">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <PPEVENT name="PPEVENT" type="A" len="1" fixlen="False" />
+        <array2 name="List (number of changed)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <PPID name="PPID" type="A" len="16" fixlen="False" />
+            <TIME name="TIME" type="A" len="14" fixlen="False" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_07_E" agent="" node="" tid="" abort="True" caption="CEID 07_Glass Erase Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="07" keyposition="2">
+      <array1 name="List" type="L" len="3">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <array2 name="List" type="L" len="6">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+          <GLSPOSITION name="GLSPOSITION" type="A" len="16" fixlen="False" />
+          <REASONCODE name="REASONCODE" type="A" len="3" fixlen="False" />
+          <OPERATORID name="OPERATORID" type="A" len="10" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_08_E" agent="" node="" tid="" abort="True" caption="CEID 08_JOB IN EQP Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="08" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="3">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <TIME name="TIME" type="A" len="14" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_09_E" agent="" node="" tid="" abort="True" caption="CEID 09_JOB OUT EQP Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="09" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="3">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <TIME name="TIME" type="A" len="14" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_10_E" agent="" node="" tid="" abort="True" caption="CEID 10_Job Process Start Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="10" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="4">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <PPID name="PPID" type="A" len="16" fixlen="False" />
+          <TIME name="TIME" type="A" len="14" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_11_E" agent="" node="" tid="" abort="True" caption="CEID 11_Job Process End Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="11" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="4">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <PPID name="PPID" type="A" len="16" fixlen="False" />
+          <TIME name="TIME" type="A" len="14" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_12_E" agent="" node="" tid="" abort="True" caption="CEID 12_Cummy Request">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="12" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="1">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_14_E" agent="" node="" tid="" abort="True" caption="CEID 14_Glass Data Request">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="14" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="3">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_15_E" agent="" node="" tid="" abort="True" caption="CEID 15_Glass Position Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="15" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="3">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <GLASS_COUNT name="GLASS_COUNT" type="A" len="4" fixlen="False" />
+          <array3 name="List (number of total glass or postion)" type="L" len="?">
+            <array4 name="List" type="L" len="3">
+              <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+              <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+              <GLSPOSITION name="GLSPOSITION" type="A" len="16" fixlen="False" />
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_16_E" agent="" node="" tid="" abort="True" caption="CEID 16_Glass Recovered Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="16" keyposition="2">
+      <array1 name="List" type="L" len="3">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <array2 name="List" type="L" len="6">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+          <GLSPOSITION name="GLSPOSITION" type="A" len="16" fixlen="False" />
+          <REASONCODE name="REASONCODE" type="A" len="3" fixlen="False" />
+          <OPERATORID name="OPERATORID" type="A" len="10" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_18_E" agent="" node="" tid="" abort="True" caption="CEID 18_Glass Data Edit">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="18" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="5">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+          <OLDCSTSEQ name="OLDCSTSEQ" type="A" len="5" fixlen="False" />
+          <OLDSLOT name="OLDSLOT" type="A" len="3" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_19_E" agent="" node="" tid="" abort="True" caption="CEID 19_Job In SubEQ Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="19" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="5">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+          <INPUT_SLOT name="INPUT_SLOT" type="A" len="3" fixlen="False" />
+          <TIME name="TIME" type="A" len="14" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_20_E" agent="" node="" tid="" abort="True" caption="CEID 20_Job Out SubEQ Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="20" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="5">
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+          <OUTPUT_SLOT name="OUTPUT_SLOT" type="A" len="3" fixlen="False" />
+          <TIME name="TIME" type="A" len="14" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_21_E" agent="" node="" tid="" abort="True" caption="CEID 21_Job Hold Request">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="21" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="5">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <HOLDRESON name="HOLDRESON" type="A" len="80" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_22_E" agent="" node="" tid="" abort="True" caption="CEID 22_OXR Information Update Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="22" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="5">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <OXR name="OXR" type="A" len="400" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_23_E" agent="" node="" tid="" abort="True" caption="CEID 23_Material Status Change">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="23" keyposition="2">
+      <array1 name="List" type="L" len="3">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <array2 name="List (number of material type)" type="L" len="?">
+          <array3 name="List" type="L" len="5">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <MATERIALID name="MATERIALID" type="A" len="30" fixlen="False" />
+            <MATERIALST name="MATERIALST" type="A" len="1" fixlen="False" />
+            <MATERIALCT name="MATERIALCT" type="A" len="20" fixlen="False" />
+            <MATERIALSITE name="MATERIALSITE" type="A" len="20" fixlen="False" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_24_E" agent="" ent="" node="" tid="" abort="True" caption="CEID 24_Material Consumable Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="24" keyposition="2">
+      <array1 name="List" type="L" len="4">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+        <array2 name="List (number of material type)" type="L" len="?">
+          <array3 name="List" type="L" len="4">
+            <SUBEQUIPMENTID name="SUBEQUIPMENTID" type="A" len="16" fixlen="False" />
+            <MATERIALTYPE name="MATERIALTYPE" type="A" len="6" fixlen="False" />
+            <MATERIALID name="MATERIALID" type="A" len="30" fixlen="False" />
+            <QUANTITY name="QUANTITY" type="A" len="16" fixlen="False" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_25_E" agent="" ent="" node="" tid="" abort="True" caption="CEID 25_VCR Status Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="25" keyposition="2">
+      <array1 name="List" type="L" len="3">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <array2 name="List (number of material type)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <VCRNO name="VCRNO" type="A" len="1" fixlen="False" />
+            <VCRSTATUS name="VCRSTATUS" type="A" len="1" fixlen="False" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_26_E" agent="" ent="" node="" tid="" abort="True" caption="CEID 26_VCR Read Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="26" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="8">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <VCRNO name="VCRNO" type="A" len="1" fixlen="False" />
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <READGLASSID name="READGLASSID" type="A" len="20" fixlen="False" />
+          <VCRRESULT name="VCRRESULT" type="A" len="1" fixlen="False" />
+          <OPERATORID name="OPERATORID" type="A" len="10" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F11_27_E" agent="" ent="" node="" tid="" abort="True" caption="CEID 27_Operator Login Logout Report">
+    <header stream="6" func="11" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="CEID" keyvalue="27" keyposition="2">
+      <array1 name="List" type="L" len="2">
+        <CEID name="CEID" type="A" len="2" fixlen="False" />
+        <array2 name="List" type="L" len="4">
+          <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+          <TID name="TID" type="A" len="1" fixlen="False" />
+          <MODE name="MODE" type="A" len="1" fixlen="False" />
+          <OPERATORID name="OPERATORID" type="A" len="10" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F12_H" agent="" node="" tid="" abort="False" caption="Event Report Acknowledge">
+    <header stream="6" func="12" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACK6 name="ACK6" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F31_E" agent="" node="" tid="" abort="True" caption="OXR Information Download Request">
+    <header stream="6" func="31" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="4">
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+        <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+        <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S6F32_H" agent="" node="" tid="" abort="False" caption="OXR Information Download Data">
+    <header stream="6" func="32" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <RETURN name="RETURN" type="A" len="1" fixlen="False" />
+        <array2 name="List" type="L" len="4">
+          <CSTSEQ name="CSTSEQ" type="A" len="5" fixlen="False" />
+          <SLOT name="SLOT" type="A" len="3" fixlen="False" />
+          <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+          <OXR name="OXR" type="A" len="400" fixlen="False" />
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S7F0_E" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="7" func="0" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S7F0_H" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="7" func="0" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S7F19_H" agent="" node="" tid="" abort="False" caption="Current EPPD Request">
+    <header stream="7" func="19" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S7F20_E" agent="" node="" tid="" abort="False" caption="Current EPPD Data">
+    <header stream="7" func="20" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List (number of process programs)" type="L" len="?">
+        <PPID name="PPID" type="A" len="16" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S7F23_H" agent="" node="" tid="" abort="False" caption="Formatted Process Program Send">
+    <header stream="7" func="23" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="3">
+        <PPID name="PPID" type="A" len="16" fixlen="True" />
+        <PPVER name="PPVER" type="A" len="14" fixlen="False" />
+        <array2 name="List (numbers of each subprocess program)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBRPID name="SUBRPID" type="A" len="16" fixlen="True" />
+            <array4 name="List (number of parameter item)" type="L" len="?">
+              <array5 name="List" type="L" len="2">
+                <PPNAME name="PPNAME" type="A" len="32" fixlen="True" />
+                <PPVALUE name="PPVALUE" type="A" len="32" fixlen="True" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S7F24_E" agent="" node="" tid="" abort="False" caption="Formatted Process Program Acknowledge">
+    <header stream="7" func="24" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACKC7 name="ACKC7" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S7F25_H" agent="" node="" tid="" abort="False" caption="Formatted Process Program Request">
+    <header stream="7" func="25" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <PPID name="PPID" type="A" len="16" fixlen="True" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S7F26_E" agent="" node="" tid="" abort="False" caption="Formatted Process Program Data">
+    <header stream="7" func="26" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="6">
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="False" />
+        <EQPMODE name="EQPMODE" type="A" len="4" fixlen="False" />
+        <EQPST name="EQPST" type="A" len="1" fixlen="False" />
+        <PPID name="PPID" type="A" len="16" fixlen="False" />
+        <PPVER name="PPVER" type="A" len="14" fixlen="False" />
+        <array2 name="List (number of subprocess programs)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <SUBRPID name="SUBRPID" type="A" len="16" fixlen="False" />
+            <array4 name="List (number of parameter items)" type="L" len="?">
+              <array5 name="List" type="L" len="2">
+                <PPNAME name="PPNAME" type="A" len="32" fixlen="False" />
+                <PPVALUE name="PPVALUE" type="A" len="32" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S7F27_E" agent="" node="" tid="" abort="True" caption="Process Program Verification Send">
+    <header stream="7" func="27" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="3">
+        <PPID name="PPID" type="A" len="16" fixlen="False" />
+        <PPVER name="PPVER" type="A" len="14" fixlen="False" />
+        <array2 name="List (number of errors)" type="L" len="?">
+          <array3 name="List" type="L" len="3">
+            <ACKC7A name="ACKC7A" type="U1" len="1" fixlen="False" />
+            <PPNAME name="PPNAME" type="A" len="32" fixlen="False" />
+            <ERRW7 name="ERRW7" type="A" len="40" fixlen="False" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S7F28_H" agent="" node="" tid="" abort="False" caption="Process Program Verification Acknowledge">
+    <header stream="7" func="28" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S7F73_H" agent="" node="" tid="" abort="False" caption="Recipe ID Check">
+    <header stream="7" func="73" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="3">
+        <EQUIPMENTID name="EQUIPMENTID" type="A" len="16" fixlen="True" />
+        <AUTOMANUAL name="AUTOMANUAL" type="A" len="1" fixlen="False" />
+        <array2 name="List (number of need checked recipe)" type="L" len="?">
+          <array3 name="List" type="L" len="2">
+            <PPID name="PPID" type="A" len="16" fixlen="True" />
+            <PPVER name="PPVER" type="A" len="14" fixlen="True" />
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S7F74_E" agent="" node="" tid="" abort="False" caption="Recipe ID Check Acknowledge">
+    <header stream="7" func="74" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACK6 name="ACK6" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S9F1_E" agent="" node="" tid="" abort="False" caption="Unrecognized Device ID">
+    <header stream="9" func="1" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <MHEAD name="MHEAD" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S9F3_E" agent="" node="" tid="" abort="False" caption="Unrecognized Stream Type">
+    <header stream="9" func="3" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <MHEAD name="MHEAD" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S9F5_E" agent="" node="" tid="" abort="False" caption="Unrecognized Function Type">
+    <header stream="9" func="5" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <MHEAD name="MHEAD" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S9F7_E" agent="" node="" tid="" abort="False" caption="Illegal Data">
+    <header stream="9" func="7" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <MHEAD name="MHEAD" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S9F9_E" agent="" node="" tid="" abort="False" caption="Transaction Timer Timeout">
+    <header stream="9" func="9" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <SHEAD name="SHEAD" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S9F11_E" agent="" node="" tid="" abort="False" caption="Data Too Long">
+    <header stream="9" func="11" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <MHEAD name="MHEAD" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S10F0_E" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="10" func="0" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S10F0_H" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="10" func="0" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S10F3_H" agent="" node="" tid="" abort="False" caption="Terminal Display Single">
+    <header stream="10" func="3" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <TEXT name="TEXT" type="A" len="80" fixlen="True" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S10F4_E" agent="" node="" tid="" abort="False" caption="Terminal Display Single Acknowledge">
+    <header stream="10" func="4" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACK10C name="ACK10C" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S10F5_H" agent="" node="" tid="" abort="False" caption="Terminal Display Single for DNS LC">
+    <header stream="10" func="5" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <MHEAD name="MHEAD" type="B" len="10" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S10F6_E" agent="" node="" tid="" abort="False" caption="Terminal Display Single for DNS LC Acknowledge">
+    <header stream="10" func="6" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACK10C name="ACK10C" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S64F0_E" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="64" func="0" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S64F0_H" agent="" node="" tid="" abort="False" caption="Abort Transaction">
+    <header stream="64" func="0" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0" />
+    <return id="" />
+  </message>
+  <message name="S64F1_H" agent="" node="" tid="" abort="False" caption="Measurement Result Send">
+    <header stream="64" func="1" dir="H2E" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <PPID name="PPID" type="A" len="16" fixlen="False" />
+        <array2 name="List (number of glass)" type="L" len="?">
+          <array3 name="List" type="L" len="3">
+            <GLASSID name="GLASSID" type="A" len="20" fixlen="False" />
+            <INSPDT name="INSPDT" type="A" len="14" fixlen="False" />
+            <array4 name="List (number of measurement data)" type="L" len="?">
+              <array5 name="List" type="L" len="5">
+                <SHOTNO name="SHOTNO" type="U1" len="1" fixlen="False" />
+                <MPX name="MPX" type="A" len="9" fixlen="False" />
+                <MPY name="MPY" type="A" len="9" fixlen="False" />
+                <ODX name="ODX" type="A" len="9" fixlen="False" />
+                <ODY name="ODY" type="A" len="9" fixlen="False" />
+              </array5>
+            </array4>
+          </array3>
+        </array2>
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S64F2_E" agent="" node="" tid="" abort="False" caption="Measurement Result Send Acknowledge">
+    <header stream="64" func="2" dir="E2H" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACKC64 name="ACKC64" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+  <message name="S64F3_E" agent="" node="" tid="" abort="True" caption="Feedback Result Send">
+    <header stream="64" func="3" dir="E2H" wbit="1" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <array1 name="List" type="L" len="2">
+        <RTNCODE name="RTNCODE" type="U1" len="1" fixlen="False" />
+        <PPID name="PPID" type="A" len="16" fixlen="False" />
+      </array1>
+    </body>
+    <return id="" />
+  </message>
+  <message name="S64F4_H" agent="" node="" tid="" abort="False" caption="Feedback Result Send Acknowledge">
+    <header stream="64" func="4" dir="H2E" wbit="0" systembytes="" device="" />
+    <body keyname="" keyvalue="" keyposition="0">
+      <ACKC64 name="ACKC64" type="B" len="1" fixlen="False" />
+    </body>
+    <return id="" />
+  </message>
+</secs>

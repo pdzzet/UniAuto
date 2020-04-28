@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:db="http://www.springframework.net/database">
+  <db:provider id="UniBCSDB" provider="SqlServer-2.0" connectionString="Data source=localhost;Database=UNIBCS_t3;User ID=sa;Password=itc123!@#;Pooling=true;max pool size=20;min pool size=0" />
+  <object id="SessionFactory" type="Spring.Data.NHibernate.LocalSessionFactoryObject, Spring.Data.NHibernate32">
+    <property name="DbProvider">
+      <ref object="UniBCSDB" />
+    </property>
+    <property name="MappingAssemblies">
+      <list>
+        <value>UniAuto.UniBCS.Entity</value>
+      </list>
+    </property>
+    <property name="HibernateProperties">
+      <dictionary>
+        <entry key="hibernate.connection.provider" value="NHibernate.Connection.DriverConnectionProvider" />
+        <entry key="dialect" value="NHibernate.Dialect.MsSql2008Dialect" />
+        <!--<entry key="dialect" value="NHibernate.Dialect.FirebirdDialect"/>-->
+        <entry key="connection.driver_class" value="NHibernate.Driver.SqlClientDriver" />
+        <!--<entry key="hibernate.connection.driver_class" value="NHibernate.Driver.FirebirdClientDriver" />-->
+        <entry key="hibernate.show_sql" value="true" />
+        <entry key="hibernate.command_timeout" value="60" />
+        <entry key="hibernate.query.substitutions" value="true 1, false 0, yes 1, no 0" />
+      </dictionary>
+    </property>
+  </object>
+  <object id="HibernateAdapter" type="UniAuto.UniBCS.DB.HibernateAdapter,UniAuto.UniBCS.DB" init-method="Init">
+    <property name="SessionFactory" ref="SessionFactory">
+    </property>
+    <property name="AlwaysNewSession" value="true">
+    </property>
+  </object>
+  <object id="EntityManager" type="UniAuto.UniBCS.EntityManager.EntityManager,UniAuto.UniBCS.EntityManager" abstract="true">
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+    <property name="LoggerName" value="Service" />
+  </object>
+  <object id="AbstractService" type="UniAuto.UniBCS.Core.AbstractService,UniAuto.UniBCS.Core" abstract="true">
+    <property name="QueueManager" ref="QueueManager">
+    </property>
+    <property name="ParameterManager" ref="ParameterManager">
+    </property>
+    <property name="ConstantManager" ref="ConstantManager">
+    </property>
+    <property name="TimerManager" ref="TimerManager">
+    </property>
+    <property name="LogName" value="Service">
+    </property>
+  </object>
+  <object id="MessageManager" type="UniAuto.UniBCS.Core.Message.MessageManager,UniAuto.UniBCS.Core" init-method="Init">
+    <property name="ConfigFileName" value="..\Config\MessageMapping\Message.xml">
+    </property>
+  </object>
+  <object id="QueueManager" type="UniAuto.UniBCS.Core.Message.QueueManager,UniAuto.UniBCS.Core" init-method="Init">
+  </object>
+  <object id="LineManager" type="UniAuto.UniBCS.EntityManager.LineManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\Line">
+    </property>
+  </object>
+  <object id="EquipmentManager" type="UniAuto.UniBCS.EntityManager.EquipmentManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\Equipment">
+    </property>
+  </object>
+  <object id="UnitManager" type="UniAuto.UniBCS.EntityManager.UnitManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\Unit">
+    </property>
+  </object>
+  <object id="PortManager" type="UniAuto.UniBCS.EntityManager.PortManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\Port">
+    </property>
+  </object>
+  <object id="JobManager" type="UniAuto.UniBCS.EntityManager.JobManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\Job">
+    </property>
+  </object>
+  <object id="AlarmManager" type="UniAuto.UniBCS.EntityManager.AlarmManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\AlarmHistory">
+    </property>
+  </object>
+  <object id="CassetteManager" type="UniAuto.UniBCS.EntityManager.CassetteManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\Cassette">
+    </property>
+    <property name="CompleteCSTPath" value="D:\UnicomLog\{ServerName}\CompleteCST">
+    </property>
+    <property name="IncompleteCSTPath" value="D:\UnicomLog\{ServerName}\IncompleteCST">
+    </property>
+    <property name="LotEndExecuteCSTPath" value="D:\UnicomLog\{ServerName}\LotEndExecuting">
+    </property>
+  </object>
+  <object id="ProcessDataManager" type="UniAuto.UniBCS.EntityManager.ProcessDataManager,UniAuto.UniBCS.EntityManager" init-method="Init">
+    <property name="LoggerName" value="Service">
+    </property>
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+    <property name="HistoryPath" value="D:\UnicomLog\{ServerName}\ProcessData\" />
+  </object>
+  <object id="CIMMessageManager" type="UniAuto.UniBCS.EntityManager.CIMMessageManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy">
+    <property name="LoggerName" value="Service">
+    </property>
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+  </object>
+  <object id="APCDataReportManager" type="UniAuto.UniBCS.EntityManager.APCDataReportManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="LoggerName" value="APCDataReportManager">
+    </property>
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+  </object>
+  <object id="APCDataDownloadManager" type="UniAuto.UniBCS.EntityManager.APCDataDownloadManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="LoggerName" value="APCDataDownloadManager">
+    </property>
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+  </object>
+  <object id="DailyCheckManager" type="UniAuto.UniBCS.EntityManager.DailyCheckManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="LoggerName" value="DailyCheckManager">
+    </property>
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+  </object>
+  <object id="PositionManager" type="UniAuto.UniBCS.EntityManager.PositionManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="LoggerName" value="PositionManager">
+    </property>
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+  </object>
+  <object id="EnergyVisualizationManager" type="UniAuto.UniBCS.EntityManager.EnergyVisualizationManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="LoggerName" value="EnergyVisualizationManager">
+    </property>
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+  </object>
+  <object id="MaterialManager" type="UniAuto.UniBCS.EntityManager.MaterialManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="LoggerName" value="MaterialManager">
+    </property>
+    <property name="DataFilePath" value="..\Data\{ServerName}\MaterialManager">
+    </property>
+  </object>
+  <object id="PlanManager" type="UniAuto.UniBCS.EntityManager.PlanManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="LoggerName" value="PlanManager">
+    </property>
+    <property name="DataFilePath" value="..\Data\{ServerName}\PlanManager">
+    </property>
+  </object>
+  <object id="QtimeManager" type="UniAuto.UniBCS.EntityManager.QtimeManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\qtime">
+    </property>
+  </object>
+  <object id="RecipeManager" type="UniAuto.UniBCS.EntityManager.RecipeManager,UniAuto.UniBCS.EntityManager" init-method="Init">
+    <property name="LoggerName" value="Service">
+    </property>
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+  </object>
+  <object id="SubJobDataManager" type="UniAuto.UniBCS.EntityManager.SubJobDataManager,UniAuto.UniBCS.EntityManager" init-method="Init">
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+    <property name="LoggerName" value="Service" />
+  </object>
+  <object id="SubBlockManager" type="UniAuto.UniBCS.EntityManager.SubBlockManager,UniAuto.UniBCS.EntityManager" init-method="Init">
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+    <property name="LoggerName" value="Service" />
+  </object>
+  <object id="RBPositionManager" type="UniAuto.UniBCS.EntityManager.RBPositionManager,UniAuto.UniBCS.EntityManager" init-method="Init">
+    <property name="HibernateAdapter" ref="HibernateAdapter" />
+    <property name="LoggerName" value="Service" />
+  </object>
+  <object id="PalletManager" type="UniAuto.UniBCS.EntityManager.PalletManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\Pallet">
+    </property>
+  </object>
+  <object id="ProductTypeManager" type="UniAuto.UniBCS.EntityManager.ProductTypeManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\ProductType">
+    </property>
+  </object>
+  <object id="ProductIDManager" type="UniAuto.UniBCS.EntityManager.ProductIDManager,UniAuto.UniBCS.EntityManager" init-method="Init" destroy-method="Destroy" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\ProductID">
+    </property>
+  </object>
+  <object id="ObjectManager" type="UniAuto.UniBCS.EntityManager.ObjectManager,UniAuto.UniBCS.EntityManager">
+    <property name="LineManager" ref="LineManager">
+    </property>
+    <property name="EquipmentManager" ref="EquipmentManager">
+    </property>
+    <property name="UnitManager" ref="UnitManager">
+    </property>
+    <property name="PortManager" ref="PortManager">
+    </property>
+    <property name="JobManager" ref="JobManager">
+    </property>
+    <property name="AlarmManager" ref="AlarmManager">
+    </property>
+    <property name="CassetteManager" ref="CassetteManager">
+    </property>
+    <property name="ProcessDataManager" ref="ProcessDataManager">
+    </property>
+    <property name="CIMMessageManager" ref="CIMMessageManager">
+    </property>
+    <property name="APCDataReportManager" ref="APCDataReportManager">
+    </property>
+    <property name="APCDataDownloadManager" ref="APCDataDownloadManager">
+    </property>
+    <property name="DailyCheckManager" ref="DailyCheckManager">
+    </property>
+    <property name="EnergyVisualizationManager" ref="EnergyVisualizationManager">
+    </property>
+    <property name="MaterialManager" ref="MaterialManager">
+    </property>
+    <property name="QtimeManager" ref="QtimeManager">
+    </property>
+    <property name="RecipeManager" ref="RecipeManager">
+    </property>
+    <property name="SubJobDataManager" ref="SubJobDataManager">
+    </property>
+    <property name="SubBlockManager" ref="SubBlockManager">
+    </property>
+    <property name="RobotPositionManager" ref="RBPositionManager">
+    </property>
+    <property name="PlanManager" ref="PlanManager">
+    </property>
+    <property name="PalletManager" ref="PalletManager">
+    </property>
+    <property name="ProductTypeManager" ref="ProductTypeManager">
+    </property>
+    <property name="ProductIDManager" ref="ProductIDManager">
+    </property>
+    <property name="PositionManager" ref="PositionManager">
+    </property>
+    <!-- Robot Main Use -->
+    <property name="RobotManager" ref="RobotManager">
+    </property>
+    <property name="RobotStageManager" ref="RobotStageManager">
+    </property>
+  </object>
+  <object id="MDIForm" type="UniAuto.UniBCS.Core.UI.MDIForm,UniAuto.UniBCS.Core" init-method="Init">
+    <property name="CommandButtonList">
+      <dictionary>
+        <entry key="1" value="FrmLogView" />
+        <entry key="2" value="FrmAgent" />
+        <entry key="3" value="FrmDataMage" />
+        <entry key="4" value="FrmMisc" />
+        <entry key="5" value="FrmMessage" />
+      </dictionary>
+    </property>
+    <property name="Images">
+      <dictionary>
+        <entry key="TITLE" value="..\Image\TITLE.jpg" />
+        <entry key="TOOL_BAR" value="..\Image\TOOL_BAR.jpg" />
+      </dictionary>
+    </property>
+    <property name="IconPath">
+      <value>..\Image\BCS.ico</value>
+    </property>
+  </object>
+  <object id="FrmLogView" type="UniAuto.UniBCS.Core.UI.FrmLogview,UniAuto.UniBCS.Core" init-method="Init">
+    <property name="LogStartFlag">
+      <value>true</value>
+    </property>
+  </object>
+  <object id="FrmAgent" type="UniAuto.UniBCS.Core.UI.FrmAgent,UniAuto.UniBCS.Core" init-method="Init">
+  </object>
+  <object id="FrmDataMage" type="UniAuto.UniBCS.EntityManager.UI.FrmDataManager,UniAuto.UniBCS.EntityManager" init-method="Init">
+  </object>
+  <object id="FrmMessage" type="UniAuto.UniBCS.Core.UI.FrmMessage,UniAuto.UniBCS.Core" init-method="Init">
+    <property name="MessageManager" ref="MessageManager" />
+  </object>
+  <object id="FrmMisc" type="UniAuto.UniBCS.Core.UI.FrmMisc,UniAuto.UniBCS.Core" init-method="Init">
+    <property name="ParameterManager" ref="ParameterManager">
+    </property>
+    <property name="ConstantManager" ref="ConstantManager">
+    </property>
+  </object>
+  <object id="MiscConstantManager" type="UniAuto.UniBCS.Core.UI.Misc.UserCtrlConstantManager,UniAuto.UniBCS.Core" init-method="Init">
+  </object>
+  <object id="ParamManager" type="UniAuto.UniBCS.Core.UI.Misc.UserCtrlParameterManager,UniAuto.UniBCS.Core" init-method="Init">
+  </object>
+  <object id="ParameterManager" type="UniAuto.UniBCS.MISC.ParameterManager,UniAuto.UniBCS.MISC" init-method="Init">
+    <property name="ConfigFileName" value="..\Config\Agent\IO\Parameters.xml">
+    </property>
+  </object>
+  <object id="ConstantManager" type="UniAuto.UniBCS.MISC.ConstantManager,UniAuto.UniBCS.MISC" init-method="Init">
+    <property name="ConfigFileName" value="..\Config\Agent\IO\constants.xml">
+    </property>
+  </object>
+  <object id="TimerManager" type="UniAuto.UniBCS.MISC.TimerManager,UniAuto.UniBCS.MISC" init-method="Init">
+  </object>
+  <object id="FileFormatManager" type="UniAuto.UniBCS.MISC.FileFormatManager,UniAuto.UniBCS.MISC" init-method="Init">
+    <property name="FormatFilePath" value="..\Config\Agent\IO\FileFormat.xml">
+    </property>
+  </object>
+  <!-- Robot Main -->
+  <object id="RobotManager" type="UniAuto.UniBCS.EntityManager.RobotManager,UniAuto.UniBCS.EntityManager" init-method="Init" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\Robot">
+    </property>
+    <property name="LoggerName" value="RobotService">
+    </property>
+  </object>
+  <object id="RobotStageManager" type="UniAuto.UniBCS.EntityManager.RobotStageManager,UniAuto.UniBCS.EntityManager" init-method="Init" parent="EntityManager">
+    <property name="DataFilePath" value="..\Data\{ServerName}\RobotStage">
+    </property>
+    <property name="LoggerName" value="RobotService">
+    </property>
+  </object>
+</objects>

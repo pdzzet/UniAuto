@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC275FB7-25E1-46C7-A88B-F8F4A582F059}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniAuto.UniBCS.CSOT.MESMessageService</RootNamespace>
+    <AssemblyName>UniAuto.UniBCS.CSOT.MESMessageService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>"%24/WHCSOT.G6C.BC/BC/UniAuto.BCS", MLWDAAAA</SccProjectName>
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Spring.Core">
+      <HintPath>..\..\library\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniAuto.UniBCS.Core, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\UniAuto.UniBCS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UniAuto.UniBCS.Log, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\debug\UniAuto.UniBCS.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="UniAuto.UniBCS.MISC, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\debug\UniAuto.UniBCS.MISC.dll</HintPath>
+    </Reference>
+    <Reference Include="UniAuto.UniBCS.PLCAgent.Data, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Debug\UniAuto.UniBCS.PLCAgent.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="APC\APCService.cs" />
+    <Compile Include="Evisor\EvisorService.cs" />
+    <Compile Include="MES\ArraySpecial.cs" />
+    <Compile Include="MES\CellSpecial.cs" />
+    <Compile Include="MES\CFSpecial.cs" />
+    <Compile Include="MES\ChangerPlan.cs" />
+    <Compile Include="MES\EquipmentPort.cs" />
+    <Compile Include="MES\Facility.cs" />
+    <Compile Include="MES\FrmTestMES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MES\FrmTestMES.designer.cs">
+      <DependentUpon>FrmTestMES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\LotProcessAbnormalEnd.cs" />
+    <Compile Include="MES\LotProcessEnd.cs" />
+    <Compile Include="MES\CIMMessageSend.cs" />
+    <Compile Include="MES\Mask.cs" />
+    <Compile Include="MES\MESMessage.cs" />
+    <Compile Include="MES\MTLKeyParts.cs" />
+    <Compile Include="MES\Recipe.cs" />
+    <Compile Include="MES\MESService.cs" />
+    <Compile Include="MES\MESServiceSpecial.cs" />
+    <Compile Include="MES\MESServicePublic.cs" />
+    <Compile Include="MES\ValidateBox.cs" />
+    <Compile Include="MES\ValidateBox2.cs" />
+    <Compile Include="MES\ValidateCassette.cs" />
+    <Compile Include="MES\ValidateMask.cs" />
+    <Compile Include="MOD\ModMESService_1.cs" />
+    <Compile Include="MOD\ModMESService_2.cs" />
+    <Compile Include="MOD\ModMESService_3.cs" />
+    <Compile Include="MOD\ModMESService_4.cs" />
+    <Compile Include="OEE\OEEService.cs" />
+    <Compile Include="EDA\EDAService.cs" />
+    <Compile Include="MES\MESService02.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UniAuto.UniBCS.EDASpec\UniAuto.UniBCS.EDASpec.csproj">
+      <Project>{2F42E59B-8477-484C-B47D-FEB6E22E8FFD}</Project>
+      <Name>UniAuto.UniBCS.EDASpec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniAuto.UniBCS.EntityManager\UniAuto.UniBCS.EntityManager.csproj">
+      <Project>{3AF798BF-0431-4121-9DE7-87E25E23219B}</Project>
+      <Name>UniAuto.UniBCS.EntityManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniAuto.UniBCS.Entity\UniAuto.UniBCS.Entity.csproj">
+      <Project>{D8255DBB-D5B9-4654-BD15-2A6A7130500D}</Project>
+      <Name>UniAuto.UniBCS.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniAuto.UniBCS.MesSpec\UniAuto.UniBCS.MesSpec.csproj">
+      <Project>{A8B1897B-7852-48E7-8D55-7F5E6B168F23}</Project>
+      <Name>UniAuto.UniBCS.MesSpec</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MES\FrmTestMES.resx">
+      <DependentUpon>FrmTestMES.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

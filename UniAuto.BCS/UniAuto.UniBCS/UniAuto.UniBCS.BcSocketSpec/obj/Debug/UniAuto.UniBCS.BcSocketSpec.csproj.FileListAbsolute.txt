@@ -1,0 +1,11 @@
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.BcSocketSpec.dll
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.BcSocketSpec.pdb
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.BcSocketSpec\obj\Debug\UniAuto.UniBCS.BcSocketSpec.csprojResolveAssemblyReference.cache
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.BcSocketSpec\obj\Debug\UniAuto.UniBCS.BcSocketSpec.dll
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.BcSocketSpec\obj\Debug\UniAuto.UniBCS.BcSocketSpec.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.BcSocketSpec.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\bin\Debug\UniAuto.UniBCS.BcSocketSpec.pdb
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.BcSocketSpec\obj\Debug\UniAuto.UniBCS.BcSocketSpec.csprojAssemblyReference.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.BcSocketSpec\obj\Debug\UniAuto.UniBCS.BcSocketSpec.csproj.CoreCompileInputs.cache
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.BcSocketSpec\obj\Debug\UniAuto.UniBCS.BcSocketSpec.dll
+D:\WorkSpace\work\UniAuto.BCS\UniAuto.BCS\UniAuto.UniBCS\UniAuto.UniBCS.BcSocketSpec\obj\Debug\UniAuto.UniBCS.BcSocketSpec.pdb

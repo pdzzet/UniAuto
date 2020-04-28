@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<LinkSignal>
+	<Bit UpStream="L15" DownStream="L16" SeqNo="0101" LinkType="CF_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L16" DownStream="L19" SeqNo="0101" LinkType="CF_RBExchange_RBtoST" TimingChart="RBExchange" />
+	<Bit UpStream="L16" DownStream="L20" SeqNo="0101" LinkType="CF_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L16" DownStream="L19" SeqNo="0201" LinkType="CF_RBExchange_RBtoST" TimingChart="RBExchange" />
+	<Bit UpStream="L16" DownStream="L20" SeqNo="0201" LinkType="CF_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L19" DownStream="L16" SeqNo="0102" LinkType="CF_RBExchange_STtoRB" TimingChart="RBExchange" />
+	<Bit UpStream="L2" DownStream="L3" SeqNo="0101" LinkType="CF_RBtoST" TimingChart="RBtoST" />
+	<Bit UpStream="L20" DownStream="L21" SeqNo="0101" LinkType="CF_STtoRB" TimingChart="STtoRB" />
+	<Bit UpStream="L21" DownStream="L22" SeqNo="0101" LinkType="CF_STtoRB" TimingChart="STtoRB" />
+	<Bit UpStream="L21" DownStream="L23" SeqNo="0201" LinkType="CF_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L3" DownStream="L4" SeqNo="0101" LinkType="CF_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L4" DownStream="L5" SeqNo="0101" LinkType="CF_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L5" DownStream="L6" SeqNo="0101" LinkType="CF_RBtoST" TimingChart="RBtoST" />
+	<Bit UpStream="L6" DownStream="L7" SeqNo="0101" LinkType="CF_STtoRB" TimingChart="STtoRB" />
+	<Bit UpStream="L7" DownStream="L8" SeqNo="0101" LinkType="CF_RBtoST" TimingChart="RBtoST" />
+	<Bit UpStream="L7" DownStream="L9" SeqNo="0202" LinkType="CF_RBtoST" TimingChart="RBtoST" />
+	<Bit UpStream="L8" DownStream="L9" SeqNo="0101" LinkType="CF_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L9" DownStream="L15" SeqNo="0101" LinkType="CF_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L9" DownStream="L7" SeqNo="0202" LinkType="CF_STtoRB" TimingChart="STtoRB" />
+</LinkSignal>

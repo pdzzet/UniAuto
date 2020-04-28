@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:db="http://www.springframework.net/database">
+  <object id="MESAgent" type="UniAuto.UniBCS.TRVAgent.MESAgent,UniAuto.UniBCS.TRVAgent" init-method="Init">
+    <property name="Name" value="MESAgent">
+    </property>
+    <property name="ConfigFileName" value="..\Config\Agent\TIBRV\TibcoRVConfig.xml">
+    </property>
+    <property name="FormatFileName" value="..\Config\Agent\TIBRV\MES_TibcoRV_Structure_Pattern.xml">
+    </property>
+    <property name="MessageManager" ref="MessageManager">
+    </property>
+    <property name="QueueManager" ref="QueueManager">
+    </property>
+    <property name="AgentStatus" value="5">
+    </property>
+  </object>
+  <object id="EDAAgent" type="UniAuto.UniBCS.TRVAgent.EDAAgent,UniAuto.UniBCS.TRVAgent" init-method="Init">
+    <property name="Name" value="EDAAgent">
+    </property>
+    <property name="ConfigFileName" value="..\Config\Agent\TIBRV\TibcoRVConfig.xml">
+    </property>
+    <property name="FormatFileName" value="..\Config\Agent\TIBRV\EDA_TibcoRV_Structure_Pattern.xml">
+    </property>
+    <property name="MessageManager" ref="MessageManager">
+    </property>
+    <property name="QueueManager" ref="QueueManager">
+    </property>
+    <property name="AgentStatus" value="5">
+    </property>
+  </object>
+  <object id="EDAAgent2" type="UniAuto.UniBCS.TRVAgent.EDAAgent,UniAuto.UniBCS.TRVAgent" init-method="Init">
+    <property name="Name" value="EDAAgent2">
+    </property>
+    <property name="ConfigFileName" value="..\Config\Agent\TIBRV\TibcoRVConfig.xml">
+    </property>
+    <property name="FormatFileName" value="..\Config\Agent\TIBRV\EDA_TibcoRV_Structure_Pattern.xml">
+    </property>
+    <property name="MessageManager" ref="MessageManager">
+    </property>
+    <property name="QueueManager" ref="QueueManager">
+    </property>
+    <property name="AgentStatus" value="5">
+    </property>
+  </object>
+  <object id="OEEAgent" type="UniAuto.UniBCS.TRVAgent.OEEAgent,UniAuto.UniBCS.TRVAgent" init-method="Init">
+    <property name="Name" value="OEEAgent">
+    </property>
+    <property name="ConfigFileName" value="..\Config\Agent\TIBRV\TibcoRVConfig.xml">
+    </property>
+    <property name="FormatFileName" value="..\Config\Agent\TIBRV\OEE_TibcoRV_Structure_Pattern.xml">
+    </property>
+    <property name="MessageManager" ref="MessageManager">
+    </property>
+    <property name="QueueManager" ref="QueueManager">
+    </property>
+  </object>
+  <object id="APCAgent" type="UniAuto.UniBCS.TRVAgent.APCAgent,UniAuto.UniBCS.TRVAgent" init-method="Init">
+    <property name="Name" value="APCAgent">
+    </property>
+    <property name="ConfigFileName" value="..\Config\Agent\TIBRV\TibcoRVConfig.xml">
+    </property>
+    <property name="FormatFileName" value="..\Config\Agent\TIBRV\APC_TibcoRV_Structure_Pattern.xml">
+    </property>
+    <property name="MessageManager" ref="MessageManager">
+    </property>
+    <property name="QueueManager" ref="QueueManager">
+    </property>
+  </object>
+  <object id="PLCAgent" type="UniAuto.UniBCS.PLCAgent.PLCAgent,UniAuto.UniBCS.PLCAgent" init-method="Init">
+    <property name="Name" value="PLCAgent">
+    </property>
+    <property name="ConfigFileName" value="..\Config\Agent\PLC\CF\{LineType}\{LineType}_PLCCfg.xml">
+    </property>
+    <property name="FormatFileName" value="..\Config\Agent\PLC\CF\{LineType}\{LineType}_PLCFmt.xml">
+    </property>
+    <property name="MessageManager" ref="MessageManager">
+    </property>
+    <property name="QueueManager" ref="QueueManager">
+    </property>
+    <property name="AgentStatus" value="5">
+    </property>
+  </object>
+  <object id="OPIAgent" type="UniAuto.UniBCS.OPIAgent.OPIAgent,UniAuto.UniBCS.OPIAgent" init-method="Init">
+    <property name="Name" value="OPIAgent">
+    </property>
+    <property name="ConfigFileName" value="..\Config\Agent\OPI\SocketConfig.xml">
+    </property>
+    <property name="FormatFileName" value="..\Config\Agent\OPI\OPI_Structure_Pattern.xml">
+    </property>
+    <property name="MessageManager" ref="MessageManager">
+    </property>
+    <property name="QueueManager" ref="QueueManager">
+    </property>
+    <property name="AgentStatus" value="5">
+    </property>
+  </object>
+  <!--<object id="SerialPassiveAgent" type="UniAuto.UniBCS.SerialPortAgent.SerialPortAgent,UniAuto.UniBCS.SerialPortAgent" init-method="Init"><property name="Name" value="SerialPassiveAgent"></property><property name="ConfigFileName" value="..\Config\Agent\SERIAL\SocketConfig.xml"></property><property name="FormatFileName" value="..\Config\Agent\SERIAL\Serial_Structure_Pattern.xml"></property><property name="MessageManager" ref="MessageManager"></property><property name="QueueManager" ref="QueueManager"></property><property name="AgentStatus" value="5"></property><property name="Type" value="Passive"></property></object>-->
+  <!--<object id="SerialActiveAgent" type="UniAuto.UniBCS.SerialPortAgent.SerialPortAgent,UniAuto.UniBCS.SerialPortAgent" init-method="Init"><property name="Name" value="SerialActiveAgent"></property><property name="ConfigFileName" value="..\Config\Agent\SERIAL\SocketConfig.xml"></property><property name="FormatFileName" value="..\Config\Agent\SERIAL\Serial_Structure_Pattern.xml"></property><property name="MessageManager" ref="MessageManager"></property><property name="QueueManager" ref="QueueManager"></property><property name="AgentStatus" value="5"></property><property name="Type" value="Active"></property></object>-->
+  <!--<object id="ActiveSocketAgent" type="UniAuto.UniBCS.SocketAgent.ActiveSocketAgent,UniAuto.UniBCS.SocketAgent" init-method="Init"><property name="Name" value="ActiveSocketAgent"></property><property name="ConfigFileName" value="..\Config\Agent\SOCKET\SocketConfig.xml"></property><property name="FormatFileName" value="..\Config\Agent\SOCKET\Socket_Structure_Pattern.xml"></property><property name="MessageManager" ref="MessageManager"></property><property name="QueueManager" ref="QueueManager"></property><property name="AgentStatus" value="5"></property></object>-->
+  <!--<object id="PassiveSocketAgent" type="UniAuto.UniBCS.SocketAgent.PassiveSocketAgent,UniAuto.UniBCS.SocketAgent" init-method="Init"><property name="Name" value="PassiveSocketAgent"></property><property name="ConfigFileName" value="..\Config\Agent\SOCKET\SocketConfig.xml"></property><property name="FormatFileName" value="..\Config\Agent\SOCKET\Socket_Structure_Pattern.xml"></property><property name="MessageManager" ref="MessageManager"></property><property name="QueueManager" ref="QueueManager"></property><property name="AgentStatus" value="5"></property></object>-->
+</objects>

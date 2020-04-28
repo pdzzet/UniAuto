@@ -1,0 +1,58 @@
+﻿<!--FileName: 04_PROCESS_DATA.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-04-27 15:40:22-->
+<itemgroup name="L3ProcessDataItemBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_13_CCPTH_L3_PTH_Ver 1.0.2 20160427.xlsx" plcmap="WHCSOT_G6C_BC_Cell_13_CCPTH-PLC Address Map_Ver1.04.xls">
+  <item name="Recipe_ID" item="1" site="1" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Recipe_Name" item="1" site="2" woffset="1" boffset="0" wpoints="10" bpoints="160" expression="ASCII" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Process_time_start" item="2" site="1" woffset="11" boffset="0" wpoints="3" bpoints="48" expression="Hex" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="Process_time_end" item="2" site="2" woffset="14" boffset="0" wpoints="3" bpoints="48" expression="Hex" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_POINTS" item="2" site="1" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_THICKNESS_MEAN" item="3" site="1" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_THICKNESS_MAX" item="3" site="2" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_THICKNESS_MIN" item="3" site="3" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_THICKNESS_STD" item="3" site="4" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_N_MEAN" item="3" site="5" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_N_MAX" item="3" site="6" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_N_MIN" item="3" site="7" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_N_STD" item="3" site="8" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_K_MEAN" item="3" site="9" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_K_MAX" item="3" site="10" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_K_MIN" item="3" site="11" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER1_K_STD" item="3" site="12" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_THICKNESS_MEAN" item="4" site="1" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_THICKNESS_MAX" item="4" site="2" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_THICKNESS_MIN" item="4" site="3" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_THICKNESS_STD" item="4" site="4" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_N_MEAN" item="4" site="5" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_N_MAX" item="4" site="6" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_N_MIN" item="4" site="7" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_N_STD" item="4" site="8" woffset="37" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_K_MEAN" item="4" site="9" woffset="38" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_K_MAX" item="4" site="10" woffset="39" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_K_MIN" item="4" site="11" woffset="40" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER2_K_STD" item="4" site="12" woffset="41" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_THICKNESS_MEAN" item="5" site="1" woffset="42" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_THICKNESS_MAX" item="5" site="2" woffset="43" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_THICKNESS_MIN" item="5" site="3" woffset="44" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_THICKNESS_STD" item="5" site="4" woffset="45" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_N_MEAN" item="5" site="5" woffset="46" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_N_MAX" item="5" site="6" woffset="47" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_N_MIN" item="5" site="7" woffset="48" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_N_STD" item="5" site="8" woffset="49" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_K_MEAN" item="5" site="9" woffset="50" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_K_MAX" item="5" site="10" woffset="51" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_K_MIN" item="5" site="11" woffset="52" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER3_K_STD" item="5" site="12" woffset="53" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_THICKNESS_MEAN" item="6" site="1" woffset="54" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_THICKNESS_MAX" item="6" site="2" woffset="55" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_THICKNESS_MIN" item="6" site="3" woffset="56" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_THICKNESS_STD" item="6" site="4" woffset="57" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_N_MEAN" item="6" site="5" woffset="58" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_N_MAX" item="6" site="6" woffset="59" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_N_MIN" item="6" site="7" woffset="60" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_N_STD" item="6" site="8" woffset="61" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_K_MEAN" item="6" site="9" woffset="62" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_K_MAX" item="6" site="10" woffset="63" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_K_MIN" item="6" site="11" woffset="64" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+  <item name="MEASURE_LAYER4_K_STD" item="6" site="12" woffset="65" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="EDA" unit="" reportunit="0" />
+</itemgroup>

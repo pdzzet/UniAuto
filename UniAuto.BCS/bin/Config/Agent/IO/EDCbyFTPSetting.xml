@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ROOT>
+  <ProcessData>
+    <!--<ServerName name="FBMPH100" >
+      <Node NodeNo="L3" Type="FTP" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID>xxxx</LoginID>
+        <Password>xxxx</Password>
+        <SourcePath>ftp://192.168.1.1/EDCFile/</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+      </Node>
+      <Node NodeNo="L13" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID>xxxx</LoginID>
+        <Password>xxxx</Password>
+        <SourcePath>\\192.168.1.1\FBMPH100\FBMAO1D0\EDC</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\FBMAO1D0\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+      </Node>
+    </ServerName>
+    <ServerName name="CBODF200" >
+      <Node NodeNo="L3" Type="FTP" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID>xxxx</LoginID>
+        <Password>xxxx</Password>
+        <SourcePath>ftp://192.168.1.1/ProcessDataByFile/CBODF200/CBSDP250</SourcePath> CELL廠的SourcePath指定到EQ資料夾, EQ資料夾下有Unit資料夾, Unit資料夾內有EDC File; BC會將全部EQ & Unit資料夾內的EDC File下載到LocalTargetPath
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\CBSDP250\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+        <ScanSecond>10</ScanSecond> CELL廠的Process Data Report by File, 不用 PLC Trx Trigger, 而是由BC Thread定時去搜尋SourcePath是否有EDC檔案; ScanSecond表示每隔幾秒搜尋一次
+      </Node>
+      <Node NodeNo="L13" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID>xxxx</LoginID>
+        <Password>xxxx</Password>
+        <SourcePath>\\192.168.1.1\ProcessDataByFile\CBODF200\CBSDP250</SourcePath> CELL廠的SourcePath指定到EQ資料夾, EQ資料夾下有Unit資料夾, Unit資料夾內有EDC File; BC會將全部EQ & Unit資料夾內的EDC File下載到LocalTargetPath
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\CBSDP250\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+        <ScanSecond>10</ScanSecond> CELL廠的Process Data Report by File, 不用 PLC Trx Trigger, 而是由BC Thread定時去搜尋SourcePath是否有EDC檔案; ScanSecond表示每隔幾秒搜尋一次
+      </Node>
+    </ServerName>-->
+    <ServerName name="FBWPH100" >
+      <Node NodeNo="L13" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID>Takano</LoginID>
+        <Password>gazoutakano</Password>
+        <SourcePath>\\172.17.44.121\E$\Result\ProcessDataFile\FBWPH100\FBWAO1D0\EDC\</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\FBWAO1D0\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+      </Node>
+    </ServerName>
+    <ServerName name="FBMPH100" >
+      <Node NodeNo="L13" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID>Takano</LoginID>
+        <Password>gazoutakano</Password>
+        <SourcePath>\\172.17.44.115\E$\Result\ProcessDataFile\FBMPH100\FBMAO1D0\EDC\</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\FBMAO1D0\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+      </Node>
+    </ServerName>
+    <ServerName name="FBSPH100" >
+      <Node NodeNo="L13" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID>Takano</LoginID>
+        <Password>gazoutakano</Password>
+        <SourcePath>\\172.17.44.116\E$\Result\ProcessDataFile\FBSPH100\FBSAO1D0\EDC\</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\FBSAO1D0\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+      </Node>
+    </ServerName>
+    <ServerName name="FBBPH100" >
+      <Node NodeNo="L13" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID>Takano</LoginID>
+        <Password>gazoutakano</Password>
+        <SourcePath>\\172.17.44.119\E$\Result\ProcessDataFile\FBBPH100\FBBAO1D0\EDC\</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\FBBAO1D0\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+      </Node>
+    </ServerName>
+    <ServerName name="FBGPH100" >
+      <Node NodeNo="L13" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID>Takano</LoginID>
+        <Password>gazoutakano</Password>
+        <SourcePath>\\172.17.44.118\E$\Result\ProcessDataFile\FBGPH100\FBGAO1D0\EDC\</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\FBGAO1D0\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+      </Node>
+    </ServerName>
+    <ServerName name="FBMQC100" >
+      <Node NodeNo="L3" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID>Takano</LoginID>
+        <Password>gazoutakano</Password>
+        <SourcePath>\\172.17.44.123\E$\Result\ProcessDataFile\FBMQC100\FBQAO110\EDC\</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\FBQAO110\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+      </Node>
+    </ServerName>
+    <ServerName name="CBODF200" >
+      <Node NodeNo="L6" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID></LoginID>
+        <Password></Password>
+        <SourcePath>\\127.0.0.1\FILEDATA\ProcessDataByFile\CBODF200\CBSDP250</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\CBSDP250\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+        <ScanSecond>10</ScanSecond>
+      </Node>
+    </ServerName>
+    <ServerName name="CBODF200" >
+      <Node NodeNo="L10" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID></LoginID>
+        <Password></Password>
+        <SourcePath>\\127.0.0.1\FILEDATA\ProcessDataByFile\CBODF200\CBLCD290</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\CBLCD290\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+        <ScanSecond>10</ScanSecond>
+      </Node>
+    </ServerName>
+    <ServerName name="CBODF200" >
+      <Node NodeNo="L11" Type="SHF" Description="[FTP]: EDC file report by FTP, [SHF]: EDC File report by Share Folder">
+        <LoginID></LoginID>
+        <Password></Password>
+        <SourcePath>\\127.0.0.1\FILEDATA\ProcessDataByFile\CBODF200\CBVAB2A0</SourcePath>
+        <LocalTargetPath>D:\Unicomlog\{ServerName}\EDCFileDownload\CBVAB2A0\</LocalTargetPath>
+        <DeleteRemoteFile>True</DeleteRemoteFile>
+        <ScanSecond>10</ScanSecond>
+      </Node>
+    </ServerName>
+  </ProcessData>
+  <DefectData>
+  </DefectData>
+</ROOT>
+

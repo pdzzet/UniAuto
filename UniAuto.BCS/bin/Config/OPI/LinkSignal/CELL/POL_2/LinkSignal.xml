@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<LinkSignal>
+	<Bit UpStream="L2" DownStream="L3" SeqNo="0101" LinkType="CELL_RBtoST_Multi" TimingChart="RBtoST_DualModeForDoubleGlass" />
+	<Bit UpStream="L3" DownStream="L4" SeqNo="0101" LinkType="CELL_CVtoCV_Multi" TimingChart="CVtoCVForTwoGlass" />
+	<Bit UpStream="L4" DownStream="L5" SeqNo="0101" LinkType="CELL_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L5" DownStream="L6" SeqNo="0101" LinkType="CELL_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L6" DownStream="L7" SeqNo="0101" LinkType="CELL_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L6" DownStream="L7" SeqNo="0202" LinkType="CELL_CVtoCV" TimingChart="CVtoCV" />
+	<Bit UpStream="L7" DownStream="L8" SeqNo="0101" LinkType="CELL_STtoRB" TimingChart="STtoRB" />
+	<Bit UpStream="L7" DownStream="L8" SeqNo="0202" LinkType="CELL_STtoRB" TimingChart="STtoRB" />
+</LinkSignal>

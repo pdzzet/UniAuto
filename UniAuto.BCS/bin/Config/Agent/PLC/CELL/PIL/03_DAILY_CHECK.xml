@@ -1,0 +1,190 @@
+﻿<!--FileName: 03_DAILY_CHECK.xml-->
+<!--Version: 1.1.6.0-->
+<!--DateTime: 2016-05-17 16:42:02-->
+<itemgroup name="L3ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L3_BPC_Ver 1.0.3_20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET_TANK1_TEMP" item="1" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="DET_TANK1_USE_TIME" item="2" site="" woffset="5" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET_TANK1_GLS_CNT" item="2" site="" woffset="7" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET_TANK1_DENS" item="1" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="DET_TANK2_TEMP" item="1" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="DET_TANK2_USE_TIME" item="2" site="" woffset="11" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET_TANK2_GLS_CNT" item="2" site="" woffset="13" boffset="0" wpoints="2" bpoints="32" expression="SLONG" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="DET_TANK2_DENS" item="1" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" />
+  <item name="DIW_TANK_RESIST" item="1" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="AP1_O3_DENSE" item="1" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="AP2_O3_DENSE" item="1" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="AP1_EXHAUST_PRESS" item="1" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="AP1_REACTOR_EXHAUST_PRESS" item="1" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="NT_EXHAUST_PRESS" item="1" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="DETSW_EXHAUST_PRESS" item="1" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="DETBR_EXHAUST_PRESS" item="1" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="HM_EXHAUST_PRESS" item="1" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="SW_EXHAUST_PRESS" item="1" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="AK_EXHAUST_PRESS" item="1" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="IR1_EXHAUST_PRESS" item="1" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="IR2_EXHAUST_PRESS" item="1" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="AP2_EXHAUST_PRESS" item="1" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="AP2_REACTOR_EXHAUST_PRESS" item="1" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+  <item name="CPO_EXHAUST_PRESS" item="1" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="100" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L4ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L4_PIB_Ver 1.0.1_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Current_Recipe_ID" item="Current_Recipe_ID" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_Version" item="Recipe_Version" site="" woffset="5" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Glass_Angle" item="Glass_Angle" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L5ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L5_BPI_Ver 1.0.3_20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CDA1" item="CDA1" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA2" item="CDA2" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA3" item="CDA3" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA4" item="CDA4" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA5" item="CDA5" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA6" item="CDA6" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA7" item="CDA7" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA8" item="CDA8" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA9" item="CDA9" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ION_1" item="IONIZEER_1" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="ASCll" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ION_2" item="IONIZEER_2" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="ASCll" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ION_3" item="IONIZEER_3" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="ASCll" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>
+<itemgroup name="L6ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L6_PIC_Ver 1.01_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_ID" site="" woffset="4" boffset="0" wpoints="6" bpoints="96" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe_version" site="" woffset="10" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Print_Speed" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Anilox_Speed" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="P/C_Roteto_Speed" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Glass_Thickness" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Print_Compens" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="SINT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="I/P_Model_no" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Disp_Speed" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="EQID" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>
+<itemgroup name="L7ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L7_PPO_Ver 1.01_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HOT_ACT_TEMPHP1" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="H_ACT_TEMP1HP1" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HOT_ACT_TEMPHP2" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="H_ACT_TEMP1HP2" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HOT_ACT_TEMPHP3" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="H_ACT_TEMP1HP3" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HOT_ACT_TEMPHP4" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="H_ACT_TEMP1HP4" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HOT_ACT_TEMPHP5" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="H_ACT_TEMP1HP5" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HOT_ACT_TEMPHP6" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="H_ACT_TEMP1HP6" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HOT_ACT_TEMPHP7" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="H_ACT_TEMP1HP7" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HOT_ACT_TEMPHP8" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="H_ACT_TEMP1HP8" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>
+<itemgroup name="L9ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L9_PIN_Ver 1.0.3_20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="CDA1" item="CDA1" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA2" item="CDA2" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA3" item="CDA3" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA4" item="CDA4" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA5" item="CDA5" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA6" item="CDA6" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA7" item="CDA7" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA8" item="CDA8" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="CDA9" item="CDA9" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ION_1" item="IONIZEER_1" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="ASCll" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ION_2" item="IONIZEER_2" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="ASCll" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="ION_3" item="IONIZEER_3" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="ASCll" valueoperator="" operand="0" reportto="MES,EDA" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>
+<itemgroup name="L11ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L11_PMO_Ver 1.01_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_GAS_FLOW1" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HA_GAS_FLOW2" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HA_GAS_FLOW3" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HA_GAS_FLOW4" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HA_GAS_FLOW5" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HA_GAS_FLOW6" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HA_PROCESS_EXH_L" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HA_PROCESS_EXH_R" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HA_GENERAL_EXH1" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HA_GENERAL_EXH2" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HB_GAS_FLOW1" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HB_GAS_FLOW2" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HB_GAS_FLOW3" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HB_GAS_FLOW4" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HB_GAS_FLOW5" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HB_GAS_FLOW6" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HB_PROCESS_EXH_L" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HB_PROCESS_EXH_R" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HB_GENERAL_EXH1" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HB_GENERAL_EXH2" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HC_GAS_FLOW1" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HC_GAS_FLOW2" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HC_GAS_FLOW3" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HC_GAS_FLOW4" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HC_GAS_FLOW5" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HC_GAS_FLOW6" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HC_PROCESS_EXH_L" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HC_PROCESS_EXH_R" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HC_GENERAL_EXH1" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="HC_GENERAL_EXH2" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="C_PCW_FLOW1" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="C_PCW_FLOW2" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="C_GENERAL_EXH" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>
+<itemgroup name="L13ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L13_ADC_Ver 1.02_20160512.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Upper_Cleaner_Head_Gap" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Lower_Cleaner_Head_Gap" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Primary_Pressure(Cylinder)" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Primary_Pressure(Ionizer)" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Secondary_Pressure(Cylinder)" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Secondary_Pressure(Ionizer)" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="1000" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Upper_Cleaner_Pressure" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+  <item name="Lower_Cleaner_Pressure" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="/" operand="10" reportto="MES" unit="" reportunit="0" dailychecktype="Common" />
+</itemgroup>
+<itemgroup name="L17ProcessDataDailyCheckBlock" profile="WHCSOT G6C t3 EQP Profile_CELL_01_CCPIL Line_L17_PAO_Ver 1.01_20160427.xlsx" plcmap="WHCSOT_G6C_BC_CELL_01_CCPIL-PLC Address Map_Ver1.23.xls">
+  <item name="Recipe ID" site="" woffset="0" boffset="0" wpoints="1" bpoints="16" expression="ASCII" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="Recipe Version" site="" woffset="1" boffset="0" wpoints="3" bpoints="48" expression="BCD" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_GAS_FLOW1" site="" woffset="4" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_GAS_FLOW2" site="" woffset="5" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_GAS_FLOW3" site="" woffset="6" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_GAS_FLOW4" site="" woffset="7" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_GAS_FLOW5" site="" woffset="8" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_GAS_FLOW6" site="" woffset="9" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_PROCESS_EXH_L" site="" woffset="10" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_PROCESS_EXH_R" site="" woffset="11" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_GENERAL_EXH1" site="" woffset="12" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HA_GENERAL_EXH2" site="" woffset="13" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HB_GAS_FLOW1" site="" woffset="14" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HB_GAS_FLOW2" site="" woffset="15" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HB_GAS_FLOW3" site="" woffset="16" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HB_GAS_FLOW4" site="" woffset="17" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HB_GAS_FLOW5" site="" woffset="18" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HB_GAS_FLOW6" site="" woffset="19" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HB_PROCESS_EXH_L" site="" woffset="20" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HB_PROCESS_EXH_R" site="" woffset="21" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HB_GENERAL_EXH1" site="" woffset="22" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HB_GENERAL_EXH2" site="" woffset="23" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HC_GAS_FLOW1" site="" woffset="24" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HC_GAS_FLOW2" site="" woffset="25" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HC_GAS_FLOW3" site="" woffset="26" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HC_GAS_FLOW4" site="" woffset="27" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HC_GAS_FLOW5" site="" woffset="28" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HC_GAS_FLOW6" site="" woffset="29" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HC_PROCESS_EXH_L" site="" woffset="30" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HC_PROCESS_EXH_R" site="" woffset="31" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HC_GENERAL_EXH1" site="" woffset="32" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="HC_GENERAL_EXH2" site="" woffset="33" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="C_PCW_FLOW1" site="" woffset="34" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="C_PCW_FLOW2" site="" woffset="35" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+  <item name="C_GENERAL_EXH" site="" woffset="36" boffset="0" wpoints="1" bpoints="16" expression="INT" valueoperator="" operand="0" reportto="MES" unit="" reportunit="0" />
+</itemgroup>

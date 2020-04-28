@@ -1,0 +1,84 @@
+<message name="ACTIVE_CONNECT">
+  <object id="ActiveSocketService" method="ACTIVE_CONNECT" />
+</message>
+<message name="ACTIVE_DISCONNECT">
+  <object id="ActiveSocketService" method="ACTIVE_DISCONNECT" />
+</message>
+<message name="ACTIVE_MessageSend">
+  <object id="ActiveSocketService" method="ACTIVE_MessageSend" />
+</message>
+<message name="ACTIVE_MessageRecv">
+  <object id="ActiveSocketService" method="ACTIVE_MessageRecv" />
+</message>
+<message name="ACTIVE_AreYouThereReply">
+  <object id="ActiveSocketService" method="ACTIVE_AreYouThereReply" />
+</message>
+<message name="ACTIVE_BCSLinkTest">
+  <object id="ActiveSocketService" method="ACTIVE_BCSLinkTest" />
+</message>
+<message name="ACTIVE_BCSLinkTestReply">
+  <object id="ActiveSocketService" method="ACTIVE_BCSLinkTestReply" />
+</message>
+<message name="ACTIVE_JOBShortCutPermitReply">
+  <object id="ActiveSocketService" method="ACTIVE_JOBShortCutPermitReply" />
+</message>
+<message name="ACTIVE_RecipeIDRegisterCheckReply">
+  <object id="ActiveSocketService" method="ACTIVE_RecipeIDRegisterCheckReply" />
+</message>
+<message name="ACTIVE_RecipeParameterReply">
+  <object id="ActiveSocketService" method="ACTIVE_RecipeParameterReply" />
+</message>
+<message name="ACTIVE_CellShortCut">
+  <object id="ActiveSocketService" method="ACTIVE_CellShortCut" />
+</message>
+<message name="ACTIVE_CellShortCutReply">
+  <object id="ActiveSocketService" method="ACTIVE_CellShortCutReply" />
+</message>
+<message name="ACTIVE_ArrayShortCut">
+  <object id="ActiveSocketService" method="ACTIVE_ArrayShortCut" />
+</message>
+<message name="ACTIVE_ArrayShortCutReply">
+  <object id="ActiveSocketService" method="ACTIVE_ArrayShortCutReply" />
+</message>
+<message name="PASSIVE_CONNECT">
+  <object id="PassiveSocketService" method="PASSIVE_CONNECT" />
+</message>
+<message name="PASSIVE_DISCONNECT">
+  <object id="PassiveSocketService" method="PASSIVE_DISCONNECT" />
+</message>
+<message name="PASSIVE_MessageSend">
+  <object id="PassiveSocketService" method="PASSIVE_MessageSend" />
+</message>
+<message name="PASSIVE_MessageRecv">
+  <object id="PassiveSocketService" method="PASSIVE_MessageRecv" />
+</message>
+<message name="PASSIVE_AreYouThereRequest">
+  <object id="PassiveSocketService" method="PASSIVE_AreYouThereRequest" />
+</message>
+<message name="PASSIVE_BCSLinkTest">
+  <object id="PassiveSocketService" method="PASSIVE_BCSLinkTest" />
+</message>
+<message name="PASSIVE_BCSLinkTestReply">
+  <object id="PassiveSocketService" method="PASSIVE_BCSLinkTestReply" />
+</message>
+<message name="PASSIVE_JOBShortCutPermit">
+  <object id="PassiveSocketService" method="PASSIVE_JOBShortCutPermit" />
+</message>
+<message name="PASSIVE_RecipeIDRegisterCheckRequest">
+  <object id="PassiveSocketService" method="PASSIVE_RecipeIDRegisterCheckRequest" />
+</message>
+<message name="PASSIVE_RecipeParameterRequest">
+  <object id="PassiveSocketService" method="PASSIVE_RecipeParameterRequest" />
+</message>
+<message name="PASSIVE_CellShortCut">
+  <object id="PassiveSocketService" method="PASSIVE_CellShortCut" />
+</message>
+<message name="PASSIVE_CellShortCutReply">
+  <object id="PassiveSocketService" method="PASSIVE_CellShortCutReply" />
+</message>
+<message name="PASSIVE_ArrayShortCut">
+  <object id="PassiveSocketService" method="PASSIVE_ArrayShortCut" />
+</message>
+<message name="PASSIVE_ArrayShortCutReply">
+  <object id="PassiveSocketService" method="PASSIVE_ArrayShortCutReply" />
+</message>

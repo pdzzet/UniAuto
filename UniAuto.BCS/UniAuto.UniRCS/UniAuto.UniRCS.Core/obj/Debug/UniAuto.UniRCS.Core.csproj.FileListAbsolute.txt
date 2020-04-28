@@ -1,0 +1,5 @@
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniRCS.Core.dll
+E:\t3BCmod\BC\UniAuto.BCS\bin\Debug\UniAuto.UniRCS.Core.pdb
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniRCS\UniAuto.UniRCS.Core\obj\Debug\UniAuto.UniRCS.Core.csprojResolveAssemblyReference.cache
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniRCS\UniAuto.UniRCS.Core\obj\Debug\UniAuto.UniRCS.Core.dll
+E:\t3BCmod\BC\UniAuto.BCS\UniAuto.UniRCS\UniAuto.UniRCS.Core\obj\Debug\UniAuto.UniRCS.Core.pdb

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<LinkSignal>
+	<Bit UpStream="L2" DownStream="L3" SeqNo="0101" LinkType="ARRAY_RBtoST" TimingChart="RBtoST" />
+	<Bit UpStream="L2" DownStream="L3" SeqNo="0202" LinkType="ARRAY_RBtoST" TimingChart="RBtoST" />
+	<Bit UpStream="L3" DownStream="L2" SeqNo="0101" LinkType="ARRAY_STtoRB" TimingChart="STtoRB" />
+	<Bit UpStream="L3" DownStream="L2" SeqNo="0202" LinkType="ARRAY_STtoRB" TimingChart="STtoRB" />
+	<Bit UpStream="L3" DownStream="L2" SeqNo="0303" LinkType="ARRAY_STtoRB" TimingChart="STtoRB" />
+	<Bit UpStream="L3" DownStream="L2" SeqNo="0404" LinkType="ARRAY_STtoRB" TimingChart="STtoRB" />
+</LinkSignal>

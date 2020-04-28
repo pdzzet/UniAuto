@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.RobotPositionEntityData, UniAuto.UniBCS.Entity" table="SBRM_EQPSTAGE">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="LineType" type="String">
+			<column name="LineType" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="ROBOTPOSITIONNO" type="String">
+			<column name="ROBOTPOSITIONNO" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="DESCRIPTION" type="String">
+			<column name="DESCRIPTION" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="NODENO" type="String">
+			<column name="NODENO" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+		<property name="DIRECTION" type="String">
+			<column name="DIRECTION" length="50" sql-type="varchar" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>

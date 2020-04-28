@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.SubBlockCtrlEntityData, UniAuto.UniBCS.Entity" table="SBRM_SUBBLOCK_CTRL">
+    <id name="Id" type="Int64" unsaved-value="null">
+      <column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+      <generator class="native" />
+    </id>
+    <property name="LINEID" type="String">
+      <column name="LINEID" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="SERVERNAME" type="String">
+      <column name="SERVERNAME" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="SUBBLOCKID" type="String">
+      <column name="SUBBLOCKID" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="STARTEQP" type="String">
+      <column name="STARTEQP" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="CONTROLEQP" type="String">
+      <column name="CONTROLEQP" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="STARTEVENTMSG" type="String">
+      <column name="STARTEVENTMSG" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="INTERLOCKNO" type="String">
+      <column name="INTERLOCKNO" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="NEXTSUBBLOCKEQP" type="String">
+      <column name="NEXTSUBBLOCKEQP" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="NEXTSUBBLOCKEQPLIST" type="String">
+      <column name="NEXTSUBBLOCKEQPLIST" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="ENABLED" type="String">
+      <column name="ENABLED" length="5" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="INTERLOCKREPLYNO" type="String">
+      <column name="INTERLOCKREPLYNO" length="50" sql-type="varchar" not-null="true"/>
+    </property>
+    <property name="REMARK" type="String">
+      <column name="REMARK" length="500" sql-type="varchar" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

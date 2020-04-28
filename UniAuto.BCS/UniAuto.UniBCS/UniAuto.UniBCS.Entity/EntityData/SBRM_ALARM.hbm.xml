@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="UniAuto.UniBCS.Entity.AlarmEntityData, UniAuto.UniBCS.Entity" table="SBRM_ALARM">
+		<id name="Id" type="Int64" unsaved-value="null">
+			<column name="OBJECTKEY" length="8" sql-type="bigint" not-null="true" unique="true"/>
+			<generator class="native" />
+		</id>
+		<property name="LINEID" type="String">
+			<column name="LINEID" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_ALARM"/>
+		</property>
+		<property name="NODENO" type="String">
+			<column name="NODENO" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_ALARM"/>
+		</property>
+		<property name="UNITNO" type="String">
+			<column name="UNITNO" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_ALARM"/>
+		</property>
+		<property name="ALARMLEVEL" type="String">
+			<column name="ALARMLEVEL" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="ALARMID" type="String">
+			<column name="ALARMID" length="50" sql-type="varchar" not-null="true" index="UK_SBRM_ALARM"/>
+		</property>
+		<property name="ALARMCODE" type="String">
+			<column name="ALARMCODE" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="ALARMTEXT" type="String">
+			<column name="ALARMTEXT" length="255" sql-type="varchar" not-null="true"/>
+		</property>
+		<property name="SERVERNAME" type="String">
+			<column name="SERVERNAME" length="50" sql-type="varchar" not-null="true"/>
+		</property>
+	</class>
+</hibernate-mapping>
